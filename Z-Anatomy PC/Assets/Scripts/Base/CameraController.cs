@@ -301,7 +301,11 @@ public class CameraController : MonoBehaviour
         y = 0;
         z = 0;
         distance = defaulDistance;
-        cam.orthographicSize = distance;
+
+        // This caused a bug of the gizmo tool to be misplaced in the scene, I didn't understand why but commenting it seems to fix it
+        // and seems to not be needed.
+        //cam.orthographicSize = distance;
+
         UpdatePosition();
     }
 
