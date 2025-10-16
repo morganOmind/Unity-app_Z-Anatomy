@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -175,7 +175,6 @@ public class NamesManagement : MonoBehaviour
     public void SetDesc(string description, bool isChecked = true, string name = null)
     {
         scrollView.enabled = true;
-
         warningMessage.SetActive(!isChecked);
 
         if (isChecked)
@@ -193,18 +192,32 @@ public class NamesManagement : MonoBehaviour
         {
             emptySelecPanel.SetActive(false);
 
+            // 🔹 Ajout ici : transformer les liens en balises TMP
+            description = MakeLinksClickable(description);
+
             RebuildDescriptionPanel(description: description, name: name);
 
             StartCoroutine(Scroll());
-
             IEnumerator Scroll()
             {
                 yield return new WaitForEndOfFrame();
-
                 scrollView.normalizedPosition = new Vector2(0, 1);
-
             }
         }
+    }
+
+    private string MakeLinksClickable(string text)
+    {
+        // Expression régulière qui capture tous les liens http ou https
+        System.Text.RegularExpressions.Regex urlRegex =
+            new System.Text.RegularExpressions.Regex(@"(https?:\/\/[^\s]+)");
+
+        // Remplace chaque lien trouvé par une balise TMP <link>
+        return urlRegex.Replace(text, match =>
+        {
+            string url = match.Value;
+            return $"<link=\"{url}\"><color=#2986cc><u>{url}</u></color></link>";
+        });
     }
 
     public void RebuildDescriptionPanel(bool waitExpand = false, float time = 0.2f, string name = "", string description = "")
@@ -247,94 +260,94 @@ public class NamesManagement : MonoBehaviour
 
     public void TextClicked(string clickedObject, bool leftClick)
     {
-        //If it is a link
-        if(clickedObject.Contains("http"))
+        // Vérifie si c'est un lien valide commençant par https://
+        if (!string.IsNullOrEmpty(clickedObject) && clickedObject.StartsWith("https", StringComparison.OrdinalIgnoreCase))
         {
             Application.OpenURL(clickedObject);
+            return;
         }
+
+        // Sinon, comportement normal
+        Transform clickedGO = GlobalVariables.Instance.globalParent.transform.RecursiveFindChild(
+            new StringBuilder().Append(clickedObject.ToLower()).Append(" (R)").ToString()
+        );
+
+        if (clickedGO == null)
+            clickedGO = GlobalVariables.Instance.globalParent.transform.RecursiveFindChild(clickedObject.ToLower());
+
+        if (clickedGO == null)
+        {
+            var go = GlobalVariables.Instance.allNameScripts.Find(it =>
+                it.HasSynonims() &&
+                it.allSynonyms[Settings.languageIndex].Any(it2 => it2.ToLower().Equals(clickedObject.ToLower()))
+            );
+            if (go != null)
+                clickedGO = go.transform;
+        }
+
+        if (clickedGO == null)
+            return;
+
+        // Si clic droit → menu contextuel
+        if (!leftClick)
+        {
+            ContextualMenu.Instance.contextObject = clickedGO.gameObject;
+            ContextualMenu.Instance.Show();
+            return;
+        }
+
+        List<GameObject> shown = new List<GameObject>();
+        clickedGO.transform.SetActiveParentsRecursively(true, shown);
+
+        SelectedObjectsManagement.Instance.DeselectAllObjects();
+
+        TangibleBodyPart bodyPartScript = clickedGO.GetComponent<TangibleBodyPart>();
+        Label labelSript = clickedGO.GetComponent<Label>();
+
+        // Si c’est une partie du corps
+        if (bodyPartScript != null)
+        {
+            SelectedObjectsManagement.Instance.SelectObject(clickedGO.gameObject);
+            ActionControl.Instance.AddCommand(new SelectCommand(SelectedObjectsManagement.Instance.selectedObjects), false);
+            ActionControl.Instance.UpdateButtons();
+
+            cam.SetTarget(clickedGO.gameObject);
+            cam.cameraCenter.position = bodyPartScript.center;
+            cam.UpdateCameraPos(bodyPartScript.distanceToCamera);
+        }
+        // Si c’est un label
+        else if (labelSript != null)
+        {
+            SelectedObjectsManagement.Instance.SelectObject(labelSript.parent.gameObject);
+            ActionControl.Instance.AddCommand(new SelectCommand(SelectedObjectsManagement.Instance.selectedObjects), false);
+            ActionControl.Instance.UpdateButtons();
+
+            MeshManagement.Instance.IsolationClick();
+
+            cam.SetTarget(labelSript.parent.gameObject);
+            cam.cameraCenter.position = labelSript.parent.center;
+            cam.UpdateCameraPos(labelSript.parent.distanceToCamera);
+
+            SelectedObjectsManagement.Instance.SelectObject(clickedGO.gameObject);
+            ActionControl.Instance.AddCommand(new SelectCommand(SelectedObjectsManagement.Instance.selectedObjects), false);
+        }
+        // Si c’est une partie globale
         else
         {
-            Transform clickedGO = GlobalVariables.Instance.globalParent.transform.RecursiveFindChild(new StringBuilder().Append(clickedObject.ToLower()).Append(" (R)").ToString());       
-            if (clickedGO == null)
-                 clickedGO = GlobalVariables.Instance.globalParent.transform.RecursiveFindChild(clickedObject.ToLower());
-            if(clickedGO == null)
-            {
-                var go = GlobalVariables.Instance.allNameScripts.Find(it => it.HasSynonims() && it.allSynonyms[Settings.languageIndex].Any(it2 => it2.ToLower().Equals(clickedObject.ToLower())));
-                if(go != null)
-                    clickedGO = go.transform;
-            }
-            if (clickedGO == null)
-                return;
+            SelectedObjectsManagement.Instance.activeObjects.Clear();
+            SelectedObjectsManagement.Instance.SelectAllChildren(clickedGO.transform, true, shown);
+            ActionControl.Instance.UpdateButtons();
 
-            //If it was right click -> show contextual menu
-            if(!leftClick)
-            {
-                ContextualMenu.Instance.contextObject = clickedGO.gameObject;
-                ContextualMenu.Instance.Show();
-                return;
-            }
-
-            List<GameObject> shown = new List<GameObject>();
-            clickedGO.transform.SetActiveParentsRecursively(true, shown);
-
-            SelectedObjectsManagement.Instance.DeselectAllObjects();
-
-            TangibleBodyPart bodyPartScript = clickedGO.GetComponent<TangibleBodyPart>();
-            Label labelSript = clickedGO.GetComponent<Label>();
-
-            //If it is a bodypart
-            if (bodyPartScript != null)
-            {
-                //Select it
-                SelectedObjectsManagement.Instance.SelectObject(clickedGO.gameObject);
-                ActionControl.Instance.AddCommand(new SelectCommand(SelectedObjectsManagement.Instance.selectedObjects), false);
-                ActionControl.Instance.UpdateButtons();
-
-                //Focus camera
-                cam.SetTarget(clickedGO.gameObject);
-                cam.cameraCenter.position = bodyPartScript.center;
-                cam.UpdateCameraPos(bodyPartScript.distanceToCamera);
-            }
-            //If it is a label
-            else if(labelSript != null)
-            {
-                //Select the label's parent (jump the .labels obj)
-                SelectedObjectsManagement.Instance.SelectObject(labelSript.parent.gameObject);
-                ActionControl.Instance.AddCommand(new SelectCommand(SelectedObjectsManagement.Instance.selectedObjects), false);
-                ActionControl.Instance.UpdateButtons();
-
-                //Isolate it
-                MeshManagement.Instance.IsolationClick();
-
-                //Focus camera
-                cam.SetTarget(labelSript.parent.gameObject);
-                cam.cameraCenter.position = labelSript.parent.center;
-                cam.UpdateCameraPos(labelSript.parent.distanceToCamera);
-
-                //Then select the label
-                SelectedObjectsManagement.Instance.SelectObject(clickedGO.gameObject);
-                ActionControl.Instance.AddCommand(new SelectCommand(SelectedObjectsManagement.Instance.selectedObjects), false);
-            }
-            //If it is a global part
-            else
-            {
-                SelectedObjectsManagement.Instance.activeObjects.Clear();
-                SelectedObjectsManagement.Instance.SelectAllChildren(clickedGO.transform, true, shown);
-                ActionControl.Instance.UpdateButtons();
-
-                if(ActionControl.zoomSelected)
-                    cam.CenterView(true);
-            }
-
-            NameAndDescription nameScript = clickedGO.GetComponent<NameAndDescription>();
-            //Set the hierarchy bar
-            HierarchyBar.Instance.Set(clickedGO.transform);
-            //Expand in lexicon
-            Lexicon.Instance.ExpandRecursively();
-            ActionControl.Instance.AddCommand(new ShowCommand(shown), false);
-            Lexicon.Instance.UpdateTreeViewCheckboxes();
-            nameScript.SetDescription();
+            if (ActionControl.zoomSelected)
+                cam.CenterView(true);
         }
+
+        NameAndDescription nameScript = clickedGO.GetComponent<NameAndDescription>();
+        HierarchyBar.Instance.Set(clickedGO.transform);
+        Lexicon.Instance.ExpandRecursively();
+        ActionControl.Instance.AddCommand(new ShowCommand(shown), false);
+        Lexicon.Instance.UpdateTreeViewCheckboxes();
+        nameScript.SetDescription();
     }
 
 
