@@ -16,7 +16,7 @@ public class ContextualMenu : MonoBehaviour
     public Button partiallyIsolateBtn;
     public Button hideBtn;
     public Button resetPosition;
-    public Button movePosition;
+    //public Button movePosition;
     public Button showKeyColors;
     public Button hideKeyColors;
     public Button addNoteBtn;
@@ -79,7 +79,7 @@ public class ContextualMenu : MonoBehaviour
 
         partiallyIsolateBtn.transform.parent.gameObject.SetActive(actualTags.Count > 1);
 
-        movePosition.transform.parent.gameObject.SetActive(MovePositionOn());
+        //movePosition.transform.parent.gameObject.SetActive(MovePositionOn());
         resetPosition.transform.parent.gameObject.SetActive(ResetPositionOn());
 
         showLabelsBtn.transform.parent.gameObject.SetActive(ShowLabelsOn());
@@ -106,7 +106,7 @@ public class ContextualMenu : MonoBehaviour
         structuresBtn.transform.parent.gameObject.SetActive(false);
         structuresBtn.transform.parent.gameObject.SetActive(false);
         partiallyIsolateBtn.transform.parent.gameObject.SetActive(false);
-        movePosition.transform.parent.gameObject.SetActive(false);
+        //movePosition.transform.parent.gameObject.SetActive(false);
         resetPosition.transform.parent.gameObject.SetActive(false);
         showLabelsBtn.transform.parent.gameObject.SetActive(false);
         hideLabelsBtn.transform.parent.gameObject.SetActive(false);
