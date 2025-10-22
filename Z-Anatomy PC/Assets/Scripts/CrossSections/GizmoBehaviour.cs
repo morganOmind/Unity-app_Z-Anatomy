@@ -173,6 +173,10 @@ public class GizmoBehaviour : MonoBehaviour
 
     public GizmoFace GetHitFace(RaycastHit hit)
     {
+        if(hit.collider.TryGetComponent<GizmoDirection>(out  GizmoDirection direction))
+        {
+            return direction.GizmoFace;
+        }
         Vector3 incomingVec = hit.normal - Vector3.up;
         incomingVec.x = Mathf.Round(incomingVec.x);
         incomingVec.y = Mathf.Round(incomingVec.y);

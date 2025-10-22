@@ -63,7 +63,7 @@ public class RaycastObject : MonoBehaviour
         if (raycastBlocked || EventSystem.current.IsPointerOverGameObject())
         {
             highlightText.text = "";
-            return;
+            //return;
         }
 
         if (ActionControl.crossSectionsEnabled)
@@ -200,6 +200,7 @@ public class RaycastObject : MonoBehaviour
         {
             firstMousePos = Mouse.current.position.ReadValue();
         }
+        
         //Mouse up as button
         else if ((Mouse.current.leftButton.wasReleasedThisFrame) 
             && Vector3.Distance(firstMousePos, Mouse.current.position.ReadValue()) < 10f)
@@ -207,7 +208,6 @@ public class RaycastObject : MonoBehaviour
             //If clicked 'nothing'
             if (objectSelected == null)
                 ClickedNull();
-
             else if (LayerMask.LayerToName(objectSelected.layer).Equals("Cube"))
             {
                 GizmoFace faceClicked = GizmoBehaviour.instance.GetHitFace(hit);
@@ -225,6 +225,7 @@ public class RaycastObject : MonoBehaviour
                 if (labelScript != null)
                     labelScript.Click();
             }
+
             objectSelected = null;
         }
     }
