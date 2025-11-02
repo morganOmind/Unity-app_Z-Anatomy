@@ -43,8 +43,6 @@ public class GizmoBehaviour : MonoBehaviour
         transform.LookAt(target);
         transform.localScale = Vector3.one * cubeSize * Camera.main.orthographicSize / 7;
         rt.anchoredPosition = new Vector2(cubePosition.x * Camera.main.orthographicSize / 7, cubePosition.y * Camera.main.orthographicSize / 7);
-
-  
     }
 
     public void SetFaceShortcut(GizmoFace arrow)

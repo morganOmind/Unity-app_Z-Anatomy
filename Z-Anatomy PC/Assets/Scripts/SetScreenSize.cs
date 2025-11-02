@@ -29,7 +29,7 @@ public class SetScreenSize : MonoBehaviour
             SetCanvasSize();
     }
 
-    void SetCanvasSize()
+    public void SetCanvasSize()
     {
         proportion = Screen.height / (mainCamera.orthographicSize * 2);
         rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Screen.width / proportion);

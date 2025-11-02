@@ -77,6 +77,7 @@ public class CameraController : MonoBehaviour
 
     private Transform trans;
 
+    public SetScreenSize setScreenSize;
     private void Awake()
     {
         instance = this;
@@ -304,9 +305,10 @@ public class CameraController : MonoBehaviour
 
         // This caused a bug of the gizmo tool to be misplaced in the scene, I didn't understand why but commenting it seems to fix it
         // and seems to not be needed.
-        //cam.orthographicSize = distance;
-
+        
+        cam.orthographicSize = distance;
         UpdatePosition();
+        setScreenSize.SetCanvasSize();
     }
 
     /// <summary>
