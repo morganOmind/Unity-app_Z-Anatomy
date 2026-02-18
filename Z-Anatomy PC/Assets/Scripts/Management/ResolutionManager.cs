@@ -35,8 +35,10 @@ public class ResolutionManager : MonoBehaviour
 
     void Start()
     {
+#if !UNITY_EDITOR
         if (Application.platform != RuntimePlatform.WebGLPlayer)
             StartCoroutine(StartRoutine());
+#endif
     }
 
     private void printResolution()
