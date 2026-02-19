@@ -40,11 +40,13 @@ public class GizmoBehaviour : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.LookAt(target);
-        transform.localScale = Vector3.one * cubeSize * Camera.main.orthographicSize / 7;
-        rt.anchoredPosition = new Vector2(cubePosition.x * Camera.main.orthographicSize / 7, cubePosition.y * Camera.main.orthographicSize / 7);
+        UpdateGizmo();
+    }
 
-  
+    public void UpdateGizmo() {
+        transform.LookAt(target);
+        transform.localScale = Vector3.one * cubeSize * Camera.main.orthographicSize / camScript.defaulDistance;
+        rt.anchoredPosition = new Vector2(cubePosition.x * Camera.main.orthographicSize / camScript.defaulDistance, cubePosition.y * Camera.main.orthographicSize / camScript.defaulDistance);
     }
 
     public void SetFaceShortcut(GizmoFace arrow)

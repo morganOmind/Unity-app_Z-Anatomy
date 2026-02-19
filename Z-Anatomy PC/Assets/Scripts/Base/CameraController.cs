@@ -301,7 +301,10 @@ public class CameraController : MonoBehaviour
         y = 0;
         z = 0;
         distance = defaulDistance;
-        cam.orthographicSize = distance;
+        //comment to fix the reset gizmo position issue when previously zoom in/out
+        //probably because order of execution of LateUpdate between CameraController and GizmoBehaviour
+        //anyway, it will be set correctly into the next CameraController.LateUpdate!
+        //cam.orthographicSize = distance;
         UpdatePosition();
     }
 
