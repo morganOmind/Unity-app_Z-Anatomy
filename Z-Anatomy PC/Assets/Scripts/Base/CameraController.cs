@@ -77,6 +77,8 @@ public class CameraController : MonoBehaviour
 
     private Transform trans;
 
+    public SetScreenSize setScreenSize;
+
     private void Awake()
     {
         instance = this;
@@ -301,11 +303,9 @@ public class CameraController : MonoBehaviour
         y = 0;
         z = 0;
         distance = defaulDistance;
-        //comment to fix the reset gizmo position issue when previously zoom in/out
-        //probably because order of execution of LateUpdate between CameraController and GizmoBehaviour
-        //anyway, it will be set correctly into the next CameraController.LateUpdate!
-        //cam.orthographicSize = distance;
+        cam.orthographicSize = distance;
         UpdatePosition();
+        setScreenSize.SetCanvasSize();
     }
 
     /// <summary>
