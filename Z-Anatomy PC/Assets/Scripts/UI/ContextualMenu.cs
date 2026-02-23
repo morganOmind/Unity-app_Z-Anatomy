@@ -121,7 +121,12 @@ public class ContextualMenu : MonoBehaviour
 
     public void CopyClick()
     {
-        GUIUtility.systemCopyBuffer = DescriptionClick.Instance.selectedText.RemoveRichTextTags();
+        string text = DescriptionClick.Instance.selectedText.RemoveRichTextTags();
+#if UNITY_WEBGL
+        WebGLCopyAndPaste.WebGLCopyAndPasteAPI.CopyToClipboard(text);
+#else
+        GUIUtility.systemCopyBuffer = text;
+#endif
         PopUpManagement.Instance.Show("Text copied!");
     }
 
