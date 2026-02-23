@@ -156,30 +156,27 @@ public class Layers : MonoBehaviour
             for (int j = 1; j < parts.Length; j++)
             {
                 var name = parts[j].Replace("\r", "");
-                if (allBodyParts.ContainsKey(name))
-                {
+                if (allBodyParts.ContainsKey(name)) {
                     GameObject found = allBodyParts[name];
-                    if (found != null)
-                    {
+                    if (found != null) {
                         allBodyParts.Remove(name);
                         layerObjects[i].Add(found.gameObject);
                     }
                     else
                         Debug.Log(parts[j]);
                 }
-                else if(allBodyParts.ContainsKey(name.RemoveSuffix()))
-                {
+                else if (allBodyParts.ContainsKey(name.RemoveSuffix())) {
                     GameObject found = allBodyParts[name.RemoveSuffix()];
-                    if (found != null)
-                    {
+                    if (found != null) {
                         allBodyParts.Remove(name.RemoveSuffix());
                         layerObjects[i].Add(found.gameObject);
                     }
                     else
                         Debug.Log(parts[j]);
                 }
-                else
-                    Debug.Log(parts[j]);
+                else {
+                    //Debug.Log(parts[j]);
+                }
             }
 
             i++;

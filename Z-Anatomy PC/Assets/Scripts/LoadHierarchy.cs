@@ -43,7 +43,7 @@ public class LoadHierarchy : MonoBehaviour
             int index = int.Parse(line.Split(Separator)[1]);
             if (!allObjects.ContainsKey(line.Split(Separator)[0]))
             {
-                Debug.Log(line.Split(Separator)[0]);
+                //Debug.Log(line.Split(Separator)[0]);
                 continue;
             }
             ordered.Add(allObjects[line.Split(Separator)[0]], index);
