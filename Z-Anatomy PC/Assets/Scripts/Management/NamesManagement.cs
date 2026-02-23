@@ -176,7 +176,8 @@ public class NamesManagement : MonoBehaviour
     {
         scrollView.enabled = true;
 
-        warningMessage.SetActive(!isChecked);
+        //warningMessage.SetActive(!isChecked);
+        warningMessage.SetActive(false);
 
         if (isChecked)
             bodyPartInputField.textComponent.margin = new Vector4(10, 15, 15, 10);

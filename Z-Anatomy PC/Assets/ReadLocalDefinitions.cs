@@ -50,6 +50,7 @@ public class ReadLocalDefinitions : MonoBehaviour
     {
         try
         {
+            /*
             string translated = null;
             //SPANISH
             if (language == SystemLanguage.Spanish)
@@ -98,6 +99,15 @@ public class ReadLocalDefinitions : MonoBehaviour
                 if (startIndex != -1 && endIndex != -1)
                     translated = description.Substring(startIndex, length);
             }
+            return translated.Trim().Replace("   ", "\n\n").Replace("  ", "\n"); ;
+            */
+
+            string translated = null;
+            int startIndex = 0;
+            int endIndex = description.IndexOf(";;;");
+            int length = endIndex - startIndex;
+            if (startIndex != -1 && endIndex != -1)
+            translated = description.Substring(startIndex, length);
             return translated.Trim().Replace("   ", "\n\n").Replace("  ", "\n"); ;
         }
         catch
