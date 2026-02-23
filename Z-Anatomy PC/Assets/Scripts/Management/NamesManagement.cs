@@ -219,7 +219,7 @@ public class NamesManagement : MonoBehaviour
         return urlRegex.Replace(text, match =>
         {
             string url = match.Value;
-            return $"<link=\"{url}\"><color=#2986cc><u>{url}</u></color></link>";
+            return $"<link=\"{url}\"><color=#2986cc>{url}</color></link>";
         });
     }
 
