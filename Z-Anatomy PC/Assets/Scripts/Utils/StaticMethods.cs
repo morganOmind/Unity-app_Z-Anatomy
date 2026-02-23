@@ -7,6 +7,8 @@ using System.Linq;
 using System.Globalization;
 using System.IO;
 using System.Text.RegularExpressions;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public static class StaticMethods
 {
@@ -274,5 +276,28 @@ public static class StaticMethods
         }
 
         return components.ToArray();
+    }
+
+    /// <summary>
+    /// Is the pointer hovering over a game object with the given name
+    /// </summary>
+    /// <param name="name">Name of the game object hovering over</param>
+    /// <returns>Status</returns>
+    public static bool IsPointerOverGameObjectName(string name) {
+        PointerEventData pointer = new PointerEventData(EventSystem.current);
+        pointer.position = Mouse.current.position.value;
+
+        List<RaycastResult> raycastResults = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(pointer, raycastResults);
+
+        if (raycastResults.Count > 0) {
+            foreach (var go in raycastResults) {
+                if (go.gameObject.name == name) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 }

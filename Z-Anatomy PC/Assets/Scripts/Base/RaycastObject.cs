@@ -60,7 +60,7 @@ public class RaycastObject : MonoBehaviour
     void Update()
     {
         // If click on UI
-        if (raycastBlocked || EventSystem.current.IsPointerOverGameObject())
+        if (raycastBlocked || (EventSystem.current.IsPointerOverGameObject() && !StaticMethods.IsPointerOverGameObjectName("GizmoDrag")))
         {
             highlightText.text = "";
             return;
@@ -210,10 +210,12 @@ public class RaycastObject : MonoBehaviour
 
             else if (LayerMask.LayerToName(objectSelected.layer).Equals("Cube"))
             {
-                GizmoFace faceClicked = GizmoBehaviour.instance.GetHitFace(hit);
+                //GizmoFace faceClicked = GizmoBehaviour.instance.GetHitFace(hit);
+                GizmoFace faceClicked = objectSelected.GetComponent<CubeText>().cubeFace;
                 GizmoBehaviour.instance.SetCameraRotation(faceClicked);
                 if (ActionControl.crossSectionsEnabled)
                     CrossPlanesGizmo.Instance.SetPlane(faceClicked);
+                
             }
             else if(!ActionControl.creatingLocalNote)
             {
@@ -224,6 +226,7 @@ public class RaycastObject : MonoBehaviour
 
                 if (labelScript != null)
                     labelScript.Click();
+                
             }
             objectSelected = null;
         }
@@ -238,21 +241,43 @@ public class RaycastObject : MonoBehaviour
         var worldMousePos = cam.ScreenToWorldPoint(mousePos);
 
         Ray centarRay = cam.ScreenPointToRay(mousePos);
-        bool raycastHit = Physics.Raycast(centarRay, out hit, 100, finalmask);
+        //bool raycastHit = Physics.Raycast(centarRay, out hit, 100, finalmask);
 
-        bool sphereHit = false;
+        RaycastHit[] hits = null;
+        hits = Physics.RaycastAll(centarRay, 100, finalmask);
 
-        if(!raycastHit)
+        //bool sphereHit = false;
+
+        if(hits.Length == 0)
         {
             Vector3 A = worldMousePos - cam.transform.forward * 10f;
             Vector3 B = worldMousePos + cam.transform.forward * 10f;
             Vector3 direction = B - A;
-            sphereHit = Physics.SphereCast(A, clickRadius / 14 * cam.orthographicSize, direction, out hit, 30, finalmask);
+            //sphereHit = Physics.SphereCast(A, clickRadius / 14 * cam.orthographicSize, direction, out hit, 30, finalmask);
+            hits = Physics.SphereCastAll(A, clickRadius / 14 * cam.orthographicSize, direction, 30, finalmask);
         }
 
-        if (raycastHit || sphereHit)
+        if (hits.Length > 0)
         {
-            objectSelected = hit.transform.gameObject;
+            if(hits.Length > 1) {
+                bool hitGizmo = false;
+                foreach(RaycastHit hit in hits) {
+                    if (hitGizmo) {
+                        break;
+                    }
+                    if(hit.transform.gameObject.layer == LayerMask.NameToLayer("Cube")) {
+                        objectSelected = hit.transform.gameObject;
+                        hitGizmo = true;
+                    }
+                }
+                if (!hitGizmo) {
+                    System.Array.Sort(hits, (x, y) => x.distance.CompareTo(y.distance));
+                    objectSelected = hits[0].transform.gameObject;
+                }
+            }
+            else {
+                objectSelected = hits[0].transform.gameObject;
+            }
 
             bodyPartScript = objectSelected.GetComponent<TangibleBodyPart>();
 
@@ -301,26 +326,39 @@ public class RaycastObject : MonoBehaviour
 
             if(hits.Length > 0)
             {
+                bool hitGizmo = false;
+                if (hits.Length > 1) {
+                    foreach (RaycastHit hit in hits) {
+                        if (hitGizmo) {
+                            break;
+                        }
+                        if (hit.transform.gameObject.layer == LayerMask.NameToLayer("Cube")) {
+                            objectSelected = hit.transform.gameObject;
+                            hitGizmo = true;
+                        }
+                    }
+                }
 
-                objectSelected = GetFirstAfterPlane(hits, hit).gameObject;
-                bodyPartScript = objectSelected.GetComponent<TangibleBodyPart>();
+                if (!hitGizmo) {
+                    objectSelected = GetFirstAfterPlane(hits, hit).gameObject;
+                    bodyPartScript = objectSelected.GetComponent<TangibleBodyPart>();
 
 
-                if (prevbodyPartScript != null && bodyPartScript != prevbodyPartScript)
-                    prevbodyPartScript.MouseExit();
+                    if (prevbodyPartScript != null && bodyPartScript != prevbodyPartScript)
+                        prevbodyPartScript.MouseExit();
 
-                prevbodyPartScript = bodyPartScript;
+                    prevbodyPartScript = bodyPartScript;
 
-                if (bodyPartScript != null)
-                {
-                    bodyPartScript.MouseEnter();
-                    if (ActionControl.nameOnMouse )//|| Shortcuts.Instance.IsShortcutPressed(Shortcuts.Instance.showMouseName))
-                        highlightText.text = bodyPartScript.nameScript.name;
+                    if (bodyPartScript != null) {
+                        bodyPartScript.MouseEnter();
+                        if (ActionControl.nameOnMouse)//|| Shortcuts.Instance.IsShortcutPressed(Shortcuts.Instance.showMouseName))
+                            highlightText.text = bodyPartScript.nameScript.name;
+                        else
+                            highlightText.text = "";
+                    }
                     else
                         highlightText.text = "";
                 }
-                else
-                    highlightText.text = "";
             }
             else
             {
