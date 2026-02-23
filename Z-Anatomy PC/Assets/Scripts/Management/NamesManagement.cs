@@ -194,6 +194,8 @@ public class NamesManagement : MonoBehaviour
         {
             emptySelecPanel.SetActive(false);
 
+            description = MakeLinksClickable(description);
+
             RebuildDescriptionPanel(description: description, name: name);
 
             StartCoroutine(Scroll());
@@ -206,6 +208,19 @@ public class NamesManagement : MonoBehaviour
 
             }
         }
+    }
+
+    private string MakeLinksClickable(string text) {
+        // capture all http and https links with regular expression
+        System.Text.RegularExpressions.Regex urlRegex =
+            new System.Text.RegularExpressions.Regex(@"(https?:\/\/[^\s]+)");
+
+        // replace found links with TMP <link>
+        return urlRegex.Replace(text, match =>
+        {
+            string url = match.Value;
+            return $"<link=\"{url}\"><color=#2986cc><u>{url}</u></color></link>";
+        });
     }
 
     public void RebuildDescriptionPanel(bool waitExpand = false, float time = 0.2f, string name = "", string description = "")
