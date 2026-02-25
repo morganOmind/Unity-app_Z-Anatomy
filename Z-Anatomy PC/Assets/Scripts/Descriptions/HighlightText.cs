@@ -50,7 +50,7 @@ public class HighlightText : MonoBehaviour
         HashSet<string> words = toLowerDesc.RemovePunctuations().Split().ToHashSet();
         HashSet<string> matches = new HashSet<string>();
 
-        UnityEngine.Debug.Log("Count: " + bodypartsHyperlinks.Count);
+        //UnityEngine.Debug.Log("Count: " + bodypartsHyperlinks.Count);
 
         //Find matches
         foreach (string hyperlink in bodypartsHyperlinks)
@@ -150,7 +150,7 @@ public class HighlightText : MonoBehaviour
         }
 
         stopwatch.Stop();
-        UnityEngine.Debug.Log("Highlight: " + (float)(stopwatch.ElapsedMilliseconds / 1000f));
+        //UnityEngine.Debug.Log("Highlight: " + (float)(stopwatch.ElapsedMilliseconds / 1000f));
 
 
         // stopwatch.Restart();
