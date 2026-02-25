@@ -97,5 +97,21 @@
       };
       document.body.appendChild(script);
     </script>
+    //custom addon
+    <script>
+    document.addEventListener('keydown', function(e) {
+        // Prevent Ctrl/Cmd + key combinations
+        if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+            return false;
+        }
+        
+        // Prevent specific keys
+        if (e.key === 'F1' || e.keyCode === 112 || e.key === 'F2' || e.keyCode === 113) {
+            e.preventDefault();
+            return false;
+        }
+    });
+    </script>
   </body>
 </html>
