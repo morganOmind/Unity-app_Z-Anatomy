@@ -401,8 +401,7 @@ public class Shortcuts : MonoBehaviour
     {
         if (UserIsWriting())
             return;
-        GUIUtility.systemCopyBuffer = GUIUtility.systemCopyBuffer.RemoveRichTextTags();
-        PopUpManagement.Instance.Show("Text copied!");
+        StaticMethods.CopyToClipboard(GUIUtility.systemCopyBuffer);
     }
 
     private void ClearPlayerPrefs(InputAction.CallbackContext context)

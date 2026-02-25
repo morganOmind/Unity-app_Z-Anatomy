@@ -300,4 +300,14 @@ public static class StaticMethods
 
         return false;
     }
+
+    public static void CopyToClipboard(string content) {
+        content = content.RemoveRichTextTags();
+#if UNITY_WEBGL
+        WebGLCopyAndPaste.WebGLCopyAndPasteAPI.CopyToClipboard(content);
+#else
+        GUIUtility.systemCopyBuffer = content;
+#endif
+        PopUpManagement.Instance.Show("Text copied!");
+    }
 }
