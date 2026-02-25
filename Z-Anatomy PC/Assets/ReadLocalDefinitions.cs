@@ -29,12 +29,12 @@ public class ReadLocalDefinitions : MonoBehaviour
     public string GetDescription(string fileName, ref bool check)
     {
 
-        if (Settings.language == SystemLanguage.French && FRdescDictionary.ContainsKey(fileName))
+        /*if (Settings.language == SystemLanguage.French && FRdescDictionary.ContainsKey(fileName))
         {
             check = true;
             return GetTranslatedDescription(FRdescDictionary[fileName].text, Settings.language);
         }
-        else if (descDictionary.ContainsKey(fileName))
+        else */if (descDictionary.ContainsKey(fileName))
         {
             check = Settings.language == SystemLanguage.English;
             return GetTranslatedDescription(descDictionary[fileName].text, Settings.language);

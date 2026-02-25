@@ -42,14 +42,22 @@ public class NameAndDescription : MonoBehaviour
     {
         try
         {
-            if (allNames == null || allNames.Length == 0)
-            {
+            gameObject.name = GetTranslatedName(Settings.language);
+        }
+        catch
+        {
+            Debug.LogError("Error in setting name: " + name);
+        }
+    }
+
+    public string GetTranslatedName(SystemLanguage language) {
+        try {
+            if (allNames == null || allNames.Length == 0) {
                 gameObject.name += leftRight;
-                return;
+                return "";
             }
             string newName = gameObject.name;
-            switch (Settings.language)
-            {
+            switch (language) {
                 case SystemLanguage.English:
                     newName = allNames[0];
                     break;
@@ -69,12 +77,12 @@ public class NameAndDescription : MonoBehaviour
                 default:
                     newName = allNames[0];
                     break;
-            }          
-            gameObject.name = (newName[0].ToString().ToUpper() + newName.Substring(1)) + leftRight;
+            }
+            return (newName[0].ToString().ToUpper() + newName.Substring(1)) + leftRight;
         }
-        catch
-        {
-            Debug.LogError("Error in name: " + name);
+        catch {
+            Debug.LogError("Error in getting name: " + name);
+            return "";
         }
     }
 
@@ -94,9 +102,9 @@ public class NameAndDescription : MonoBehaviour
     /// Checks if the game object has synonyms for the current language setting.
     /// </summary>
     /// <returns>A boolean indicating whether the game object has synonyms for the current language setting.</returns>
-    public bool HasSynonims()
+    public bool HasSynonims(bool forceEn = false)
     {
-        return allSynonyms != null && allSynonyms[Settings.languageIndex] != null;
+        return allSynonyms != null && allSynonyms[forceEn ? 0 : Settings.languageIndex] != null;
     }
 
 }

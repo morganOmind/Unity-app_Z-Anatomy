@@ -179,10 +179,10 @@ public class NamesManagement : MonoBehaviour
         //warningMessage.SetActive(!isChecked);
         warningMessage.SetActive(false);
 
-        if (isChecked)
+        //if (isChecked)
             bodyPartInputField.textComponent.margin = new Vector4(10, 15, 15, 10);
-        else
-            bodyPartInputField.textComponent.margin = new Vector4(10, 50, 15, 10);
+        /*else
+            bodyPartInputField.textComponent.margin = new Vector4(10, 50, 15, 10);*/
 
         emptyInternetPanel.SetActive(false);
         emptyDescPanel.SetActive(description == null);
@@ -261,6 +261,18 @@ public class NamesManagement : MonoBehaviour
 
     }
 
+    Transform FindNameScript(string search) {
+        Transform t = null;
+        NameAndDescription ns = GlobalVariables.Instance.allNameScripts.Find(delegate (NameAndDescription namescr)
+        {
+            return namescr.GetTranslatedName(SystemLanguage.English).ToLower() == search && !namescr.gameObject.CompareTag("Insertions");
+        });
+        if (ns != null) {
+            t = ns.transform;
+        }
+        return t;
+    }
+
     public void TextClicked(string clickedObject, bool leftClick)
     {
         //If it is a link
@@ -270,15 +282,32 @@ public class NamesManagement : MonoBehaviour
         }
         else
         {
-            Transform clickedGO = GlobalVariables.Instance.globalParent.transform.RecursiveFindChild(new StringBuilder().Append(clickedObject.ToLower()).Append(" (R)").ToString());       
+            /*Transform clickedGO = GlobalVariables.Instance.globalParent.transform.RecursiveFindChild(new StringBuilder().Append(clickedObject.ToLower()).Append(" (R)").ToString());       
             if (clickedGO == null)
                  clickedGO = GlobalVariables.Instance.globalParent.transform.RecursiveFindChild(clickedObject.ToLower());
             if(clickedGO == null)
             {
-                var go = GlobalVariables.Instance.allNameScripts.Find(it => it.HasSynonims() && it.allSynonyms[Settings.languageIndex].Any(it2 => it2.ToLower().Equals(clickedObject.ToLower())));
+                var go = GlobalVariables.Instance.allNameScripts.Find(it => it.HasSynonims() 
+                                                                            && it.allSynonyms[Settings.languageIndex].Any(it2 => it2.ToLower().Equals(clickedObject.ToLower()))
+                                                                            && !it.gameObject.CompareTag("Insertions"));
                 if(go != null)
                     clickedGO = go.transform;
+            }*/
+
+            Transform clickedGO = FindNameScript(new StringBuilder().Append(clickedObject.ToLower()).Append(" (r)").ToString());
+
+            if(clickedGO == null) {
+                clickedGO = FindNameScript(clickedObject.ToLower());
             }
+
+            if (clickedGO == null) {
+                NameAndDescription ns = GlobalVariables.Instance.allNameScripts.Find(it => it.HasSynonims(true) 
+                                                                                            && it.allSynonyms[0].Any(it2 => it2.ToLower().Equals(clickedObject.ToLower())) 
+                                                                                            && !it.gameObject.CompareTag("Insertions"));
+                if (ns != null)
+                    clickedGO = ns.transform;
+            }
+
             if (clickedGO == null)
                 return;
 

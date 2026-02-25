@@ -21,12 +21,12 @@ public class HighlightText : MonoBehaviour
 
         foreach (var nameScript in GlobalVariables.Instance.allNameScripts)
         {
-            bodypartsHyperlinks.Add(nameScript.name.Replace("(R)", "").Replace("(L)", "").Trim().ToLower());
+            string enName = (nameScript.allNames == null || nameScript.allNames.Length == 0) ? nameScript.originalName : nameScript.allNames[0];
+            bodypartsHyperlinks.Add(enName.Replace("(R)", "").Replace("(L)", "").Trim().ToLower());
 
-            if (nameScript.HasSynonims())
+            if (nameScript.HasSynonims(true))
             {
-                foreach (var synonym in nameScript.allSynonyms[Settings.languageIndex])
-                {
+                foreach (var synonym in nameScript.allSynonyms[0]) {
                     bodypartsHyperlinks.Add(synonym.ToLower());
                 }
             }
