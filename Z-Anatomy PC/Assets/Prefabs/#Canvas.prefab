@@ -550,7 +550,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Show UI help
+  m_text: Interface utilisateur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -1482,13 +1482,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The <color=#9CCDDC><u><b><link=\"https://ta2viewer.openanatomy.org/\">Terminologia
-    Anatomica (TA2-2019)</link></b></u></color> is the official list of anatomical
-    structures of the human body.\r\n\r\nIt contains several clickable options:\r\n\r\n<color=#9CCDDC>1</color>       
-    <indent=7%>The buttons to develop/collapse each section\r</indent>\n\n<color=#9CCDDC>2</color>      
-    <indent=7%>The buttons to show or hide each structure or group\r</indent>\n\r\n<color=#9CCDDC>3</color>      
-    <indent=7%>The sliders to activate layered structures\r</indent>\n\r\n<color=#9CCDDC>4</color>       
-    <indent=7%>The names that allow to select the element</indent>"
+  m_text: "La  <color=#9CCDDC><u><b><link=\"https://ta2viewer.openanatomy.org/\">Terminologia
+    Anatomica (TA2-2019)</link></b></u></color> est la liste officielle des structures
+    anatomiques du corps humain.\n\r\nIl contient plusieurs options cliquables :\n\r\n<color=#9CCDDC>1</color>       
+    <indent=7%>Les boutons pour d\xE9velopper/r\xE9duire chaque section</indent>\n\r\n<color=#9CCDDC>2</color>      
+    <indent=7%>Les boutons pour afficher ou masquer chaque structure ou groupe</indent>\n\r\n<color=#9CCDDC>3</color>      
+    <indent=7%>Les curseurs pour activer les structures en couches</indent>\n\r\n<color=#9CCDDC>4</color>      
+    <indent=7%>Les noms qui permettent de s\xE9lectionner l'\xE9l\xE9ment</indent>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -2313,7 +2313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Windows
+  m_text: "Fen\xEAtres"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -5195,7 +5195,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Center
+  m_text: Centrer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -5875,7 +5875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: 450.8766}
+  m_AnchoredPosition: {x: 8, y: 450.8764}
   m_SizeDelta: {x: -16, y: 373.89}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &4795383936577412620
@@ -5945,7 +5945,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Help
+  m_text: Aide
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -6097,7 +6097,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: General
+  m_text: "G\xE9n\xE9ral"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -6553,8 +6553,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Z-Anatomy {new_version} is now available. Your current version is {old_version}.
-    Would you like to dowload it now?
+  m_text: "Z-Anatomy {new_version} est maintenant disponible. Votre version actuelle
+    est {old_version}. Souhaitez-vous le t\xE9l\xE9charger maintenant\_?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -7460,7 +7460,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 130.39526, y: -13.355164}
+  m_AnchoredPosition: {x: 130.39526, y: -13.355225}
   m_SizeDelta: {x: 240.7904, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4795383936608023689
@@ -7491,7 +7491,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Language
+  m_text: Langue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -8102,7 +8102,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Help
+  m_text: Aide
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -8865,7 +8865,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Multiple selection
+  m_text: "S\xE9lection multiple"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -11085,6 +11085,7 @@ GameObject:
   - component: {fileID: 4795383936674246004}
   - component: {fileID: 4795383936674246011}
   - component: {fileID: 4795383936674246010}
+  - component: {fileID: 9133821804863518484}
   m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -11140,7 +11141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OR
+  m_text: OU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -11174,7 +11175,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -11209,6 +11210,22 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &9133821804863518484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4795383936674246007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a3dc6b6c5abd524a82f557b9edc63f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultText: OR
+  spanishText: O
+  portugueseText: OU
+  frenchText: OU
 --- !u!1 &4795383936674311919
 GameObject:
   m_ObjectHideFlags: 0
@@ -12474,7 +12491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 11.549982, y: -8.52594}
+  m_AnchoredPosition: {x: 11.549982, y: -8.525879}
   m_SizeDelta: {x: -23.100037, y: 17.051903}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4795383936699667951
@@ -12505,8 +12522,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You can ask questions, offer suggestions and report errors in the forum
-    on our website:'
+  m_text: "Vous pouvez poser des questions, proposer des suggestions et signaler
+    des erreurs dans le forum de notre site web\_:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -12662,7 +12679,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hierarchy
+  m_text: "Hi\xE9rarchie"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -12949,18 +12966,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The mouse allows you to select and navigate in the 3D space:
-
-
-
-
-
-
-
-
-    A
-    left click <u>held and dragged</u> from these <color=#9CCDDC>icons</color> also
-    allows you to navigate in the view.'
+  m_text: "La souris permet de s\xE9lectionner et de naviguer dans l'espace 3D:\n\n\n\n\n\n\nUn
+    clic gauche <u>maintenu et gliss\xE9</u> depuis ces <color=#9CCDDC>ic\xF4nes</color>
+    permet de aussi de naviguer dans la vue."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -13231,7 +13239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Automatic zoom
+  m_text: Zoom automatique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -14982,7 +14990,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotate & options
+  m_text: Tourner et options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -15671,7 +15679,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: User interface
+  m_text: Interface utilisateur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -17044,7 +17052,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: License
+  m_text: Licence
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -18584,7 +18592,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Veins
+  m_text: Veines
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -20180,7 +20188,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Visibility
+  m_text: "Visibilit\xE9"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -21348,9 +21356,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This window gathers all the explanations that you need to use the atlas:\r\n\r\n    
-    - A complete reminder of the User Interface (U)\r\n\r\n     - How to use the
-    mouse\r\n\r\n     - All the shortcuts"
+  m_text: "Cette fen\xEAtre rassemble toutes les explications n\xE9cessaires pour
+    utiliser l'atlas:\n\r\n     - Un rappel complet de l'Interface Utilisateur (U)\r\n\r\n    
+    - Comment utiliser la souris\r\n\r\n     - Tous les raccourcis clavier"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -22448,7 +22456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -52.3}
+  m_AnchoredPosition: {x: 0, y: -52.30005}
   m_SizeDelta: {x: 120, y: 22.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4795383936818251240
@@ -25225,7 +25233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Anti-Aliasing (SMAA)
+  m_text: "Anti-cr\xE9nelage (SMAA)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -25377,7 +25385,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Arteries
+  m_text: "Art\xE8res"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -25848,7 +25856,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reset
+  m_text: "R\xE9initialiser"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -26813,12 +26821,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The words in color are hyperlinks.
-
-
-
-    You can click on them to show
-    and select the corresponding anatomical structure.'
+  m_text: "Les mots en couleur sont des hypertextes.\r\n\r\nTu peux cliquer dessus
+    pour afficher et s\xE9lectionner la structure anatomique correspondante."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -28390,7 +28394,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Downloading new translation file.
+  m_text: "T\xE9l\xE9chargement du nouveau fichier de traduction."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -28918,7 +28922,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Select all
+  m_text: "Tout s\xE9lectionner"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -30590,7 +30594,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Visibility
+  m_text: "Visibilit\xE9"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -32258,7 +32262,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bones
+  m_text: Os
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -35843,7 +35847,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Redo
+  m_text: Refaire
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -36177,9 +36181,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This window gathers all the explanations that you need to use the atlas:\r\n\r\n    
-    - A complete reminder of the User Interface (U)\r\n\r\n     - How to use the
-    mouse\r\n\r\n     - All the shortcuts"
+  m_text: "Cette fen\xEAtre rassemble toutes les explications n\xE9cessaires pour
+    utiliser l'atlas:\n\r\n     - Un rappel complet de l'Interface Utilisateur (U)\r\n\r\n    
+    - Comment utiliser la souris\r\n\r\n     - Tous les raccourcis clavier"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -37747,7 +37751,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: About
+  m_text: A propos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -37900,7 +37904,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Este texto ha sido traducido autom\xE1ticamente y podr\xEDa contener errores."
+  m_text: "Ce texte a \xE9t\xE9 traduit automatiquement et peut contenir des erreurs."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -38980,7 +38984,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Help (F1)
+  m_text: Aide (F1)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -40476,7 +40480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shortcuts
+  m_text: Raccourcis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -41541,8 +41545,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This gizmo is a 3D compass.\r\n\r\nIt is interactive:\r\n\r\n     -Click
-    on the dots to set an ortogonal view.\n\r\n     -Drag it to orbit."
+  m_text: "Ce gizmo est une boussole 3D.\r\n\r\nElle est interactive:\r\n\r\n    
+    -Cliquer sur les points pour passer en vue orthogonale.\n\r\n     -Cliquer et
+    Glisser pour faire tourner la vue."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -41946,7 +41951,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Description (D)
+  m_text: "D\xE9finition (D)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -42425,7 +42430,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Download
+  m_text: "T\xE9l\xE9charger"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -42914,7 +42919,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fasciae
+  m_text: Fascias
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -44076,13 +44081,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The <color=#9CCDDC><u><b><link=\"https://ta2viewer.openanatomy.org/\">Terminologia
-    Anatomica (TA2-2019)</link></b></u></color> is the official list of anatomical
-    structures of the human body.\r\n\r\nIt contains several clickable options:\r\n\r\n<color=#9CCDDC>1</color>       
-    <indent=7%>The buttons to develop/collapse each section\r</indent>\n\n<color=#9CCDDC>2</color>      
-    <indent=7%>The buttons to show or hide each structure or group\r</indent>\n\r\n<color=#9CCDDC>3</color>      
-    <indent=7%>The sliders to activate layered structures\r</indent>\n\r\n<color=#9CCDDC>4</color>       
-    <indent=7%>The names that allow to select the element</indent>"
+  m_text: "La  <color=#9CCDDC><u><b><link=\"https://ta2viewer.openanatomy.org/\">Terminologia
+    Anatomica (TA2-2019)</link></b></u></color> est la liste officielle des structures
+    anatomiques du corps humain.\n\r\nIl contient plusieurs options cliquables :\n\r\n<color=#9CCDDC>1</color>       
+    <indent=7%>Les boutons pour d\xE9velopper/r\xE9duire chaque section</indent>\n\r\n<color=#9CCDDC>2</color>      
+    <indent=7%>Les boutons pour afficher ou masquer chaque structure ou groupe</indent>\n\r\n<color=#9CCDDC>3</color>      
+    <indent=7%>Les curseurs pour activer les structures en couches</indent>\n\r\n<color=#9CCDDC>4</color>      
+    <indent=7%>Les noms qui permettent de s\xE9lectionner l'\xE9l\xE9ment</indent>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -44902,7 +44907,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4795383937114864171}
   m_HandleRect: {fileID: 4795383937114864165}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -45013,7 +45018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Help (F1)
+  m_text: Aide (F1)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -45569,11 +45574,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The words in color are hyperlinks.
-
-
-    You can click on them to show
-    and select the corresponding anatomical structure.'
+  m_text: "Les mots en couleur sont des hypertextes.\r\n\r\nTu peux cliquer dessus
+    pour afficher et s\xE9lectionner la structure anatomique correspondante."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -46847,7 +46849,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Selection
+  m_text: "S\xE9lection"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -46999,7 +47001,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A new version on Z-Anatomy is available!
+  m_text: Une nouvelle version sur Z-Anatomy est disponible!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -47673,7 +47675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Select a body part to see its definition
+  m_text: "S\xE9lectionnez une partie du corps pour voir sa d\xE9finition"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -48314,7 +48316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Skin
+  m_text: Peau
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -48791,7 +48793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: History Of Actions
+  m_text: Historique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -50480,7 +50482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Center
+  m_text: Centrer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -51491,7 +51493,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: History Of Actions
+  m_text: Historique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -51734,7 +51736,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mouse controls
+  m_text: "Contr\xF4les de la souris"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -52038,7 +52040,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shadows
+  m_text: Ombres
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -52576,28 +52578,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Looks like this is your first time.
-
-    We are delighted to have you
-    with us.
-
-
-    This atlas is an independent open source project, based on ''<color=#9CCDDC><u><b><link="https://ta2viewer.openanatomy.org/">Terminologia
-    Anatomica</link></b></u></color>'', models from ''<color=#9CCDDC><u><b><link="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html">BodyParts3D</link></b></u></color>'',
-    and <color=#9CCDDC><u><b><link="https://www.wikipedia.org/">Wikipedia</link></b></u></color>.
-
-
-    Do
-    not hesitate to express your opinion, suggest improvements, report errors or
-    bugs or contribute to its development.
-
-
-    You will find the necessary tools
-    in the <color=#9CCDDC><u><b><link="https://www.z-anatomy.com/forum">forum</link></b></u></color>.
-
-
-    Let''s
-    take a look at how it works.'
+  m_text: "On dirait que c'est ta premi\xE8re utilisation.\nNous sommes ravis de
+    t'avoir avec nous.\n\r\nCet atlas est un projet open source ind\xE9pendant, bas\xE9
+    sur la '<color=#9CCDDC><u><b><link=\"https://ta2viewer.openanatomy.org/\">Terminologia
+    Anatomica</link></b></u></color>', les mod\xE8les de '<color=#9CCDDC><u><b><link=\"https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html\">BodyParts3D</link></b></u></color>',
+    et <color=#9CCDDC><u><b><link=\"https://www.wikipedia.org/\">Wikipedia</link></b></u></color>.\r\n\r\nN'h\xE9site
+    pas \xE0 exprimer ton avis, \xE0 sugg\xE9rer des am\xE9liorations, \xE0 signaler
+    des erreurs ou des bugs ou encore \xE0 contribuer \xE0 son d\xE9veloppement.\n\r\nLes
+    outils n\xE9cessaires se trouvent sur le <color=#9CCDDC><u><b><link=\"https://www.z-anatomy.com/forum\">forum</link></b></u></color>.\n\nVoyons
+    comment l'utiliser."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -53011,7 +53000,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Move
+  m_text: "D\xE9placer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -54326,7 +54315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Panels
+  m_text: Panneaux
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -54704,7 +54693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Viscera
+  m_text: "Visc\xE8res"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -56266,18 +56255,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The mouse allows you to select and navigate in the 3D space:
-
-
-
-
-
-
-
-
-    A
-    left click <u>held and dragged</u> from these <color=#9CCDDC>icons</color> also
-    allows you to navigate in the view.'
+  m_text: "La souris permet de s\xE9lectionner et de naviguer dans l'espace 3D:\n\n\n\n\n\n\nUn
+    clic gauche <u>maintenu et gliss\xE9</u> depuis ces <color=#9CCDDC>ic\xF4nes</color>
+    permet de aussi de naviguer dans la vue."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -59252,7 +59232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Isolate and show labels
+  m_text: Isoler et afficher les labels
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -59769,7 +59749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nerves
+  m_text: Nerfs
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -60938,7 +60918,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Move
+  m_text: "D\xE9placer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -62069,7 +62049,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Oops! '
+  m_text: Oops!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -65984,8 +65964,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This gizmo is a 3D compass.\r\n\r\nIt is interactive:\r\n\r\n     -Click
-    on the dots to set an ortogonal view.\n\r\n     -Drag it to orbit."
+  m_text: "Ce gizmo est une boussole 3D.\r\n\r\nElle est interactive:\r\n\r\n    
+    -Cliquer sur les points pour passer en vue orthogonale.\n\r\n     -Cliquer et
+    Glisser pour faire tourner la vue."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -66450,22 +66431,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'That''s it, you''re ready to go!
-
-
-    This application collects basic
-    data to create statistics and help us improve the user experience.
-
-
-
-    None
-    of this data has a commercial purpose, and will never be shared with third parties.
-
-
-
-    By
-    using the application, you consent to Z-Anatomy collecting this data and using
-    it for legitimate interest.'
+  m_text: "\xC7a y est, tu es pr\xEAt(e) !\r\n\r\nCette application collecte des
+    donn\xE9es de base pour cr\xE9er des statistiques et nous aider \xE0 am\xE9liorer
+    l'exp\xE9rience utilisateur.\r\n\r\nAucune de ces donn\xE9es n'a de but commercial,
+    et ne sera jamais partag\xE9e avec des tiers.\r\n\r\nEn utilisant l'application,
+    tu acceptes que Z-Anatomy collecte ces donn\xE9es et les utilise dans un int\xE9r\xEAt
+    l\xE9gitime."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -68991,7 +68962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Show name on mouse
+  m_text: Afficher le nom sous le curseur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -69920,7 +69891,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Isolate
+  m_text: Isoler
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -70853,7 +70824,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Welcome to Z-Anatomy! <voffset=.34em><size=50>  <sprite=0>
+  m_text: Bienvenu(e) dans Z-Anatomy ! <voffset=.34em><size=50>  <sprite=0>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -71586,10 +71557,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "These tabs allow you to expand or hide the side windows.\r\n\r\nSo you
-    can choose to display or not:\r\n\r\n      - The Lexicon (L)\r\n\r\n      - The
-    Definition (D)\r\n\r\n      - The help (F1)\r\n\r\n      - Options (F2)\r\n\r\nThe
-    search bar allows you to quickly find an anatomical structure (S)."
+  m_text: "Ces onglets permettent de d\xE9velopper ou de cacher les fen\xEAtres lat\xE9rales.\r\n\r\nTu
+    peux donc choisir d'afficher ou non:\r\n\r\n     - Le Lexique (L)\r\n\r\n    
+    - La d\xE9finition (D)\r\n\r\n     - L'aide (F1)\r\n\r\n     - Les options (F2)\r\n\r\nLa
+    barre de recherche permet de trouver rapidement une structure anatomique (S)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -72427,7 +72398,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Key colors
+  m_text: Code couleur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -72720,6 +72691,7 @@ GameObject:
   - component: {fileID: 4795383937613814942}
   - component: {fileID: 4795383937613814941}
   - component: {fileID: 4795383937613814940}
+  - component: {fileID: 7645146244397526400}
   m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -72775,7 +72747,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OR
+  m_text: OU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -72809,7 +72781,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -72844,6 +72816,22 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7645146244397526400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4795383937613814937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a3dc6b6c5abd524a82f557b9edc63f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultText: OR
+  spanishText: O
+  portugueseText: OU
+  frenchText: OU
 --- !u!1 &4795383937615230920
 GameObject:
   m_ObjectHideFlags: 0
@@ -73115,7 +73103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotation velocity
+  m_text: Vitesse de rotation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -76207,7 +76195,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Zoom to mouse position
+  m_text: "Zoom \xE0 la position de la souris"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -77384,7 +77372,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Invert selection
+  m_text: "Inverser la s\xE9lection"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -81717,7 +81705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Show tutorial
+  m_text: Afficher le tuto
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -82634,7 +82622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ignore
+  m_text: Ignorer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -83065,7 +83053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Settings
+  m_text: "R\xE9glages"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -84278,7 +84266,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Move
+  m_text: "D\xE9placer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -85280,8 +85268,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: These buttons allow you to cancel one or several actions (Ctrl + Z) or
-    execute them again (Ctrl + Y).
+  m_text: "Ces boutons permettent d'annuler une ou plusieurs actions (Ctrl + Z) ou
+    de les ex\xE9cuter \xE0 nouveau (Ctrl + Y)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -85520,6 +85508,7 @@ GameObject:
   - component: {fileID: 4795383937846693551}
   - component: {fileID: 4795383937846693586}
   - component: {fileID: 4795383937846693549}
+  - component: {fileID: 2167984317630545988}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -85575,7 +85564,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OR
+  m_text: OU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -85609,7 +85598,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -85644,6 +85633,22 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &2167984317630545988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4795383937846693550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a3dc6b6c5abd524a82f557b9edc63f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultText: OR
+  spanishText: O
+  portugueseText: OU
+  frenchText: OU
 --- !u!1 &4795383937846817079
 GameObject:
   m_ObjectHideFlags: 0
@@ -86448,7 +86453,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hide selected
+  m_text: "Cacher s\xE9lection"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -86676,7 +86681,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cross sections
+  m_text: Sections transversales
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -86760,7 +86765,7 @@ MonoBehaviour:
   defaultText: Cross sections
   spanishText: Secciones transversales
   portugueseText: Cruzamentos
-  frenchText: Des sections transversales
+  frenchText: Sections transversales
 --- !u!1 &4795383937873647393
 GameObject:
   m_ObjectHideFlags: 0
@@ -87019,7 +87024,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Change selection tool
+  m_text: "Changer l'outil de s\xE9lection"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -88173,7 +88178,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Undo
+  m_text: Annuler
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -90418,7 +90423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Select
+  m_text: "S\xE9lectionner"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -93404,7 +93409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tools
+  m_text: Outils
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -94328,7 +94333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lexicon (L)
+  m_text: Lexique (L)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -95197,7 +95202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Camera
+  m_text: "Cam\xE9ra"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -96867,7 +96872,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fullscreen
+  m_text: "Plein \xE9cran"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -97643,7 +97648,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Description (D)
+  m_text: "D\xE9finition (D)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -99288,7 +99293,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Developer:'
+  m_text: "D\xE9veloppeurs:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -99961,7 +99966,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "L\xEDmite de tasa de refresco"
+  m_text: "Limite de fr\xE9quence d'images"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -101052,7 +101057,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Partially isolate
+  m_text: Isoler partiellement
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -101204,7 +101209,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: References
+  m_text: "R\xE9f\xE9rences"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -101621,7 +101626,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lymphs
+  m_text: Lymphe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -102438,7 +102443,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tools
+  m_text: Outils
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -102686,6 +102691,7 @@ GameObject:
   - component: {fileID: 4795383938117241016}
   - component: {fileID: 4795383938117241023}
   - component: {fileID: 4795383938117241022}
+  - component: {fileID: 7828749126792040193}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -102741,7 +102747,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OR
+  m_text: OU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -102775,7 +102781,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -102810,6 +102816,22 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7828749126792040193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4795383938117241019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a3dc6b6c5abd524a82f557b9edc63f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultText: OR
+  spanishText: O
+  portugueseText: OU
+  frenchText: OU
 --- !u!1 &4795383938120296027
 GameObject:
   m_ObjectHideFlags: 0
@@ -103873,7 +103895,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotate & options
+  m_text: Tourner et options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -104855,7 +104877,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Open the forum
+  m_text: Ouvrir le forum
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -105311,7 +105333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enable plane
+  m_text: Activer/inverser le plan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -105392,10 +105414,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a3dc6b6c5abd524a82f557b9edc63f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultText: Enable plane
-  spanishText: Activar plano
-  portugueseText: "Ativar avi\xE3o"
-  frenchText: Activer le plan
+  defaultText: Enable/invert plane
+  spanishText: Activar/invertir plano
+  portugueseText: "Ativar/reverter avi\xE3o"
+  frenchText: Activer/inverser le plan
 --- !u!1 &4795383938157726015
 GameObject:
   m_ObjectHideFlags: 0
@@ -106013,7 +106035,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: General
+  m_text: "G\xE9n\xE9ral"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -106593,18 +106615,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This bar contains clickable elements:
-
-
-    <color=#9CCDDC>1</color>      
-    An arrow to climb in the hierarchy.
-
-
-    <color=#9CCDDC>2</color>      The upper
-    levels of the hierachy.
-
-
-    <color=#9CCDDC>3</color>      The chosen language.'
+  m_text: "Cette barre contient des \xE9l\xE9ments cliquables:\n\r\n<color=#9CCDDC>1</color>      
+    Une fl\xE8che pour monter dans la hi\xE9rarchie.\n\r\n<color=#9CCDDC>2</color>     
+    Les niveaux sup\xE9rieurs de la hi\xE9rarchie.\n\r\n<color=#9CCDDC>3</color>     
+    La langue choisie."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -107182,7 +107196,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lexicon
+  m_text: Lexique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -107461,7 +107475,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Anti-Aliasing (MSAA)
+  m_text: "Anti-cr\xE9nelage (MSAA)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -108204,7 +108218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Oops, there seems to be nothing around here...
+  m_text: Oups, il semble qu'il n'y ait rien par ici...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -108869,7 +108883,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reset
+  m_text: "R\xE9initialiser"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -108896,7 +108910,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17
+  m_fontSize: 14.4
   m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -109643,7 +109657,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '3D Modelling & Anatomy:'
+  m_text: "Mod\xE9lisation 3D & Anatomie\_:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -110849,7 +110863,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Screen / Graphics
+  m_text: "\xC9cran / Graphiques"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -111079,8 +111093,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: These buttons allow you to cancel one or several actions (Ctrl + Z) or
-    execute them again (Ctrl + Y).
+  m_text: "Ces boutons permettent d'annuler une ou plusieurs actions (Ctrl + Z) ou
+    de les ex\xE9cuter \xE0 nouveau (Ctrl + Y)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -112192,11 +112206,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Several selection tools are available.\r\n\r\nYou can switch the tool
-    with Tab.\r\n\r\nThe selection can then be 'hidden' (H), 'isolated' (I) or 'partially
-    isolated' (P).\r\n\r\n'Center' (C) frames the selection or the whole model.\r\n\r\nYou
-    can create 'Cross section' in each axis (X/Y/Z).\r\n\r\nYou can always recover
-    the inicial state with 'Reset' (R).\r"
+  m_text: "Plusieurs outils de s\xE9lection sont disponibles.\r\n\r\nTu peux changer
+    d'outil avec Tab.\r\n\r\nLa s\xE9lection peut alors \xEAtre 'cach\xE9e' (H),
+    'Isol\xE9e' (I) ou 'Partiellement isol\xE9e' (P).\r\n\r\n'Centrer' (C) encadre
+    la s\xE9lection ou l'ensemble du mod\xE8le.\r\n\r\nTu peux cr\xE9er une coupe
+    dans chacun des 3 axes (X/Y/Z).\r\n\r\nTu peux toujours r\xE9cup\xE9rer l'\xE9tat
+    initial avec 'Reset' (R)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -112937,7 +112952,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Search...
+  m_text: Chercher...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -113434,7 +113449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Select
+  m_text: "S\xE9lectionner"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -114677,7 +114692,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Zoom velocity
+  m_text: Vitesse de zoom
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -115070,11 +115085,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Several selection tools are available.\r\n\r\nYou can switch the tool
-    with Tab.\r\n\r\nThe selection can then be 'hidden' (H), 'isolated' (I) or 'partially
-    isolated' (P).\r\n\r\n'Center' (C) frames the selection or the whole model.\r\n\r\nYou
-    can create 'Cross section' in each axis (X/Y/Z).\r\n\r\nYou can always recover
-    the inicial state with 'Reset' (R).\r"
+  m_text: "Plusieurs outils de s\xE9lection sont disponibles.\r\n\r\nTu peux changer
+    d'outil avec Tab.\r\n\r\nLa s\xE9lection peut alors \xEAtre 'cach\xE9e' (H),
+    'Isol\xE9e' (I) ou 'Partiellement isol\xE9e' (P).\r\n\r\n'Centrer' (C) encadre
+    la s\xE9lection ou l'ensemble du mod\xE8le.\r\n\r\nTu peux cr\xE9er une coupe
+    dans chacun des 3 axes (X/Y/Z).\r\n\r\nTu peux toujours r\xE9cup\xE9rer l'\xE9tat
+    initial avec 'Reset' (R)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -115539,18 +115555,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This bar contains clickable elements:
-
-
-    <color=#9CCDDC>1</color>      
-    An arrow to climb in the hierarchy.
-
-
-    <color=#9CCDDC>2</color>      The upper
-    levels of the hierachy.
-
-
-    <color=#9CCDDC>3</color>      The chosen language.'
+  m_text: "Cette barre contient des \xE9l\xE9ments cliquables:\n\r\n<color=#9CCDDC>1</color>      
+    Une fl\xE8che pour monter dans la hi\xE9rarchie.\n\r\n<color=#9CCDDC>2</color>     
+    Les niveaux sup\xE9rieurs de la hi\xE9rarchie.\n\r\n<color=#9CCDDC>3</color>     
+    La langue choisie."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -116373,7 +116381,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotate & options
+  m_text: Tourner et options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -116839,7 +116847,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ambient Occlusion
+  m_text: Occlusion ambiante
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -117636,7 +117644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Select
+  m_text: "S\xE9lectionner"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -118208,7 +118216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Search
+  m_text: Chercher
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -119763,7 +119771,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Limit vertical rotation
+  m_text: Limiter la rotation verticale
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -121065,7 +121073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lexicon (L)
+  m_text: Lexique (L)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -121459,7 +121467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Selection
+  m_text: "S\xE9lection"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -122190,7 +122198,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Data and Privacy
+  m_text: "Don\xE9es et confidentialit\xE9"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -123144,7 +123152,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sections
+  m_text: Coupes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -124691,7 +124699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: It seems that this definition is not yet available
+  m_text: "Il semble que cette d\xE9finition ne soit pas encore disponible"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -126308,10 +126316,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "These tabs allow you to expand or hide the side windows.\r\n\r\nSo you
-    can choose to display or not:\r\n\r\n      - The Lexicon (L)\r\n\r\n      - The
-    Definition (D)\r\n\r\n      - The Help (F1)\r\n\r\n      - Settings (F2)\r\n\r\nThe
-    search bar allows you to quickly find an anatomical structure (S)."
+  m_text: "Ces onglets permettent de d\xE9velopper ou de cacher les fen\xEAtres lat\xE9rales.\r\n\r\nTu
+    peux donc choisir d'afficher ou non:\r\n\r\n     - Le Lexique (L)\r\n\r\n    
+    - La d\xE9finition (D)\r\n\r\n     - L'aide (F1)\r\n\r\n     - Les param\xE8tres
+    (F2)\r\n\r\nLa barre de recherche permet de trouver rapidement une structure
+    anatomique (S)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -127108,7 +127117,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tutorial
+  m_text: Interface utilisateur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -127889,7 +127898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Windows
+  m_text: "Fen\xEAtres"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -128576,7 +128585,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Show UI help
+  m_text: Afficher l'aide de l'interface utilisateur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -129228,9 +129237,9 @@ RectTransform:
   m_Father: {fileID: 4795383938596934352}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 287.5, y: -790.2849}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 287.5, y: 0}
   m_SizeDelta: {x: 575, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4795383938554664927
@@ -129889,7 +129898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotate
+  m_text: Tourner
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -131647,7 +131656,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: It looks like you don't have an internet connection, please try again later.
+  m_text: "Il semble que vous n'ayez pas de connexion Internet, veuillez r\xE9essayer
+    plus tard."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -133156,7 +133166,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lexicon
+  m_text: Lexique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -135288,7 +135298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hierarchy
+  m_text: "Hi\xE9rarchie"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -136147,7 +136157,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Brush selection
+      value: "Pinceau de s\xE9lection"
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -137988,7 +137998,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Lasso selection
+      value: "Lasso de s\xE9lection"
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -138331,7 +138341,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Select all
+      value: "Tout s\xE9lectionner"
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -138513,7 +138523,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Partially isolate
+      value: Isoler partiellement
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -138825,7 +138835,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Delete selected
+      value: "Cacher s\xE9lection"
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -139293,7 +139303,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Box selection
+      value: "S\xE9lection rectangulaire"
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -140079,7 +140089,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Invert
+      value: "Inverser la s\xE9lection"
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -140692,7 +140702,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Isolate
+      value: Isoler
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -140881,6 +140891,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 480161698715335152, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Groupes
+      objectReference: {fileID: 0}
+    - target: {fileID: 480161698715335152, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -140933,6 +140947,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 918359196669872121, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Afficher les nerfs
+      objectReference: {fileID: 0}
+    - target: {fileID: 918359196669872121, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -140965,6 +140983,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1689412727422309220, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Copier
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689412727422309220, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -140972,6 +140994,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
+    - target: {fileID: 1699355628971795112, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Couleurs normales
+      objectReference: {fileID: 0}
     - target: {fileID: 1699355628971795112, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -141055,6 +141081,10 @@ PrefabInstance:
     - target: {fileID: 2056537577541249064, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300724643609885821, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Code couleur
       objectReference: {fileID: 0}
     - target: {fileID: 2300724643609885821, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -141151,6 +141181,10 @@ PrefabInstance:
     - target: {fileID: 2763937238838083691, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782583289758478121, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Position initiale
       objectReference: {fileID: 0}
     - target: {fileID: 2782583289758478121, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -141421,6 +141455,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3853905957529290363, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Isoler
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853905957529290363, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -141449,6 +141487,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3853905957602495978, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Ajouter une note
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853905957602495978, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -141463,6 +141505,10 @@ PrefabInstance:
     - target: {fileID: 3853905957741219395, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853905957934985227, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Isoler partiellement
       objectReference: {fileID: 0}
     - target: {fileID: 3853905957934985227, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -141633,6 +141679,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3853905958448596245, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Cacher
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853905958448596245, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -141705,6 +141755,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4805898152027753624, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Cacher les labels
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805898152027753624, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -141712,6 +141766,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
+    - target: {fileID: 4838749700008082968, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: "D\xE9placer"
+      objectReference: {fileID: 0}
     - target: {fileID: 4838749700008082968, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -141727,6 +141785,10 @@ PrefabInstance:
     - target: {fileID: 5140818110558904575, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_Material
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172539865823276390, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Afficher les insertions
       objectReference: {fileID: 0}
     - target: {fileID: 5172539865823276390, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -141881,6 +141943,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7218269611008869935, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Masquer les insertions
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218269611008869935, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -141917,6 +141983,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7546370693532649194, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Afficher les labels
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546370693532649194, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -141947,6 +142017,10 @@ PrefabInstance:
     - target: {fileID: 7840479254043661152, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7888113926418138037, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Afficher les muscles
       objectReference: {fileID: 0}
     - target: {fileID: 7888113926418138037, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -142058,7 +142132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8675816571705546309, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Show Muscles
+      value: Afficher les muscles
       objectReference: {fileID: 0}
     - target: {fileID: 8675816571705546309, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
