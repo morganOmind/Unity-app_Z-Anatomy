@@ -347,18 +347,15 @@ public class LexiconElement : MonoBehaviour
         //SELECT IT
         if (!isVisibleScript.isSelected)
         {
-            if (!Keyboard.current.leftCtrlKey.isPressed)
+            bool multipleSelectionPressed = Shortcuts.Instance.multipleSelectionShortcut.IsPressed();
+
+            if (!multipleSelectionPressed)
             {
                 if (label == null)
                     SelectedObjectsManagement.Instance.DeselectAllObjects();
-                //Update hierarchy bar
-                HierarchyBar.Instance.Set(element.transform);
 
                 if (SearchEngine.onSearch)
                     SearchEngine.Instance.ClearSearch();
-
-                Lexicon.Instance.ExpandRecursively();
-
             }
 
             SelectedObjectsManagement.Instance.SelectObject(element.gameObject);
@@ -368,7 +365,6 @@ public class LexiconElement : MonoBehaviour
             //IF IT IS A BODYPART
             if (bodyPartScript != null)
             {
-
                 if (SelectedObjectsManagement.Instance.selectedObjects.Count == 1)
                 {
                     cam.SetTarget(element.gameObject);
@@ -402,8 +398,17 @@ public class LexiconElement : MonoBehaviour
                 SelectedObjectsManagement.Instance.lastParentSelected = element.transform;
             }
 
-            if (!Shortcuts.Instance.multipleSelectionShortcut.IsPressed() && ActionControl.zoomSelected)
-                cam.CenterView(true);
+            if (!multipleSelectionPressed) {
+                //update hierarchy bar after all selection/deselection (deselect -if selection is empty after completion- / deselectAll both clear the hierarchy bar) 
+                //has been done to be sure that the hierarchy bar builds correctly
+                HierarchyBar.Instance.Set(element.transform);
+                Lexicon.Instance.ExpandRecursively();
+
+                if (ActionControl.zoomSelected) {
+                    cam.CenterView(true);
+                }
+            }
+                
         }
         //DESELECT IT
         else
