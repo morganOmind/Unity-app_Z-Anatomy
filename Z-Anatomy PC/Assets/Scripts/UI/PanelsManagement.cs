@@ -646,6 +646,10 @@ public class PanelsManagement : MonoBehaviour
         animationTime = 0;
         lex.durationOfAnimation = 0;
         desc.durationOfAnimation = 0;
+        
+        //force reset in case they have been moved
+        ResetPanel(lexRT);
+        ResetPanel(descRT);
 
         if(!lexOnScreen)
             ShowLexicon();

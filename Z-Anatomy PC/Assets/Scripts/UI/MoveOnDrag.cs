@@ -20,12 +20,6 @@ public class MoveOnDrag : MonoBehaviour, IDragHandler, IBeginDragHandler, IPoint
         if(toMove == null)
             toMove = GetComponent<RectTransform>();
     }
-
-    private void Start()
-    {
-        
-    }
-
     public void OnBeginDrag(PointerEventData eventData)
     {
         lastPos = Mouse.current.position.ReadValue();
