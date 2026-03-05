@@ -9,7 +9,7 @@ public class CrossSections : MonoBehaviour
 {
     public static CrossSections Instance;
 
-    public Shader clippableShader;
+    public List<Shader> clippableShaders;
     public Shader clippableShaderNoCulling;
 
     //Min pos => X = -3
@@ -115,12 +115,21 @@ public class CrossSections : MonoBehaviour
             originalMaterials[renderer] = renderer.sharedMaterials;
             doubleSidedeMaterials[renderer] = new Material[renderer.sharedMaterials.Length];
             bool added = false;
+            Color sectionColor = Color.clear;
+            bool sectionColorSet = false;
             for (int i = 0; i < renderer.sharedMaterials.Length; i++)
             {
-                if (renderer.sharedMaterials[i].shader == clippableShader)
+                if (clippableShaders.Contains(renderer.sharedMaterials[i].shader))
                 {
+                    if(!sectionColorSet) {
+                        sectionColor = renderer.sharedMaterials[i].GetColor("_BaseColor");
+                        sectionColorSet = true;
+                    }
+
                     Material copy = new Material(renderer.sharedMaterials[i]);
                     copy.shader = clippableShaderNoCulling;
+                    copy.SetFloat("_Cull", 0.0f);
+                    copy.SetColor("_SectionColor", sectionColor);
                     doubleSidedeMaterials[renderer][i] = copy;
                     if(!added)
                         affectedRenderers.Add(renderer);
