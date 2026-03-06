@@ -10,7 +10,7 @@ public class CrossSections : MonoBehaviour
     public static CrossSections Instance;
 
     public List<Shader> clippableShaders;
-    public Shader clippableShaderNoCulling;
+    public Shader clippableShaderLit, clippableShaderUnlit;
 
     //Min pos => X = -3
     //Max pos => X = 3
@@ -126,7 +126,7 @@ public class CrossSections : MonoBehaviour
                     }
 
                     Material copy = new Material(renderer.sharedMaterials[i]);
-                    copy.shader = clippableShaderNoCulling;
+                    copy.shader = copy.shader.name.Contains("Unlit") ? clippableShaderUnlit : clippableShaderLit;
                     copy.SetFloat("_Cull", 0.0f);
                     copy.SetColor("_SectionColor", sectionColor);
 
