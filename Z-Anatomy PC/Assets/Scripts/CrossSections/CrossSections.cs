@@ -161,18 +161,7 @@ public class CrossSections : MonoBehaviour
         regionsToggle.SetOn();
         referencesToggle.SetOn();
 
-        SkeletalToggleClick();
-        InsertionsToggleClick();
-        JointsToggleClick();
-        LymphsToggleClick();
-        MuscularToggleClick();
-        FasciaToggleClick();
-        ArteriesToggleClick();
-        VeinsToggleClick();
-        NervousToggleClick();
-        VisceralToggleClick();
-        RegionsToggleClick();
-        ReferencesToggleClick();
+        UpdateAllToggles();
 
         if (inverted)
             InvertSliders();
@@ -306,6 +295,8 @@ public class CrossSections : MonoBehaviour
         activePlane = XPlane;
 
         globalToggle.SetEnabledColor();
+
+        UpdateAllToggles();
     }
 
     public void InvertedXClick()
@@ -325,6 +316,7 @@ public class CrossSections : MonoBehaviour
 
         globalToggle.SetEnabledColor();
 
+        UpdateAllToggles();
     }
 
     public void ZClick()
@@ -345,6 +337,7 @@ public class CrossSections : MonoBehaviour
 
         globalToggle.SetEnabledColor();
 
+        UpdateAllToggles();
     }
 
     public void InvertedZClick()
@@ -365,6 +358,7 @@ public class CrossSections : MonoBehaviour
 
         globalToggle.SetEnabledColor();
 
+        UpdateAllToggles();
     }
 
     public void YClick()
@@ -385,6 +379,7 @@ public class CrossSections : MonoBehaviour
 
         globalToggle.SetEnabledColor();
 
+        UpdateAllToggles();
     }
 
     public void InvertedYClick()
@@ -405,6 +400,7 @@ public class CrossSections : MonoBehaviour
 
         globalToggle.SetEnabledColor();
 
+        UpdateAllToggles();
     }
 
     public void NoCutClick()
@@ -476,6 +472,21 @@ public class CrossSections : MonoBehaviour
     #endregion
 
     #region Sections Toggle
+
+    void UpdateAllToggles() {
+        SkeletalToggleClick();
+        InsertionsToggleClick();
+        JointsToggleClick();
+        LymphsToggleClick();
+        MuscularToggleClick();
+        FasciaToggleClick();
+        ArteriesToggleClick();
+        VeinsToggleClick();
+        NervousToggleClick();
+        VisceralToggleClick();
+        RegionsToggleClick();
+        ReferencesToggleClick();
+    }
 
     public void SkeletalToggleClick()
     {
