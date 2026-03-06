@@ -206,7 +206,7 @@ public class TangibleBodyPart : MonoBehaviour
     {
         mr.sharedMaterials = primaryMaterials;
         foreach (Material material in mr.materials) {
-            //material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
+            material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
             if (planeEnabled) {
                 material.DisableKeyword("CLIP_NONE");
                 material.EnableKeyword("CLIP_PLANE");
@@ -226,7 +226,7 @@ public class TangibleBodyPart : MonoBehaviour
     {
         mr.sharedMaterials = secondaryMaterials;
         foreach (Material material in mr.materials) {
-            //material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
+            material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
             if (planeEnabled) {
                 material.DisableKeyword("CLIP_NONE");
                 material.EnableKeyword("CLIP_PLANE");

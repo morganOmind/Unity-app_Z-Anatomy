@@ -119,8 +119,7 @@ public class CrossSections : MonoBehaviour
             bool sectionColorSet = false;
             for (int i = 0; i < renderer.sharedMaterials.Length; i++)
             {
-                if (clippableShaders.Contains(renderer.sharedMaterials[i].shader))
-                {
+                if (clippableShaders.Contains(renderer.sharedMaterials[i].shader)) {
                     if(!sectionColorSet) {
                         sectionColor = renderer.sharedMaterials[i].GetColor("_BaseColor");
                         sectionColorSet = true;
@@ -130,6 +129,7 @@ public class CrossSections : MonoBehaviour
                     copy.shader = clippableShaderNoCulling;
                     copy.SetFloat("_Cull", 0.0f);
                     copy.SetColor("_SectionColor", sectionColor);
+
                     doubleSidedeMaterials[renderer][i] = copy;
                     if(!added)
                         affectedRenderers.Add(renderer);
@@ -543,7 +543,7 @@ public class CrossSections : MonoBehaviour
             Renderer renderer = GlobalVariables.Instance.allBodyPartRenderers[i];
             if (renderer.CompareTag(tag)) {
                 foreach (Material material in GlobalVariables.Instance.allBodyPartRenderers[i].materials) {
-                    //material.SetFloat("_PlaneEnabled", enabled ? 1f : 0f);
+                    material.SetFloat("_PlaneEnabled", enabled ? 1f : 0f);
                     if (enabled) {
                         material.DisableKeyword("CLIP_NONE");
                         material.EnableKeyword("CLIP_PLANE");
@@ -553,7 +553,7 @@ public class CrossSections : MonoBehaviour
                         material.EnableKeyword("CLIP_NONE");
                     }
 
-                    if (originalMaterials.ContainsKey(renderer)) {
+                    if (affectedRenderers.Contains(renderer)) {
                         if (enabled)
                             renderer.sharedMaterials = doubleSidedeMaterials[renderer];
                         else
