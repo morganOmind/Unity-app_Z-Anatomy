@@ -528,10 +528,29 @@ public class CrossSections : MonoBehaviour
 
     public void SetMaterial(string tag, bool enabled)
     {
-        for (int i = 0; i < MeshManagement.Instance.rendererMaterials.Count; i++)
-            if (GlobalVariables.Instance.allBodyPartRenderers[i].CompareTag(tag))
-                foreach (Material material in GlobalVariables.Instance.allBodyPartRenderers[i].materials)
-                    material.SetFloat("_PlaneEnabled", enabled ? 1f : 0f);
+        for (int i = 0; i < MeshManagement.Instance.rendererMaterials.Count; i++) {
+            Renderer renderer = GlobalVariables.Instance.allBodyPartRenderers[i];
+            if (renderer.CompareTag(tag)) {
+                foreach (Material material in GlobalVariables.Instance.allBodyPartRenderers[i].materials) {
+                    //material.SetFloat("_PlaneEnabled", enabled ? 1f : 0f);
+                    if (enabled) {
+                        material.DisableKeyword("CLIP_NONE");
+                        material.EnableKeyword("CLIP_PLANE");
+                    }
+                    else {
+                        material.DisableKeyword("CLIP_PLANE");
+                        material.EnableKeyword("CLIP_NONE");
+                    }
+
+                    if (originalMaterials.ContainsKey(renderer)) {
+                        if (enabled)
+                            renderer.sharedMaterials = doubleSidedeMaterials[renderer];
+                        else
+                            renderer.sharedMaterials = originalMaterials[renderer];
+                    }
+                }
+            }
+        }
     }
 
     #endregion

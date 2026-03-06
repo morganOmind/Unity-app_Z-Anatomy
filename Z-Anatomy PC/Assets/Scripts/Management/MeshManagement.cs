@@ -55,9 +55,15 @@ public class MeshManagement : MonoBehaviour
             {
                 if (material == null)
                     continue;
-                material.SetVector("_PlanePosition", new Vector3(0, 0, 0));
+                /*material.SetVector("_PlanePosition", new Vector3(0, 0, 0));
                 material.SetVector("_PlaneNormal", transform.up);
-                material.SetFloat("_PlaneEnabled", 1f);
+                material.SetFloat("_PlaneEnabled", 1f);*/
+
+                material.SetVector("_SectionPoint", Vector3.zero);
+                material.SetVector("_SectionPlane", Vector3.zero);
+                material.SetVector("_SectionPlane2", Vector3.zero);
+                material.DisableKeyword("CLIP_NONE");
+                material.EnableKeyword("CLIP_PLANE");
             }
         }
 
