@@ -299,6 +299,7 @@ public class Shortcuts : MonoBehaviour
         GizmoBehaviour.instance.SetFaceShortcut(GizmoFace.Down);
 
     }
+
     private void X(InputAction.CallbackContext context)
     {
         if (UserIsWriting())
@@ -322,6 +323,7 @@ public class Shortcuts : MonoBehaviour
         if (!CrossPlanesGizmo.Instance.opened)
             CrossPlanesGizmo.Instance.OpenClosePlanesClick();
     }
+
     private void Y(InputAction.CallbackContext context)
     {
         if (UserIsWriting() || Keyboard.current.leftCtrlKey.isPressed)
@@ -345,10 +347,19 @@ public class Shortcuts : MonoBehaviour
         if (!CrossPlanesGizmo.Instance.opened)
             CrossPlanesGizmo.Instance.OpenClosePlanesClick();
     }
+
+    int lastZFrame = -1;
     private void Z(InputAction.CallbackContext context)
     {
+        if(lastZFrame == Time.frameCount) {
+            return;
+        }
+
         if (UserIsWriting() || Keyboard.current.leftCtrlKey.isPressed)
             return;
+
+        lastZFrame = Time.frameCount;
+
         if (!CrossSections.Instance.zPlane)
         {
             CrossSections.Instance.inverted = false;
@@ -384,10 +395,18 @@ public class Shortcuts : MonoBehaviour
 
     }
 
+    int lastUndoFrame = -1;
     private void Undo(InputAction.CallbackContext context)
     {
+        if(lastUndoFrame == Time.frameCount) {
+            return;
+        }
+
         if (UserIsWriting())
             return;
+
+        lastUndoFrame = Time.frameCount;
+
         ActionControl.Instance.Undo();
     }
 
