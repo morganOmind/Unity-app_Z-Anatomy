@@ -4,10 +4,26 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
+public enum SpecieType {
+    Unknown, Man, Cat
+};
+
+[System.Serializable]
+public struct SpecieSetting {
+    public SpecieType type;
+    public GameObject globalParent;
+    public TextAsset translations;
+};
+
 public class GlobalVariables : MonoBehaviour
 {
     [HideInInspector]
     public static GlobalVariables Instance;
+
+    public SpecieType specieType = SpecieType.Man;
+
+    public List<SpecieSetting> speciesSettings;
 
     [SerializeField]
     private Color _highligthColor;
@@ -83,6 +99,9 @@ public class GlobalVariables : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        SetSpecie(specieType);
+
         Build();
 
         allNameScripts = globalParent.GetComponentsInChildren<NameAndDescription>(true).ToList();
@@ -127,6 +146,36 @@ public class GlobalVariables : MonoBehaviour
             refresh = false;
             Build();
         }
+    }
+
+    public void SetSpecie(SpecieType type) {
+        specieType = type;
+        foreach(SpecieSetting setting in speciesSettings) {
+            if(setting.type == type) {
+                globalParent = setting.globalParent;
+                if(setting.translations != null && NamesManagement.Instance != null) {
+                    NamesManagement.Instance.translations = setting.translations;
+                }
+                globalParent.SetActive(true);
+            }
+            else {
+                setting.globalParent.SetActive(false);
+            }
+        }
+    }
+
+    public SpecieSetting GetSpecieSetting(SpecieType type) {
+        foreach (SpecieSetting setting in speciesSettings) {
+            if (setting.type == type) {
+                return setting;
+            }
+        }
+        //this should never happened!!
+        return new SpecieSetting();
+    }
+
+    public SpecieSetting GetCurrentSpecieSetting() {
+        return GetSpecieSetting(specieType);
     }
 
     private void Build()

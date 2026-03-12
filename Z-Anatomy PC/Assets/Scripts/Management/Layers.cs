@@ -88,6 +88,10 @@ public class Layers : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        //disable for now because data are not yet available !
+        if (GlobalVariables.Instance.specieType == SpecieType.Cat) {
+            isEnabled = false;
+        }
     }
 
     public void ReadLayers()
@@ -103,7 +107,7 @@ public class Layers : MonoBehaviour
                 {
                     if (allBodyParts.ContainsKey(bodyPart.originalName))
                     {
-                        Debug.Log("duplicated");
+                        Debug.Log("duplicated: " + bodyPart.originalName);
                         continue;
                     }
                     allBodyParts.Add(bodyPart.originalName, bodyPart.gameObject);

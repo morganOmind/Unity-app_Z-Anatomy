@@ -37,6 +37,12 @@ public class NamesManagement : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        TextAsset currentTranslations = GlobalVariables.Instance.GetCurrentSpecieSetting().translations;
+        if (currentTranslations != null) {
+            translations = currentTranslations;
+        }
+
         cam = Camera.main.GetComponent<CameraController>();
         bodyPartDescription = (TextMeshProUGUI)bodyPartInputField.textComponent;
     }
