@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bone-2
+  m_Name: Bone 7
   m_Shader: {fileID: -6465566751694194690, guid: 21ed8786b23d7c941b40103f1430dfaa, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -129,7 +129,7 @@ Material:
     - _PlanePosition: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &8991957442581396850
+--- !u!114 &6966928905504432587
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
