@@ -1,0 +1,8 @@
+
+
+GAUCHE
+
+
+Côté gauche de l’animal, défini de la même manière que le droit, en référence au sujet examiné.
+
+

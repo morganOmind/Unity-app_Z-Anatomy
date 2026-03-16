@@ -1,0 +1,8 @@
+
+
+DROITE
+
+
+Côté droit de l’animal, toujours défini par rapport à son propre corps et non à celui de l’observateur.
+
+

@@ -1,0 +1,10 @@
+
+
+DESCENDANT
+
+
+Qualifie une structure qui s’oriente vers le bas.
+
+Exemple : partie descendante du duodénum, artère descendante du genou.
+
+

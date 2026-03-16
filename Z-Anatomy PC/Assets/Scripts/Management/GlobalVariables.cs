@@ -14,6 +14,11 @@ public struct SpecieSetting {
     public SpecieType type;
     public GameObject globalParent;
     public TextAsset translations;
+    public SystemLanguage descriptionLanguageOverride;
+    public int descriptionLanguageIndexOverride;
+    public int initialNameIndexInTranslationFile;
+    public float camDefaultDistance;
+    public TextAsset[] descriptions;
 };
 
 public class GlobalVariables : MonoBehaviour
@@ -108,7 +113,7 @@ public class GlobalVariables : MonoBehaviour
         allBodyPartRenderers = globalParent.GetComponentsInChildren<MeshRenderer>(true).Where(it => it.GetComponent<Label>() == null && it.GetComponent<Line>() == null && !it.gameObject.name.Contains(".g")).ToList();
         allVisibilityScripts = globalParent.GetComponentsInChildren<BodyPartVisibility>(true).ToList();
         allBodyParts = globalParent.GetComponentsInChildren<TangibleBodyPart>(true).ToList();
-        
+
         bones = allBodyParts.Where(it => it.CompareTag("Skeleton")).ToList();
         insertions = allBodyParts.Where(it => it.CompareTag("Insertions")).ToList();
         joints = allBodyParts.Where(it => it.CompareTag("Joints")).ToList();
@@ -156,7 +161,16 @@ public class GlobalVariables : MonoBehaviour
                 if(setting.translations != null && NamesManagement.Instance != null) {
                     NamesManagement.Instance.translations = setting.translations;
                 }
+                if(setting.descriptions != null && ReadLocalDefinitions.Instance != null) {
+                    ReadLocalDefinitions.Instance.SetDescriptions(setting.descriptions);
+                }
                 globalParent.SetActive(true);
+
+                //set camera params
+                CameraController camCtrl = Camera.main.GetComponent<CameraController>();
+                camCtrl.target = globalParent;
+                camCtrl.defaultCenter = globalParent.transform.Find("DEFAULTCENTER").gameObject;
+                camCtrl.defaulDistance = setting.camDefaultDistance;
             }
             else {
                 setting.globalParent.SetActive(false);

@@ -3,7 +3,37 @@ guid: be7286d9f70878c4db4d6c83f39fbb3f
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bone-1
+    second: {fileID: 2100000, guid: 9d38d7245defc454dafe7c91288105df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brain
+    second: {fileID: 2100000, guid: 4d02d013a075bc747995404ebbe8c723, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cartilage
+    second: {fileID: 2100000, guid: 8307839ed9117c243b073384f318e0c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscles
+    second: {fileID: 2100000, guid: 8856e5bf8cd08d84e85b98bffbaff7dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tiny Iris 1.3 (Cat Blue Constrict)
+    second: {fileID: 2100000, guid: fa15f6c1a1f17354c95833378f1528e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tiny Sclera 1.3 (Cat Blue Constrict)
+    second: {fileID: 2100000, guid: ae379cd56972be14caa145b98cbc3aea, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

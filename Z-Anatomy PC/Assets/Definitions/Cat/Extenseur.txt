@@ -1,0 +1,12 @@
+
+
+EXTENSEUR
+
+
+Muscle qui permet l’extension d’une articulation.
+
+Exemple : muscle extenseur commun des doigts, muscle extenseur radial du carpe.
+
+Ils sont innervés principalement par le nerf radial dans le membre thoracique.
+
+

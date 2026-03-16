@@ -1,0 +1,7 @@
+
+
+VEINE SUBMENTALE (SU, OV, CAP, EQ)
+
+
+Annotation (su=Porc, ov=Mouton?, cap=Chèvre?, eq=Cheval) indique les variations interspécifiques de terminaison : veine linguale (Chat), veine faciale (Bœuf, Chien, Lapin, Homme), ou veine sublinguale (Cheval, Mouton).
+

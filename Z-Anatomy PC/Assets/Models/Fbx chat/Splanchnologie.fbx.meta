@@ -3,7 +3,62 @@ guid: 60eb2c81c98f76247aac8d4d77771b05
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Coussinet
+    second: {fileID: 2100000, guid: 57a66de58f40f9243b7512fae4fda437, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gland
+    second: {fileID: 2100000, guid: 414266262f7cd32488cc724f09f7df9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Intestine
+    second: {fileID: 2100000, guid: b1d1753617b7f2945acd64767837d066, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ligament
+    second: {fileID: 2100000, guid: 4963e7effab1041419f6b954dacdd032, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lung-1
+    second: {fileID: 2100000, guid: f05d8d58908127746be934f9ae23d743, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mucosa
+    second: {fileID: 2100000, guid: 674d1ba39f6b3d9448908c0ea56a5397, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscles
+    second: {fileID: 2100000, guid: e9058d9b249e5354e812749e8de3e66e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nipple
+    second: {fileID: 2100000, guid: 1ee50e64af0c96342826a6670cdb88b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Organ
+    second: {fileID: 2100000, guid: 9c99c49f84cd30340bfa8b6c1951de8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Text
+    second: {fileID: 2100000, guid: fa32baebad052734d9bea8d669c4b25b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ureter
+    second: {fileID: 2100000, guid: 39a9d421440cc064bb5710072cfab627, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

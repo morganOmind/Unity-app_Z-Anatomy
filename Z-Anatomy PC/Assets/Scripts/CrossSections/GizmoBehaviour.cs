@@ -26,6 +26,8 @@ public class GizmoBehaviour : MonoBehaviour
     private RectTransform rt;
     GizmoFace actualFace;
 
+    const float SCALE_FACTOR = 7f;
+
     private void Awake()
     {
         instance = this;
@@ -45,8 +47,8 @@ public class GizmoBehaviour : MonoBehaviour
 
     public void UpdateGizmo() {
         transform.LookAt(target);
-        transform.localScale = Vector3.one * cubeSize * Camera.main.orthographicSize / camScript.defaulDistance;
-        rt.anchoredPosition = new Vector2(cubePosition.x * Camera.main.orthographicSize / camScript.defaulDistance, cubePosition.y * Camera.main.orthographicSize / camScript.defaulDistance);
+        transform.localScale = Vector3.one * cubeSize * Camera.main.orthographicSize / SCALE_FACTOR;
+        rt.anchoredPosition = new Vector2(cubePosition.x * Camera.main.orthographicSize / SCALE_FACTOR, cubePosition.y * Camera.main.orthographicSize / SCALE_FACTOR);
     }
 
     public void SetFaceShortcut(GizmoFace arrow)

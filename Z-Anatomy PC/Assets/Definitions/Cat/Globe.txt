@@ -1,0 +1,10 @@
+
+
+GLOBE
+
+
+Structure arrondie ou sphérique.
+
+Exemple : globe oculaire.
+
+

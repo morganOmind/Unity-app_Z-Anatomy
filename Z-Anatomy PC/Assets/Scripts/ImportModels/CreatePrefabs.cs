@@ -16,23 +16,36 @@ public class CreatePrefabs : MonoBehaviour
     }
 
 
-    [MenuItem("Prefabs/Delete global labels FIRST STEP (Select all)")]
+    [MenuItem("Prefabs/Delete global labels FIRST STEP (Select all) -- LEGACY process")]
     static void DeleteGlobalLabels()
     {
         DeleteGlobalLabels(Selection.gameObjects);
     }
 
-    [MenuItem("Prefabs/Process Model SECOND STEP (Select parent only)")]
-    static void ProcessModel()
+    [MenuItem("Prefabs/Process LEGACY human Model SECOND STEP (Select only one collection's parent, and TAG IT before processing)")]
+    static void ProcessLegacyHumanModel()
     {
-        try
-        {
+        ProcessInternal(true);   
+    }
+
+    [MenuItem("Prefabs/Process Model SECOND STEP (Select only one collection's parent, and TAG IT before processing)")]
+    static void ProcessModel() {
+        ProcessInternal(false);
+    }
+
+    static void ProcessInternal(bool isLegacyHumanModel) {
+        try {
+
+            if(PrefabUtility.IsPartOfAnyPrefab(Selection.activeGameObject)) {
+                PrefabUtility.UnpackPrefabInstance(Selection.activeGameObject, PrefabUnpackMode.OutermostRoot, InteractionMode.AutomatedAction);
+            }
+
             AddScriptAndMesh(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList());
-            CreateLabels(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList());
+            CreateLabels(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList(), isLegacyHumanModel);
             SetLayer(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList());
+            SetTag(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList(), Selection.activeGameObject.tag);
         }
-        catch (System.Exception)
-        {
+        catch (System.Exception) {
             throw;
         }
     }
@@ -86,7 +99,14 @@ public class CreatePrefabs : MonoBehaviour
         }
     }
 
-    private static void CreateLabels(List<Transform> gameObjects)
+    private static void SetTag(List<Transform> gameObjects, string tag) {
+        foreach (var obj in gameObjects) {
+            obj.gameObject.tag = tag;
+
+        }
+    }
+
+    private static void CreateLabels(List<Transform> gameObjects, bool isHuman)
     {
         foreach (Transform child in gameObjects)
         {
@@ -95,7 +115,9 @@ public class CreatePrefabs : MonoBehaviour
                 CreateLinePoints(child.gameObject);
                 Line script = child.gameObject.AddComponent<Line>();
                 script.lineMaterial = (Material)Resources.Load("LineMaterial", typeof(Material));
-                script.transform.parent = script.transform.parent.parent;
+                if (isHuman) {
+                    script.transform.parent = script.transform.parent.parent;
+                }
                 script.gameObject.SetActive(false);
             }
             else if (child.name.Contains(".t") || child.name.Contains(".s"))
@@ -103,6 +125,9 @@ public class CreatePrefabs : MonoBehaviour
                 Label script = child.gameObject.AddComponent<Label>();
                 child.gameObject.AddComponent<TextMeshPro>();
                 script.labelMaterial = (Material)Resources.Load("LabelMaterial", typeof(Material));
+                if (!isHuman) {
+                    script.transform.parent = script.transform.parent.parent;
+                }
             }
         }
     }

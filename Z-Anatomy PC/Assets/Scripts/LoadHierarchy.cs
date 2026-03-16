@@ -27,7 +27,13 @@ public class LoadHierarchy : MonoBehaviour
             if (!item.CompareTag("Untagged")) {
                 NameAndDescription nameDesc = item.GetComponent<NameAndDescription>();
                 //.i and .j do not have NameAndDescription component, and already keep their original name (they are never renamed)
-                allObjects.Add(nameDesc == null ? item.name : nameDesc.originalName, item.transform);
+                string name = nameDesc == null ? item.name : nameDesc.originalName;
+                if (allObjects.ContainsKey(name)) {
+                    print(name + " already exists");
+                }
+                else {
+                    allObjects.Add(name, item.transform);
+                }
             }
         }
 

@@ -3,7 +3,37 @@ guid: 66ed8865797a1e441bcd2bb01b776c1a
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Articular capsule
+    second: {fileID: 2100000, guid: 987e9ffe9c6c7bd418ce5ddf0ffe8bca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fascia
+    second: {fileID: 2100000, guid: ef7bc19467a053746817d32c4b782bfd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ligament
+    second: {fileID: 2100000, guid: 81214c74391fb6a40994f86bf09bd32a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscles
+    second: {fileID: 2100000, guid: 23763c94d12f7b04eae57d2a0391c6e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tendon
+    second: {fileID: 2100000, guid: e91d148e19435d24abe8ad2772136fab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Text
+    second: {fileID: 2100000, guid: faa784bcca189464e8092d4c42a9b837, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

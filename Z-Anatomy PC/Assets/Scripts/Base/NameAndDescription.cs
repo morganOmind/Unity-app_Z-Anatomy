@@ -102,9 +102,9 @@ public class NameAndDescription : MonoBehaviour
     /// Checks if the game object has synonyms for the current language setting.
     /// </summary>
     /// <returns>A boolean indicating whether the game object has synonyms for the current language setting.</returns>
-    public bool HasSynonims(bool forceEn = false)
+    public bool HasSynonims(int forceLanguage = -1)
     {
-        return allSynonyms != null && allSynonyms[forceEn ? 0 : Settings.languageIndex] != null;
+        return allSynonyms != null && allSynonyms[forceLanguage != -1 ? forceLanguage : Settings.languageIndex] != null;
     }
 
 }

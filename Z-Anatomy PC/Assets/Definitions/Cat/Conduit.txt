@@ -1,0 +1,10 @@
+
+
+CONDUIT
+
+
+Canal anatomique permettant le passage de liquides ou d’air.
+
+Exemple : conduit auditif, conduit thoracique.
+
+

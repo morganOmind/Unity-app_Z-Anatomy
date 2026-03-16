@@ -3,7 +3,17 @@ guid: b225cd189a30acb4bb684fbff401fe19
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscular ending
+    second: {fileID: 2100000, guid: 3e784329b59ba9248b8cf5a2b128fc2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscular origin
+    second: {fileID: 2100000, guid: 3bbd57752bb6fb24ebd05256ec0094a2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

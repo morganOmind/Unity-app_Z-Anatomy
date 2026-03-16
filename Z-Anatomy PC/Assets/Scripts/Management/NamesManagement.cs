@@ -66,10 +66,10 @@ public class NamesManagement : MonoBehaviour
             //Split the text in words
             for (int i = 0; i < lines.Length; i++)
             {
-                var words = lines[i].Split(';');
+                var words = lines[i].Split(';', StringSplitOptions.None);
                 if (words.Length == 0)
                     continue;
-                splittedTranslations[words[0].ToLower()] = words;
+                splittedTranslations[words[GlobalVariables.Instance.GetCurrentSpecieSetting().initialNameIndexInTranslationFile].ToLower()] = words;
             }
 
             //Foreach object in scene
@@ -271,7 +271,7 @@ public class NamesManagement : MonoBehaviour
         Transform t = null;
         NameAndDescription ns = GlobalVariables.Instance.allNameScripts.Find(delegate (NameAndDescription namescr)
         {
-            return namescr.GetTranslatedName(SystemLanguage.English).ToLower() == search && !namescr.gameObject.CompareTag("Insertions");
+            return namescr.GetTranslatedName(GlobalVariables.Instance.GetCurrentSpecieSetting().descriptionLanguageOverride).ToLower() == search && !namescr.gameObject.CompareTag("Insertions");
         });
         if (ns != null) {
             t = ns.transform;
@@ -307,8 +307,8 @@ public class NamesManagement : MonoBehaviour
             }
 
             if (clickedGO == null) {
-                NameAndDescription ns = GlobalVariables.Instance.allNameScripts.Find(it => it.HasSynonims(true) 
-                                                                                            && it.allSynonyms[0].Any(it2 => it2.ToLower().Equals(clickedObject.ToLower())) 
+                NameAndDescription ns = GlobalVariables.Instance.allNameScripts.Find(it => it.HasSynonims(GlobalVariables.Instance.GetCurrentSpecieSetting().descriptionLanguageIndexOverride) 
+                                                                                            && it.allSynonyms[GlobalVariables.Instance.GetCurrentSpecieSetting().descriptionLanguageIndexOverride].Any(it2 => it2.ToLower().Equals(clickedObject.ToLower())) 
                                                                                             && !it.gameObject.CompareTag("Insertions"));
                 if (ns != null)
                     clickedGO = ns.transform;

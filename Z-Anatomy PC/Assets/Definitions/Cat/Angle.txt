@@ -1,0 +1,8 @@
+
+
+ANGLE
+
+
+Intersection de deux lignes ou surfaces, souvent utilisé pour désigner la relation angulaire des structures.  
+
+

@@ -3,7 +3,17 @@ guid: 8889f4671ffc2e541b02ab3d118cfdf2
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fascia
+    second: {fileID: 2100000, guid: c0984ccf84c938a4598e2b1e8890b92a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ligament
+    second: {fileID: 2100000, guid: f458253a87e2ccc42b524d5e7ded846b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

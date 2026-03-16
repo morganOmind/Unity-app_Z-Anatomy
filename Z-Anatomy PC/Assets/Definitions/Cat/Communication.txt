@@ -1,0 +1,10 @@
+
+
+COMMUNICATION
+
+
+Connexion entre deux structures anatomiques.
+
+Exemple : communication entre ventricules, communication lymphatique.
+
+
