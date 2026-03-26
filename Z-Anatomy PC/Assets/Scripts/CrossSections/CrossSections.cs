@@ -133,6 +133,9 @@ public class CrossSections : MonoBehaviour
                         affectedRenderers.Add(renderer);
                     added = true;
                 }
+                else {
+                    doubleSidedeMaterials[renderer][i] = renderer.sharedMaterials[i];
+                }
             }
         }
     }
