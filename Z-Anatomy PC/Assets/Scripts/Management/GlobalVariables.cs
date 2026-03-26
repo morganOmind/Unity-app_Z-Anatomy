@@ -14,6 +14,7 @@ public struct SpecieSetting {
     public SpecieType type;
     public GameObject globalParent;
     public TextAsset translations;
+    public int[] availableLanguages;
     public SystemLanguage descriptionLanguageOverride;
     public int descriptionLanguageIndexOverride;
     public int initialNameIndexInTranslationFile;
