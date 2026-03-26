@@ -23,8 +23,9 @@ public class NameAndDescription : MonoBehaviour
     private void Awake()
     {
         originalName = gameObject.name.Trim();
-        if(!CompareTag("Insertions"))
+        if (!CompareTag("Insertions")) {
             gameObject.name = gameObject.name.RemoveSuffix();
+        }
     }
 
     /// <summary>

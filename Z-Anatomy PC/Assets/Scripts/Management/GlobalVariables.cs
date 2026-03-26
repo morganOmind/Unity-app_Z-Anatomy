@@ -19,6 +19,7 @@ public struct SpecieSetting {
     public int initialNameIndexInTranslationFile;
     public float camDefaultDistance;
     public TextAsset[] descriptions;
+    public Vector2 sagitalLimits, coronalLimits, transversalLimits;
 };
 
 public class GlobalVariables : MonoBehaviour
@@ -104,10 +105,11 @@ public class GlobalVariables : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-
-        SetSpecie(specieType);
-
+        
         Build();
+
+        print("Loading specie type: " + GetCurrentSpecieSetting().type.ToString());
+        globalParent = GetCurrentSpecieSetting().globalParent;
 
         allNameScripts = globalParent.GetComponentsInChildren<NameAndDescription>(true).ToList();
         allBodyPartRenderers = globalParent.GetComponentsInChildren<MeshRenderer>(true).Where(it => it.GetComponent<Label>() == null && it.GetComponent<Line>() == null && !it.gameObject.name.Contains(".g")).ToList();
@@ -130,6 +132,7 @@ public class GlobalVariables : MonoBehaviour
         foreach (Transform section in globalParent.transform)
             bodySections.Add(section.gameObject);
 
+        SetSpecie(specieType);
     }
 
 
@@ -138,8 +141,16 @@ public class GlobalVariables : MonoBehaviour
         foreach (var insertion in insertions)
             insertionsDictionary.Add(insertion.nameScript.originalName, insertion);
 
-        foreach (var muscle in muscles)
-            musclesDictionary.Add(muscle.nameScript.originalName, muscle);
+        foreach (var muscle in muscles) {
+            if (muscle.nameScript == null) {
+                print(muscle.name + " has no namescript!");
+            }
+            else {
+                musclesDictionary.Add(muscle.nameScript.originalName, muscle);
+            }
+        }
+
+        StartCoroutine(SanityCheck());
     }
 
     private void OnValidate()
@@ -163,6 +174,9 @@ public class GlobalVariables : MonoBehaviour
                 }
                 if(setting.descriptions != null && ReadLocalDefinitions.Instance != null) {
                     ReadLocalDefinitions.Instance.SetDescriptions(setting.descriptions);
+                }
+                if(CrossSections.Instance != null) {
+                    CrossSections.Instance.SetSlidersLimits();
                 }
                 globalParent.SetActive(true);
 
@@ -220,5 +234,22 @@ public class GlobalVariables : MonoBehaviour
             taskbar.GetComponent<Image>().color = TaskBarColor;
     }
 
+    IEnumerator SanityCheck() {
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        Transform[] all = globalParent.GetComponentsInChildren<Transform>(true);
+        print("checking " + all.Length + " objects");
+        int noNameCount = 0;
+        foreach (Transform t in all) {
+            if(string.IsNullOrEmpty(t.name) || string.IsNullOrWhiteSpace(t.name)) {
+                noNameCount++;
+                MeshFilter meshFilter = t.GetComponent<MeshFilter>();
+                if (meshFilter != null) {
+                    print(meshFilter.sharedMesh.name + " has empty name");
+                }
+            }
+        }
+        print("found " + noNameCount + " objects with empty name");
+    }
 
 }

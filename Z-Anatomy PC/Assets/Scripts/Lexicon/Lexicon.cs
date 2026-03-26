@@ -421,10 +421,12 @@ public class Lexicon : MonoBehaviour
 
         if(insertionsElement != null)
         {
-            if (GlobalVariables.Instance.insertions.Find(it => it.visibilityScript.isVisible))
-                insertionsElement.checkBox.btn.Check();
-            else
-                insertionsElement.checkBox.btn.Uncheck();
+            if(GlobalVariables.Instance.insertions != null) {
+                if (GlobalVariables.Instance.insertions.Find(it => it.visibilityScript != null && it.visibilityScript.isVisible))
+                    insertionsElement.checkBox.btn.Check();
+                else
+                    insertionsElement.checkBox.btn.Uncheck();
+            }
         }
 
         if (!SearchEngine.onSearch && updateSliders)

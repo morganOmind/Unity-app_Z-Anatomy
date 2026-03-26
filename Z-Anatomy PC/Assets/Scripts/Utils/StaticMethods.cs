@@ -233,7 +233,7 @@ public static class StaticMethods
 
     public static bool IsGroup(this GameObject go)
     {
-        return go != null && go.GetComponent<NameAndDescription>().originalName.EndsWith(".g");
+        return go != null && go.GetComponent<NameAndDescription>() != null && go.GetComponent<NameAndDescription>().originalName.EndsWith(".g");
     }
 
     public static Bounds GetBounds(List<GameObject> objects)

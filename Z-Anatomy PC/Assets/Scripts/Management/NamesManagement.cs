@@ -76,7 +76,7 @@ public class NamesManagement : MonoBehaviour
             foreach (var nameScript in GlobalVariables.Instance.allNameScripts)
             {
                 //Remove suffix from its name
-                var name = nameScript.name.RemoveSuffix();
+                var name = nameScript.originalName.RemoveSuffix();
                 //If translation doc contains it, assign the languages array
                 if (splittedTranslations.ContainsKey(name.ToLower()))
                 {
@@ -334,7 +334,7 @@ public class NamesManagement : MonoBehaviour
             Label labelSript = clickedGO.GetComponent<Label>();
 
             //If it is a bodypart
-            if (bodyPartScript != null)
+            if (bodyPartScript != null && hasValidMesh(clickedGO.gameObject))
             {
                 //Select it
                 SelectedObjectsManagement.Instance.SelectObject(clickedGO.gameObject);
@@ -347,7 +347,7 @@ public class NamesManagement : MonoBehaviour
                 cam.UpdateCameraPos(bodyPartScript.distanceToCamera);
             }
             //If it is a label
-            else if(labelSript != null)
+            else if(labelSript != null && hasValidMesh(clickedGO.gameObject))
             {
                 //Select the label's parent (jump the .labels obj)
                 SelectedObjectsManagement.Instance.SelectObject(labelSript.parent.gameObject);
@@ -369,6 +369,7 @@ public class NamesManagement : MonoBehaviour
             //If it is a global part
             else
             {
+                print(clickedGO.name);
                 SelectedObjectsManagement.Instance.activeObjects.Clear();
                 SelectedObjectsManagement.Instance.SelectAllChildren(clickedGO.transform, true, shown);
                 ActionControl.Instance.UpdateButtons();
@@ -388,6 +389,11 @@ public class NamesManagement : MonoBehaviour
         }
     }
 
+    bool hasValidMesh(GameObject go) {
+        return go.GetComponent<MeshFilter>() != null
+            && go.GetComponent<MeshFilter>().sharedMesh != null
+            && go.GetComponent<MeshFilter>().sharedMesh.vertexCount > 0;
+    }
 
     public void NoConnectionScreen()
     {

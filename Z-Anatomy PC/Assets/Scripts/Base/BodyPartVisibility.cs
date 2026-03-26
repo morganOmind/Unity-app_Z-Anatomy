@@ -99,14 +99,14 @@ public class BodyPartVisibility : MonoBehaviour
         if (nameScript.originalName.IsRight())
         {
             // If the insertion is for the right side, find the right muscle with the same name and add it to the insertion muscles list
-            var insertionMuscle = GlobalVariables.Instance.muscles.Find(it => it.nameScript.originalName == nameScript.originalName.RemoveSuffix() + ".r");
+            var insertionMuscle = FindInsertionMuscle(nameScript.originalName.RemoveSuffix() + ".r");
             if (insertionMuscle != null)
                 insertionMuscles.Add(insertionMuscle);
         }
         else
         {
             // If the insertion is for the left side, find the left muscle with the same name and add it to the insertion muscles list
-            var insertionMuscle = GlobalVariables.Instance.muscles.Find(it => it.nameScript.originalName == nameScript.originalName.RemoveSuffix() + ".l");
+            var insertionMuscle = FindInsertionMuscle(nameScript.originalName.RemoveSuffix() + ".l");
             if (insertionMuscle != null)
                 insertionMuscles.Add(insertionMuscle);
         }
@@ -114,6 +114,19 @@ public class BodyPartVisibility : MonoBehaviour
         MuscleGroups.Instance.GetConvergingMuscles(this);
     }
 
+    TangibleBodyPart FindInsertionMuscle(string name) {
+        foreach(TangibleBodyPart part in GlobalVariables.Instance.muscles) {
+            if(part.nameScript == null) {
+                print(part.name + " has no namescript");
+            }
+            else {
+                if(part.nameScript.originalName == name) {
+                    return part;
+                }
+            }
+        }
+        return null;
+    }
 
     /// <summary>
     /// Adds all child body parts containing ".o" or ".e" in their name to the insertions list.

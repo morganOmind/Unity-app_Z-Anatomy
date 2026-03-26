@@ -33,8 +33,28 @@ public class CreatePrefabs : MonoBehaviour
         ProcessInternal(false);
     }
 
+    static Dictionary<string, string> navidsMap;
+
     static void ProcessInternal(bool isLegacyHumanModel) {
         try {
+
+            navidsMap = null;
+            TextAsset navidFile = Resources.Load<TextAsset>(Selection.activeGameObject.transform.parent.name.Replace("@", "").ToLower() + "_navid");
+            if(navidFile != null) {
+                print("find navid file: " + navidFile.name);
+                navidsMap = new Dictionary<string, string>();
+                string[] lines = navidFile.text.Split("\n", System.StringSplitOptions.RemoveEmptyEntries);
+                foreach (string line in lines) {
+                    string[] tokens = line.Split(";", System.StringSplitOptions.RemoveEmptyEntries);
+                    if(tokens.Length != 2) {
+                        print("Issue in navid line: " + line);
+                    }
+                    else {
+                        navidsMap.Add(tokens[0], tokens[1]);
+                    }
+                }
+                print("navid file parsed successfully!");
+            }
 
             if(PrefabUtility.IsPartOfAnyPrefab(Selection.activeGameObject)) {
                 PrefabUtility.UnpackPrefabInstance(Selection.activeGameObject, PrefabUnpackMode.OutermostRoot, InteractionMode.AutomatedAction);
@@ -44,6 +64,9 @@ public class CreatePrefabs : MonoBehaviour
             CreateLabels(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList(), isLegacyHumanModel);
             SetLayer(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList());
             SetTag(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList(), Selection.activeGameObject.tag);
+            if(navidsMap != null) {
+                Rename(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList());
+            }
         }
         catch (System.Exception) {
             throw;
@@ -77,11 +100,17 @@ public class CreatePrefabs : MonoBehaviour
                 }
                 if (!child.name.Contains(".j") && !child.name.Contains(".i" )&& !child.name.Contains(".t") && !child.name.Contains(".s") && child.GetComponent<MeshRenderer>() != null)
                  {
-                     TangibleBodyPart script = child.gameObject.AddComponent<TangibleBodyPart>();
-                     if (script == null)
-                         continue;
-                     child.gameObject.AddComponent<MeshCollider>();
-                 }
+                    /*if(child.GetComponent<MeshFilter>().sharedMesh.vertexCount == 0) {
+                        Component.DestroyImmediate(child.GetComponent<MeshRenderer>());
+                        Component.DestroyImmediate(child.GetComponent<MeshFilter>());
+                    }
+                    else {*/
+                        TangibleBodyPart script = child.gameObject.AddComponent<TangibleBodyPart>();
+                        if (script == null)
+                            continue;
+                        child.gameObject.AddComponent<MeshCollider>();
+                    //}
+                }
              }
          }
          catch (System.Exception e)
@@ -99,10 +128,39 @@ public class CreatePrefabs : MonoBehaviour
         }
     }
 
+    static bool isLineLimit(GameObject obj) {
+        return obj.name == "minPoint" || obj.name == "maxPoint";
+    }
+
     private static void SetTag(List<Transform> gameObjects, string tag) {
         foreach (var obj in gameObjects) {
-            obj.gameObject.tag = tag;
+            string[] tokens = obj.gameObject.name.Split(".", System.StringSplitOptions.RemoveEmptyEntries);
+            string suffix = tokens[tokens.Length - 1];
+            if(suffix.StartsWith("o") || suffix.StartsWith("e")) {
+                obj.gameObject.tag = "Insertions";
+            }
+            else {
+                if(!isLineLimit(obj.gameObject)) {
+                    obj.gameObject.tag = tag;
+                }
+            }
+        }
+    }
 
+    private static void Rename(List<Transform> gameObjects) {
+        foreach (var obj in gameObjects) {
+            if(obj.gameObject != Selection.activeGameObject && !isLineLimit(obj.gameObject)) {
+                string[] tokens = obj.name.Split(".", System.StringSplitOptions.RemoveEmptyEntries);
+                if (navidsMap.ContainsKey(tokens[0])) {
+                    obj.name = navidsMap[tokens[0]];
+                    for (int i = 1; i < tokens.Length; i++) {
+                        obj.name += ("." + tokens[i]);
+                    }
+                }
+                else {
+                    Debug.LogError("Navid " + tokens[0] + " not present in the map");
+                }
+            }
         }
     }
 
@@ -118,7 +176,7 @@ public class CreatePrefabs : MonoBehaviour
                 if (isHuman) {
                     script.transform.parent = script.transform.parent.parent;
                 }
-                script.gameObject.SetActive(false);
+                //script.gameObject.SetActive(false);
             }
             else if (child.name.Contains(".t") || child.name.Contains(".s"))
             {
@@ -138,14 +196,20 @@ public class CreatePrefabs : MonoBehaviour
          {
              string name = gameObject.name;
              Mesh mesh = gameObject.GetComponent<MeshFilter>().sharedMesh;
-             if (mesh.vertices.Length == 0)
-                 return;
-             Vector3 min = mesh.vertices[0];
-             Vector3 max = mesh.vertices[7];
-             if(max == null)
-                 max = mesh.vertices[mesh.vertices.Length-1];
+             if (mesh.vertices.Length == 0) {
+                print(gameObject.name + " mesh has no vertices");
+                return;
+            }
+            Vector3 min = mesh.vertices[0];
+            Vector3 max;
+            if(mesh.vertices.Length >= 8) {
+                max = mesh.vertices[7];
+            }
+            else {
+                max = mesh.vertices[mesh.vertices.Length - 1];
+            }
 
-             GameObject minPoint = new GameObject();
+            GameObject minPoint = new GameObject();
              minPoint.name = "minPoint";
              minPoint.transform.parent = gameObject.transform;
              minPoint.transform.localPosition = min;

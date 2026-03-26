@@ -205,17 +205,22 @@ public class TangibleBodyPart : MonoBehaviour
     /// <param name="planeEnabled">A boolean to enable or disable the cross sections shader.</param>
     public void SetPrimaryMaterial(bool planeEnabled)
     {
-        mr.sharedMaterials = primaryMaterials;
-        foreach (Material material in mr.materials) {
-            material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
-            if (planeEnabled) {
-                material.DisableKeyword("CLIP_NONE");
-                material.EnableKeyword("CLIP_PLANE");
+        if (mr != null) {
+            mr.sharedMaterials = primaryMaterials;
+            foreach (Material material in mr.materials) {
+                material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
+                if (planeEnabled) {
+                    material.DisableKeyword("CLIP_NONE");
+                    material.EnableKeyword("CLIP_PLANE");
+                }
+                else {
+                    material.DisableKeyword("CLIP_PLANE");
+                    material.EnableKeyword("CLIP_NONE");
+                }
             }
-            else {
-                material.DisableKeyword("CLIP_PLANE");
-                material.EnableKeyword("CLIP_NONE");
-            }
+        }
+        else {
+            print(gameObject.name + " has null meshrenderer");
         }
     }
 
@@ -225,16 +230,26 @@ public class TangibleBodyPart : MonoBehaviour
     /// <param name="planeEnabled">A boolean to enable or disable the cross sections shader.</param>
     public void SetSecondaryMaterial(bool planeEnabled)
     {
-        mr.sharedMaterials = secondaryMaterials;
-        foreach (Material material in mr.materials) {
-            material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
-            if (planeEnabled) {
-                material.DisableKeyword("CLIP_NONE");
-                material.EnableKeyword("CLIP_PLANE");
+        if (mr != null) {
+            mr.sharedMaterials = secondaryMaterials;
+            foreach (Material material in mr.materials) {
+                material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
+                if (planeEnabled) {
+                    material.DisableKeyword("CLIP_NONE");
+                    material.EnableKeyword("CLIP_PLANE");
+                }
+                else {
+                    material.DisableKeyword("CLIP_PLANE");
+                    material.EnableKeyword("CLIP_NONE");
+                }
             }
-            else {
-                material.DisableKeyword("CLIP_PLANE");
-                material.EnableKeyword("CLIP_NONE");
+        }
+        else {
+            if(nameScript != null) {
+                print(nameScript.originalName + " has null meshrenderer");
+            }
+            else{
+                print(gameObject.name + " has null meshrenderer");
             }
         }
     }

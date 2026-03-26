@@ -27,17 +27,17 @@ public class CrossSections : MonoBehaviour
     public Slider frontalSlider;
     public Image backgroundFrontalSlider;
     public Image fillFrontalSlider;
-    private float frontalInitialValue;
+    //private float frontalInitialValue;
 
     public Slider transversalSlider;
     public Image backgroundTransversalSlider;
     public Image fillTransversalSlider;
-    private float transversalInitialValue;
+    //private float transversalInitialValue;
 
     public Slider sagitalSlider;
     public Image backgroundSagitalSlider;
     public Image fillSagitalSlider;
-    private float sagitalInitialValue;
+    //private float sagitalInitialValue;
 
 
     [HideInInspector]
@@ -99,9 +99,7 @@ public class CrossSections : MonoBehaviour
     {
         Instance = this;
         defaultSprite = globalImage.sprite;
-        frontalInitialValue = frontalSlider.value;
-        sagitalInitialValue = sagitalSlider.value;
-        transversalInitialValue = transversalSlider.value;
+        SetSlidersLimits();
     }
 
     private void Start()
@@ -139,15 +137,49 @@ public class CrossSections : MonoBehaviour
         }
     }
 
+    public void SetSlidersLimits() {
+        SpecieSetting setting = GlobalVariables.Instance.GetCurrentSpecieSetting();
+        frontalSlider.minValue = setting.coronalLimits.x;
+        frontalSlider.maxValue = setting.coronalLimits.y;
+        sagitalSlider.minValue = setting.sagitalLimits.x;
+        sagitalSlider.maxValue = setting.sagitalLimits.y;
+        transversalSlider.minValue = setting.transversalLimits.x;
+        transversalSlider.maxValue = setting.transversalLimits.y;
+        ResetSliders();
+        ResizePlanes();
+    }
+
+    void ResetSliders() {
+        frontalSlider.value = Mathf.Lerp(frontalSlider.minValue, frontalSlider.maxValue, 0.5f);
+        sagitalSlider.value = Mathf.Lerp(sagitalSlider.minValue, sagitalSlider.maxValue, 0.5f);
+        transversalSlider.value = Mathf.Lerp(transversalSlider.minValue, transversalSlider.maxValue, 0.5f);
+    }
+
+    void ResizePlanes() {
+        List<MeshRenderer> renderers = GlobalVariables.Instance.allBodyPartRenderers;
+        Bounds bounds = new Bounds();
+        foreach(Renderer r in renderers) {
+            Collider c = r.GetComponent<Collider>();
+            if(c != null) {
+                bounds.Encapsulate(c.bounds);
+            }
+        }
+        frontalPlane.transform.position = bounds.center;
+        sagitalPlane.transform.position = bounds.center;
+        transversalPlane.transform.position = bounds.center;
+        Vector3 size = bounds.size * 1.1f;
+        frontalPlane.transform.localScale = new Vector3(size.x, 1f, size.y);
+        sagitalPlane.transform.localScale = new Vector3(size.z, 1f, size.y);
+        transversalPlane.transform.localScale = new Vector3(size.x, 1f, size.z);
+    }
+
     public void ResetAll()
     {
         sagitalToggle.SetEnabledColor();
         frontalToggle.SetDisabledColor();
         transversalToggle.SetDisabledColor();
 
-        frontalSlider.value = frontalInitialValue;
-        sagitalSlider.value = sagitalInitialValue;
-        transversalSlider.value = transversalInitialValue;
+        ResetSliders();
 
         skeletalToggle.SetOn();
         jointsToggle.SetOn();

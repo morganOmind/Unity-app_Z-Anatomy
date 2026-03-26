@@ -14,6 +14,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Ligament
     second: {fileID: 2100000, guid: f458253a87e2ccc42b524d5e7ded846b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Text
+    second: {fileID: 2100000, guid: ad273087693a76449a33bf32ad10087b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

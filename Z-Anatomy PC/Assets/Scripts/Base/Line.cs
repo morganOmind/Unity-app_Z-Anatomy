@@ -28,6 +28,11 @@ public class Line : MonoBehaviour
 
         minPoint = transform.Find("minPoint");
         maxPoint = transform.Find("maxPoint");
+
+        if(minPoint == null ||maxPoint == null) {
+            print("Line '" + gameObject.name + "' has an issue with min/max points");
+        }
+
         _renderer = gameObject.AddComponent<LineRenderer>();
         _renderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
         DrawLine(minPoint.position, maxPoint.position);

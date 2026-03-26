@@ -54,20 +54,26 @@ public class NerveGroups : MonoBehaviour
 
         foreach (var muscle in musclesList)
         {
-            if (!muscles.ContainsKey(muscle.nameScript.originalName.RemoveSuffix()))
-                muscles.Add(muscle.nameScript.originalName.RemoveSuffix(), new List<BodyPartVisibility>[2]);
+            if (muscle.nameScript == null) {
+                print(muscle.name + " has no namescript!");
+            }
+            else {
+                if (!muscles.ContainsKey(muscle.nameScript.originalName.RemoveSuffix()))
+                    muscles.Add(muscle.nameScript.originalName.RemoveSuffix(), new List<BodyPartVisibility>[2]);
 
 
-            if (muscles[muscle.nameScript.originalName.RemoveSuffix()][0] == null)
-                muscles[muscle.nameScript.originalName.RemoveSuffix()][0] = new List<BodyPartVisibility>();
+                if (muscles[muscle.nameScript.originalName.RemoveSuffix()][0] == null)
+                    muscles[muscle.nameScript.originalName.RemoveSuffix()][0] = new List<BodyPartVisibility>();
 
-            if (muscles[muscle.nameScript.originalName.RemoveSuffix()][1] == null)
-                muscles[muscle.nameScript.originalName.RemoveSuffix()][1] = new List<BodyPartVisibility>();
+                if (muscles[muscle.nameScript.originalName.RemoveSuffix()][1] == null)
+                    muscles[muscle.nameScript.originalName.RemoveSuffix()][1] = new List<BodyPartVisibility>();
 
-            if (muscle.nameScript.originalName.IsRight())
-                muscles[muscle.nameScript.originalName.RemoveSuffix()][0].Add(muscle);
-            else
-                muscles[muscle.nameScript.originalName.RemoveSuffix()][1].Add(muscle);
+                if (muscle.nameScript.originalName.IsRight())
+                    muscles[muscle.nameScript.originalName.RemoveSuffix()][0].Add(muscle);
+                else
+                    muscles[muscle.nameScript.originalName.RemoveSuffix()][1].Add(muscle);
+            }
+
         }
     }
 
