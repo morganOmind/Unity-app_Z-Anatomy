@@ -27,7 +27,7 @@ with open(nav_id_file, mode='r', encoding='utf-8') as csv_file:
     print(f'Processed {line_count} lines.')
     
 for file in os.listdir(input_description_files_folder):
-    navid = file.replace(".txt", "")
+    navid = file.replace(".txt", "").replace("_", "*")
     if not navid in navids:
         print(f'Navid {navid} not found')
     else:
