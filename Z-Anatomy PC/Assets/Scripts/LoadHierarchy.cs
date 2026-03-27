@@ -15,6 +15,13 @@ public class LoadHierarchy : MonoBehaviour
 
     private void Start()
     {
+        //this behavior is only relevant for the man model
+        //the cat is imported with navid, thus is already ordered correctly
+        if(GlobalVariables.Instance.GetCurrentSpecieSetting().type != SpecieType.Man) {
+            enabled = false;
+            return;
+        }
+
         Fetch();
         Load();
     }
@@ -57,6 +64,7 @@ public class LoadHierarchy : MonoBehaviour
             ordered.Add(allObjects[line.Split(Separator)[0]], index);
         }
 
+        print("LoadHierarchy :: reordering " + ordered.Keys.Count + " objects");
         foreach (var item in ordered.OrderBy(it => it.Value))
         {
             item.Key.SetSiblingIndex(item.Value);
