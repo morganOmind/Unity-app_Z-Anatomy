@@ -8,17 +8,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Articular capsule
-    second: {fileID: 2100000, guid: 987e9ffe9c6c7bd418ce5ddf0ffe8bca, type: 2}
+    second: {fileID: 2100000, guid: bcc8192b6b1d3f14983accdb9fa0636b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Fascia
-    second: {fileID: 2100000, guid: ef7bc19467a053746817d32c4b782bfd, type: 2}
+    second: {fileID: 2100000, guid: c0984ccf84c938a4598e2b1e8890b92a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Ligament
-    second: {fileID: 2100000, guid: 81214c74391fb6a40994f86bf09bd32a, type: 2}
+    second: {fileID: 2100000, guid: 7fe5b3bde3c7fb141b6ba797b1992244, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -33,11 +33,11 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Text
-    second: {fileID: 2100000, guid: faa784bcca189464e8092d4c42a9b837, type: 2}
+    second: {fileID: 2100000, guid: ddc15c091e1484c47929ca6d91f7b433, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
-    materialSearch: 1
+    materialSearch: 0
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

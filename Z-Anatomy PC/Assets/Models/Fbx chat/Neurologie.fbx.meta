@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bone-1
-    second: {fileID: 2100000, guid: 9d38d7245defc454dafe7c91288105df, type: 2}
+    second: {fileID: 2100000, guid: d50d0eabcb13140469d2593db25301dc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -18,12 +18,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cartilage
-    second: {fileID: 2100000, guid: 8307839ed9117c243b073384f318e0c4, type: 2}
+    second: {fileID: 2100000, guid: e7987ec24d8870f4194104664c554522, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Muscles
-    second: {fileID: 2100000, guid: 8856e5bf8cd08d84e85b98bffbaff7dd, type: 2}
+    second: {fileID: 2100000, guid: 23763c94d12f7b04eae57d2a0391c6e8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -37,7 +37,7 @@ ModelImporter:
   materials:
     materialImportMode: 2
     materialName: 0
-    materialSearch: 1
+    materialSearch: 0
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

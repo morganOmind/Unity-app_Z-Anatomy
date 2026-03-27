@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Coussinet
-    second: {fileID: 2100000, guid: 57a66de58f40f9243b7512fae4fda437, type: 2}
+    second: {fileID: 2100000, guid: 425802e8c230997449193dd3c58dcdab, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -23,12 +23,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Ligament
-    second: {fileID: 2100000, guid: 4963e7effab1041419f6b954dacdd032, type: 2}
+    second: {fileID: 2100000, guid: 7fe5b3bde3c7fb141b6ba797b1992244, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Lung-1
-    second: {fileID: 2100000, guid: f05d8d58908127746be934f9ae23d743, type: 2}
+    second: {fileID: 2100000, guid: c70bb335daa56504aa3c4e3074dac236, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -38,7 +38,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Muscles
-    second: {fileID: 2100000, guid: e9058d9b249e5354e812749e8de3e66e, type: 2}
+    second: {fileID: 2100000, guid: 23763c94d12f7b04eae57d2a0391c6e8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -53,7 +53,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Text
-    second: {fileID: 2100000, guid: fa32baebad052734d9bea8d669c4b25b, type: 2}
+    second: {fileID: 2100000, guid: ddc15c091e1484c47929ca6d91f7b433, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -62,7 +62,7 @@ ModelImporter:
   materials:
     materialImportMode: 2
     materialName: 0
-    materialSearch: 1
+    materialSearch: 0
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

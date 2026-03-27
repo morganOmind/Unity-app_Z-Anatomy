@@ -13,66 +13,66 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin-1
-    second: {fileID: 2100000, guid: da9efb76331b1e64491183c14f9b3e23, type: 2}
+    second: {fileID: 2100000, guid: 01a745e075d5d4a43aa8b74157458a8a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin-2
-    second: {fileID: 2100000, guid: be742c7d69fba6d4ebf503770f063cbf, type: 2}
+    second: {fileID: 2100000, guid: 99bf180fca7d57b418dc2582a1f13f1e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin-3
-    second: {fileID: 2100000, guid: c63f7085122884044b467df72563a5f5, type: 2}
+    second: {fileID: 2100000, guid: 84e68b607aa9af34e9f83a851c203a63, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin-4
-    second: {fileID: 2100000, guid: 8f7c9069d9de2284fac2da20ebe3373b, type: 2}
+    second: {fileID: 2100000, guid: bb39a3205a8427c4bbf948e9f199ada3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin-5
-    second: {fileID: 2100000, guid: 4b4c0d223c15fde41ba547a587c9c1b2, type: 2}
+    second: {fileID: 2100000, guid: 83558a2cefbce3e4e9d5c5686b99d0ef, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin-5'
-    second: {fileID: 2100000, guid: 9ec0b59423146bd428406bc769cc2961, type: 2}
+    second: {fileID: 2100000, guid: e1485fc8ab82c9b478ae68ba70f6a549, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin-5''
-    second: {fileID: 2100000, guid: dc87518b79e6df44cbaa51f75d3d8936, type: 2}
+    second: {fileID: 2100000, guid: 1b44a20d572a425498257d6eccb15474, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin-6
-    second: {fileID: 2100000, guid: a0b384945fa51a049b42f92fb94c5828, type: 2}
+    second: {fileID: 2100000, guid: 6778ceee707f3674f9192fa7acb0f2ea, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin-7
-    second: {fileID: 2100000, guid: 87577029ec689174fbc1a9835aeb6517, type: 2}
+    second: {fileID: 2100000, guid: 7b5a80d58b3ae80409c2ef39497ae2fe, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin-8
-    second: {fileID: 2100000, guid: d2771299076079c449147dbdf2bfbbe0, type: 2}
+    second: {fileID: 2100000, guid: c8f0fc14c874e4c42b469ca13b2d2d95, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Tiny Iris 1.3 (Cat Blue Constrict)
-    second: {fileID: 2100000, guid: 382be18c0788d6842a998f84787b1a7a, type: 2}
+    second: {fileID: 2100000, guid: fa15f6c1a1f17354c95833378f1528e6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Tiny Sclera 1.3 (Cat Blue Constrict)
-    second: {fileID: 2100000, guid: 1f1d98991b8c2f9468063d3feb06b859, type: 2}
+    second: {fileID: 2100000, guid: ae379cd56972be14caa145b98cbc3aea, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
-    materialSearch: 1
+    materialSearch: 0
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
