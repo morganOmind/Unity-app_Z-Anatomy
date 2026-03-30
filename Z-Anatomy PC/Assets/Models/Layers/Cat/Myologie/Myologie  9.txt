@@ -1,0 +1,23 @@
+Platysma
+Muscle frontoscutulaire.l
+Muscle interscutulaire.l
+Muscle pariétoscutulaire.l
+Muscle cervicoscutulaire.l
+Muscle cervico-auriculaire superficiel.l
+Muscle pariéto-auriculaire.l
+Muscle fessier superficiel.l
+Muscle tenseur du fascia lata.l
+Muscle fessier superficiel.r
+Muscle tenseur du fascia lata.r
+Muscle oblique externe de l'abdomen.l
+Gaine musculaire du droit de l'abdomen.l
+Chef latéral du muscle gastrocnémien.l
+Chef médial du muscle gastrocnémien.l
+Chef latéral du muscle gastrocnémien.r
+Chef médial du muscle gastrocnémien.r
+Tendon calcanéen commun.l
+Tendon calcanéen commun.r
+Muscle fléchisseur radial du carpe.l
+Muscle fléchisseur superficiel des doigts.l
+Muscle fléchisseur superficiel des doigts.r
+Muscle fléchisseur radial du carpe.r

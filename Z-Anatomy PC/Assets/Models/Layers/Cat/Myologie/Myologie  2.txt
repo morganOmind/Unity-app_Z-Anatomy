@@ -1,0 +1,35 @@
+Muscle iliaque.l
+Muscle iliaque.r
+Diaphragme.l
+Muscle scalène dorsal (Car, su, Ru).l
+Muscle longissimus.l
+Muscle carré des lombes.l
+Muscle rotateur.l
+Muscles intertransversaires du thorax.l
+Muscle rétracteur des côtes.l
+Muscle complexus.l
+Muscles intertransversaires dorsaux du cou.l
+Muscle long de la tête.l
+Muscle grand droit dorsal de la tête.l
+Muscle oblique crânial de la tête.l
+Muscle oblique caudal de la tête.l
+Muscle abaisseur de l'angle de la bouche.l
+Muscle canin.l
+Muscle releveur de la lèvre supérieure.l
+Muscle extenseur des doigts I et II.l
+Muscle extenseur des doigts I et II.r
+Muscle court fléchisseur du pouce.l
+Muscle court fléchisseur du pouce.r
+Muscle poplité.l
+Muscle poplité.r
+Muscle fléchisseur médial des orteils.l
+Muscle fléchisseur médial des orteils.r
+Tendon commun.l
+Tendon commun.r
+Muscle court extenseur des orteils.l
+Muscle court extenseur des orteils.r
+Muscle adducteur du deuxième orteil.l
+Muscle adducteur du deuxième orteil.r
+Muscle iliocostal du cou.l
+Muscle extenseur du doigt II.l
+Muscle extenseur du doigt II.r

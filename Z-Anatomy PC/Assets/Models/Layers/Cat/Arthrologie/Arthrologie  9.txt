@@ -1,0 +1,26 @@
+Capsules articulaires métatarsophalangiennes.r
+Capsules articulaires métatarsophalangiennes.l
+Capsules articulaires interphalangiennes du pied.r
+Capsules articulaires interphalangiennes du pied.l
+Capsules articulaires interphalangiennes prox. de la main.l
+Capsules articulaires métacarpophalangiennes.l
+Capsules articulaires interphalangiennes distales de la main.l
+Capsules articulaires métacarpophalangiennes.r
+Capsules articulaires interphalangiennes prox. de la main.r
+Capsules articulaires interphalangiennes distales de la main.r
+Ligaments métatarsiens dorsaux.r
+Ligaments métatarsiens dorsaux.l
+Ligaments interdistaux [intercunéiformes] dorsaux.r
+Ligaments interdistaux [intercunéiformes] dorsaux.l
+Ligaments centrodistaux [cunéonaviculaires] dorsaux (Car).r
+Ligaments centrodistaux [cunéonaviculaires] dorsaux (Car).l
+Ligament quartodistal [cunéocuboïde] dorsal.r
+Ligament quartodistal [cunéocuboïde] dorsal.l
+Ligament collatéral médial du tarse partie longue.r
+Ligament calcanéoquartal [calcanéocuboïde] dorsal.r
+Ligament calcanéoquartal [calcanéocuboïde] dorsal.l
+Ligament calcanéocentral [calcanéonaviculaire] dorsal.r
+Ligament calcanéocentral [calcanéonaviculaire] dorsal.l
+Ligament collatéral médial du tarse partie longue.l
+Ligament accessoriométacarpien [pisimétacarpien].l
+Ligament accessoriométacarpien [pisimétacarpien].r

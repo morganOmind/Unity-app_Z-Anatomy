@@ -1,0 +1,34 @@
+Muscle sphincter profond du cou
+Muscle zygomatique.l
+Muscle zygomatico-auriculaire.l
+Muscle temporal.l
+Muscle oblique interne de l'abdomen.l
+Chef long du triceps brachial.l
+Chef long du triceps brachial.r
+Muscle sartorius.l
+Muscle sartorius.r
+Muscle transverse de l'abdomen.l
+Muscles intercostaux externes.l
+Muscle dentelé dorsal crânial.l
+Muscle subscapulaire.l
+Muscle subscapulaire.r
+Muscle intertransversaires dorsaux caudaux.l
+Muscle intertransversaires dorsaux caudaux.r
+Muscle soléaire.l
+Muscle soléaire.r
+Muscle biceps brachial.l
+Muscle biceps brachial.r
+Muscle fessier profond.l
+Muscle fessier profond.r
+Ventre rostral.l
+Ventre caudal.l
+Muscle extenseur ulnaire du carpe.l
+Muscle extenseur ulnaire du carpe.r
+Muscle fléchisseur du doigt V.l
+Muscle fléchisseur du doigt V.r
+Muscle long extenseur des orteils.l
+Muscle long extenseur des orteils.r
+Muscle long extenseur du premier orteil (Car, su, ov).l
+Muscle extenseur latéral des orteils.l
+Muscle long extenseur du premier orteil (Car, su, ov).r
+Muscle extenseur latéral des orteils.r

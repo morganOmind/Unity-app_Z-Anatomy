@@ -21,6 +21,22 @@ public struct SpecieSetting {
     public float camDefaultDistance;
     public TextAsset[] descriptions;
     public Vector2 sagitalLimits, coronalLimits, transversalLimits;
+    public SpecieLayers layers;
+};
+
+[System.Serializable]
+public struct SpecieLayers {
+    public TextAsset[] bonesLayers;
+    public TextAsset[] ligamentsLayers;
+    public TextAsset[] muscularLayers;
+    public TextAsset[] arteriesLayers;
+    public TextAsset[] veinsLayers;
+    public TextAsset[] lymphsLayers;
+    public TextAsset[] fasciaLayers;
+    public TextAsset[] nervesLayers;
+    public TextAsset[] visceralLayers;
+    public TextAsset[] refsLayers;
+    public TextAsset[] skinLayers;
 };
 
 public class GlobalVariables : MonoBehaviour
@@ -152,6 +168,7 @@ public class GlobalVariables : MonoBehaviour
         }
 
         StartCoroutine(SanityCheck());
+        StartCoroutine(UrlNavidSelection());
     }
 
     private void OnValidate()
@@ -178,6 +195,9 @@ public class GlobalVariables : MonoBehaviour
                 }
                 if(CrossSections.Instance != null) {
                     CrossSections.Instance.SetSlidersLimits();
+                }
+                if(Layers.Instance != null) {
+                    Layers.Instance.SetLayers(setting.layers);
                 }
                 globalParent.SetActive(true);
 
@@ -237,7 +257,6 @@ public class GlobalVariables : MonoBehaviour
 
     IEnumerator SanityCheck() {
         yield return new WaitForEndOfFrame();
-        yield return new WaitForEndOfFrame();
         Transform[] all = globalParent.GetComponentsInChildren<Transform>(true);
         print("checking " + all.Length + " objects");
         int noNameCount = 0;
@@ -251,6 +270,63 @@ public class GlobalVariables : MonoBehaviour
             }
         }
         print("found " + noNameCount + " objects with empty name");
+    }
+
+    IEnumerator UrlNavidSelection() {
+        yield return new WaitForEndOfFrame();
+        if (UrlParser.openNavid != -1) {
+
+            print("Trying to focus on " + UrlParser.openNavid + " navid object");
+
+            TextAsset navidFile = Resources.Load<TextAsset>(globalParent.name.Replace("@", "").ToLower() + "_navid");
+            if (navidFile != null) {
+                print("find navid file: " + navidFile.name);
+                Dictionary<string, string>  navidsMap = new Dictionary<string, string>();
+                string[] lines = navidFile.text.Split("\n", System.StringSplitOptions.RemoveEmptyEntries);
+                foreach (string line in lines) {
+                    string[] tokens = line.Split(";", System.StringSplitOptions.RemoveEmptyEntries);
+                    if (tokens.Length != 2) {
+                        print("Issue in navid line: " + line);
+                    }
+                    else {
+                        if (!navidsMap.ContainsKey(tokens[1])) {
+                            //reversed map: name, navid
+                            navidsMap.Add(tokens[1], tokens[0]);
+                        }
+                        else {
+                            print("navid map creation :: " + tokens[1] + " already exists!");
+                        }
+                    }
+                }
+                print("navid file parsed successfully!");
+
+                string searchNavid = "" + UrlParser.openNavid;
+
+                foreach(NameAndDescription nameScript in allNameScripts) {
+                    string name = nameScript.name.Replace("(R)", "").Replace("(L)", "").Trim().RemoveSuffix();
+                    if (navidsMap.ContainsKey(name)) {
+                        if (navidsMap[name] == searchNavid) {
+                            TangibleBodyPart part = nameScript.GetComponent<TangibleBodyPart>();
+                            if(part != null) {
+                                print("focusing on " + part.name + " (name=" + name + ")");
+                                part.ObjectClicked();
+                                FindObjectOfType<ContextualMenu>(true).IsolateClick();
+                                yield break;
+                            }
+                            else {
+                                print("searched object '" + name + "' has no tangibleBodyPart");
+                            }
+                        }
+                    }
+                    else {
+                        print("cannot find '" + name + "' in navids map");
+                    }
+                }
+            }
+            else {
+                print("navid file cannot be found for " + globalParent.name);
+            }
+        }
     }
 
 }

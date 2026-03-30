@@ -1,0 +1,6 @@
+Crânial
+Caudal
+Proximal
+Distal
+Dorsal
+Ventral

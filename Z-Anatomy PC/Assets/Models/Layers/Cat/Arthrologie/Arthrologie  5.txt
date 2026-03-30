@@ -1,0 +1,16 @@
+Ligaments sacro-iliaques ventraux.l
+Ligament méniscofémoral.l
+Ligament méniscofémoral.r
+Capsule articulaire temporomandibulaire.l
+Bourrelet acétabulaire.r
+Bourrelet acétabulaire.l
+Corps adipeux infrapatellaire.l
+Corps adipeux infrapatellaire.r
+Ligament fémoropatellaire latéral.l
+Fibrocartilages parapatellaires.l
+Ligament patellaire.l
+Ligament fémoropatellaire médial.l
+Fibrocartilages parapatellaires.r
+Ligament patellaire.r
+Ligament fémoropatellaire médial.r
+Ligament fémoropatellaire latéral.r

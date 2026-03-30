@@ -1,8 +1,0 @@
-Refs-4
-Abduction
-Adduction
-Circumduction
-Lateral rotation
-Medial rotation
-Supination
-Pronation

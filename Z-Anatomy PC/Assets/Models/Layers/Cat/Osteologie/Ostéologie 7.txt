@@ -1,0 +1,10 @@
+mesh.032.l
+mesh.032.r
+Radius.l
+Trochlée distale du talus.l
+Fibula.l
+Tibia.l
+Radius.r
+Trochlée distale du talus.r
+Fibula.r
+Tibia.r

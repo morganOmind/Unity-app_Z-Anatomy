@@ -88,11 +88,25 @@ public class Layers : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        //disable for now because data are not yet available !
-        if (GlobalVariables.Instance.specieType == SpecieType.Cat) {
-            isEnabled = false;
-        }
     }
+
+    private void Start() {
+        SetLayers(GlobalVariables.Instance.GetCurrentSpecieSetting().layers);
+    }
+
+    public void SetLayers(SpecieLayers layers) {
+        bonesLayers = layers.bonesLayers;
+        ligamentsLayers = layers.ligamentsLayers;
+        muscularLayers = layers.muscularLayers;
+        arteriesLayers = layers.arteriesLayers;
+        veinsLayers = layers.veinsLayers;
+        lymphsLayers = layers.lymphsLayers;
+        fasciaLayers = layers.fasciaLayers;
+        nervesLayers = layers.nervesLayers;
+        visceralLayers = layers.visceralLayers;
+        refsLayers = layers.refsLayers;
+        skinLayers = layers.skinLayers;
+}
 
     public void ReadLayers()
     {
@@ -131,16 +145,26 @@ public class Layers : MonoBehaviour
             if(firstTime)
                 bonesSlider.value = bonesSlider.maxValue;
 
-            ligamentsSlider.maxValue = ligamentsLayers.Length;
-            muscularSlider.maxValue = muscularLayers.Length;
-            fasciaSlider.maxValue = fasciaLayers.Length;
-            arteriesSlider.maxValue = arteriesLayers.Length;
-            veinsSlider.maxValue = veinsLayers.Length;
-            lymphsSlider.maxValue = lymphsLayers.Length;
-            visceralSlider.maxValue = visceralLayers.Length;
-            nervesSlider.maxValue = nervesLayers.Length;
-            skinSlider.maxValue = skinLayers.Length;
-            refsSlider.maxValue = refsLayers.Length;
+            if(ligamentsSlider != null)
+                ligamentsSlider.maxValue = ligamentsLayers.Length;
+            if(muscularSlider != null)
+                muscularSlider.maxValue = muscularLayers.Length;
+            if(fasciaSlider != null)
+                fasciaSlider.maxValue = fasciaLayers.Length;
+            if(arteriesSlider != null)
+                arteriesSlider.maxValue = arteriesLayers.Length;
+            if(veinsSlider != null)
+                veinsSlider.maxValue = veinsLayers.Length;
+            if(lymphsSlider != null)
+                lymphsSlider.maxValue = lymphsLayers.Length;
+            if(visceralSlider != null)
+                visceralSlider.maxValue = visceralLayers.Length;
+            if(nervesSlider != null)
+                nervesSlider.maxValue = nervesLayers.Length;
+            if(skinSlider != null)
+                skinSlider.maxValue = skinLayers.Length;
+            if(refsSlider != null)
+                refsSlider.maxValue = refsLayers.Length;
 
             firstTime = false;
         }
@@ -275,10 +299,12 @@ public class Layers : MonoBehaviour
 
         yield return new WaitForEndOfFrame();
 
-        slider.SetValueWithoutNotify(maxValue);
-       /* slider.value = maxValue;
-        slider.SetEmpties(empties);
-        slider.UpdateButtons(maxValue);*/
+        if(slider != null) {
+            slider.SetValueWithoutNotify(maxValue);
+        }
+        /* slider.value = maxValue;
+         slider.SetEmpties(empties);
+         slider.UpdateButtons(maxValue);*/
     }
 
     public void UpdateBones()

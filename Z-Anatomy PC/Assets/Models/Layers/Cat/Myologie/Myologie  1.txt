@@ -1,0 +1,34 @@
+Muscles multifides.l
+Muscles élévateurs des côtes.l
+Muscles subcostaux.l
+Muscles intertransversaires des lombes.l
+Muscles interépineux.l
+Muscle long du cou.l
+Muscles rotateurs.l
+Muscle droit ventral de la tête.l
+Muscle petit droit dorsal de la tête.l
+Muscle géniohyoïdien.l
+Muscle occipitohyoïdien.l
+Muscle cératohyoïdien.l
+Muscle hyoïdien transverse.l
+Rétinaculum transverse.l
+Rétinaculum transverse.r
+Muscle articulaire du genou (Car, bo).l
+Tendon du quadriceps fémoral.l
+Muscle articulaire du genou (Car, bo).r
+Tendon du quadriceps fémoral.r
+Muscle anconé.l
+Muscle anconé.r
+Muscle carré pronateur.l
+Muscle carré pronateur.r
+Muscle rond pronateur.l
+Muscle rond pronateur.r
+Muscle supinateur.l
+Muscle supinateur.r
+Muscle court abducteur du pouce.l
+Muscle court abducteur du pouce.r
+Muscles interosseux du pied.l
+Muscles interosseux du pied.r
+Muscle court fléchisseur du premier orteil.l
+Muscle court fléchisseur du premier orteil.r
+Arc inguinal [Ligament inguinal].l

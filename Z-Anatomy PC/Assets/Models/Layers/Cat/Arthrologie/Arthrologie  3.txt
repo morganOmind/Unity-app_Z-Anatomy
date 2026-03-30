@@ -1,0 +1,54 @@
+Ligament annulaire du radius.l
+Ligament huméral transverse.l
+Ligaments glénohuméraux.l
+Ligament annulaire du radius.r
+Bourrelet glénoïdal.r
+Ligament huméral transverse.r
+Ligament radié de la tête de la côte.l
+Disque articulaire temporomandibulaire.l
+Ligament costotransversaire.l
+Ligament temporomandibulaire latéral.l
+Ligament intra-articulaire de la tête de la côte.l
+Membrane obturatrice.l
+Ligament métacarpien transverse profond.l
+Ligament métacarpien transverse profond.r
+Ligaments sacro-iliaques interosseux.l
+Membrane interosseuse de la jambe.l
+Membrane interosseuse de la jambe.r
+Ligament croisé caudal.l
+Ligament croisé caudal.r
+Ligament interosseux de l'avant-bras.l
+Ligament interosseux de l'avant-bras.r
+Ligament tibiofibulaire crânial.l
+Ligament tibiofibulaire caudal.l
+Ligament tibiofibulaire crânial.r
+Ligament tibiofibulaire caudal.r
+Ligament collatéral ulnaire.l
+Ligament collatéral radial.l
+Ligament collatéral latéral du carpe.l
+Ligament collatéral médial du carpe.l
+Ligament radié du carpe.l
+Ligament collatéral latéral du carpe.r
+Ligament collatéral médial du carpe.r
+Ligament radié du carpe.r
+Ligaments glénohuméraux.r
+Ligament collatéral ulnaire.r
+Ligament collatéral radial.r
+Ménisque latéral.l
+Ménisque latéral.r
+Ligament de la tête du fémur.l
+Ligament de la tête du fémur.r
+Ligament collatéral latéral.l
+Ligament collatéral médial.l
+Ligament collatéral latéral.r
+Ligament collatéral médial.r
+Ligament croisé crânial.l
+Ligament croisé crânial.r
+Ménisque médial.l
+Ménisque médial.r
+Synchondrose manubriosternale
+Synchondroses intersternébrales.l
+Membrane atlanto-occipitale ventrale
+Membrane atlanto-axiale dorsale
+Ligament talofibulaire plantaire.l
+Ligament talofibulaire plantaire.r
