@@ -5,12 +5,12 @@ using UnityEngine;
 public class UrlParser : MonoBehaviour
 {
 
-    public static int openNavid = -1;
+    public static string openNavid = "";
 
     //use for test purpose in the editor!
     public bool testInEditor = false;
     public SpecieType editorForceSpecie;
-    public int editorForceNavid;
+    public string editorForceNavid;
 
     void Awake() {
 #if !UNITY_EDITOR && UNITY_WEBGL
@@ -35,7 +35,7 @@ public class UrlParser : MonoBehaviour
                             FindObjectOfType<GlobalVariables>().specieType = System.Enum.Parse<SpecieType>(value[0].ToString().ToUpper() + value.Substring(1));
                             break;
                         case "navid":
-                            openNavid = int.Parse(value);
+                            openNavid = value;
                             break;
                         default:
                             print("key not recognized; Key: " + key + "; Value: " + value);

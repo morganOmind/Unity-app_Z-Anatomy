@@ -274,7 +274,7 @@ public class GlobalVariables : MonoBehaviour
 
     IEnumerator UrlNavidSelection() {
         yield return new WaitForEndOfFrame();
-        if (UrlParser.openNavid != -1) {
+        if (!string.IsNullOrEmpty(UrlParser.openNavid)) {
 
             print("Trying to focus on " + UrlParser.openNavid + " navid object");
 
@@ -300,12 +300,10 @@ public class GlobalVariables : MonoBehaviour
                 }
                 print("navid file parsed successfully!");
 
-                string searchNavid = "" + UrlParser.openNavid;
-
                 foreach(NameAndDescription nameScript in allNameScripts) {
                     string name = nameScript.name.Replace("(R)", "").Replace("(L)", "").Trim().RemoveSuffix();
                     if (navidsMap.ContainsKey(name)) {
-                        if (navidsMap[name] == searchNavid) {
+                        if (navidsMap[name] == UrlParser.openNavid) {
                             TangibleBodyPart part = nameScript.GetComponent<TangibleBodyPart>();
                             if(part != null) {
                                 print("focusing on " + part.name + " (name=" + name + ")");
