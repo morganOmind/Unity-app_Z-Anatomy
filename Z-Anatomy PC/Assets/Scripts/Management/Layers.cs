@@ -181,9 +181,10 @@ public class Layers : MonoBehaviour
             string[] parts = layer.text.Split('\n').Where(it => it.Length > 0).ToArray();
             layerObjects[i] = new List<GameObject>();
 
-            for (int j = 1; j < parts.Length; j++)
+            for (int j = 0; j < parts.Length; j++)
             {
                 var name = parts[j].Replace("\r", "");
+
                 if (allBodyParts.ContainsKey(name)) {
                     GameObject found = allBodyParts[name];
                     if (found != null) {
@@ -203,7 +204,7 @@ public class Layers : MonoBehaviour
                         Debug.Log(parts[j]);
                 }
                 else {
-                    //Debug.Log(parts[j]);
+                    //Debug.Log("Layers :: " + parts[j] + " not found");
                 }
             }
 
