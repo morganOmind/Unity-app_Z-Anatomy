@@ -305,23 +305,17 @@ public class TangibleBodyPart : MonoBehaviour
 
     //retrieve original materials (hand-setted for the human), that are shared with the cat, because color do not export from blender procedural materials
     void InitMaterials() {
-        if (KeyColors.Instance.HasKeyColor(gameObject.tag)) {
+        List<Material> primaries = KeyColors.Instance.GetPrimariesByTag(gameObject.tag);
+        if(primaries != null) {
             Material[] newMats = new Material[primaryMaterials.Length];
             for (int i = 0; i < primaryMaterials.Length; i++) {
-                List<Material> primaries = KeyColors.Instance.GetPrimariesByTag(gameObject.tag);
-                if(primaries != null) {
-                    int index = KeyColors.Instance.FindPrimaryIndex(primaries, primaryMaterials[i]);
-                    if(index != -1) {
-                        newMats[i] = primaries[index];
-                    }
-                    else {
-                        newMats[i] = primaryMaterials[i];
-                    }
+                int index = KeyColors.Instance.FindPrimaryIndex(primaries, primaryMaterials[i]);
+                if (index != -1) {
+                    newMats[i] = primaries[index];
                 }
                 else {
                     newMats[i] = primaryMaterials[i];
                 }
-
             }
             mr.sharedMaterials = newMats;
             primaryMaterials = newMats;

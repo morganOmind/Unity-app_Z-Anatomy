@@ -259,9 +259,6 @@ public class KeyColors : MonoBehaviour
                 primaries = skeletonPrimary;
                 break;
 
-            /*case "Joints":
-                return jointsToggle.isOn;*/
-
             case "Insertions":
                 primaries = insertionsPrimary;
                 break;
@@ -271,11 +268,9 @@ public class KeyColors : MonoBehaviour
                 break;
 
             case "Muscles":
+            case "Joints":  //dont know why, primary joints materials are in muscles list, and dont have secondary materials!!
                 primaries = musclesPrimary;
                 break;
-
-            /* case "Vascular":
-                 return cardiovascularToggle.isOn;*/
 
             case "Nervous":
                 primaries = nervousPrimary;
@@ -288,12 +283,6 @@ public class KeyColors : MonoBehaviour
             case "BodyParts":
                 primaries = regionsPrimary;
                 break;
-
-            /* case "Fascia":
-                 return muscularToggle.isOn;*/
-
-            /*case "References":
-                return referencesToggle.isOn;*/
 
             default:
                 break;
