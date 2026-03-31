@@ -105,7 +105,7 @@ public class PanelsManagement : MonoBehaviour
     {
         initialYPosCorssSections = crossSectionsOptions.expandedPosition.y;
 
-        CameraController.instance.offset = new Vector3(2*panelWidth / Screen.width, CameraController.instance.offset.y, 0);
+        CameraController.instance.offset = new Vector3(panelWidth / Screen.width, CameraController.instance.offset.y, 0);
         CameraController.instance.ResetCamera();
 
         initialOptionsHeight = optionsRT.GetHeight();
@@ -132,7 +132,6 @@ public class PanelsManagement : MonoBehaviour
         yield return null;
 
         UpdateHierarchySize();
-
     }
 
     public void ShowPencilOptions()
