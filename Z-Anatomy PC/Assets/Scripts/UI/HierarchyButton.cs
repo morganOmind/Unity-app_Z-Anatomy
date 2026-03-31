@@ -45,7 +45,8 @@ public class HierarchyButton : MonoBehaviour, IPointerClickHandler
     {
         if(tmpro != null)
             tmpro.enabled = true;
-        arrow.enabled = !isRoot;
+        if(arrow != null)
+            arrow.enabled = !isRoot;
     }
 
     public void OnClick()

@@ -305,14 +305,23 @@ public class GlobalVariables : MonoBehaviour
                     if (navidsMap.ContainsKey(name)) {
                         if (navidsMap[name] == UrlParser.openNavid) {
                             TangibleBodyPart part = nameScript.GetComponent<TangibleBodyPart>();
+                            Label label = nameScript.GetComponent<Label>();
                             if(part != null) {
                                 print("focusing on " + part.name + " (name=" + name + ")");
                                 part.ObjectClicked();
                                 FindObjectOfType<ContextualMenu>(true).IsolateClick();
+                                CameraController.instance.CenterView(true);
+                                yield break;
+                            }
+                            else if(label != null) {
+                                print("focusing on " + label.name + " (name=" + name + ")");
+                                label.Click();
+                                FindObjectOfType<ContextualMenu>(true).IsolateClick();
+                                CameraController.instance.CenterView(true);
                                 yield break;
                             }
                             else {
-                                print("searched object '" + name + "' has no tangibleBodyPart");
+                                print("searched object '" + name + "' has no tangibleBodyPart or label script");
                             }
                         }
                     }
