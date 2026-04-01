@@ -79,8 +79,8 @@ public class ContextualMenu : MonoBehaviour
 
         partiallyIsolateBtn.transform.parent.gameObject.SetActive(actualTags.Count > 1);
 
-        movePosition.transform.parent.gameObject.SetActive(MovePositionOn());
-        resetPosition.transform.parent.gameObject.SetActive(ResetPositionOn());
+        //movePosition.transform.parent.gameObject.SetActive(MovePositionOn());
+        //resetPosition.transform.parent.gameObject.SetActive(ResetPositionOn());
 
         showLabelsBtn.transform.parent.gameObject.SetActive(ShowLabelsOn());
         hideLabelsBtn.transform.parent.gameObject.SetActive(HideLabelsOn());
@@ -106,8 +106,8 @@ public class ContextualMenu : MonoBehaviour
         structuresBtn.transform.parent.gameObject.SetActive(false);
         structuresBtn.transform.parent.gameObject.SetActive(false);
         partiallyIsolateBtn.transform.parent.gameObject.SetActive(false);
-        movePosition.transform.parent.gameObject.SetActive(false);
-        resetPosition.transform.parent.gameObject.SetActive(false);
+        //movePosition.transform.parent.gameObject.SetActive(false);
+        //resetPosition.transform.parent.gameObject.SetActive(false);
         showLabelsBtn.transform.parent.gameObject.SetActive(false);
         hideLabelsBtn.transform.parent.gameObject.SetActive(false);
         showBoneInsertionsBtn.transform.parent.gameObject.SetActive(false);
