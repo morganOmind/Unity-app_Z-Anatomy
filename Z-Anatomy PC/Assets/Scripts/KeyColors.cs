@@ -48,9 +48,32 @@ public class KeyColors : MonoBehaviour
 
     public bool update;
 
+    List<Material> allPrimaries;
+
     private void Awake()
     {
         Instance = this;
+
+        allPrimaries = new List<Material>();
+        AddToAllPrimaries(skeletonPrimary);
+        AddToAllPrimaries(insertionsPrimary);
+        AddToAllPrimaries(musclesPrimary);
+        AddToAllPrimaries(nervousPrimary);
+        AddToAllPrimaries(lymphsPrimary);
+        AddToAllPrimaries(regionsPrimary);
+        AddToAllPrimaries(visceralPrimary);
+    }
+
+    void AddToAllPrimaries(List<Material> mats) {
+        foreach(Material m in mats) {
+            if (m != null && !allPrimaries.Contains(m)) {
+                allPrimaries.Add(m);
+            }
+        }
+    }
+
+    public List<Material> GetAllPrimaries() {
+        return allPrimaries;
     }
 
     public int FindPrimaryIndex(List<Material> primaries, Material primary) {
@@ -250,45 +273,6 @@ public class KeyColors : MonoBehaviour
         }
 
         return false;
-    }
-
-    public List<Material> GetPrimariesByTag(string tag) {
-        List<Material> primaries = null;
-        switch (tag) {
-            case "Skeleton":
-                primaries = skeletonPrimary;
-                break;
-
-            case "Insertions":
-                primaries = insertionsPrimary;
-                break;
-
-            case "Lymph":
-                primaries = lymphsPrimary;
-                break;
-
-            case "Muscles":
-            case "Joints":  //dont know why, primary joints materials are in muscles list, and dont have secondary materials!!
-                primaries = musclesPrimary;
-                break;
-
-            case "Nervous":
-                primaries = nervousPrimary;
-                break;
-
-            case "Visceral":
-                primaries = visceralPrimary;
-                break;
-
-            case "BodyParts":
-                primaries = regionsPrimary;
-                break;
-
-            default:
-                break;
-        }
-        return primaries;
-
     }
 
     public float GetWeightByTag(string tag)
