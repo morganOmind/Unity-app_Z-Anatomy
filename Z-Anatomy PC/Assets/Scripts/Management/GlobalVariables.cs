@@ -21,6 +21,7 @@ public struct SpecieSetting {
     public float camDefaultDistance;
     public TextAsset[] descriptions;
     public Vector2 sagitalLimits, coronalLimits, transversalLimits;
+    public float crossSectionLineWidth;
     public SpecieLayers layers;
 };
 

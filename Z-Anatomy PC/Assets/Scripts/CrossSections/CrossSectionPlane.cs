@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CrossSectionPlane : MonoBehaviour
 {
-
     // Update is called once per frame
     void Update()
     {
@@ -38,10 +37,24 @@ public class CrossSectionPlane : MonoBehaviour
 
 
     void OnEnable() {
+
+        float lineWidth = GlobalVariables.Instance.GetCurrentSpecieSetting().crossSectionLineWidth;
+        LineRenderer line = GetComponentInChildren<LineRenderer>();
+        line.startWidth = lineWidth;
+        line.endWidth = lineWidth;
+
         SendPositionToShader();
+        //some materials did not initialized properly, so make this fix to prevent that
+        //(and keep the original direct call before to prevent a weird clipping visual artefact)
+        StartCoroutine(LateInit());
 
         Shader.DisableKeyword("CLIP_NONE");
         Shader.EnableKeyword("CLIP_PLANE");
+    }
+
+    IEnumerator LateInit() {
+        yield return new WaitForEndOfFrame();
+        SendPositionToShader();
     }
 
     void OnDisable() {

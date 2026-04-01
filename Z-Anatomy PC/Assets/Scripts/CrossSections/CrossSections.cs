@@ -117,7 +117,10 @@ public class CrossSections : MonoBehaviour
             bool sectionColorSet = false;
             for (int i = 0; i < renderer.sharedMaterials.Length; i++)
             {
-                if (clippableShaders.Contains(renderer.sharedMaterials[i].shader)) {
+                //check if it is a shader that need to be swapped
+                //or to prevent materials that are not set (they have the Lit material by default), check this too!!
+                if (clippableShaders.Contains(renderer.sharedMaterials[i].shader) 
+                    || (renderer.sharedMaterials[i].name == "Lit" && renderer.sharedMaterials[i].shader.name == "Universal Render Pipeline/Lit")) {
                     if(!sectionColorSet) {
                         sectionColor = renderer.sharedMaterials[i].GetColor("_BaseColor");
                         sectionColorSet = true;
@@ -162,8 +165,8 @@ public class CrossSections : MonoBehaviour
         List<MeshRenderer> renderers = GlobalVariables.Instance.allBodyPartRenderers;
         Bounds bounds = new Bounds();
         foreach(Renderer r in renderers) {
-            Collider c = r.GetComponent<Collider>();
-            if(c != null) {
+            MeshCollider c = r.GetComponent<MeshCollider>();
+            if(c != null && c.sharedMesh != null && c.sharedMesh.vertexCount > 0) {
                 bounds.Encapsulate(c.bounds);
             }
         }
