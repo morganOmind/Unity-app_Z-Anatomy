@@ -8,16 +8,17 @@ public class LoadScene : MonoBehaviour
 {
     public float duration;
     public int sceneIndex;
-    private Image img;
-
-    private void Awake()
-    {
-        img = GetComponent<Image>();
-    }
-
+    public Image fadeBackground, loading;
+    
     private IEnumerator Start()
     {
-        yield return StartCoroutine(Fade());
+        if(loading != null) {
+            loading.fillAmount = 0f;
+        }
+
+        if(fadeBackground != null) {
+            yield return StartCoroutine(Fade());
+        }
         StartCoroutine(LoadSceneAsync());
     }
 
@@ -27,6 +28,9 @@ public class LoadScene : MonoBehaviour
 
         while(!asyncLoad.isDone)
         {
+            if(loading != null) {
+                loading.fillAmount = asyncLoad.progress;
+            }
             yield return null;
         }
     }
@@ -34,12 +38,12 @@ public class LoadScene : MonoBehaviour
     IEnumerator Fade()
     {
         float time = 0;
-        Color color = img.color;
+        Color color = fadeBackground.color;
         while (time < duration)
         {
             float t = time / duration;
-            color.a = Mathf.Lerp(0, 1, t);
-            img.color = color;
+            color.a = Mathf.Lerp(1, 0, t);
+            fadeBackground.color = color;
             time += Time.deltaTime;
             yield return null;
         }
