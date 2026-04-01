@@ -586,3 +586,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 1
+  sceneIndex: 1

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class LoadScene : MonoBehaviour
 {
     public float duration;
+    public int sceneIndex;
     private Image img;
 
     private void Awake()
@@ -22,7 +23,7 @@ public class LoadScene : MonoBehaviour
 
     IEnumerator LoadSceneAsync()
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(1);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneIndex);
 
         while(!asyncLoad.isDone)
         {
