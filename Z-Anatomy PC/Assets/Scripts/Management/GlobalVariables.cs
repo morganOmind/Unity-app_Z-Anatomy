@@ -275,6 +275,8 @@ public class GlobalVariables : MonoBehaviour
 
     IEnumerator UrlNavidSelection() {
         yield return new WaitForEndOfFrame();
+        //wait one more frame to let the label's line initialized properly!
+        yield return new WaitForEndOfFrame();
         if (!string.IsNullOrEmpty(UrlParser.openNavid)) {
 
             print("Trying to focus on " + UrlParser.openNavid + " navid object");

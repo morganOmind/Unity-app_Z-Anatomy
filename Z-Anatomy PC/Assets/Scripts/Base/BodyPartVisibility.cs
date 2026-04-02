@@ -13,7 +13,7 @@ public class BodyPartVisibility : MonoBehaviour
     public bool isSelected;
     [HideInInspector]
     public NameAndDescription nameScript;
-    Label[] labels;
+    Label[] allLabels, directLabels;
     [HideInInspector]
     public List<TangibleBodyPart> insertions = new List<TangibleBodyPart>();
     [HideInInspector]
@@ -34,7 +34,8 @@ public class BodyPartVisibility : MonoBehaviour
     private void Awake()
     {
         nameScript = GetComponent<NameAndDescription>();
-        labels = transform.GetComponentsInDirectChildren<Label>();
+        allLabels = transform.GetComponentsInChildren<Label>(true);
+        directLabels = transform.GetComponentsInDirectChildren<Label>();
         childs = GetComponentsInChildren<BodyPartVisibility>(true);
 
         if (CompareTag("Skeleton"))
@@ -143,12 +144,12 @@ public class BodyPartVisibility : MonoBehaviour
     /// <param name="saveInHistory">Optional parameter. Whether to save the command in history or not</param>
     public void ShowLabels(bool saveInHistory = false)
     {
-        if (labels == null)
+        if (allLabels == null)
             return;
 
         List<GameObject> shown = new List<GameObject>();
 
-        foreach (var label in labels)
+        foreach (var label in allLabels)
         {
             shown.Add(label.gameObject);
             label.gameObject.SetActive(true);
@@ -169,12 +170,12 @@ public class BodyPartVisibility : MonoBehaviour
     /// <param name="saveInHistory">Optional parameter. If set to true, a record of the labels hidden will be added to the action history.</param>
     public void HideLabels(bool saveInHistory = false)
     {
-        if (labels == null)
+        if (allLabels == null)
             return;
 
         List<GameObject> hidden = new List<GameObject>();
 
-        foreach (var label in labels)
+        foreach (var label in allLabels)
         {
             hidden.Add(label.gameObject);
             label.gameObject.SetActive(false);
@@ -377,7 +378,7 @@ public class BodyPartVisibility : MonoBehaviour
     /// <returns>True if the game object has labels, false otherwise.</returns>
     public bool HasLabels()
     {
-        return labels != null && labels.Length > 0;
+        return allLabels != null && allLabels.Length > 0;
     }
 
     /// <summary>

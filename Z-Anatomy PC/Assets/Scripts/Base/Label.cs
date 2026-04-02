@@ -54,7 +54,7 @@ public class Label : MonoBehaviour
                 line = lineObj.GetComponent<Line>();
             else
                 line = transform.parent.Find(new StringBuilder().Append(nameScript.originalName.Replace(".t", "").Replace(".s", "")).Append(".i").ToString()).GetComponent<Line>();
-            line.gameObject.SetActive(true);
+            //line.gameObject.SetActive(true);
             originPoint = line.transform.Find("maxPoint");
             hasLine = true;
         }
@@ -63,13 +63,14 @@ public class Label : MonoBehaviour
             hasLine = false;
         }
 
-
         if (line != null && line.minPoint != null && line.maxPoint != null)
             lineDirection = line.maxPoint.position - line.minPoint.position;
         else
             lineDirection = parent.transform.position - transform.position;
         
         Initialize();
+
+        gameObject.SetActive(false);
     }
 
     /// <summary>

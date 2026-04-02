@@ -100,16 +100,16 @@ public class CreatePrefabs : MonoBehaviour
                 }
                 if (!child.name.Contains(".j") && !child.name.Contains(".i" )&& !child.name.Contains(".t") && !child.name.Contains(".s") && child.GetComponent<MeshRenderer>() != null)
                  {
-                    /*if(child.GetComponent<MeshFilter>().sharedMesh.vertexCount == 0) {
+                    if(child.GetComponent<MeshFilter>().sharedMesh.vertexCount == 0) {
                         Component.DestroyImmediate(child.GetComponent<MeshRenderer>());
                         Component.DestroyImmediate(child.GetComponent<MeshFilter>());
                     }
-                    else {*/
+                    else {
                         TangibleBodyPart script = child.gameObject.AddComponent<TangibleBodyPart>();
                         if (script == null)
                             continue;
                         child.gameObject.AddComponent<MeshCollider>();
-                    //}
+                    }
                 }
              }
          }
