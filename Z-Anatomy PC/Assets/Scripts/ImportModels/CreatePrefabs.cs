@@ -61,6 +61,9 @@ public class CreatePrefabs : MonoBehaviour
             }
 
             AddScriptAndMesh(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList());
+            if (!isLegacyHumanModel) {
+                ReparentLines(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList());
+            }
             CreateLabels(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList(), isLegacyHumanModel);
             SetLayer(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList());
             SetTag(Selection.activeGameObject.GetComponentsInChildren<Transform>(true).ToList(), Selection.activeGameObject.tag);
@@ -181,10 +184,32 @@ public class CreatePrefabs : MonoBehaviour
             else if (child.name.Contains(".t") || child.name.Contains(".s"))
             {
                 Label script = child.gameObject.AddComponent<Label>();
-                child.gameObject.AddComponent<TextMeshPro>();
-                script.labelMaterial = (Material)Resources.Load("LabelMaterial", typeof(Material));
+                //child.gameObject.AddComponent<TextMeshPro>();
+                //script.labelMaterial = (Material)Resources.Load("LabelMaterial", typeof(Material));
                 if (!isHuman) {
                     script.transform.parent = script.transform.parent.parent;
+                }
+            }
+        }
+    }
+
+    //manage sublabels/lines: reparent lines that are parented to a line
+    //lines of sublabels are reparented to their associated parent's label instead of line to manage the lexicon hierarchy properly
+    static void ReparentLines(List<Transform> gameObjects) {
+        List<Transform> labels = gameObjects.FindAll(go => go.name.EndsWith(".s") || go.name.EndsWith(".t"));
+        foreach (Transform child in gameObjects) {
+            if ((child.name.EndsWith(".i") || child.name.EndsWith(".j")) 
+                && (child.parent.name.EndsWith(".i") || child.parent.name.EndsWith(".j")) )
+                {
+
+                string parentLabelName = child.parent.name.Replace(".i", ".s").Replace(".j", ".t");
+                Transform parentLabel = labels.Find(t => t.name == parentLabelName);
+
+                if(parentLabel == null) {
+                    print("Error reparenting " + child.name);
+                }
+                else {
+                    child.parent = parentLabel;
                 }
             }
         }

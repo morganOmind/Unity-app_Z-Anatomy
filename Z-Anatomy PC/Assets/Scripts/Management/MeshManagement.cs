@@ -46,7 +46,7 @@ public class MeshManagement : MonoBehaviour
             BodyPartVisibility script = renderer.GetComponent<BodyPartVisibility>();
         }
 
-        HideAllLabels();
+        //HideAllLabels();
 
         //Set default shader params
         for (i = 0; i < rendererMaterials.Count; i++)

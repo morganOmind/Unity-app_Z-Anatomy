@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using TMPro;
@@ -10,6 +12,7 @@ using UnityEngine;
 public class Label : MonoBehaviour
 {
     private Camera cam;
+    GameObject textGO;
     private TextMeshPro text;
     private float parentScale;
     private MaterialPropertyBlock _propBlock;
@@ -33,19 +36,64 @@ public class Label : MonoBehaviour
     [HideInInspector]
     public Vector3 lineDirection;
 
+    private void OnEnable() {
+        if(text != null)
+            text.enabled = true;
+        if(textGO != null) {
+            textGO.SetActive(true);
+        }
+    }
+
+    private void OnDisable() {
+        if(textGO != null) {
+            textGO.SetActive(false);
+        }
+    }
+
     private void Awake()
     {
+        TextMeshPro tmp = GetComponent<TextMeshPro>();
+        if(tmp != null) {
+            Component.Destroy(tmp);
+        }
+        Renderer rend = GetComponent<Renderer>();
+        if(rend != null) {
+            Component.Destroy(rend);
+        }
+        MeshFilter mesh = GetComponent<MeshFilter>();
+        if(mesh != null) {
+            Component.Destroy(mesh);
+        }
+
         nameScript = GetComponent<NameAndDescription>();
         visibilityScript = GetComponent<BodyPartVisibility>();
-        text = GetComponent<TextMeshPro>();
-        boxCollider = gameObject.AddComponent<BoxCollider>();
-        rect = GetComponent<RectTransform>();
+        
+
+        textGO = new GameObject(gameObject.name + "-TMP");
+        textGO.transform.parent = FindClosestParentNoLabelNoLine();
+        textGO.transform.position = transform.position;
+        textGO.layer = LayerMask.NameToLayer("Body");
+
+        LabelText lt = textGO.AddComponent<LabelText>();
+        lt.label = this;
+
+        text = textGO.AddComponent<TextMeshPro>();
+        boxCollider = textGO.AddComponent<BoxCollider>();
+        rect = textGO.GetComponent<RectTransform>();
         cam = Camera.main;
         color = Color.white;
         parent = GetComponentInParent<TangibleBodyPart>();
     }
 
-    private void Start()
+    Transform FindClosestParentNoLabelNoLine() {
+        Transform t = transform.parent;
+        while(t.GetComponent<Line>() != null || t.GetComponent<Label>() != null) {
+            t = t.parent;
+        }
+        return t;
+    }
+
+    private IEnumerator Start()
     {
         try
         {
@@ -70,6 +118,8 @@ public class Label : MonoBehaviour
         
         Initialize();
 
+        text.enabled = false;
+        yield return new WaitForEndOfFrame();
         gameObject.SetActive(false);
     }
 
@@ -105,7 +155,7 @@ public class Label : MonoBehaviour
     void Update()
     {
         boxCollider.size = text.textBounds.size;
-        transform.rotation = cam.transform.rotation;
+        textGO.transform.rotation = cam.transform.rotation;
         text.fontSize = fontSize * Mathf.Clamp(cam.orthographicSize, 0.075f, 1.5f);
 
         if (hasLine)

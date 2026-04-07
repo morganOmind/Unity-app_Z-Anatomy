@@ -21,10 +21,6 @@ public class Line : MonoBehaviour
     [HideInInspector]
     public Transform maxPoint;
 
-    private void OnEnable() {
-        _renderer.enabled = true;
-    }
-
     private void Awake()
     {
         cam = Camera.main;
@@ -47,12 +43,9 @@ public class Line : MonoBehaviour
 
     }
 
-    private IEnumerator Start()
+    private void Start()
     {
         initialSize = GlobalVariables.Instance.lineSize / 500;
-
-        _renderer.enabled = false;
-        yield return new WaitForEndOfFrame();
         gameObject.SetActive(false);
     }
 

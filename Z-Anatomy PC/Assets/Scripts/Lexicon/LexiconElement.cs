@@ -80,7 +80,11 @@ public class LexiconElement : MonoBehaviour
         {
             if (child == element)
                 continue;
-            hasChilds = (child.gameObject.IsBodyPart() && !child.CompareTag("Insertions")) || child.gameObject.IsLabel() || child.gameObject.IsGroup();
+            hasChilds = (child.gameObject.IsBodyPart() && !child.CompareTag("Insertions")) 
+                || child.gameObject.IsLabel() 
+                || child.gameObject.IsGroup()
+                //group objet exists only for the man, so instead check nameanddescription compoenent that every lexicon element has.
+                || child.GetComponent<NameAndDescription>() != null;
             if (hasChilds)
                 break;
         }

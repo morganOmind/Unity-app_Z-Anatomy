@@ -219,7 +219,11 @@ public class RaycastObject : MonoBehaviour
             }
             else if(!ActionControl.creatingLocalNote)
             {
-                Label labelScript = objectSelected.GetComponent<Label>();
+                LabelText labelText = objectSelected.GetComponent<LabelText>();
+                Label labelScript = null;
+                if (labelText != null) {
+                    labelScript = labelText.label;
+                }
 
                 if (bodyPartScript != null)
                     bodyPartScript.ObjectClicked();

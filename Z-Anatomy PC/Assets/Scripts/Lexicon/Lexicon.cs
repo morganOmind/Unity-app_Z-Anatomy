@@ -209,7 +209,8 @@ public class Lexicon : MonoBehaviour
         //Instance child
         foreach (Transform child in childs)
         {
-            if (!child.name.Contains(".j") && !child.name.Contains(".i") && !child.CompareTag("Insertions"))
+            if (!child.name.Contains(".j") && !child.name.Contains(".i") && !child.CompareTag("Insertions")
+                && child.GetComponent<TMPro.TextMeshPro>() == null)
             {
                 GameObject newElement;
                 LexiconElement script;
