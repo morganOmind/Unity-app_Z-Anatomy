@@ -9,8 +9,24 @@ public class DropDownLanguageSetting : MonoBehaviour, IPointerClickHandler {
     public void OnPointerClick(PointerEventData eventData) {
         Toggle[] toggles = transform.Find("Dropdown List").Find("Viewport").Find("Content").GetComponentsInChildren<Toggle>();
         List<int> availableLanguages = new List<int>(GlobalVariables.Instance.GetCurrentSpecieSetting().availableLanguages);
+        float offset = 0f;
         for (int i = 0; i < toggles.Length; i++) {
-            toggles[i].interactable = availableLanguages.IndexOf(i) != -1;
+            bool enable = availableLanguages.IndexOf(i) != -1;
+            toggles[i].gameObject.SetActive(enable);
+            if (!enable) {
+                for(int j=i+1; j<toggles.Length; j++) {
+                    RectTransform rect = toggles[j].GetComponent<RectTransform>();
+                    Vector2 pos = rect.anchoredPosition;
+                    float delta = toggles[j - 1].GetComponent<RectTransform>().rect.size.y;
+                    rect.anchoredPosition = new Vector2(pos.x, pos.y + delta);
+                    offset += delta;
+                }
+            }
+        }
+        if(offset > 0f) {
+            RectTransform rect = transform.Find("Dropdown List").GetComponent<RectTransform>();
+            Vector2 size = rect.sizeDelta;
+            rect.sizeDelta = new Vector2(size.x, size.y - offset);
         }
     }
 }
