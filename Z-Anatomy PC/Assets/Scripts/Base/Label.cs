@@ -102,15 +102,27 @@ public class Label : MonoBehaviour
                 line = lineObj.GetComponent<Line>();
             else
                 line = transform.parent.Find(new StringBuilder().Append(nameScript.originalName.Replace(".t", "").Replace(".s", "")).Append(".i").ToString()).GetComponent<Line>();
-            //line.gameObject.SetActive(true);
-            originPoint = line.transform.Find("maxPoint");
+
+            // be sure to activate the line because is is disable for the legacy human model at import setup
+            if(GlobalVariables.Instance.GetCurrentSpecieSetting().type == SpecieType.Man) {
+                line.gameObject.SetActive(true);
+            }
+
+            //find true origin point (because it is swapped between legacy human import models and new ones !)
+            Transform maxPoint = line.transform.Find("maxPoint");
+            Transform minPoint = line.transform.Find("minPoint");
+            float maxDist = Vector3.Distance(maxPoint.position, transform.position);
+            float minDist = Vector3.Distance(minPoint.position, transform.position);
+
+            originPoint = maxDist > minDist ? maxPoint : minPoint;
+
             hasLine = true;
         }
         catch (System.Exception)
         {
             hasLine = false;
         }
-
+        
         if (line != null && line.minPoint != null && line.maxPoint != null)
             lineDirection = line.maxPoint.position - line.minPoint.position;
         else
@@ -175,25 +187,28 @@ public class Label : MonoBehaviour
     {
         float angle = Vector3.Angle(originPoint.position - transform.position, -cam.transform.forward);
         float a = angle * angle * angle * angle * 0.000000025f;
-        _renderer.enabled = a > .075f;
-        line._renderer.enabled = _renderer.enabled;
+        if(_renderer != null) {
+            _renderer.enabled = a > .075f;
+            if (line._renderer != null)
+                line._renderer.enabled = _renderer.enabled;
 
-        if (a > 1)
-            a = 1;
+            if (a > 1)
+                a = 1;
 
-        Color newColor = new Color(color.r, color.g, color.b, a);
+            Color newColor = new Color(color.r, color.g, color.b, a);
 
-        // Get the current value of the material properties in the renderer.
-        _renderer.GetPropertyBlock(_propBlock);
-        // Assign our new value.
-        _propBlock.SetColor("_FaceColor", newColor);
-        // Apply the edited values to the renderer.
-        _renderer.SetPropertyBlock(_propBlock);
+            // Get the current value of the material properties in the renderer.
+            _renderer.GetPropertyBlock(_propBlock);
+            // Assign our new value.
+            _propBlock.SetColor("_FaceColor", newColor);
+            // Apply the edited values to the renderer.
+            _renderer.SetPropertyBlock(_propBlock);
 
-        if(visibilityScript.isSelected)
-            line.SetColor(newColor);
-        else
-            line.SetColor(a * 0.5f);
+            if (visibilityScript.isSelected)
+                line.SetColor(newColor);
+            else
+                line.SetColor(a * 0.5f);
+        }
     }
 
     /// <summary>

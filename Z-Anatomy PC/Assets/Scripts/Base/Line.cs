@@ -39,8 +39,6 @@ public class Line : MonoBehaviour
         _propBlock = new MaterialPropertyBlock();
 
         lineColor = lineMaterial.color;
-        gameObject.SetActive(true);
-
     }
 
     private void Start()
