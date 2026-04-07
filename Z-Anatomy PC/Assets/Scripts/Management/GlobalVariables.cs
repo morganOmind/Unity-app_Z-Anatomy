@@ -19,6 +19,7 @@ public struct SpecieSetting {
     public int descriptionLanguageIndexOverride;
     public int initialNameIndexInTranslationFile;
     public float camDefaultDistance;
+    public float camMaxDistance;
     public TextAsset[] descriptions;
     public Vector2 sagitalLimits, coronalLimits, transversalLimits;
     public float crossSectionLineWidth;
@@ -207,6 +208,7 @@ public class GlobalVariables : MonoBehaviour
                 camCtrl.target = globalParent;
                 camCtrl.defaultCenter = globalParent.transform.Find("DEFAULTCENTER").gameObject;
                 camCtrl.defaulDistance = setting.camDefaultDistance;
+                CameraController.MAX_DISTANCE = setting.camMaxDistance;
             }
             else {
                 setting.globalParent.SetActive(false);
@@ -274,10 +276,16 @@ public class GlobalVariables : MonoBehaviour
     }
 
     IEnumerator UrlNavidSelection() {
-        yield return new WaitForEndOfFrame();
-        //wait one more frame to let the label's line initialized properly!
-        yield return new WaitForEndOfFrame();
+
         if (!string.IsNullOrEmpty(UrlParser.openNavid)) {
+
+            int cullingMask = Camera.main.cullingMask;
+            Camera.main.cullingMask = 0;
+
+            yield return new WaitForEndOfFrame();
+            //wait one more frame to let the label's line initialized properly!
+            yield return new WaitForEndOfFrame();
+        
 
             print("Trying to focus on " + UrlParser.openNavid + " navid object");
 
@@ -314,6 +322,7 @@ public class GlobalVariables : MonoBehaviour
                                 part.ObjectClicked();
                                 FindObjectOfType<ContextualMenu>(true).IsolateClick();
                                 CameraController.instance.CenterView(true);
+                                Camera.main.cullingMask = cullingMask;
                                 yield break;
                             }
                             else if(label != null) {
@@ -321,6 +330,7 @@ public class GlobalVariables : MonoBehaviour
                                 label.Click();
                                 FindObjectOfType<ContextualMenu>(true).IsolateClick();
                                 CameraController.instance.CenterView(true);
+                                Camera.main.cullingMask = cullingMask;
                                 yield break;
                             }
                             else {
@@ -336,6 +346,9 @@ public class GlobalVariables : MonoBehaviour
             else {
                 print("navid file cannot be found for " + globalParent.name);
             }
+
+            print("unable to focus on " + UrlParser.openNavid);
+            Camera.main.cullingMask = cullingMask;
         }
     }
 
