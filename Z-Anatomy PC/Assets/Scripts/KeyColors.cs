@@ -48,32 +48,9 @@ public class KeyColors : MonoBehaviour
 
     public bool update;
 
-    List<Material> allPrimaries;
-
     private void Awake()
     {
         Instance = this;
-
-        allPrimaries = new List<Material>();
-        AddToAllPrimaries(skeletonPrimary);
-        AddToAllPrimaries(insertionsPrimary);
-        AddToAllPrimaries(musclesPrimary);
-        AddToAllPrimaries(nervousPrimary);
-        AddToAllPrimaries(lymphsPrimary);
-        AddToAllPrimaries(regionsPrimary);
-        AddToAllPrimaries(visceralPrimary);
-    }
-
-    void AddToAllPrimaries(List<Material> mats) {
-        foreach(Material m in mats) {
-            if (m != null && !allPrimaries.Contains(m)) {
-                allPrimaries.Add(m);
-            }
-        }
-    }
-
-    public List<Material> GetAllPrimaries() {
-        return allPrimaries;
     }
 
     public int FindPrimaryIndex(List<Material> primaries, Material primary) {
