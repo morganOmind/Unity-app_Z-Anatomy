@@ -37,8 +37,6 @@ public class Label : MonoBehaviour
     public Vector3 lineDirection;
 
     private void OnEnable() {
-        if(text != null)
-            text.enabled = true;
         if(textGO != null) {
             textGO.SetActive(true);
         }
@@ -83,6 +81,42 @@ public class Label : MonoBehaviour
         cam = Camera.main;
         color = Color.white;
         parent = GetComponentInParent<TangibleBodyPart>();
+
+        Transform maxPoint = null;
+        Transform minPoint = null;
+
+        try {
+            var lineObj = transform.parent.Find(new StringBuilder().Append(nameScript.originalName.Replace(".t", "").Replace(".s", "")).Append(".j").ToString());
+            if (lineObj != null)
+                line = lineObj.GetComponent<Line>();
+            else
+                line = transform.parent.Find(new StringBuilder().Append(nameScript.originalName.Replace(".t", "").Replace(".s", "")).Append(".i").ToString()).GetComponent<Line>();
+
+            // be sure to activate the line because is is disable for the legacy human model at import setup
+            if (GlobalVariables.Instance.GetCurrentSpecieSetting().type == SpecieType.Man) {
+                line.gameObject.SetActive(true);
+            }
+
+            //find true origin point (because it is swapped between legacy human import models and new ones !)
+            maxPoint = line.transform.Find("maxPoint");
+            minPoint = line.transform.Find("minPoint");
+            float maxDist = Vector3.Distance(maxPoint.position, transform.position);
+            float minDist = Vector3.Distance(minPoint.position, transform.position);
+
+            originPoint = maxDist > minDist ? maxPoint : minPoint;
+
+            hasLine = true;
+        }
+        catch (System.Exception) {
+            hasLine = false;
+        }
+
+        if (line != null && minPoint != null && maxPoint != null)
+            lineDirection = maxPoint.position - minPoint.position;
+        else
+            lineDirection = parent.transform.position - transform.position;
+
+        Initialize();
     }
 
     Transform FindClosestParentNoLabelNoLine() {
@@ -93,46 +127,16 @@ public class Label : MonoBehaviour
         return t;
     }
 
-    private IEnumerator Start()
-    {
-        try
-        {
-            var lineObj = transform.parent.Find(new StringBuilder().Append(nameScript.originalName.Replace(".t", "").Replace(".s", "")).Append(".j").ToString());
-            if(lineObj != null)
-                line = lineObj.GetComponent<Line>();
-            else
-                line = transform.parent.Find(new StringBuilder().Append(nameScript.originalName.Replace(".t", "").Replace(".s", "")).Append(".i").ToString()).GetComponent<Line>();
-
-            // be sure to activate the line because is is disable for the legacy human model at import setup
-            if(GlobalVariables.Instance.GetCurrentSpecieSetting().type == SpecieType.Man) {
-                line.gameObject.SetActive(true);
+    private void Start() {
+        //only disable on startup, else some sublabels are disabled before their start, and disable themselves at first enable after startup and do not show up the first time!
+        //this way, we are sure that every labels is disable at startup, while not disabling itself when we want to show it for the first time
+        if (Time.frameCount == 1) {
+            foreach (Label l in GetComponentsInChildren<Label>(true)) {
+                l.gameObject.SetActive(false);
             }
+            gameObject.SetActive(false);
 
-            //find true origin point (because it is swapped between legacy human import models and new ones !)
-            Transform maxPoint = line.transform.Find("maxPoint");
-            Transform minPoint = line.transform.Find("minPoint");
-            float maxDist = Vector3.Distance(maxPoint.position, transform.position);
-            float minDist = Vector3.Distance(minPoint.position, transform.position);
-
-            originPoint = maxDist > minDist ? maxPoint : minPoint;
-
-            hasLine = true;
         }
-        catch (System.Exception)
-        {
-            hasLine = false;
-        }
-        
-        if (line != null && line.minPoint != null && line.maxPoint != null)
-            lineDirection = line.maxPoint.position - line.minPoint.position;
-        else
-            lineDirection = parent.transform.position - transform.position;
-        
-        Initialize();
-
-        text.enabled = false;
-        yield return new WaitForEndOfFrame();
-        gameObject.SetActive(false);
     }
 
     /// <summary>

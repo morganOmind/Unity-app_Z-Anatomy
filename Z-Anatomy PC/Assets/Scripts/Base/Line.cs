@@ -39,13 +39,11 @@ public class Line : MonoBehaviour
         _propBlock = new MaterialPropertyBlock();
 
         lineColor = lineMaterial.color;
-    }
 
-    private void Start()
-    {
         initialSize = GlobalVariables.Instance.lineSize / 500;
         gameObject.SetActive(false);
     }
+
 
     // Update is called once per frame
     void Update()
