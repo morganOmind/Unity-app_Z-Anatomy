@@ -231,16 +231,26 @@ public class TangibleBodyPart : MonoBehaviour
     public void SetSecondaryMaterial(bool planeEnabled)
     {
         if (mr != null) {
-            mr.sharedMaterials = secondaryMaterials;
-            foreach (Material material in mr.materials) {
-                material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
-                if (planeEnabled) {
-                    material.DisableKeyword("CLIP_NONE");
-                    material.EnableKeyword("CLIP_PLANE");
+            if(secondaryMaterials != null) {
+                mr.sharedMaterials = secondaryMaterials;
+                foreach (Material material in mr.materials) {
+                    material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
+                    if (planeEnabled) {
+                        material.DisableKeyword("CLIP_NONE");
+                        material.EnableKeyword("CLIP_PLANE");
+                    }
+                    else {
+                        material.DisableKeyword("CLIP_PLANE");
+                        material.EnableKeyword("CLIP_NONE");
+                    }
+                }
+            }
+            else {
+                if (nameScript != null) {
+                    print(nameScript.originalName + " has null secondary materials");
                 }
                 else {
-                    material.DisableKeyword("CLIP_PLANE");
-                    material.EnableKeyword("CLIP_NONE");
+                    print(gameObject.name + " has null secondary materials");
                 }
             }
         }
@@ -328,10 +338,14 @@ public class TangibleBodyPart : MonoBehaviour
         for (int i = 0; i < primaryMaterials.Length; i++)
         {
             var mat = KeyColors.Instance.GetSecondaryColor(tag, mr.sharedMaterials[i]);
-            if (mat == null)
-                continue;
-            secondaryMaterials[i] = new Material(mat);
-            secondaryMaterials[i].SetColor("_BaseColor", Color.Lerp(primaryMaterials[i].GetColor("_BaseColor"), secondaryMaterials[i].GetColor("_BaseColor"), secondaryColorWeight));
+            if (mat == null) {
+                //fallback to ensure it is not null
+                secondaryMaterials[i] = primaryMaterials[i];
+            }
+            else {
+                secondaryMaterials[i] = new Material(mat);
+                secondaryMaterials[i].SetColor("_BaseColor", Color.Lerp(primaryMaterials[i].GetColor("_BaseColor"), secondaryMaterials[i].GetColor("_BaseColor"), secondaryColorWeight));
+            }
         }
     }
 

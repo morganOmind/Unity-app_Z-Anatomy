@@ -12,6 +12,61 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Directions
+    second: {fileID: 2100000, guid: 87580fe8f4d55d94f99602e5de6e3df5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin 1
+    second: {fileID: 2100000, guid: 01a745e075d5d4a43aa8b74157458a8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin 2
+    second: {fileID: 2100000, guid: 99bf180fca7d57b418dc2582a1f13f1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin 3
+    second: {fileID: 2100000, guid: 84e68b607aa9af34e9f83a851c203a63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin 4
+    second: {fileID: 2100000, guid: bb39a3205a8427c4bbf948e9f199ada3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin 5
+    second: {fileID: 2100000, guid: 83558a2cefbce3e4e9d5c5686b99d0ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin 5'
+    second: {fileID: 2100000, guid: e1485fc8ab82c9b478ae68ba70f6a549, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin 5''
+    second: {fileID: 2100000, guid: 1b44a20d572a425498257d6eccb15474, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin 6
+    second: {fileID: 2100000, guid: 6778ceee707f3674f9192fa7acb0f2ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin 7
+    second: {fileID: 2100000, guid: 7b5a80d58b3ae80409c2ef39497ae2fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin 8
+    second: {fileID: 2100000, guid: c8f0fc14c874e4c42b469ca13b2d2d95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Skin-1
     second: {fileID: 2100000, guid: 01a745e075d5d4a43aa8b74157458a8a, type: 2}
   - first:
@@ -59,6 +114,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Skin-8
     second: {fileID: 2100000, guid: c8f0fc14c874e4c42b469ca13b2d2d95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Text
+    second: {fileID: 2100000, guid: ddc15c091e1484c47929ca6d91f7b433, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
