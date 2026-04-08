@@ -25,6 +25,7 @@ public class ActionControl : MonoBehaviour
     public static bool draggingMoveIcon = false;
     public static bool draggingRotateIcon = false;
     public static bool blockedInput = false;
+    public static bool showOnlyMainLabels = true;
 
     private CameraController cam;
 

@@ -39,6 +39,7 @@ public class Settings : MonoBehaviour
     public Toggle nameOnMouseToggle;
     public Toggle limitRotationToggle;
     public Toggle HDRToggle;
+    public Toggle showOnlyMainLabelsToggle;
 
     public CustomSlider zoomVelocitySlider;
     public CustomSlider rotationVelocitySlider;
@@ -138,6 +139,8 @@ public class Settings : MonoBehaviour
         zoomVelocitySlider.value = PlayerPrefs.GetFloat("ZoomVelocity", 1);
         //Rotation velocity
         rotationVelocitySlider.value = PlayerPrefs.GetFloat("RotationVelocity", 1);
+
+        showOnlyMainLabelsToggle.isOn = PlayerPrefs.GetInt("ShowOnlyMainLabels", 0) == 1;
     }
 
     void ApplyNameTranslation(Transform parent)
@@ -283,6 +286,18 @@ public class Settings : MonoBehaviour
     {
         ActionControl.limitRotation = !ActionControl.limitRotation;
         PlayerPrefs.SetInt("LimitRotation", ActionControl.limitRotation ? 1 : 0);
+    }
+
+    public void SetShowOnlyMainLabels() {
+        ActionControl.showOnlyMainLabels = !ActionControl.showOnlyMainLabels;
+        PlayerPrefs.SetInt("ShowOnlyMainLabels", ActionControl.showOnlyMainLabels ? 1 : 0);
+
+        foreach(BodyPartVisibility bp in GlobalVariables.Instance.allVisibilityScripts) {
+            if(bp.HasLabels() && bp.labelsOn) {
+                bp.HideLabels();
+                bp.ShowLabels();
+            }
+        }
     }
 
     //---------Graphics-----------//

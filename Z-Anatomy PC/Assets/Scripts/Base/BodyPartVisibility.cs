@@ -144,12 +144,14 @@ public class BodyPartVisibility : MonoBehaviour
     /// <param name="saveInHistory">Optional parameter. Whether to save the command in history or not</param>
     public void ShowLabels(bool saveInHistory = false)
     {
-        if (allLabels == null)
+        Label[] labels = ActionControl.showOnlyMainLabels ? directLabels : allLabels;
+
+        if (labels == null)
             return;
 
         List<GameObject> shown = new List<GameObject>();
 
-        foreach (var label in allLabels)
+        foreach (var label in labels)
         {
             shown.Add(label.gameObject);
             label.gameObject.SetActive(true);
