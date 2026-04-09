@@ -127,10 +127,15 @@ public class Label : MonoBehaviour
         return t;
     }
 
+    int sceneLoadedFrame;
+    private void OnLevelWasLoaded(int level) {
+        sceneLoadedFrame = Time.frameCount;
+    }
+
     private void Start() {
         //only disable on startup, else some sublabels are disabled before their start, and disable themselves at first enable after startup and do not show up the first time!
         //this way, we are sure that every labels is disable at startup, while not disabling itself when we want to show it for the first time
-        if (Time.frameCount == 1) {
+        if (Time.frameCount - sceneLoadedFrame <= 1) {
             foreach (Label l in GetComponentsInChildren<Label>(true)) {
                 l.gameObject.SetActive(false);
             }
