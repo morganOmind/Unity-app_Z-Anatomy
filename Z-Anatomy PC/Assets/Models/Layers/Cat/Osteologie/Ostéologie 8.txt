@@ -1,40 +1,40 @@
-Phalange distale du cinquième orteil.l
-Phalange distale du deuxième orteil.l
-Phalange distale du quatrième orteil.l
-Phalange distale du troisième orteil.l
-Phalange moyenne du cinquième orteil.l
-Phalange moyenne du deuxième orteil.l
-Phalange moyenne du quatrième orteil.l
-Phalange moyenne du troisième orteil.l
-Phalange proximale du cinquième orteil.l
-Phalange proximale du deuxième orteil.l
-Phalange proximale du quatrième orteil.l
-Phalange proximale du troisième orteil.l
-1486*10.001.r
-1486*7.001.r
-1486*9.001.r
-1486*8.001.r
-1479*10.001.r
-Phalange moyenne du deuxième orteil.r
-Phalange moyenne du troisième orteil.r
-Phalange moyenne du quatrième orteil.r
-Phalange proximale du cinquième orteil.r
-Phalange proximale du deuxième orteil.r
-Phalange proximale du quatrième orteil.r
-Phalange proximale du troisième orteil.r
-Os sésamoïdes proximaux du cinquième orteil.l
-Os sésamoïdes proximaux du troisième orteil.l
-Os sésamoïdes proximaux du cinquième orteil.r
-Os sésamoïdes proximaux du troisième orteil.r
 Os sésamoïde distal du cinquième doigt du pied.l
-Os sésamoïde distal du deuxième doigt du pied.l
-Os sésamoïde distal du quatrième doigt du pied.l
-Os sésamoïde distal du troisième doigt du pied.l
-Os sésamoïdes proximaux du deuxième orteil.l
-Os sésamoïdes proximaux du quatrième orteil.l
 Os sésamoïde distal du cinquième doigt du pied.r
+Os sésamoïde distal du deuxième doigt du pied.l
 Os sésamoïde distal du deuxième doigt du pied.r
+Os sésamoïde distal du quatrième doigt du pied.l
 Os sésamoïde distal du quatrième doigt du pied.r
+Os sésamoïde distal du troisième doigt du pied.l
 Os sésamoïde distal du troisième doigt du pied.r
+Os sésamoïdes proximaux du cinquième orteil.l
+Os sésamoïdes proximaux du cinquième orteil.r
+Os sésamoïdes proximaux du deuxième orteil.l
 Os sésamoïdes proximaux du deuxième orteil.r
+Os sésamoïdes proximaux du quatrième orteil.l
 Os sésamoïdes proximaux du quatrième orteil.r
+Os sésamoïdes proximaux du troisième orteil.l
+Os sésamoïdes proximaux du troisième orteil.r
+Phalange distale du cinquième orteil.l
+Phalange distale du cinquième orteil.r
+Phalange distale du deuxième orteil.l
+Phalange distale du deuxième orteil.r
+Phalange distale du quatrième orteil.l
+Phalange distale du quatrième orteil.r
+Phalange distale du troisième orteil.l
+Phalange distale du troisième orteil.r
+Phalange moyenne du cinquième orteil.l
+Phalange moyenne du cinquième orteil.r
+Phalange moyenne du deuxième orteil.l
+Phalange moyenne du deuxième orteil.r
+Phalange moyenne du quatrième orteil.l
+Phalange moyenne du quatrième orteil.r
+Phalange moyenne du troisième orteil.l
+Phalange moyenne du troisième orteil.r
+Phalange proximale du cinquième orteil.l
+Phalange proximale du cinquième orteil.r
+Phalange proximale du deuxième orteil.l
+Phalange proximale du deuxième orteil.r
+Phalange proximale du quatrième orteil.l
+Phalange proximale du quatrième orteil.r
+Phalange proximale du troisième orteil.l
+Phalange proximale du troisième orteil.r

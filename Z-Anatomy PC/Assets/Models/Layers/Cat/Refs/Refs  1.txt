@@ -1,6 +1,6 @@
-Crânial
 Caudal
-Proximal
+Crânial
 Distal
 Dorsal
+Proximal
 Ventral

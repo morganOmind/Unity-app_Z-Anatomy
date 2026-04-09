@@ -1,0 +1,25 @@
+Fosse jugulaire.l
+Fosse jugulaire.r
+Fosse rétromandibulaire.l
+Fosse rétromandibulaire.r
+Région brachiocéphalique.l
+Région brachiocéphalique.r
+Région dorsale du cou.l
+Région dorsale du cou.r
+Région infrahyoïde.l
+Région infrahyoïde.r
+Région laryngée
+Région parotidienne.l
+Région parotidienne.r
+Région pharyngienne.l
+Région pharyngienne.r
+Région préscapulaire.l
+Région préscapulaire.r
+Région rétro-auriculaire.l
+Région rétro-auriculaire.r
+Région sternocéphalique.l
+Région sternocéphalique.r
+Région trachéale.l
+Région trachéale.r
+Sillon jugulaire.l
+Sillon jugulaire.r

@@ -1,0 +1,6 @@
+Ligne dorsale médiane
+Région de la queue
+Région de la racine de la queue.l
+Région de la racine de la queue.r
+Région sacrale.l
+Région sacrale.r

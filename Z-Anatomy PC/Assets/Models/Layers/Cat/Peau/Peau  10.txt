@@ -1,0 +1,34 @@
+Coussinet digital du pied.l
+Coussinet digital du pied.r
+Coussinet métatarsien.l
+Coussinet métatarsien.r
+Région calcanéenne.l
+Région calcanéenne.r
+Région crâniale du genou.l
+Région crâniale du genou.r
+Région de la jambe.l
+Région de la jambe.r
+Région de la phalange proximale (pied).l
+Région de la phalange proximale (pied).r
+Région du pied.l
+Région du pied.r
+Région du tarse.l
+Région du tarse.r
+Région fémorale.l
+Région fémorale.r
+Région interphalangienne proximale (pied).l
+Région interphalangienne proximale (pied).r
+Région latérale du genou.l
+Région latérale du genou.r
+Région médiale du genou.l
+Région médiale du genou.r
+Région métatarsienne.l
+Région métatarsienne.r
+Région métatarsophalangienne.r
+Région patellaire.l
+Région patellaire.r
+Région poplitée.l
+Région poplitée.r
+Régions de l'articulation de la hanche.l
+Régions de l'articulation de la hanche.r
+Régions du membre pelvien

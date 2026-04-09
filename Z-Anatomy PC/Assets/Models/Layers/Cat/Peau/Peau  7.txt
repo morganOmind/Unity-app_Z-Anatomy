@@ -1,0 +1,17 @@
+Fosse paralombale.l
+Fosse paralombale.r
+Ligne ventrale médiane
+Région abdominale caudale.l
+Région abdominale caudale.r
+Région abdominale latérale.l
+Région abdominale latérale.r
+Région abdominale moyenne
+Région inguinale.l
+Région inguinale.r
+Région mammaire abdominale.l
+Région mammaire abdominale.r
+Région mammaire inguinale.l
+Région mammaire inguinale.r
+Région ombilicale
+Région pubienne.l
+Région pubienne.r

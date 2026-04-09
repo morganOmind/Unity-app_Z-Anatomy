@@ -1,13 +1,18 @@
-Ligament longitudinal ventral
-Ligament longitudinal dorsal
-Ligament intercapital
-Ligaments jaunes
-Ligaments interépineux
-Ligament supra-épineux
 Corde nuchale
 Lame nuchale
-Ligaments intertransversaires.l
+Ligament intercapital.l
+Ligament intercapital.r
 Ligament lombocostal.l
-Membrane tectoriale
-Ligaments sternocostaux radiés.l
+Ligament lombocostal.r
+Ligament longitudinal dorsal
+Ligament longitudinal ventral
+Ligament supra-épineux
 Ligaments costoxiphoïdiens.l
+Ligaments costoxiphoïdiens.r
+Ligaments intertransversaires.l
+Ligaments intertransversaires.r
+Ligaments interépineux
+Ligaments jaunes
+Ligaments sternocostaux radiés.l
+Ligaments sternocostaux radiés.r
+Membrane tectoriale

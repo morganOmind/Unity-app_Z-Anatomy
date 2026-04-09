@@ -1,44 +1,53 @@
-Muscle droit fémoral.l
-Muscle vaste latéral.l
-Muscle vaste médial.l
-Muscle vaste latéral.r
-Muscle vaste médial.r
-Muscle droit fémoral.r
-Muscle petit psoas.l
-Muscle grand psoas.r
-Muscle grand psoas.l
-Muscle sacrococcygien ventral médial.l
-Muscle sacrococcygien dorsal médial.l
-Muscle sacrococcygien dorsal médial.r
-Muscle sacrococcygien ventral médial.r
-Muscle transverse du thorax.l
-Muscle iliocostal.l
-Muscle épineux
-Muscle scalène moyen.l
-Muscle stylohyoïdien.l
-Muscle sternothyroïdien.l
-Muscle thyrohyoïdien.l
-Muscles intertransversaires ventraux du cou.l
-Muscle droit latéral de la tête.l
-Muscle long adducteur.l
-Muscle long adducteur.r
-Muscle ptérygoïdien latéral.l
-Muscle ptérygoïdien médial.l
+Muscle abducteur du cinquième orteil.l
+Muscle abducteur du cinquième orteil.r
+Muscle adducteur du cinquième orteil.l
+Muscle adducteur du cinquième orteil.r
+Muscle adducteur du pouce.l
+Muscle adducteur du pouce.r
 Muscle articulaire de l'épaule (fe, su, eq).l
 Muscle articulaire de l'épaule (fe, su, eq).r
 Muscle coracobrachial.l
 Muscle coracobrachial.r
-[Muscle extenseur oblique du carpe].l
-[Muscle extenseur oblique du carpe].r
-Muscle adducteur du pouce.l
-Muscle adducteur du pouce.r
-Muscles interosseux de la main.l
-Muscles interosseux de la main.r
-Muscles lombricaux de la main.l
-Muscles lombricaux de la main.r
+Muscle droit fémoral.l
+Muscle droit fémoral.r
+Muscle droit latéral de la tête.l
+Muscle droit latéral de la tête.r
 Muscle fléchisseur latéral des orteils.l
 Muscle fléchisseur latéral des orteils.r
-Muscle abducteur du cinquième orteil.l
-Muscle adducteur du cinquième orteil.l
-Muscle abducteur du cinquième orteil.r
-Muscle adducteur du cinquième orteil.r
+Muscle grand psoas.l
+Muscle grand psoas.r
+Muscle iliocostal.l
+Muscle iliocostal.r
+Muscle long adducteur.l
+Muscle long adducteur.r
+Muscle petit psoas.l
+Muscle ptérygoïdien latéral.l
+Muscle ptérygoïdien latéral.r
+Muscle ptérygoïdien médial.l
+Muscle ptérygoïdien médial.r
+Muscle sacrococcygien dorsal médial.l
+Muscle sacrococcygien dorsal médial.r
+Muscle sacrococcygien ventral médial.l
+Muscle sacrococcygien ventral médial.r
+Muscle scalène moyen.l
+Muscle scalène moyen.r
+Muscle sternothyroïdien.l
+Muscle sternothyroïdien.r
+Muscle stylohyoïdien.l
+Muscle stylohyoïdien.r
+Muscle thyrohyoïdien.l
+Muscle thyrohyoïdien.r
+Muscle transverse du thorax.l
+Muscle vaste latéral.l
+Muscle vaste latéral.r
+Muscle vaste médial.l
+Muscle vaste médial.r
+Muscle épineux
+Muscles interosseux de la main.l
+Muscles interosseux de la main.r
+Muscles intertransversaires ventraux du cou.l
+Muscles intertransversaires ventraux du cou.r
+Muscles lombricaux de la main.l
+Muscles lombricaux de la main.r
+[Muscle extenseur oblique du carpe].l
+[Muscle extenseur oblique du carpe].r

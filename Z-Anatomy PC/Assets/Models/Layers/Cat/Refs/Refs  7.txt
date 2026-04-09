@@ -1,9 +1,9 @@
 Antérieur
-Postérieur
-Supérieur
+Droite
+Externe
+Gauche
 Inférieur
 Interne
-Externe
-Droite
-Gauche
 Longitudinal
+Postérieur
+Supérieur

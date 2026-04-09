@@ -1,24 +1,24 @@
-Ligaments palmaires métacarpophalangiens.l
-Ligament interdigital intersamoïde.l
-Ligaments palmaires.l
-Ligaments interphalangiens collatéraux du pied.r
-Ligaments interphalangiens collatéraux du pied.l
-Ligament collatéral médial court du tarse, partie courte.r
-Ligament collatéral médial court du tarse, partie courte.l
-Ligament collatéral latéral long du tarse.r
-Ligament collatéral latéral long du tarse.l
-Ligaments palmaires.r
-Ligament interdigital intersamoïde.r
-Ligaments palmaires métacarpophalangiens.r
-Ligaments interdistaux [intercunéiformes] interosseux.r
-Ligaments interdistaux [intercunéiformes] interosseux.l
-Ligament talocalcanéen interosseux.l
-Ligament quartodistal [cunéocuboïdien] interosseux.l
-Ligament centroquartal [cuboïdonaviculaire] interosseux.l
-Ligament centrodistal [cunéonaviculaire] interosseux.l
 Ligament calcanéoquartal [calcanéocuboïde] interosseux.l
-Ligament talocalcanéen interosseux.r
-Ligament quartodistal [cunéocuboïdien] interosseux.r
-Ligament centroquartal [cuboïdonaviculaire] interosseux.r
-Ligament centrodistal [cunéonaviculaire] interosseux.r
 Ligament calcanéoquartal [calcanéocuboïde] interosseux.r
+Ligament centrodistal [cunéonaviculaire] interosseux.l
+Ligament centrodistal [cunéonaviculaire] interosseux.r
+Ligament centroquartal [cuboïdonaviculaire] interosseux.l
+Ligament centroquartal [cuboïdonaviculaire] interosseux.r
+Ligament collatéral latéral long du tarse.l
+Ligament collatéral latéral long du tarse.r
+Ligament collatéral médial court du tarse, partie courte.l
+Ligament collatéral médial court du tarse, partie courte.r
+Ligament interdigital intersamoïde.l
+Ligament interdigital intersamoïde.r
+Ligament quartodistal [cunéocuboïdien] interosseux.l
+Ligament quartodistal [cunéocuboïdien] interosseux.r
+Ligament talocalcanéen interosseux.l
+Ligament talocalcanéen interosseux.r
+Ligaments interdistaux [intercunéiformes] interosseux.l
+Ligaments interdistaux [intercunéiformes] interosseux.r
+Ligaments interphalangiens collatéraux du pied.l
+Ligaments interphalangiens collatéraux du pied.r
+Ligaments palmaires métacarpophalangiens.l
+Ligaments palmaires métacarpophalangiens.r
+Ligaments palmaires.l
+Ligaments palmaires.r

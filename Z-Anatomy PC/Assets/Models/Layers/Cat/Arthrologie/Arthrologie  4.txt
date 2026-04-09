@@ -1,43 +1,44 @@
-Ligaments sacro-iliaques dorsaux.l
-Ligaments collatéraux métacarpophalangiens.l
-Ligaments interphalangiens collatéraux de la main.l
-Ligament radiocarpien dorsal.l
-Ligament radiocarpien palmaire.l
-Ligament ulnocarpien palmaire.l
-Ligaments collatéraux métacarpophalangiens.r
-Ligaments interphalangiens collatéraux de la main.r
-Ligament radiocarpien dorsal.r
-Ligament radiocarpien palmaire.r
-Ligament ulnocarpien palmaire.r
-Ligament iliofémoral.l
-Ligament ischiofémoral.l
 Ligament acétabulaire transverse.l
 Ligament acétabulaire transverse.r
-Ligament iliofémoral.r
-Ligament ischiofémoral.r
-Ligament crânial de la tête fibulaire.l
+Ligament atlanto-axial dorsal.l
 Ligament caudal de la tête fibulaire.l
-Ligament crânial de la tête fibulaire.r
 Ligament caudal de la tête fibulaire.r
-Ligament talocalcanéen plantaire.l
-Ligament talocalcanéen plantaire.r
+Ligament crânial de la tête fibulaire.l
+Ligament crânial de la tête fibulaire.r
+Ligament iliofémoral.l
+Ligament iliofémoral.r
+Ligament ischiofémoral.l
+Ligament ischiofémoral.r
+Ligament méniscotibial.l
+Ligament méniscotibial.r
+Ligament radiocarpien dorsal.l
+Ligament radiocarpien dorsal.r
+Ligament radiocarpien palmaire.l
+Ligament radiocarpien palmaire.r
 Ligament talocalcanéen latéral.l
 Ligament talocalcanéen latéral.r
+Ligament talocalcanéen plantaire.l
+Ligament talocalcanéen plantaire.r
 Ligament transverse du genou.l
-Ligament méniscotibial.l
 Ligament transverse du genou.r
-Ligament méniscotibial.r
-Membrane atlanto-occipitale dorsale
-Ligament atlanto-axial dorsal.l
-Ligaments tarsométatarsiens dorsaux.r
-Ligaments tarsométatarsiens dorsaux.l
-Ligaments tarsométatarsiens [cunéometatarsiens] interosseux.r
-Ligaments tarsométatarsiens [cunéometatarsiens] interosseux.l
+Ligament ulnocarpien palmaire.l
+Ligament ulnocarpien palmaire.r
+Ligaments collatéraux métacarpophalangiens.l
+Ligaments collatéraux métacarpophalangiens.r
 Ligaments intercarpiens interosseux.l
-Ligaments métacarpiens interosseux.l
 Ligaments intercarpiens interosseux.r
+Ligaments interphalangiens collatéraux de la main.l
+Ligaments interphalangiens collatéraux de la main.r
+Ligaments métacarpiens interosseux.l
 Ligaments métacarpiens interosseux.r
-Partie tibiotalaire du lgt. collatéral médial court du tarse.l
+Ligaments sacro-iliaques dorsaux.l
+Ligaments sacro-iliaques dorsaux.r
+Ligaments tarsométatarsiens [cunéometatarsiens] interosseux.l
+Ligaments tarsométatarsiens [cunéometatarsiens] interosseux.r
+Ligaments tarsométatarsiens dorsaux.l
+Ligaments tarsométatarsiens dorsaux.r
+Membrane atlanto-occipitale dorsale
 Partie tibiocalcanéenne du lgt. collat. médial court du tarse.l
-Partie tibiotalaire du lgt. collatéral médial court du tarse.r
 Partie tibiocalcanéenne du lgt. collat. médial court du tarse.r
+Partie tibiotalaire du lgt. collatéral médial court du tarse.l
+Partie tibiotalaire du lgt. collatéral médial court du tarse.r

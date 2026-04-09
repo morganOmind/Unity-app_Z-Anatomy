@@ -1,0 +1,33 @@
+Bord tricipital.l
+Bord tricipital.r
+Coussinet carpien.l
+Coussinet carpien.r
+Coussinet digital de la main.l
+Coussinet digital de la main.r
+Coussinet métacarpien.l
+Coussinet métacarpien.r
+Région carpienne.l
+Région carpienne.r
+Région de l'articulation de l'épaule.l
+Région de l'articulation de l'épaule.r
+Région de l'avant-bras.l
+Région de l'avant-bras.r
+Région de la phalange proximale (main).l
+Région de la phalange proximale (main).r
+Région du bras.l
+Région du bras.r
+Région du coude.l
+Région du coude.r
+Région du/des doigt(s) de la main.l
+Région du/des doigt(s) de la main.r
+Région interphalangienne proximale (main).l
+Région interphalangienne proximale (main).r
+Région métacarpienne.l
+Région métacarpienne.r
+Région métacarpophalangienne.l
+Région métacarpophalangienne.r
+Région olécranienne.l
+Région olécranienne.r
+Région tricipitale.l
+Région tricipitale.r
+Régions du membre thoracique

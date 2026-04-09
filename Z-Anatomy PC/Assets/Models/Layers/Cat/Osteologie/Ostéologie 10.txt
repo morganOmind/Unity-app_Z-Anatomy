@@ -1,28 +1,30 @@
-Os frontal
-Mandibule
-Os incisif.l
 (Os sutural).l
-Griffe du cinquième orteil.l
-Griffe du quatrième orteil.l
-Griffe du troisième orteil.l
-Griffe du deuxième orteil.l
-Griffe du cinquième doigt de la main.l
-Griffe du quatrième doigt de la main.l
-Griffe du troisième doigt de la main.l
-Griffe du deuxième doigt de la main.l
-Griffe du cinquième orteil.r
-Griffe du quatrième orteil.r
-Griffe du troisième orteil.r
-Griffe du deuxième orteil.r
-Griffe du cinquième doigt de la main.r
-Griffe du quatrième doigt de la main.r
-Griffe du troisième doigt de la main.r
-Griffe du deuxième doigt de la main.r
-Ligne terminale
-Ouverture crâniale du bassin
-Ouverture caudale du bassin
+(Os sutural).r
 Axe du pelvis
 Diamètre conjugué
 Diamètre transverse
 Diamètre vertical
+Griffe du cinquième doigt de la main.l
+Griffe du cinquième doigt de la main.r
+Griffe du cinquième orteil.l
+Griffe du cinquième orteil.r
+Griffe du deuxième doigt de la main.l
+Griffe du deuxième doigt de la main.r
+Griffe du deuxième orteil.l
+Griffe du deuxième orteil.r
+Griffe du quatrième doigt de la main.l
+Griffe du quatrième doigt de la main.r
+Griffe du quatrième orteil.l
+Griffe du quatrième orteil.r
+Griffe du troisième doigt de la main.l
+Griffe du troisième doigt de la main.r
+Griffe du troisième orteil.l
+Griffe du troisième orteil.r
 Inclinaison pelvienne
+Ligne terminale
+Mandibule
+Os frontal
+Os incisif.l
+Os incisif.r
+Ouverture caudale du bassin
+Ouverture crâniale du bassin

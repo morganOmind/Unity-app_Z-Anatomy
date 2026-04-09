@@ -1,37 +1,54 @@
-Partie endotympanique
-Os présphénoïde
-Os basisphénoïde
-Partie squameuse de l’os temporal.l
-Partie tympanique.l
-Partie pétreuse.l
+Cartilage du manubrium
+Cartilage xiphoïdien
+Cinquième côte.l
+Cinquième côte.r
+Cinquième sternèbre
+Cornet nasal ventral.l
+Cornet nasal ventral.r
+Corps du sternum
 Côtes
 Côtes asternales
 Côtes flottantes
 Côtes sternales
-Treizième côte.l
-Dixième côte.l
-Douzième côte.l
-Neuvième côte.l
-Onzième côte.l
-Cinquième côte.l
 Deuxième côte.l
-Huitième côte.l
-Première côte.l
-Quatrième côte.l
-Septième côte.l
-Sixième côte.l
-Troisième côte.l
-Cornet nasal ventral.l
-Manubrium sternal
-Cinquième sternèbre
+Deuxième côte.r
 Deuxième sternèbre
-Quatrième sternèbre
-Septième sternèbre
-Sixième sternèbre
-Troisième sternèbre
+Dixième côte.l
+Dixième côte.r
+Douzième côte.l
+Douzième côte.r
+Huitième côte.l
+Huitième côte.r
+Manubrium sternal
+Neuvième côte.l
+Neuvième côte.r
+Onzième côte.l
+Onzième côte.r
+Os basisphénoïde
+Os présphénoïde
+Partie endotympanique
+Partie pétreuse.l
+Partie pétreuse.r
+Partie squameuse de l’os temporal.l
+Partie squameuse de l’os temporal.r
+Partie tympanique.l
+Partie tympanique.r
+Première côte.l
+Première côte.r
 Processus xiphoïde
-Cartilage xiphoïdien
-Cartilage du manubrium
+Quatrième côte.l
+Quatrième côte.r
+Quatrième sternèbre
+Septième côte.l
+Septième côte.r
+Septième sternèbre
+Sixième côte.l
+Sixième côte.r
+Sixième sternèbre
 Sternum
-Corps du sternum
 Sternèbres
+Treizième côte.l
+Treizième côte.r
+Troisième côte.l
+Troisième côte.r
+Troisième sternèbre

@@ -1,34 +1,48 @@
-Muscles multifides.l
-Muscles élévateurs des côtes.l
-Muscles subcostaux.l
-Muscles intertransversaires des lombes.l
-Muscles interépineux.l
-Muscle long du cou.l
-Muscles rotateurs.l
-Muscle droit ventral de la tête.l
-Muscle petit droit dorsal de la tête.l
-Muscle géniohyoïdien.l
-Muscle occipitohyoïdien.l
-Muscle cératohyoïdien.l
-Muscle hyoïdien transverse.l
-Rétinaculum transverse.l
-Rétinaculum transverse.r
-Muscle articulaire du genou (Car, bo).l
-Tendon du quadriceps fémoral.l
-Muscle articulaire du genou (Car, bo).r
-Tendon du quadriceps fémoral.r
+Arc inguinal [Ligament inguinal].l
+Arc inguinal [Ligament inguinal].r
 Muscle anconé.l
 Muscle anconé.r
+Muscle articulaire du genou (Car, bo).l
+Muscle articulaire du genou (Car, bo).r
 Muscle carré pronateur.l
 Muscle carré pronateur.r
+Muscle court abducteur du pouce.l
+Muscle court abducteur du pouce.r
+Muscle court fléchisseur du premier orteil.l
+Muscle court fléchisseur du premier orteil.r
+Muscle cératohyoïdien.l
+Muscle cératohyoïdien.r
+Muscle droit ventral de la tête.l
+Muscle droit ventral de la tête.r
+Muscle géniohyoïdien.l
+Muscle géniohyoïdien.r
+Muscle hyoïdien transverse.l
+Muscle hyoïdien transverse.r
+Muscle long du cou.l
+Muscle long du cou.r
+Muscle occipitohyoïdien.l
+Muscle occipitohyoïdien.r
+Muscle petit droit dorsal de la tête.l
+Muscle petit droit dorsal de la tête.r
 Muscle rond pronateur.l
 Muscle rond pronateur.r
 Muscle supinateur.l
 Muscle supinateur.r
-Muscle court abducteur du pouce.l
-Muscle court abducteur du pouce.r
 Muscles interosseux du pied.l
 Muscles interosseux du pied.r
-Muscle court fléchisseur du premier orteil.l
-Muscle court fléchisseur du premier orteil.r
-Arc inguinal [Ligament inguinal].l
+Muscles intertransversaires des lombes.l
+Muscles intertransversaires des lombes.r
+Muscles interépineux.l
+Muscles interépineux.r
+Muscles multifides.l
+Muscles multifides.r
+Muscles rotateurs.l
+Muscles rotateurs.r
+Muscles subcostaux.l
+Muscles subcostaux.r
+Muscles élévateurs des côtes.l
+Muscles élévateurs des côtes.r
+Rétinaculum transverse.l
+Rétinaculum transverse.r
+Tendon du quadriceps fémoral.l
+Tendon du quadriceps fémoral.r

@@ -1,52 +1,54 @@
-Clavicule (or, fe).l
 Appareil hyoïdien
-Os basihyoïdien
-Os tympanohyoïdien
-Clavicule (or, fe).r
-Scapula.l
-Cartilage scapulaire.l
-Scapula.r
-Cartilage scapulaire.r
-Os ethmoïde
-Os phacoïde.l
-Os phacoïde.r
-Os carpien I [Os trapèze].l
-Os accessoire du carpe [Os pisiforme].l
-Os carpien II [Os trapézoïde].l
-Os carpien III [Os capitatum].l
-Os carpien IV [Os hamatum].l
-Os intermédioradial [Os scapholunatum].l
-Os ulnaire du carpe [Os triquetrum].l
 Calcanéus.l
-Os central du tarse [Os naviculaire].l
-Os tarsien I [Os cunéiforme médial].l
-Os tarsien II [Os cunéiforme intermédiaire].l
-Os tarsien IV [Os cuboïde].l
-Talus.l
-Os carpien I [Os trapèze].r
-Os accessoire du carpe [Os pisiforme].r
-Os carpien II [Os trapézoïde].r
-Os carpien III [Os capitatum].r
-Os carpien IV [Os hamatum].r
-Os intermédioradial [Os scapholunatum].r
-Os ulnaire du carpe [Os triquetrum].r
 Calcanéus.r
-Os central du tarse [Os naviculaire].r
-1727.001.r
-1728.001.r
-Os tarsien IV [Os cuboïde].r
-Talus.r
-Os tarsien III [Os cunéiforme latéral].l
-Os tarsien III [Os cunéiforme latéral].r
-Humérus.l
-Humérus.r
-Os cératohyoïdien [Petite corne]
-Os stylohyoïdien
-Os thyrohyoïdien [Grande corne]
-Os épihyoïdien
-Os zygomatique.l
-Os pariétal.l
-mesh.033.l
-mesh.033.r
+Cartilage scapulaire.l
+Cartilage scapulaire.r
+Clavicule (or, fe).l
+Clavicule (or, fe).r
 Fémur.l
 Fémur.r
+Humérus.l
+Humérus.r
+Os accessoire du carpe [Os pisiforme].l
+Os accessoire du carpe [Os pisiforme].r
+Os basihyoïdien
+Os carpien I [Os trapèze].l
+Os carpien I [Os trapèze].r
+Os carpien II [Os trapézoïde].l
+Os carpien II [Os trapézoïde].r
+Os carpien III [Os capitatum].l
+Os carpien III [Os capitatum].r
+Os carpien IV [Os hamatum].l
+Os carpien IV [Os hamatum].r
+Os central du tarse [Os naviculaire].l
+Os central du tarse [Os naviculaire].r
+Os cératohyoïdien [Petite corne]
+Os ethmoïde
+Os intermédioradial [Os scapholunatum].l
+Os intermédioradial [Os scapholunatum].r
+Os pariétal.l
+Os pariétal.r
+Os phacoïde.l
+Os phacoïde.r
+Os stylohyoïdien
+Os sésamoïdes des muscles gastrocnémiens.l
+Os sésamoïdes des muscles gastrocnémiens.r
+Os tarsien I [Os cunéiforme médial].l
+Os tarsien I [Os cunéiforme médial].r
+Os tarsien II [Os cunéiforme intermédiaire].l
+Os tarsien II [Os cunéiforme intermédiaire].r
+Os tarsien III [Os cunéiforme latéral].l
+Os tarsien III [Os cunéiforme latéral].r
+Os tarsien IV [Os cuboïde].l
+Os tarsien IV [Os cuboïde].r
+Os thyrohyoïdien [Grande corne]
+Os tympanohyoïdien
+Os ulnaire du carpe [Os triquetrum].l
+Os ulnaire du carpe [Os triquetrum].r
+Os zygomatique.l
+Os zygomatique.r
+Os épihyoïdien
+Scapula.l
+Scapula.r
+Talus.l
+Talus.r

@@ -1,0 +1,14 @@
+Bulbe oculaire
+Bulbe oculaire.r
+Fosse supra-orbitaire.l
+Fosse supra-orbitaire.r
+Région auriculaire.l
+Région auriculaire.r
+Région frontale.l
+Région frontale.r
+Région occipitale.l
+Région occipitale.r
+Région pariétale.l
+Région pariétale.r
+Région temporale.l
+Région temporale.r

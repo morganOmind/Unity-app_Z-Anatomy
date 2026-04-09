@@ -1,0 +1,23 @@
+Arc costal (Régions).l
+Arc costal (Régions).r
+Région acromiale
+Région cardiaque.l
+Région cardiaque.r
+Région costale.l
+Région costale.r
+Région du cartilage scapulaire.l
+Région du cartilage scapulaire.r
+Région hypochondrale.l
+Région hypochondrale.r
+Région infra-épineuse.l
+Région infra-épineuse.r
+Région mammaire thoracique.l
+Région mammaire thoracique.r
+Région présternale.l
+Région présternale.r
+Région sternale.l
+Région sternale.r
+Région supra-épineuse.l
+Région supra-épineuse.r
+Région xiphoïdienne.l
+Région xiphoïdienne.r

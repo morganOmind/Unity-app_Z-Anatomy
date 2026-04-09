@@ -1,56 +1,72 @@
-Muscle omotransversaire.l
-Muscle parotido-auriculaire.l
-Muscle stylo-auriculaire.l
-Muscles scutulo-auriculaires profonds.l
-Muscle omotransversaire.r
-Muscle abducteur caudal de la jambe (Car).l
-Muscle abducteur caudal de la jambe (Car).r
-Muscle vaste intermédiaire.l
-Muscle vaste intermédiaire.r
 Chef latéral du triceps brachial.l
 Chef latéral du triceps brachial.r
-Muscle incisif supérieur
-Muscle incisif inférieur
-Muscle élévateur de l'angle médial de l'oeil.l
-Muscle rétracteur de l'angle latéral de l'oeil.l
-Muscle zygomaticoscutulaire.l
-Muscle nasal
-Muscle élévateur nasolabial.l
 Ligne blanche.l
-Muscle splénius de la tête.l
-Muscle splénius cervicis.l
-Muscle dentelé cervical ventral.l
-Muscle dentelé ventral du thorax.l
-Muscle grand rond.l
-Muscle grand rond.r
-Muscle sacrococcygien ventral latéral.l
-Muscle sacrococcygien ventral latéral.r
-Muscle dentelé ventral du thorax.r
-Partie occipitale (Car).l
-Partie mastoïde (Car, bo, cap).l
-Muscle brachial.l
-Muscle brachial.r
-Muscle tenseur du fascia antébrachial.l
-Muscle tenseur du fascia antébrachial.r
-Muscle dentelé cervical ventral.r
-Muscle jumeau supérieur.l
-Muscle jumeau inférieur.l
-Muscle jumeau supérieur.r
-Muscle jumeau inférieur.r
-Muscle coccygien.l
-Muscle coccygien.r
-Muscle grand adducteur.l
-Muscle grand adducteur.r
-Muscle carré fémoral.l
-Muscle carré fémoral.r
-Muscle mylohyoïdien.l
-Muscle extenseur latéral des doigts.l
-Muscle extenseur latéral des doigts.r
-Muscle adducteur du doigt II.l
+Ligne blanche.r
+Manica flexoria du pied.l
+Manica flexoria du pied.r
+Muscle abducteur caudal de la jambe (Car).l
+Muscle abducteur caudal de la jambe (Car).r
 Muscle abducteur du doigt V.l
 Muscle abducteur du doigt V.r
+Muscle adducteur du doigt II.l
 Muscle adducteur du doigt II.r
-Muscle fléchisseur superficiel des orteils.l
-Muscle fléchisseur superficiel des orteils.r
+Muscle brachial.l
+Muscle brachial.r
+Muscle carré fémoral.l
+Muscle carré fémoral.r
+Muscle coccygien.l
+Muscle coccygien.r
 Muscle court fibulaire.l
 Muscle court fibulaire.r
+Muscle dentelé cervical ventral.l
+Muscle dentelé cervical ventral.r
+Muscle dentelé ventral du thorax.l
+Muscle dentelé ventral du thorax.r
+Muscle extenseur latéral des doigts.l
+Muscle extenseur latéral des doigts.r
+Muscle fléchisseur superficiel des orteils.l
+Muscle fléchisseur superficiel des orteils.r
+Muscle grand adducteur.l
+Muscle grand adducteur.r
+Muscle grand rond.l
+Muscle grand rond.r
+Muscle incisif inférieur
+Muscle incisif supérieur
+Muscle jumeau inférieur.l
+Muscle jumeau inférieur.r
+Muscle jumeau supérieur.l
+Muscle jumeau supérieur.r
+Muscle mylohyoïdien.l
+Muscle mylohyoïdien.r
+Muscle nasal.l
+Muscle nasal.r
+Muscle omotransversaire.l
+Muscle omotransversaire.r
+Muscle parotido-auriculaire.l
+Muscle parotido-auriculaire.r
+Muscle rétracteur de l'angle latéral de l'oeil.l
+Muscle rétracteur de l'angle latéral de l'oeil.r
+Muscle sacrococcygien ventral latéral.l
+Muscle sacrococcygien ventral latéral.r
+Muscle splénius cervicis.l
+Muscle splénius cervicis.r
+Muscle splénius de la tête.l
+Muscle splénius de la tête.r
+Muscle stylo-auriculaire.l
+Muscle stylo-auriculaire.r
+Muscle tenseur du fascia antébrachial.l
+Muscle tenseur du fascia antébrachial.r
+Muscle vaste intermédiaire.l
+Muscle vaste intermédiaire.r
+Muscle zygomaticoscutulaire.l
+Muscle zygomaticoscutulaire.r
+Muscle élévateur de l'angle médial de l'oeil.l
+Muscle élévateur de l'angle médial de l'oeil.r
+Muscle élévateur nasolabial.l
+Muscle élévateur nasolabial.r
+Muscles scutulo-auriculaires profonds.l
+Muscles scutulo-auriculaires profonds.r
+Partie mastoïde (Car, bo, cap).l
+Partie mastoïde (Car, bo, cap).r
+Partie occipitale (Car).l
+Partie occipitale (Car).r

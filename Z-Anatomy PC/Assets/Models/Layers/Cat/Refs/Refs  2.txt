@@ -1,5 +1,5 @@
-Médial
-Latéral
-Rostral
-Axial
 Abaxial
+Axial
+Latéral
+Médial
+Rostral

@@ -1,17 +1,18 @@
-Membrane intercostale externe.l
-Membrane interosseuse de l'avant-bras.l
-Membrane interosseuse de l'avant-bras.r
+Ligament accessorio-ulnaire [pisi-ulnaire].l
+Ligament accessorio-ulnaire [pisi-ulnaire].r
+Ligament olécranien.l
+Ligament olécranien.r
+Ligament radio-ulnaire.l
+Ligament radio-ulnaire.r
+Ligaments carpométacarpiens dorsaux.l
+Ligaments carpométacarpiens dorsaux.r
 Ligaments collatéraux sésamoïdiens de la main.l
 Ligaments collatéraux sésamoïdiens de la main.r
 Ligaments collatéraux.l
 Ligaments collatéraux.r
-Ligament olécranien.l
-Ligament olécranien.r
-Ligament accessorio-ulnaire [pisi-ulnaire].l
 Ligaments métacarpiens dorsaux.l
-Ligament radio-ulnaire.l
-Ligaments carpométacarpiens dorsaux.l
-Ligament accessorio-ulnaire [pisi-ulnaire].r
-Ligaments carpométacarpiens dorsaux.r
 Ligaments métacarpiens dorsaux.r
-Ligament radio-ulnaire.r
+Membrane intercostale externe.l
+Membrane intercostale externe.r
+Membrane interosseuse de l'avant-bras.l
+Membrane interosseuse de l'avant-bras.r

@@ -1,9 +1,10 @@
-Muscle sphincter superficiel du cou
-Muscle cutané du tronc.l
-Muscle supramammaire crânial (Car).l
-Muscle supramammaire caudal (Car).l
+Gaine tendineuse du muscle fléchisseur lat. des doigts.l
+Gaine tendineuse du muscle fléchisseur lat. des doigts.r
+Gaines tendineuses du membre pelvien
 Muscle court fléchisseur des orteils.l
 Muscle court fléchisseur des orteils.r
-Gaine tendineuse du muscle fléchisseur lat. des doigts.l
-Gaines tendineuses du membre pelvien
-Gaine tendineuse du muscle fléchisseur lat. des doigts.r
+Muscle cutané du tronc.l
+Muscle cutané du tronc.r
+Muscle sphincter superficiel du cou
+Muscle supramammaire caudal (Car).l
+Muscle supramammaire crânial (Car).l

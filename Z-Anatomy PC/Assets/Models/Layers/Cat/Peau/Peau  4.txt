@@ -1,0 +1,6 @@
+Région interscapulaire.l
+Région interscapulaire.r
+Région lombale.l
+Région lombale.r
+Région thoracique vertébrale [Région dorsocostale].l
+Région thoracique vertébrale [Région dorsocostale].r

@@ -1,34 +1,45 @@
-mesh.l
-mesh.r
-Vomer
-Cinquième métacarpien.l
-Deuxième métacarpien.l
-Premier métacarpien.l
-Quatrième métacarpien.l
-Troisième métacarpien.l
-Cinquième métatarsien.l
-Deuxième métatarsien.l
-Quatrième métatarsien.l
-Troisième métatarsien.l
-Premier métatarsien.l
-Cinquième métacarpien.r
-Deuxième métacarpien.r
-Premier métacarpien.r
-Quatrième métacarpien.r
-Troisième métacarpien.r
-Cinquième métatarsien.r
-Deuxième métatarsien.r
-Quatrième métatarsien.r
-Troisième métatarsien.r
-Premier métatarsien.r
 Canine supérieure.l
-Os nasal.l
-Os palatin.l
-Incisive intermédiaire supérieure.l
-Incisive supérolatérale.l
-Incisive supéromédiale.l
+Canine supérieure.r
+Cinquième métacarpien.l
+Cinquième métacarpien.r
+Cinquième métatarsien.l
+Cinquième métatarsien.r
 Dent carnassière (Car).l
+Dent carnassière (Car).r
+Deuxième métacarpien.l
+Deuxième métacarpien.r
+Deuxième métatarsien.l
+Deuxième métatarsien.r
 Deuxième prémolaire supérieure.l
-Première prémolaire supérieure.l
+Deuxième prémolaire supérieure.r
+Incisive intermédiaire supérieure.l
+Incisive intermédiaire supérieure.r
+Incisive supérolatérale.l
+Incisive supérolatérale.r
+Incisive supéromédiale.l
+Incisive supéromédiale.r
 Os lacrymal.l
+Os lacrymal.r
+Os nasal.l
+Os nasal.r
+Os palatin.l
+Os palatin.r
 Os ptérygoïdien.l
+Os ptérygoïdien.r
+Patella.l
+Patella.r
+Premier métacarpien.l
+Premier métacarpien.r
+Premier métatarsien.l
+Premier métatarsien.r
+Première prémolaire supérieure.l
+Première prémolaire supérieure.r
+Quatrième métacarpien.l
+Quatrième métacarpien.r
+Quatrième métatarsien.l
+Quatrième métatarsien.r
+Troisième métacarpien.l
+Troisième métacarpien.r
+Troisième métatarsien.l
+Troisième métatarsien.r
+Vomer
