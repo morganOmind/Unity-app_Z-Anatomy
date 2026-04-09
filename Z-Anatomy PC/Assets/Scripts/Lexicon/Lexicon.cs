@@ -38,6 +38,8 @@ public class Lexicon : MonoBehaviour
 
     private LexiconElement insertionsElement;
 
+    List<LexiconElement> collectionsList;
+
     private void Awake()
     {
         Instance = this;
@@ -58,9 +60,16 @@ public class Lexicon : MonoBehaviour
         CalculateScrollViewHeight();
     }
 
+    public void ToggleCollections(int index) {
+        if (index < collectionsList.Count) {
+            collectionsList[index].GetComponentInChildren<LexiconItemCheckbox>().OnPointerDown(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+        }
+    }
+
     public void InstatiateOriginalRootChilds()
     {
         Vector2 newPos = firstPosition.localPosition;
+        collectionsList = new List<LexiconElement>();
 
         foreach (Transform child in GlobalVariables.Instance.globalParent.transform)
         {
@@ -87,6 +96,8 @@ public class Lexicon : MonoBehaviour
                 script.realName = child.name;
                 script.nameScript = script.element.GetComponent<NameAndDescription>();
                 script.checkBox = newElement.GetComponentInChildren<LexiconItemCheckbox>();
+
+                collectionsList.Add(script);
 
                 if(child.CompareTag("Insertions"))
                 {

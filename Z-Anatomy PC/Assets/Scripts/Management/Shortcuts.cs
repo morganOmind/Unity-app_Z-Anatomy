@@ -64,6 +64,29 @@ public class Shortcuts : MonoBehaviour
     [Header("Hidden shortcuts")]
     public InputAction clearPlayerPrefs;
 
+    [Space]
+    [Header("Collections shortcuts")]
+    public InputAction keyDigit1;
+    public InputAction keyDigit2;
+    public InputAction keyDigit3;
+    public InputAction keyDigit4;
+    public InputAction keyDigit5;
+    public InputAction keyDigit6;
+    public InputAction keyDigit7;
+    public InputAction keyDigit8;
+    public InputAction keyDigit9;
+    public InputAction keyDigit0;
+    public InputAction keyDigitShift1;
+    public InputAction keyDigitShift2;
+    public InputAction keyDigitShift3;
+    public InputAction keyDigitShift4;
+    public InputAction keyDigitShift5;
+    public InputAction keyDigitShift6;
+    public InputAction keyDigitShift7;
+    public InputAction keyDigitShift8;
+    public InputAction keyDigitShift9;
+    public InputAction keyDigitShift0;
+
     private void Awake()
     {
         Instance = this;
@@ -136,6 +159,46 @@ public class Shortcuts : MonoBehaviour
         clearPlayerPrefs.Enable();
         clearPlayerPrefs.performed += ClearPlayerPrefs;
 
+        keyDigit1.Enable();
+        keyDigit1.performed += context => ToggleCollections(0);
+        keyDigit2.Enable();
+        keyDigit2.performed += context => ToggleCollections(1);
+        keyDigit3.Enable();
+        keyDigit3.performed += context => ToggleCollections(2);
+        keyDigit4.Enable();
+        keyDigit4.performed += context => ToggleCollections(3);
+        keyDigit5.Enable();
+        keyDigit5.performed += context => ToggleCollections(4);
+        keyDigit6.Enable();
+        keyDigit6.performed += context => ToggleCollections(5);
+        keyDigit7.Enable();
+        keyDigit7.performed += context => ToggleCollections(6);
+        keyDigit8.Enable();
+        keyDigit8.performed += context => ToggleCollections(7);
+        keyDigit9.Enable();
+        keyDigit9.performed += context => ToggleCollections(8);
+        keyDigit0.Enable();
+        keyDigit0.performed += context => ToggleCollections(9);
+        keyDigitShift1.Enable();
+        keyDigitShift1.performed += context => ToggleCollections(10);
+        keyDigitShift2.Enable();
+        keyDigitShift2.performed += context => ToggleCollections(11);
+        keyDigitShift3.Enable();
+        keyDigitShift3.performed += context => ToggleCollections(12);
+        keyDigitShift4.Enable();
+        keyDigitShift4.performed += context => ToggleCollections(13);
+        keyDigitShift5.Enable();
+        keyDigitShift5.performed += context => ToggleCollections(14);
+        keyDigitShift6.Enable();
+        keyDigitShift6.performed += context => ToggleCollections(15);
+        keyDigitShift7.Enable();
+        keyDigitShift7.performed += context => ToggleCollections(16);
+        keyDigitShift8.Enable();
+        keyDigitShift8.performed += context => ToggleCollections(17);
+        keyDigitShift9.Enable();
+        keyDigitShift9.performed += context => ToggleCollections(18);
+        keyDigitShift0.Enable();
+        keyDigitShift0.performed += context => ToggleCollections(19);
     }
 
     private void ChangeSelectionTool(InputAction.CallbackContext context)
@@ -431,6 +494,13 @@ public class Shortcuts : MonoBehaviour
         PopUpManagement.Instance.Show("Clear PlayerPrefs");
     }
 
+    private void ToggleCollections(int collectionIndex) {
+        if (UserIsWriting())
+            return;
+        if (Keyboard.current.shiftKey.isPressed && collectionIndex < 10)
+            return;
+        Lexicon.Instance.ToggleCollections(collectionIndex);
+    }
 
     private void LayersShortcuts()
     {
