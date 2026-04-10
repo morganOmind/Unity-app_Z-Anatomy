@@ -358,8 +358,10 @@ public class LexiconElement : MonoBehaviour
                 if (label == null)
                     SelectedObjectsManagement.Instance.DeselectAllObjects();
 
-                if (SearchEngine.onSearch)
+                if (SearchEngine.onSearch) {
                     SearchEngine.Instance.ClearSearch();
+                    Lexicon.Instance.ClickOnSearch(rt);
+                }
             }
 
             SelectedObjectsManagement.Instance.SelectObject(element.gameObject);

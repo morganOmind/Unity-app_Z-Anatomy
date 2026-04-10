@@ -87,6 +87,12 @@ public class Shortcuts : MonoBehaviour
     public InputAction keyDigitShift9;
     public InputAction keyDigitShift0;
 
+    [Space]
+    [Header("Lexicon shortcuts")]
+    public InputAction moveDown;
+    public InputAction moveUp;
+    public InputAction select;
+
     private void Awake()
     {
         Instance = this;
@@ -199,6 +205,13 @@ public class Shortcuts : MonoBehaviour
         keyDigitShift9.performed += context => ToggleCollections(18);
         keyDigitShift0.Enable();
         keyDigitShift0.performed += context => ToggleCollections(19);
+
+        moveDown.Enable();
+        moveDown.performed += context => LexiconMove(global::LexiconMove.Down);
+        moveUp.Enable();
+        moveUp.performed += context => LexiconMove(global::LexiconMove.Up);
+        select.Enable();
+        select.performed += LexiconSelect;
     }
 
     private void ChangeSelectionTool(InputAction.CallbackContext context)
@@ -500,6 +513,16 @@ public class Shortcuts : MonoBehaviour
         if (Keyboard.current.shiftKey.isPressed && collectionIndex < 10)
             return;
         Lexicon.Instance.ToggleCollections(collectionIndex);
+    }
+
+    private void LexiconMove(LexiconMove move) {
+        if (Keyboard.current.leftCtrlKey.isPressed || Keyboard.current.rightCtrlKey.isPressed)
+            return;
+        Lexicon.Instance.Move(move);
+    }
+
+    private void LexiconSelect(InputAction.CallbackContext context) {
+        Lexicon.Instance.Select();
     }
 
     private void LayersShortcuts()

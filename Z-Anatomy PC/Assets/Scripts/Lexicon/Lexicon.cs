@@ -6,6 +6,11 @@ using UnityEngine.UI;
 using System.Linq;
 using System.Diagnostics;
 using System.Text;
+using UnityEngine.InputSystem;
+
+public enum LexiconMove {
+    Down, Up
+};
 
 public class Lexicon : MonoBehaviour
 {
@@ -63,6 +68,122 @@ public class Lexicon : MonoBehaviour
     public void ToggleCollections(int index) {
         if (index < collectionsList.Count) {
             collectionsList[index].GetComponentInChildren<LexiconItemCheckbox>().OnPointerDown(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+        }
+    }
+
+    RectTransform currentNavHighligh = null;
+    string searchRT = "";
+
+    public void ForceCurrentHighlight(RectTransform rect) {
+        if (currentNavHighligh != null && currentNavHighligh.gameObject.activeInHierarchy) {
+            currentNavHighligh.GetComponentInChildren<LexiconElementButton>().OnPointerExit(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+        }
+        currentNavHighligh = rect;
+    }
+
+    public void ClickOnSearch(RectTransform rect) {
+        searchRT = rect.name;
+    }
+
+    public void Move(LexiconMove move) {
+        if(elements.Count > 0) {
+
+            if (!string.IsNullOrEmpty(searchRT)) {
+                currentNavHighligh = elements.Find(rt => rt.name == searchRT);
+                searchRT = "";
+            }
+
+            int index = 0;
+            bool doit = currentNavHighligh == null;
+            if (currentNavHighligh != null) {
+                int currentIndex = elements.IndexOf(currentNavHighligh);
+                if (currentIndex != -1) {
+                    switch (move) {
+                        case LexiconMove.Down:
+                            if (elements.Count > currentIndex + 1) {
+                                index = currentIndex + 1;
+                                doit = true;
+                            }
+                            break;
+                        case LexiconMove.Up:
+                            if (currentIndex - 1 >= 0) {
+                                index = currentIndex - 1;
+                                doit = true;
+                            }
+                            break;
+                        default: break;
+                    }
+                }
+            }
+            if(doit) {
+                elements[index].GetComponentInChildren<LexiconElementButton>().OnPointerEnter(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+                if (currentNavHighligh != null) {
+                    currentNavHighligh.GetComponentInChildren<LexiconElementButton>().OnPointerExit(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+                }
+                SnapTo(elements[index]);
+                currentNavHighligh = elements[index];
+                    
+            }
+            //print(currentNavHighligh.name);
+        }
+    }
+
+    public void Select() {
+        if(currentNavHighligh != null) {
+            currentNavHighligh.GetComponent<LexiconElement>().ElementClick();
+        }   
+    }
+
+    public void SnapTo(RectTransform target) {
+        if (currentNavHighligh == null || !currentNavHighligh.gameObject.activeInHierarchy)
+            return;
+
+        int index = elements.IndexOf(target); 
+        RectTransform rect = elements[index].GetComponent<RectTransform>();
+        RectTransform scrollRect = rect.GetComponentInParent<NonDragScroll>().GetComponent<RectTransform>();
+        float incrimentSize = rect.rect.height;
+
+        int i = 0;
+
+        while(!checkInView(scrollRect, rect)) {
+            if (currentNavHighligh.localPosition.y < rect.localPosition.y) {
+                rect.parent.GetComponent<RectTransform>().anchoredPosition += new Vector2(0, -incrimentSize);
+            }
+            else if (currentNavHighligh.localPosition.y > rect.localPosition.y) {
+                rect.parent.GetComponent<RectTransform>().anchoredPosition += new Vector2(0, incrimentSize);
+            }
+            i++;
+            if(i > 500) { //just in case something goes wrong, dont freeze the app (normally, it should never be necessary, but just to be on the safe side!!!)
+                return;
+            }
+
+        }
+    }
+
+    bool checkInView(RectTransform scrollView, RectTransform rect) {
+        Vector3[] corners = new Vector3[4];
+        rect.GetWorldCorners(corners);
+
+        bool inView = true;
+        foreach (Vector3 v in corners) {
+            inView &= RectTransformUtility.RectangleContainsScreenPoint(scrollView, v);
+            if (!inView) {
+                break;
+            }
+        }
+        return inView;
+    }
+
+    private void Update() {
+        if (currentNavHighligh != null) {
+            if (elements.Count == 0) {
+                currentNavHighligh = null;
+            }
+            else {
+                if (!currentNavHighligh.gameObject.activeInHierarchy) {
+                    currentNavHighligh = null;
+                }
+            }
         }
     }
 
@@ -478,10 +599,13 @@ public class Lexicon : MonoBehaviour
         if(highlighted != null)
             highlighted.SetDefaultColor();
 
-        highlighted = element;
+        highlighted = element;        
 
-        if(highlighted != null)
+        if(highlighted != null) {
             highlighted.SetElementAsHighlighted();
+            ForceCurrentHighlight(highlighted.GetComponent<RectTransform>());
+        }
+            
     }
 
 
