@@ -36,7 +36,7 @@ public class OnDrag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     void IDragHandler.OnDrag(PointerEventData eventData)
     {
         if (onDrag.GetPersistentEventCount() == 1 && onDrag.GetPersistentMethodName(0) == "ResizePanels")
-            PanelsManagement.instance.ResizePanels(-eventData.delta.x);
+            PanelsManagement.instance.ResizePanels(RevertPanels.isOnLeft ? eventData.delta.x : -eventData.delta.x);
         else
             onDrag.Invoke();
     }
