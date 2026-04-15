@@ -91,6 +91,8 @@ public class Shortcuts : MonoBehaviour
     [Header("Lexicon shortcuts")]
     public InputAction moveDown;
     public InputAction moveUp;
+    public InputAction moveRight;
+    public InputAction moveLeft;
     public InputAction select;
 
     private void Awake()
@@ -210,6 +212,10 @@ public class Shortcuts : MonoBehaviour
         moveDown.performed += context => LexiconMove(global::LexiconMove.Down);
         moveUp.Enable();
         moveUp.performed += context => LexiconMove(global::LexiconMove.Up);
+        moveRight.Enable();
+        moveRight.performed += context => LexiconMove(global::LexiconMove.Right);
+        moveLeft.Enable();
+        moveLeft.performed += context => LexiconMove(global::LexiconMove.Left);
         select.Enable();
         select.performed += LexiconSelect;
     }

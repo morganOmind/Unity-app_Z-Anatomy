@@ -9,7 +9,7 @@ using System.Text;
 using UnityEngine.InputSystem;
 
 public enum LexiconMove {
-    Down, Up
+    Down, Up, Right, Left
 };
 
 public class Lexicon : MonoBehaviour
@@ -93,38 +93,51 @@ public class Lexicon : MonoBehaviour
                 searchRT = "";
             }
 
-            int index = 0;
-            bool doit = currentNavHighligh == null;
-            if (currentNavHighligh != null) {
-                int currentIndex = elements.IndexOf(currentNavHighligh);
-                if (currentIndex != -1) {
-                    switch (move) {
-                        case LexiconMove.Down:
-                            if (elements.Count > currentIndex + 1) {
-                                index = currentIndex + 1;
-                                doit = true;
-                            }
-                            break;
-                        case LexiconMove.Up:
-                            if (currentIndex - 1 >= 0) {
-                                index = currentIndex - 1;
-                                doit = true;
-                            }
-                            break;
-                        default: break;
+            if(move == LexiconMove.Down || move == LexiconMove.Up) {
+                int index = 0;
+                bool doit = currentNavHighligh == null;
+                if (currentNavHighligh != null) {
+                    int currentIndex = elements.IndexOf(currentNavHighligh);
+                    if (currentIndex != -1) {
+                        switch (move) {
+                            case LexiconMove.Down:
+                                if (elements.Count > currentIndex + 1) {
+                                    index = currentIndex + 1;
+                                    doit = true;
+                                }
+                                break;
+                            case LexiconMove.Up:
+                                if (currentIndex - 1 >= 0) {
+                                    index = currentIndex - 1;
+                                    doit = true;
+                                }
+                                break;
+                            default: break;
+                        }
+                    }
+                }
+                if (doit) {
+                    elements[index].GetComponentInChildren<LexiconElementButton>().OnPointerEnter(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+                    if (currentNavHighligh != null) {
+                        currentNavHighligh.GetComponentInChildren<LexiconElementButton>().OnPointerExit(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+                    }
+                    SnapTo(elements[index]);
+                    currentNavHighligh = elements[index];
+
+                }
+                //print(currentNavHighligh.name);
+            }
+            else {
+                if(currentNavHighligh != null) {
+                    LexiconElement lexEl = currentNavHighligh.GetComponentInChildren<LexiconElement>();
+                    if (move == LexiconMove.Right && !lexEl.opened) {
+                        lexEl.Open();
+                    }
+                    else if(move == LexiconMove.Left && lexEl.opened) {
+                        lexEl.Close();
                     }
                 }
             }
-            if(doit) {
-                elements[index].GetComponentInChildren<LexiconElementButton>().OnPointerEnter(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
-                if (currentNavHighligh != null) {
-                    currentNavHighligh.GetComponentInChildren<LexiconElementButton>().OnPointerExit(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
-                }
-                SnapTo(elements[index]);
-                currentNavHighligh = elements[index];
-                    
-            }
-            //print(currentNavHighligh.name);
         }
     }
 
@@ -137,23 +150,21 @@ public class Lexicon : MonoBehaviour
     public void SnapTo(RectTransform target) {
         if (currentNavHighligh == null || !currentNavHighligh.gameObject.activeInHierarchy)
             return;
-
-        int index = elements.IndexOf(target); 
-        RectTransform rect = elements[index].GetComponent<RectTransform>();
-        RectTransform scrollRect = rect.GetComponentInParent<NonDragScroll>().GetComponent<RectTransform>();
-        float incrimentSize = rect.rect.height;
+        
+        RectTransform scrollRect = target.GetComponentInParent<NonDragScroll>().GetComponent<RectTransform>();
+        float incrimentSize = target.rect.height;
 
         int i = 0;
 
-        while(!checkInView(scrollRect, rect)) {
-            if (currentNavHighligh.localPosition.y < rect.localPosition.y) {
-                rect.parent.GetComponent<RectTransform>().anchoredPosition += new Vector2(0, -incrimentSize);
+        while (!checkInView(scrollRect, target)) {
+            if (currentNavHighligh.localPosition.y < target.localPosition.y) {
+                target.parent.GetComponent<RectTransform>().anchoredPosition += new Vector2(0, -incrimentSize);
             }
-            else if (currentNavHighligh.localPosition.y > rect.localPosition.y) {
-                rect.parent.GetComponent<RectTransform>().anchoredPosition += new Vector2(0, incrimentSize);
+            else if (currentNavHighligh.localPosition.y > target.localPosition.y) {
+                target.parent.GetComponent<RectTransform>().anchoredPosition += new Vector2(0, incrimentSize);
             }
             i++;
-            if(i > 500) { //just in case something goes wrong, dont freeze the app (normally, it should never be necessary, but just to be on the safe side!!!)
+            if (i > 500) { //just in case something goes wrong, dont freeze the app (normally, it should never be necessary, but just to be on the safe side!!!)
                 return;
             }
 
