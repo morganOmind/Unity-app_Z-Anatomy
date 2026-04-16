@@ -55,6 +55,7 @@ public class NamesManagement : MonoBehaviour
 
     public void GetNamesTranslations()
     {
+        int line = 0;
         try
         {
             int notFoundCount = 0;
@@ -66,12 +67,15 @@ public class NamesManagement : MonoBehaviour
             //Split the text in words
             for (int i = 0; i < lines.Length; i++)
             {
+                line = i;
                 var words = lines[i].Split(';', StringSplitOptions.None);
                 if (words.Length == 0)
                     continue;
                 splittedTranslations[words[GlobalVariables.Instance.GetCurrentSpecieSetting().initialNameIndexInTranslationFile].ToLower()] = words;
             }
 
+            print("all tranlations lines parsed");
+            line = 0;
             //Foreach object in scene
             foreach (var nameScript in GlobalVariables.Instance.allNameScripts)
             {
@@ -113,6 +117,7 @@ public class NamesManagement : MonoBehaviour
                     notFoundCount++;
                     notFound.Add(name);
                 }
+                line++;
             }
 
 
@@ -130,6 +135,7 @@ public class NamesManagement : MonoBehaviour
         }
         catch(Exception e)
         {
+            print("error on line " + (line + 1));
             UnityEngine.Debug.LogError(e);
         }
      
