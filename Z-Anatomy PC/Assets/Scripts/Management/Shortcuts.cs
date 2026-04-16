@@ -220,6 +220,74 @@ public class Shortcuts : MonoBehaviour
         select.performed += LexiconSelect;
     }
 
+    public void DisableAll() {
+
+        changeSelectionToolShortcut.Disable();
+        invertShortcut.Disable();
+        multipleSelectionShortcut.Disable();
+        selectAll.Disable();
+
+        isolateShortcut.Disable();
+        isolateAndLabelsShortcut.Disable();
+        partialIsolateShortcut.Disable();
+        deleteShortcut.Disable();
+        keyColors.Disable();
+
+        setPlaneGizmo.Disable();
+
+        center.Disable();
+
+        showLexicon.Disable();
+        showDescription.Disable();
+        showHelp.Disable();
+        showSettings.Disable();
+        overlay.Disable();
+
+        left.Disable();
+        rigth.Disable();
+        up.Disable();
+        down.Disable();
+        _X.Disable();
+        _Y.Disable();
+        _Z.Disable();
+
+        search.Disable();
+        reset.Disable();
+        copy.Disable();
+
+        undo.Disable();
+        redo.Disable();
+
+        clearPlayerPrefs.Disable();
+
+        keyDigit1.Disable();
+        keyDigit2.Disable();
+        keyDigit3.Disable();
+        keyDigit4.Disable();
+        keyDigit5.Disable();
+        keyDigit6.Disable();
+        keyDigit7.Disable();
+        keyDigit8.Disable();
+        keyDigit9.Disable();
+        keyDigit0.Disable();
+        keyDigitShift1.Disable();
+        keyDigitShift2.Disable();
+        keyDigitShift3.Disable();
+        keyDigitShift4.Disable();
+        keyDigitShift5.Disable();
+        keyDigitShift6.Disable();
+        keyDigitShift7.Disable();
+        keyDigitShift8.Disable();
+        keyDigitShift9.Disable();
+        keyDigitShift0.Disable();
+
+        moveDown.Disable();
+        moveUp.Disable();
+        moveRight.Disable();
+        moveLeft.Disable();
+        select.Disable();
+    }
+
     private void ChangeSelectionTool(InputAction.CallbackContext context)
     {
         if (ActionControl.boxSelection)

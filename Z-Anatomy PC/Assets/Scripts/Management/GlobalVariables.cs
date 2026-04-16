@@ -215,7 +215,13 @@ public class GlobalVariables : MonoBehaviour
                 canvasesRoot.GetChild(i).gameObject.SetActive(false);
             }
         }
+        //reset specific stuff
+        CommandController.Reset();
+        UrlParser.openNavid = "";
+        Shortcuts.Instance.DisableAll();
+        //wait one frame
         yield return new WaitForEndOfFrame();
+        //reload the scene
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 
