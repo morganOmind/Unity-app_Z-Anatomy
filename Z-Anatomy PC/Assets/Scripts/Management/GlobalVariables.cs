@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public enum SpecieType {
@@ -122,6 +123,12 @@ public class GlobalVariables : MonoBehaviour
     [HideInInspector]
     public List<TangibleBodyPart> references;
 
+    [Header("Loading specie")]
+    public GameObject loadingGO;
+    public RectTransform speciesChoiceRoot;
+    public Image specieImage;
+    public Transform canvasesRoot;
+
     private void Awake()
     {
         Instance = this;
@@ -191,7 +198,28 @@ public class GlobalVariables : MonoBehaviour
         }
     }
 
-    public void SetSpecie(SpecieType type) {
+    public void OnChangeSpecie(int type) {
+        SpecieType specie = (SpecieType)type;
+        if(specieType != specie) {
+            specieType = specie;
+            StartCoroutine(changeSpecieAsync());
+        }
+    }
+
+    IEnumerator changeSpecieAsync() {
+        Camera.main.cullingMask = LayerMask.GetMask("Loading");
+        loadingGO.SetActive(true);
+        globalParent.SetActive(false);
+        for(int i=0; i<canvasesRoot.childCount; i++) {
+            if(canvasesRoot.GetChild(i).gameObject != loadingGO) {
+                canvasesRoot.GetChild(i).gameObject.SetActive(false);
+            }
+        }
+        yield return new WaitForEndOfFrame();
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    void SetSpecie(SpecieType type) {
         specieType = type;
         foreach(SpecieSetting setting in speciesSettings) {
             if(setting.type == type) {
@@ -221,6 +249,17 @@ public class GlobalVariables : MonoBehaviour
                 setting.globalParent.SetActive(false);
             }
         }
+        ToggleChangeColor[] toggles = speciesChoiceRoot.GetComponentsInChildren<ToggleChangeColor>(true);
+        for(int i=0; i<toggles.Length; i++) {
+            bool isActive = ((int)type - 1) == i;
+            if((isActive && !toggles[i].pressed) || (!isActive && toggles[i].pressed)){
+                toggles[i].ChangeState();
+            }
+            if (isActive) {
+                specieImage.sprite = toggles[i].transform.Find("Icon").GetComponent<Image>().sprite;
+            }
+        }
+
     }
 
     public SpecieSetting GetSpecieSetting(SpecieType type) {
