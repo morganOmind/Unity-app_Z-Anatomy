@@ -6,9 +6,13 @@ using UnityEngine.UI;
 
 public class LoadScene : MonoBehaviour
 {
+    public bool loadOnStart = false;
+
     public float duration;
     public int sceneIndex;
     public Image fadeBackground, loading;
+
+    public List<GameObject> showOnLoad, hideOnLoad;
     
     private IEnumerator Start()
     {
@@ -16,9 +20,27 @@ public class LoadScene : MonoBehaviour
             loading.fillAmount = 0f;
         }
 
-        if(fadeBackground != null) {
+        foreach (GameObject go in showOnLoad) {
+            go.SetActive(false);
+        }
+
+        if (fadeBackground != null) {
             yield return StartCoroutine(Fade());
         }
+
+        if (loadOnStart) {
+            GoLoadScene();
+        }
+    }
+
+    public void GoLoadScene() {
+        foreach(GameObject go in showOnLoad) {
+            go.SetActive(true);
+        }
+        foreach(GameObject go in hideOnLoad) {
+            go.SetActive(false);
+        }
+
         StartCoroutine(LoadSceneAsync());
     }
 

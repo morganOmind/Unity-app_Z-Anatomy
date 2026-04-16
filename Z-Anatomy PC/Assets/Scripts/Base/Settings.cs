@@ -120,10 +120,23 @@ public class Settings : MonoBehaviour
         SetShadows();
 
         //Language
-        dropDownLanguageSettings.value = GetSystemLanguage();
-        if (PlayerPrefs.HasKey("Language"))
-            dropDownLanguageSettings.value = PlayerPrefs.GetInt("Language");
-        dropDownLanguageBar.value = dropDownLanguageSettings.value;
+        int languageValue = GetSystemLanguage();
+        if (PlayerPrefs.HasKey("Language")) {
+            languageValue = PlayerPrefs.GetInt("Language");
+        }
+        if (!GlobalVariables.Instance.GetCurrentSpecieSetting().availableLanguages.Contains<int>(languageValue)) {
+            languageValue = GetSystemLanguage();
+        }
+        if (!GlobalVariables.Instance.GetCurrentSpecieSetting().availableLanguages.Contains<int>(languageValue)) {
+            languageValue = 0; //english by default if neither system language or playerpref language are supported
+        }
+
+        dropDownLanguageSettings.value = languageValue;
+        dropDownLanguageBar.value = languageValue;
+        //force the first call to this method in case it is english, else the drop down values have not been changed, thus the first call has not been done!
+        if(languageValue == 0) {
+            SetLanguage();
+        }
 
         //Zoom to mouse
         zoomToMouseToggle.isOn = PlayerPrefs.GetInt("ZoomToMouse", 1) == 1;
@@ -171,7 +184,7 @@ public class Settings : MonoBehaviour
         }
     }
 
-    public int GetSystemLanguage()
+    public static int GetSystemLanguage()
     {
         switch (Application.systemLanguage)
         {
@@ -179,9 +192,9 @@ public class Settings : MonoBehaviour
                 return 0;
             case SystemLanguage.Unknown:
                 return 1;
-            case SystemLanguage.Spanish:
-                return 2;
             case SystemLanguage.French:
+                return 2;
+            case SystemLanguage.Spanish:
                 return 3;
             case SystemLanguage.Portuguese:
                 return 4;
@@ -221,12 +234,12 @@ public class Settings : MonoBehaviour
                 languageIndex = 1;
                 break;
             case 2:
-                language = SystemLanguage.Spanish;
-                languageIndex = 3;
-                break;
-            case 3:
                 language = SystemLanguage.French;
                 languageIndex = 2;
+                break;
+            case 3:
+                language = SystemLanguage.Spanish;
+                languageIndex = 3;
                 break;
             case 4:
                 language = SystemLanguage.Portuguese;
@@ -234,7 +247,7 @@ public class Settings : MonoBehaviour
                 break;
         }
 
-        PlayerPrefs.SetInt("Language", dropDownLanguageSettings.value);
+        PlayerPrefs.SetInt("Language", value);
         ApplyNameTranslation(GlobalVariables.Instance.globalParent.transform);
         SetMultilanguageTextsTranslations();
         HighlightText.GetTranslatedNames();

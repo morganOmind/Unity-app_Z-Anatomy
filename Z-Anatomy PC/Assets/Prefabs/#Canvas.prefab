@@ -62275,9 +62275,9 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Latin
       m_Image: {fileID: 0}
-    - m_Text: "Espa\xF1ol"
-      m_Image: {fileID: 0}
     - m_Text: "Fran\xE7ais"
+      m_Image: {fileID: 0}
+    - m_Text: "Espa\xF1ol"
       m_Image: {fileID: 0}
     - m_Text: "Portugu\xEAs"
       m_Image: {fileID: 0}
@@ -63178,9 +63178,9 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Latin
       m_Image: {fileID: 0}
-    - m_Text: "Espa\xF1ol"
-      m_Image: {fileID: 0}
     - m_Text: "Fran\xE7ais"
+      m_Image: {fileID: 0}
+    - m_Text: "Espa\xF1ol"
       m_Image: {fileID: 0}
     - m_Text: "Portugu\xEAs"
       m_Image: {fileID: 0}

@@ -14,13 +14,13 @@ public class DropDownLanguageSetting : MonoBehaviour, IPointerClickHandler {
             bool enable = availableLanguages.IndexOf(i) != -1;
             toggles[i].gameObject.SetActive(enable);
             if (!enable) {
+                //move up the next ones and add their heights to the scroll view offset
                 for(int j=i+1; j<toggles.Length; j++) {
                     RectTransform rect = toggles[j].GetComponent<RectTransform>();
                     Vector2 pos = rect.anchoredPosition;
-                    float delta = toggles[j - 1].GetComponent<RectTransform>().rect.size.y;
-                    rect.anchoredPosition = new Vector2(pos.x, pos.y + delta);
-                    offset += delta;
+                    rect.anchoredPosition = new Vector2(pos.x, pos.y + toggles[j - 1].GetComponent<RectTransform>().rect.size.y);
                 }
+                offset += toggles[i].GetComponent<RectTransform>().rect.size.y;
             }
         }
         if(offset > 0f) {

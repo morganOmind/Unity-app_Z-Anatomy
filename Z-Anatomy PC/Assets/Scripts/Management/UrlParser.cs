@@ -32,7 +32,7 @@ public class UrlParser : MonoBehaviour
                     print("Key=" + key + " ; " + "value=" + value);
                     switch (key) {
                         case "specie":
-                            FindObjectOfType<GlobalVariables>().specieType = System.Enum.Parse<SpecieType>(value[0].ToString().ToUpper() + value.Substring(1));
+                            GlobalVariables.specieType = System.Enum.Parse<SpecieType>(value[0].ToString().ToUpper() + value.Substring(1));
                             break;
                         case "navid":
                             openNavid = value;
@@ -49,9 +49,13 @@ public class UrlParser : MonoBehaviour
 		}
 #elif UNITY_EDITOR
         if (testInEditor) {
-            FindObjectOfType<GlobalVariables>().specieType = editorForceSpecie;
+            GlobalVariables.specieType = editorForceSpecie;
             openNavid = editorForceNavid;
         }
 #endif
+
+        if (!string.IsNullOrEmpty(openNavid)) {
+            GetComponent<LoadScene>().GoLoadScene();
+        }
     }
 }

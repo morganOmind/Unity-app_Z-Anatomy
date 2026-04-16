@@ -46,7 +46,8 @@ public class GlobalVariables : MonoBehaviour
     [HideInInspector]
     public static GlobalVariables Instance;
 
-    public SpecieType specieType = SpecieType.Man;
+    public SpecieType editorSpecieType = SpecieType.Man;
+    public static SpecieType specieType = SpecieType.Unknown;
 
     public List<SpecieSetting> speciesSettings;
 
@@ -126,6 +127,12 @@ public class GlobalVariables : MonoBehaviour
         Instance = this;
         
         Build();
+
+#if UNITY_EDITOR
+        if(specieType == SpecieType.Unknown) {
+            specieType = editorSpecieType;
+        }
+#endif
 
         print("Loading specie type: " + GetCurrentSpecieSetting().type.ToString());
         globalParent = GetCurrentSpecieSetting().globalParent;
