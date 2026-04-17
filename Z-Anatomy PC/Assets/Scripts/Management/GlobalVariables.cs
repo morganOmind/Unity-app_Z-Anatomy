@@ -183,7 +183,9 @@ public class GlobalVariables : MonoBehaviour
             }
         }
 
+#if UNITY_EDITOR
         StartCoroutine(SanityCheck());
+#endif
         StartCoroutine(UrlNavidSelection());
     }
 
