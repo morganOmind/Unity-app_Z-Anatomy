@@ -1262,7 +1262,7 @@ Caudal articular process of vertebra;;Processus articularis caudalis vertebrae;;
 Accessory process;;Processus accessorius;;Processus accessoire;
 Mamillary process;%Mammillary process;Processus mamillaris;;Processus mamillaire;
 Cervical vertebrae;%Vertebrae C1-C7;Vertebrae cervicales;%Vertebrae cervicales I-VII%Vertebrae C1-C7%Ossa vertebralia cervicalia;Vertèbres cervicales;
-Vertebra C1;;Vertebra cervicalis I;%Vertebra C1;Vertèbre C1 (Atlas);%C1%Atlas
+Vertebra C1;;Vertebra cervicalis I;%Vertebra C1;Vertèbre C1 (Atlas);%C1%Atlas%Première vertèbre cervicale
 Lateral mass;;Massa lateralis;;Masse latérale;
 Transverse process of the atlas;;Processus transversus atlas;;Processus transverse de l'atlas;
 Alar foramen;;Foramen alare;;Foramen alaire;
@@ -1275,44 +1275,44 @@ Fovea dentis;;Fovea dentis;;Fossette de la dent;%Fovéa de la dent
 Ventral tubercle of the atlas;;Tuberculum ventrale atlas;;Tubercule ventral de l'atlas;
 Dorsal arch;;Arcus dorsalis;;Arc dorsal;
 Dorsal tubercle of the atlas;;Tuberculum dorsi atlas;;Tubercule dorsal de l'atlas;
-Vertebra C2;;Vertebra cervicalis II;%Vertebra C2;Vertèbre C2 (Axis);%C2%Axis
+Vertebra C2;;Vertebra cervicalis II;%Vertebra C2;Vertèbre C2 (Axis);%C2%Axis%Deuxième vertèbre cervicale
 Tooth of axis;;Dens axis;;Dent de l'axis;
 Apex of tooth;;Apex dentis;;Apex de la dent;
 Ventral articular surface;;Facies articularis ventralis;;Surface articulaire ventrale;
 Dorsal articular surface;;Facies articularis dorsalis;;Surface articulaire dorsale;
-Vertebra C3;;Vertebra cervicalis III;%Vertebra C3;Vertèbre C3;
-Vertebra C4;;Vertebra cervicalis IV;%Vertebra C4;Vertèbre C4;
-Vertebra C5;;Vertebra cervicalis V;%Vertebra C5;Vertèbre C5;
-Vertebra C6;;Vertebra cervicalis VI;%Vertebra C6;Vertèbre C6;
-Vertebra C7;%Vertebra prominens;Vertebra cervicalis VII;%Vertebra C7;Vertèbre C7;%Vertèbre proéminente
-Thoracic vertebrae;%Vertebrae T1-T12;Vertebrae thoracicae;%Vertebrae thoracicae I-XII%Vertebrae T1-T12%Ossa vertebralia thoracica%Vertebrae thoracales;Vertèbres thoraciques;%Vertèbres thoraciques I-XII%Vertèbres T1-T12
+Vertebra C3;;Vertebra cervicalis III;%Vertebra C3;Vertèbre C3;%Troisième vertèbre cervicale
+Vertebra C4;;Vertebra cervicalis IV;%Vertebra C4;Vertèbre C4;%Quatrième vertèbre cervicale
+Vertebra C5;;Vertebra cervicalis V;%Vertebra C5;Vertèbre C5;%Cinquième vertèbre cervicale
+Vertebra C6;;Vertebra cervicalis VI;%Vertebra C6;Vertèbre C6;%Sixième vertèbre cervicale
+Vertebra C7;%Vertebra prominens;Vertebra cervicalis VII;%Vertebra C7;Vertèbre C7;%Vertèbre proéminente%Septième vertèbre cervicale
+Thoracic vertebrae;%Vertebrae T1-T12;Vertebrae thoracicae;%Vertebrae thoracicae I-XII%Vertebrae T1-T12%Ossa vertebralia thoracica%Vertebrae thoracales;Vertèbres thoraciques;%Vertèbres thoraciques I-XII%Vertèbres T1-T12%Vertèbre thoracique
 Vertebra T1;%First thoracic vertebra;Vertebra thoracica I;%Vertebra T1;Vertèbre T1;%Première vertèbre thoracique
-Vertebra T2;;Vertebra thoracica II;%Vertebra T2;Vertèbre T2;
-Vertebra T3;;Vertebra thoracica III;%Vertebra T3;Vertèbre T3;
-Vertebra T4;;Vertebra thoracica IV;%Vertebra T4;Vertèbre T4;
-Vertebra T5;;Vertebra thoracica V;%Vertebra T5;Vertèbre T5;
-Vertebra T6;;Vertebra thoracica VI;%Vertebra T6;Vertèbre T6;
-Vertebra T7;;Vertebra thoracica VII;%Vertebra T7;Vertèbre T7;
-Vertebra T8;;Vertebra thoracica VIII;%Vertebra T8;Vertèbre T8;
-Vertebra T9;;Vertebra thoracica IX;%Vertebra T9;Vertèbre T9;
-Vertebra T10;;Vertebra thoracica X;%Vertebra T10;Vertèbre T10;
-Vertebra T11;;Vertebra thoracica XI;%Vertebra T11;Vertèbre T11;
-Vertebra T12;;Vertebra thoracica XII;%Vertebra T12;Vertèbre T12;
-Vertebra T13;;Vertebra thoracica XIII;%Vertebra T13;Vertèbre T13;
-Vertebra T14;;Vertebra thoracica XIV;%Vertebra T14;Vertèbre T14;
-Vertebra T15;;Vertebra thoracica XV;%Vertebra T15;Vertèbre T15;
-Vertebra T16;;Vertebra thoracica XVI;%Vertebra T16;Vertèbre T16;
-Vertebra T17;;Vertebra thoracica XVII;%Vertebra T17;Vertèbre T17;
-Vertebra T18;;Vertebra thoracica XVIII;%Vertebra T18;Vertèbre T18;
+Vertebra T2;;Vertebra thoracica II;%Vertebra T2;Vertèbre T2;%Deuxième vertèbre thoracique
+Vertebra T3;;Vertebra thoracica III;%Vertebra T3;Vertèbre T3;%Troisième vertèbre thoracique
+Vertebra T4;;Vertebra thoracica IV;%Vertebra T4;Vertèbre T4;%Quatrième vertèbre thoracique
+Vertebra T5;;Vertebra thoracica V;%Vertebra T5;Vertèbre T5;%Cinquième vertèbre thoracique
+Vertebra T6;;Vertebra thoracica VI;%Vertebra T6;Vertèbre T6;%Sixième vertèbre thoracique
+Vertebra T7;;Vertebra thoracica VII;%Vertebra T7;Vertèbre T7;%Septième vertèbre thoracique
+Vertebra T8;;Vertebra thoracica VIII;%Vertebra T8;Vertèbre T8;%Huitième vertèbre thoracique
+Vertebra T9;;Vertebra thoracica IX;%Vertebra T9;Vertèbre T9;%Neuvième vertèbre thoracique
+Vertebra T10;;Vertebra thoracica X;%Vertebra T10;Vertèbre T10;%Dixième vertèbre thoracique
+Vertebra T11;;Vertebra thoracica XI;%Vertebra T11;Vertèbre T11;%Onzième vertèbre thoracique
+Vertebra T12;;Vertebra thoracica XII;%Vertebra T12;Vertèbre T12;%Douzième vertèbre thoracique
+Vertebra T13;;Vertebra thoracica XIII;%Vertebra T13;Vertèbre T13;%Treizème vertèbre thoracique
+Vertebra T14;;Vertebra thoracica XIV;%Vertebra T14;Vertèbre T14;%Quatorzième vertèbre thoracique
+Vertebra T15;;Vertebra thoracica XV;%Vertebra T15;Vertèbre T15;%Quinzième vertèbre thoracique
+Vertebra T16;;Vertebra thoracica XVI;%Vertebra T16;Vertèbre T16;%Seizième vertèbre thoracique
+Vertebra T17;;Vertebra thoracica XVII;%Vertebra T17;Vertèbre T17;%Dix-septième vertèbre thoracique
+Vertebra T18;;Vertebra thoracica XVIII;%Vertebra T18;Vertèbre T18;%Dix-huitème vertèbre thoracique
 Anticlinal vertebra;;Vertebra anticlinalis;;Vertèbre anticlinale;
 Lumbar vertebrae;%Vertebrae L1-L5;Vertebrae lumbales;%Vertebrae lumbales I-V%Vertebrae L1-L5%Ossa vertebralia lumbalia;Vertèbres lombaires;%Vertèbres L1-L5%Vertèbres lombales
-Vertebra L1;;Vertebra lumbalis I;%Vertebra L1;Vertèbre L1;
-Vertebra L2;;Vertebra lumbalis II;%Vertebra L2;Vertèbre L2;
-Vertebra L3;;Vertebra lumbalis III;%Vertebra L3;Vertèbre L3;
-Vertebra L4;;Vertebra lumbalis IV;%Vertebra L4;Vertèbre L4;
-Vertebra L5;;Vertebra lumbalis V;%Vertebra L5;Vertèbre L5;
-Vertebra L6;;Vertebra lumbalis VI;%Vertebra L6;Vertèbre L6;
-Vertebra L7;;Vertebra lumbalis VII;%Vertebra L7;Vertèbre L7;
+Vertebra L1;;Vertebra lumbalis I;%Vertebra L1;Vertèbre L1;%Première vertèbre lombaire
+Vertebra L2;;Vertebra lumbalis II;%Vertebra L2;Vertèbre L2;%Deuxième vertèbre lombaire
+Vertebra L3;;Vertebra lumbalis III;%Vertebra L3;Vertèbre L3;%Troisième vertèbre lombaire
+Vertebra L4;;Vertebra lumbalis IV;%Vertebra L4;Vertèbre L4;%Quatrième vertèbre lombaire
+Vertebra L5;;Vertebra lumbalis V;%Vertebra L5;Vertèbre L5;%Cinquième vertèbre lombaire
+Vertebra L6;;Vertebra lumbalis VI;%Vertebra L6;Vertèbre L6;%Sixième vertèbre lombaire
+Vertebra L7;;Vertebra lumbalis VII;%Vertebra L7;Vertèbre L7;%Septième vertèbre lombaire
 Transverse process of cervical vertebra;;Processus transversus vertebrae cervicalis;;Processus transverse de la vertèbre cervicale;
 Ventral tubercle;;Tuberculum ventrale;;Tubercule ventral;
 Ventral plate [Cervical vertebra VI];;Lamina ventralis [vertebrae cervicalis VI];;Lame ventrale [vertèbre cervicale VI];
@@ -1320,11 +1320,11 @@ Foramen transversarium;%Transverse foramen;Foramen transversarium;%Foramen proce
 Dorsal tubercle;;Tuberculum dorsale;;Tubercule dorsal;
 Caudal costal fovea [cervical vertebra VII];;Fovea costalis caudalis [vertebrae cervicalis VII];;Fossette costale caudale [Vertèbre cervicale VII];%Fovéa costale caudale
 Sacrum;;Os sacrum;;Sacrum;%Vertèbres sacrées
-Vertebra S1;;Vertebra sacralis I;;Vertèbre S1;
-Vertebra S2;;Vertebra sacralis II;;Vertèbre S2;
-Vertebra S3;;Vertebra sacralis III;;Vertèbre S3;
-Vertebra S4;;Vertebra sacralis IV;;Vertèbre S4;
-Vertebra S5;;Vertebra sacralis V;;Vertèbre S5;
+Vertebra S1;;Vertebra sacralis I;;Vertèbre S1;%Première vertèbre sacrale%Première vertèbre sacrée
+Vertebra S2;;Vertebra sacralis II;;Vertèbre S2;%Deuxième vertèbre sacrale%Deuxième vertèbre sacrée
+Vertebra S3;;Vertebra sacralis III;;Vertèbre S3;%Troisième vertèbre sacrale%Troisième vertèbre sacrée
+Vertebra S4;;Vertebra sacralis IV;;Vertèbre S4;%Quatrième vertèbre sacrale%Quatrième vertèbre sacrée
+Vertebra S5;;Vertebra sacralis V;;Vertèbre S5;%Cinquième vertèbre sacrale%Cinquième vertèbre sacrée
 Sacral base;;Basis ossis sacri;;Base du sacrum;
 Cranial articular process;;Processus articularis cranialis;;Processus articulaire crânial;
 Promontory of sacrum;;Promontorium sacri;;Promontoire du sacrum;
@@ -1556,11 +1556,11 @@ Carpal groove;;Sulcus carpi;;Sillon carpien;
 Sesamoid bone of abductor finger I muscle;;Os sesamoideum musculus abductoris digiti I longi;;Os sésamoïde du muscle long abducteur du doigt I;
 (Sesamoid palmar bones);;(Ossa sesamoidea palmaria);;(Os sésamoïdes palmaires);
 Metacarpal bones I-V;;Ossa metacarpalia I-V;;Os métacarpiens I-V;
-First metacarpal bone;%Metacarpal 1;Os primum metarcapi;;Premier métacarpien;
-Second metacarpal bone;%Metacarpal 2;Os secundum metacarpi;;Deuxième métacarpien;
-Third metacarpal bone;%Metacarpal 3;Os tertium metacarpi;%Os III metacarpi;Troisième métacarpien;
-Fourth metacarpal bone;%Metacarpal 4;Os quartum metacarpi;;Quatrième métacarpien;
-Fifth metacarpal bone;%Metacarpal 5;Os quintum metacarpi;;Cinquième métacarpien;
+First metacarpal bone;%Metacarpal 1;Os primum metarcapi;;Premier métacarpien;%Métacarpien I%Métacarpien 1%1er métacarpien
+Second metacarpal bone;%Metacarpal 2;Os secundum metacarpi;;Deuxième métacarpien;%Métacarpien II%Métacarpien 2%2ème métacarpien
+Third metacarpal bone;%Metacarpal 3;Os tertium metacarpi;%Os III metacarpi;Troisième métacarpien;%Métacarpien III%Métacarpien 3%3ème métacarpien
+Fourth metacarpal bone;%Metacarpal 4;Os quartum metacarpi;;Quatrième métacarpien;%Métacarpien II%Métacarpien 2%2ème métacarpien
+Fifth metacarpal bone;%Metacarpal 5;Os quintum metacarpi;;Cinquième métacarpien;%Métacarpien III%Métacarpien 3%3ème métacarpien
 Basis os metacarpal bone;;Basis ossis metacarpalis;;Base de l'os métacarpien;
 Articular surface of metacarpal bone;;Facies articularis ossis metacarpi;;Surface articulaire de l'os métacarpien;
 Body of metacarpal bone;%Shaft%Metacarpal shaft;Corpus ossis metacarpi;%Corpus ossis metacarpei%Corpus ossis metacarpalis%Corpus metacarpalis;Corps de l'os métacarpien;
@@ -2558,16 +2558,16 @@ Dorsal cervical intertransverse muscles;;Musculi intertransversarii dorsales cer
 Middle cervical Intertransverse muscles;;Musculi intertransversarii medii cervicis;;Muscles intertransversaires moyens du cou;
 Ventral cervical intertransverse muscles;;Musculi intertransversarii ventrales cervicis;;Muscles intertransversaires ventraux du cou;
 Back fascia;;Fascia dorsi;;Fascias du dos;
-Thoracolumbar fascia;%Lumbodorsal fascia;Fascia thoracolumbalis;%Fascia lumbodorsalis%Fascia dorsalis%Fascia dorsi;Fascia thoracolombaire;%Fascia thoracolombal
+Thoracolumbar fascia;%Lumbodorsal fascia;Fascia thoracolumbalis;%Fascia lumbodorsalis%Fascia dorsalis%Fascia dorsi;Fascia thoracolombaire;%Fascia thoracolombal%Fascia thoraco-lombaire
 Dorsoscapular ligament;;Ligamentum dorsoscapulare;;Ligament dorsoscapulaire;
 Nuchal fascia;;Fascia nuchae;;Fascia nuchal;
 Muscles of thorax;;Musculi thoracis;;Muscles du thorax;
 Pectoral muscles;;Musculi pectorales;;Muscles pectoraux;
 Superficial pectoral muscles;;Musculi pectorales superficiales;;Muscles pectoraux superficiels;%Muscle pectoral superficiel
-Descending pectoral muscle;;Musculus pectoralis descendens;;Muscle pectoral descendant;
-Transverse pectoral muscle;;Musculus pectoralis transversus;;Muscle pectoral transverse;
+Descending pectoral muscle;;Musculus pectoralis descendens;;Muscle pectoral descendant;%Partie ascendante du muscle pectoral
+Transverse pectoral muscle;;Musculus pectoralis transversus;;Muscle pectoral transverse;%Partie transverse du muscle pectoral
 Descending and transverse pectoral muscles;;Musculi pectorales descendentes et transversi;;Muscles pectoraux descendant et transverse;
-Deep (ascending) pectoral muscle;;Musculus pectoralis profundus (ascendens);;Muscle pectoral profond (ascendant);
+Deep (ascending) pectoral muscle;;Musculus pectoralis profundus (ascendens);;Muscle pectoral profond (ascendant);%Partie profonde du muscle pectoral
 Subclavius muscle;;Musculus subclavius;;Muscle subclavier;%Subclavier
 Pectoral fascia;;Fascia pectoralis;%Fascia pectoralis superficialis;Fascia pectoral;
 Muscles of the thoracic wall;;Musculi parietis thoracis;;Muscles de la paroi thoracique;
@@ -2634,14 +2634,14 @@ Caudal fascia;;Fascia caudae;;Fascia caudal;
 Muscles of the thoracic limbs;;Musculi membri thoracici;;Muscles du membre thoracique;
 Shoulder muscles;%Scapulohumeral muscles;Musculi humeri;%Musculi scapulohumerales;Muscles de l'épaule;%Muscles scapulohuméraux
 Deltoid muscle;;Musculus deltoideus;;Muscle deltoïde;%Deltoïde
-Scapular part of deltoid muscle;;Pars spinalis scapularis musculi deltoidei;;Partie scapulaire épineuse du deltoïde;
-Acromial part of deltoid muscle;;Pars acromialis musculi deltoidei;;Partie acromiale du deltoïde;
-Clavicular part of deltoid muscle;;Pars clavicularis musculi deltoidei;;Partie claviculaire du deltoïde;
+Scapular part;;Pars spinalis scapularis musculi deltoidei;;Partie scapulaire épineuse;
+Acromial part;;Pars acromialis musculi deltoidei;;Partie acromiale;
+Clavicular part;;Pars clavicularis musculi deltoidei;;Partie claviculaire;
 Supraspinatus muscle;;Musculus supraspinatus;%Musculus supra spinam;Muscle supra-épineux;%Supra-épineux
 Infraspinatus muscle;;Musculus infraspinatus;%Muculus infra spinam;Muscle infra-épineux;%Infra-épineux
 Teres minor muscle;;Musculus teres minor;;Muscle petit rond;%Petit rond
 Teres major muscle;;Musculus teres major;;Muscle grand rond;%Grand rond
-;;;;Muscle grand rond et grand dorsal;
+Teres major and latissimus dorsi muscles;;Teres major et latissimus dorsi musculi;;Muscle grand rond et grand dorsal;
 Subscapularis muscle;;Musculus subscapularis;;Muscle subscapulaire;%Subscapulaire
 Articular muscle of the shoulder (fe, su, eq);;Musculus articularis humeri (fe, su, eq);;Muscle articulaire de l'épaule (fe, su, eq);
 Coracobrachialis muscle;%Casserio's muscle;Musculus coracobrachialis;;Muscle coracobrachial;%Muscle de Casserio%Coracobrachial
@@ -2759,7 +2759,7 @@ Hip articular muscle (Car, eq);;Musculus articularis coxae (Car, eq);;Muscle art
 Quadriceps femoris muscle;;Musculus quadriceps femoris;;Muscle quadriceps fémoral;%Quadriceps fémoral
 Rectus femoris muscle;;Musculus rectus femoris;;Muscle droit fémoral;%Droit fémoral%Muscle droit de la cuisse
 Vastus lateralis muscle;;Musculus vastus lateralis;%Musculus vastus fibularis;Muscle vaste latéral;%Vaste latéral
-;;Musculi vastus medialis et intermedius;;Muscles vaste médial et vaste intermédiaire;
+Vastus medialis and vastus intermedius muscles;;Musculi vastus medialis et intermedius;;Muscles vaste médial et vaste intermédiaire;
 Vastus intermedius muscle;;Musculus vastus intermedius;;Muscle vaste intermédiaire;%Vaste intermédiaire
 Vastus medialis muscle;;Musculus vastus medialis;%Musculus vastus tibialis;Muscle vaste médial;%Vaste médial
 Articular muscle of knee (Car, bo);;Musculus articularis genus (Car, bo);;Muscle articulaire du genou (Car, bo);
@@ -6616,11 +6616,11 @@ Spinal nervous plexus;;Plexus nervorum spinalium;;Plexus des nerfs spinaux;
 Terminal nervous corpuscule;;Corpuscula nervosa terminalia;;Corpuscule nerveux terminal;
 Free nerve endings;;Terminationes nervorum liberae;;Terminaisons nerveuses libres;%Terminaisons libres des nerfs
 Cranial nerves;;Nervi craniales;%Nervi cerebrales%Nervi capitales;Nerfs crâniens;
-Olfactory nerves;;Nervi olfactorii;;Nerfs olfactifs;
+Olfactory nerves;;Nervi olfactorii;;Nerfs olfactifs (I);%Premier nerf crânien%Nerf I%Nerf 1%1er nerf crânien
 Vomeronasal nerve;;Nervus vomeronasalis;;Nerf voméronasal;
 Terminal nerve;%Cranial nerve 0;Nervus terminalis;%Nervi terminales;Nerf terminal;%Nerf crânien 0%Nerfs terminaux
 Terminal ganglion;;Ganglion terminale;;Ganglion terminal;
-Optic nerve;;Nervus opticus;;Nerf optique;
+Optic nerve;;Nervus opticus;;Nerf optique;%Deuxième nerf crânien%Nerf II%Nerf 2%2ème nerf crânien
 Oculomotor nerve;;Nervus oculomotorius;;Nerf oculomoteur;
 Dorsal branch of oculomotor nerve;;Ramus dorsalis nervi oculomotorius;;Branche dorsale du nerf oculomoteur;
 Ventral branch of oculomotor nerve;;Ramus ventralis nervi oculomotorius;;Branche ventrale du nerf oculomoteur;
@@ -6728,8 +6728,8 @@ Glandular branches of mental nerves;;Rami glandulares nervi mentales;;Branches g
 Sublingual ganglion (Car);;Ganglion sublinguale (Car);;Ganglion sublingual (Car);
 Communicating branches with lingual nerve;;Rami communicantes cum nervi linguali;;Branches communiquantes avec le nerf lingual;
 Glandular branches;;Rami glandulares;;Branches glandulaires;
-Abducens nerve;;Nervus abducens;;Nerf abducens;
-Facial nerve [intermediofacial nerve];;Nervus facialis [Nervus intermediofacialis];;Nerf facial [nerf intermédiofacial];
+Abducens nerve;;Nervus abducens;;Nerf abducens (VI);%Sixième nerf crânien%Nerf VI%Nerf 6%6ème nerf crânien
+Facial nerve [intermediofacial nerve];;Nervus facialis [Nervus intermediofacialis];;Nerf facial [nerf intermédiofacial] (VII);%Septième nerf crânien%Nerf VII%Nerf 7%7ème nerf crânien
 Geniculum of facial nerve;%External genu of facial nerve;Geniculum nervi facialis;%Genu nervi facialis;Geniculum du nerf facial;%Genou externe du nerf facial
 Greater petrosal nerve;%Parasympathetic root of pterygopalatine ganglion;Nervus petrosus major;%Radix intermedia ganglii pterygopalatini%Radix facialis ganglii pterygopalatini%Nervus petrosus superficialis major;Nerf grand pétreux;
 Nerve to stapedius muscle;;Nervus stapedius;;Nerf du muscle stapédien;
@@ -6749,7 +6749,7 @@ Ramus colli;;Ramus colli;;Ramus colli;
 Intermedius nerve;;Nervus intermedius;;Nerf intermédiaire;
 Geniculate ganglion;;Ganglion geniculi;;Ganglion géniculé;
 Chorda tympani;;Chorda tympani;%Ramus communicans lingualis nervi facialis;Corde du tympan;
-Vestibulocochlear nerve;;Nervus vestibulocochlearis;;Nerf vestibulocochléaire;
+Vestibulocochlear nerve;;Nervus vestibulocochlearis;;Nerf vestibulocochléaire (VIII);%Huitème nerf crânien%Nerf VIII%Nerf 8%8ème nerf crânien
 Vestibular root;;Radix vestibularis;;Racine vestibulaire;
 Cochlear root;;Radix cochlearis;;Racine cochléaire;
 Vestibular nerve;;Nervus vestibularis;%Nervus staticus%Pars vestibularis nervi octavi;Nerf vestibulaire;
@@ -6764,7 +6764,7 @@ Posterior ampullary nerve;;Nervus ampullaris posterior;%Nervus ampullaris poster
 Saccular nerve;;Nervus saccularis;%Nervi sacculi;Nerf sacculaire;
 Cochlear nerve;;Nervus cochlearis;%Nervus cochleae%Nervus acusticus%Pars cochlearis nervi octavi;Nerf cochléaire;
 Spiral cochlear ganglion;;Ganglion spirale cochleae;;Ganglion spiral de la cochlée;
-Glossopharyngeal nerve;;Nervus glossopharyngeus;;Nerf glossopharyngien;
+Glossopharyngeal nerve;;Nervus glossopharyngeus;;Nerf glossopharyngien (IX);%Neuvième nerf crânien%Nerf IX%Nerf 9%9ème nerf crânien
 Proximal ganglion of glossopharyngeal nerve;;Ganglion proximale nervi glossopharyngeus;;Ganglion proximal du nerf glossopharyngien;
 Distal ganglion of glossopharyngeal nerve;;Ganglion distale nervi glossopharyngeus;;Ganglion distal du nerf glossopharyngien;
 Tympanic nerve;%Nerve of Arnold%Nerve of Jacobson;Nervus tympanicus;;Nerf tympanique;%Nerf d'Arnold%Nerf de Jacobson
@@ -6778,7 +6778,7 @@ Pharyngeal branch;;Ramus pharyngeus;;Branche pharyngée;
 Lateropharyngeal ganglion (bo,ov);;Ganglion lateropharyngeum (bo, ov);;Ganglion latéropharyngé (bo, ov);
 Lingual branch;;Ramus lingualis;;Branche linguale;
 Tonsillary branches;;Rami tonsillares;;Branches amygdaliennes;
-Vagus nerve;;Nervus vagus;;Nerf vague;
+Vagus nerve;;Nervus vagus;;Nerf vague (X);%Dixième nerf crânien%Nerf X%Nerf 10%10ème nerf crânien
 Proximal ganglion of the vagus nerve;;Ganglion proximalis nervi vagi;;Ganglion proximal du nerf vague;
 Distal ganglion of the vagus nerve;;Ganglion distalis nervi vagi;;Ganglion distal du nerf vague;
 Meningeal branch of vagus nerve;;Ramus meningeus nervi vagi;%Ramus meningicus;Branche méningée du nerf vague;
@@ -6826,14 +6826,14 @@ Caudal reticular branches;;Rami reticulares caudales;;Branches réticulaires cau
 Branch to the greater curvature of abomasium;;Ramus ad curvaturam majorem abomasi;;Branche de la grande courbure de l'abomasum;
 Omasial branches;;Rami omasiales;;Branches omasiales;
 Visceral abomasial branches;;Rami abomasiales viscerales;;Branches abomasiales viscérales;
-Accessory nerve;;Nervus accessorius;;Nerf accessoire;
+Accessory nerve;;Nervus accessorius;;Nerf accessoire (XI);%Onzième nerf crânien%Nerf XI%Nerf 11%11ème nerf crânien
 Cranial roots of the accessory nerve;;Radices craniales nervi accessorii;;Racines crâniales du nerf accessoire;
 Spinal roots of the accessory nerve;;Radices spinales nervi accessorii;;Racines spinales du nerf accessoire;
 Internal branch of the accessory nerve;;Ramus internus nervi accessorii;;Branche interne du nerf accessoire;
 External branch of the accessory nerve;;Ramus externus nervi accessorii;;Branche externe du nerf accessoire;
 Dorsal branch of the accessory nerve;;Ramus dorsalis nervi accessorii;;Branche dorsale du nerf accessoire;
 Ventral branch of the accessory nerve;;Ramus ventralis nervi accessorii;;Branche ventrale du nerf accessoire;
-Hypoglossal nerve;;Nervus hypoglossis;;Nerf hypoglosse;
+Hypoglossal nerve;;Nervus hypoglossis;;Nerf hypoglosse (XII);%Douzième nerf crânien%Nerf XII%Nerf 12%12ème nerf crânien
 Lingual branches of the hypoglossal nerve;;Rami linguales nervi hypoglossis;;Branches linguales du nerf hypoglosse;
 Spinal nerves;;Nervi spinales;;Nerfs spinaux;
 General terms (spinal nerves);;Termini generales (nervi spinales);;Termes généraux (Nerfs spinaux);
@@ -6894,9 +6894,9 @@ Caudal pectoral nerves;;Nervi pectorales caudales;;Nerfs pectoraux caudaux;
 Radial nerve;;Nervus radialis;;Nerf radial;
 Muscular branches of radial nerve;;Rami musculares nervi radialis;;Branches musculaires du nerf radial;
 Caudal lateral brachial cutaneous nerve;;Nervus cutaneus brachii lateralis caudalis;;Nerf cutané latéral caudal du bras;
-Deep branch of lateral caudal cutaneous nerve of arm;;Ramus profundus nervi cutaneus brachii lateralis caudalis;;Branche profonde du nerf cutané caudal latéral du bras;
-Muscular branches of lateral caudal cutaneous nerve of arm;;Rami musculares nervi cutaneus brachii lateralis caudalis;;Branches musclaire du nerf cutané caudal latéral du bras;
-Superficial branch of lateral caudal cutaneous nerve of arm;;Ramus superficialis nervi cutaneus brachii lateralis caudalis;;Branche superficielle du nerf cutané brachial latéral caudal;
+Deep branch of lateral caudal cutaneous nerve of arm;;Ramus profundus nervi cutaneus brachii lateralis caudalis;;Branche profonde du nerf radial;
+Muscular branches of lateral caudal cutaneous nerve of arm;;Rami musculares nervi cutaneus brachii lateralis caudalis;;Branches musclaires;
+Superficial branch of lateral caudal cutaneous nerve of arm;;Ramus superficialis nervi cutaneus brachii lateralis caudalis;;Branche superficielle du nerf radial;
 Lateral cutaneous nerve of the forearm;;Nervus cutaneus antebrachii lateralis;;Nerf cutané latéral de l'avant-bras;
 Lateral branch (Car, su);;Ramus lateralis (Car, su);;Branche latérale (Car, su);
 Medial branch (Car, su);;Ramus medialis (Car, su);;Branche médiale (Car, su);
