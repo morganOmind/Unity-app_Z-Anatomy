@@ -75,9 +75,10 @@ public class Lexicon : MonoBehaviour
     string searchRT = "";
 
     public void ForceCurrentHighlight(RectTransform rect) {
-        if (currentNavHighligh != null && currentNavHighligh.gameObject.activeInHierarchy) {
+        //comment this, seems useless and generates artefacts bugs (text height too small because of stopped coroutine make random text not visible..)
+        /*if (currentNavHighligh != null && currentNavHighligh.gameObject.activeInHierarchy) {
             currentNavHighligh.GetComponentInChildren<LexiconElementButton>().OnPointerExit(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
-        }
+        }*/
         currentNavHighligh = rect;
     }
 
