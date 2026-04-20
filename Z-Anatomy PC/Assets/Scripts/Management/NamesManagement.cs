@@ -246,6 +246,8 @@ public class NamesManagement : MonoBehaviour
 
             yield return StartCoroutine(HighlightText.Hightlight(description, name.Replace("(R)", "").Replace("(L)", "").Replace(".t", "").Replace(".s","").Trim().ToLower(), bodyPartInputField));
 
+            bodyPartInputField.text = VideoLinkChecker.instance.HightlightText(bodyPartInputField.text);
+
             var textrt = bodyPartInputField.textComponent.GetComponent<RectTransform>();
             var contentrt = textrt.parent.GetComponent<RectTransform>();
             var containerrt = contentrt.parent.GetComponent<RectTransform>();
