@@ -227,11 +227,16 @@ public class VideoLinkChecker : MonoBehaviour
     }
 
     public string HightlightText(string desc) {
-        foreach(string s in notBodyPartsHasUrl) {
-            desc = HighlightVariations(desc, s);
-            desc = HighlightVariations(desc, s[0].ToString() + s.Substring(1));
+        if (enabled) {
+            foreach (string s in notBodyPartsHasUrl) {
+                desc = HighlightVariations(desc, s);
+                desc = HighlightVariations(desc, s[0].ToString() + s.Substring(1));
+            }
+            return desc;
         }
-        return desc;
+        else {
+            return desc;
+        }
     }
 
     string HighlightVariations(string desc, string name) {
