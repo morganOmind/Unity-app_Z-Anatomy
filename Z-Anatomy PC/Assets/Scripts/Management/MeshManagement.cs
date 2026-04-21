@@ -241,4 +241,20 @@ public class MeshManagement : MonoBehaviour
                 child.GetComponent<BodyPartVisibility>().HideLabels();
         }
     }
+
+    public void PeelClick(GameObject part) {
+        //Can undo isolation
+        if (SelectedObjectsManagement.Instance.peeledObject != null
+            && SelectedObjectsManagement.Instance.peeledObject.Equals(SelectedObjectsManagement.Instance.lastPeeledObject)) {
+            ActionControl.Instance.Undo();
+            SelectedObjectsManagement.Instance.lastPeeledObject = null;
+            return;
+        }
+
+        SelectedObjectsManagement.Instance.lastPeeledObject = part;
+
+        ActionControl.Instance.AddCommand(new PeelCommand(part), true);
+
+        Lexicon.Instance.UpdateTreeViewCheckboxes();
+    }
 }

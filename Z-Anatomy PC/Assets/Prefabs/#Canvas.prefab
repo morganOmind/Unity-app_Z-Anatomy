@@ -146449,6 +146449,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 325262176125280518, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_text
+      value: Peler
+      objectReference: {fileID: 0}
+    - target: {fileID: 325262176125280518, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
+    - target: {fileID: 325262176125280518, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
     - target: {fileID: 480161698715335152, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
       value: Groupes
@@ -146517,6 +146529,26 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
+    - target: {fileID: 1377954884531063929, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377954884531063929, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377954884531063929, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377954884531063929, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377954884531063929, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1521162124844845810, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_Material
       value: 
@@ -147262,6 +147294,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4040409325519109209, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149755663140358080, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 0}

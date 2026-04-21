@@ -44,6 +44,12 @@ public class TangibleBodyPart : MonoBehaviour
 
     private float secondaryColorWeight;
 
+    private void OnEnable() {
+        GetComponent<MeshRenderer>().enabled = true;
+        GetComponent<MeshCollider>().enabled = true;
+        GetComponent<MeshCollider>().sharedMesh = GetComponent<MeshFilter>().sharedMesh;
+    }
+
     private void Awake()
     {
         meshCollider = GetComponent<MeshCollider>();
