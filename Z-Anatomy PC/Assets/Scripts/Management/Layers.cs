@@ -272,6 +272,9 @@ public class Layers : MonoBehaviour
 
     private IEnumerator SyncLayer(List<GameObject>[] layerObjects, Slider slider)
     {
+        if (slider == null || layerObjects == null)
+            yield break;
+
         int maxValue = 0;
 
         List<int> empties = new List<int>();
@@ -281,11 +284,14 @@ public class Layers : MonoBehaviour
         //Foreach layer
         for (int i = 0; i < layerObjects.Length; i++)
         {
+            if (layerObjects[i] == null)
+                continue;
+
             bool found = false;
 
             foreach (var obj in layerObjects[i])
             {
-                if(obj.GetComponent<BodyPartVisibility>().isVisible)
+                if (obj != null && obj.GetComponent<BodyPartVisibility>()?.isVisible == true) 
                 {
                     found = true;
                     maxValue = i + 1;

@@ -38,6 +38,16 @@ public class HighlightText : MonoBehaviour
     //It hightlights other body parts in the text
     public static IEnumerator Hightlight(string text, string name, TMP_InputField inputField)
     {
+        if (bodypartsHyperlinks == null) {
+            GetTranslatedNames();
+            yield return new WaitForEndOfFrame();
+        }
+
+        if (string.IsNullOrEmpty(text) || inputField == null) {
+            UnityEngine.Debug.LogWarning("Invalid text or input field");
+            yield break;
+        }
+
         Stopwatch stopwatch = new Stopwatch();
         stopwatch.Start();
 
