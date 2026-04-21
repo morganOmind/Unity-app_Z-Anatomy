@@ -184,7 +184,7 @@ public class SearchEngine : MonoBehaviour
                     foreach (var synonym in item.nameScript.allSynonyms[Settings.languageIndex]) {
                         tokens = synonym.ToLower().RemoveAccents().Split(new char[] { ' ', '’', '\'' }, System.StringSplitOptions.RemoveEmptyEntries);
                         foreach(string token in tokens) {
-                            if (StaticMethods.LevenshteinDistance(token, input) < maxDistance) {
+                            if (StaticMethods.LevenshteinDistance(token, input) <= maxDistance) {
                                 gameObjectFound.Add(item.gameObject);
                                 treeViewCanvas.AddElement(item.gameObject, synonym);
                                 found = true;
