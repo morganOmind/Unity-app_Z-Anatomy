@@ -1,0 +1,37 @@
+Muscles intertransversaires des lombes.l
+Muscle court abducteur du pouce.l
+Muscle court abducteur du pouce.r
+Muscles interosseux du pied.l
+Muscles interosseux du pied.r
+Muscle scalène dorsal (Car, su, Ru).l
+Muscles intertransversaires du thorax.l
+Muscles intertransversaires dorsaux du cou.l
+Muscle scalène moyen.l
+Muscles intertransversaires ventraux du cou.l
+Muscles interosseux de la main.l
+Muscles interosseux de la main.r
+Muscle abducteur du cinquième orteil.l
+Muscle abducteur du cinquième orteil.r
+Muscle splénius de la tête.l
+Muscle splénius cervicis.l
+Muscle abducteur du doigt V.l
+Muscle abducteur du doigt V.r
+Muscle zygomatique.l
+Muscle sartorius.l
+Muscle sartorius.r
+Muscle fessier profond.l
+Muscle fessier profond.r
+Partie scapulaire épineuse du deltoïde.l
+Partie acromiale du deltoïde.l
+Partie scapulaire épineuse du deltoïde.r
+Partie acromiale du deltoïde.r
+Muscle supra-épineux.l
+Muscle supra-épineux.r
+Muscle piriforme.l
+Muscle piriforme.r
+Muscle trapèze.l
+Muscle moyen fessier.l
+Muscle moyen fessier.r
+Muscle trapèze.r
+Muscle tenseur du fascia lata.l
+Muscle tenseur du fascia lata.r

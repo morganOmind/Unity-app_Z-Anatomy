@@ -1,0 +1,23 @@
+Articulation coxofémorale
+Ligament de la tête du fémur.l
+Ligament de la tête du fémur.r
+Ligament iliofémoral.l
+Ligament ischiofémoral.l
+Ligament acétabulaire transverse.l
+Ligament acétabulaire transverse.r
+Ligament iliofémoral.r
+Ligament ischiofémoral.r
+Bourrelet acétabulaire.r
+Bourrelet acétabulaire.l
+Capsule articulaire de la hanche.l
+Capsule articulaire de la hanche.r
+Zone orbiculaire.l
+Bourrelet glénoïdal.l
+Épaule
+Ligament huméral transverse.l
+Ligaments glénohuméraux.l
+Bourrelet glénoïdal.r
+Ligament huméral transverse.r
+Ligaments glénohuméraux.r
+Capsule articulaire de l'articulation gléno-humérale.l
+Capsule articulaire de l'articulation gléno-humérale.r

@@ -1,0 +1,28 @@
+Muscle ptérygoïdien latéral.l
+Muscle ptérygoïdien médial.l
+Muscle trapèze.l
+Muscle grand dorsal.l
+Muscle masséter.l
+Muscle deltoïde.l
+Muscle deltoïde.r
+Muscle grand rond.l
+Muscle grand rond.r
+Muscle temporal.l
+Muscle fessier profond.l
+Muscle fessier profond.r
+Partie scapulaire épineuse du deltoïde.l
+Partie acromiale du deltoïde.l
+Partie scapulaire épineuse du deltoïde.r
+Partie acromiale du deltoïde.r
+Partie profonde du muscle masséter.l
+Muscle supra-épineux.l
+Muscle supra-épineux.r
+Muscle rhomboïde.l
+Muscle rhomboïde.r
+Muscle petit rond.l
+Muscle petit rond.r
+Partie superficielle du muscle masséter.l
+Muscle infra-épineux.l
+Muscle infra-épineux.r
+Muscle fessier superficiel.l
+Muscle fessier superficiel.r

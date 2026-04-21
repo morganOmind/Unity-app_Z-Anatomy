@@ -25,6 +25,7 @@ public struct SpecieSetting {
     public Vector2 sagitalLimits, coronalLimits, transversalLimits;
     public float crossSectionLineWidth;
     public SpecieLayers layers;
+    public TextAsset[] bonusCollections;
 };
 
 [System.Serializable]
@@ -243,6 +244,9 @@ public class GlobalVariables : MonoBehaviour
                 }
                 if(Layers.Instance != null) {
                     Layers.Instance.SetLayers(setting.layers);
+                }
+                if(BonusCollections.Instance != null) {
+                    BonusCollections.Instance.collections = setting.bonusCollections.ToList<TextAsset>();
                 }
                 globalParent.SetActive(true);
 

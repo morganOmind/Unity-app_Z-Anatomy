@@ -20,6 +20,8 @@ public class BonusCollections : MonoBehaviour
     {
         Instance = this;
 
+        collections = GlobalVariables.Instance.GetCurrentSpecieSetting().bonusCollections.ToList<TextAsset>();
+
         collectionParts = new HashSet<string>[collections.Count];
 
         //Foreach collection

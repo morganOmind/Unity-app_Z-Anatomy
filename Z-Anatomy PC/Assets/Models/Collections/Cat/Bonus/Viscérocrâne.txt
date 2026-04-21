@@ -1,0 +1,10 @@
+Cornet nasal ventral.l
+Os zygomatique.l
+Vomer
+Os nasal.l
+Os palatin.l
+Os lacrymal.l
+Os maxillaire.l
+Os incisif.l
+(Os sutural).l
+Os ptérygoïdien.l

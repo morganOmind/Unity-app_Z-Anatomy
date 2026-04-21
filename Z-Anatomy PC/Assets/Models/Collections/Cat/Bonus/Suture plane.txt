@@ -1,0 +1,30 @@
+Suture internasale.j
+Suture internasale.t
+Suture ptérygopalatine.j
+Suture ptérygosphénoïdale.j
+Suture voméropalatine.j
+Suture voméromaxillaire.j
+Suture voméro-incisive.j
+Suture voméro-ethmoïdienne.j
+Suture ethmoïdomaxillaire.j
+Suture ethmoïdonasale.j
+Suture lacrymoconchale.j
+Suture palatolacrymale.j
+Suture palato-ethmoïdale.j
+Suture palatine médiane.j
+Suture ptérygopalatine.t
+Suture ptérygosphénoïdale.t
+Suture voméropalatine.t
+Suture voméromaxillaire.t
+Suture voméro-incisive.t
+Suture voméro-ethmoïdienne.t
+Suture ethmoïdomaxillaire.t
+Suture ethmoïdonasale.t
+Suture lacrymoconchale.t
+Suture palatolacrymale.t
+Suture palato-ethmoïdale.t
+Suture palatine médiane.t
+Suture nasomaxillaire.j
+Suture maxillo-incisive.j
+Suture nasomaxillaire.t
+Suture maxillo-incisive.t

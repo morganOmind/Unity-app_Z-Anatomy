@@ -1,0 +1,12 @@
+Articulation radio-ulnaire proximale
+Articulation radio-ulnaire distale
+Ligament annulaire du radius.l
+Ligament annulaire du radius.r
+Ligament interosseux de l'avant-bras.l
+Ligament interosseux de l'avant-bras.r
+Membrane interosseuse de l'avant-bras.l
+Membrane interosseuse de l'avant-bras.r
+Ligament radio-ulnaire.l
+Ligament radio-ulnaire.r
+Capsule articulaire radio-ulnaire distale.l
+Capsule articulaire radio-ulnaire distale.r

@@ -1,0 +1,14 @@
+Canine supérieure.l
+Incisive intermédiaire supérieure.l
+Incisive supérolatérale.l
+Incisive supéromédiale.l
+Dent carnassière (Car).l
+Deuxième prémolaire supérieure.l
+Première prémolaire supérieure.l
+Canine inférieure.l
+Deuxième prémolaire inférieure.l
+Incisive inférolatérale.l
+Incisive inféromédiale.l
+Incisive intermédiaire inférieure.l
+Première molaire inférieure.l
+Première prémolaire inférieure.l

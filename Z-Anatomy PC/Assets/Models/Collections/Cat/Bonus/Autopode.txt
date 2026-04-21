@@ -1,0 +1,171 @@
+Os sésamoïde distal du cinquième doigt du pied.l
+Os sésamoïde distal du deuxième doigt du pied.l
+Os sésamoïde distal du quatrième doigt du pied.l
+Os sésamoïde distal du troisième doigt du pied.l
+Os carpien I [Os trapèze].l
+Phalange distale du cinquième doigt de la main.l
+Phalange distale du deuxième doigt de la main.l
+Phalange distale du premier doigt de la main.l
+Phalange distale du quatrième doigt de la main.l
+Phalange distale du troisième doigt de la main.l
+Phalange moyenne du cinquième doigt de la main.l
+Phalange moyenne du deuxième doigt de la main.l
+Phalange moyenne du quatrième doigt de la main.l
+Phalange moyenne du troisième doigt de la main.l
+Phalange proximale du cinquième doigt de la main.l
+Phalange proximale du deuxième doigt de la main.l
+Phalange proximale du premier doigt de la main.l
+Phalange proximale du quatrième doigt de la main.l
+Phalange proximale du troisième doigt de la main.l
+Os accessoire du carpe [Os pisiforme].l
+Os carpien II [Os trapézoïde].l
+Os carpien III [Os capitatum].l
+Os carpien IV [Os hamatum].l
+Os intermédioradial [Os scapholunatum].l
+Os ulnaire du carpe [Os triquetrum].l
+Cinquième métacarpien.l
+Deuxième métacarpien.l
+Premier métacarpien.l
+Quatrième métacarpien.l
+Troisième métacarpien.l
+Os sésamoïde distal du cinquième doigt de la main.l
+Os sésamoïde distal du deuxième doigt de la main.l
+Os sésamoïde distal du quatrième doigt de la main.l
+Os sésamoïde distal du troisième doigt de la main.l
+Os phacoïde.l
+Squelette de la main
+Os des doigts de la main
+Phalanges moyennes de la main
+Phalanges proximales de la main
+Os du carpe
+Sillon carpien
+Os métacarpiens I-V
+Os sésamoïdes de la main
+Os sésamoïde distal
+Os sésamoïdes dorsaux
+Os sésamoïdes proximaux
+Os sésamoïde du muscle long abducteur du doigt I
+Os sésamoïdes proximaux du cinquième doigt de la main.l
+Os sésamoïdes proximaux du deuxième doigt de la main.l
+Os sésamoïdes proximaux du quatrième doigt de la main.l
+Os sésamoïdes proximaux du troisième doigt de la main.l
+Phalanges distales de la main
+Foramen du processus plantaire
+Incisure du processus plantaire
+Phalange distale du cinquième orteil.l
+Phalange distale du deuxième orteil.l
+Phalange distale du quatrième orteil.l
+Phalange distale du troisième orteil.l
+Phalange moyenne du cinquième orteil.l
+Phalange moyenne du deuxième orteil.l
+Phalange moyenne du quatrième orteil.l
+Phalange moyenne du troisième orteil.l
+Phalange proximale du cinquième orteil.l
+Phalange proximale du deuxième orteil.l
+Phalange proximale du quatrième orteil.l
+Phalange proximale du troisième orteil.l
+Calcanéus.l
+Os central du tarse [Os naviculaire].l
+Os tarsien I [Os cunéiforme médial].l
+Os tarsien II [Os cunéiforme intermédiaire].l
+Os tarsien IV [Os cuboïde].l
+Talus.l
+Cinquième métatarsien.l
+Deuxième métatarsien.l
+Quatrième métatarsien.l
+Troisième métatarsien.l
+Premier métatarsien.l
+Squelette du pied
+Os des doigts du pied
+Phalanges distales du pied
+Phalanges moyennes du pied
+Phalanges proximales du pied
+Os du tarse
+Canal tarsien
+Os métatarsiens I-V
+Os sésamoïde métatarsien
+Os sésamoïdes proximaux du deuxième orteil.l
+Os sésamoïdes proximaux du quatrième orteil.l
+Griffe du cinquième orteil.l
+Griffe du quatrième orteil.l
+Griffe du troisième orteil.l
+Griffe du deuxième orteil.l
+Griffe du cinquième doigt de la main.l
+Griffe du quatrième doigt de la main.l
+Griffe du troisième doigt de la main.l
+Griffe du deuxième doigt de la main.l
+Os sésamoïde distal du cinquième doigt du pied.r
+Os sésamoïde distal du deuxième doigt du pied.r
+Os sésamoïde distal du quatrième doigt du pied.r
+Os sésamoïde distal du troisième doigt du pied.r
+Os sésamoïde distal du cinquième doigt de la main.r
+Os sésamoïde distal du deuxième doigt de la main.r
+Os sésamoïde distal du quatrième doigt de la main.r
+Os sésamoïde distal du troisième doigt de la main.r
+Os phacoïde.r
+Os carpien I [Os trapèze].r
+Os accessoire du carpe [Os pisiforme].r
+Os carpien II [Os trapézoïde].r
+Os carpien III [Os capitatum].r
+Os carpien IV [Os hamatum].r
+Os intermédioradial [Os scapholunatum].r
+Os ulnaire du carpe [Os triquetrum].r
+Calcanéus.r
+Os central du tarse [Os naviculaire].r
+Os tarsien I [Os cunéiforme médial].r
+Os tarsien II [Os cunéiforme intermédiaire].r
+Os tarsien IV [Os cuboïde].r
+Talus.r
+Cinquième métacarpien.r
+Deuxième métacarpien.r
+Premier métacarpien.r
+Quatrième métacarpien.r
+Troisième métacarpien.r
+Cinquième métatarsien.r
+Deuxième métatarsien.r
+Quatrième métatarsien.r
+Troisième métatarsien.r
+Premier métatarsien.r
+Phalange distale du cinquième doigt de la main.r
+Phalange distale du deuxième doigt de la main.r
+Phalange distale du premier doigt de la main.r
+Phalange distale du quatrième doigt de la main.r
+Phalange distale du troisième doigt de la main.r
+Phalange moyenne du cinquième doigt de la main.r
+Phalange moyenne du deuxième doigt de la main.r
+Phalange moyenne du quatrième doigt de la main.r
+Phalange moyenne du troisième doigt de la main.r
+Phalange proximale du cinquième doigt de la main.r
+Phalange proximale du deuxième doigt de la main.r
+Phalange proximale du premier doigt de la main.r
+Phalange proximale du quatrième doigt de la main.r
+Phalange proximale du troisième doigt de la main.r
+Phalange distale du cinquième orteil.r
+Phalange distale du deuxième orteil.r
+Phalange distale du quatrième orteil.r
+Phalange distale du troisième orteil.r
+Phalange moyenne du deuxième orteil.r
+Phalange moyenne du troisième orteil.r
+Phalange moyenne du quatrième orteil.r
+Phalange proximale du cinquième orteil.r
+Phalange proximale du deuxième orteil.r
+Phalange proximale du quatrième orteil.r
+Phalange proximale du troisième orteil.r
+Griffe du cinquième orteil.r
+Griffe du quatrième orteil.r
+Griffe du troisième orteil.r
+Griffe du deuxième orteil.r
+Griffe du cinquième doigt de la main.r
+Griffe du quatrième doigt de la main.r
+Griffe du troisième doigt de la main.r
+Griffe du deuxième doigt de la main.r
+Os sésamoïdes proximaux du cinquième doigt de la main.r
+Os sésamoïdes proximaux du deuxième doigt de la main.r
+Os sésamoïdes proximaux du quatrième doigt de la main.r
+Os sésamoïdes proximaux du troisième doigt de la main.r
+Os sésamoïdes proximaux du deuxième orteil.r
+Os sésamoïdes proximaux du quatrième orteil.r
+Os sésamoïdes proximaux du premier doigt de la main
+Os tarsien III [Os cunéiforme latéral].l
+Os tarsien III [Os cunéiforme latéral].r
+Phalange moyenne du cinquième orteil.r
