@@ -223,8 +223,24 @@ public class Settings : MonoBehaviour
             dropDownLanguageSettings.SetValueWithoutNotify(value);
         }
 
-        switch (value)
+        SetLanguageByIndex(value);
+        
+        ApplyNameTranslation(GlobalVariables.Instance.globalParent.transform);
+        SetMultilanguageTextsTranslations();
+        HighlightText.GetTranslatedNames();
+        Lexicon.Instance.ResetAll();
+        HierarchyBar.Instance.Set();
+        var camTarget = CameraController.instance.target;
+        if(camTarget != null)
         {
+            var nameScript = camTarget.GetComponent<NameAndDescription>();
+            if (nameScript != null)
+                nameScript.SetDescription();
+        }
+    }
+
+    public void SetLanguageByIndex(int value) {
+        switch (value) {
             case 0:
                 language = SystemLanguage.English;
                 languageIndex = 0;
@@ -248,18 +264,6 @@ public class Settings : MonoBehaviour
         }
 
         PlayerPrefs.SetInt("Language", value);
-        ApplyNameTranslation(GlobalVariables.Instance.globalParent.transform);
-        SetMultilanguageTextsTranslations();
-        HighlightText.GetTranslatedNames();
-        Lexicon.Instance.ResetAll();
-        HierarchyBar.Instance.Set();
-        var camTarget = CameraController.instance.target;
-        if(camTarget != null)
-        {
-            var nameScript = camTarget.GetComponent<NameAndDescription>();
-            if (nameScript != null)
-                nameScript.SetDescription();
-        }
     }
 
 

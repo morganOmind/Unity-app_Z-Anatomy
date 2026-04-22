@@ -222,6 +222,18 @@ public class GlobalVariables : MonoBehaviour
         CommandController.Reset();
         UrlParser.openNavid = "";
         Shortcuts.Instance.DisableAll();
+        //check language is supported for the new loaded specie
+        List<int> suportedLanguages = GetCurrentSpecieSetting().availableLanguages.ToList<int>();
+        if (!suportedLanguages.Contains(Settings.languageIndex)) {
+            if (suportedLanguages.Contains(Settings.GetSystemLanguage())){
+                Settings.Instance.SetLanguageByIndex(Settings.GetSystemLanguage());
+            }
+            else {
+                //english by default
+                Settings.Instance.SetLanguageByIndex(0);
+            }
+        }
+
         //wait one frame
         yield return new WaitForEndOfFrame();
         //reload the scene
