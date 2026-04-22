@@ -45,7 +45,7 @@ public class Settings : MonoBehaviour
     public CustomSlider rotationVelocitySlider;
 
     public UniversalRenderPipelineAsset pipelineAsset;
-    private MultilanguageText[] multilanguageTexts;
+    //private MultilanguageText[] multilanguageTexts;
 
     public TextMeshProUGUI versionText;
     public GameObject taskBar;
@@ -57,7 +57,7 @@ public class Settings : MonoBehaviour
     {
         Instance = this; 
         cam = Camera.main;
-        multilanguageTexts = Resources.FindObjectsOfTypeAll(typeof(MultilanguageText)) as MultilanguageText[];
+        //multilanguageTexts = Resources.FindObjectsOfTypeAll(typeof(MultilanguageText)) as MultilanguageText[];
 
         DebugManager.instance.enableRuntimeUI = false;
         versionText.text += " " + Application.version;
@@ -178,7 +178,7 @@ public class Settings : MonoBehaviour
 
     private void SetMultilanguageTextsTranslations()
     {
-        foreach (var text in multilanguageTexts)
+        foreach (var text in Resources.FindObjectsOfTypeAll(typeof(MultilanguageText)) as MultilanguageText[])
         {
             text.Translate();
         }

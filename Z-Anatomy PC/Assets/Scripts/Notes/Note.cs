@@ -100,4 +100,10 @@ public class Note : MonoBehaviour
         tmpro_input.richText = !tmpro_input.richText;
 
     }
+
+    public void Delete() {
+        GameObject.Destroy(line.gameObject);
+        GameObject.Destroy(gizmo.gameObject);
+        GameObject.Destroy(gameObject);
+    }
 }

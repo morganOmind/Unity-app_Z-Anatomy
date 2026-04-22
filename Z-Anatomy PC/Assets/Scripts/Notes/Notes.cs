@@ -26,6 +26,9 @@ public class Notes : MonoBehaviour
 
     TangibleBodyPart clickedBp;
 
+    public Texture2D cursorTexture;
+    bool hasNoteCursor = false;
+
     private void Awake()
     {
         instance = this;
@@ -45,6 +48,12 @@ public class Notes : MonoBehaviour
     {
         if (!ActionControl.creatingLocalNote && !ActionControl.creatingGlobalNote)
             return;
+
+        if (!hasNoteCursor) {
+            if (cursorTexture != null)
+                Cursor.SetCursor(cursorTexture, new Vector2(), CursorMode.Auto);
+            hasNoteCursor = true;
+        }
 
         if(!gizmoPlaced)
         {
@@ -83,6 +92,7 @@ public class Notes : MonoBehaviour
                 currentGizmo.gameObject.SetActive(false);
 
                 gizmoPlaced = false;
+
                 StartCoroutine(WaitForRaycast());
                 IEnumerator WaitForRaycast()
                 {
@@ -90,6 +100,10 @@ public class Notes : MonoBehaviour
                     ActionControl.creatingLocalNote = false;
                     ActionControl.creatingGlobalNote = false;
                     CameraController.instance.raycaster.enabled = true;
+
+                    if (cursorTexture != null)
+                        Cursor.SetCursor(null, new Vector2(), CursorMode.Auto);
+                    hasNoteCursor = false;
                 }
             }
         }
