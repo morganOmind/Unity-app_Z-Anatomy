@@ -18,6 +18,7 @@
         <div id="unity-progress-bar-empty" style="display: none;">
           <div id="unity-progress-bar-full"></div>
         </div>
+        <div id="unity-loading-text" style="color: #fff; font-size: 20px; font-family: sans-serif;">Loading Z-Anatomy...</div>
         <div class="spinner"></div>
       </div>
     </div>
@@ -49,6 +50,7 @@
       const progressBarFull = document.querySelector("#unity-progress-bar-full");
       const fullscreenButton = document.querySelector("#unity-fullscreen-button");
       const spinner = document.querySelector('.spinner');
+      const progressText = document.querySelector("#unity-loading-text");
 
       const canFullscreen = (function() {
         for (const key of [
@@ -81,6 +83,7 @@
           spinner.style.display = "none";
           progressBarEmpty.style.display = "";
           progressBarFull.style.width = `${100 * progress}%`;
+          progressText.textContent = `Loading Z-Anatomy... ${Math.round(progress*100)}%`;
         }).then((unityInstance) => {
           loadingCover.style.display = "none";
           if (canFullscreen) {
@@ -93,12 +96,13 @@
           }
         }).catch((message) => {
           alert(message);
+          progressText.textContent = "Loading error";
         });
       };
       document.body.appendChild(script);
     </script>
-    //custom addon
     <script>
+    //custom addon
     document.addEventListener('keydown', function(e) {
         // Prevent Ctrl/Cmd + key combinations
         if (e.ctrlKey || e.metaKey) {
