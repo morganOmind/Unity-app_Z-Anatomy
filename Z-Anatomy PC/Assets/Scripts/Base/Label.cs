@@ -206,18 +206,27 @@ public class Label : MonoBehaviour
 
             Color newColor = new Color(color.r, color.g, color.b, a);
 
-            // Get the current value of the material properties in the renderer.
-            _renderer.GetPropertyBlock(_propBlock);
-            // Assign our new value.
-            _propBlock.SetColor("_FaceColor", newColor);
-            // Apply the edited values to the renderer.
-            _renderer.SetPropertyBlock(_propBlock);
-
-            if (visibilityScript.isSelected)
-                line.SetColor(newColor);
-            else
-                line.SetColor(a * 0.5f);
+            SetColor(newColor);
         }
+    }
+
+    public void SetColor(Color newColor) {
+        // Get the current value of the material properties in the renderer.
+        _renderer.GetPropertyBlock(_propBlock);
+        // Assign our new value.
+        _propBlock.SetColor("_FaceColor", newColor);
+        // Apply the edited values to the renderer.
+        _renderer.SetPropertyBlock(_propBlock);
+
+        if (visibilityScript.isSelected)
+            line.SetColor(newColor);
+        else
+            line.SetColor(newColor.a * 0.5f);
+    }
+
+    public Color GetCurrentColor() {
+        _renderer.GetPropertyBlock(_propBlock);
+        return _propBlock.GetColor("_FaceColor");
     }
 
     /// <summary>

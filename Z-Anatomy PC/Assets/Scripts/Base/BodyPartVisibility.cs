@@ -439,4 +439,8 @@ public class BodyPartVisibility : MonoBehaviour
         return muscleNerves != null && muscleNerves.Count > 0;
 
     }
+
+    public Label[] GetLabels() {
+        return allLabels;
+    }
 }

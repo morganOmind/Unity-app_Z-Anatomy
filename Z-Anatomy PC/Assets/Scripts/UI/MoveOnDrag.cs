@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-public class MoveOnDrag : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointerDownHandler, IPointerUpHandler
-{
+public class MoveOnDrag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerEnterHandler {
     [Header("The object to move (can be null if it is this obj)")]
     public RectTransform toMove;
 
@@ -14,6 +13,9 @@ public class MoveOnDrag : MonoBehaviour, IDragHandler, IBeginDragHandler, IPoint
     private Vector2 delta = Vector3.zero;
     private Vector2 lastPos = Vector3.zero;
 
+    public Texture2D dragCursorTexture;
+    public Vector2 cursorOffset;
+    bool dragging;
 
     private void Awake()
     {
@@ -23,6 +25,11 @@ public class MoveOnDrag : MonoBehaviour, IDragHandler, IBeginDragHandler, IPoint
     public void OnBeginDrag(PointerEventData eventData)
     {
         lastPos = Mouse.current.position.ReadValue();
+        dragging = true;
+    }
+
+    public void OnEndDrag(PointerEventData eventData) {
+        dragging = false;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -45,5 +52,22 @@ public class MoveOnDrag : MonoBehaviour, IDragHandler, IBeginDragHandler, IPoint
     public void OnPointerUp(PointerEventData eventData)
     {
         CameraController.instance.movementIsBlocked = false;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData) {
+        if(dragCursorTexture != null) {
+            Cursor.SetCursor(dragCursorTexture, cursorOffset, CursorMode.Auto);
+        }
+    }
+
+    public void OnPointerExit(PointerEventData eventData) {
+        if (dragCursorTexture != null) {
+            StartCoroutine(WaitForEndDrag());
+        }
+    }
+
+    IEnumerator WaitForEndDrag() {
+        yield return new WaitUntil(() => !dragging);
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 }
