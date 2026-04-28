@@ -536,7 +536,11 @@ public class Lexicon : MonoBehaviour
             {
                 if (elementScript.isParent)
                 {
-                    if (HasActiveChilds(elementScript.element))
+                    if (HasActiveChilds(elementScript.element)
+                        || //manage parent label with disabled sublabels
+                        (elementScript.element.GetComponent<Label>() != null 
+                            && elementScript.element.GetComponentsInChildren<Label>(true).Length > 1
+                            && isVisibleScript.isVisible))
                     {
                         isVisibleScript.isVisible = true;
                         elementScript.checkBox.btn.Check();

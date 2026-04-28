@@ -27,6 +27,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Cutaneous muscle
+    second: {fileID: 2100000, guid: c1a63ba5969c5894c80c296debf2b99e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Depressor
     second: {fileID: 2100000, guid: c9a3b4bb71982f64d988baa452b9067a, type: 2}
   - first:
@@ -64,6 +69,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Fascia
     second: {fileID: 2100000, guid: c0984ccf84c938a4598e2b1e8890b92a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fat
+    second: {fileID: 2100000, guid: cab0de6b908c65044bba097f8aeea3ae, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -109,6 +119,51 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Masticator
     second: {fileID: 2100000, guid: 993595a476bc6144aa36cc733e850a53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscle 1
+    second: {fileID: 2100000, guid: 5c6e7a5d50c84ef41b73e4c17175fe05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscle 2
+    second: {fileID: 2100000, guid: a039e973c01468b498f613bfdd9bede9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscle 3
+    second: {fileID: 2100000, guid: efe7381be6841d14295752f490b86ac0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscle 4
+    second: {fileID: 2100000, guid: e71742aedb3a66a49a178dce68ab730c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscle 5
+    second: {fileID: 2100000, guid: 6a8a9102cfb58c549ac3d9468f427c00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscle 6
+    second: {fileID: 2100000, guid: 2846256818e6db84ba8029cdc5be5d73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscle 7
+    second: {fileID: 2100000, guid: 081bf8dc43ed41d4f9cc71f51ef041fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscle 8
+    second: {fileID: 2100000, guid: fb1321280d2c1a94d8f1cb14ebce9b50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muscle 9
+    second: {fileID: 2100000, guid: 15d88e1aa2175f4458d7cfc47cec263f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

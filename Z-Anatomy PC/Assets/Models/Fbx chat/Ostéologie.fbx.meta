@@ -57,6 +57,41 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: End 1
+    second: {fileID: 2100000, guid: d66f004115181fd439cd8e3e80e1814f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: End 2
+    second: {fileID: 2100000, guid: dce39ae1a8129b2439049f11ef493ef3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: End 3
+    second: {fileID: 2100000, guid: 8ea8886b991f4024988e91857e36f090, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: End 4
+    second: {fileID: 2100000, guid: 155b0341c528ff841b446dee5a81e03d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: End 5
+    second: {fileID: 2100000, guid: 61416aa47d401ac4fa3206cab9b2389b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: End 6
+    second: {fileID: 2100000, guid: 4c06800a9af1d054e878b932c26598a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: End 7
+    second: {fileID: 2100000, guid: 884af19d4f9ab2a40bc71699a3f44e02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: End-Abduction
     second: {fileID: 2100000, guid: d52a200354c248d4eaebe59931bfcac7, type: 2}
   - first:
@@ -144,6 +179,46 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Nail
     second: {fileID: 2100000, guid: 34e1e5ab1880d6544930ada894a8931b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Origin 1
+    second: {fileID: 2100000, guid: fc8d4618be985164ea36b6c8b4cfee29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Origin 2
+    second: {fileID: 2100000, guid: 1327aa9ef71855f488294e3c9ada5b12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Origin 3
+    second: {fileID: 2100000, guid: d2d671f1777bc1c42ac9b3c06c69283a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Origin 4
+    second: {fileID: 2100000, guid: aec792c4308dfea46a31b19ef8ecad1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Origin 5
+    second: {fileID: 2100000, guid: 52b80a9b4b979fe458d60288bc1dfafd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Origin 6
+    second: {fileID: 2100000, guid: c94d83e3a81e36e4fa11e2bcc812e472, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Origin 7
+    second: {fileID: 2100000, guid: 46c468c094c76d94f8a72c878182f239, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Origin 8
+    second: {fileID: 2100000, guid: d01adc5ee7879ec48a2c1c0a0aaa0299, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
