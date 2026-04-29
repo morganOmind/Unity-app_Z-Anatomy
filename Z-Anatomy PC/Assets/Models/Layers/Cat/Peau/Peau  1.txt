@@ -1,32 +1,24 @@
-Région buccale.l
-Région buccale.r
-Région de l'articulation temporomandibulaire.l
-Région de l'articulation temporomandibulaire.r
-Région de la narine.l
-Région de la narine.r
+Coussinet digital de la main.l
+Coussinet digital de la main.r
+Coussinet digital du pied.l
+Coussinet digital du pied.r
+Coussinet métacarpien.l
+Coussinet métacarpien.r
+Coussinet métatarsien.l
+Coussinet métatarsien.r
+Région de la tuberosité coxale.l
+Région de la tuberosité coxale.r
+Région du coude.l
+Région du coude.r
 Région infra-orbitaire.l
 Région infra-orbitaire.r
-Région intermandibulaire.l
-Région intermandibulaire.r
 Région labiale inférieure.l
 Région labiale inférieure.r
-Région labiale supérieure.l
-Région labiale supérieure.r
-Région mandibulaire.l
-Région mandibulaire.r
-Région massétérique.l
-Région massétérique.r
-Région maxillaire.l
-Région maxillaire.r
 Région mentonnière.l
 Région mentonnière.r
-Région nasale dorsale.l
-Région nasale dorsale.r
 Région nasale latérale.l
 Région nasale latérale.r
-Région palpébrale inférieure.l
-Région palpébrale inférieure.r
-Région palpébrale supérieure.l
-Région palpébrale supérieure.r
-Région zygomatique.l
-Région zygomatique.r
+Région rétro-auriculaire.l
+Région rétro-auriculaire.r
+Région sternocéphalique.l
+Région sternocéphalique.r

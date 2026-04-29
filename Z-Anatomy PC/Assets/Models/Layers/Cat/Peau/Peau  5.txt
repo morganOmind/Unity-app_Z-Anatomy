@@ -1,6 +1,14 @@
-Ligne dorsale médiane
-Région de la queue
-Région de la racine de la queue.l
-Région de la racine de la queue.r
-Région sacrale.l
-Région sacrale.r
+Bulbe oculaire.l
+Bulbe oculaire.r
+Fosse supra-orbitaire.l
+Fosse supra-orbitaire.r
+Région abdominale caudale.l
+Région abdominale caudale.r
+Région auriculaire.l
+Région auriculaire.r
+Région de l'articulation de l'épaule.l
+Région de l'articulation de l'épaule.r
+Région mammaire abdominale.l
+Région mammaire abdominale.r
+Région xiphoïdienne.l
+Région xiphoïdienne.r

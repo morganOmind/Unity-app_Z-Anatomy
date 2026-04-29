@@ -1,6 +1,4 @@
-Caudal
-Crânial
-Distal
-Dorsal
-Proximal
-Ventral
+Plan médian
+Plans dorsaux
+Plans sagittaux
+Plans transversaux

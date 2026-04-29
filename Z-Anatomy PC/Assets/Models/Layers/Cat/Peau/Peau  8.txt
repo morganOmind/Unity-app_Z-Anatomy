@@ -1,16 +1,8 @@
-Région anale.l
-Région anale.r
-Région cluniale.l
-Région cluniale.r
-Région de la tuberosité coxale.l
-Région de la tuberosité coxale.r
-Région de la tubérosité ischiatique.l
-Région de la tubérosité ischiatique.r
-Région glutéale.l
-Région glutéale.r
-Région périnéale
-Région scrotale
-Région supramammaire
-Région urogénitale.l
-Région urogénitale.r
-Régions pelviennes
+Région brachiocéphalique.l
+Région brachiocéphalique.r
+Région de l'avant-bras.l
+Région de l'avant-bras.r
+Région du bras.l
+Région du bras.r
+Région fémorale.l
+Région fémorale.r

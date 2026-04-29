@@ -39,8 +39,8 @@ Muscle supra-épineux.l
 Muscle supra-épineux.r
 Muscles scutulo-auriculaires superficiels.l
 Muscles scutulo-auriculaires superficiels.r
-Partie acromiale du deltoïde.l
-Partie acromiale du deltoïde.r
+Partie acromiale.l
+Partie acromiale.r
 Partie mastoïdienne.l
 Partie mastoïdienne.r
 Partie orbitaire.l
@@ -49,5 +49,5 @@ Partie palpébrale.l
 Partie palpébrale.r
 Partie profonde du muscle masséter.l
 Partie profonde du muscle masséter.r
-Partie scapulaire épineuse du deltoïde.l
-Partie scapulaire épineuse du deltoïde.r
+Partie scapulaire épineuse.l
+Partie scapulaire épineuse.r

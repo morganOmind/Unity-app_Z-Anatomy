@@ -1,8 +1,6 @@
 Appareil hyoïdien
 Calcanéus.l
 Calcanéus.r
-Cartilage scapulaire.l
-Cartilage scapulaire.r
 Clavicule (or, fe).l
 Clavicule (or, fe).r
 Fémur.l

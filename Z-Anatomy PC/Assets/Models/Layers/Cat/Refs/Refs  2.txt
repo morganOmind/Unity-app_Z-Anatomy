@@ -1,5 +1,6 @@
-Abaxial
 Axial
-Latéral
-Médial
+Caudal
+Crânial
+Dorsal
 Rostral
+Ventral

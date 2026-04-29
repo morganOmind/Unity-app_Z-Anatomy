@@ -1,3 +1,4 @@
+2400*1
 Diaphragme.l
 Muscle abaisseur de l'angle de la bouche.l
 Muscle abaisseur de l'angle de la bouche.r
@@ -47,5 +48,5 @@ Muscles intertransversaires du thorax.l
 Muscles intertransversaires du thorax.r
 Tendon commun.l
 Tendon commun.r
-Waw.025
-Waw.026
+Waw
+Waw.001

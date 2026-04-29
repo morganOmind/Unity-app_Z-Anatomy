@@ -1,5 +1,3 @@
-(Os sutural).l
-(Os sutural).r
 Axe du pelvis
 Diamètre conjugué
 Diamètre transverse
@@ -21,6 +19,8 @@ Griffe du troisième doigt de la main.r
 Griffe du troisième orteil.l
 Griffe du troisième orteil.r
 Inclinaison pelvienne
+Ligament orbitaire.l
+Ligament orbitaire.r
 Ligne terminale
 Mandibule
 Os frontal

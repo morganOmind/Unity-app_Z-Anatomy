@@ -1,5 +1,7 @@
 Chef long du triceps brachial.l
 Chef long du triceps brachial.r
+Graisse.l
+Graisse.r
 Muscle biceps brachial.l
 Muscle biceps brachial.r
 Muscle dentelé dorsal crânial.l
