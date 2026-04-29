@@ -38,7 +38,27 @@ public class LexiconElement : MonoBehaviour
     private TextMeshProUGUI tmpro;
     private Color defaultColor;
     [HideInInspector]
-    public bool isParent;
+    public bool isParent {
+        get
+        {
+            bool hasChilds = false;
+            var childs = element.GetComponentsInChildren<Transform>(true);
+            foreach (var child in childs) {
+                if (child == element)
+                    continue;
+                hasChilds = (child.gameObject.IsBodyPart() && !child.CompareTag("Insertions"))
+                    || child.gameObject.IsLabel()
+                    || child.gameObject.IsGroup()
+                    //group objet exists only for the man, so instead check nameanddescription compoenent that every lexicon element has.
+                    || child.GetComponent<NameAndDescription>() != null;
+                if (hasChilds) {
+                    break;
+                }
+            }
+            expandBtn.gameObject.SetActive(hasChilds);
+            return hasChilds;
+        }
+    }
 
     private RectTransform rt;
 
@@ -59,7 +79,7 @@ public class LexiconElement : MonoBehaviour
         bodyPartScript = element.GetComponent<TangibleBodyPart>();
         isVisibleScript = element.GetComponent<BodyPartVisibility>();
         label = element.GetComponent<Label>();
-        isParent = IsParent();
+        //isParent = IsParent();
 
 
         if (element.GetComponentsInChildren<TangibleBodyPart>(true).Length == 0 && element.name != GlobalVariables.Instance.bodySections[2].name)
@@ -71,28 +91,7 @@ public class LexiconElement : MonoBehaviour
         }
 
     }
-
-    private bool IsParent()
-    {
-        bool hasChilds = false;
-        var childs = element.GetComponentsInChildren<Transform>(true);
-        foreach (var child in childs)
-        {
-            if (child == element)
-                continue;
-            hasChilds = (child.gameObject.IsBodyPart() && !child.CompareTag("Insertions")) 
-                || child.gameObject.IsLabel() 
-                || child.gameObject.IsGroup()
-                //group objet exists only for the man, so instead check nameanddescription compoenent that every lexicon element has.
-                || child.GetComponent<NameAndDescription>() != null;
-            if (hasChilds)
-                break;
-        }
-
-        expandBtn.gameObject.SetActive(hasChilds);
-        return hasChilds;
-    }
-
+    
     public void OpenCloseClick()
     {
         opened = !opened;
