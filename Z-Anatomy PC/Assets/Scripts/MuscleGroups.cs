@@ -18,6 +18,8 @@ public class MuscleGroups : MonoBehaviour
     {
         Instance = this;
 
+        texts = GlobalVariables.Instance.GetCurrentSpecieSetting().groupMuscles;
+
         groups = new List<string>[texts.Length];
 
         for (int i = 0; i < texts.Length; i++)

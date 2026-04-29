@@ -26,6 +26,7 @@ public struct SpecieSetting {
     public float crossSectionLineWidth;
     public SpecieLayers layers;
     public TextAsset[] bonusCollections;
+    public TextAsset[] groupMuscles;
 };
 
 [System.Serializable]
@@ -260,6 +261,9 @@ public class GlobalVariables : MonoBehaviour
                 if(BonusCollections.Instance != null) {
                     BonusCollections.Instance.collections = setting.bonusCollections.ToList<TextAsset>();
                 }
+                if(MuscleGroups.Instance != null) {
+                    MuscleGroups.Instance.texts = setting.groupMuscles;
+                }
                 globalParent.SetActive(true);
 
                 //set camera params
@@ -337,7 +341,7 @@ public class GlobalVariables : MonoBehaviour
             if(string.IsNullOrEmpty(t.name) || string.IsNullOrWhiteSpace(t.name)) {
                 noNameCount++;
                 MeshFilter meshFilter = t.GetComponent<MeshFilter>();
-                if (meshFilter != null) {
+                if (meshFilter != null && meshFilter.sharedMesh != null) {
                     print(meshFilter.sharedMesh.name + " has empty name");
                 }
             }

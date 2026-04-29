@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Cartilage
+    second: {fileID: 2100000, guid: e7987ec24d8870f4194104664c554522, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Coussinet
     second: {fileID: 2100000, guid: 425802e8c230997449193dd3c58dcdab, type: 2}
   - first:
@@ -24,6 +29,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Ligament
     second: {fileID: 2100000, guid: 7fe5b3bde3c7fb141b6ba797b1992244, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lung 1
+    second: {fileID: 2100000, guid: c70bb335daa56504aa3c4e3074dac236, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

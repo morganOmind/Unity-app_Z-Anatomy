@@ -7,6 +7,26 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Abductor
+    second: {fileID: 2100000, guid: 3a7969293c1c98647a9b62b01337bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Adductor
+    second: {fileID: 2100000, guid: 69539cc606e88b248993003d5e725e3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: 4defb2fdc41975a4ca3ecabae1ce14b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bone 1
+    second: {fileID: 2100000, guid: d50d0eabcb13140469d2593db25301dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Bone-1
     second: {fileID: 2100000, guid: d50d0eabcb13140469d2593db25301dc, type: 2}
   - first:
@@ -19,6 +39,41 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Cartilage
     second: {fileID: 2100000, guid: e7987ec24d8870f4194104664c554522, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Depressor
+    second: {fileID: 2100000, guid: c9a3b4bb71982f64d988baa452b9067a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Extension
+    second: {fileID: 2100000, guid: b80ca356aca23f347b06973e478b8a25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: External rotation
+    second: {fileID: 2100000, guid: 81a7924700b866a4a90b100a101989b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eye
+    second: {fileID: 2100000, guid: 67e8b7212ba768546baea31a5ade1fdb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Flexion
+    second: {fileID: 2100000, guid: 07525213a4c38584cbea4238647e007e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Internal rotator
+    second: {fileID: 2100000, guid: c9a632cd3faf2e447bf913d0857db924, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Levator
+    second: {fileID: 2100000, guid: f2cabb9dc779f3844b7374f72bb13587, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

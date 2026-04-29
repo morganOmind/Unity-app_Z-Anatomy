@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Directions
     second: {fileID: 2100000, guid: 87580fe8f4d55d94f99602e5de6e3df5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plans
+    second: {fileID: 2100000, guid: d9623b260958ee64296f35a96b603c3c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

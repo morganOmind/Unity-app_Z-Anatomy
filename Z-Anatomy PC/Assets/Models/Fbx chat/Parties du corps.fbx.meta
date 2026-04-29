@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: 4defb2fdc41975a4ca3ecabae1ce14b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Coussinet
     second: {fileID: 2100000, guid: 425802e8c230997449193dd3c58dcdab, type: 2}
   - first:
@@ -14,6 +19,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Directions
     second: {fileID: 2100000, guid: 87580fe8f4d55d94f99602e5de6e3df5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eye
+    second: {fileID: 2100000, guid: 67e8b7212ba768546baea31a5ade1fdb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poils
+    second: {fileID: 2100000, guid: ba1689a5d7a032e43ad4dd2df15f4bc0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
