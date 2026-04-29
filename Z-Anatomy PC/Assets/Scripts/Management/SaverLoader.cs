@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SFB;
+using System.Text;
+using System.IO;
 
 [System.Serializable]
 public struct VisibleStruct {
@@ -10,11 +13,17 @@ public struct VisibleStruct {
 };
 
 [System.Serializable]
+public struct CrossSectionsTags {
+    public string tag;
+    public bool enabled;
+};
+
+[System.Serializable]
 public struct CrossSectionsStruct {
     public bool xEnabled, yEnabled, zEnabled;
     public bool xInverted, yInverted, zInverted;
     public float sliderValue;
-    public Dictionary<string, bool> tagsEnabled;
+    public List<CrossSectionsTags> tagsEnabled;
 };
 
 [System.Serializable]
@@ -36,8 +45,31 @@ public struct SaveStruct {
 
 public class SaverLoader : MonoBehaviour
 {
+#if UNITY_WEBGL && !UNITY_EDITOR
+    [DllImport("__Internal")]
+    private static extern void DownloadFile(string gameObjectName, string methodName, string filename, byte[] byteArray, int byteArraySize);
+
+    [DllImport("__Internal")]
+    private static extern void UploadFile(string gameObjectName, string methodName, string filter, bool multiple);
+#endif
 
     static SaveStruct currentSave;
+
+    public string defaultFileName = "z-save";
+
+    public GameObject loadingGO;
+
+    public void OnSaveDown() {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        Save();
+#endif
+    }
+
+    public void OnSaveClick() {
+#if !(UNITY_WEBGL && !UNITY_EDITOR)
+        Save();
+#endif
+    }
 
     [ContextMenu("Save")]
     public void Save() {
@@ -88,11 +120,14 @@ public class SaverLoader : MonoBehaviour
             (CrossSections.Instance.sagitalSlider.isActiveAndEnabled ? CrossSections.Instance.sagitalSlider.value :
             CrossSections.Instance.transversalSlider.value);
 
-        Dictionary<string, bool> tagsEnabled = new Dictionary<string, bool>();
+        List<CrossSectionsTags> tagsEnabled = new List<CrossSectionsTags>();
         List<string> tags = new List<string>{ "Skeleton", "Joints", "Lymph", "Muscles", "Fascia", "Arteries",
                                                 "Veins", "Nervous", "Visceral", "BodyParts", "References" };
         foreach(string tag in tags) {
-            tagsEnabled.Add(tag, CrossSections.Instance.IsEnabledByTag(tag));
+            CrossSectionsTags csTag;
+            csTag.tag = tag;
+            csTag.enabled = CrossSections.Instance.IsEnabledByTag(tag);
+            tagsEnabled.Add(csTag);
         }
         csStruct.tagsEnabled = tagsEnabled;
 
@@ -107,168 +142,274 @@ public class SaverLoader : MonoBehaviour
 
         currentSave = sStruct;
 
-        print(JsonUtility.ToJson(currentSave));
+        string jsonStr = JsonUtility.ToJson(sStruct, true);
+        print(jsonStr);
+
+
+#if UNITY_WEBGL && !UNITY_EDITOR
+        var bytes = Encoding.UTF8.GetBytes(jsonStr);
+        DownloadFile(gameObject.name, "OnFileDownload", defaultSaveName() + ".json", bytes, bytes.Length);
+#else
+
+        // Determine save path
+        string filePath = DetermineFilePath();
+
+        if (string.IsNullOrEmpty(filePath)) {
+            Debug.Log("Saving cancelled by user");
+        }
+        else {
+            // Save file
+            File.WriteAllText(filePath, jsonStr);
+
+            Debug.Log($"Saved: {filePath}");
+
+            string[] pathTokens = filePath.Split(new string[] { "/" }, System.StringSplitOptions.RemoveEmptyEntries);
+            string path = "";
+            for (int i = 0; i < pathTokens.Length - 1; i++) {
+                path += pathTokens[i] + "/";
+            }
+            PlayerPrefs.SetString("SavesPath", path);
+        }
+#endif
     }
-    
+
+#if UNITY_WEBGL && !UNITY_EDITOR
+    // Called from browser
+    //this is why the gameobject name needs to be unique!!
+    public void OnFileDownload() {
+        print("File Successfully Downloaded");
+    }
+
+    // Called from browser
+    public void OnFileUpload(string url) {
+        StartCoroutine(LoadAsync(url));
+    }
+#endif
+
+
+    public void OnLoadDown() {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        Load();
+#endif
+    }
+
+    public void OnLoadClick() {
+#if !(UNITY_WEBGL && !UNITY_EDITOR)
+        Load();
+#endif
+    }
 
     [ContextMenu("Load")]
     public void Load() {
-        StartCoroutine(LoadAsync());
+#if UNITY_WEBGL && !UNITY_EDITOR
+        UploadFile(gameObject.name, "OnFileUpload", ".json", false);
+#else
+        string path = "";
+        if (PlayerPrefs.HasKey("SavesPath")) {
+            path = PlayerPrefs.GetString("SavesPath");
+        }
+        var paths = StandaloneFileBrowser.OpenFilePanel("Open file", path, "json", false);
+        if (paths.Length > 0) {
+            StartCoroutine(LoadAsync(new System.Uri(paths[0]).AbsoluteUri));
+        }
+        
+#endif
     }
 
 
-    public IEnumerator LoadAsync() {
+    public IEnumerator LoadAsync(string url) {
 
-        if(currentSave.specie != GlobalVariables.Instance.GetCurrentSpecieSetting().type) {
-            PopUpManagement.Instance.Show("This saving is for another specie: " + currentSave.specie.ToString());
+        if (string.IsNullOrEmpty(url)) {
             yield break;
         }
 
-        if(currentSave.visibleIds.Count > 0) {
-            Dictionary<string, string> navidsMap = ParseNavidFile();
+        int cullingMask = Camera.main.cullingMask;
+        bool performedOK = false;
+        try {
+            Camera.main.cullingMask = LayerMask.GetMask("Loading");
+            loadingGO.SetActive(true);
 
-            Dictionary<BodyPartVisibility, VisibleStruct> found = new Dictionary<BodyPartVisibility, VisibleStruct>();
-            foreach(VisibleStruct vs in currentSave.visibleIds) {
-                if (navidsMap.ContainsKey(vs.id)) {
-                    string searchName = navidsMap[vs.id];
-                    List<BodyPartVisibility> lv = GlobalVariables.Instance.allVisibilityScripts.FindAll(delegate (BodyPartVisibility bpv) 
-                    {
-                        string origName = bpv.GetComponent<NameAndDescription>().originalName;
-                        return searchName == origName.Replace(".l", "").Replace(".r", "").Replace(".t", "").Replace(".s", "").Trim().ToLower()
-                            && vs.originalName == origName;
-                    });
-                    foreach(BodyPartVisibility v in lv) {
-                        if (!found.ContainsKey(v)) {
-                            found.Add(v, vs);
-                        }
-                    }
-                }
-                else if(vs.id == "insertions") {
-                    BodyPartVisibility v = GlobalVariables.Instance.allVisibilityScripts.Find(delegate (BodyPartVisibility bpv)
-                    {
-                        return vs.originalName == bpv.GetComponent<NameAndDescription>().originalName;
-                    });
-                    if (!found.ContainsKey(v)) {
-                        found.Add(v, vs);
-                    }
-                }
+            var loader = new WWW(url);
+            yield return loader;
+            string jsonStr = loader.text;
+
+            SaveStruct saving = JsonUtility.FromJson<SaveStruct>(jsonStr);
+
+            if (saving.specie != GlobalVariables.Instance.GetCurrentSpecieSetting().type) {
+                PopUpManagement.Instance.Show("This saving is for another specie: " + saving.specie.ToString());
+                performedOK = true;
             }
 
-            if(found.Count > 0) {
-                foreach(BodyPartVisibility v in GlobalVariables.Instance.allVisibilityScripts) {
-                    bool show = found.ContainsKey(v);
-                    v.gameObject.SetActive(show);
-                    v.isVisible = show;
-                    if (show) {
-                        v.transform.SetActiveParentsRecursively(true, null);
-                        if (found[v].hasLabels) {
-                            v.ShowLabels();
-                        }
-                    }
-                }
-            }
             else {
-                print("found nothing!");
-            }
+                if (saving.visibleIds.Count > 0) {
+                    int count = 0;
 
-        }
-        else {
-            print("no visible object to load!");
-        }
+                    Dictionary<string, string> navidsMap = ParseNavidFile();
 
-        //reset stuff
-        CommandController.Reset();
+                    Dictionary<BodyPartVisibility, VisibleStruct> found = new Dictionary<BodyPartVisibility, VisibleStruct>();
+                    foreach (VisibleStruct vs in saving.visibleIds) {
+                        if (navidsMap.ContainsKey(vs.id)) {
+                            string searchName = navidsMap[vs.id];
+                            BodyPartVisibility v = GlobalVariables.Instance.allVisibilityScripts.Find(delegate (BodyPartVisibility bpv)
+                            {
+                                string origName = bpv.GetComponent<NameAndDescription>().originalName;
+                                return searchName == origName.Replace(".l", "").Replace(".r", "").Replace(".t", "").Replace(".s", "").Trim().ToLower()
+                                    && vs.originalName == origName;
+                            });
+                            if (!found.ContainsKey(v)) {
+                                found.Add(v, vs);
+                            }
+                        }
+                        else if (vs.id == "insertions") {
+                            BodyPartVisibility v = GlobalVariables.Instance.allVisibilityScripts.Find(delegate (BodyPartVisibility bpv)
+                            {
+                                return vs.originalName == bpv.GetComponent<NameAndDescription>().originalName;
+                            });
+                            if (!found.ContainsKey(v)) {
+                                found.Add(v, vs);
+                            }
+                        }
 
-        //update lots of things internally!!
-        SelectedObjectsManagement.Instance.GetActiveObjects();
-        Lexicon.Instance.UpdateTreeViewCheckboxes();
+                        count++;
+                        if (count % 50 == 0) {
+                            yield return new WaitForEndOfFrame();
+                        }
+                    }
 
-        yield return new WaitForEndOfFrame();
+                    if (found.Count > 0) {
+                        foreach (BodyPartVisibility v in GlobalVariables.Instance.allVisibilityScripts) {
+                            bool show = found.ContainsKey(v);
+                            v.gameObject.SetActive(show);
+                            v.isVisible = show;
+                            if (show) {
+                                v.transform.SetActiveParentsRecursively(true, null);
+                                if (found[v].hasLabels) {
+                                    v.ShowLabels();
+                                }
+                            }
+                        }
+                    }
+                    else {
+                        print("found nothing!");
+                    }
 
-        //Cross sections
-        CrossSections.Instance.ResetAll();
-        CrossPlanesGizmo.Instance.ResetAll();
-
-        if(currentSave.crossSections.xEnabled || currentSave.crossSections.yEnabled || currentSave.crossSections.zEnabled
-            || currentSave.crossSections.xInverted || currentSave.crossSections.yInverted || currentSave.crossSections.zInverted) {
-            if (!CrossPlanesGizmo.Instance.opened) {
-                float time = CrossSections.Instance.planesOptionsPanel.durationOfAnimation;
-                CrossSections.Instance.planesOptionsPanel.durationOfAnimation = 0f;
-                CrossPlanesGizmo.Instance.OpenClosePlanesClick();
-                CrossSections.Instance.planesOptionsPanel.durationOfAnimation = time;
-            }
-
-            if (currentSave.crossSections.xEnabled || currentSave.crossSections.xInverted) {
-                CrossPlanesGizmo.Instance.XClick();
-                if (currentSave.crossSections.xInverted) {
-                    CrossPlanesGizmo.Instance.InvertClick();
                 }
-                CrossSections.Instance.sagitalSlider.value = currentSave.crossSections.sliderValue;
-            }
-            else if (currentSave.crossSections.yEnabled || currentSave.crossSections.yInverted) {
-                CrossPlanesGizmo.Instance.YClick();
-                if (currentSave.crossSections.yInverted) {
-                    CrossPlanesGizmo.Instance.InvertClick();
+                else {
+                    print("no visible object to load!");
                 }
-                CrossSections.Instance.frontalSlider.value = currentSave.crossSections.sliderValue;
-            }
-            else if (currentSave.crossSections.zEnabled || currentSave.crossSections.zInverted) {
-                CrossPlanesGizmo.Instance.ZClick();
-                if (currentSave.crossSections.zInverted) {
-                    CrossPlanesGizmo.Instance.InvertClick();
-                }
-                CrossSections.Instance.transversalSlider.value = currentSave.crossSections.sliderValue;
-            }
 
-            foreach (KeyValuePair<string, bool> pair in currentSave.crossSections.tagsEnabled) {
-                bool isEnabled = CrossSections.Instance.IsEnabledByTag(pair.Key);
-                if ((isEnabled && !pair.Value) || (!isEnabled && pair.Value)) {
-                    switch (pair.Key) {
-                        case "Skeleton":
-                            CrossSections.Instance.skeletalToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
-                            break;
-                        case "Joints":
-                            CrossSections.Instance.jointsToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
-                            break;
-                        case "Lymph":
-                            CrossSections.Instance.lymphsToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
-                            break;
-                        case "Muscles":
-                            CrossSections.Instance.muscularToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
-                            break;
-                        case "Fascia":
-                            CrossSections.Instance.fasciaToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
-                            break;
-                        case "Arteries":
-                            CrossSections.Instance.arteriesToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
-                            break;
-                        case "Veins":
-                            CrossSections.Instance.veinsToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
-                            break;
-                        case "Nervous":
-                            CrossSections.Instance.nervousToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
-                            break;
-                        case "Visceral":
-                            CrossSections.Instance.visceralToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
-                            break;
-                        case "BodyParts":
-                            CrossSections.Instance.regionsToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
-                            break;
-                        case "References":
-                            CrossSections.Instance.referencesToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
-                            break;
-                        default:
-                            break;
+                //reset stuff
+                CommandController.Reset();
+
+                //update lots of things internally!!
+                SelectedObjectsManagement.Instance.GetActiveObjects();
+                Lexicon.Instance.UpdateTreeViewCheckboxes();
+
+                yield return new WaitForEndOfFrame();
+
+                //Cross sections
+                CrossSections.Instance.ResetAll();
+                CrossPlanesGizmo.Instance.ResetAll();
+
+                if (saving.crossSections.xEnabled || saving.crossSections.yEnabled || saving.crossSections.zEnabled
+                    || saving.crossSections.xInverted || saving.crossSections.yInverted || saving.crossSections.zInverted) {
+                    if (!CrossPlanesGizmo.Instance.opened) {
+                        float time = CrossSections.Instance.planesOptionsPanel.durationOfAnimation;
+                        CrossSections.Instance.planesOptionsPanel.durationOfAnimation = 0f;
+                        CrossPlanesGizmo.Instance.OpenClosePlanesClick();
+                        CrossSections.Instance.planesOptionsPanel.durationOfAnimation = time;
+                    }
+
+                    if (saving.crossSections.xEnabled || saving.crossSections.xInverted) {
+                        CrossPlanesGizmo.Instance.XClick();
+                        if (saving.crossSections.xInverted) {
+                            CrossPlanesGizmo.Instance.InvertClick();
+                        }
+                        CrossSections.Instance.sagitalSlider.value = saving.crossSections.sliderValue;
+                    }
+                    else if (saving.crossSections.yEnabled || saving.crossSections.yInverted) {
+                        CrossPlanesGizmo.Instance.YClick();
+                        if (saving.crossSections.yInverted) {
+                            CrossPlanesGizmo.Instance.InvertClick();
+                        }
+                        CrossSections.Instance.frontalSlider.value = saving.crossSections.sliderValue;
+                    }
+                    else if (saving.crossSections.zEnabled || saving.crossSections.zInverted) {
+                        CrossPlanesGizmo.Instance.ZClick();
+                        if (saving.crossSections.zInverted) {
+                            CrossPlanesGizmo.Instance.InvertClick();
+                        }
+                        CrossSections.Instance.transversalSlider.value = saving.crossSections.sliderValue;
+                    }
+
+                    foreach (CrossSectionsTags csTag in saving.crossSections.tagsEnabled) {
+                        bool isEnabled = CrossSections.Instance.IsEnabledByTag(csTag.tag);
+                        if ((isEnabled && !csTag.enabled) || (!isEnabled && csTag.enabled)) {
+                            switch (csTag.tag) {
+                                case "Skeleton":
+                                    CrossSections.Instance.skeletalToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+                                    break;
+                                case "Joints":
+                                    CrossSections.Instance.jointsToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+                                    break;
+                                case "Lymph":
+                                    CrossSections.Instance.lymphsToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+                                    break;
+                                case "Muscles":
+                                    CrossSections.Instance.muscularToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+                                    break;
+                                case "Fascia":
+                                    CrossSections.Instance.fasciaToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+                                    break;
+                                case "Arteries":
+                                    CrossSections.Instance.arteriesToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+                                    break;
+                                case "Veins":
+                                    CrossSections.Instance.veinsToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+                                    break;
+                                case "Nervous":
+                                    CrossSections.Instance.nervousToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+                                    break;
+                                case "Visceral":
+                                    CrossSections.Instance.visceralToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+                                    break;
+                                case "BodyParts":
+                                    CrossSections.Instance.regionsToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+                                    break;
+                                case "References":
+                                    CrossSections.Instance.referencesToggle.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
                     }
                 }
+
+                //Camera
+                CameraController.instance.transform.position = saving.cam.pos;
+                CameraController.instance.transform.rotation = saving.cam.rot;
+                if(saving.cam.defaultDistance > 0 && saving.cam.distance > 0) {
+                    CameraController.instance.defaulDistance = saving.cam.defaultDistance;
+                    CameraController.instance.distance = saving.cam.distance;
+                }
+                else {
+                    CameraController.instance.CenterView(true);
+                    throw new System.Exception();
+                }
+
+                performedOK = true;
             }
         }
+        finally {
+            //reset stuff
+            loadingGO.SetActive(false);
+            Camera.main.cullingMask = cullingMask;
 
-        //Camera
-        CameraController.instance.transform.position = currentSave.cam.pos;
-        CameraController.instance.transform.rotation = currentSave.cam.rot;
-        CameraController.instance.defaulDistance = currentSave.cam.defaultDistance;
-        CameraController.instance.distance = currentSave.cam.distance;
+            if (!performedOK) {
+                PopUpManagement.Instance.Show("This file cannot be opened properly");
+            }
+        }
     }
 
     Dictionary<string, string> ParseNavidFile(bool reverse = false) {
@@ -303,5 +444,24 @@ public class SaverLoader : MonoBehaviour
         }
 
         return navidsMap;
+    }
+
+    string defaultSaveName() {
+        return $"{defaultFileName}_{System.DateTime.Now:yyyy-MM-dd_HH-mm-ss}";
+    }
+
+    // Method to determine save path
+    private string DetermineFilePath() {
+        // Generate default filename
+        string defaultName = defaultSaveName();
+
+        //SFB asset comes from this github: https://github.com/gkngkc/UnityStandaloneFileBrowser
+        //error on build fixed copying two unity dlls Mono.Posix and Mono.WebBrowser into a plugins folder
+        //fix found here: https://github.com/gkngkc/UnityStandaloneFileBrowser/issues/145
+        string path = "";
+        if (PlayerPrefs.HasKey("SavesPath")) {
+            path = PlayerPrefs.GetString("SavesPath");
+        }
+        return StandaloneFileBrowser.SaveFilePanel("Save File", path, defaultName, "json");        
     }
 }

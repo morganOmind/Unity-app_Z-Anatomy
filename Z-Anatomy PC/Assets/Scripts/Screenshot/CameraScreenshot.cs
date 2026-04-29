@@ -41,7 +41,7 @@ private static extern void DownloadFile(string gameObjectName, string methodName
 
     [Header("Export Settings")]
     [Tooltip("Default file name prefix")]
-    public string defaultFileName = "screenshot";
+    public string defaultFileName = "z-screenshot";
 
     [Tooltip("Prompt for file name and location")]
     public bool askForFilePath = true;
