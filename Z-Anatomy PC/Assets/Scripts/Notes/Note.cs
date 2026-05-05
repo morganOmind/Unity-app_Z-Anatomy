@@ -33,12 +33,17 @@ public class Note : MonoBehaviour
         cam = Camera.main;
     }
 
- /*   private void GetSelectedText(string str, int start, int end)
-    {
-        selectionStart = Mathf.Min(start, end);
-        selectionEnd = Mathf.Max(start, end);
-        Debug.Log(str.Substring(Mathf.Min(start, end), Mathf.Abs(end - start)));
-    }*/
+    private void Start() {
+        //auto select input field to be able to start typing immedialty after the note creation (without the need to click into the input field)
+        tmpro_input.Select();
+    }
+
+    /*   private void GetSelectedText(string str, int start, int end)
+       {
+           selectionStart = Mathf.Min(start, end);
+           selectionEnd = Mathf.Max(start, end);
+           Debug.Log(str.Substring(Mathf.Min(start, end), Mathf.Abs(end - start)));
+       }*/
 
     private void LateUpdate()
     {
