@@ -72,6 +72,10 @@ public class Note : MonoBehaviour
         isVisible = false;
     }
 
+    public bool IsVisible() {
+        return isVisible;
+    }
+
     public void Highlight()
     {
 
@@ -107,6 +111,10 @@ public class Note : MonoBehaviour
     }
 
     public void Delete() {
+        if(bodyPart != null){
+            bodyPart.DeleteNote(this);
+        }
+
         GameObject.Destroy(line.gameObject);
         GameObject.Destroy(gizmo.gameObject);
         GameObject.Destroy(gameObject);

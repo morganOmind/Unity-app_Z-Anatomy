@@ -205,6 +205,12 @@ public class TangibleBodyPart : MonoBehaviour
         note.bodyPart = this;
     }
 
+    public void DeleteNote(Note note) {
+        if (notes.Contains(note)) {
+            notes.Remove(note);
+        }
+    }
+
     /// <summary>
     /// Sets the primary materials to the object.
     /// </summary>
