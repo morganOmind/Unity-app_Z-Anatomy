@@ -35,10 +35,19 @@ public struct CamStruct {
 }
 
 [System.Serializable]
+public struct NoteStruct {
+    public Vector3 notePosition;
+    public Vector3 gizmoPosition, gizmoNormal;
+    public string text;
+    public bool isOpened;
+    public Vector2 size;
+};
+
+[System.Serializable]
 public struct SaveStruct {
     public SpecieType specie;
     public List<VisibleStruct> visibleIds;
-    public List<Note> notes;    //TODO!!
+    public List<NoteStruct> notes;
     public CrossSectionsStruct crossSections;
     public CamStruct cam;
 };
@@ -107,7 +116,6 @@ public class SaverLoader : MonoBehaviour
         SaveStruct sStruct;
         sStruct.specie = GlobalVariables.Instance.GetCurrentSpecieSetting().type;
         sStruct.visibleIds = visiblesNavids;
-        sStruct.notes = null;
 
         CrossSectionsStruct csStruct;
         csStruct.xEnabled = CrossSections.Instance.xPlane;
@@ -139,6 +147,20 @@ public class SaverLoader : MonoBehaviour
         cStruct.defaultDistance = CameraController.instance.defaulDistance;
         cStruct.distance = CameraController.instance.distance;
         sStruct.cam = cStruct;
+
+        Note[] notes = FindObjectsOfType<Note>(true);
+        List<NoteStruct> notesStruct = new List<NoteStruct>();
+        foreach (Note note in notes) {
+            NoteStruct ns;
+            ns.notePosition = note.transform.position;
+            ns.gizmoPosition = note.gizmo.hit.point;
+            ns.gizmoNormal = note.gizmo.hit.normal;
+            ns.text = note.tmpro_input.text;
+            ns.isOpened = note.IsVisible();
+            ns.size = note.GetComponent<RectTransform>().rect.size;
+            notesStruct.Add(ns);
+        }
+        sStruct.notes = notesStruct;
 
         currentSave = sStruct;
 
@@ -241,6 +263,14 @@ public class SaverLoader : MonoBehaviour
             }
 
             else {
+
+                //first, destroy all notes
+                Note[] notes = FindObjectsOfType<Note>(true);
+                foreach(Note note in notes) {
+                    note.Delete();
+                }
+
+                //manage visible objects
                 if (saving.visibleIds.Count > 0) {
                     int count = 0;
 
@@ -396,6 +426,29 @@ public class SaverLoader : MonoBehaviour
                 else {
                     CameraController.instance.CenterView(true);
                     throw new System.Exception();
+                }
+
+                //notes
+                foreach(NoteStruct ns in saving.notes) {
+                    Line3D line = Notes.instance.CreateLine(ns.gizmoPosition);
+                    NoteGizmo gizmo = Instantiate(Notes.instance.gizmoPrefab);
+                    RaycastHit hit = new RaycastHit();
+                    hit.point = ns.gizmoPosition;
+                    hit.normal = ns.gizmoNormal;
+                    gizmo.hit = hit;
+                    gizmo.placed = true;
+                    gizmo.gameObject.SetActive(true);
+                    //for now, do not handle linked body part since nothing is implemented concerning this feature!
+                    Note note = Notes.instance.CreateNote(line, gizmo, ns.notePosition, null);
+                    gizmo.note = note;
+                    note.tmpro_input.text = ns.text;
+                    note.GetComponent<RectTransform>().SetSize(ns.size);
+                    if (ns.isOpened) {
+                        note.Expand();
+                    }
+                    else {
+                        note.Collapse();
+                    }
                 }
 
                 performedOK = true;

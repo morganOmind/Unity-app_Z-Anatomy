@@ -68,9 +68,7 @@ public class Notes : MonoBehaviour
                     if (Mouse.current.leftButton.wasPressedThisFrame)
                     {
                         gizmoPlaced = true;
-                        currentLine = Instantiate(linePrefab, hit.point, Quaternion.identity);
-                        currentLine.lineRenderer.positionCount = 2;
-                        currentLine.lineRenderer.SetPosition(0, hit.point);
+                        currentLine = CreateLine(hit.point);
                     }
                 }
                 else
@@ -113,12 +111,25 @@ public class Notes : MonoBehaviour
 
     private Note CreateNote()
     {
+        return CreateNote(currentLine, currentGizmo, Mouse.current.position.ReadValue(), clickedBp);
+    }
+
+    public Note CreateNote(Line3D line, NoteGizmo gizmo, Vector3 notePosition, TangibleBodyPart part) {
         GameObject noteGo = Instantiate(notePrefab, canvas.transform);
         Note note = noteGo.GetComponent<Note>();
-        note.line = currentLine;
-        note.gizmo = currentGizmo;
-        noteGo.transform.position = Mouse.current.position.ReadValue();
-        clickedBp.AddNote(note);
+        note.line = line;
+        note.gizmo = gizmo;
+        noteGo.transform.position = notePosition;
+        if(part != null) {
+            part.AddNote(note);
+        }
         return note;
+    }
+
+    public Line3D CreateLine(Vector3 hitPoint) {
+        Line3D line = Instantiate(linePrefab, hitPoint, Quaternion.identity);
+        line.lineRenderer.positionCount = 2;
+        line.lineRenderer.SetPosition(0, hitPoint);
+        return line;
     }
 }
