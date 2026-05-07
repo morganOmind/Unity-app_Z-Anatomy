@@ -6,10 +6,16 @@ using System.Text;
 using System.IO;
 
 [System.Serializable]
+public enum Side {
+    None, Left, Right
+};
+
+[System.Serializable]
 public struct VisibleStruct {
     public string id;
     public bool hasLabels;
     public string originalName;
+    public Side side;
 };
 
 [System.Serializable]
@@ -112,6 +118,7 @@ public class SaverLoader : MonoBehaviour
                     vs.id = navidsMap[name];
                     vs.hasLabels = v.HasLabels() && v.labelsOn;
                     vs.originalName = origName;
+                    vs.side = origName.EndsWith(".l") ? Side.Left : (origName.EndsWith(".r") ? Side.Right : Side.None);
 
                     visiblesNavids.Add(vs);
                 }
@@ -120,6 +127,7 @@ public class SaverLoader : MonoBehaviour
                     vs.id = "insertions";
                     vs.hasLabels = false;
                     vs.originalName = origName;
+                    vs.side = Side.None;    //side is used for specie switch, and no not handle insertions!
 
                     visiblesNavids.Add(vs);
                 }
@@ -327,8 +335,9 @@ public class SaverLoader : MonoBehaviour
                                 v = GlobalVariables.Instance.allVisibilityScripts.Find(delegate (BodyPartVisibility bpv)
                                 {
                                     string origName = bpv.GetComponent<NameAndDescription>().originalName;
-                                    return bpv.tag != "Insertions" 
-                                        && searchName == origName.Replace(".l", "").Replace(".r", "").Replace(".t", "").Replace(".s", "").Trim().ToLower();
+                                    return bpv.tag != "Insertions"
+                                        && searchName == origName.Replace(".l", "").Replace(".r", "").Replace(".t", "").Replace(".s", "").Trim().ToLower()
+                                        && (vs.side == Side.None || (vs.side == Side.Left && origName.EndsWith(".l")) || (vs.side == Side.Right && origName.EndsWith(".r")));
                                 });
                             }
                         }
