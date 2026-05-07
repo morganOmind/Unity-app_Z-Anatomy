@@ -68,7 +68,9 @@ public class NoteGizmo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (placed)
-            note.GizmoClick();
+        if (eventData.button == PointerEventData.InputButton.Left) {
+            if (placed)
+                note.GizmoClick();
+        }
     }
 }

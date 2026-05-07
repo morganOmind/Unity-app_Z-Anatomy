@@ -82,6 +82,7 @@ public class PanelsManagement : MonoBehaviour
     public RectTransform optionsPanel;
 
     private float panelWidth;
+    float initialPanelWidth;
     public float minPanelWidth;
     public float maxPanelWidth;
     public float minHierarchyWidth;
@@ -98,6 +99,7 @@ public class PanelsManagement : MonoBehaviour
         settingsRT = settings.GetComponent<RectTransform>();
         gridRT = grid.GetComponent<RectTransform>();
         panelWidth = descRT.GetWidth();
+        initialPanelWidth = panelWidth;
 
     }
 
@@ -105,7 +107,7 @@ public class PanelsManagement : MonoBehaviour
     {
         initialYPosCorssSections = crossSectionsOptions.expandedPosition.y;
 
-        CameraController.instance.offset = new Vector3(2*panelWidth / Screen.width, CameraController.instance.offset.y, 0);
+        CameraController.instance.offset = new Vector3(panelWidth / Screen.width, CameraController.instance.offset.y, 0);
         CameraController.instance.ResetCamera();
 
         initialOptionsHeight = optionsRT.GetHeight();
@@ -132,7 +134,14 @@ public class PanelsManagement : MonoBehaviour
         yield return null;
 
         UpdateHierarchySize();
+    }
 
+    public void ReinitPanelWidth() {
+        ResizePanels(initialPanelWidth - panelWidth);
+    }
+
+    public float GetPanelWidth() {
+        return panelWidth;
     }
 
     public void ShowPencilOptions()
@@ -295,6 +304,15 @@ public class PanelsManagement : MonoBehaviour
         lexRT.SetBottom(gridRT.rect.height / 2 + grid.spacing.y / 2);
         descRT.SetTop(gridRT.rect.height / 2 + grid.spacing.y / 2);
         descRT.SetBottom(-3.5f);
+
+        if (RevertPanels.isOnLeft) {
+            lexRT.anchorMin = new Vector2(0f, 0);
+            lexRT.anchorMax = new Vector2(0f, 1);
+            lexRT.anchoredPosition = new Vector2(0f, lexRT.anchoredPosition.y);
+            descRT.anchorMin = new Vector2(0f, 0);
+            descRT.anchorMax = new Vector2(0f, 1);
+            descRT.anchoredPosition = new Vector2(0f, descRT.anchoredPosition.y);
+        }
     }
 
     public void ShowSettings()
@@ -590,12 +608,16 @@ public class PanelsManagement : MonoBehaviour
         rt.anchoredPosition = targetPosition;
     }
 
+    public bool hasSomePanelOpened() {
+        return lexOnScreen || descOnScreen || settingsOnScreen || helpOnScreen;
+    }
+
     public bool SomeVerticalPanelOpened()
     {
-        somePanelOnScreen = lexOnScreen || descOnScreen || settingsOnScreen || helpOnScreen;
+        bool somePanelOnScreen = hasSomePanelOpened();
 
         if (somePanelOnScreen)
-            CameraController.instance.offset = new Vector3(panelWidth / Screen.width, CameraController.instance.offset.y, 0);
+            CameraController.instance.offset = new Vector3((RevertPanels.isOnLeft ? -2f : 1f) * panelWidth / Screen.width, CameraController.instance.offset.y, 0);
         else
             CameraController.instance.offset = new Vector3(0, CameraController.instance.offset.y, 0);
 
@@ -646,6 +668,10 @@ public class PanelsManagement : MonoBehaviour
         animationTime = 0;
         lex.durationOfAnimation = 0;
         desc.durationOfAnimation = 0;
+        
+        //force reset in case they have been moved
+        ResetPanel(lexRT);
+        ResetPanel(descRT);
 
         if(!lexOnScreen)
             ShowLexicon();
@@ -705,7 +731,17 @@ public class PanelsManagement : MonoBehaviour
     {
         panelWidth += deltaX;
 
-        toolsPanel.Translate(Vector3.left * deltaX);
+        if (RevertPanels.isOnLeft) {
+            undoRedoPanel.Translate(Vector3.right * deltaX);
+            optionsPanel.Translate(Vector3.right * deltaX);
+            RectTransform crossSectionRT = crossSectionsOptions.GetComponent<RectTransform>();
+            crossSectionRT.Translate(Vector3.right * deltaX);
+            crossSectionsOptions.expandedPosition = new Vector2(crossSectionRT.anchoredPosition.x, crossSectionsOptions.expandedPosition.y);
+            horizontalHierarchy.Translate(Vector3.right * deltaX);
+        }
+        else {
+            toolsPanel.Translate(Vector3.left * deltaX);
+        }
         gridRT.SetWidth(panelWidth);
         descRT.SetWidth(panelWidth);
         lexRT.SetWidth(panelWidth);
@@ -714,7 +750,7 @@ public class PanelsManagement : MonoBehaviour
         searchPanel.SetWidth(panelWidth);
         tabsPanel.SetWidth(panelWidth);
         if (somePanelOnScreen)
-            CameraController.instance.offset = new Vector3(2 * panelWidth / Screen.width, CameraController.instance.offset.y, 0);
+            CameraController.instance.offset = new Vector3((RevertPanels.isOnLeft ? -1f : 1f) * 2 * panelWidth / Screen.width, CameraController.instance.offset.y, 0);
     }
 
     //It updates its size but not its content!

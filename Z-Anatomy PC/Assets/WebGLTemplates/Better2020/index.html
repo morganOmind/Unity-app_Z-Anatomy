@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>{{{ PRODUCT_NAME }}}</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="shortcut icon" href="logo.png">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body class="{{{ SPLASH_SCREEN_STYLE.toLowerCase() }}}">
@@ -18,6 +18,7 @@
         <div id="unity-progress-bar-empty" style="display: none;">
           <div id="unity-progress-bar-full"></div>
         </div>
+        <div id="unity-loading-text" style="color: #fff; font-size: 20px; font-family: sans-serif;">Loading Z-Anatomy...</div>
         <div class="spinner"></div>
       </div>
     </div>
@@ -49,6 +50,7 @@
       const progressBarFull = document.querySelector("#unity-progress-bar-full");
       const fullscreenButton = document.querySelector("#unity-fullscreen-button");
       const spinner = document.querySelector('.spinner');
+      const progressText = document.querySelector("#unity-loading-text");
 
       const canFullscreen = (function() {
         for (const key of [
@@ -81,6 +83,7 @@
           spinner.style.display = "none";
           progressBarEmpty.style.display = "";
           progressBarFull.style.width = `${100 * progress}%`;
+          progressText.textContent = `Loading Z-Anatomy... ${Math.round(progress*100)}%`;
         }).then((unityInstance) => {
           loadingCover.style.display = "none";
           if (canFullscreen) {
@@ -93,9 +96,26 @@
           }
         }).catch((message) => {
           alert(message);
+          progressText.textContent = "Loading error";
         });
       };
       document.body.appendChild(script);
+    </script>
+    <script>
+    //custom addon
+    document.addEventListener('keydown', function(e) {
+        // Prevent Ctrl/Cmd + key combinations
+        if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+            return false;
+        }
+        
+        // Prevent specific keys
+        if (e.key === 'F1' || e.keyCode === 112 || e.key === 'F2' || e.keyCode === 113) {
+            e.preventDefault();
+            return false;
+        }
+    });
     </script>
   </body>
 </html>

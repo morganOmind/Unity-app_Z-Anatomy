@@ -236,9 +236,10 @@ public class CrossPlanesGizmo : MonoBehaviour
         crossSectionsEnabled = false;
         ResetColors();
         planeScript.NoCutClick();
-        orientationGizmo.GetComponent<RectTransform>().anchoredPosition = orientationGizmo.GetComponent<GizmoBehaviour>().originalCubePosition;
+        /*orientationGizmo.GetComponent<RectTransform>().anchoredPosition = orientationGizmo.GetComponent<GizmoBehaviour>().originalCubePosition;
         orientationGizmo.transform.localScale = Vector3.one * 30;
-        gizmoCanvasRT.sizeDelta = cubeCanvasOriginalSize;
+        gizmoCanvasRT.sizeDelta = cubeCanvasOriginalSize;*/
+        orientationGizmo.GetComponentInChildren<GizmoBehaviour>().UpdateGizmo();
         opened = false;
         lastClick = GizmoFace.Left;
     }

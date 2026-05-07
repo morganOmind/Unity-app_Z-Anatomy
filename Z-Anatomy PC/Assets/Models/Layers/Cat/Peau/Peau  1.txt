@@ -1,0 +1,24 @@
+Coussinet digital de la main.l
+Coussinet digital de la main.r
+Coussinet digital du pied.l
+Coussinet digital du pied.r
+Coussinet métacarpien.l
+Coussinet métacarpien.r
+Coussinet métatarsien.l
+Coussinet métatarsien.r
+Région de la tuberosité coxale.l
+Région de la tuberosité coxale.r
+Région du coude.l
+Région du coude.r
+Région infra-orbitaire.l
+Région infra-orbitaire.r
+Région labiale inférieure.l
+Région labiale inférieure.r
+Région mentonnière.l
+Région mentonnière.r
+Région nasale latérale.l
+Région nasale latérale.r
+Région rétro-auriculaire.l
+Région rétro-auriculaire.r
+Région sternocéphalique.l
+Région sternocéphalique.r

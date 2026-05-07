@@ -46,7 +46,7 @@ public class MeshManagement : MonoBehaviour
             BodyPartVisibility script = renderer.GetComponent<BodyPartVisibility>();
         }
 
-        HideAllLabels();
+        //HideAllLabels();
 
         //Set default shader params
         for (i = 0; i < rendererMaterials.Count; i++)
@@ -58,6 +58,12 @@ public class MeshManagement : MonoBehaviour
                 material.SetVector("_PlanePosition", new Vector3(0, 0, 0));
                 material.SetVector("_PlaneNormal", transform.up);
                 material.SetFloat("_PlaneEnabled", 1f);
+
+                material.SetVector("_SectionPoint", Vector3.zero);
+                material.SetVector("_SectionPlane", Vector3.zero);
+                material.SetVector("_SectionPlane2", Vector3.zero);
+                material.DisableKeyword("CLIP_NONE");
+                material.EnableKeyword("CLIP_PLANE");
             }
         }
 
@@ -234,5 +240,21 @@ public class MeshManagement : MonoBehaviour
             if (child != null)
                 child.GetComponent<BodyPartVisibility>().HideLabels();
         }
+    }
+
+    public void PeelClick(GameObject part) {
+        //Can undo isolation
+        if (SelectedObjectsManagement.Instance.peeledObject != null
+            && SelectedObjectsManagement.Instance.peeledObject.Equals(SelectedObjectsManagement.Instance.lastPeeledObject)) {
+            ActionControl.Instance.Undo();
+            SelectedObjectsManagement.Instance.lastPeeledObject = null;
+            return;
+        }
+
+        SelectedObjectsManagement.Instance.lastPeeledObject = part;
+
+        ActionControl.Instance.AddCommand(new PeelCommand(part), true);
+
+        Lexicon.Instance.UpdateTreeViewCheckboxes();
     }
 }

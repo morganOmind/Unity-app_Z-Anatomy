@@ -1,0 +1,26 @@
+Capsule articulaire tibiofibulaire proximale.l
+Capsule articulaire tibiofibulaire proximale.r
+Ligament calcanéocentral [calcanéonaviculaire] plantaire.l
+Ligament calcanéocentral [calcanéonaviculaire] plantaire.r
+Ligament calcanéoquartal [calcanéocuboidien] plantaire.l
+Ligament calcanéoquartal [calcanéocuboidien] plantaire.r
+Ligament centroquartal [cuboïdonaviculaire] plantaire.l
+Ligament centroquartal [cuboïdonaviculaire] plantaire.r
+Ligament plantaire long.l
+Ligament plantaire long.r
+Ligament quartodistal [cunéocuboïdien] plantaire.l
+Ligament quartodistal [cunéocuboïdien] plantaire.r
+Ligaments centrodistaux [cunéonaviculaires] plantaires.l
+Ligaments centrodistaux [cunéonaviculaires] plantaires.r
+Ligaments collatéraux sésamoïdiens du pied.l
+Ligaments collatéraux sésamoïdiens du pied.r
+Ligaments intercarpiens dorsaux.l
+Ligaments intercarpiens dorsaux.r
+Ligaments interdistaux [intercunéiformes] plantaires.l
+Ligaments interdistaux [intercunéiformes] plantaires.r
+Partie calcanéofibulaire du lgt. tarsien collat. lat. court.l
+Partie calcanéofibulaire du lgt. tarsien collat. lat. court.r
+Partie calcanéométat. du lgt. tarsien collat. lat. court.l
+Partie calcanéométat. du lgt. tarsien collat. lat. court.r
+Partie talofibulaire du lgt. tarsien collatéral lat. court.l
+Partie talofibulaire du lgt. tarsien collatéral lat. court.r

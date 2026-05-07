@@ -1,0 +1,52 @@
+2400*1
+Diaphragme.l
+Muscle abaisseur de l'angle de la bouche.l
+Muscle abaisseur de l'angle de la bouche.r
+Muscle adducteur du deuxième orteil.l
+Muscle adducteur du deuxième orteil.r
+Muscle canin.l
+Muscle canin.r
+Muscle carré des lombes.l
+Muscle carré des lombes.r
+Muscle complexus.l
+Muscle complexus.r
+Muscle court extenseur des orteils.l
+Muscle court extenseur des orteils.r
+Muscle court fléchisseur du pouce.l
+Muscle court fléchisseur du pouce.r
+Muscle extenseur des doigts I et II.l
+Muscle extenseur des doigts I et II.r
+Muscle fléchisseur médial des orteils.l
+Muscle fléchisseur médial des orteils.r
+Muscle grand droit dorsal de la tête.l
+Muscle grand droit dorsal de la tête.r
+Muscle iliaque.l
+Muscle iliaque.r
+Muscle iliocostal du cou.l
+Muscle iliocostal du cou.r
+Muscle long de la tête.l
+Muscle long de la tête.r
+Muscle longissimus.l
+Muscle longissimus.r
+Muscle oblique caudal de la tête.l
+Muscle oblique caudal de la tête.r
+Muscle oblique crânial de la tête.l
+Muscle oblique crânial de la tête.r
+Muscle poplité.l
+Muscle poplité.r
+Muscle releveur de la lèvre supérieure.l
+Muscle releveur de la lèvre supérieure.r
+Muscle rotateur.l
+Muscle rotateur.r
+Muscle rétracteur des côtes.l
+Muscle rétracteur des côtes.r
+Muscle scalène dorsal (Car, su, Ru).l
+Muscle scalène dorsal (Car, su, Ru).r
+Muscles intertransversaires dorsaux du cou.l
+Muscles intertransversaires dorsaux du cou.r
+Muscles intertransversaires du thorax.l
+Muscles intertransversaires du thorax.r
+Tendon commun.l
+Tendon commun.r
+Waw
+Waw.001

@@ -37,6 +37,12 @@ public class NamesManagement : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        TextAsset currentTranslations = GlobalVariables.Instance.GetCurrentSpecieSetting().translations;
+        if (currentTranslations != null) {
+            translations = currentTranslations;
+        }
+
         cam = Camera.main.GetComponent<CameraController>();
         bodyPartDescription = (TextMeshProUGUI)bodyPartInputField.textComponent;
     }
@@ -49,6 +55,7 @@ public class NamesManagement : MonoBehaviour
 
     public void GetNamesTranslations()
     {
+        int line = 0;
         try
         {
             int notFoundCount = 0;
@@ -60,17 +67,20 @@ public class NamesManagement : MonoBehaviour
             //Split the text in words
             for (int i = 0; i < lines.Length; i++)
             {
-                var words = lines[i].Split(';');
+                line = i;
+                var words = lines[i].Split(';', StringSplitOptions.None);
                 if (words.Length == 0)
                     continue;
-                splittedTranslations[words[0].ToLower()] = words;
+                splittedTranslations[words[GlobalVariables.Instance.GetCurrentSpecieSetting().initialNameIndexInTranslationFile].ToLower()] = words;
             }
 
+            print("all tranlations lines parsed");
+            line = 0;
             //Foreach object in scene
             foreach (var nameScript in GlobalVariables.Instance.allNameScripts)
             {
                 //Remove suffix from its name
-                var name = nameScript.name.RemoveSuffix();
+                var name = nameScript.originalName.RemoveSuffix();
                 //If translation doc contains it, assign the languages array
                 if (splittedTranslations.ContainsKey(name.ToLower()))
                 {
@@ -107,6 +117,7 @@ public class NamesManagement : MonoBehaviour
                     notFoundCount++;
                     notFound.Add(name);
                 }
+                line++;
             }
 
 
@@ -124,6 +135,7 @@ public class NamesManagement : MonoBehaviour
         }
         catch(Exception e)
         {
+            print("error on line " + (line + 1));
             UnityEngine.Debug.LogError(e);
         }
      
@@ -176,12 +188,13 @@ public class NamesManagement : MonoBehaviour
     {
         scrollView.enabled = true;
 
-        warningMessage.SetActive(!isChecked);
+        //warningMessage.SetActive(!isChecked);
+        warningMessage.SetActive(false);
 
-        if (isChecked)
+        //if (isChecked)
             bodyPartInputField.textComponent.margin = new Vector4(10, 15, 15, 10);
-        else
-            bodyPartInputField.textComponent.margin = new Vector4(10, 50, 15, 10);
+        /*else
+            bodyPartInputField.textComponent.margin = new Vector4(10, 50, 15, 10);*/
 
         emptyInternetPanel.SetActive(false);
         emptyDescPanel.SetActive(description == null);
@@ -192,6 +205,8 @@ public class NamesManagement : MonoBehaviour
         if (description != null && description != NO_SELECTION)
         {
             emptySelecPanel.SetActive(false);
+
+            description = MakeLinksClickable(description);
 
             RebuildDescriptionPanel(description: description, name: name);
 
@@ -207,6 +222,19 @@ public class NamesManagement : MonoBehaviour
         }
     }
 
+    private string MakeLinksClickable(string text) {
+        // capture all http and https links with regular expression
+        System.Text.RegularExpressions.Regex urlRegex =
+            new System.Text.RegularExpressions.Regex(@"(https?:\/\/[^\s]+)");
+
+        // replace found links with TMP <link>
+        return urlRegex.Replace(text, match =>
+        {
+            string url = match.Value;
+            return $"<link=\"{url}\"><color=#2986cc>{url}</color></link>";
+        });
+    }
+
     public void RebuildDescriptionPanel(bool waitExpand = false, float time = 0.2f, string name = "", string description = "")
     {
         StartCoroutine(Rebuild());
@@ -217,6 +245,8 @@ public class NamesManagement : MonoBehaviour
             timeElapsed.Start();*/
 
             yield return StartCoroutine(HighlightText.Hightlight(description, name.Replace("(R)", "").Replace("(L)", "").Replace(".t", "").Replace(".s","").Trim().ToLower(), bodyPartInputField));
+
+            bodyPartInputField.text = VideoLinkChecker.instance.HightlightText(bodyPartInputField.text);
 
             var textrt = bodyPartInputField.textComponent.GetComponent<RectTransform>();
             var contentrt = textrt.parent.GetComponent<RectTransform>();
@@ -245,6 +275,18 @@ public class NamesManagement : MonoBehaviour
 
     }
 
+    Transform FindNameScript(string search) {
+        Transform t = null;
+        NameAndDescription ns = GlobalVariables.Instance.allNameScripts.Find(delegate (NameAndDescription namescr)
+        {
+            return namescr.GetTranslatedName(GlobalVariables.Instance.GetCurrentSpecieSetting().descriptionLanguageOverride).ToLower() == search && !namescr.gameObject.CompareTag("Insertions");
+        });
+        if (ns != null) {
+            t = ns.transform;
+        }
+        return t;
+    }
+
     public void TextClicked(string clickedObject, bool leftClick)
     {
         //If it is a link
@@ -254,15 +296,32 @@ public class NamesManagement : MonoBehaviour
         }
         else
         {
-            Transform clickedGO = GlobalVariables.Instance.globalParent.transform.RecursiveFindChild(new StringBuilder().Append(clickedObject.ToLower()).Append(" (R)").ToString());       
+            /*Transform clickedGO = GlobalVariables.Instance.globalParent.transform.RecursiveFindChild(new StringBuilder().Append(clickedObject.ToLower()).Append(" (R)").ToString());       
             if (clickedGO == null)
                  clickedGO = GlobalVariables.Instance.globalParent.transform.RecursiveFindChild(clickedObject.ToLower());
             if(clickedGO == null)
             {
-                var go = GlobalVariables.Instance.allNameScripts.Find(it => it.HasSynonims() && it.allSynonyms[Settings.languageIndex].Any(it2 => it2.ToLower().Equals(clickedObject.ToLower())));
+                var go = GlobalVariables.Instance.allNameScripts.Find(it => it.HasSynonims() 
+                                                                            && it.allSynonyms[Settings.languageIndex].Any(it2 => it2.ToLower().Equals(clickedObject.ToLower()))
+                                                                            && !it.gameObject.CompareTag("Insertions"));
                 if(go != null)
                     clickedGO = go.transform;
+            }*/
+
+            Transform clickedGO = FindNameScript(new StringBuilder().Append(clickedObject.ToLower()).Append(" (r)").ToString());
+
+            if(clickedGO == null) {
+                clickedGO = FindNameScript(clickedObject.ToLower());
             }
+
+            if (clickedGO == null) {
+                NameAndDescription ns = GlobalVariables.Instance.allNameScripts.Find(it => it.HasSynonims(GlobalVariables.Instance.GetCurrentSpecieSetting().descriptionLanguageIndexOverride) 
+                                                                                            && it.allSynonyms[GlobalVariables.Instance.GetCurrentSpecieSetting().descriptionLanguageIndexOverride].Any(it2 => it2.ToLower().Equals(clickedObject.ToLower())) 
+                                                                                            && !it.gameObject.CompareTag("Insertions"));
+                if (ns != null)
+                    clickedGO = ns.transform;
+            }
+
             if (clickedGO == null)
                 return;
 
@@ -283,7 +342,7 @@ public class NamesManagement : MonoBehaviour
             Label labelSript = clickedGO.GetComponent<Label>();
 
             //If it is a bodypart
-            if (bodyPartScript != null)
+            if (bodyPartScript != null && hasValidMesh(clickedGO.gameObject))
             {
                 //Select it
                 SelectedObjectsManagement.Instance.SelectObject(clickedGO.gameObject);
@@ -296,7 +355,7 @@ public class NamesManagement : MonoBehaviour
                 cam.UpdateCameraPos(bodyPartScript.distanceToCamera);
             }
             //If it is a label
-            else if(labelSript != null)
+            else if(labelSript != null && hasValidMesh(clickedGO.gameObject))
             {
                 //Select the label's parent (jump the .labels obj)
                 SelectedObjectsManagement.Instance.SelectObject(labelSript.parent.gameObject);
@@ -318,6 +377,7 @@ public class NamesManagement : MonoBehaviour
             //If it is a global part
             else
             {
+                print(clickedGO.name);
                 SelectedObjectsManagement.Instance.activeObjects.Clear();
                 SelectedObjectsManagement.Instance.SelectAllChildren(clickedGO.transform, true, shown);
                 ActionControl.Instance.UpdateButtons();
@@ -337,6 +397,11 @@ public class NamesManagement : MonoBehaviour
         }
     }
 
+    bool hasValidMesh(GameObject go) {
+        return go.GetComponent<MeshFilter>() != null
+            && go.GetComponent<MeshFilter>().sharedMesh != null
+            && go.GetComponent<MeshFilter>().sharedMesh.vertexCount > 0;
+    }
 
     public void NoConnectionScreen()
     {

@@ -1,0 +1,8 @@
+
+
+MUSCLE RÉTRACTEUR
+
+
+Muscle qui ramène en arrière une structure mobile après projection ou extension, permettant un mouvement de retrait.
+
+

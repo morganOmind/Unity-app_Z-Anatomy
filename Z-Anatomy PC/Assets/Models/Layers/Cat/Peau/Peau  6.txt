@@ -1,0 +1,22 @@
+364*2.l
+364*2.r
+Région de la jambe.l
+Région de la jambe.r
+Région de la phalange proximale (main).l
+Région de la phalange proximale (main).r
+Région de la phalange proximale (pied).l
+Région de la phalange proximale (pied).r
+Région du/des doigt(s) de la main.l
+Région du/des doigt(s) de la main.r
+Région infra-épineuse.l
+Région infra-épineuse.r
+Région latérale du genou.r
+Région médiale du genou.l
+Région occipitale.l
+Région occipitale.r
+Région palpébrale supérieure.l
+Région palpébrale supérieure.r
+Région préscapulaire.l
+Région préscapulaire.r
+Régions pectorales.l
+Régions pectorales.r

@@ -1,0 +1,23 @@
+7418Cils
+7420Tragi
+7421Vibrisses
+Arc costal (Régions).l
+Arc costal (Régions).r
+Poils tactiles buccaux
+Poils tactiles carpiens (fe)
+Poils tactiles de la lèvre inférieure
+Poils tactiles infra-orbitaires
+Poils tactiles labiaux supérieurs
+Poils tactiles mentonniers
+Poils tactiles supra-orbitaires
+Poils tactiles zygomatiques
+Région dorsale du cou.l
+Région dorsale du cou.r
+Région infrahyoïde.l
+Région infrahyoïde.r
+Région métacarpienne.l
+Région métacarpienne.r
+Région poplitée.l
+Région poplitée.r
+Région tricipitale.l
+Région tricipitale.r

@@ -17,10 +17,10 @@ public class ResizeOnDrag : MonoBehaviour
     public float minY;
     public float maxY;
 
-    private void Awake()
+    /*private void Awake()
     {
         cursorTexture.Reinitialize(1, 1);
-    }
+    }*/
 
     private void Update()
     {
@@ -58,8 +58,8 @@ public class ResizeOnDrag : MonoBehaviour
     public void MouseEnter()
     {
         mouseIn = true;
-       /* if(cursorTexture != null)
-            Cursor.SetCursor(cursorTexture, new Vector2(), CursorMode.Auto);*/
+        if(cursorTexture != null)
+            Cursor.SetCursor(cursorTexture, new Vector2(), CursorMode.Auto);
     }
 
     public void MouseExit()

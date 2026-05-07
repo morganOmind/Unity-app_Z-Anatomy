@@ -1,0 +1,8 @@
+Région brachiocéphalique.l
+Région brachiocéphalique.r
+Région de l'avant-bras.l
+Région de l'avant-bras.r
+Région du bras.l
+Région du bras.r
+Région fémorale.l
+Région fémorale.r

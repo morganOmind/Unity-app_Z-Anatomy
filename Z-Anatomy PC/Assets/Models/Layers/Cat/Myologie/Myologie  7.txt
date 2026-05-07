@@ -1,0 +1,53 @@
+Muscle brachiocéphalique.l
+Muscle brachiocéphalique.r
+Muscle brachioradial.l
+Muscle brachioradial.r
+Muscle court extenseur radial du carpe.l
+Muscle court extenseur radial du carpe.r
+Muscle court fléchisseur des doigts.l
+Muscle court fléchisseur des doigts.r
+Muscle dentelé dorsal caudal.l
+Muscle dentelé dorsal caudal.r
+Muscle droit de l'abdomen.l
+Muscle droit de l'abdomen.r
+Muscle extenseur commun des doigts.l
+Muscle extenseur commun des doigts.r
+Muscle fessier accessoire.l
+Muscle fessier accessoire.r
+Muscle glutéofémoral.l
+Muscle glutéofémoral.r
+Muscle gracile.l
+Muscle gracile.r
+Muscle intertransversaires ventraux caudaux.l
+Muscle intertransversaires ventraux caudaux.r
+Muscle long extenseur radial du carpe.l
+Muscle long extenseur radial du carpe.r
+Muscle long fibulaire.l
+Muscle long fibulaire.r
+Muscle orbiculaire de la bouche.l
+Muscle pectoral profond (ascendant).l
+Muscle pectoral profond (ascendant).r
+Muscle petit rond.l
+Muscle petit rond.r
+Muscle piriforme.l
+Muscle piriforme.r
+Muscle rhomboïde.l
+Muscle rhomboïde.r
+Muscle semimembraneux.l
+Muscle semimembraneux.r
+Muscle supra-épineux.l
+Muscle supra-épineux.r
+Muscles scutulo-auriculaires superficiels.l
+Muscles scutulo-auriculaires superficiels.r
+Partie acromiale.l
+Partie acromiale.r
+Partie mastoïdienne.l
+Partie mastoïdienne.r
+Partie orbitaire.l
+Partie orbitaire.r
+Partie palpébrale.l
+Partie palpébrale.r
+Partie profonde du muscle masséter.l
+Partie profonde du muscle masséter.r
+Partie scapulaire épineuse.l
+Partie scapulaire épineuse.r

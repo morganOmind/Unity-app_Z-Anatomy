@@ -85,7 +85,7 @@ public class DownloadTranslations : MonoBehaviour
         }
 #endif
         */
-        LoadText(localUrl);
+        //LoadText(localUrl);
         NamesManagement.Instance.GetNamesTranslations();
 
     }

@@ -1,0 +1,10 @@
+Fibula.l
+Fibula.r
+Os sésamoïde du muscle poplité.l
+Os sésamoïde du muscle poplité.r
+Radius.l
+Radius.r
+Tibia.l
+Tibia.r
+Ulna.l
+Ulna.r

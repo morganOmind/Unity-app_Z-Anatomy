@@ -38,7 +38,27 @@ public class LexiconElement : MonoBehaviour
     private TextMeshProUGUI tmpro;
     private Color defaultColor;
     [HideInInspector]
-    public bool isParent;
+    public bool isParent {
+        get
+        {
+            bool hasChilds = false;
+            var childs = element.GetComponentsInChildren<Transform>(true);
+            foreach (var child in childs) {
+                if (child == element)
+                    continue;
+                hasChilds = (child.gameObject.IsBodyPart() && !child.CompareTag("Insertions"))
+                    || child.gameObject.IsLabel()
+                    || child.gameObject.IsGroup()
+                    //group objet exists only for the man, so instead check nameanddescription compoenent that every lexicon element has.
+                    || child.GetComponent<NameAndDescription>() != null;
+                if (hasChilds) {
+                    break;
+                }
+            }
+            expandBtn.gameObject.SetActive(hasChilds);
+            return hasChilds;
+        }
+    }
 
     private RectTransform rt;
 
@@ -59,7 +79,7 @@ public class LexiconElement : MonoBehaviour
         bodyPartScript = element.GetComponent<TangibleBodyPart>();
         isVisibleScript = element.GetComponent<BodyPartVisibility>();
         label = element.GetComponent<Label>();
-        isParent = IsParent();
+        //isParent = IsParent();
 
 
         if (element.GetComponentsInChildren<TangibleBodyPart>(true).Length == 0 && element.name != GlobalVariables.Instance.bodySections[2].name)
@@ -71,24 +91,7 @@ public class LexiconElement : MonoBehaviour
         }
 
     }
-
-    private bool IsParent()
-    {
-        bool hasChilds = false;
-        var childs = element.GetComponentsInChildren<Transform>(true);
-        foreach (var child in childs)
-        {
-            if (child == element)
-                continue;
-            hasChilds = (child.gameObject.IsBodyPart() && !child.CompareTag("Insertions")) || child.gameObject.IsLabel() || child.gameObject.IsGroup();
-            if (hasChilds)
-                break;
-        }
-
-        expandBtn.gameObject.SetActive(hasChilds);
-        return hasChilds;
-    }
-
+    
     public void OpenCloseClick()
     {
         opened = !opened;
@@ -347,18 +350,17 @@ public class LexiconElement : MonoBehaviour
         //SELECT IT
         if (!isVisibleScript.isSelected)
         {
-            if (!Keyboard.current.leftCtrlKey.isPressed)
+            bool multipleSelectionPressed = Shortcuts.Instance.multipleSelectionShortcut.IsPressed();
+
+            if (!multipleSelectionPressed)
             {
                 if (label == null)
                     SelectedObjectsManagement.Instance.DeselectAllObjects();
-                //Update hierarchy bar
-                HierarchyBar.Instance.Set(element.transform);
 
-                if (SearchEngine.onSearch)
+                if (SearchEngine.onSearch) {
                     SearchEngine.Instance.ClearSearch();
-
-                Lexicon.Instance.ExpandRecursively();
-
+                    Lexicon.Instance.ClickOnSearch(rt);
+                }
             }
 
             SelectedObjectsManagement.Instance.SelectObject(element.gameObject);
@@ -368,7 +370,6 @@ public class LexiconElement : MonoBehaviour
             //IF IT IS A BODYPART
             if (bodyPartScript != null)
             {
-
                 if (SelectedObjectsManagement.Instance.selectedObjects.Count == 1)
                 {
                     cam.SetTarget(element.gameObject);
@@ -402,8 +403,17 @@ public class LexiconElement : MonoBehaviour
                 SelectedObjectsManagement.Instance.lastParentSelected = element.transform;
             }
 
-            if (!Shortcuts.Instance.multipleSelectionShortcut.IsPressed() && ActionControl.zoomSelected)
-                cam.CenterView(true);
+            if (!multipleSelectionPressed) {
+                //update hierarchy bar after all selection/deselection (deselect -if selection is empty after completion- / deselectAll both clear the hierarchy bar) 
+                //has been done to be sure that the hierarchy bar builds correctly
+                HierarchyBar.Instance.Set(element.transform);
+                Lexicon.Instance.ExpandRecursively();
+
+                if (ActionControl.zoomSelected) {
+                    cam.CenterView(true);
+                }
+            }
+                
         }
         //DESELECT IT
         else

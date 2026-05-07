@@ -26,6 +26,9 @@ public class Notes : MonoBehaviour
 
     TangibleBodyPart clickedBp;
 
+    public Texture2D cursorTexture;
+    bool hasNoteCursor = false;
+
     private void Awake()
     {
         instance = this;
@@ -46,6 +49,12 @@ public class Notes : MonoBehaviour
         if (!ActionControl.creatingLocalNote && !ActionControl.creatingGlobalNote)
             return;
 
+        if (!hasNoteCursor) {
+            if (cursorTexture != null)
+                Cursor.SetCursor(cursorTexture, new Vector2(), CursorMode.Auto);
+            hasNoteCursor = true;
+        }
+
         if(!gizmoPlaced)
         {
             Ray raycast = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
@@ -59,9 +68,7 @@ public class Notes : MonoBehaviour
                     if (Mouse.current.leftButton.wasPressedThisFrame)
                     {
                         gizmoPlaced = true;
-                        currentLine = Instantiate(linePrefab, hit.point, Quaternion.identity);
-                        currentLine.lineRenderer.positionCount = 2;
-                        currentLine.lineRenderer.SetPosition(0, hit.point);
+                        currentLine = CreateLine(hit.point);
                     }
                 }
                 else
@@ -83,6 +90,7 @@ public class Notes : MonoBehaviour
                 currentGizmo.gameObject.SetActive(false);
 
                 gizmoPlaced = false;
+
                 StartCoroutine(WaitForRaycast());
                 IEnumerator WaitForRaycast()
                 {
@@ -90,6 +98,10 @@ public class Notes : MonoBehaviour
                     ActionControl.creatingLocalNote = false;
                     ActionControl.creatingGlobalNote = false;
                     CameraController.instance.raycaster.enabled = true;
+
+                    if (cursorTexture != null)
+                        Cursor.SetCursor(null, new Vector2(), CursorMode.Auto);
+                    hasNoteCursor = false;
                 }
             }
         }
@@ -99,12 +111,25 @@ public class Notes : MonoBehaviour
 
     private Note CreateNote()
     {
+        return CreateNote(currentLine, currentGizmo, Mouse.current.position.ReadValue(), clickedBp);
+    }
+
+    public Note CreateNote(Line3D line, NoteGizmo gizmo, Vector3 notePosition, TangibleBodyPart part) {
         GameObject noteGo = Instantiate(notePrefab, canvas.transform);
         Note note = noteGo.GetComponent<Note>();
-        note.line = currentLine;
-        note.gizmo = currentGizmo;
-        noteGo.transform.position = Mouse.current.position.ReadValue();
-        clickedBp.AddNote(note);
+        note.line = line;
+        note.gizmo = gizmo;
+        noteGo.transform.position = notePosition;
+        if(part != null) {
+            part.AddNote(note);
+        }
         return note;
+    }
+
+    public Line3D CreateLine(Vector3 hitPoint) {
+        Line3D line = Instantiate(linePrefab, hitPoint, Quaternion.identity);
+        line.lineRenderer.positionCount = 2;
+        line.lineRenderer.SetPosition(0, hitPoint);
+        return line;
     }
 }

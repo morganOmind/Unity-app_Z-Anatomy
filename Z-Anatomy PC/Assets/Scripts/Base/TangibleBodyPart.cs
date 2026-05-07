@@ -44,6 +44,12 @@ public class TangibleBodyPart : MonoBehaviour
 
     private float secondaryColorWeight;
 
+    private void OnEnable() {
+        GetComponent<MeshRenderer>().enabled = true;
+        GetComponent<MeshCollider>().enabled = true;
+        GetComponent<MeshCollider>().sharedMesh = GetComponent<MeshFilter>().sharedMesh;
+    }
+
     private void Awake()
     {
         meshCollider = GetComponent<MeshCollider>();
@@ -65,9 +71,10 @@ public class TangibleBodyPart : MonoBehaviour
 
     private void Start()
     {
+        InitMaterials();
         InitializeSecondaryMaterials();
     }
-
+    
     /// <summary>
     /// Handles the selection/deselection of the game object when clicked.
     /// </summary>
@@ -198,15 +205,35 @@ public class TangibleBodyPart : MonoBehaviour
         note.bodyPart = this;
     }
 
+    public void DeleteNote(Note note) {
+        if (notes.Contains(note)) {
+            notes.Remove(note);
+        }
+    }
+
     /// <summary>
     /// Sets the primary materials to the object.
     /// </summary>
     /// <param name="planeEnabled">A boolean to enable or disable the cross sections shader.</param>
     public void SetPrimaryMaterial(bool planeEnabled)
     {
-        mr.sharedMaterials = primaryMaterials;
-        foreach (Material material in mr.materials)
-            material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
+        if (mr != null) {
+            mr.sharedMaterials = primaryMaterials;
+            foreach (Material material in mr.materials) {
+                material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
+                if (planeEnabled) {
+                    material.DisableKeyword("CLIP_NONE");
+                    material.EnableKeyword("CLIP_PLANE");
+                }
+                else {
+                    material.DisableKeyword("CLIP_PLANE");
+                    material.EnableKeyword("CLIP_NONE");
+                }
+            }
+        }
+        else {
+            print(gameObject.name + " has null meshrenderer");
+        }
     }
 
     /// <summary>
@@ -215,9 +242,38 @@ public class TangibleBodyPart : MonoBehaviour
     /// <param name="planeEnabled">A boolean to enable or disable the cross sections shader.</param>
     public void SetSecondaryMaterial(bool planeEnabled)
     {
-        mr.sharedMaterials = secondaryMaterials;
-        foreach (Material material in mr.materials)
-            material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
+        if (mr != null) {
+            if(secondaryMaterials != null) {
+                mr.sharedMaterials = secondaryMaterials;
+                foreach (Material material in mr.materials) {
+                    material.SetFloat("_PlaneEnabled", planeEnabled ? 1f : 0f);
+                    if (planeEnabled) {
+                        material.DisableKeyword("CLIP_NONE");
+                        material.EnableKeyword("CLIP_PLANE");
+                    }
+                    else {
+                        material.DisableKeyword("CLIP_PLANE");
+                        material.EnableKeyword("CLIP_NONE");
+                    }
+                }
+            }
+            else {
+                if (nameScript != null) {
+                    print(nameScript.originalName + " has null secondary materials");
+                }
+                else {
+                    print(gameObject.name + " has null secondary materials");
+                }
+            }
+        }
+        else {
+            if(nameScript != null) {
+                print(nameScript.originalName + " has null meshrenderer");
+            }
+            else{
+                print(gameObject.name + " has null meshrenderer");
+            }
+        }
     }
 
     /// <summary>
@@ -269,6 +325,24 @@ public class TangibleBodyPart : MonoBehaviour
         
     }
 
+    //retrieve original materials (hand-setted for the human), that are shared with the cat, because color do not export from blender procedural materials
+    void InitMaterials() {
+        List<Material> all = MaterialsDB.instance.allMaterials;
+        Material[] newMats = new Material[primaryMaterials.Length];
+        for (int i = 0; i < primaryMaterials.Length; i++) {
+            Material mat = all.Find(m => m.name == primaryMaterials[i].name);
+            if (mat != null) {
+                newMats[i] = mat;
+            }
+            else {
+                newMats[i] = primaryMaterials[i];
+                print("Material '" + primaryMaterials[i].name + " cannot be found");
+            }
+        }
+        mr.sharedMaterials = newMats;
+        primaryMaterials = newMats;
+    }
+
     private void InitializeSecondaryMaterials()
     {
         secondaryColorWeight = KeyColors.Instance.GetWeightByTag(tag);
@@ -276,10 +350,14 @@ public class TangibleBodyPart : MonoBehaviour
         for (int i = 0; i < primaryMaterials.Length; i++)
         {
             var mat = KeyColors.Instance.GetSecondaryColor(tag, mr.sharedMaterials[i]);
-            if (mat == null)
-                continue;
-            secondaryMaterials[i] = new Material(mat);
-            secondaryMaterials[i].SetColor("_BaseColor", Color.Lerp(primaryMaterials[i].GetColor("_BaseColor"), secondaryMaterials[i].GetColor("_BaseColor"), secondaryColorWeight));
+            if (mat == null) {
+                //fallback to ensure it is not null
+                secondaryMaterials[i] = primaryMaterials[i];
+            }
+            else {
+                secondaryMaterials[i] = new Material(mat);
+                secondaryMaterials[i].SetColor("_BaseColor", Color.Lerp(primaryMaterials[i].GetColor("_BaseColor"), secondaryMaterials[i].GetColor("_BaseColor"), secondaryColorWeight));
+            }
         }
     }
 

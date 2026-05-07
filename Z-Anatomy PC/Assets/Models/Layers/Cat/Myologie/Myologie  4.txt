@@ -1,0 +1,28 @@
+Chef accessoire du triceps brachial.l
+Chef accessoire du triceps brachial.r
+Chef médial du triceps brachial.l
+Chef médial du triceps brachial.r
+Muscle adducteur du doigt V.l
+Muscle adducteur du doigt V.r
+Muscle buccinateur.l
+Muscle buccinateur.r
+Muscle digastrique du cou.l
+Muscle digastrique du cou.r
+Muscle droit du thorax.l
+Muscle droit du thorax.r
+Muscle malaire.l
+Muscle malaire.r
+Muscle obturateur externe.l
+Muscle obturateur externe.r
+Muscle obturateur interne.l
+Muscle obturateur interne.r
+Muscle pectiné.l
+Muscle pectiné.r
+Muscle sacrococcygien dorsal latéral.l
+Muscle sacrococcygien dorsal latéral.r
+Muscle sternohyoïdien.l
+Muscle sternohyoïdien.r
+Muscle tibial caudal.l
+Muscle tibial caudal.r
+Muscles intercostaux internes.l
+Muscles intercostaux internes.r

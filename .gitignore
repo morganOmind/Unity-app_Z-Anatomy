@@ -64,3 +64,6 @@ crashlytics-build.properties
 
 # Firebase private info
 google-services.json
+
+/Resources/Utils/Python scripts/input_cat_descriptions/*
+/Resources/Utils/Python scripts/output_cat_descriptions/*

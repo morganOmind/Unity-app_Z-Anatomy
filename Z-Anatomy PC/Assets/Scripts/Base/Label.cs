@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using TMPro;
@@ -10,6 +12,7 @@ using UnityEngine;
 public class Label : MonoBehaviour
 {
     private Camera cam;
+    GameObject textGO;
     private TextMeshPro text;
     private float parentScale;
     private MaterialPropertyBlock _propBlock;
@@ -33,43 +36,118 @@ public class Label : MonoBehaviour
     [HideInInspector]
     public Vector3 lineDirection;
 
+    private void OnEnable() {
+        if(textGO != null) {
+            textGO.SetActive(true);
+        }
+        if(line != null) {
+            line.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnDisable() {
+        if(textGO != null) {
+            textGO.SetActive(false);
+        }
+        if (line != null) {
+            line.gameObject.SetActive(false);
+        }
+    }
+
     private void Awake()
     {
+        TextMeshPro tmp = GetComponent<TextMeshPro>();
+        if(tmp != null) {
+            Component.Destroy(tmp);
+        }
+        Renderer rend = GetComponent<Renderer>();
+        if(rend != null) {
+            Component.Destroy(rend);
+        }
+        MeshFilter mesh = GetComponent<MeshFilter>();
+        if(mesh != null) {
+            Component.Destroy(mesh);
+        }
+
         nameScript = GetComponent<NameAndDescription>();
         visibilityScript = GetComponent<BodyPartVisibility>();
-        text = GetComponent<TextMeshPro>();
-        boxCollider = gameObject.AddComponent<BoxCollider>();
-        rect = GetComponent<RectTransform>();
+        
+
+        textGO = new GameObject(gameObject.name + "-TMP");
+        textGO.transform.parent = FindClosestParentNoLabelNoLine();
+        textGO.transform.position = transform.position;
+        textGO.layer = LayerMask.NameToLayer("Body");
+
+        LabelText lt = textGO.AddComponent<LabelText>();
+        lt.label = this;
+
+        text = textGO.AddComponent<TextMeshPro>();
+        boxCollider = textGO.AddComponent<BoxCollider>();
+        rect = textGO.GetComponent<RectTransform>();
         cam = Camera.main;
         color = Color.white;
         parent = GetComponentInParent<TangibleBodyPart>();
-    }
 
-    private void Start()
-    {
-        try
-        {
+        Transform maxPoint = null;
+        Transform minPoint = null;
+
+        try {
             var lineObj = transform.parent.Find(new StringBuilder().Append(nameScript.originalName.Replace(".t", "").Replace(".s", "")).Append(".j").ToString());
-            if(lineObj != null)
+            if (lineObj != null)
                 line = lineObj.GetComponent<Line>();
             else
                 line = transform.parent.Find(new StringBuilder().Append(nameScript.originalName.Replace(".t", "").Replace(".s", "")).Append(".i").ToString()).GetComponent<Line>();
-            line.gameObject.SetActive(true);
-            originPoint = line.transform.Find("maxPoint");
+
+            // be sure to activate the line because is is disable for the legacy human model at import setup
+            if (GlobalVariables.Instance.GetCurrentSpecieSetting().type == SpecieType.Man) {
+                line.gameObject.SetActive(true);
+            }
+
+            //find true origin point (because it is swapped between legacy human import models and new ones !)
+            maxPoint = line.transform.Find("maxPoint");
+            minPoint = line.transform.Find("minPoint");
+            float maxDist = Vector3.Distance(maxPoint.position, transform.position);
+            float minDist = Vector3.Distance(minPoint.position, transform.position);
+
+            originPoint = maxDist > minDist ? maxPoint : minPoint;
+
             hasLine = true;
         }
-        catch (System.Exception)
-        {
+        catch (System.Exception) {
             hasLine = false;
         }
 
-
-        if (line != null && line.minPoint != null && line.maxPoint != null)
-            lineDirection = line.maxPoint.position - line.minPoint.position;
+        if (line != null && minPoint != null && maxPoint != null)
+            lineDirection = maxPoint.position - minPoint.position;
         else
             lineDirection = parent.transform.position - transform.position;
-        
+
         Initialize();
+    }
+
+    Transform FindClosestParentNoLabelNoLine() {
+        Transform t = transform.parent;
+        while(t.GetComponent<Line>() != null || t.GetComponent<Label>() != null) {
+            t = t.parent;
+        }
+        return t;
+    }
+
+    int sceneLoadedFrame;
+    private void OnLevelWasLoaded(int level) {
+        sceneLoadedFrame = Time.frameCount;
+    }
+
+    private void Start() {
+        //only disable on startup, else some sublabels are disabled before their start, and disable themselves at first enable after startup and do not show up the first time!
+        //this way, we are sure that every labels is disable at startup, while not disabling itself when we want to show it for the first time
+        if (Time.frameCount - sceneLoadedFrame <= 1) {
+            foreach (Label l in GetComponentsInChildren<Label>(true)) {
+                l.gameObject.SetActive(false);
+            }
+            gameObject.SetActive(false);
+
+        }
     }
 
     /// <summary>
@@ -104,7 +182,7 @@ public class Label : MonoBehaviour
     void Update()
     {
         boxCollider.size = text.textBounds.size;
-        transform.rotation = cam.transform.rotation;
+        textGO.transform.rotation = cam.transform.rotation;
         text.fontSize = fontSize * Mathf.Clamp(cam.orthographicSize, 0.075f, 1.5f);
 
         if (hasLine)
@@ -124,14 +202,21 @@ public class Label : MonoBehaviour
     {
         float angle = Vector3.Angle(originPoint.position - transform.position, -cam.transform.forward);
         float a = angle * angle * angle * angle * 0.000000025f;
-        _renderer.enabled = a > .075f;
-        line._renderer.enabled = _renderer.enabled;
+        if(_renderer != null) {
+            _renderer.enabled = a > .075f;
+            if (line._renderer != null)
+                line._renderer.enabled = _renderer.enabled;
 
-        if (a > 1)
-            a = 1;
+            if (a > 1)
+                a = 1;
 
-        Color newColor = new Color(color.r, color.g, color.b, a);
+            Color newColor = new Color(color.r, color.g, color.b, a);
 
+            SetColor(newColor);
+        }
+    }
+
+    public void SetColor(Color newColor) {
         // Get the current value of the material properties in the renderer.
         _renderer.GetPropertyBlock(_propBlock);
         // Assign our new value.
@@ -139,10 +224,15 @@ public class Label : MonoBehaviour
         // Apply the edited values to the renderer.
         _renderer.SetPropertyBlock(_propBlock);
 
-        if(visibilityScript.isSelected)
+        if (visibilityScript.isSelected)
             line.SetColor(newColor);
         else
-            line.SetColor(a * 0.5f);
+            line.SetColor(newColor.a * 0.5f);
+    }
+
+    public Color GetCurrentColor() {
+        _renderer.GetPropertyBlock(_propBlock);
+        return _propBlock.GetColor("_FaceColor");
     }
 
     /// <summary>

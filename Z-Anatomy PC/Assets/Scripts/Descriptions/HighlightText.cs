@@ -21,12 +21,12 @@ public class HighlightText : MonoBehaviour
 
         foreach (var nameScript in GlobalVariables.Instance.allNameScripts)
         {
-            bodypartsHyperlinks.Add(nameScript.name.Replace("(R)", "").Replace("(L)", "").Trim().ToLower());
+            string name = (nameScript.allNames == null || nameScript.allNames.Length == 0) ? nameScript.originalName : nameScript.allNames[GlobalVariables.Instance.GetCurrentSpecieSetting().descriptionLanguageIndexOverride];
+            bodypartsHyperlinks.Add(name.Replace("(R)", "").Replace("(L)", "").Trim().ToLower());
 
-            if (nameScript.HasSynonims())
+            if (nameScript.HasSynonims(GlobalVariables.Instance.GetCurrentSpecieSetting().descriptionLanguageIndexOverride))
             {
-                foreach (var synonym in nameScript.allSynonyms[Settings.languageIndex])
-                {
+                foreach (var synonym in nameScript.allSynonyms[GlobalVariables.Instance.GetCurrentSpecieSetting().descriptionLanguageIndexOverride]) {
                     bodypartsHyperlinks.Add(synonym.ToLower());
                 }
             }
@@ -38,6 +38,16 @@ public class HighlightText : MonoBehaviour
     //It hightlights other body parts in the text
     public static IEnumerator Hightlight(string text, string name, TMP_InputField inputField)
     {
+        if (bodypartsHyperlinks == null) {
+            GetTranslatedNames();
+            yield return new WaitForEndOfFrame();
+        }
+
+        if (string.IsNullOrEmpty(text) || inputField == null) {
+            UnityEngine.Debug.LogWarning("Invalid text or input field");
+            yield break;
+        }
+
         Stopwatch stopwatch = new Stopwatch();
         stopwatch.Start();
 
@@ -50,7 +60,7 @@ public class HighlightText : MonoBehaviour
         HashSet<string> words = toLowerDesc.RemovePunctuations().Split().ToHashSet();
         HashSet<string> matches = new HashSet<string>();
 
-        UnityEngine.Debug.Log("Count: " + bodypartsHyperlinks.Count);
+        //UnityEngine.Debug.Log("Count: " + bodypartsHyperlinks.Count);
 
         //Find matches
         foreach (string hyperlink in bodypartsHyperlinks)
@@ -150,7 +160,7 @@ public class HighlightText : MonoBehaviour
         }
 
         stopwatch.Stop();
-        UnityEngine.Debug.Log("Highlight: " + (float)(stopwatch.ElapsedMilliseconds / 1000f));
+        //UnityEngine.Debug.Log("Highlight: " + (float)(stopwatch.ElapsedMilliseconds / 1000f));
 
 
         // stopwatch.Restart();

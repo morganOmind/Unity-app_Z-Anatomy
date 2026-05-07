@@ -9,8 +9,8 @@ public class CrossSections : MonoBehaviour
 {
     public static CrossSections Instance;
 
-    public Shader clippableShader;
-    public Shader clippableShaderNoCulling;
+    public List<Shader> clippableShaders;
+    public Shader clippableShaderLit, clippableShaderUnlit;
 
     //Min pos => X = -3
     //Max pos => X = 3
@@ -27,17 +27,17 @@ public class CrossSections : MonoBehaviour
     public Slider frontalSlider;
     public Image backgroundFrontalSlider;
     public Image fillFrontalSlider;
-    private float frontalInitialValue;
+    //private float frontalInitialValue;
 
     public Slider transversalSlider;
     public Image backgroundTransversalSlider;
     public Image fillTransversalSlider;
-    private float transversalInitialValue;
+    //private float transversalInitialValue;
 
     public Slider sagitalSlider;
     public Image backgroundSagitalSlider;
     public Image fillSagitalSlider;
-    private float sagitalInitialValue;
+    //private float sagitalInitialValue;
 
 
     [HideInInspector]
@@ -99,9 +99,7 @@ public class CrossSections : MonoBehaviour
     {
         Instance = this;
         defaultSprite = globalImage.sprite;
-        frontalInitialValue = frontalSlider.value;
-        sagitalInitialValue = sagitalSlider.value;
-        transversalInitialValue = transversalSlider.value;
+        SetSlidersLimits();
     }
 
     private void Start()
@@ -115,19 +113,70 @@ public class CrossSections : MonoBehaviour
             originalMaterials[renderer] = renderer.sharedMaterials;
             doubleSidedeMaterials[renderer] = new Material[renderer.sharedMaterials.Length];
             bool added = false;
+            Color sectionColor = Color.clear;
+            bool sectionColorSet = false;
             for (int i = 0; i < renderer.sharedMaterials.Length; i++)
             {
-                if (renderer.sharedMaterials[i].shader == clippableShader)
-                {
+                //check if it is a shader that need to be swapped
+                //or to prevent materials that are not set (they have the Lit material by default), check this too!!
+                if (clippableShaders.Contains(renderer.sharedMaterials[i].shader) 
+                    || (renderer.sharedMaterials[i].name == "Lit" && renderer.sharedMaterials[i].shader.name == "Universal Render Pipeline/Lit")) {
+                    if(!sectionColorSet) {
+                        sectionColor = renderer.sharedMaterials[i].GetColor("_BaseColor");
+                        sectionColorSet = true;
+                    }
+
                     Material copy = new Material(renderer.sharedMaterials[i]);
-                    copy.shader = clippableShaderNoCulling;
+                    copy.shader = copy.shader.name.Contains("Unlit") ? clippableShaderUnlit : clippableShaderLit;
+                    copy.SetFloat("_Cull", 0.0f);
+                    copy.SetColor("_SectionColor", sectionColor);
+
                     doubleSidedeMaterials[renderer][i] = copy;
                     if(!added)
                         affectedRenderers.Add(renderer);
                     added = true;
                 }
+                else {
+                    doubleSidedeMaterials[renderer][i] = renderer.sharedMaterials[i];
+                }
             }
         }
+    }
+
+    public void SetSlidersLimits() {
+        SpecieSetting setting = GlobalVariables.Instance.GetCurrentSpecieSetting();
+        frontalSlider.minValue = setting.coronalLimits.x;
+        frontalSlider.maxValue = setting.coronalLimits.y;
+        sagitalSlider.minValue = setting.sagitalLimits.x;
+        sagitalSlider.maxValue = setting.sagitalLimits.y;
+        transversalSlider.minValue = setting.transversalLimits.x;
+        transversalSlider.maxValue = setting.transversalLimits.y;
+        ResetSliders();
+        ResizePlanes();
+    }
+
+    void ResetSliders() {
+        frontalSlider.value = Mathf.Lerp(frontalSlider.minValue, frontalSlider.maxValue, 0.5f);
+        sagitalSlider.value = Mathf.Lerp(sagitalSlider.minValue, sagitalSlider.maxValue, 0.5f);
+        transversalSlider.value = Mathf.Lerp(transversalSlider.minValue, transversalSlider.maxValue, 0.5f);
+    }
+
+    void ResizePlanes() {
+        List<MeshRenderer> renderers = GlobalVariables.Instance.allBodyPartRenderers;
+        Bounds bounds = new Bounds();
+        foreach(Renderer r in renderers) {
+            MeshCollider c = r.GetComponent<MeshCollider>();
+            if(c != null && c.sharedMesh != null && c.sharedMesh.vertexCount > 0) {
+                bounds.Encapsulate(c.bounds);
+            }
+        }
+        frontalPlane.transform.position = bounds.center;
+        sagitalPlane.transform.position = bounds.center;
+        transversalPlane.transform.position = bounds.center;
+        Vector3 size = bounds.size * 1.1f;
+        frontalPlane.transform.localScale = new Vector3(size.x, 1f, size.y);
+        sagitalPlane.transform.localScale = new Vector3(size.z, 1f, size.y);
+        transversalPlane.transform.localScale = new Vector3(size.x, 1f, size.z);
     }
 
     public void ResetAll()
@@ -136,9 +185,7 @@ public class CrossSections : MonoBehaviour
         frontalToggle.SetDisabledColor();
         transversalToggle.SetDisabledColor();
 
-        frontalSlider.value = frontalInitialValue;
-        sagitalSlider.value = sagitalInitialValue;
-        transversalSlider.value = transversalInitialValue;
+        ResetSliders();
 
         skeletalToggle.SetOn();
         jointsToggle.SetOn();
@@ -152,18 +199,7 @@ public class CrossSections : MonoBehaviour
         regionsToggle.SetOn();
         referencesToggle.SetOn();
 
-        SkeletalToggleClick();
-        InsertionsToggleClick();
-        JointsToggleClick();
-        LymphsToggleClick();
-        MuscularToggleClick();
-        FasciaToggleClick();
-        ArteriesToggleClick();
-        VeinsToggleClick();
-        NervousToggleClick();
-        VisceralToggleClick();
-        RegionsToggleClick();
-        ReferencesToggleClick();
+        UpdateAllToggles();
 
         if (inverted)
             InvertSliders();
@@ -297,6 +333,8 @@ public class CrossSections : MonoBehaviour
         activePlane = XPlane;
 
         globalToggle.SetEnabledColor();
+
+        UpdateAllToggles();
     }
 
     public void InvertedXClick()
@@ -316,6 +354,7 @@ public class CrossSections : MonoBehaviour
 
         globalToggle.SetEnabledColor();
 
+        UpdateAllToggles();
     }
 
     public void ZClick()
@@ -336,6 +375,7 @@ public class CrossSections : MonoBehaviour
 
         globalToggle.SetEnabledColor();
 
+        UpdateAllToggles();
     }
 
     public void InvertedZClick()
@@ -356,6 +396,7 @@ public class CrossSections : MonoBehaviour
 
         globalToggle.SetEnabledColor();
 
+        UpdateAllToggles();
     }
 
     public void YClick()
@@ -376,6 +417,7 @@ public class CrossSections : MonoBehaviour
 
         globalToggle.SetEnabledColor();
 
+        UpdateAllToggles();
     }
 
     public void InvertedYClick()
@@ -396,6 +438,7 @@ public class CrossSections : MonoBehaviour
 
         globalToggle.SetEnabledColor();
 
+        UpdateAllToggles();
     }
 
     public void NoCutClick()
@@ -468,6 +511,21 @@ public class CrossSections : MonoBehaviour
 
     #region Sections Toggle
 
+    void UpdateAllToggles() {
+        SkeletalToggleClick();
+        InsertionsToggleClick();
+        JointsToggleClick();
+        LymphsToggleClick();
+        MuscularToggleClick();
+        FasciaToggleClick();
+        ArteriesToggleClick();
+        VeinsToggleClick();
+        NervousToggleClick();
+        VisceralToggleClick();
+        RegionsToggleClick();
+        ReferencesToggleClick();
+    }
+
     public void SkeletalToggleClick()
     {
         SetMaterial("Skeleton", skeletalToggle.isOn);
@@ -519,10 +577,29 @@ public class CrossSections : MonoBehaviour
 
     public void SetMaterial(string tag, bool enabled)
     {
-        for (int i = 0; i < MeshManagement.Instance.rendererMaterials.Count; i++)
-            if (GlobalVariables.Instance.allBodyPartRenderers[i].CompareTag(tag))
-                foreach (Material material in GlobalVariables.Instance.allBodyPartRenderers[i].materials)
+        for (int i = 0; i < MeshManagement.Instance.rendererMaterials.Count; i++) {
+            Renderer renderer = GlobalVariables.Instance.allBodyPartRenderers[i];
+            if (renderer.CompareTag(tag)) {
+                foreach (Material material in GlobalVariables.Instance.allBodyPartRenderers[i].materials) {
                     material.SetFloat("_PlaneEnabled", enabled ? 1f : 0f);
+                    if (enabled) {
+                        material.DisableKeyword("CLIP_NONE");
+                        material.EnableKeyword("CLIP_PLANE");
+                    }
+                    else {
+                        material.DisableKeyword("CLIP_PLANE");
+                        material.EnableKeyword("CLIP_NONE");
+                    }
+
+                    if (affectedRenderers.Contains(renderer)) {
+                        if (enabled)
+                            renderer.sharedMaterials = doubleSidedeMaterials[renderer];
+                        else
+                            renderer.sharedMaterials = originalMaterials[renderer];
+                    }
+                }
+            }
+        }
     }
 
     #endregion

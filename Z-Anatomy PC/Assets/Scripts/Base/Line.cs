@@ -28,21 +28,22 @@ public class Line : MonoBehaviour
 
         minPoint = transform.Find("minPoint");
         maxPoint = transform.Find("maxPoint");
+
+        if(minPoint == null ||maxPoint == null) {
+            print("Line '" + gameObject.name + "' has an issue with min/max points");
+        }
+
         _renderer = gameObject.AddComponent<LineRenderer>();
         _renderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
         DrawLine(minPoint.position, maxPoint.position);
         _propBlock = new MaterialPropertyBlock();
 
         lineColor = lineMaterial.color;
-        gameObject.SetActive(true);
 
-    }
-
-    private void Start()
-    {
         initialSize = GlobalVariables.Instance.lineSize / 500;
-
+        gameObject.SetActive(false);
     }
+
 
     // Update is called once per frame
     void Update()

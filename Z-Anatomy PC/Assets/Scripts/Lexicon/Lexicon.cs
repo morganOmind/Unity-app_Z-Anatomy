@@ -6,6 +6,11 @@ using UnityEngine.UI;
 using System.Linq;
 using System.Diagnostics;
 using System.Text;
+using UnityEngine.InputSystem;
+
+public enum LexiconMove {
+    Down, Up, Right, Left
+};
 
 public class Lexicon : MonoBehaviour
 {
@@ -38,6 +43,8 @@ public class Lexicon : MonoBehaviour
 
     private LexiconElement insertionsElement;
 
+    List<LexiconElement> collectionsList;
+
     private void Awake()
     {
         Instance = this;
@@ -58,9 +65,144 @@ public class Lexicon : MonoBehaviour
         CalculateScrollViewHeight();
     }
 
+    public void ToggleCollections(int index) {
+        if (index < collectionsList.Count) {
+            collectionsList[index].GetComponentInChildren<LexiconItemCheckbox>().OnPointerDown(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+        }
+    }
+
+    RectTransform currentNavHighligh = null;
+    string searchRT = "";
+
+    public void ForceCurrentHighlight(RectTransform rect) {
+        //comment this, seems useless and generates artefacts bugs (text height too small because of stopped coroutine make random text not visible..)
+        /*if (currentNavHighligh != null && currentNavHighligh.gameObject.activeInHierarchy) {
+            currentNavHighligh.GetComponentInChildren<LexiconElementButton>().OnPointerExit(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+        }*/
+        currentNavHighligh = rect;
+    }
+
+    public void ClickOnSearch(RectTransform rect) {
+        searchRT = rect.name;
+    }
+
+    public void Move(LexiconMove move) {
+        if(elements.Count > 0) {
+
+            if (!string.IsNullOrEmpty(searchRT)) {
+                currentNavHighligh = elements.Find(rt => rt.name == searchRT);
+                searchRT = "";
+            }
+
+            if(move == LexiconMove.Down || move == LexiconMove.Up) {
+                int index = 0;
+                bool doit = currentNavHighligh == null;
+                if (currentNavHighligh != null) {
+                    int currentIndex = elements.IndexOf(currentNavHighligh);
+                    if (currentIndex != -1) {
+                        switch (move) {
+                            case LexiconMove.Down:
+                                if (elements.Count > currentIndex + 1) {
+                                    index = currentIndex + 1;
+                                    doit = true;
+                                }
+                                break;
+                            case LexiconMove.Up:
+                                if (currentIndex - 1 >= 0) {
+                                    index = currentIndex - 1;
+                                    doit = true;
+                                }
+                                break;
+                            default: break;
+                        }
+                    }
+                }
+                if (doit) {
+                    elements[index].GetComponentInChildren<LexiconElementButton>().OnPointerEnter(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+                    if (currentNavHighligh != null) {
+                        currentNavHighligh.GetComponentInChildren<LexiconElementButton>().OnPointerExit(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+                    }
+                    SnapTo(elements[index]);
+                    currentNavHighligh = elements[index];
+
+                }
+                //print(currentNavHighligh.name);
+            }
+            else {
+                if(currentNavHighligh != null) {
+                    LexiconElement lexEl = currentNavHighligh.GetComponentInChildren<LexiconElement>();
+                    if (move == LexiconMove.Right && !lexEl.opened) {
+                        lexEl.Open();
+                    }
+                    else if(move == LexiconMove.Left && lexEl.opened) {
+                        lexEl.Close();
+                    }
+                }
+            }
+        }
+    }
+
+    public void Select() {
+        if(currentNavHighligh != null) {
+            currentNavHighligh.GetComponent<LexiconElement>().ElementClick();
+        }   
+    }
+
+    public void SnapTo(RectTransform target) {
+        if (currentNavHighligh == null || !currentNavHighligh.gameObject.activeInHierarchy)
+            return;
+        
+        RectTransform scrollRect = target.GetComponentInParent<NonDragScroll>().GetComponent<RectTransform>();
+        float incrimentSize = target.rect.height;
+
+        int i = 0;
+
+        while (!checkInView(scrollRect, target)) {
+            if (currentNavHighligh.localPosition.y < target.localPosition.y) {
+                target.parent.GetComponent<RectTransform>().anchoredPosition += new Vector2(0, -incrimentSize);
+            }
+            else if (currentNavHighligh.localPosition.y > target.localPosition.y) {
+                target.parent.GetComponent<RectTransform>().anchoredPosition += new Vector2(0, incrimentSize);
+            }
+            i++;
+            if (i > 500) { //just in case something goes wrong, dont freeze the app (normally, it should never be necessary, but just to be on the safe side!!!)
+                return;
+            }
+
+        }
+    }
+
+    bool checkInView(RectTransform scrollView, RectTransform rect) {
+        Vector3[] corners = new Vector3[4];
+        rect.GetWorldCorners(corners);
+
+        bool inView = true;
+        foreach (Vector3 v in corners) {
+            inView &= RectTransformUtility.RectangleContainsScreenPoint(scrollView, v);
+            if (!inView) {
+                break;
+            }
+        }
+        return inView;
+    }
+
+    private void Update() {
+        if (currentNavHighligh != null) {
+            if (elements.Count == 0) {
+                currentNavHighligh = null;
+            }
+            else {
+                if (!currentNavHighligh.gameObject.activeInHierarchy) {
+                    currentNavHighligh = null;
+                }
+            }
+        }
+    }
+
     public void InstatiateOriginalRootChilds()
     {
         Vector2 newPos = firstPosition.localPosition;
+        collectionsList = new List<LexiconElement>();
 
         foreach (Transform child in GlobalVariables.Instance.globalParent.transform)
         {
@@ -87,6 +229,8 @@ public class Lexicon : MonoBehaviour
                 script.realName = child.name;
                 script.nameScript = script.element.GetComponent<NameAndDescription>();
                 script.checkBox = newElement.GetComponentInChildren<LexiconItemCheckbox>();
+
+                collectionsList.Add(script);
 
                 if(child.CompareTag("Insertions"))
                 {
@@ -209,7 +353,8 @@ public class Lexicon : MonoBehaviour
         //Instance child
         foreach (Transform child in childs)
         {
-            if (!child.name.Contains(".j") && !child.name.Contains(".i") && !child.CompareTag("Insertions"))
+            if (!child.name.Contains(".j") && !child.name.Contains(".i") && !child.CompareTag("Insertions")
+                && child.GetComponent<TMPro.TextMeshPro>() == null)
             {
                 GameObject newElement;
                 LexiconElement script;
@@ -391,7 +536,11 @@ public class Lexicon : MonoBehaviour
             {
                 if (elementScript.isParent)
                 {
-                    if (HasActiveChilds(elementScript.element))
+                    if (HasActiveChilds(elementScript.element)
+                        || //manage parent label with disabled sublabels
+                        (elementScript.element.GetComponent<Label>() != null 
+                            && elementScript.element.GetComponentsInChildren<Label>(true).Length > 1
+                            && isVisibleScript.isVisible))
                     {
                         isVisibleScript.isVisible = true;
                         elementScript.checkBox.btn.Check();
@@ -421,10 +570,12 @@ public class Lexicon : MonoBehaviour
 
         if(insertionsElement != null)
         {
-            if (GlobalVariables.Instance.insertions.Find(it => it.visibilityScript.isVisible))
-                insertionsElement.checkBox.btn.Check();
-            else
-                insertionsElement.checkBox.btn.Uncheck();
+            if(GlobalVariables.Instance.insertions != null) {
+                if (GlobalVariables.Instance.insertions.Find(it => it.visibilityScript != null && it.visibilityScript.isVisible))
+                    insertionsElement.checkBox.btn.Check();
+                else
+                    insertionsElement.checkBox.btn.Uncheck();
+            }
         }
 
         if (!SearchEngine.onSearch && updateSliders)
@@ -464,10 +615,13 @@ public class Lexicon : MonoBehaviour
         if(highlighted != null)
             highlighted.SetDefaultColor();
 
-        highlighted = element;
+        highlighted = element;        
 
-        if(highlighted != null)
+        if(highlighted != null) {
             highlighted.SetElementAsHighlighted();
+            ForceCurrentHighlight(highlighted.GetComponent<RectTransform>());
+        }
+            
     }
 
 

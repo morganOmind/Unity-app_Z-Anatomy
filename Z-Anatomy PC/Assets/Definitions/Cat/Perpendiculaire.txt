@@ -1,0 +1,8 @@
+
+
+PERPENDICULAIRE
+
+
+Orientation à angle droit par rapport à un plan de référence.
+
+

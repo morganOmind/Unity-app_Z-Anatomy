@@ -25,6 +25,7 @@ public class ActionControl : MonoBehaviour
     public static bool draggingMoveIcon = false;
     public static bool draggingRotateIcon = false;
     public static bool blockedInput = false;
+    public static bool showOnlyMainLabels = true;
 
     private CameraController cam;
 
@@ -201,6 +202,11 @@ public class ActionControl : MonoBehaviour
 
     public void ResetAll()
     {
+        Note[] notes = FindObjectsOfType<Note>(true);
+        foreach (Note note in notes) {
+            note.Delete();
+        }
+
         foreach (var section in GlobalVariables.Instance.bodySections)
         {
             if (section.CompareTag("Skeleton"))

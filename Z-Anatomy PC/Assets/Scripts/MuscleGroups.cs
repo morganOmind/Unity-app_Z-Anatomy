@@ -18,6 +18,8 @@ public class MuscleGroups : MonoBehaviour
     {
         Instance = this;
 
+        texts = GlobalVariables.Instance.GetCurrentSpecieSetting().groupMuscles;
+
         groups = new List<string>[texts.Length];
 
         for (int i = 0; i < texts.Length; i++)
@@ -55,8 +57,14 @@ public class MuscleGroups : MonoBehaviour
             
         }
 
-        foreach (var item in musclesList)
-            muscles.Add(item.nameScript.originalName, item);
+        foreach (var item in musclesList) {
+            if(item.nameScript == null) {
+                print(item.name + " has no namescript!");
+            }
+            else {
+                muscles.Add(item.nameScript.originalName, item);
+            }
+        }
     }
 
     //Get all the muscles of this insertion

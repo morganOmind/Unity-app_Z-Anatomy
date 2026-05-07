@@ -13,8 +13,15 @@ public class LoadHierarchy : MonoBehaviour
     private Dictionary<string, Transform> allObjects;
 
 
-    private void Awake()
+    private void Start()
     {
+        //this behavior is only relevant for the man model
+        //the cat is imported with navid, thus is already ordered correctly
+        if(GlobalVariables.Instance.GetCurrentSpecieSetting().type != SpecieType.Man) {
+            enabled = false;
+            return;
+        }
+
         Fetch();
         Load();
     }
@@ -22,11 +29,19 @@ public class LoadHierarchy : MonoBehaviour
     private void Fetch()
     {
         allObjects = new Dictionary<string, Transform>();
-        foreach (Transform item in GlobalVariables.Instance.globalParent.GetComponentsInChildren<Transform>(true))
-        {
+        foreach (Transform item in GlobalVariables.Instance.globalParent.GetComponentsInChildren<Transform>(true)) {
             //if error "an item with same key: minPoint", untag all minPoint and maxPoints
-            if(!item.CompareTag("Untagged"))
-                allObjects.Add(item.name, item);
+            if (!item.CompareTag("Untagged")) {
+                NameAndDescription nameDesc = item.GetComponent<NameAndDescription>();
+                //.i and .j do not have NameAndDescription component, and already keep their original name (they are never renamed)
+                string name = nameDesc == null ? item.name : nameDesc.originalName;
+                if (allObjects.ContainsKey(name)) {
+                    print(name + " already exists");
+                }
+                else {
+                    allObjects.Add(name, item.transform);
+                }
+            }
         }
 
     }
@@ -43,12 +58,13 @@ public class LoadHierarchy : MonoBehaviour
             int index = int.Parse(line.Split(Separator)[1]);
             if (!allObjects.ContainsKey(line.Split(Separator)[0]))
             {
-                Debug.Log(line.Split(Separator)[0]);
+                //Debug.Log(line.Split(Separator)[0]);
                 continue;
             }
             ordered.Add(allObjects[line.Split(Separator)[0]], index);
         }
 
+        print("LoadHierarchy :: reordering " + ordered.Keys.Count + " objects");
         foreach (var item in ordered.OrderBy(it => it.Value))
         {
             item.Key.SetSiblingIndex(item.Value);

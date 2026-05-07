@@ -1,0 +1,10 @@
+
+
+NERF UTRICULAIRE
+
+
+Composante du nerf utriculo-ampullaire provenant de la macula de l'utricule.
+
+Il transmet les informations liées à la position de la tête et aux accélérations linéaires.
+
+

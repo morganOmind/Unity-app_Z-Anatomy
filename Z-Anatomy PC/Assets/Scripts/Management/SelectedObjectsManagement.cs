@@ -20,6 +20,11 @@ public class SelectedObjectsManagement : MonoBehaviour
     [HideInInspector]
     public Transform lastParentSelected;
 
+    [HideInInspector]
+    public GameObject peeledObject = null;
+    [HideInInspector]
+    public GameObject lastPeeledObject = null;
+
     private void Awake()
     {
         Instance = this;

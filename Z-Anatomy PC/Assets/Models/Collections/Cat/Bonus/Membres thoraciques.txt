@@ -1,0 +1,599 @@
+Scapula.l
+Radius.l
+Ulna.l
+Phalange distale du cinquième doigt de la main.l
+Phalange distale du deuxième doigt de la main.l
+Phalange distale du premier doigt de la main.l
+Phalange distale du quatrième doigt de la main.l
+Phalange distale du troisième doigt de la main.l
+Phalange moyenne du cinquième doigt de la main.l
+Phalange moyenne du deuxième doigt de la main.l
+Phalange moyenne du quatrième doigt de la main.l
+Phalange moyenne du troisième doigt de la main.l
+Phalange proximale du cinquième doigt de la main.l
+Phalange proximale du deuxième doigt de la main.l
+Phalange proximale du premier doigt de la main.l
+Phalange proximale du quatrième doigt de la main.l
+Phalange proximale du troisième doigt de la main.l
+Os accessoire du carpe [Os pisiforme].l
+Os carpien II [Os trapézoïde].l
+Os carpien III [Os capitatum].l
+Os carpien IV [Os hamatum].l
+Os intermédioradial [Os scapholunatum].l
+Os ulnaire du carpe [Os triquetrum].l
+Cinquième métacarpien.l
+Deuxième métacarpien.l
+Premier métacarpien.l
+Quatrième métacarpien.l
+Troisième métacarpien.l
+Os sésamoïde distal du cinquième doigt de la main.l
+Os sésamoïde distal du deuxième doigt de la main.l
+Os sésamoïde distal du quatrième doigt de la main.l
+Os sésamoïde distal du troisième doigt de la main.l
+Humérus.l
+Capsule articulaire de l'articulation gléno-humérale.l
+Capsule articulaire du coude.l
+Ligament collatéral ulnaire.l
+Ligament collatéral radial.l
+Ligament annulaire du radius.l
+Membrane interosseuse de l'avant-bras.l
+Os phacoïde.l
+Os sésamoïdes proximaux du deuxième doigt de la main.l
+Os sésamoïdes proximaux du quatrième doigt de la main.l
+Os sésamoïdes proximaux du troisième doigt de la main.l
+Capsule articulaire radio-ulnaire distale.l
+Ligament accessorio-ulnaire [pisi-ulnaire].l
+Ligament accessoriométacarpien [pisimétacarpien].l
+Ligaments métacarpiens dorsaux.l
+Ligaments métacarpiens palmaires.l
+Ligaments collatéraux métacarpophalangiens.l
+Ligaments collatéraux.l
+Ligaments interphalangiens collatéraux de la main.l
+Ligament radio-ulnaire.l
+Os carpien I [Os trapèze].l
+Ligament collatéral latéral du carpe.l
+Ligament collatéral médial du carpe.l
+Ligament radié du carpe.l
+Ligament accessorioquartal [pisihamatum].l
+Ligaments carpométacarpiens dorsaux.l
+Ligaments carpométacarpiens palmaires.l
+Ligament olécranien.l
+Os sésamoïdes proximaux du cinquième doigt de la main.l
+Bourrelet glénoïdal.l
+Ligament huméral transverse.l
+Ligaments glénohuméraux.l
+Articulation radio-ulnaire distale
+Articulations de la main
+Articulation carpienne
+Articulation antébrachiocarpienne
+Articulation radiocarpienne
+Articulation ulnocarpienne
+Articulations intercarpiennes
+Articulation médiocarpienne
+Articulation de l'os accessoire du carpe [Os pisiforme]
+Articulations intermétacarpiennes
+Articulations métacarpophalangiennes
+Articulations interphalangiennes proximales de la main
+Articulations interphalangiennes distales de la main
+Squelette de la main
+Os des doigts de la main
+Ligament interosseux de l'avant-bras.l
+Capsule articulaire antébrachiocarpienne.l
+Ligament radiocarpien dorsal.l
+Ligament radiocarpien palmaire.l
+Ligaments intercarpiens dorsaux.l
+Ligaments intercarpiens palmaires.l
+Ligaments intercarpiens interosseux.l
+Capsule articulaire médiocarpienne.l
+Capsules articulaires interphalangiennes prox. de la main.l
+Ligament ulnocarpien palmaire.l
+Capsules articulaires intermétacarpiennes.l
+Capsules articulaires métacarpophalangiennes.l
+Capsules articulaires interphalangiennes distales de la main.l
+?
+306.939
+306.946
+306.950
+Phalanges moyennes de la main
+Phalanges proximales de la main
+Os du carpe
+Os métacarpiens I-V
+Os sésamoïdes de la main
+Phalanges distales de la main
+306.902
+306.903
+306.904
+Cartilage scapulaire.l
+Muscle rhomboïde.el
+Muscle rhomboïde.e1l
+Muscle supra-épineux.ol
+Muscle infra-épineux.ol
+Muscle grand rond.ol
+Muscles trapèze et detltoïde.el
+Muscle omotransversaire.el
+Partie acromiale du deltoïde.ol
+Muscle subscapulaire.ol
+Muscle petit rond.ol
+Chef long du triceps brachial.ol
+Muscle dentelé cervical ventral.ol
+Muscle dentelé ventral du thorax.ol
+Muscle biceps brachial.ol
+Muscle coracobrachial.ol
+Muscle supra-épineux.el
+Muscle infra-épineux.el
+Muscle pectoral profond (ascendant).el
+Muscle subscapulaire.el
+Muscles pectoraux descendant et transverse.el
+Muscle deltoïde.el
+Chef latéral du triceps brachial.ol
+Muscle brachiocéphalique.e1l
+Muscle petit rond.el
+Chef accessoire du triceps brachial.el
+Muscle brachial.ol
+Muscle brachioradial.ol
+Muscle long extenseur radial du carpe.ol
+Muscle extenseur commun des doigts.ol
+Muscle extenseur latéral des doigts.ol
+Muscle extenseur ulnaire du carpe.ol
+Muscle supinateur.ol
+Muscle anconé.ol
+Muscle grand rond et grand dorsal.el
+Chef médial du triceps brachial.ol
+Muscle rond pronateur.ol
+Muscle fléchisseur radial du carpe.ol
+Muscle fléchisseur superficiel des doigts.ol
+Muscle fléchisseur ulnaire du carpe.ol
+Chef long du triceps brachial.el
+Chef latéral du triceps brachial.el
+Muscle anconé.el
+Muscle extenseur latéral des doigts.o1l
+Muscle supinateur.el
+Muscle rond pronateur.el
+[Muscle extenseur oblique du carpe].ol
+Muscle extenseur des doigts I et II.ol
+Chef médial du triceps brachial.el
+Muscle tenseur du fascia antébrachial.el
+Muscle fléchisseur ulnaire du carpe.o1l
+Muscle fléchisseur profond des doigts.ol
+Muscles biceps brachial et brachial.el
+Muscles biceps brachial et brachial.e1l
+Muscle carré pronateur.ol
+Muscle carré pronateur.el
+Muscle brachioradial.el
+Muscle court extenseur radial du carpe.e1l
+Muscle long extenseur radial du carpe.el
+Muscle extenseur ulnaire du carpe.el
+Muscle fléchisseur ulnaire du carpe.el
+Muscle extenseur ulnaire du carpe.e1l
+Muscle abducteur du doigt V.ol
+Muscles interosseux de la main.o6l
+Muscle abducteur du doigt V.el
+Muscle opposant du pouce.el
+Muscle adducteur du pouce.ol
+Muscle long fléchisseur du pouce.el
+Muscles court abducteur et court fléchisseur du pouce.el
+Muscles interosseux de la main.e5l
+Muscles interosseux de la main.e6l
+Muscles interosseux de la main.e4l
+Muscles interosseux de la main.e3l
+Muscles interosseux de la main.e2l
+Muscles interosseux de la main.e1l
+Muscles interosseux de la main.el
+[Muscle extenseur oblique du carpe].el
+Muscle long extenseur du premier orteil (Car, su, ov).el
+Muscle fléchisseur profond des doigts.e2l
+Muscle fléchisseur profond des doigts.el
+Muscle fléchisseur profond des doigts.e1l
+Muscle fléchisseur profond des doigts.e3l
+Muscle fléchisseur superficiel des doigts.e3l
+Muscle fléchisseur superficiel des doigts.e2l
+Muscle fléchisseur superficiel des doigts.e1l
+Muscle fléchisseur superficiel des doigts.el
+Muscle extenseur commun des doigts.el
+Muscle extenseur commun des doigts.e2l
+Muscle extenseur commun des doigts.e3l
+Muscle extenseur commun des doigts.e1l
+Muscle abducteur du doigt V.e1l
+Muscle abducteur du doigt V.e2l
+Muscle abducteur du doigt II.el
+Sillon carpien
+Os sésamoïde distal
+Os sésamoïdes dorsaux
+Os sésamoïdes proximaux
+Muscles interosseux de la main.o1l
+Muscles interosseux de la main.o2l
+Muscles interosseux de la main.o3l
+Muscles interosseux de la main.o4l
+Muscles interosseux de la main.o5l
+Muscles interosseux de la main.ol
+Muscle fléchisseur radial du carpe.e1l
+Muscle fléchisseur radial du carpe.el
+Muscle rond pronateur.e1l
+Fascia antébrachial.l
+Rétinaculum des fléchisseurs.l
+Ligaments métacarpiens interosseux.l
+Fascia brachial.l
+Griffe du cinquième doigt de la main.l
+Griffe du quatrième doigt de la main.l
+Griffe du troisième doigt de la main.l
+Griffe du deuxième doigt de la main.l
+Scapula.r
+Cartilage scapulaire.r
+Muscle rhomboïde.er
+Muscle rhomboïde.e1r
+Muscle supra-épineux.or
+Muscle infra-épineux.or
+Muscle grand rond.or
+Muscles trapèze et detltoïde.er
+Muscle omotransversaire.er
+Partie acromiale du deltoïde.or
+Muscle subscapulaire.or
+Muscle petit rond.or
+Chef long du triceps brachial.or
+Muscle dentelé cervical ventral.or
+Muscle dentelé ventral du thorax.or
+Muscle biceps brachial.or
+Muscle coracobrachial.or
+Muscle supra-épineux.er
+Muscle infra-épineux.er
+Muscle pectoral profond (ascendant).er
+Muscle subscapulaire.er
+Muscles pectoraux descendant et transverse.er
+Muscle deltoïde.er
+Chef latéral du triceps brachial.or
+Muscle brachiocéphalique.e1r
+Muscle petit rond.er
+Chef accessoire du triceps brachial.er
+Muscle brachial.or
+Muscle brachioradial.or
+Muscle long extenseur radial du carpe.or
+Muscle extenseur commun des doigts.or
+Muscle extenseur latéral des doigts.or
+Muscle extenseur ulnaire du carpe.or
+Muscle supinateur.or
+Muscle anconé.or
+Muscle grand rond et grand dorsal.er
+Chef médial du triceps brachial.or
+Muscle rond pronateur.or
+Muscle fléchisseur radial du carpe.or
+Muscle fléchisseur superficiel des doigts.or
+Muscle fléchisseur ulnaire du carpe.or
+Chef long du triceps brachial.er
+Chef latéral du triceps brachial.er
+Muscle anconé.er
+Muscle extenseur latéral des doigts.o1r
+Muscle supinateur.er
+Muscle rond pronateur.er
+[Muscle extenseur oblique du carpe].or
+Muscle extenseur des doigts I et II.or
+Chef médial du triceps brachial.er
+Muscle tenseur du fascia antébrachial.er
+Muscle fléchisseur ulnaire du carpe.o1r
+Muscle fléchisseur profond des doigts.or
+Muscles biceps brachial et brachial.er
+Muscles biceps brachial et brachial.e1r
+Muscle carré pronateur.or
+Muscle carré pronateur.er
+Muscle brachioradial.er
+Muscle court extenseur radial du carpe.e1r
+Muscle long extenseur radial du carpe.er
+Muscle extenseur ulnaire du carpe.er
+Muscle fléchisseur ulnaire du carpe.er
+Muscle extenseur ulnaire du carpe.e1r
+Muscle abducteur du doigt V.or
+Muscles interosseux de la main.o6r
+Muscle abducteur du doigt V.er
+Muscle opposant du pouce.er
+Muscle adducteur du pouce.or
+Muscle long fléchisseur du pouce.er
+Muscles court abducteur et court fléchisseur du pouce.er
+Muscles interosseux de la main.e5r
+Muscles interosseux de la main.e6r
+Muscles interosseux de la main.e4r
+Muscles interosseux de la main.e3r
+Muscles interosseux de la main.e2r
+Muscles interosseux de la main.e1r
+Muscles interosseux de la main.er
+[Muscle extenseur oblique du carpe].er
+Muscle long extenseur du premier orteil (Car, su, ov).er
+Muscle fléchisseur profond des doigts.e2r
+Muscle fléchisseur profond des doigts.er
+Muscle fléchisseur profond des doigts.e1r
+Muscle fléchisseur profond des doigts.e3r
+Muscle fléchisseur superficiel des doigts.e3r
+Muscle fléchisseur superficiel des doigts.e2r
+Muscle fléchisseur superficiel des doigts.e1r
+Muscle fléchisseur superficiel des doigts.er
+Muscle extenseur commun des doigts.er
+Muscle extenseur commun des doigts.e2r
+Muscle extenseur commun des doigts.e3r
+Muscle extenseur commun des doigts.e1r
+Muscle abducteur du doigt V.e1r
+Muscle abducteur du doigt V.e2r
+Muscle abducteur du doigt II.er
+Muscles interosseux de la main.o1r
+Muscles interosseux de la main.o2r
+Muscles interosseux de la main.o3r
+Muscles interosseux de la main.o4r
+Muscles interosseux de la main.o5r
+Muscles interosseux de la main.or
+Muscle fléchisseur radial du carpe.e1r
+Muscle fléchisseur radial du carpe.er
+Muscle rond pronateur.e1r
+Os sésamoïde distal du cinquième doigt de la main.r
+Os sésamoïde distal du deuxième doigt de la main.r
+Os sésamoïde distal du quatrième doigt de la main.r
+Os sésamoïde distal du troisième doigt de la main.r
+Os phacoïde.r
+Os carpien I [Os trapèze].r
+Os accessoire du carpe [Os pisiforme].r
+Os carpien II [Os trapézoïde].r
+Os carpien III [Os capitatum].r
+Os carpien IV [Os hamatum].r
+Os intermédioradial [Os scapholunatum].r
+Os ulnaire du carpe [Os triquetrum].r
+Cinquième métacarpien.r
+Deuxième métacarpien.r
+Premier métacarpien.r
+Quatrième métacarpien.r
+Troisième métacarpien.r
+Phalange distale du cinquième doigt de la main.r
+Phalange distale du deuxième doigt de la main.r
+Phalange distale du premier doigt de la main.r
+Phalange distale du quatrième doigt de la main.r
+Phalange distale du troisième doigt de la main.r
+Phalange moyenne du cinquième doigt de la main.r
+Phalange moyenne du deuxième doigt de la main.r
+Phalange moyenne du quatrième doigt de la main.r
+Phalange moyenne du troisième doigt de la main.r
+Phalange proximale du cinquième doigt de la main.r
+Phalange proximale du deuxième doigt de la main.r
+Phalange proximale du premier doigt de la main.r
+Phalange proximale du quatrième doigt de la main.r
+Phalange proximale du troisième doigt de la main.r
+Griffe du cinquième doigt de la main.r
+Griffe du quatrième doigt de la main.r
+Griffe du troisième doigt de la main.r
+Griffe du deuxième doigt de la main.r
+Radius.r
+Ulna.r
+Humérus.r
+Os sésamoïdes proximaux du cinquième doigt de la main.r
+Os sésamoïdes proximaux du deuxième doigt de la main.r
+Os sésamoïdes proximaux du quatrième doigt de la main.r
+Os sésamoïdes proximaux du troisième doigt de la main.r
+Ligament annulaire du radius.r
+Membrane interosseuse de l'avant-bras.r
+Ligament interosseux de l'avant-bras.r
+Ligament collatéral latéral du carpe.r
+Ligament collatéral médial du carpe.r
+Ligaments intercarpiens dorsaux.r
+Ligaments intercarpiens palmaires.r
+Ligaments intercarpiens interosseux.r
+Capsule articulaire médiocarpienne.r
+Ligament radié du carpe.r
+Ligament accessorio-ulnaire [pisi-ulnaire].r
+Ligament accessorioquartal [pisihamatum].r
+Ligament accessoriométacarpien [pisimétacarpien].r
+Ligaments carpométacarpiens dorsaux.r
+Ligaments carpométacarpiens palmaires.r
+Capsules articulaires intermétacarpiennes.r
+Ligaments métacarpiens dorsaux.r
+Ligaments métacarpiens palmaires.r
+Ligaments métacarpiens interosseux.r
+Capsules articulaires métacarpophalangiennes.r
+Ligaments collatéraux métacarpophalangiens.r
+Capsules articulaires interphalangiennes prox. de la main.r
+Ligaments collatéraux.r
+Capsules articulaires interphalangiennes distales de la main.r
+Ligaments interphalangiens collatéraux de la main.r
+Muscle coracobrachial.el
+Capsule articulaire de l'articulation gléno-humérale.r
+Ligaments glénohuméraux.r
+Bourrelet glénoïdal.r
+Ligament huméral transverse.r
+Capsule articulaire du coude.r
+Ligament collatéral ulnaire.r
+Ligament collatéral radial.r
+Ligament olécranien.r
+Os sésamoïdes proximaux du premier doigt de la main
+Ligament radio-ulnaire.r
+Capsule articulaire radio-ulnaire distale.r
+Capsule articulaire antébrachiocarpienne.r
+Ligament radiocarpien dorsal.r
+Ligament radiocarpien palmaire.r
+Ligament ulnocarpien palmaire.r
+Ligament interdigital intersamoïde.r
+Ligaments palmaires métacarpophalangiens.r
+Fascia brachial.r
+Muscle court extenseur radial du carpe.or
+Muscle court extenseur radial du carpe.ol
+Fascia antébrachial.r
+Rétinaculum des fléchisseurs.r
+Régions du membre thoracique
+Coussinet carpien.l
+Coussinet digital de la main.l
+Bord tricipital.l
+Coussinet métacarpien.r
+Coussinet métacarpien.l
+Coussinet digital de la main.r
+Bord tricipital.r
+Coussinet carpien.r
+Région de l'articulation de l'épaule.l
+Région du bras.l
+Région tricipitale.l
+Région du coude.l
+Région olécranienne.l
+Région de l'avant-bras.l
+Région carpienne.l
+Région métacarpienne.l
+Région métacarpophalangienne.l
+Région de la phalange proximale (main).l
+Région interphalangienne proximale (main).l
+Région de l'articulation de l'épaule.r
+Région du bras.r
+Région tricipitale.r
+Région du coude.r
+Région olécranienne.r
+Région de l'avant-bras.r
+Région carpienne.r
+Région métacarpienne.r
+Région métacarpophalangienne.r
+Région de la phalange proximale (main).r
+Région interphalangienne proximale (main).r
+Région du/des doigt(s) de la main.r
+Région du/des doigt(s) de la main.l
+Rétinaculum des extenseurs.l
+Rétinaculum des extenseurs.r
+Ligament métacarpien transverse sup. [Lgt. annulaire palm.].l
+Ligament métacarpien transverse sup. [Lgt. annulaire palm.].r
+Muscles du membre thoracique
+Muscles de l'épaule
+Muscle deltoïde.l
+Muscles du bras
+Lacertus fibrosus
+Muscles de l'avant-bras
+Ligament accessoire du muscle fléchisseur profond des doigts
+Couche transversale
+Muscles interfléchisseurs
+Muscle extenseur radial du carpe
+Compartiment antérieur du bras
+Compartiment postérieur du bras
+Muscles de la main
+Coiffe des rotateurs
+Bourses et gaines synoviales du membre thoracique
+Bourse subdeltoïdienne
+Bourse sous-tendineuse du muscle coracobrachial
+Gaine synoviale du muscle coracobrachial
+Bourse sous-tendineuse du muscle infra-épineux
+Bourse sous-tendineuse du muscle subscapulaire
+Bourse sous-tendineuse du muscle petit rond
+Gaine synoviale intertuberculaire
+Bourse intertuberculaire
+Bourse subtendineuse de l'olécrâne
+Bourse infratendineuse olécranienne
+Bourse subtendineuse du muscle triceps brachial
+Bourse bicipitoradiale
+Bourse sous-tendineuse du muscle brachial
+Bourse sous-cutanée précarpale
+Gaine tendineuse du muscle long abducteur du doigt I
+Gaine du tendon extenseur radial du carpe
+Gaine tendineuse du muscle extenseur commun des doigts
+Gaine tendineuse du m. extenseur lat. des doigts de la main
+Gaine tendineuse du muscle extenseur ulnaire du carpe
+Bourse sous-tendineuse du muscle extenseur ulnaire du carpe
+Bourse sous-tendineuse du muscle extenseur radial du carpe
+Gaine tendineuse du fléchisseur radial du carpe
+Gaine synoviale des muscles fléchisseurs communs
+Bourse subtendineuse du muscle fléchisseur profond des doigts
+Bourses musculaires de m. fléchisseur superficiel des doigts
+Gaine tendineuse du muscle fléchisseur ulnaire du carpe (Car)
+Bourses sous-tendineuses des muscles interosseux de la main
+Bourses podotrochléaire de la main
+Muscle triceps brachial.l
+Muscle deltoïde.r
+Muscle triceps brachial.r
+Rétinaculum transverse.l
+Rétinaculum transverse.r
+Muscle anconé.l
+Muscle anconé.r
+Muscle carré pronateur.l
+Muscle carré pronateur.r
+Muscle rond pronateur.l
+Muscle rond pronateur.r
+Muscle supinateur.l
+Muscle supinateur.r
+Muscle court abducteur du pouce.l
+Muscle court abducteur du pouce.r
+Muscle extenseur des doigts I et II.l
+Muscle extenseur des doigts I et II.r
+Muscle court fléchisseur du pouce.l
+Muscle court fléchisseur du pouce.r
+Muscle articulaire de l'épaule (fe, su, eq).l
+Muscle articulaire de l'épaule (fe, su, eq).r
+Muscle coracobrachial.l
+Muscle coracobrachial.r
+[Muscle extenseur oblique du carpe].l
+[Muscle extenseur oblique du carpe].r
+Muscle adducteur du pouce.l
+Muscle adducteur du pouce.r
+Muscles interosseux de la main.l
+Muscles interosseux de la main.r
+Muscles lombricaux de la main.l
+Muscles lombricaux de la main.r
+Chef médial du triceps brachial.l
+Chef accessoire du triceps brachial.l
+Chef accessoire du triceps brachial.r
+Chef médial du triceps brachial.r
+Muscle adducteur du doigt V.l
+Muscle adducteur du doigt V.r
+Chef latéral du triceps brachial.l
+Chef latéral du triceps brachial.r
+Muscle grand rond.l
+Muscle grand rond.r
+Muscle brachial.l
+Muscle brachial.r
+Muscle tenseur du fascia antébrachial.l
+Muscle tenseur du fascia antébrachial.r
+Muscle extenseur latéral des doigts.l
+Muscle extenseur latéral des doigts.r
+Muscle adducteur du doigt II.l
+Muscle abducteur du doigt V.l
+Muscle abducteur du doigt V.r
+Muscle adducteur du doigt II.r
+Chef long du triceps brachial.l
+Chef long du triceps brachial.r
+Muscle subscapulaire.l
+Muscle subscapulaire.r
+Muscle biceps brachial.l
+Muscle biceps brachial.r
+Muscle extenseur ulnaire du carpe.l
+Muscle extenseur ulnaire du carpe.r
+Muscle fléchisseur du doigt V.l
+Muscle fléchisseur du doigt V.r
+Partie scapulaire épineuse du deltoïde.l
+Partie acromiale du deltoïde.l
+Muscle brachioradial.l
+Muscle long extenseur radial du carpe.l
+Muscle court extenseur radial du carpe.l
+Partie scapulaire épineuse du deltoïde.r
+Partie acromiale du deltoïde.r
+Muscle brachioradial.r
+Muscle extenseur commun des doigts.r
+Muscle court extenseur radial du carpe.r
+Muscle long extenseur radial du carpe.r
+Muscle supra-épineux.l
+Muscle supra-épineux.r
+Muscle petit rond.l
+Muscle petit rond.r
+Muscle extenseur commun des doigts.l
+Muscle court fléchisseur des doigts.l
+Muscle court fléchisseur des doigts.r
+Muscle infra-épineux.l
+Muscle infra-épineux.r
+Muscle fléchisseur ulnaire du carpe.l
+Muscle fléchisseur profond des doigts.l
+Muscle fléchisseur ulnaire du carpe.r
+Muscle fléchisseur profond des doigts.r
+Muscle fléchisseur radial du carpe.l
+Muscle fléchisseur superficiel des doigts.l
+Muscle fléchisseur superficiel des doigts.r
+Muscle fléchisseur radial du carpe.r
+Articulations du membre thoracique
+Épaule
+Articulation du coude
+Articulation huméro-ulnaire
+Articulation huméroradiale
+Articulation radio-ulnaire proximale
+Capsule articulaire de l'os accessoire du carpe [pisiforme]
+Ligament accessoriocarpo-ulnaire [pisitriquetrum]
+Articulations carpométacarpiennes
+Ligament métacarpien transverse profond.l
+Ligament métacarpien transverse profond.r
+Ligaments collatéraux sésamoïdiens de la main.l
+Ligaments collatéraux sésamoïdiens de la main.r
+Ligaments palmaires métacarpophalangiens.l
+Ligament interdigital intersamoïde.l
+Ligaments palmaires.l
+Ligaments palmaires.r
+Capsules articulaires carpo-métacarpiennes.r

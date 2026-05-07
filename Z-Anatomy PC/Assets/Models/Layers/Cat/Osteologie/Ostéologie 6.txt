@@ -1,0 +1,16 @@
+Canine inférieure.l
+Canine inférieure.r
+Deuxième prémolaire inférieure.l
+Deuxième prémolaire inférieure.r
+Incisive inférolatérale.l
+Incisive inférolatérale.r
+Incisive inféromédiale.l
+Incisive inféromédiale.r
+Incisive intermédiaire inférieure.l
+Incisive intermédiaire inférieure.r
+Os maxillaire.l
+Os maxillaire.r
+Première molaire inférieure.l
+Première molaire inférieure.r
+Première prémolaire inférieure.l
+Première prémolaire inférieure.r

@@ -36,8 +36,16 @@ public class HierarchyBar : MonoBehaviour
         //Get all parents
         while (obj != null)
         {
-            if(obj.GetComponent<BodyPartVisibility>() != null)
+            if(obj.GetComponent<BodyPartVisibility>() != null) {
+                // Add check to ensure lexicon elements are initialized
+                /*var bodyPart = obj.GetComponent<BodyPartVisibility>();
+                if (bodyPart.lexiconElement == null) 
+                {
+                    Lexicon.Instance.ResetAll();
+                    break;
+                }*/
                 hierarchyObjects.Add(obj.gameObject);
+            }
             obj = obj.transform.parent;
         }
 

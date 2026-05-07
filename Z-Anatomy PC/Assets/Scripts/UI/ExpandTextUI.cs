@@ -10,6 +10,7 @@ public class ExpandTextUI : MonoBehaviour
     public float fontSize;
     public string text;
     public float durationOfAnimation;
+    public bool forceLeftAlignment = true;
 
     private TextMeshProUGUI tmpro;
     private RectMask2D mask;
@@ -19,7 +20,9 @@ public class ExpandTextUI : MonoBehaviour
     {
         tmpro = GetComponent<TextMeshProUGUI>();
         tmpro.fontSize = fontSize;
-        tmpro.horizontalAlignment = HorizontalAlignmentOptions.Left;
+        if (forceLeftAlignment) {
+            tmpro.horizontalAlignment = HorizontalAlignmentOptions.Left;
+        }
         tmpro.verticalAlignment = VerticalAlignmentOptions.Middle;
         mask = GetComponentInParent<RectMask2D>();
 
@@ -28,7 +31,7 @@ public class ExpandTextUI : MonoBehaviour
     private IEnumerator Start()
     {
         yield return null;
-        paddingValue = mask.rectTransform.rect.width;
+        paddingValue = mask.rectTransform.rect.width * transform.lossyScale.x;
         mask.padding = new Vector4(0, 0, paddingValue, 0);
     }
 
@@ -70,13 +73,13 @@ public class ExpandTextUI : MonoBehaviour
     {
         tmpro.text = text;
         float time = 0;
-        float initialValue = 0;
+        float initialValue = mask.padding.z;
         while (time < durationOfAnimation)
         {
             float t = time / durationOfAnimation;
             //Smooth step
             t = t * t * t * (t * (6f * t - 15f) + 10f);
-            float value = Mathf.Lerp(initialValue, 0, t);
+            float value = Mathf.Lerp(initialValue, 0f, t);
             mask.padding = new Vector4(0, 0, value, 0);
             time += Time.deltaTime;
             yield return null;

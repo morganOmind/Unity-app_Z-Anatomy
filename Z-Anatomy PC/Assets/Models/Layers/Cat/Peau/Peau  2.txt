@@ -1,0 +1,18 @@
+Fosse rétromandibulaire.l
+Fosse rétromandibulaire.r
+Ligne dorsale médiane
+Ligne ventrale médiane
+Région anale.l
+Région anale.r
+Région de l'articulation temporomandibulaire.l
+Région de l'articulation temporomandibulaire.r
+Région de la racine de la queue.l
+Région de la racine de la queue.r
+Région glutéale.l
+Région glutéale.r
+Région lombale.l
+Région lombale.r
+Région sacrale.l
+Région sacrale.r
+Région thoracique vertébrale [Région dorsocostale].l
+Région thoracique vertébrale [Région dorsocostale].r

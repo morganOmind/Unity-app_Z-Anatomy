@@ -1,0 +1,176 @@
+Os de l'arc hémal
+Partie squameuse de l’os temporal.l
+Partie tympanique.l
+Partie pétreuse.l
+Côtes asternales
+Côtes flottantes
+Côtes sternales
+Treizième côte.l
+Dixième côte.l
+Douzième côte.l
+Neuvième côte.l
+Onzième côte.l
+Cinquième côte.l
+Deuxième côte.l
+Huitième côte.l
+Première côte.l
+Quatrième côte.l
+Septième côte.l
+Sixième côte.l
+Troisième côte.l
+Cornet nasal ventral.l
+Os coxal
+Clavicule (or, fe).l
+Clavicule (or, fe).r
+Scapula.l
+Scapula.r
+Os phacoïde.l
+Os phacoïde.r
+Os carpien I [Os trapèze].l
+Os accessoire du carpe [Os pisiforme].l
+Os carpien II [Os trapézoïde].l
+Os carpien III [Os capitatum].l
+Os carpien IV [Os hamatum].l
+Os intermédioradial [Os scapholunatum].l
+Os ulnaire du carpe [Os triquetrum].l
+Calcanéus.l
+Os central du tarse [Os naviculaire].l
+Os tarsien I [Os cunéiforme médial].l
+Os tarsien II [Os cunéiforme intermédiaire].l
+Os tarsien IV [Os cuboïde].l
+Talus.l
+Os carpien I [Os trapèze].r
+Os accessoire du carpe [Os pisiforme].r
+Os carpien II [Os trapézoïde].r
+Os carpien III [Os capitatum].r
+Os carpien IV [Os hamatum].r
+Os intermédioradial [Os scapholunatum].r
+Os ulnaire du carpe [Os triquetrum].r
+Calcanéus.r
+Os central du tarse [Os naviculaire].r
+Os tarsien I [Os cunéiforme médial].r
+Os tarsien II [Os cunéiforme intermédiaire].r
+Os tarsien IV [Os cuboïde].r
+Talus.r
+Os tarsien III [Os cunéiforme latéral].l
+Os tarsien III [Os cunéiforme latéral].r
+Humérus.l
+Humérus.r
+Os cératohyoïdien [Petite corne]
+Os stylohyoïdien
+Os thyrohyoïdien [Grande corne]
+Os épihyoïdien
+Os zygomatique.l
+Os pariétal.l
+Os sésamoïdes des muscles gastrocnémiens.l
+Os sésamoïdes des muscles gastrocnémiens.r
+Fémur.l
+Fémur.r
+Patella.l
+Patella.r
+Cinquième métacarpien.l
+Deuxième métacarpien.l
+Premier métacarpien.l
+Quatrième métacarpien.l
+Troisième métacarpien.l
+Cinquième métatarsien.l
+Deuxième métatarsien.l
+Quatrième métatarsien.l
+Troisième métatarsien.l
+Premier métatarsien.l
+Cinquième métacarpien.r
+Deuxième métacarpien.r
+Premier métacarpien.r
+Quatrième métacarpien.r
+Troisième métacarpien.r
+Cinquième métatarsien.r
+Deuxième métatarsien.r
+Quatrième métatarsien.r
+Troisième métatarsien.r
+Premier métatarsien.r
+Os nasal.l
+Os palatin.l
+Os lacrymal.l
+Os ptérygoïdien.l
+Os maxillaire.l
+Os sésamoïde du muscle poplité.l
+Os sésamoïde du muscle poplité.r
+Radius.l
+Ulna.l
+Fibula.l
+Tibia.l
+Radius.r
+Ulna.r
+Fibula.r
+Tibia.r
+Phalange distale du cinquième orteil.l
+Phalange distale du deuxième orteil.l
+Phalange distale du quatrième orteil.l
+Phalange distale du troisième orteil.l
+Phalange moyenne du cinquième orteil.l
+Phalange moyenne du deuxième orteil.l
+Phalange moyenne du quatrième orteil.l
+Phalange moyenne du troisième orteil.l
+Phalange proximale du cinquième orteil.l
+Phalange proximale du deuxième orteil.l
+Phalange proximale du quatrième orteil.l
+Phalange proximale du troisième orteil.l
+Phalange distale du cinquième orteil.r
+Phalange distale du deuxième orteil.r
+Phalange distale du quatrième orteil.r
+Phalange distale du troisième orteil.r
+Phalange moyenne du deuxième orteil.r
+Phalange moyenne du troisième orteil.r
+Phalange moyenne du quatrième orteil.r
+Phalange proximale du cinquième orteil.r
+Phalange proximale du deuxième orteil.r
+Phalange proximale du quatrième orteil.r
+Phalange proximale du troisième orteil.r
+Os sésamoïdes proximaux du cinquième orteil.l
+Os sésamoïdes proximaux du troisième orteil.l
+Os sésamoïdes proximaux du cinquième orteil.r
+Os sésamoïdes proximaux du troisième orteil.r
+Os sésamoïdes proximaux du deuxième orteil.l
+Os sésamoïdes proximaux du quatrième orteil.l
+Os sésamoïdes proximaux du deuxième orteil.r
+Os sésamoïdes proximaux du quatrième orteil.r
+Phalange moyenne du cinquième orteil.r
+Os sésamoïdes proximaux du cinquième doigt de la main.l
+Os sésamoïdes proximaux du deuxième doigt de la main.l
+Os sésamoïdes proximaux du quatrième doigt de la main.l
+Os sésamoïdes proximaux du troisième doigt de la main.l
+Phalange distale du cinquième doigt de la main.l
+Phalange distale du deuxième doigt de la main.l
+Phalange distale du premier doigt de la main.l
+Phalange distale du quatrième doigt de la main.l
+Phalange distale du troisième doigt de la main.l
+Phalange moyenne du cinquième doigt de la main.l
+Phalange moyenne du deuxième doigt de la main.l
+Phalange moyenne du quatrième doigt de la main.l
+Phalange moyenne du troisième doigt de la main.l
+Phalange proximale du cinquième doigt de la main.l
+Phalange proximale du deuxième doigt de la main.l
+Phalange proximale du premier doigt de la main.l
+Phalange proximale du quatrième doigt de la main.l
+Phalange proximale du troisième doigt de la main.l
+Os sésamoïdes proximaux du cinquième doigt de la main.r
+Os sésamoïdes proximaux du deuxième doigt de la main.r
+Os sésamoïdes proximaux du quatrième doigt de la main.r
+Os sésamoïdes proximaux du troisième doigt de la main.r
+Os sésamoïdes proximaux du premier doigt de la main
+Phalange distale du cinquième doigt de la main.r
+Phalange distale du deuxième doigt de la main.r
+Phalange distale du premier doigt de la main.r
+Phalange distale du quatrième doigt de la main.r
+Phalange distale du troisième doigt de la main.r
+Phalange moyenne du cinquième doigt de la main.r
+Phalange moyenne du deuxième doigt de la main.r
+Phalange moyenne du quatrième doigt de la main.r
+Phalange moyenne du troisième doigt de la main.r
+Phalange proximale du cinquième doigt de la main.r
+Phalange proximale du deuxième doigt de la main.r
+Phalange proximale du premier doigt de la main.r
+Phalange proximale du quatrième doigt de la main.r
+Phalange proximale du troisième doigt de la main.r
+Os incisif.l
+(Os sutural).l

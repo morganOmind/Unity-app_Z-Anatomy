@@ -39,12 +39,13 @@ public class Settings : MonoBehaviour
     public Toggle nameOnMouseToggle;
     public Toggle limitRotationToggle;
     public Toggle HDRToggle;
+    public Toggle showOnlyMainLabelsToggle;
 
     public CustomSlider zoomVelocitySlider;
     public CustomSlider rotationVelocitySlider;
 
     public UniversalRenderPipelineAsset pipelineAsset;
-    private MultilanguageText[] multilanguageTexts;
+    //private MultilanguageText[] multilanguageTexts;
 
     public TextMeshProUGUI versionText;
     public GameObject taskBar;
@@ -56,7 +57,7 @@ public class Settings : MonoBehaviour
     {
         Instance = this; 
         cam = Camera.main;
-        multilanguageTexts = Resources.FindObjectsOfTypeAll(typeof(MultilanguageText)) as MultilanguageText[];
+        //multilanguageTexts = Resources.FindObjectsOfTypeAll(typeof(MultilanguageText)) as MultilanguageText[];
 
         DebugManager.instance.enableRuntimeUI = false;
         versionText.text += " " + Application.version;
@@ -119,10 +120,23 @@ public class Settings : MonoBehaviour
         SetShadows();
 
         //Language
-        dropDownLanguageSettings.value = GetSystemLanguage();
-        if (PlayerPrefs.HasKey("Language"))
-            dropDownLanguageSettings.value = PlayerPrefs.GetInt("Language");
-        dropDownLanguageBar.value = dropDownLanguageSettings.value;
+        int languageValue = GetSystemLanguage();
+        if (PlayerPrefs.HasKey("Language")) {
+            languageValue = PlayerPrefs.GetInt("Language");
+        }
+        if (!GlobalVariables.Instance.GetCurrentSpecieSetting().availableLanguages.Contains<int>(languageValue)) {
+            languageValue = GetSystemLanguage();
+        }
+        if (!GlobalVariables.Instance.GetCurrentSpecieSetting().availableLanguages.Contains<int>(languageValue)) {
+            languageValue = 0; //english by default if neither system language or playerpref language are supported
+        }
+
+        dropDownLanguageSettings.value = languageValue;
+        dropDownLanguageBar.value = languageValue;
+        //force the first call to this method in case it is english, else the drop down values have not been changed, thus the first call has not been done!
+        if(languageValue == 0) {
+            SetLanguage();
+        }
 
         //Zoom to mouse
         zoomToMouseToggle.isOn = PlayerPrefs.GetInt("ZoomToMouse", 1) == 1;
@@ -138,6 +152,8 @@ public class Settings : MonoBehaviour
         zoomVelocitySlider.value = PlayerPrefs.GetFloat("ZoomVelocity", 1);
         //Rotation velocity
         rotationVelocitySlider.value = PlayerPrefs.GetFloat("RotationVelocity", 1);
+
+        showOnlyMainLabelsToggle.isOn = PlayerPrefs.GetInt("ShowOnlyMainLabels", 0) == 1;
     }
 
     void ApplyNameTranslation(Transform parent)
@@ -162,13 +178,13 @@ public class Settings : MonoBehaviour
 
     private void SetMultilanguageTextsTranslations()
     {
-        foreach (var text in multilanguageTexts)
+        foreach (var text in Resources.FindObjectsOfTypeAll(typeof(MultilanguageText)) as MultilanguageText[])
         {
             text.Translate();
         }
     }
 
-    public int GetSystemLanguage()
+    public static int GetSystemLanguage()
     {
         switch (Application.systemLanguage)
         {
@@ -176,9 +192,9 @@ public class Settings : MonoBehaviour
                 return 0;
             case SystemLanguage.Unknown:
                 return 1;
-            case SystemLanguage.Spanish:
-                return 2;
             case SystemLanguage.French:
+                return 2;
+            case SystemLanguage.Spanish:
                 return 3;
             case SystemLanguage.Portuguese:
                 return 4;
@@ -207,31 +223,8 @@ public class Settings : MonoBehaviour
             dropDownLanguageSettings.SetValueWithoutNotify(value);
         }
 
-        switch (value)
-        {
-            case 0:
-                language = SystemLanguage.English;
-                languageIndex = 0;
-                break;
-            case 1:
-                language = SystemLanguage.Unknown;
-                languageIndex = 1;
-                break;
-            case 2:
-                language = SystemLanguage.Spanish;
-                languageIndex = 3;
-                break;
-            case 3:
-                language = SystemLanguage.French;
-                languageIndex = 2;
-                break;
-            case 4:
-                language = SystemLanguage.Portuguese;
-                languageIndex = 4;
-                break;
-        }
-
-        PlayerPrefs.SetInt("Language", dropDownLanguageSettings.value);
+        SetLanguageByIndex(value);
+        
         ApplyNameTranslation(GlobalVariables.Instance.globalParent.transform);
         SetMultilanguageTextsTranslations();
         HighlightText.GetTranslatedNames();
@@ -244,6 +237,33 @@ public class Settings : MonoBehaviour
             if (nameScript != null)
                 nameScript.SetDescription();
         }
+    }
+
+    public void SetLanguageByIndex(int value) {
+        switch (value) {
+            case 0:
+                language = SystemLanguage.English;
+                languageIndex = 0;
+                break;
+            case 1:
+                language = SystemLanguage.Unknown;
+                languageIndex = 1;
+                break;
+            case 2:
+                language = SystemLanguage.French;
+                languageIndex = 2;
+                break;
+            case 3:
+                language = SystemLanguage.Spanish;
+                languageIndex = 3;
+                break;
+            case 4:
+                language = SystemLanguage.Portuguese;
+                languageIndex = 4;
+                break;
+        }
+
+        PlayerPrefs.SetInt("Language", value);
     }
 
 
@@ -283,6 +303,18 @@ public class Settings : MonoBehaviour
     {
         ActionControl.limitRotation = !ActionControl.limitRotation;
         PlayerPrefs.SetInt("LimitRotation", ActionControl.limitRotation ? 1 : 0);
+    }
+
+    public void SetShowOnlyMainLabels() {
+        ActionControl.showOnlyMainLabels = !ActionControl.showOnlyMainLabels;
+        PlayerPrefs.SetInt("ShowOnlyMainLabels", ActionControl.showOnlyMainLabels ? 1 : 0);
+
+        foreach(BodyPartVisibility bp in GlobalVariables.Instance.allVisibilityScripts) {
+            if(bp.HasLabels() && bp.labelsOn) {
+                bp.HideLabels();
+                bp.ShowLabels();
+            }
+        }
     }
 
     //---------Graphics-----------//

@@ -1,0 +1,18 @@
+Bourrelet acétabulaire.l
+Bourrelet acétabulaire.r
+Capsule articulaire temporomandibulaire.l
+Capsule articulaire temporomandibulaire.r
+Corps adipeux infrapatellaire.l
+Corps adipeux infrapatellaire.r
+Fibrocartilages parapatellaires.l
+Fibrocartilages parapatellaires.r
+Ligament fémoropatellaire latéral.l
+Ligament fémoropatellaire latéral.r
+Ligament fémoropatellaire médial.l
+Ligament fémoropatellaire médial.r
+Ligament méniscofémoral.l
+Ligament méniscofémoral.r
+Ligament patellaire.l
+Ligament patellaire.r
+Ligaments sacro-iliaques ventraux.l
+Ligaments sacro-iliaques ventraux.r

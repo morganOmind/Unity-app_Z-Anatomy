@@ -90,6 +90,24 @@ public class Layers : MonoBehaviour
         Instance = this;
     }
 
+    private void Start() {
+        SetLayers(GlobalVariables.Instance.GetCurrentSpecieSetting().layers);
+    }
+
+    public void SetLayers(SpecieLayers layers) {
+        bonesLayers = layers.bonesLayers;
+        ligamentsLayers = layers.ligamentsLayers;
+        muscularLayers = layers.muscularLayers;
+        arteriesLayers = layers.arteriesLayers;
+        veinsLayers = layers.veinsLayers;
+        lymphsLayers = layers.lymphsLayers;
+        fasciaLayers = layers.fasciaLayers;
+        nervesLayers = layers.nervesLayers;
+        visceralLayers = layers.visceralLayers;
+        refsLayers = layers.refsLayers;
+        skinLayers = layers.skinLayers;
+}
+
     public void ReadLayers()
     {
         if(isEnabled)
@@ -103,7 +121,7 @@ public class Layers : MonoBehaviour
                 {
                     if (allBodyParts.ContainsKey(bodyPart.originalName))
                     {
-                        Debug.Log("duplicated");
+                        Debug.Log("duplicated: " + bodyPart.originalName);
                         continue;
                     }
                     allBodyParts.Add(bodyPart.originalName, bodyPart.gameObject);
@@ -127,16 +145,26 @@ public class Layers : MonoBehaviour
             if(firstTime)
                 bonesSlider.value = bonesSlider.maxValue;
 
-            ligamentsSlider.maxValue = ligamentsLayers.Length;
-            muscularSlider.maxValue = muscularLayers.Length;
-            fasciaSlider.maxValue = fasciaLayers.Length;
-            arteriesSlider.maxValue = arteriesLayers.Length;
-            veinsSlider.maxValue = veinsLayers.Length;
-            lymphsSlider.maxValue = lymphsLayers.Length;
-            visceralSlider.maxValue = visceralLayers.Length;
-            nervesSlider.maxValue = nervesLayers.Length;
-            skinSlider.maxValue = skinLayers.Length;
-            refsSlider.maxValue = refsLayers.Length;
+            if(ligamentsSlider != null)
+                ligamentsSlider.maxValue = ligamentsLayers.Length;
+            if(muscularSlider != null)
+                muscularSlider.maxValue = muscularLayers.Length;
+            if(fasciaSlider != null)
+                fasciaSlider.maxValue = fasciaLayers.Length;
+            if(arteriesSlider != null)
+                arteriesSlider.maxValue = arteriesLayers.Length;
+            if(veinsSlider != null)
+                veinsSlider.maxValue = veinsLayers.Length;
+            if(lymphsSlider != null)
+                lymphsSlider.maxValue = lymphsLayers.Length;
+            if(visceralSlider != null)
+                visceralSlider.maxValue = visceralLayers.Length;
+            if(nervesSlider != null)
+                nervesSlider.maxValue = nervesLayers.Length;
+            if(skinSlider != null)
+                skinSlider.maxValue = skinLayers.Length;
+            if(refsSlider != null)
+                refsSlider.maxValue = refsLayers.Length;
 
             firstTime = false;
         }
@@ -153,33 +181,31 @@ public class Layers : MonoBehaviour
             string[] parts = layer.text.Split('\n').Where(it => it.Length > 0).ToArray();
             layerObjects[i] = new List<GameObject>();
 
-            for (int j = 1; j < parts.Length; j++)
+            for (int j = 0; j < parts.Length; j++)
             {
                 var name = parts[j].Replace("\r", "");
-                if (allBodyParts.ContainsKey(name))
-                {
+
+                if (allBodyParts.ContainsKey(name)) {
                     GameObject found = allBodyParts[name];
-                    if (found != null)
-                    {
+                    if (found != null) {
                         allBodyParts.Remove(name);
                         layerObjects[i].Add(found.gameObject);
                     }
                     else
                         Debug.Log(parts[j]);
                 }
-                else if(allBodyParts.ContainsKey(name.RemoveSuffix()))
-                {
+                else if (allBodyParts.ContainsKey(name.RemoveSuffix())) {
                     GameObject found = allBodyParts[name.RemoveSuffix()];
-                    if (found != null)
-                    {
+                    if (found != null) {
                         allBodyParts.Remove(name.RemoveSuffix());
                         layerObjects[i].Add(found.gameObject);
                     }
                     else
                         Debug.Log(parts[j]);
                 }
-                else
-                    Debug.Log(parts[j]);
+                else {
+                    //Debug.Log("Layers :: " + parts[j] + " not found");
+                }
             }
 
             i++;
@@ -246,6 +272,9 @@ public class Layers : MonoBehaviour
 
     private IEnumerator SyncLayer(List<GameObject>[] layerObjects, Slider slider)
     {
+        if (slider == null || layerObjects == null)
+            yield break;
+
         int maxValue = 0;
 
         List<int> empties = new List<int>();
@@ -255,11 +284,14 @@ public class Layers : MonoBehaviour
         //Foreach layer
         for (int i = 0; i < layerObjects.Length; i++)
         {
+            if (layerObjects[i] == null)
+                continue;
+
             bool found = false;
 
             foreach (var obj in layerObjects[i])
             {
-                if(obj.GetComponent<BodyPartVisibility>().isVisible)
+                if (obj != null && obj.GetComponent<BodyPartVisibility>()?.isVisible == true) 
                 {
                     found = true;
                     maxValue = i + 1;
@@ -274,10 +306,12 @@ public class Layers : MonoBehaviour
 
         yield return new WaitForEndOfFrame();
 
-        slider.SetValueWithoutNotify(maxValue);
-       /* slider.value = maxValue;
-        slider.SetEmpties(empties);
-        slider.UpdateButtons(maxValue);*/
+        if(slider != null) {
+            slider.SetValueWithoutNotify(maxValue);
+        }
+        /* slider.value = maxValue;
+         slider.SetEmpties(empties);
+         slider.UpdateButtons(maxValue);*/
     }
 
     public void UpdateBones()

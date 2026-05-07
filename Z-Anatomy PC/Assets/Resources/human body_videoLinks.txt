@@ -1,0 +1,157 @@
+%Osteology%Skeletal system;https://www.youtube.com/watch?v=wdeWaPMTlqc
+%Skull%Sutures;https://tinyurl.com/4ua2jawp
+%Facial bones;https://tinyurl.com/bdf8j9d8
+%Joints;https://www.youtube.com/watch?v=_9YcR-p-gEM
+%Myology%Muscular system;https://www.youtube.com/watch?v=q4L2rqPjp6Y
+%Mediastinum;https://tinyurl.com/44huykj3
+%Pericardium%Heart;https://tinyurl.com/rsyrmrj3
+%Neurons%Neuronal transmission;https://tinyurl.com/3brc3vm4
+%Nerve%Conduction%Nerve impulse;https://tinyurl.com/2bxu7yec
+%Atherosclerosis;https://tinyurl.com/mr2jd6k6
+%Valves%Veins;https://tinyurl.com/kntk43rs
+%Lymphatic system;https://plantrifit.fr/physio/systeme-lymphatique/;https://tinyurl.com/5x4y4ukj
+%Heart;https://tinyurl.com/yttttaf7
+%Fluoroscopy%Angiocardiography%Arteriography%Phlebography;https://tinyurl.com/32sjyt5m
+%Coronary CT angiography%CT angiography;https://tinyurl.com/cj99ts4t
+%Radiotracers%Scintigraphy;https://tinyurl.com/y96daacm
+%Ultrasound%Echography%Doppler ultrasound;https://tinyurl.com/3hz9sare
+%Limbic lobe%Insular lobe;https://tinyurl.com/22zprza6
+%Neurotransmitters;https://tinyurl.com/3hbdybpa
+%Parkinson's disease;https://tinyurl.com/yc5jx65a
+%X-rays;https://tinyurl.com/mpnsvz66
+%Borderline personality disorder;https://tinyurl.com/4h2h33td
+%Narcissistic personality disorder;https://tinyurl.com/4z43pcbk
+%Post-traumatic stress disorder%PTSD;https://tinyurl.com/3345uxnu
+%Bipolar disorder%Bipolarity;https://tinyurl.com/58x4hpmz
+%Depression;https://tinyurl.com/3wjwxync
+%Eating disorder;https://tinyurl.com/3s4httjx
+%Autism;https://tinyurl.com/5f887jwn
+%Brain;https://tinyurl.com/44h3tx6y
+%Serotonin;https://tinyurl.com/44h3tx6y
+%Intelligence quotient;https://tinyurl.com/48a7asfz
+%Diaphragm;https://tinyurl.com/4a9v92b4
+%Nose;https://tinyurl.com/rdfrypnr
+%Pneumothorax;https://tinyurl.com/5b67cv85
+%Snoring;https://youtu.be/N-5w7PAgg0I?t=21
+%Sleep;https://tinyurl.com/ex3aserk
+%Bronchial fibroscopy;https://tinyurl.com/43sxn6ec
+%Nose%Nasal cavity;https://tinyurl.com/rdfrypnr
+%Enteric nervous system;https://youtu.be/nl8LMXdLjQc?t=9;https://youtu.be/Ivfee2XyiyI?t=24
+%Lymphatic;https://youtu.be/5dIyuKwgqvQ?t=10;https://tinyurl.com/4yhbkrpz
+%Chyme;https://youtu.be/TL_BIhLfao8
+%Blood glucose;https://tinyurl.com/4um32nwc
+%Digestion%Intestine;https://tinyurl.com/3un964cx
+%Cancer;https://tinyurl.com/3m6xxvw5
+%Pancreas;https://tinyurl.com/yefnztau
+%Chemotherapy;https://youtu.be/4Szi-xpifBw?t=6
+%Sepsis;https://www.youtube.com/watch?v=GFn4dVGanj4
+%Diverticulosis;https://www.youtube.com/watch?v=hvSHHHi8z4o
+%Crohn's disease;https://tinyurl.com/2p824fhy;https://tinyurl.com/2jruv8fs;https://youtu.be/S5p6SBJDJAw?t=8
+%Rectocolonic;https://tinyurl.com/3mkn7d8
+%Cirrhosis;https://tinyurl.com/ysez9cwd
+%Osmotic%Oncotic;https://fr.vikidia.org/wiki/Osmose#/media/Fichier:Osmose.jpg
+%Gallstone disease;https://youtu.be/5MudpkThD0Q?t=8
+%Diabetes;https://youtu.be/GUxg-MsE-y0?t=3;https://tinyurl.com/3uk3ec4t;https://tinyurl.com/4v5wwvpm
+%Blood glucose;https://tinyurl.com/fzfm5jhu
+%CT colonography%Colonoscopy;https://youtu.be/jcLJsdeUP1I?t=14
+%Gastrointestinal transit;https://www.youtube.com/watch?v=goLCbJjRdf8
+%Enema;https://youtu.be/7Olm8qQTel4?t=13
+%Digestive endoscopy;https://youtu.be/jkRIbCQJXVo?t=12
+%Gastroscopy;https://youtu.be/kZY4qbUFbFU?t=13
+%Colonoscopy;https://www.youtube.com/watch?v=D5oSsgnTN9E;https://youtu.be/_JFw-k7XQsw?t=33
+%Gastric tube%Duodenal tube;https://youtu.be/0vpIXWtFWlI?t=154
+%Manometry;https://youtu.be/bnu3dlhc9uo?t=13
+%Video capsule endoscopy;https://youtu.be/uBZ4SLzfrN4?t=28
+%Hemorrhoid;https://youtu.be/stnQsfM9Jlg?t=29
+%Bariatric surgery;https://youtu.be/5ccueyad0oA?t=6;https://youtu.be/gA0I9H9TwIU?t=38
+%Colostomy;https://fr.wikipedia.org/wiki/Colostomie#/media/Fichier:Colostomie.jpg
+%Bladder;https://tinyurl.com/4awskrvh;https://tinyurl.com/4nvwevzf
+%Renin;https://youtu.be/hJQOhdbMKRc?t=26
+%Urinary lithiasis%Nephrolithiasis;https://www.youtube.com/watch?v=HF4imZ7EFaw
+%Lithotripsy%ESWL;https://www.youtube.com/watch?v=Yk2orOSrYEs
+%Dialysis;https://tinyurl.com/7su6hte2
+%Cystoscopy;https://tinyurl.com/w9ax77kf
+%Bladder ultrasound;https://www.youtube.com/watch?v=ZN2KrWgNUP0
+%Seminal vesicles;https://tinyurl.com/2rnmymmy
+%Testicular lobules;https://tinyurl.com/yrncsw79
+%Testicular ectopia;https://tinyurl.com/2s49h683
+%Spermatozoon;https://www.youtube.com/watch?v=BNY-ydKAg6A
+%Fallopian tube;https://fr.wikipedia.org/wiki/Gabriel_Fallope
+%Vagina;https://tinyurl.com/kfersa76
+%Greater vestibular glands;https://tinyurl.com/ybfemhes
+%Mammary gland;https://tinyurl.com/mr34z24j
+%Menstruation;https://youtu.be/vLCi_b0sQx8?t=14
+%Orchitis;https://tinyurl.com/2s58cd2c
+%Testicular torsion;https://youtu.be/7mggkX0PZG0?t=74
+%Testicular migration;https://tinyurl.com/yjutrh3z
+%Adenocarcinoma;https://tinyurl.com/yhz2zmsk
+%Mammography;https://tinyurl.com/3mn3fdwt
+%Ultrasound;https://youtu.be/ss7VZGtR1So?t=6
+%Human papillomavirus%HPV;https://youtu.be/doHVGCLaG2M?t=3
+%Colposcopy;https://youtu.be/tzI9-YQeMuE?t=21
+%Speculum;https://www.brideamedical.com/fr/about-orchid-specula/
+%Endometrium%Cervix%Cervix of the uterus;https://tinyurl.com/ypzw4awa
+%Uterine curettage;https://youtu.be/rd6U4EloEsM?t=8
+%Cervical conization;https://tinyurl.com/4am695rj
+%Hysteroscopy;https://tinyurl.com/4ja528rj;https://tinyurl.com/kf69sxnk
+%Polyp;https://tinyurl.com/2zjzdr28
+%Lubrication;https://tinyurl.com/47kktvfe
+%Bartholin's glands;https://tinyurl.com/3kpemhs9
+%Ovarian follicle;https://tinyurl.com/2xj2ss3b
+%Procreation;https://youtu.be/njEhROvBMNc?t=10
+%Hysterectomy;https://youtu.be/8j_tR6G_YGY?t=69
+%Chronic cough;https://tinyurl.com/2tpfwnue
+%Prolapse;https://tinyurl.com/3whssash
+%Endometriosis;https://tinyurl.com/yftdhtfy
+%Screening%Human papillomavirus;https://youtu.be/doHVGCLaG2M?t=3
+%Cervical conization;https://tinyurl.com/4am695rj
+%Erection;https://tinyurl.com/ya44yw8z
+%Glomeruli;https://tinyurl.com/35ac6yfk
+%Atoms in the body;https://tinyurl.com/mvr79x7k
+%Ureteral catheterization%Ureteral stent%Double J stent;https://tinyurl.com/4ex4vtnz
+%Albumin;https://www.youtube.com/watch?v=JfIXQTYIh_U
+%Hematuria;https://tinyurl.com/mv3du3ya
+%Uremia%Azotemia;https://tinyurl.com/mry56r79
+%Nephroblastoma;https://tinyurl.com/4jc79knj
+%Polycystic kidney disease;https://tinyurl.com/8wxcd3um
+%Lipoid nephrosis;https://tinyurl.com/52w4afbk
+%Pyelonephritis;https://tinyurl.com/4nxn9ffm
+%Cystitis;https://youtu.be/b2Td568N_LU?t=14;https://www.youtube.com/watch?v=HxVZ8bijwlk
+%Vesicovaginal fistula;https://tinyurl.com/yzentkut
+%Hemodialysis;https://tinyurl.com/3a8mnpey
+%Anteverted uterus;https://tinyurl.com/yhwckkme
+%Uterine synechia;https://youtu.be/rpckU2QcUQ8?t=27
+%Human papillomavirus%HPV;https://tinyurl.com/uns8tzmz
+%Turner syndrome;https://youtu.be/t9NuceSS02Y?t=7
+%Contraceptive;https://tinyurl.com/5cehj7bn;https://tinyurl.com/4nvj49vp;https://tinyurl.com/bdzzmyz5;https://tinyurl.com/27hunfzw
+%Tubal sterilization;https://tinyurl.com/4fscyyt8
+%Curettage;https://tinyurl.com/25jfvutf
+%Chorionic villus sampling;https://www.youtube.com/watch?v=aQITPOmI9RM
+%Hysterometry;https://youtu.be/wTWxo9GIdz8?t=15
+%Ectopic pregnancy;https://www.youtube.com/watch?v=E6GbkV-pKs8
+%Multiple pregnancy;https://www.youtube.com/watch?v=CjtXTHp9AiI
+%Miscarriage;https://www.youtube.com/watch?v=Ixh8ww46NEM
+%Abortion;https://tinyurl.com/33328k9h;https://tinyurl.com/3ns4wyyy
+%Therapeutic abortion;https://www.youtube.com/watch?v=cIq8D5XKhvY
+%Rupture of the amnion;https://www.youtube.com/watch?v=HkOxVTxc3nc
+%Gestational hypertension%HTN;https://youtu.be/fnJH42fqpLM?t=6
+%Eclampsia%Toxemia of pregnancy;https://youtu.be/gmk7w8L0eBc?t=8
+%Fetal alcohol syndrome;https://youtu.be/hVeMRGMLqL4?t=8
+%Dystocia;https://www.youtube.com/watch?v=vo_oic-BFHA
+%Galactophoritis;https://www.youtube.com/watch?v=7tfylHH_wgg
+%Cesarean section;https://www.youtube.com/watch?v=xCE7Jr4rDiY
+%Eczema;https://www.youtube.com/watch?v=qDDW05O8_-0;https://tinyurl.com/273y44d2
+%Impetigo;https://youtu.be/I405UMb8hdo?t=26;https://tinyurl.com/mv554dnp
+%Exanthema;https://tinyurl.com/3vxk6ac6;https://tinyurl.com/43y69upt;https://tinyurl.com/bddmawe7
+%Actinic dermatitis%Photodermatitis%Heliodermatitis;https://youtu.be/AA7jyXP79tk?t=4
+%Wart;https://www.youtube.com/watch?v=ZvUsTJ5Tv10
+%Viral papilloma;https://www.youtube.com/watch?v=qGBq04mYxfQ
+%Freckles;https://tinyurl.com/3xuymjs6
+%Lentigo;https://tinyurl.com/bded49zn;https://youtu.be/R9mlSAVlpko?t=25
+%Melanoma;https://www.youtube.com/watch?v=t6gQ9tyLLAw
+%Dermatomycosis%Dermatophytosis;https://tinyurl.com/5x64j75t
+%Pityriasis versicolor;https://tinyurl.com/ms7jyahd
+%Vitiligo%Leukoderma;https://tinyurl.com/4h5hu3xk
+%Prurigo;https://tinyurl.com/uakkdcfx
+%Pemphigus;https://youtu.be/rZhyBGYTBbc?t=21
+%Erythema;https://tinyurl.com/4ur2h5vc

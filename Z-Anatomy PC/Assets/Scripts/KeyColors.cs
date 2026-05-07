@@ -53,17 +53,43 @@ public class KeyColors : MonoBehaviour
         Instance = this;
     }
 
+    public int FindPrimaryIndex(List<Material> primaries, Material primary) {
+        int index = -1;
+
+        //original search (made for human)
+        index = primaries.IndexOf(primary);
+        if (index != -1)
+            return index;
+
+        //fallback: search by name for the cat  (notice that everything should be searched by name for a better integration!)
+        index = primaries.FindIndex(delegate (Material m)
+        {
+            if (m != null)
+                return m.name.ToLower().Replace("(instance)", "").Trim() == primary.name.ToLower().Replace("(instance)", "").Trim();
+            else
+                return false;
+        });
+
+        return index;
+    }
+
+    Material FindSecondaryMaterial(List<Material> primaries, List<Material> secondaries, Material primary) {
+        int index = FindPrimaryIndex(primaries, primary);
+        if (index != -1)
+            return secondaries[index];
+
+        return null;
+    }
+
     public Material GetSecondaryColor(string tag, Material primary)
     {
-        int index = -1;
+        Material secondary = null;
         bool wasInSearch = false;
         switch (tag)
         {
             case "Skeleton":
                 wasInSearch = true;
-                index = skeletonPrimary.IndexOf(primary);
-                if (index != -1)
-                    return skeletonSecondary[index];
+                secondary = FindSecondaryMaterial(skeletonPrimary, skeletonSecondary, primary);
                 break;
 
             /*case "Joints":
@@ -71,23 +97,17 @@ public class KeyColors : MonoBehaviour
 
             case "Insertions":
                 wasInSearch = true;
-                index = insertionsPrimary.IndexOf(primary);
-                if (index != -1)
-                    return insertionsSecondary[index];
+                secondary = FindSecondaryMaterial(insertionsPrimary, insertionsSecondary, primary);
                 break;
 
             case "Lymph":
                 wasInSearch = true;
-                index = lymphsPrimary.IndexOf(primary);
-                if (index != -1)
-                    return lymphsSecondary[index];
+                secondary = FindSecondaryMaterial(lymphsPrimary, lymphsSecondary, primary);
                 break;
 
             case "Muscles":
                 wasInSearch = true;
-                index = musclesPrimary.IndexOf(primary);
-                if (index != -1)
-                    return musclesSecondary[index];
+                secondary = FindSecondaryMaterial(musclesPrimary, musclesSecondary, primary);
                 break;
 
            /* case "Vascular":
@@ -95,23 +115,17 @@ public class KeyColors : MonoBehaviour
 
             case "Nervous":
                 wasInSearch = true;
-                index = nervousPrimary.IndexOf(primary);
-                if (index != -1)
-                    return nervousSecondary[index];
+                secondary = FindSecondaryMaterial(nervousPrimary, nervousSecondary, primary);
                 break;
 
             case "Visceral":
                 wasInSearch = true;
-                index = visceralPrimary.IndexOf(primary);
-                if (index != -1)
-                    return visceralSecondary[index];
+                secondary = FindSecondaryMaterial(visceralPrimary, visceralSecondary, primary);
                 break;
 
             case "BodyParts":
                 wasInSearch = true;
-                index = regionsPrimary.IndexOf(primary);
-                if (index != -1)
-                    return regionsSecondary[index];
+                secondary = FindSecondaryMaterial(regionsPrimary, regionsSecondary, primary);
                 break;
 
             /* case "Fascia":
@@ -124,9 +138,9 @@ public class KeyColors : MonoBehaviour
                 break;
         }
 
-        if(wasInSearch)
-            Debug.Log("Material not found: " + tag + " " + primary);
-        return null;
+        if(wasInSearch && secondary == null)
+            Debug.Log("Material not found: " + tag + " :: " + primary);
+        return secondary;
     }
 
     private void SetLayerMaterial(List<TangibleBodyPart> bodyParts, bool state, SwitchButton CrossSectionsToggle)

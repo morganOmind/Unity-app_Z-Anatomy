@@ -22,6 +22,7 @@ public class SearchEngine : MonoBehaviour
     private IEnumerator valueChangeCoroutine;
     private IEnumerator startsWithCoroutine;
     private IEnumerator containsCoroutine;
+    private IEnumerator containsWithError;
 
     private BodyPartVisibility[] allParts;
 
@@ -69,15 +70,21 @@ public class SearchEngine : MonoBehaviour
                     StopCoroutine(startsWithCoroutine);
                 if (containsCoroutine != null)
                     StopCoroutine(containsCoroutine);
+                if(containsWithError != null) {
+                    StopCoroutine(containsWithError);
+                }
 
                 Lexicon.Instance.ClearAllElements();
 
-                startsWithCoroutine = StartWithChild(mainInputField.text.ToLower());
-                containsCoroutine = ContainsChild(mainInputField.text.ToLower());
+                string input = mainInputField.text.ToLower().RemoveAccents();
+                startsWithCoroutine = StartWithChild(input);
+                containsCoroutine = ContainsChild(input);
+                containsWithError = ContainsChildWithError(input);
                 search = 0;
 
                 yield return StartCoroutine(startsWithCoroutine);
                 yield return StartCoroutine(containsCoroutine);
+                yield return StartCoroutine(containsWithError);
 
                 emptyStateScreen.SetActive(treeViewCanvas.elements.Count == 0);
 
@@ -103,30 +110,22 @@ public class SearchEngine : MonoBehaviour
         int i = 0;
         foreach (var item in allParts)
         {
-            string childN = item.name.ToLower().RemoveAccents();
+            if (!gameObjectFound.Contains(item.gameObject)) {
+                string childN = item.name.ToLower().RemoveAccents();
 
-            if (childN.StartsWith(input.RemoveAccents()))
-            {
-                if (!gameObjectFound.Contains(item.gameObject))
-                {
+                if (childN.StartsWith(input)) {
                     gameObjectFound.Add(item.gameObject);
                     treeViewCanvas.AddElement(item.gameObject);
                 }
-            }
-            else if(item.nameScript.HasSynonims())
-            {
-                foreach (var synonym in item.nameScript.allSynonyms[Settings.languageIndex])
-                {
-                    if (synonym.ToLower().RemoveAccents().StartsWith(input.RemoveAccents()))
-                    {
-                        if (!gameObjectFound.Contains(item.gameObject))
-                        {
+                else if (item.nameScript.HasSynonims()) {
+                    foreach (var synonym in item.nameScript.allSynonyms[Settings.languageIndex]) {
+                        if (synonym.ToLower().RemoveAccents().StartsWith(input)) {
                             gameObjectFound.Add(item.gameObject);
                             treeViewCanvas.AddElement(item.gameObject, synonym);
                         }
                     }
                 }
-            }
+            }            
             i++;
             if (i % 100 == 0)
                 yield return null;
@@ -139,24 +138,16 @@ public class SearchEngine : MonoBehaviour
         int i = 0;
         foreach (var item in allParts)
         {
-            string childN = item.name.ToLower().RemoveAccents();
+            if (!gameObjectFound.Contains(item.gameObject)) {
+                string childN = item.name.ToLower().RemoveAccents();
 
-            if (childN.Contains(input.RemoveAccents()))
-            {
-                if (!gameObjectFound.Contains(item.gameObject))
-                {
+                if (childN.Contains(input)) {
                     gameObjectFound.Add(item.gameObject);
                     treeViewCanvas.AddElement(item.gameObject);
                 }
-            }
-            else if (item.nameScript.HasSynonims())
-            {
-                foreach (var synonym in item.nameScript.allSynonyms[Settings.languageIndex])
-                {
-                    if (synonym.ToLower().RemoveAccents().Contains(input.RemoveAccents()))
-                    {
-                        if (!gameObjectFound.Contains(item.gameObject))
-                        {
+                else if (item.nameScript.HasSynonims()) {
+                    foreach (var synonym in item.nameScript.allSynonyms[Settings.languageIndex]) {
+                        if (synonym.ToLower().RemoveAccents().Contains(input)) {
                             gameObjectFound.Add(item.gameObject);
                             treeViewCanvas.AddElement(item.gameObject, synonym);
                         }
@@ -171,7 +162,47 @@ public class SearchEngine : MonoBehaviour
 
     }
 
-    IEnumerator RecursiveStartWithChild(Transform parent, string input)
+    IEnumerator ContainsChildWithError(string input) {
+        int i = 0;
+        int maxDistance = 2;
+        foreach (var item in allParts) {
+            if (!gameObjectFound.Contains(item.gameObject)) {
+                string childN = item.name.ToLower().RemoveAccents();
+                bool found = false;
+
+                string[] tokens = childN.Split(new char[] { ' ', '’', '\'' }, System.StringSplitOptions.RemoveEmptyEntries);
+                foreach (string token in tokens) {
+                    if (StaticMethods.LevenshteinDistance(token, input) <= maxDistance) {
+                        gameObjectFound.Add(item.gameObject);
+                        treeViewCanvas.AddElement(item.gameObject);
+                        found = true;
+                    }
+                    if (found)
+                        break;
+                }
+                if (!found && item.nameScript.HasSynonims()) {
+                    foreach (var synonym in item.nameScript.allSynonyms[Settings.languageIndex]) {
+                        tokens = synonym.ToLower().RemoveAccents().Split(new char[] { ' ', '’', '\'' }, System.StringSplitOptions.RemoveEmptyEntries);
+                        foreach(string token in tokens) {
+                            if (StaticMethods.LevenshteinDistance(token, input) <= maxDistance) {
+                                gameObjectFound.Add(item.gameObject);
+                                treeViewCanvas.AddElement(item.gameObject, synonym);
+                                found = true;
+                            }
+                            if (found)
+                                break;
+                        }
+                    }
+                }
+            }
+            i++;
+            if (i % 50 == 0)
+                yield return null;
+        }
+        yield return null;
+    }
+
+    /*IEnumerator RecursiveStartWithChild(Transform parent, string input)
     {
         search += parent.childCount;
 
@@ -224,7 +255,7 @@ public class SearchEngine : MonoBehaviour
 
         search -= parent.childCount;
 
-    }
+    }*/
 
     public void AbortSearch()
     {
@@ -249,4 +280,6 @@ public class SearchEngine : MonoBehaviour
         emptyStateScreen.SetActive(false);
         loadingAnim.SetActive(false);
     }
+
+    
 }

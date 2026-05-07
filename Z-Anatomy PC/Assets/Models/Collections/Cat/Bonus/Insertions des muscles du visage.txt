@@ -1,0 +1,13 @@
+Muscle orbiculaire de l'œil.o1l
+Muscle élévateur nasolabial.o1l
+Muscle frontal.ol
+Muscle malaire.ol
+Muscle releveur de la lèvre supérieure.ol
+Muscle malaire.o1l
+Muscle élévateur nasolabial.ol
+Muscle orbiculaire de l'œil.ol
+Muscle buccinateur.ol
+Muscle buccinateur.o1l
+Muscle buccinateur.o3l
+Muscle incisif supérieur.ol
+Muscle buccinateur.o2l

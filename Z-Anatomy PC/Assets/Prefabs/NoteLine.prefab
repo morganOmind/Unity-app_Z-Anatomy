@@ -152,11 +152,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 0}
-  lineWidth: 0.008
+  lineWidth: 0.0015
   autoScaleWidth: 1
   dottedLine: 1
   lineLength: 0.35
   lineHeigth: 0.4
   lineRepetition: 45
   lineAnimSpeed: 0
-  pencilMode: 0
+  pencilPlacement: 0

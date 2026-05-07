@@ -77,6 +77,8 @@ public class CameraController : MonoBehaviour
 
     private Transform trans;
 
+    public SetScreenSize setScreenSize;
+
     private void Awake()
     {
         instance = this;
@@ -303,6 +305,7 @@ public class CameraController : MonoBehaviour
         distance = defaulDistance;
         cam.orthographicSize = distance;
         UpdatePosition();
+        setScreenSize.SetCanvasSize();
     }
 
     /// <summary>

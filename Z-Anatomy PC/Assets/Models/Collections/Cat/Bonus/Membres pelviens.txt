@@ -1,0 +1,755 @@
+Fémur.l
+Os sésamoïde du muscle poplité.l
+Os sésamoïdes des muscles gastrocnémiens.l
+Patella.l
+Fibula.l
+Tibia.l
+Phalange distale du cinquième orteil.l
+Phalange distale du deuxième orteil.l
+Phalange distale du quatrième orteil.l
+Phalange distale du troisième orteil.l
+Phalange moyenne du cinquième orteil.l
+Phalange moyenne du deuxième orteil.l
+Phalange moyenne du quatrième orteil.l
+Phalange moyenne du troisième orteil.l
+Phalange proximale du cinquième orteil.l
+Phalange proximale du deuxième orteil.l
+Phalange proximale du quatrième orteil.l
+Phalange proximale du troisième orteil.l
+Calcanéus.l
+Os central du tarse [Os naviculaire].l
+Os tarsien I [Os cunéiforme médial].l
+Os tarsien II [Os cunéiforme intermédiaire].l
+Os tarsien IV [Os cuboïde].l
+Talus.l
+Cinquième métatarsien.l
+Deuxième métatarsien.l
+Quatrième métatarsien.l
+Troisième métatarsien.l
+Premier métatarsien.l
+Os coxal
+Articulations carpométacarpiennes
+Articulations du membre pelvien
+Capsule articulaire de la hanche.l
+Ligament iliofémoral.l
+Ligament ischiofémoral.l
+Articulation du genou
+Articulation fémorotibiale
+Ménisque latéral.l
+Ligament méniscofémoral.l
+Ménisque médial.l
+Ligament transverse du genou.l
+Ligament méniscotibial.l
+Ligament croisé crânial.l
+Ligament croisé caudal.l
+Ligament collatéral latéral.l
+Ligament collatéral médial.l
+Articulation fémoropatellaire
+Fibrocartilages parapatellaires.l
+Ligament patellaire.l
+Ligament fémoropatellaire médial.l
+Articulation tibiofibulaire proximale
+Ligament crânial de la tête fibulaire.l
+Ligament caudal de la tête fibulaire.l
+Membrane interosseuse de la jambe.l
+Articulation tibiofibulaire distale
+Os sésamoïde distal du cinquième doigt du pied.l
+Os sésamoïde distal du deuxième doigt du pied.l
+Os sésamoïde distal du quatrième doigt du pied.l
+Os sésamoïde distal du troisième doigt du pied.l
+Foramen du processus plantaire
+Os du membre pelvien
+Os du tarse
+Capsule articulaire tibiofibulaire distale.l
+Os sésamoïdes proximaux du deuxième orteil.l
+Os sésamoïdes proximaux du quatrième orteil.l
+Os sésamoïdes du pied
+Os sésamoïdes proximaux du cinquième orteil.l
+Os sésamoïdes proximaux du troisième orteil.l
+Membrane obturatrice.l
+Zone orbiculaire.l
+Bourrelet acétabulaire.l
+Ligament acétabulaire transverse.l
+306.998
+306.1001
+306.1002
+306.1011
+306.1086
+306.1087
+306.1089
+306.1090
+Incisure du processus plantaire
+Ceinture pelvienne
+Squelette de la cuisse
+Squelette de la jambe
+Squelette du pied
+Canal tarsien
+Pelvis
+Muscle oblique externe de l'abdomen.ol
+Muscle moyen fessier.ol
+Muscle fessier accessoire.ol
+Partie crâniale du sartorius (ca).ol
+Partie caudale du sartorius (ca).ol
+Muscles tenseur du fascia lata et fessier superficiel.ol
+Muscle fessier profond.ol
+Muscle iliaque.ol
+Muscle articulaire de la hanche (Car, eq).ol
+Muscle droit fémoral.ol
+Muscles jumeaux.ol
+Muscle biceps fémoral.ol
+Muscle carré fémoral.ol
+Muscle semitendineux.ol
+Muscles érecteurs du rachis.ol
+Muscle obturateur interne.ol
+Muscle coccygien.ol
+Muscle élévateur de l'anus.ol
+Muscle petit psoas.el
+Muscle ischiocaverneux.ol
+Muscle obturateur externe.ol
+Muscle grand adducteur.ol
+Muscle long adducteur.ol
+Muscle gracile.ol
+Muscle pectiné.ol
+Muscle droit de l'abdomen.ol
+Muscle vaste intermédiaire.ol
+Muscle vaste latéral.ol
+Muscle fessier profond.el
+Muscle fessier superficiel.el
+Muscle fessier accessoire.el
+Muscles moyen fessier et piriforme.el
+Muscle grand adducteur.el
+Muscle articulaire du genou (Car, bo).ol
+Muscle fléchisseur superficiel des orteils.ol
+Chef médial du muscle gastrocnémien.ol
+Muscle pectiné.el
+Muscle semimembraneux.el
+Chef latéral du muscle gastrocnémien.ol
+Muscle vaste médial.ol
+Muscle iliopsoas.el
+Muscle carré fémoral.el
+Muscle long adducteur.el
+Muscle long extenseur des orteils.ol
+Muscle poplité.ol
+Muscle articulaire de la hanche (Car, eq).el
+Muscle droit fémoral.el
+Muscles vaste médial et vaste intermédiaire.el
+Muscle vaste latéral.el
+Fascia lata et muscle sartorius.el
+Muscle biceps fémoral.el
+Ligament patellaire.ol
+Muscle tibial crânial.ol
+Ligament patellaire.el
+Muscle biceps fémoral.e1l
+Muscle long fibulaire.ol
+Muscle long fibulaire.o1l
+Muscle extenseur latéral des orteils.ol
+Muscle fléchisseur latéral des orteils.ol
+Muscle court fibulaire.ol
+Muscle poplité.el
+Muscle fléchisseur latéral des orteils.o1l
+Muscle fléchisseur médial des orteils.ol
+Muscle tibial caudal.ol
+Muscle fléchisseur superficiel des orteils.e4l
+Muscle gastrocnémien.el
+Muscle abducteur du cinquième orteil.ol
+Muscle carré plantaire.ol
+Muscle court extenseur des orteils.ol
+Muscle court fibulaire.el
+Muscle adducteur du cinquième orteil.e2l
+Muscle adducteur du cinquième orteil.e1l
+Muscles interosseux du pied.e5l
+Muscles interosseux du pied.e6l
+Muscles interosseux du pied.e2l
+Muscles interosseux du pied.e4l
+Muscles interosseux du pied.e3l
+Fléchisseurs profonds des orteils.e3l
+Fléchisseurs profonds des orteils.e2l
+Fléchisseurs profonds des orteils.e1l
+Fléchisseurs profonds des orteils.el
+Muscle fléchisseur superficiel des orteils.el
+Muscle fléchisseur superficiel des orteils.e1l
+Muscle fléchisseur superficiel des orteils.e2l
+Muscle fléchisseur superficiel des orteils.e3l
+M. long extenseur des orteils et long extenseur du doigt I.el
+Muscle long extenseur des orteils.e2l
+Muscle long extenseur des orteils.e1l
+Muscle long extenseur des orteils.el
+Os des doigts du pied
+Os métatarsiens I-V
+Muscle semimembraneux.ol
+Fascias de la hanche et de la cuisse
+Fascias de la jambe et du pied
+Fascias du membre pelvien
+Fascia crural.l
+Fascia des orteils
+Fascia dorsal du pied
+Fascia glutéal
+Fascia lata.l
+Fascia plantaire
+Espaces et structures associées
+Couche profonde du fascia de la jambe
+Lame profonde du fascia lata
+Couche superficielle du fascia de la jambe
+Lame superficielle du fascia lata
+Lacune musculaire
+Lacune vasculaire
+Lamina propria
+Ligament métatarsien superficiel transverse
+Fascia iliaque.l
+Rétinaculum des extenseurs de la jambe.l
+Rétinaculum des extenseurs du métatarse
+Rétinaculum des extenseurs du tarse
+Rétinaculum des muscles fibulaires
+Septum fémoral
+Triangle fémoral
+Canal fémoral
+Anneau fémoral
+Muscles du membre pelvien
+Muscles de la hanche et de la cuisse
+Muscle glutéofémoral.l
+Muscle piriforme.l
+Muscle obturateur interne.l
+Muscles jumeaux
+Muscle jumeau supérieur.l
+Muscle jumeau inférieur.l
+Muscle carré fémoral.l
+Muscle sartorius.l
+Muscle articulaire de la hanche (Car, eq)
+Muscle quadriceps fémoral
+Muscle articulaire du genou (Car, bo).l
+Muscle pectiné.l
+Muscle adducteur
+Muscle long adducteur.l
+Muscle court adducteur
+Muscle grand adducteur.l
+Muscle obturateur externe.l
+Partie intrapelvienne
+Muscles de la jambe
+Muscle abducteur caudal de la jambe (Car).l
+Muscle semitendineux.l
+Muscle semimembraneux.l
+Muscle long extenseur du premier orteil (Car, su, ov).l
+Muscle extenseur latéral des orteils.l
+Muscle triceps sural
+Muscle gastrocnémien
+Tendon calcanéen commun.l
+Fléchisseurs profonds des orteils.l
+Muscle fléchisseur latéral des orteils.l
+Muscle fléchisseur médial des orteils.l
+Muscle tibial caudal.l
+Tendon commun.l
+Ligament accessoire
+Muscles interfléchisseurs du pied
+Muscle court extenseur des orteils.l
+Muscle court fléchisseur du premier orteil.l
+Muscle adducteur du deuxième orteil.l
+Muscle abducteur du cinquième orteil.l
+Muscle adducteur du cinquième orteil.l
+Muscle court fléchisseur des orteils.l
+Muscle carré plantaire
+Muscles lombricaux du pied
+Muscles interosseux du pied.l
+Muscles du pied
+Compartiment antérieur de la cuisse
+Compartiment postérieur de la cuisse
+Muscles fessiers superficiels
+Muscles glutéaux profonds
+Compartiment antérieur de la jambe
+Compartiment latéral de la jambe
+Compartiment postérieur de la jambe
+Partie superficielle du compartiment postérieur de la jambe
+Partie profonde du compartiment postérieur de la jambe
+Tendon du quadriceps fémoral.l
+[Ligament annulaire plantaire]
+Gaines fibreuses des orteils
+Partie annulaire de la gaine fibreuse du pied
+Scutum proximal du pied
+Scutum moyen du pied
+Scutum distal du pied
+Gaines des tendons du pied
+Gaine synoviale du tendon des orteils
+Bourses et gaines synoviales du membre pelvien
+Bourse trochantérique sous-cutanée
+Bourse sous-cutanée iliaque [coxale]
+Bourse sous-cutanée ischiatique
+Bourse trochantérique du muscle fessier superficiel
+Bourses trochantériques du muscle fessier moyen
+Bourse trochantérique du muscle fessier profond
+Bourse ischiatique du muscle obturateur interne (Car, eq)
+Bourse sous-tendineuse du muscle obturateur interne (Car, eq)
+Bourse trochantérique du muscle biceps fémoral
+Bourse ischiatique du muscle semitendineux
+Bourse du muscle droit fémoral
+Bourse subtendineuse du muscle iliaque
+Bourse prépatellaire sous-cutanée
+(Bourse subfasciale prépatellaire)
+Bourse prépatellaire sous-tendineuse
+Bourse infrapatellaire distale
+Bourse sous-cutanée de la tubérosité tibiale
+Bourse sous-tendineuse du muscle semitendineux
+Bourse sous-tendineuse du biceps fémoral distal
+Récessus subpoplité
+Récessus sous-extenseur
+Bourse sous-cutanée de la malléole latérale
+Bourse sous-cutanée malléolaire
+Gaines tendineuses du muscles long extenseur des doigts
+Gaine tendineuse du muscle extenseur lat. des orteils
+Gaine tendineuse du muscle tibial caudal (ca)
+Gaine tendineuse du muscle fléchisseur médial des doigts
+Gaine tendineuse du muscle fléchisseur lat. des doigts.l
+Gaine tendineuse du muscle long fibulaire
+Bourse subtendineuse du muscle court fibulaire (Car)
+Bourse subtendineuse du muscle tibial crânial
+Bourse sous-cutanée calcanéenne
+Bourse calcanéenne subtend. du m. fléchisseur sup. des doigts
+Bourse tendineuse calcanéenne
+Gaine tendineuse du muscle long fibulaire plantaire
+Gaines synoviales tendineuses des orteils
+Bourses subtendineuses des muscles interosseux du pied
+Bourses podotrochléaires du pied
+Gaines tendineuses du membre pelvien
+Waw.024
+Waw.018
+Muscle droit fémoral.l
+Muscle vaste latéral.l
+Muscle biceps fémoral.l
+Muscle vaste intermédiaire.l
+Muscle vaste médial.l
+Chef latéral du muscle gastrocnémien.l
+Chef médial du muscle gastrocnémien.l
+Muscle soléaire.l
+Muscle tibial crânial.l
+Muscle court fibulaire.l
+Muscle long fibulaire.l
+Muscle grand psoas.l
+Muscle petit psoas.l
+Muscle gracile.l
+Muscle fessier superficiel.l
+Muscle moyen fessier.l
+Muscle fessier accessoire.l
+Muscle tenseur du fascia lata.l
+Muscle fessier profond.l
+Muscle long extenseur des orteils.l
+Waw.002
+Partie caudale du sartorius (ca).el
+Muscle gracile.el
+Muscle semitendineux.el
+Griffe du cinquième orteil.l
+Griffe du quatrième orteil.l
+Griffe du troisième orteil.l
+Griffe du deuxième orteil.l
+Os sésamoïde du muscle poplité.r
+Os sésamoïdes des muscles gastrocnémiens.r
+Patella.r
+Muscle vaste intermédiaire.or
+Muscle vaste latéral.or
+Muscle fessier profond.er
+Muscle fessier superficiel.er
+Muscle fessier accessoire.er
+Muscles moyen fessier et piriforme.er
+Muscle piriforme.er
+Muscle grand adducteur.er
+Muscle articulaire du genou (Car, bo).or
+Muscle fléchisseur superficiel des orteils.or
+Chef médial du muscle gastrocnémien.or
+Muscle pectiné.er
+Muscle semimembraneux.er
+Chef latéral du muscle gastrocnémien.or
+Muscle vaste médial.or
+Muscle iliopsoas.er
+Muscle carré fémoral.er
+Muscle long adducteur.er
+Muscle long extenseur des orteils.or
+Muscle poplité.or
+Muscle articulaire de la hanche (Car, eq).er
+Muscle droit fémoral.er
+Muscles vaste médial et vaste intermédiaire.er
+Muscle vaste latéral.er
+Fascia lata et muscle sartorius.er
+Muscle biceps fémoral.er
+Ligament patellaire.or
+Muscle tibial crânial.or
+Ligament patellaire.er
+Muscle biceps fémoral.e1r
+Muscle long fibulaire.or
+Muscle long fibulaire.o1r
+Muscle extenseur latéral des orteils.or
+Muscle fléchisseur latéral des orteils.or
+Muscle court fibulaire.or
+Muscle poplité.er
+Muscle fléchisseur latéral des orteils.o1r
+Muscle fléchisseur médial des orteils.or
+Muscle tibial caudal.or
+Muscle fléchisseur superficiel des orteils.e4r
+Muscle gastrocnémien.er
+Muscle abducteur du cinquième orteil.or
+Muscle carré plantaire.or
+Muscle court extenseur des orteils.or
+Muscle court fibulaire.er
+Muscle adducteur du cinquième orteil.er
+Muscle adducteur du cinquième orteil.e1r
+Fléchisseurs profonds des orteils.e3r
+Fléchisseurs profonds des orteils.e2r
+Fléchisseurs profonds des orteils.e1r
+Fléchisseurs profonds des orteils.er
+Muscle fléchisseur superficiel des orteils.er
+Muscle fléchisseur superficiel des orteils.e1r
+Muscle fléchisseur superficiel des orteils.e2r
+Muscle fléchisseur superficiel des orteils.e3r
+M. long extenseur des orteils et long extenseur du doigt I.er
+Muscle long extenseur des orteils.e2r
+Muscle long extenseur des orteils.e1r
+Muscle long extenseur des orteils.er
+Partie caudale du sartorius (ca).er
+Muscle gracile.er
+Muscle semitendineux.er
+Os sésamoïde distal du cinquième doigt du pied.r
+Os sésamoïde distal du deuxième doigt du pied.r
+Os sésamoïde distal du quatrième doigt du pied.r
+Os sésamoïde distal du troisième doigt du pied.r
+Calcanéus.r
+Os central du tarse [Os naviculaire].r
+Os tarsien I [Os cunéiforme médial].r
+Os tarsien II [Os cunéiforme intermédiaire].r
+Os tarsien IV [Os cuboïde].r
+Talus.r
+Cinquième métatarsien.r
+Deuxième métatarsien.r
+Quatrième métatarsien.r
+Troisième métatarsien.r
+Premier métatarsien.r
+Phalange distale du cinquième orteil.r
+Phalange distale du deuxième orteil.r
+Phalange distale du quatrième orteil.r
+Phalange distale du troisième orteil.r
+Phalange moyenne du deuxième orteil.r
+Phalange moyenne du troisième orteil.r
+Phalange moyenne du quatrième orteil.r
+Phalange proximale du cinquième orteil.r
+Phalange proximale du deuxième orteil.r
+Phalange proximale du quatrième orteil.r
+Phalange proximale du troisième orteil.r
+Griffe du cinquième orteil.r
+Griffe du quatrième orteil.r
+Griffe du troisième orteil.r
+Griffe du deuxième orteil.r
+Fibula.r
+Tibia.r
+Fémur.r
+Os sésamoïdes proximaux du cinquième orteil.r
+Muscles interosseux du pied.e5r
+Muscles interosseux du pied.e6r
+Muscles interosseux du pied.e2r
+Muscles interosseux du pied.e4r
+Muscles interosseux du pied.e3r
+Os sésamoïdes proximaux du deuxième orteil.r
+Os sésamoïdes proximaux du quatrième orteil.r
+Os sésamoïdes proximaux du troisième orteil.r
+Muscle fléchisseur superficiel des orteils.l
+Waw
+Waw.003
+Waw.005
+Waw.019
+Waw.027
+Ligament acétabulaire transverse.r
+Bourrelet acétabulaire.r
+Capsule articulaire de la hanche.r
+Ligament iliofémoral.r
+Ligament ischiofémoral.r
+Capsule articulaire du genou.r
+Ménisque latéral.r
+Ménisque médial.r
+Ligament transverse du genou.r
+Ligament méniscotibial.r
+Ligament croisé crânial.r
+Ligament croisé caudal.r
+Ligament collatéral latéral.r
+Ligament collatéral médial.r
+Fibrocartilages parapatellaires.r
+Ligament patellaire.r
+Ligament fémoropatellaire médial.r
+Ligament fémoropatellaire latéral.r
+Ligament crânial de la tête fibulaire.r
+Ligament caudal de la tête fibulaire.r
+Membrane interosseuse de la jambe.r
+Capsule articulaire tibiofibulaire distale.r
+Espaces interosseux métatarsiens.i
+Espaces interosseux métatarsiens.s
+Capsule articulaire du genou.l
+Corps adipeux infrapatellaire.r
+Ligament méniscofémoral.r
+Os tarsien III [Os cunéiforme latéral].l
+Os tarsien III [Os cunéiforme latéral].r
+Fascia crural.r
+Fascia lata.r
+Muscle abducteur caudal de la jambe (Car).r
+Muscle vaste latéral.r
+Muscle biceps fémoral.r
+Chef latéral du muscle gastrocnémien.r
+Muscle fessier superficiel.r
+Muscle tenseur du fascia lata.r
+Muscle tibial caudal.r
+Chef médial du muscle gastrocnémien.r
+Muscle soléaire.r
+Muscle tibial crânial.r
+Muscle long fibulaire.r
+Muscle long extenseur des orteils.r
+Muscle glutéofémoral.r
+Muscle semimembraneux.r
+Muscle long extenseur du premier orteil (Car, su, ov).r
+Muscle extenseur latéral des orteils.r
+Tendon calcanéen commun.r
+Muscle court extenseur des orteils.r
+Muscle abducteur du cinquième orteil.r
+Muscle droit fémoral.r
+Muscle vaste intermédiaire.r
+Muscle court fibulaire.r
+Muscle moyen fessier.r
+Muscle piriforme.r
+Muscle obturateur interne.r
+Muscle jumeau supérieur.r
+Muscle jumeau inférieur.r
+Muscle carré fémoral.r
+Muscle articulaire du genou (Car, bo).r
+Muscle grand adducteur.r
+Muscle obturateur externe.r
+Muscle fléchisseur médial des orteils.r
+Muscle vaste médial.r
+Muscle fessier accessoire.r
+Muscle fessier profond.r
+Muscle fléchisseur superficiel des orteils.r
+Muscle adducteur du cinquième orteil.r
+Muscle court fléchisseur des orteils.r
+Muscles interosseux du pied.r
+Muscle long adducteur.r
+Muscle adducteur du deuxième orteil.r
+Muscle grand psoas.r
+Waw.006
+Muscle pectiné.r
+Rétinaculum des extenseurs de la jambe.r
+Tendon du quadriceps fémoral.r
+Muscle sartorius.r
+Waw.004
+Waw.007
+Waw.023
+Fléchisseurs profonds des orteils.r
+Tendon commun.r
+Waw.020
+Muscle court fléchisseur du premier orteil.r
+Muscle semitendineux.r
+Muscle gracile.r
+Waw.021
+Muscle fléchisseur latéral des orteils.r
+Waw.001
+Waw.022
+Muscle long extenseur du premier orteil (Car, su, ov).ol
+Muscle long extenseur du premier orteil (Car, su, ov).or
+Muscle poplité.l
+Muscle poplité.r
+Gaine tendineuse du muscle fléchisseur lat. des doigts.r
+Phalange moyenne du cinquième orteil.r
+Muscles interosseux du pied.el
+Muscles interosseux du pied.e1l
+Muscles interosseux du pied.er
+Muscles interosseux du pied.e1r
+Muscle semimembraneux.e1l
+Muscle semimembraneux.e1r
+Muscle soléaire.ol
+Muscle soléaire.or
+Muscle tibial caudal.er
+Muscle tibial caudal.el
+Muscle tibial crânial.el
+Muscle tibial crânial.er
+Muscle abducteur du cinquième orteil.el
+Muscle abducteur du cinquième orteil.er
+Muscle long fibulaire.e2l
+Muscle long fibulaire.e1l
+Muscle long fibulaire.el
+Muscle long fibulaire.e2r
+Muscle long fibulaire.e1r
+Muscle long fibulaire.er
+Région trochantérique.l
+Région métatarsophalangienne.l
+Région de la phalange moyenne (pied).l
+Région trochantérique.r
+Région du tendon calcanéen commun.r
+Région de la phalange moyenne (pied).r
+Région des doigts de pied.l
+Région des doigts de pied.r
+Région glutéale.l
+Région de la tuberosité coxale.l
+Région cluniale.l
+Région de la tubérosité ischiatique.l
+Région glutéale.r
+Région de la tuberosité coxale.r
+Région cluniale.r
+Région de la tubérosité ischiatique.r
+Régions de l'articulation de la hanche.l
+Région fémorale.l
+Région crâniale du genou.l
+Région patellaire.l
+Région latérale du genou.l
+Région médiale du genou.l
+Région poplitée.l
+Région de la jambe.l
+Région du tarse.l
+Région calcanéenne.l
+Région métatarsienne.l
+Région de la phalange proximale (pied).l
+Région interphalangienne proximale (pied).l
+Régions de l'articulation de la hanche.r
+Région fémorale.r
+Région crâniale du genou.r
+Région patellaire.r
+Région latérale du genou.r
+Région médiale du genou.r
+Région poplitée.r
+Région de la jambe.r
+Région du tarse.r
+Région calcanéenne.r
+Région métatarsienne.r
+Région métatarsophalangienne.r
+Région de la phalange proximale (pied).r
+Région interphalangienne proximale (pied).r
+Muscle iliopsoas
+Muscle iliaque.l
+Muscle iliaque.r
+Manica flexoria du pied.r
+Manica flexoria du pied.l
+Canal obturateur
+Articulation sacro-iliaque
+Articulation coxofémorale
+Ligaments croisés du genou
+Ligament poplité oblique
+Articulations de la ceinture pelvienne
+Articulations du membre pelvien libre
+Symphyse pelvienne
+Articulations du pied
+Ligaments tarsiens plantaires
+Ligaments tarsiens interosseux
+Ligaments tarsiens dorsaux
+Ligaments interphalangiens plantaires
+Ligament collatéral médial du tarse
+Ligament collatéral latéral du tarse
+Ligament collatéral latéral court du tarse.r
+Ligament collatéral latéral court du tarse.l
+Articulations tarsométatarsiennes
+Articulations métatarsophalangiennes
+Articulations interphalangiennes du pied
+Articulations intermétatarsiennes
+Articulation tarsocrurale
+Articulation talocrurale
+Articulation talocalcanéocentrale [talocalcaneonaviculaire]
+Articulation talocalcanéenne
+Articulation centrodistale [cunéonaviculaire]
+Articulation calcanéoquartale [calcanéocuboïdienne]
+Ligament ischiatique arqué
+Lame fibrocartilagineuse intercoxale
+Ligaments sacro-iliaques interosseux.l
+Ligament tibiofibulaire crânial.l
+Ligament tibiofibulaire caudal.l
+Ligament tibiofibulaire crânial.r
+Ligament tibiofibulaire caudal.r
+Ligament de la tête du fémur.l
+Ligament de la tête du fémur.r
+Ligament talofibulaire plantaire.l
+Ligament talofibulaire plantaire.r
+Ligaments sacro-iliaques dorsaux.l
+Ligament talocalcanéen plantaire.l
+Ligament talocalcanéen plantaire.r
+Ligament talocalcanéen latéral.l
+Ligament talocalcanéen latéral.r
+Ligaments tarsométatarsiens dorsaux.r
+Ligaments tarsométatarsiens dorsaux.l
+Ligaments tarsométatarsiens [cunéometatarsiens] interosseux.r
+Ligaments tarsométatarsiens [cunéometatarsiens] interosseux.l
+Partie tibiotalaire du lgt. collatéral médial court du tarse.l
+Partie tibiocalcanéenne du lgt. collat. médial court du tarse.l
+Partie tibiotalaire du lgt. collatéral médial court du tarse.r
+Partie tibiocalcanéenne du lgt. collat. médial court du tarse.r
+Ligaments sacro-iliaques ventraux.l
+Corps adipeux infrapatellaire.l
+Ligament fémoropatellaire latéral.l
+Ligament plantaire long.r
+Ligament plantaire long.l
+Capsule articulaire tibiofibulaire proximale.l
+Capsule articulaire tibiofibulaire proximale.r
+Partie talofibulaire du lgt. tarsien collatéral lat. court.l
+Partie calcanéofibulaire du lgt. tarsien collat. lat. court.l
+Partie calcanéométat. du lgt. tarsien collat. lat. court.l
+Partie talofibulaire du lgt. tarsien collatéral lat. court.r
+Partie calcanéofibulaire du lgt. tarsien collat. lat. court.r
+Partie calcanéométat. du lgt. tarsien collat. lat. court.r
+Ligaments collatéraux sésamoïdiens du pied.l
+Ligaments collatéraux sésamoïdiens du pied.r
+Ligaments interdistaux [intercunéiformes] plantaires.l
+Ligaments centrodistaux [cunéonaviculaires] plantaires.l
+Ligament quartodistal [cunéocuboïdien] plantaire.l
+Ligament centroquartal [cuboïdonaviculaire] plantaire.l
+Ligament calcanéoquartal [calcanéocuboidien] plantaire.l
+Ligament calcanéocentral [calcanéonaviculaire] plantaire.l
+Ligaments interdistaux [intercunéiformes] plantaires.r
+Ligaments centrodistaux [cunéonaviculaires] plantaires.r
+Ligament quartodistal [cunéocuboïdien] plantaire.r
+Ligament centroquartal [cuboïdonaviculaire] plantaire.r
+Ligament calcanéoquartal [calcanéocuboidien] plantaire.r
+Ligament calcanéocentral [calcanéonaviculaire] plantaire.r
+Ligaments interphalangiens collatéraux du pied.r
+Ligaments interphalangiens collatéraux du pied.l
+Ligament collatéral médial court du tarse, partie courte.r
+Ligament collatéral médial court du tarse, partie courte.l
+Ligament collatéral latéral long du tarse.r
+Ligament collatéral latéral long du tarse.l
+Ligaments interdistaux [intercunéiformes] interosseux.r
+Ligaments interdistaux [intercunéiformes] interosseux.l
+Ligament talocalcanéen interosseux.l
+Ligament quartodistal [cunéocuboïdien] interosseux.l
+Ligament centroquartal [cuboïdonaviculaire] interosseux.l
+Ligament centrodistal [cunéonaviculaire] interosseux.l
+Ligament calcanéoquartal [calcanéocuboïde] interosseux.l
+Ligament talocalcanéen interosseux.r
+Ligament quartodistal [cunéocuboïdien] interosseux.r
+Ligament centroquartal [cuboïdonaviculaire] interosseux.r
+Ligament centrodistal [cunéonaviculaire] interosseux.r
+Ligament calcanéoquartal [calcanéocuboïde] interosseux.r
+Capsules articulaires métatarsophalangiennes.r
+Capsules articulaires métatarsophalangiennes.l
+Capsules articulaires interphalangiennes du pied.r
+Capsules articulaires interphalangiennes du pied.l
+Ligaments métatarsiens dorsaux.r
+Ligaments métatarsiens dorsaux.l
+Ligaments interdistaux [intercunéiformes] dorsaux.r
+Ligaments interdistaux [intercunéiformes] dorsaux.l
+Ligaments centrodistaux [cunéonaviculaires] dorsaux (Car).r
+Ligaments centrodistaux [cunéonaviculaires] dorsaux (Car).l
+Ligament quartodistal [cunéocuboïde] dorsal.r
+Ligament quartodistal [cunéocuboïde] dorsal.l
+Ligament collatéral médial du tarse partie longue.r
+Ligament calcanéoquartal [calcanéocuboïde] dorsal.r
+Ligament calcanéoquartal [calcanéocuboïde] dorsal.l
+Ligament calcanéocentral [calcanéonaviculaire] dorsal.r
+Ligament calcanéocentral [calcanéonaviculaire] dorsal.l
+Ligament collatéral médial du tarse partie longue.l
+Capsules articulaires tarsométatarsiennes.l
+Capsules articulaires intermétatarsiennes.r
+Capsules articulaires intermétatarsiennes.l
+Capsule articulaire tarsocrurale
+Capsule articulaire centrodistale
+Capsule articulaire calcanéoquartale.r
+Capsule articulaire calcanéoquartale.l
+Capsules articulaires tarsométatarsiennes.r
+Ligament métatarso-intersésamoïdiens.r
+Ligament métatarso-intersésamoïdiens.l
+Ligaments tarsométatarsiens plantaires
+Ligaments collatéraux métatarsophalangiens.l
+Ligaments métatarsiens plantaires.r
+Ligaments métatarsiens plantaires.l
+Ligaments métatarsiens interosseux.r
+Ligaments métatarsiens interosseux.l
+Ligament métatarsien transverse profond.r
+Ligament métatarsien transverse profond.l
+Ligament centroquartal [cuboïdonaviculaire] dorsal.r
+Ligament centroquartal [cuboïdonaviculaire] dorsal.l
+Ligaments collatéraux métatarsophalangiens.r
+Renforcement de la membrane tarsocrurale dorsale.r
+Renforcement de la membrane tarsocrurale dorsale.l

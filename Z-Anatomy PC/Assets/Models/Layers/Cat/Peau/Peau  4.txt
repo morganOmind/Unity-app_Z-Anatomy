@@ -1,0 +1,23 @@
+Région buccale.l
+Région buccale.r
+Région cluniale.l
+Région cluniale.r
+Région de la tubérosité ischiatique.l
+Région de la tubérosité ischiatique.r
+Région latérale du genou.l
+Région mandibulaire.l
+Région mandibulaire.r
+Région maxillaire.l
+Région maxillaire.r
+Région médiale du genou.r
+Région parotidienne.l
+Région parotidienne.r
+Région sternale.l
+Région sternale.r
+Région supra-épineuse.l
+Région supra-épineuse.r
+Région temporale.l
+Région temporale.r
+Région urogénitale.l
+Régions de l'articulation de la hanche.l
+Régions de l'articulation de la hanche.r

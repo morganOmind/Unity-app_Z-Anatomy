@@ -1,0 +1,18 @@
+Ligament accessorio-ulnaire [pisi-ulnaire].l
+Ligament accessorio-ulnaire [pisi-ulnaire].r
+Ligament olécranien.l
+Ligament olécranien.r
+Ligament radio-ulnaire.l
+Ligament radio-ulnaire.r
+Ligaments carpométacarpiens dorsaux.l
+Ligaments carpométacarpiens dorsaux.r
+Ligaments collatéraux sésamoïdiens de la main.l
+Ligaments collatéraux sésamoïdiens de la main.r
+Ligaments collatéraux.l
+Ligaments collatéraux.r
+Ligaments métacarpiens dorsaux.l
+Ligaments métacarpiens dorsaux.r
+Membrane intercostale externe.l
+Membrane intercostale externe.r
+Membrane interosseuse de l'avant-bras.l
+Membrane interosseuse de l'avant-bras.r

@@ -1,0 +1,8 @@
+
+
+ESPACE
+
+
+Zone ou intervalle entre deux structures.
+
+

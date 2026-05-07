@@ -7,6 +7,8 @@ using System.Linq;
 using System.Globalization;
 using System.IO;
 using System.Text.RegularExpressions;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public static class StaticMethods
 {
@@ -231,7 +233,7 @@ public static class StaticMethods
 
     public static bool IsGroup(this GameObject go)
     {
-        return go != null && go.GetComponent<NameAndDescription>().originalName.EndsWith(".g");
+        return go != null && go.GetComponent<NameAndDescription>() != null && go.GetComponent<NameAndDescription>().originalName.EndsWith(".g");
     }
 
     public static Bounds GetBounds(List<GameObject> objects)
@@ -274,5 +276,80 @@ public static class StaticMethods
         }
 
         return components.ToArray();
+    }
+
+    /// <summary>
+    /// Is the pointer hovering over a game object with the given name
+    /// </summary>
+    /// <param name="name">Name of the game object hovering over</param>
+    /// <returns>Status</returns>
+    public static bool IsPointerOverGameObjectName(string name) {
+        PointerEventData pointer = new PointerEventData(EventSystem.current);
+        pointer.position = Mouse.current.position.value;
+
+        List<RaycastResult> raycastResults = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(pointer, raycastResults);
+
+        if (raycastResults.Count > 0) {
+            foreach (var go in raycastResults) {
+                if (go.gameObject.name == name) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    public static void CopyToClipboard(string content) {
+        content = content.RemoveRichTextTags();
+#if UNITY_WEBGL
+        WebGLCopyAndPaste.WebGLCopyAndPasteAPI.CopyToClipboard(content);
+#else
+        GUIUtility.systemCopyBuffer = content;
+#endif
+        PopUpManagement.Instance.Show("Text copied!");
+    }
+
+    //https://www.csharpstar.com/csharp-string-distance-algorithm/
+    //The Levenshtein distance is a string metric for measuring the difference between two sequences. 
+    //The Levenshtein distance between two words is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) 
+    //required to change one word into the other. It is named after Vladimir Levenshtein.
+    public static int LevenshteinDistance(string s, string t) {
+        int n = s.Length;
+        int m = t.Length;
+        int[,] d = new int[n + 1, m + 1];
+
+        // Step 1
+        if (n == 0) {
+            return m;
+        }
+
+        if (m == 0) {
+            return n;
+        }
+
+        // Step 2
+        for (int i = 0; i <= n; d[i, 0] = i++) {
+        }
+
+        for (int j = 0; j <= m; d[0, j] = j++) {
+        }
+
+        // Step 3
+        for (int i = 1; i <= n; i++) {
+            //Step 4
+            for (int j = 1; j <= m; j++) {
+                // Step 5
+                int cost = (t[j - 1] == s[i - 1]) ? 0 : 1;
+
+                // Step 6
+                d[i, j] = Mathf.Min(
+                    Mathf.Min(d[i - 1, j] + 1, d[i, j - 1] + 1),
+                    d[i - 1, j - 1] + cost);
+            }
+        }
+        // Step 7
+        return d[n, m];
     }
 }

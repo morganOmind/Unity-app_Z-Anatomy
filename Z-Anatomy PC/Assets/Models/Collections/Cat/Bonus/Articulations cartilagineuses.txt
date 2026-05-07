@@ -1,0 +1,32 @@
+Synchondroses sternales
+Articulation xiphosternale
+Synchondroses et articulations sternales
+Synchondrose manubriosternale
+Synchondroses intersternébrales.l
+Articulations costochondrales.j
+Articulations costochondrales.t
+Synchondroses crâniennes
+Synchondrose sphéno-occipitale.j
+Synchondrose sphénopétreuse.j
+Synchondrose pétro-occipitale.j
+Synchondrose intersphénoïdale.j
+(Synchondrose intra-occipitale squamolatérale).j
+(Synchondrose intra-occipitale basilatérale).j
+Synchondrose intermandibulaire.j
+Suture intermandibulaire.j
+Articulation intermandibulaire.j
+Synchondrose sphéno-occipitale.t
+Synchondrose sphénopétreuse.t
+Synchondrose pétro-occipitale.t
+Synchondrose intersphénoïdale.t
+(Synchondrose intra-occipitale squamolatérale).t
+(Synchondrose intra-occipitale basilatérale).t
+Synchondrose intermandibulaire.t
+Suture intermandibulaire.t
+Articulation intermandibulaire.t
+Symphyse
+Symphyse intervertébrale
+Symphyse pelvienne
+Disque intervertébral
+Anneau fibreux
+Noyau pulpeux

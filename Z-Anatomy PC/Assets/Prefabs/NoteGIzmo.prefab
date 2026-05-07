@@ -90,10 +90,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   note: {fileID: 0}
-  defaultColor: {r: 0.26728112, g: 0.5, b: 0, a: 0.88235295}
-  highlightedColor: {r: 0.38089624, g: 0.7169812, b: 0, a: 0.88235295}
-  size: 4
-  maxSize: 11
+  defaultColor: {r: 0.6886792, g: 0.3443396, b: 0, a: 0.88235295}
+  highlightedColor: {r: 1, g: 0.50246304, b: 0, a: 0.88235295}
+  size: 0.04
+  maxSize: 0.11
   offset: 0.025
   placed: 0
 --- !u!33 &2452216544189585026
@@ -103,7 +103,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4792821071618587073}
-  m_Mesh: {fileID: 4854510984043091460, guid: 4685963a8dbc422409205ac414fecbd2, type: 3}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &7332221732932686602
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -117,4 +117,4 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4854510984043091460, guid: 4685963a8dbc422409205ac414fecbd2, type: 3}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}

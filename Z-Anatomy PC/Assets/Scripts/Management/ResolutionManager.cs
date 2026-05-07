@@ -35,8 +35,10 @@ public class ResolutionManager : MonoBehaviour
 
     void Start()
     {
+#if !UNITY_EDITOR
         if (Application.platform != RuntimePlatform.WebGLPlayer)
             StartCoroutine(StartRoutine());
+#endif
     }
 
     private void printResolution()
@@ -62,7 +64,7 @@ public class ResolutionManager : MonoBehaviour
 
                 DisplayResolution = Screen.currentResolution;
 
-                Screen.SetResolution(r.width, r.height, true);
+                Screen.SetResolution(r.width, r.height, FullScreenMode.Windowed);
 
                 yield return null;
             }
@@ -77,7 +79,7 @@ public class ResolutionManager : MonoBehaviour
 
         InitResolutions();
 #if !UNITY_EDITOR && UNITY_STANDALONE_WIN
-                BorderlessWindow.SetFramelessWindow(true);
+                //BorderlessWindow.SetFramelessWindow(true);
 #endif
     }
 
@@ -172,7 +174,7 @@ public class ResolutionManager : MonoBehaviour
         bool fullscreen2windowed = Screen.fullScreen & !fullscreen;
 
         Debug.Log("Setting resolution to " + (int)r.x + "x" + (int)r.y);
-        Screen.SetResolution((int)r.x, (int)r.y, fullscreen);
+        Screen.SetResolution((int)r.x, (int)r.y, FullScreenMode.Windowed);
 
         // On OSX the application will pass from fullscreen to windowed with an animated transition of a couple of seconds.
         // After this transition, the first time you exit fullscreen you have to call SetResolution again to ensure that the window is resized correctly.
@@ -191,7 +193,7 @@ public class ResolutionManager : MonoBehaviour
         {
             yield return null;
 #if !UNITY_EDITOR && UNITY_STANDALONE_WIN   // Dont do this while on Unity Editor!
-                    BorderlessWindow.SetFramelessWindow(true);
+                    //BorderlessWindow.SetFramelessWindow(true);
 #endif
             //BorderlessWindow.MoveWindowPos(Vector2Int.zero, Screen.width - borderSize.x, Screen.height - borderSize.y);
             BorderlessWindow.MoveWindowPos(Vector2Int.zero, Screen.width, Screen.height);
@@ -218,7 +220,7 @@ public class ResolutionManager : MonoBehaviour
             {
                 Debug.Log("Resize! " + Screen.width + "x" + Screen.height);
 
-                Screen.SetResolution((int)r.x, (int)r.y, Screen.fullScreen);
+                Screen.SetResolution((int)r.x, (int)r.y, FullScreenMode.Windowed);
                 yield break;
             }
 
@@ -243,9 +245,9 @@ public class ResolutionManager : MonoBehaviour
         //    Settings.Instance.fullscreenToggle.isOn);
 
         PlayerPrefs.SetInt("Fullscreen", Settings.Instance.fullscreenToggle.isOn ? 1 : 0);
-        if (!Settings.Instance.fullscreenToggle.isOn)
+        //if (!Settings.Instance.fullscreenToggle.isOn)
             Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, FullScreenMode.Windowed);
-        else
-            Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, FullScreenMode.FullScreenWindow);
+        /*else
+            Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, FullScreenMode.MaximizedWindow);*/
     }
 }

@@ -1,0 +1,98 @@
+Os incisif.l
+Os maxillaire.l
+Canine supérieure.l
+Os nasal.l
+Os palatin.l
+Os zygomatique.l
+Os frontal
+Os occipital
+Os pariétal.l
+Os présphénoïde
+Partie squameuse de l’os temporal.l
+Partie tympanique.l
+Incisive intermédiaire supérieure.l
+Incisive supérolatérale.l
+Incisive supéromédiale.l
+Dent carnassière (Car).l
+Deuxième prémolaire supérieure.l
+Première prémolaire supérieure.l
+Os basisphénoïde
+Os ethmoïde
+Os ptérygoïdien.l
+Partie pétreuse.l
+Cornet nasal ventral.l
+Os lacrymal.l
+Vomer
+(Os sutural).l
+Os interpariétal
+Ligament orbitaire.l
+Cavité de la dent
+Col de la dent
+Corps de la dent
+Couronne clinique de la dent
+Cément
+Dentine
+Email
+Pulpe de la dent
+Racine clinique
+Racine de la dent
+Surface de contact de la dent
+Muscle masséter.e1l
+Muscle temporal.e1l
+Muscle digastrique.el
+Muscle orbiculaire de l'œil.o1l
+Muscle élévateur nasolabial.o1l
+Muscle temporal.o2l
+Muscle frontal.ol
+Muscle malaire.ol
+Muscle releveur de la lèvre supérieure.ol
+Muscle masséter.o2l
+Muscle malaire.o1l
+Muscle élévateur nasolabial.ol
+Muscle masséter.o1l
+Muscle temporal.o4l
+Muscle temporal.o5l
+Muscle temporal.o1l
+Muscle orbiculaire de l'œil.ol
+Muscle buccinateur.ol
+Muscle buccinateur.o1l
+Muscle buccinateur.o3l
+Muscle ptérygoïdien médial.el
+Muscle incisif supérieur.ol
+Muscle ptérygopharyngien.ol
+Muscle ptérygoïdien médial.ol
+Muscle ptérygoïdien latéral.o1l
+Muscle temporal.o3l
+Muscle occipital.ol
+Muscle cervicoscutulaire.ol
+Muscle pariétoscutulaire.ol
+Muscle pariétoscutulaire.o1l
+Muscle mylohyoïdien.ol
+Muscle génioglosse.el
+Muscle géniohyoïdien.el
+Muscle ptérygoïdien latéral.o2l
+Muscle masséter.o3l
+Muscle palatin.ol
+Muscle long de la tête.el
+Muscle droit ventral de la tête.el
+Muscle long de la tête.e1l
+Muscle semi-épineux de la tête.ol
+Muscle grand droit dorsal de la tête.ol
+Muscle oblique crânial de la tête.ol
+Muscle longissimus de la tête.el
+Muscle brachiocéphalique.el
+Muscle rhomboïde de la tête (Car, su).el
+Muscle splénius de la tête.el
+Muscle digastrique.ol
+Muscle droit latéral de la tête.ol
+Muscle tenseur du voile du palais.ol
+Muscle petit droit dorsal de la tête.ol
+Muscle buccinateur.o2l
+Canine inférieure.l
+Deuxième prémolaire inférieure.l
+Incisive inférolatérale.l
+Incisive inféromédiale.l
+Incisive intermédiaire inférieure.l
+Première molaire inférieure.l
+Première prémolaire inférieure.l
+Mandibule

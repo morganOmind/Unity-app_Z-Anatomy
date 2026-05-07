@@ -1,0 +1,16 @@
+Suture interfrontale.j
+Suture interfrontale.t
+Suture sphénosquameuse.j
+Suture squameuse.j
+Suture sphénosquameuse.t
+Suture squameuse.t
+Suture occipitosquameuse.j
+Suture occipitotympanique.j
+Suture occipitosquameuse.t
+Suture occipitotympanique.t
+Suture squamomastoïdienne.j
+Suture squamomastoïdienne.t
+Suture temporozygomatique.j
+Suture temporozygomatique.t
+Suture sphénopalatine.j
+Suture sphénopalatine.t

@@ -1,0 +1,6 @@
+Axial
+Caudal
+Crânial
+Dorsal
+Rostral
+Ventral

@@ -1,0 +1,28 @@
+Muscle adducteur du deuxième orteil.l
+Muscle adducteur du deuxième orteil.r
+Muscle long adducteur.l
+Muscle long adducteur.r
+Muscle ptérygoïdien latéral.l
+Muscle adducteur du pouce.l
+Muscle adducteur du pouce.r
+Muscle adducteur du cinquième orteil.l
+Muscle adducteur du cinquième orteil.r
+Muscle buccinateur.l
+Muscle adducteur du doigt V.l
+Muscle adducteur du doigt V.r
+Muscle grand adducteur.l
+Muscle grand adducteur.r
+Muscle adducteur du doigt II.l
+Muscle adducteur du doigt II.r
+Muscle gracile.l
+Muscle gracile.r
+Muscle pectoral profond (ascendant).l
+Muscle pectoral profond (ascendant).r
+Muscle rhomboïde.l
+Muscle rhomboïde.r
+Muscle pectoral descendant.l
+Muscle pectoral transverse.l
+Muscle pectoral transverse.r
+Muscle pectoral descendant.r
+Muscle grand dorsal.l
+Muscle grand dorsal.r

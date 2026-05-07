@@ -41,6 +41,7 @@ public class LexiconElementButton : MonoBehaviour, IPointerEnterHandler, IPointe
         if(eventData.button == PointerEventData.InputButton.Left)
         {
             viewElement.ElementClick();
+            Lexicon.Instance.ForceCurrentHighlight(GetComponentInParent<LexiconElement>().GetComponent<RectTransform>());
         }
         else if(eventData.button == PointerEventData.InputButton.Right)
         {

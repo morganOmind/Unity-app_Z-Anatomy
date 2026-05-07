@@ -14,6 +14,7 @@ public class ContextualMenu : MonoBehaviour
     public Button copyBtn;
     public Button isolateBtn;
     public Button partiallyIsolateBtn;
+    public Button peelBtn;
     public Button hideBtn;
     public Button resetPosition;
     public Button movePosition;
@@ -79,8 +80,10 @@ public class ContextualMenu : MonoBehaviour
 
         partiallyIsolateBtn.transform.parent.gameObject.SetActive(actualTags.Count > 1);
 
-        movePosition.transform.parent.gameObject.SetActive(MovePositionOn());
-        resetPosition.transform.parent.gameObject.SetActive(ResetPositionOn());
+        peelBtn.transform.parent.gameObject.SetActive(ShowPeelOn());
+
+        //movePosition.transform.parent.gameObject.SetActive(MovePositionOn());
+        //resetPosition.transform.parent.gameObject.SetActive(ResetPositionOn());
 
         showLabelsBtn.transform.parent.gameObject.SetActive(ShowLabelsOn());
         hideLabelsBtn.transform.parent.gameObject.SetActive(HideLabelsOn());
@@ -106,8 +109,9 @@ public class ContextualMenu : MonoBehaviour
         structuresBtn.transform.parent.gameObject.SetActive(false);
         structuresBtn.transform.parent.gameObject.SetActive(false);
         partiallyIsolateBtn.transform.parent.gameObject.SetActive(false);
-        movePosition.transform.parent.gameObject.SetActive(false);
-        resetPosition.transform.parent.gameObject.SetActive(false);
+        peelBtn.transform.parent.gameObject.SetActive(false);
+        //movePosition.transform.parent.gameObject.SetActive(false);
+        //resetPosition.transform.parent.gameObject.SetActive(false);
         showLabelsBtn.transform.parent.gameObject.SetActive(false);
         hideLabelsBtn.transform.parent.gameObject.SetActive(false);
         showBoneInsertionsBtn.transform.parent.gameObject.SetActive(false);
@@ -121,8 +125,7 @@ public class ContextualMenu : MonoBehaviour
 
     public void CopyClick()
     {
-        GUIUtility.systemCopyBuffer = DescriptionClick.Instance.selectedText.RemoveRichTextTags();
-        PopUpManagement.Instance.Show("Text copied!");
+        StaticMethods.CopyToClipboard(DescriptionClick.Instance.selectedText);
     }
 
     public void IsolateClick()
@@ -168,6 +171,26 @@ public class ContextualMenu : MonoBehaviour
              if (contextObject.IsGroup())
                  SelectedObjectsManagement.Instance.DeselectAllChildren(contextObject.transform);
          }
+        ActionControl.Instance.UpdateButtons();
+
+    }
+
+    public void Peel() {
+        bool wasSelected = contextObject != null && SelectedObjectsManagement.Instance.selectedObjects.Contains(contextObject);
+
+        if (!wasSelected && contextObject != null) {
+            SelectedObjectsManagement.Instance.DeselectAllObjects();
+            SelectedObjectsManagement.Instance.SelectObject(contextObject);
+            if (contextObject.IsGroup())
+                SelectedObjectsManagement.Instance.SelectAllChildren(contextObject.transform);
+        }
+        MeshManagement.Instance.PeelClick(contextObject != null ? contextObject : SelectedObjectsManagement.Instance.selectedObjects[0]);
+
+        if (!wasSelected && contextObject != null) {
+            SelectedObjectsManagement.Instance.DeselectObject(contextObject);
+            if (contextObject.IsGroup())
+                SelectedObjectsManagement.Instance.DeselectAllChildren(contextObject.transform);
+        }
         ActionControl.Instance.UpdateButtons();
 
     }
@@ -433,6 +456,35 @@ public class ContextualMenu : MonoBehaviour
     public void Close()
     {
         gameObject.SetActive(false);
+    }
+
+    bool hasTangibleChild(Transform part) {
+        for(int i=0; i<part.childCount; i++) {
+            if (part.GetChild(i).tag != "Insertions" && part.GetChild(i).GetComponent<TangibleBodyPart>() != null)
+                return true;
+        }
+        return false;
+    }
+
+    bool peelEnable(Transform part) {
+        return part.GetComponent<TangibleBodyPart>() != null && hasTangibleChild(part);
+    }
+
+    private bool ShowPeelOn() {
+        if (SelectedObjectsManagement.Instance.selectedObjects.Count > 1)
+            return false;
+
+        if (SelectedObjectsManagement.Instance.selectedObjects.Count == 0) {
+            return peelEnable(contextObject.transform);
+        }
+        else {
+            if (contextObject != null && SelectedObjectsManagement.Instance.selectedObjects[0] != contextObject) {
+                return peelEnable(contextObject.transform);
+            }
+            else {
+                return peelEnable(SelectedObjectsManagement.Instance.selectedObjects[0].transform);
+            }
+        }
     }
 
     private bool ShowStructuresOn()

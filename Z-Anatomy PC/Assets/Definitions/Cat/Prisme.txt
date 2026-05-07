@@ -1,0 +1,8 @@
+
+
+PRISME
+
+
+Qualifie une structure de forme prismatique.
+
+

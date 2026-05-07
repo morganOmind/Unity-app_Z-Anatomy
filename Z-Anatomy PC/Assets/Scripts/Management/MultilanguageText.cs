@@ -22,12 +22,10 @@ public class MultilanguageText : MonoBehaviour
         Translate();
     }
 
-    public void Translate()
-    {
+    public void TranslateTo(SystemLanguage language) {
         if (textField == null)
             textField = GetComponent<TextMeshProUGUI>();
-        switch (Settings.language)
-        {
+        switch (language) {
             case SystemLanguage.Spanish:
                 textField.text = spanishText;
                 break;
@@ -45,5 +43,10 @@ public class MultilanguageText : MonoBehaviour
             textField.text = defaultText;
         if (expandableText != null)
             expandableText.text = textField.text;
+    }
+
+    public void Translate()
+    {
+        TranslateTo(Settings.language);
     }
 }

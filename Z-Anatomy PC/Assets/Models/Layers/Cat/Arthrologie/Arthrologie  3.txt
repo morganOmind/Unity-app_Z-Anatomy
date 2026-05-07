@@ -1,0 +1,61 @@
+Bourrelet glénoïdal.r
+Disque articulaire temporomandibulaire.l
+Disque articulaire temporomandibulaire.r
+Ligament annulaire du radius.l
+Ligament annulaire du radius.r
+Ligament collatéral latéral du carpe.l
+Ligament collatéral latéral du carpe.r
+Ligament collatéral latéral.l
+Ligament collatéral latéral.r
+Ligament collatéral médial du carpe.l
+Ligament collatéral médial du carpe.r
+Ligament collatéral médial.l
+Ligament collatéral médial.r
+Ligament collatéral radial.l
+Ligament collatéral radial.r
+Ligament collatéral ulnaire.l
+Ligament collatéral ulnaire.r
+Ligament costotransversaire.l
+Ligament costotransversaire.r
+Ligament croisé caudal.l
+Ligament croisé caudal.r
+Ligament croisé crânial.l
+Ligament croisé crânial.r
+Ligament de la tête du fémur.l
+Ligament de la tête du fémur.r
+Ligament huméral transverse.l
+Ligament huméral transverse.r
+Ligament interosseux de l'avant-bras.l
+Ligament interosseux de l'avant-bras.r
+Ligament intra-articulaire de la tête de la côte.l
+Ligament intra-articulaire de la tête de la côte.r
+Ligament métacarpien transverse profond.l
+Ligament métacarpien transverse profond.r
+Ligament radié de la tête de la côte.l
+Ligament radié de la tête de la côte.r
+Ligament radié du carpe.l
+Ligament radié du carpe.r
+Ligament talofibulaire plantaire.l
+Ligament talofibulaire plantaire.r
+Ligament temporomandibulaire latéral.l
+Ligament temporomandibulaire latéral.r
+Ligament tibiofibulaire caudal.l
+Ligament tibiofibulaire caudal.r
+Ligament tibiofibulaire crânial.l
+Ligament tibiofibulaire crânial.r
+Ligaments glénohuméraux.l
+Ligaments glénohuméraux.r
+Ligaments sacro-iliaques interosseux.l
+Ligaments sacro-iliaques interosseux.r
+Membrane atlanto-axiale dorsale
+Membrane atlanto-occipitale ventrale
+Membrane interosseuse de la jambe.l
+Membrane interosseuse de la jambe.r
+Membrane obturatrice.l
+Membrane obturatrice.r
+Ménisque latéral.l
+Ménisque latéral.r
+Ménisque médial.l
+Ménisque médial.r
+Synchondrose manubriosternale
+Synchondroses intersternébrales.l

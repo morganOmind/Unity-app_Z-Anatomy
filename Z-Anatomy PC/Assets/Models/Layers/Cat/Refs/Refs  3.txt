@@ -1,0 +1,7 @@
+Abaxial
+Distal
+Latéral
+Médial
+Palmaire
+Plantaire
+Proximal

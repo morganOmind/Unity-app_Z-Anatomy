@@ -1,0 +1,64 @@
+Articulations des processus articulaires
+Capsule articulaire antébrachiocarpienne.l
+Capsule articulaire antébrachiocarpienne.r
+Capsule articulaire atlanto-occipitale.l
+Capsule articulaire calcanéoquartale.l
+Capsule articulaire calcanéoquartale.r
+Capsule articulaire centrodistale
+Capsule articulaire costotransversaire.l
+Capsule articulaire costotransversaire.r
+Capsule articulaire de l'articulation atlanto-axiale.l
+Capsule articulaire de l'articulation de la tête costale.l
+Capsule articulaire de l'articulation de la tête costale.r
+Capsule articulaire de l'articulation gléno-humérale.l
+Capsule articulaire de l'articulation gléno-humérale.r
+Capsule articulaire de la hanche.l
+Capsule articulaire de la hanche.r
+Capsule articulaire des processus articulaires.l
+Capsule articulaire des processus articulaires.r
+Capsule articulaire du coude.l
+Capsule articulaire du coude.r
+Capsule articulaire du genou.l
+Capsule articulaire du genou.r
+Capsule articulaire manubriosternale.l
+Capsule articulaire médiocarpienne.l
+Capsule articulaire médiocarpienne.r
+Capsule articulaire radio-ulnaire distale.l
+Capsule articulaire radio-ulnaire distale.r
+Capsule articulaire sternocostale.l
+Capsule articulaire sternocostale.r
+Capsule articulaire tarsocrurale
+Capsule articulaire tibiofibulaire distale.l
+Capsule articulaire tibiofibulaire distale.r
+Capsules articulaires carpo-métacarpiennes.r
+Capsules articulaires intermétacarpiennes.l
+Capsules articulaires intermétacarpiennes.r
+Capsules articulaires intermétatarsiennes.l
+Capsules articulaires intermétatarsiennes.r
+Capsules articulaires tarsométatarsiennes.l
+Capsules articulaires tarsométatarsiennes.r
+Ligament accessorioquartal [pisihamatum].l
+Ligament accessorioquartal [pisihamatum].r
+Ligament centroquartal [cuboïdonaviculaire] dorsal.l
+Ligament centroquartal [cuboïdonaviculaire] dorsal.r
+Ligament métatarsien transverse profond.l
+Ligament métatarsien transverse profond.r
+Ligament métatarso-intersésamoïdiens.l
+Ligament métatarso-intersésamoïdiens.r
+Ligaments carpométacarpiens palmaires.l
+Ligaments carpométacarpiens palmaires.r
+Ligaments collatéraux métatarsophalangiens.l
+Ligaments collatéraux métatarsophalangiens.r
+Ligaments intercarpiens palmaires.l
+Ligaments intercarpiens palmaires.r
+Ligaments métacarpiens palmaires.l
+Ligaments métacarpiens palmaires.r
+Ligaments métatarsiens interosseux.l
+Ligaments métatarsiens interosseux.r
+Ligaments métatarsiens plantaires.l
+Ligaments métatarsiens plantaires.r
+Ligaments tarsométatarsiens plantaires
+Renforcement de la membrane tarsocrurale dorsale.l
+Renforcement de la membrane tarsocrurale dorsale.r
+Zone orbiculaire.l
+Zone orbiculaire.r
