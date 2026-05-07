@@ -205,6 +205,7 @@ public class GlobalVariables : MonoBehaviour
     public void OnChangeSpecie(int type) {
         SpecieType specie = (SpecieType)type;
         if(specieType != specie) {
+            FindObjectOfType<SaverLoader>().Save(true);
             specieType = specie;
             StartCoroutine(changeSpecieAsync());
         }
@@ -213,6 +214,7 @@ public class GlobalVariables : MonoBehaviour
     IEnumerator changeSpecieAsync() {
         Camera.main.cullingMask = LayerMask.GetMask("Loading");
         loadingGO.SetActive(true);
+
         globalParent.SetActive(false);
         for(int i=0; i<canvasesRoot.childCount; i++) {
             if(canvasesRoot.GetChild(i).gameObject != loadingGO) {

@@ -40,11 +40,17 @@ public class Label : MonoBehaviour
         if(textGO != null) {
             textGO.SetActive(true);
         }
+        if(line != null) {
+            line.gameObject.SetActive(true);
+        }
     }
 
     private void OnDisable() {
         if(textGO != null) {
             textGO.SetActive(false);
+        }
+        if (line != null) {
+            line.gameObject.SetActive(false);
         }
     }
 
