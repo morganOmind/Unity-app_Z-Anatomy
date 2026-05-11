@@ -29,6 +29,8 @@ public class Notes : MonoBehaviour
     public Texture2D cursorTexture;
     bool hasNoteCursor = false;
 
+    Note lastNote;
+
     private void Awake()
     {
         instance = this;
@@ -46,8 +48,22 @@ public class Notes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!ActionControl.creatingLocalNote && !ActionControl.creatingGlobalNote)
+        if (!ActionControl.creatingLocalNote && !ActionControl.creatingGlobalNote) {
+            if (hasNoteCursor) {
+                if (cursorTexture != null)
+                    Cursor.SetCursor(null, new Vector2(), CursorMode.Auto);
+                hasNoteCursor = false;
+            }
+            if(currentLine != null 
+                && (lastNote == null || lastNote != null && lastNote.line != currentLine)) {
+                GameObject.Destroy(currentLine.gameObject);
+            }
+            currentGizmo.gameObject.SetActive(false);
+            currentGizmo.placed = false;
+            gizmoPlaced = false;
+            
             return;
+        }
 
         if (!hasNoteCursor) {
             if (cursorTexture != null)
@@ -83,7 +99,8 @@ public class Notes : MonoBehaviour
             if (Mouse.current.leftButton.wasPressedThisFrame && !EventSystem.current.IsPointerOverGameObject())
             {
                 currentGizmo.placed = true;
-                currentGizmo.note = CreateNote();
+                lastNote = CreateNote();
+                currentGizmo.note = lastNote;
                 
                 currentGizmo = Instantiate(currentGizmo);
                 currentGizmo.placed = false;

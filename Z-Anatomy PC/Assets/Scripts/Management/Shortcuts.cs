@@ -95,6 +95,10 @@ public class Shortcuts : MonoBehaviour
     public InputAction moveLeft;
     public InputAction select;
 
+    [Space]
+    [Header("Misc shortcuts")]
+    public InputAction cancelNote;
+
     private void Awake()
     {
         Instance = this;
@@ -218,6 +222,9 @@ public class Shortcuts : MonoBehaviour
         moveLeft.performed += context => LexiconMove(global::LexiconMove.Left);
         select.Enable();
         select.performed += LexiconSelect;
+
+        cancelNote.Enable();
+        cancelNote.performed += context => CancelNote();
     }
 
     public void DisableAll() {
@@ -286,6 +293,8 @@ public class Shortcuts : MonoBehaviour
         moveRight.Disable();
         moveLeft.Disable();
         select.Disable();
+
+        cancelNote.Disable();
     }
 
     private void ChangeSelectionTool(InputAction.CallbackContext context)
@@ -590,12 +599,18 @@ public class Shortcuts : MonoBehaviour
     }
 
     private void LexiconMove(LexiconMove move) {
+        if (!SearchEngine.Instance.mainInputField.isFocused && UserIsWriting())
+            return;
+
         if (Keyboard.current.leftCtrlKey.isPressed || Keyboard.current.rightCtrlKey.isPressed)
             return;
         Lexicon.Instance.Move(move);
     }
 
     private void LexiconSelect(InputAction.CallbackContext context) {
+        if (!SearchEngine.Instance.mainInputField.isFocused && UserIsWriting())
+            return;
+
         Lexicon.Instance.Select();
     }
 
@@ -626,6 +641,15 @@ public class Shortcuts : MonoBehaviour
 
         if(Input.GetKey(KeyCode.LeftControl))
             layer++;
+    }
+
+    private void CancelNote() {
+        if (UserIsWriting())
+            return;
+        if (!ActionControl.creatingGlobalNote)
+            return;
+        ActionControl.Instance.AddGlobalNoteClick();
+
     }
 
     private bool UserIsWriting()
