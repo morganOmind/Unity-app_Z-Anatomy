@@ -77,12 +77,16 @@ public class SaverLoader : MonoBehaviour
 
     public GameObject loadingGO;
 
+    public static bool loadOnStart;
+
     private void Start() {
         if(idsMapping == null) {
             ParseIdMap();
         }
         else {
-            StartCoroutine(LoadAsync("", true));
+            if (loadOnStart) {
+                StartCoroutine(LoadAsync("", true));
+            }
         }
     }
 
