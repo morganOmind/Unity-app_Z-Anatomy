@@ -62,6 +62,7 @@ public class RevertPanels : MonoBehaviour
             ExpandCollapseUI collapseUI = rt.GetComponent<ExpandCollapseUI>();
             if (collapseUI != null) {
                 collapseUI.expandedPosition = new Vector2(rt.anchoredPosition.x, collapseUI.expandedPosition.y);
+                collapseUI.collapasedPosition = new Vector2(rt.anchoredPosition.x, collapseUI.collapasedPosition.y);
             }
         }
 

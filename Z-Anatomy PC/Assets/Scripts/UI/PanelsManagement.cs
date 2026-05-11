@@ -42,7 +42,7 @@ public class PanelsManagement : MonoBehaviour
     private float initialDescPosX;
     private float initialDescPosY;
     private float initialOptionsHeight;
-    private float initialYPosCorssSections;
+    private Vector2 initialCrossSectionsExpand;
 
     [HideInInspector]
     public bool descOnScreen = false;
@@ -105,7 +105,7 @@ public class PanelsManagement : MonoBehaviour
 
     private IEnumerator Start()
     {
-        initialYPosCorssSections = crossSectionsOptions.expandedPosition.y;
+        initialCrossSectionsExpand = crossSectionsOptions.expandedPosition;
 
         CameraController.instance.offset = new Vector3(panelWidth / Screen.width, CameraController.instance.offset.y, 0);
         CameraController.instance.ResetCamera();
@@ -138,6 +138,7 @@ public class PanelsManagement : MonoBehaviour
 
     public void ReinitPanelWidth() {
         ResizePanels(initialPanelWidth - panelWidth);
+        crossSectionsOptions.expandedPosition = initialCrossSectionsExpand;
     }
 
     public float GetPanelWidth() {
@@ -634,8 +635,8 @@ public class PanelsManagement : MonoBehaviour
         scaleOptionsCoroutine = ScaleVerticalCoroutine(optionsRT, animationTime, initialOptionsHeight);
         StartCoroutine(scaleOptionsCoroutine);
 
-        crossSectionsOptions.expandedPosition = new Vector2(crossSectionsOptions.expandedPosition.x, initialYPosCorssSections);
-        if(CrossPlanesGizmo.Instance.opened)
+        //crossSectionsOptions.expandedPosition = new Vector2(crossSectionsOptions.expandedPosition.x, initialYPosCorssSections);
+        if (CrossPlanesGizmo.Instance.opened)
             crossSectionsOptions.Expand();
 
         visibilityOptionsRT.gameObject.SetActive(true);
@@ -649,7 +650,7 @@ public class PanelsManagement : MonoBehaviour
         scaleOptionsCoroutine = ScaleVerticalCoroutine(optionsRT, animationTime, initialOptionsHeight - ActionControl.Instance.visibilityOptions.GetHeight());
         StartCoroutine(scaleOptionsCoroutine);
 
-        crossSectionsOptions.expandedPosition = new Vector2(crossSectionsOptions.expandedPosition.x, initialYPosCorssSections + 40);
+        //crossSectionsOptions.expandedPosition = new Vector2(crossSectionsOptions.expandedPosition.x, initialYPosCorssSections + 40);
         if (CrossPlanesGizmo.Instance.opened)
             crossSectionsOptions.Expand();
 
@@ -737,6 +738,7 @@ public class PanelsManagement : MonoBehaviour
             RectTransform crossSectionRT = crossSectionsOptions.GetComponent<RectTransform>();
             crossSectionRT.Translate(Vector3.right * deltaX);
             crossSectionsOptions.expandedPosition = new Vector2(crossSectionRT.anchoredPosition.x, crossSectionsOptions.expandedPosition.y);
+            crossSectionsOptions.collapasedPosition = new Vector2(crossSectionRT.anchoredPosition.x, crossSectionsOptions.collapasedPosition.y);
             horizontalHierarchy.Translate(Vector3.right * deltaX);
         }
         else {
