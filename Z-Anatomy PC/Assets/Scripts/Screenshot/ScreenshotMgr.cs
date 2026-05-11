@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScreenshotMgr : MonoBehaviour
 {
@@ -9,8 +10,28 @@ public class ScreenshotMgr : MonoBehaviour
     bool first = true;
     public float firstBoxSizeFactor = 0.33f;
     
+    List<MonoBehaviour> disableComponents;
+
+    public Texture2D cursor;
+    public Vector2 cursorOffset;
+
+    private void Start() {
+        disableComponents = new List<MonoBehaviour>();
+        disableComponents.Add(RaycastObject.instance);
+        disableComponents.Add(BrushSelection.instance);
+        disableComponents.Add(BoxSelection.instance);
+        disableComponents.Add(LassoSelection.instance);
+
+        disableComponents.AddRange(FindObjectsOfType<ExpandCollapseUI>());
+        disableComponents.AddRange(FindObjectsOfType<GraphicRaycaster>());
+
+        disableComponents.Remove(boxRootRT.GetComponent<GraphicRaycaster>());
+    }
+
     public void OnScreenshot() {
-        RaycastObject.instance.enabled = false;
+        foreach(MonoBehaviour m in disableComponents) {
+            m.enabled = false;
+        }
 
         if (first) {
             first = false;
@@ -24,6 +45,8 @@ public class ScreenshotMgr : MonoBehaviour
         }
 
         boxCanvasRT.gameObject.SetActive(true);
+
+        //Cursor.SetCursor(cursor, cursorOffset, CursorMode.Auto);
     }
 
     public void OnValidScreenshotDown() {
@@ -39,13 +62,21 @@ public class ScreenshotMgr : MonoBehaviour
     }
 
     void MakeScreenshot() {
-        RaycastObject.instance.enabled = true;
-        boxCanvasRT.gameObject.SetActive(false);
+        ResetStuff();
         GetComponent<CameraScreenshot>().CaptureScreenshot(boxRootRT);
     }
 
     public void OnCancelScreenshot() {
-        RaycastObject.instance.enabled = true;
+        ResetStuff();
+    }
+
+    void ResetStuff() {
+        foreach (MonoBehaviour m in disableComponents) {
+            m.enabled = true;
+        }
+
         boxCanvasRT.gameObject.SetActive(false);
+
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 }
