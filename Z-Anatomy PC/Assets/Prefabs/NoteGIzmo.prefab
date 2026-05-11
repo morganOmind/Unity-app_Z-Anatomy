@@ -93,7 +93,7 @@ MonoBehaviour:
   defaultColor: {r: 0.6886792, g: 0.3443396, b: 0, a: 0.88235295}
   highlightedColor: {r: 1, g: 0.50246304, b: 0, a: 0.88235295}
   size: 0.04
-  maxSize: 0.11
+  maxSize: 0.55
   offset: 0.025
   placed: 0
 --- !u!33 &2452216544189585026
