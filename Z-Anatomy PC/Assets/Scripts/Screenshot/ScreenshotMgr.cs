@@ -46,7 +46,7 @@ public class ScreenshotMgr : MonoBehaviour
 
         boxCanvasRT.gameObject.SetActive(true);
 
-        //Cursor.SetCursor(cursor, cursorOffset, CursorMode.Auto);
+        Cursor.SetCursor(cursor, cursorOffset, CursorMode.Auto);
     }
 
     public void OnValidScreenshotDown() {

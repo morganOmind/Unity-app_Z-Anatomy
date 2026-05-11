@@ -11,12 +11,25 @@ public class BoxMaker : MonoBehaviour
     bool isMakingBox;
     Vector2 lastPos;
 
+    BoxMinMaxSize boxConstraint;
+
+    private void OnEnable() {
+        if(boxConstraint != null) {
+            boxConstraint.enabled = true;
+        }
+    }
+
+    private void Start() {
+        boxConstraint = GetComponentInChildren<BoxMinMaxSize>();
+    }
+
     // Update is called once per frame
     void Update() {
 
         if (isMakingBox) {
             if (Mouse.current.leftButton.wasReleasedThisFrame) {
                 isMakingBox = false;
+                boxConstraint.enabled = true;
             }
         }
 
@@ -40,6 +53,7 @@ public class BoxMaker : MonoBehaviour
             }
             if (isValid) {
                 isMakingBox = true;
+                boxConstraint.enabled = false;
                 lastPos = mousePos;
                 boxRT.SetTop(Screen.height - mousePos.y);
                 boxRT.SetLeft(mousePos.x);
