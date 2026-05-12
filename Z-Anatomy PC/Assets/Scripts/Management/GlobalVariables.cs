@@ -241,12 +241,13 @@ public class GlobalVariables : MonoBehaviour
             FindObjectOfType<SaverLoader>().Save(true);
         }
         SaverLoader.loadOnStart = withConversion;
+        SaverLoader.loadFromSpecieChange = true;
 
         specieType = lastChangeSpecie;
         StartCoroutine(changeSpecieAsync());
     }
 
-    IEnumerator changeSpecieAsync() {
+    public IEnumerator changeSpecieAsync() {
         Camera.main.cullingMask = LayerMask.GetMask("Loading");
         loadingGO.SetActive(true);
 

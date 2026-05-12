@@ -77,7 +77,7 @@ public class SaverLoader : MonoBehaviour
 
     public GameObject loadingGO;
 
-    public static bool loadOnStart;
+    public static bool loadOnStart, loadFromSpecieChange;
 
     private void Start() {
         if(idsMapping == null) {
@@ -85,8 +85,9 @@ public class SaverLoader : MonoBehaviour
         }
         else {
             if (loadOnStart) {
-                StartCoroutine(LoadAsync("", true));
+                StartCoroutine(LoadAsync("", loadFromSpecieChange));
             }
+            loadOnStart = false;
         }
     }
 
@@ -266,19 +267,20 @@ public class SaverLoader : MonoBehaviour
 
     public IEnumerator LoadAsync(string url, bool fromSpecieChange = false) {
 
-        if (!fromSpecieChange && string.IsNullOrEmpty(url)) {
+        if (!fromSpecieChange && string.IsNullOrEmpty(url) && !loadOnStart) {
             yield break;
         }
 
         int cullingMask = Camera.main.cullingMask;
         bool performedOK = false;
+        bool resetAtEnd = true;
         try {
             Camera.main.cullingMask = LayerMask.GetMask("Loading");
             loadingGO.SetActive(true);
 
             SaveStruct saving = currentSave;
 
-            if (!fromSpecieChange) {
+            if (!string.IsNullOrEmpty(url)) {
                 var loader = new WWW(url);
                 yield return loader;
                 string jsonStr = loader.text;
@@ -287,21 +289,24 @@ public class SaverLoader : MonoBehaviour
             }
 
             if (!fromSpecieChange && saving.specie != GlobalVariables.Instance.GetCurrentSpecieSetting().type) {
-                PopUpManagement.Instance.Show("This saving is for another specie: " + saving.specie.ToString());
+                //PopUpManagement.Instance.Show("This saving is for another specie: " + saving.specie.ToString());
+                loadOnStart = true;
+                loadFromSpecieChange = false;
+                currentSave = saving;
                 performedOK = true;
+                resetAtEnd = false;
+                GlobalVariables.specieType = saving.specie;
+                StartCoroutine(GlobalVariables.Instance.changeSpecieAsync());
             }
 
             else {
 
-                if (!fromSpecieChange) {
-                    //first, destroy all notes
-                    Note[] notes = FindObjectsOfType<Note>(true);
-                    foreach (Note note in notes) {
-                        note.Delete();
-                    }
-                }
-                else {
-                    yield return new WaitForEndOfFrame();
+                yield return new WaitForEndOfFrame();
+                
+                //first, destroy all notes
+                Note[] notes = FindObjectsOfType<Note>(true);
+                foreach (Note note in notes) {
+                    note.Delete();
                 }
 
                 //manage visible objects
@@ -511,9 +516,12 @@ public class SaverLoader : MonoBehaviour
             }
         }
         finally {
-            //reset stuff
-            loadingGO.SetActive(false);
-            Camera.main.cullingMask = cullingMask;
+            //check this to avoid a blink when changing specie because of trying to open a save file that is not the current specie!
+            if (resetAtEnd) {
+                //reset stuff
+                loadingGO.SetActive(false);
+                Camera.main.cullingMask = cullingMask;
+            }
 
             if (!performedOK) {
                 if (!fromSpecieChange) {
