@@ -134,8 +134,24 @@ public class Lexicon : MonoBehaviour
                     if (move == LexiconMove.Right && !lexEl.opened) {
                         lexEl.Open();
                     }
-                    else if(move == LexiconMove.Left && lexEl.opened) {
-                        lexEl.Close();
+                    else if(move == LexiconMove.Left) {
+                        if(lexEl.childCount > 0) {
+                            if (lexEl.opened)
+                                lexEl.Close();
+                        }
+                        else {
+                            if(lexEl.parent != null) {
+                                lexEl.parent.Close();
+                            }
+                        }
+                        if(lexEl.parent != null) {
+                            lexEl.parent.GetComponentInChildren<LexiconElementButton>().OnPointerEnter(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+                            if (currentNavHighligh != null) {
+                                currentNavHighligh.GetComponentInChildren<LexiconElementButton>().OnPointerExit(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current));
+                            }
+                            SnapTo(lexEl.parent.GetComponent<RectTransform>());
+                            currentNavHighligh = lexEl.parent.GetComponent<RectTransform>();
+                        }
                     }
                 }
             }
