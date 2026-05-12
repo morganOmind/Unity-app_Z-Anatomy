@@ -8804,6 +8804,200 @@ MonoBehaviour:
   spanishText: O
   portugueseText: OU
   frenchText: OU
+--- !u!1 &3460282222213607853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7630710130400494375}
+  - component: {fileID: 3009405783353781073}
+  - component: {fileID: 5277108555094186622}
+  - component: {fileID: 3932376913246186007}
+  - component: {fileID: 7023563750089309901}
+  - component: {fileID: 2559097522146121808}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7630710130400494375
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460282222213607853}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4795383936880492160}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.00012207031, y: -26.3}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!222 &3009405783353781073
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460282222213607853}
+  m_CullTransparentMesh: 1
+--- !u!114 &5277108555094186622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460282222213607853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: <color=#2986cc>https://docs.google.com/document/d/1peWW_7IiVgTTAwcI_auv38YSJ6qGWRuTMxzzhkRpXIk/</color>
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
+  m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 11
+  m_fontSizeBase: 11
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 10, y: 0, z: 10, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &3932376913246186007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460282222213607853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &7023563750089309901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460282222213607853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c409e852425d4d9d6025b09dcacc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  link: https://docs.google.com/document/d/1peWW_7IiVgTTAwcI_auv38YSJ6qGWRuTMxzzhkRpXIk/
+--- !u!114 &2559097522146121808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460282222213607853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7023563750089309901}
+          m_TargetAssemblyTypeName: OpenBrowserLink, Assembly-CSharp
+          m_MethodName: Open
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &3501284092349887425
 GameObject:
   m_ObjectHideFlags: 0
@@ -37426,6 +37620,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4795383937354509046}
+  - {fileID: 7630710130400494375}
+  - {fileID: 4795383938399498772}
   m_Father: {fileID: 4795383937358963690}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -67631,8 +67827,8 @@ GameObject:
   - component: {fileID: 4795383937354509046}
   - component: {fileID: 4795383937354509045}
   - component: {fileID: 4795383937354509044}
-  - component: {fileID: 4795383937354509050}
   - component: {fileID: 4795383937354509051}
+  - component: {fileID: 5646614573296662499}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -67651,8 +67847,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4795383938399498772}
+  m_Children: []
   m_Father: {fileID: 4795383936880492160}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -67689,24 +67884,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-\"Z-Anatomy - The open source atlas of anatomy - CC-BY-SA 4.0\"\r\n\r\n-\"BodyParts3D
-    - The Database Center for Life Science - CC-BY-SA 2.1 Japan\"\r\n\r\nWith regard
-    to this content, you are licensed to:\r\n\r\n <indent=5%>-Freely access part
-    or whole of this database, and acquire data.\n-Freely redistribute part or whole
-    of the data from this database.\n-Freely create and distribute database and other
-    derivative works based on part or whole of the data from this database.</indent>\n\nUnder
-    the license, as long as you comply with the following conditions:\r\n\r <indent=5%>\n-You
-    must attribute this database in the manner specified by the author or licensor
-    when distributing part or whole of this database or any derivative work.\r\n-You
-    must distribute any derivative work based on part or whole of the data from this
-    database under the same license.\r</indent>\n\r\nA good practice is to inform
-    the authors when derivated works are produced.\r\n\r\n\r\nOther models have been
-    included and adapted:\r\n\r\n\"Brainder\" and \"White matter\" from the University
-    of Washington\r\n\"Cranial Nerves and Foramina - by University of Dundee, CAHID
-    - CC-BY 4.0\"\r\n\"Anatomy of the Inner Ear - by University of Dundee School
-    of Medicine - CC-BY-NC-SA 4.0\"\r\n\"Kidney - by lissiecowley - CC-BY-NC 4.0\"\r\n\r\nThe
-    definitions of the anatomical structures come mainly from Wikipedia with very
-    few modifications.\r\nIts license is 'CC-BY-SA 3.0' and 'GFDL'."
+  m_text: 'Available online here: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -67775,90 +67953,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &4795383937354509050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4795383937354509041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a3dc6b6c5abd524a82f557b9edc63f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultText: "-\"Z-Anatomy - The open source atlas of anatomy - CC-BY-SA 4.0\"\r\n\r\n-\"BodyParts3D
-    - The Database Center for Life Science - CC-BY-SA 2.1 Japan\"\r\n\r\nWith regard
-    to this content, you are licensed to:\r\n\r\n <indent=5%>-Freely access part
-    or whole of this database, and acquire data.\n-Freely redistribute part or whole
-    of the data from this database.\n-Freely create and distribute database and other
-    derivative works based on part or whole of the data from this database.</indent>\n\nUnder
-    the license, as long as you comply with the following conditions:\r\n\r <indent=5%>\n-You
-    must attribute this database in the manner specified by the author or licensor
-    when distributing part or whole of this database or any derivative work.\r\n-You
-    must distribute any derivative work based on part or whole of the data from this
-    database under the same license.\r</indent>\n\r\nA good practice is to inform
-    the authors when derivated works are produced.\r\n\r\n\r\nOther models have been
-    included and adapted:\r\n\r\n\"Brainder\" and \"White matter\" from the University
-    of Washington\r\n\"Cranial Nerves and Foramina - by University of Dundee, CAHID
-    - CC-BY 4.0\"\r\n\"Anatomy of the Inner Ear - by University of Dundee School
-    of Medicine - CC-BY-NC-SA 4.0\"\r\n\"Kidney - by lissiecowley - CC-BY-NC 4.0\"\r\n\r\nThe
-    definitions of the anatomical structures come mainly from Wikipedia with very
-    few modifications.\r\nIts license is 'CC-BY-SA 3.0' and 'GFDL'."
-  spanishText: "-\"Z-Anatomy - The open source atlas of anatomy - CC-BY-SA 4.0\"\r\n\r\n-\"BodyParts3D
-    - The Database Center for Life Science - CC-BY-SA 2.1 Japan\"\r\n\r\nWith regard
-    to this content, you are licensed to:\r\n\r\n <indent=5%>-Freely access part
-    or whole of this database, and acquire data.\n-Freely redistribute part or whole
-    of the data from this database.\n-Freely create and distribute database and other
-    derivative works based on part or whole of the data from this database.</indent>\n\nUnder
-    the license, as long as you comply with the following conditions:\r\n\r <indent=5%>\n-You
-    must attribute this database in the manner specified by the author or licensor
-    when distributing part or whole of this database or any derivative work.\r\n-You
-    must distribute any derivative work based on part or whole of the data from this
-    database under the same license.\r</indent>\n\r\nA good practice is to inform
-    the authors when derivated works are produced.\r\n\r\n\r\nOther models have been
-    included and adapted:\r\n\r\n\"Brainder\" and \"White matter\" from the University
-    of Washington\r\n\"Cranial Nerves and Foramina - by University of Dundee, CAHID
-    - CC-BY 4.0\"\r\n\"Anatomy of the Inner Ear - by University of Dundee School
-    of Medicine - CC-BY-NC-SA 4.0\"\r\n\"Kidney - by lissiecowley - CC-BY-NC 4.0\"\r\n\r\nThe
-    definitions of the anatomical structures come mainly from Wikipedia with very
-    few modifications.\r\nIts license is 'CC-BY-SA 3.0' and 'GFDL'."
-  portugueseText: "-\"Z-Anatomy - The open source atlas of anatomy - CC-BY-SA 4.0\"\r\n\r\n-\"BodyParts3D
-    - The Database Center for Life Science - CC-BY-SA 2.1 Japan\"\r\n\r\nWith regard
-    to this content, you are licensed to:\r\n\r\n <indent=5%>-Freely access part
-    or whole of this database, and acquire data.\n-Freely redistribute part or whole
-    of the data from this database.\n-Freely create and distribute database and other
-    derivative works based on part or whole of the data from this database.</indent>\n\nUnder
-    the license, as long as you comply with the following conditions:\r\n\r <indent=5%>\n-You
-    must attribute this database in the manner specified by the author or licensor
-    when distributing part or whole of this database or any derivative work.\r\n-You
-    must distribute any derivative work based on part or whole of the data from this
-    database under the same license.\r</indent>\n\r\nA good practice is to inform
-    the authors when derivated works are produced.\r\n\r\n\r\nOther models have been
-    included and adapted:\r\n\r\n\"Brainder\" and \"White matter\" from the University
-    of Washington\r\n\"Cranial Nerves and Foramina - by University of Dundee, CAHID
-    - CC-BY 4.0\"\r\n\"Anatomy of the Inner Ear - by University of Dundee School
-    of Medicine - CC-BY-NC-SA 4.0\"\r\n\"Kidney - by lissiecowley - CC-BY-NC 4.0\"\r\n\r\nThe
-    definitions of the anatomical structures come mainly from Wikipedia with very
-    few modifications.\r\nIts license is 'CC-BY-SA 3.0' and 'GFDL'."
-  frenchText: "-\"Z-Anatomy - The open source atlas of anatomy - CC-BY-SA 4.0\"\r\n\r\n-\"BodyParts3D
-    - The Database Center for Life Science - CC-BY-SA 2.1 Japan\"\r\n\r\nWith regard
-    to this content, you are licensed to:\r\n\r\n <indent=5%>-Freely access part
-    or whole of this database, and acquire data.\n-Freely redistribute part or whole
-    of the data from this database.\n-Freely create and distribute database and other
-    derivative works based on part or whole of the data from this database.</indent>\n\nUnder
-    the license, as long as you comply with the following conditions:\r\n\r <indent=5%>\n-You
-    must attribute this database in the manner specified by the author or licensor
-    when distributing part or whole of this database or any derivative work.\r\n-You
-    must distribute any derivative work based on part or whole of the data from this
-    database under the same license.\r</indent>\n\r\nA good practice is to inform
-    the authors when derivated works are produced.\r\n\r\n\r\nOther models have been
-    included and adapted:\r\n\r\n\"Brainder\" and \"White matter\" from the University
-    of Washington\r\n\"Cranial Nerves and Foramina - by University of Dundee, CAHID
-    - CC-BY 4.0\"\r\n\"Anatomy of the Inner Ear - by University of Dundee School
-    of Medicine - CC-BY-NC-SA 4.0\"\r\n\"Kidney - by lissiecowley - CC-BY-NC 4.0\"\r\n\r\nThe
-    definitions of the anatomical structures come mainly from Wikipedia with very
-    few modifications.\r\nIts license is 'CC-BY-SA 3.0' and 'GFDL'."
 --- !u!114 &4795383937354509051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67873,6 +67967,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &5646614573296662499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4795383937354509041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a3dc6b6c5abd524a82f557b9edc63f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultText: 'Available online here: '
+  spanishText: "\rDisponible en l\xEDnea aqu\xED:"
+  portugueseText: "\rDispon\xEDvel online aqui:"
+  frenchText: 'Disponible en ligne ici :'
 --- !u!1 &4795383937354937868
 GameObject:
   m_ObjectHideFlags: 0
@@ -130160,12 +130270,12 @@ RectTransform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4795383937354509046}
-  m_RootOrder: 0
+  m_Father: {fileID: 4795383936880492160}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 39.699997, y: -22.13507}
+  m_AnchoredPosition: {x: 39.69951, y: 434.02002}
   m_SizeDelta: {x: 30.130005, y: 12.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4795383938399498778
