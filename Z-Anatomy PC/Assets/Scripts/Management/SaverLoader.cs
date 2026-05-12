@@ -251,7 +251,7 @@ public class SaverLoader : MonoBehaviour
 #if UNITY_WEBGL && !UNITY_EDITOR
         UploadFile(gameObject.name, "OnFileUpload", ".json", false);
 #else
-        string path = "";
+        string path = StaticMethods.GetDefaultSavePath();
         if (PlayerPrefs.HasKey("SavesPath")) {
             path = PlayerPrefs.GetString("SavesPath");
         }
@@ -586,7 +586,7 @@ public class SaverLoader : MonoBehaviour
         //SFB asset comes from this github: https://github.com/gkngkc/UnityStandaloneFileBrowser
         //error on build fixed copying two unity dlls Mono.Posix and Mono.WebBrowser into a plugins folder
         //fix found here: https://github.com/gkngkc/UnityStandaloneFileBrowser/issues/145
-        string path = "";
+        string path = StaticMethods.GetDefaultSavePath();
         if (PlayerPrefs.HasKey("SavesPath")) {
             path = PlayerPrefs.GetString("SavesPath");
         }
