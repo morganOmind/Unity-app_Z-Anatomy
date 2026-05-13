@@ -31,6 +31,7 @@ public struct SpecieSetting {
     public TextAsset[] descriptions;
     public Vector2 sagitalLimits, coronalLimits, transversalLimits;
     public float crossSectionLineWidth;
+    public float upViewZValue, downViewZValue;
     public SpecieLayers layers;
     public TextAsset[] bonusCollections;
     public TextAsset[] groupMuscles;

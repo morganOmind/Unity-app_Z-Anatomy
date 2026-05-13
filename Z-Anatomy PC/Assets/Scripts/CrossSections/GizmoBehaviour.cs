@@ -220,7 +220,7 @@ public class GizmoBehaviour : MonoBehaviour
                         CrossPlanesGizmo.Instance.SetPlane(GizmoFace.Down);
                     return;
                 }
-                angle = new Vector3(90, 0, 0);
+                angle = new Vector3(90, GlobalVariables.Instance.GetCurrentSpecieSetting().upViewZValue, 0);
                 break;
             case GizmoFace.Down:
                 if (actualFace == orientation)
@@ -230,7 +230,7 @@ public class GizmoBehaviour : MonoBehaviour
                         CrossPlanesGizmo.Instance.SetPlane(GizmoFace.Up);
                     return;
                 }
-                angle = new Vector3(-90, 0, 0);
+                angle = new Vector3(-90, GlobalVariables.Instance.GetCurrentSpecieSetting().downViewZValue, 0);
                 break;
             case GizmoFace.Right:
                 if (actualFace == orientation)
