@@ -577,8 +577,15 @@ public class Shortcuts : MonoBehaviour
     }
     private void Copy(InputAction.CallbackContext context)
     {
-        if (UserIsWriting())
+        /*if (UserIsWriting())
             return;
+        StaticMethods.CopyToClipboard(GUIUtility.systemCopyBuffer);*/
+        //make it async to be sure to override the OS shortcut and remove rich text tags
+        StartCoroutine(CopyAsync());
+    }
+
+    IEnumerator CopyAsync() {
+        yield return new WaitForEndOfFrame();
         StaticMethods.CopyToClipboard(GUIUtility.systemCopyBuffer);
     }
 
