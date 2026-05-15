@@ -41,22 +41,7 @@ public class LexiconElement : MonoBehaviour
     public bool isParent {
         get
         {
-            bool hasChilds = false;
-            var childs = element.GetComponentsInChildren<Transform>(true);
-            foreach (var child in childs) {
-                if (child == element)
-                    continue;
-                hasChilds = (child.gameObject.IsBodyPart() && !child.CompareTag("Insertions"))
-                    || child.gameObject.IsLabel()
-                    || child.gameObject.IsGroup()
-                    //group objet exists only for the man, so instead check nameanddescription compoenent that every lexicon element has.
-                    || child.GetComponent<NameAndDescription>() != null;
-                if (hasChilds) {
-                    break;
-                }
-            }
-            expandBtn.gameObject.SetActive(hasChilds);
-            return hasChilds;
+            return _isParent();
         }
     }
 
@@ -80,16 +65,34 @@ public class LexiconElement : MonoBehaviour
         isVisibleScript = element.GetComponent<BodyPartVisibility>();
         label = element.GetComponent<Label>();
         //isParent = IsParent();
-
+        _isParent();
 
         if (element.GetComponentsInChildren<TangibleBodyPart>(true).Length == 0 && element.name != GlobalVariables.Instance.bodySections[2].name)
         {
             checkBox.btn.image.sprite = Lexicon.Instance.noCheckboxSprite;
             checkBox.btn.transform.localScale = new Vector2(.25f, .25f);
             checkBox.btn.isEnabled = false;
-
         }
 
+    }
+
+    bool _isParent() {
+        bool hasChilds = false;
+        var childs = element.GetComponentsInChildren<Transform>(true);
+        foreach (var child in childs) {
+            if (child == element)
+                continue;
+            hasChilds = (child.gameObject.IsBodyPart() && !child.CompareTag("Insertions"))
+                || child.gameObject.IsLabel()
+                || child.gameObject.IsGroup()
+                //group objet exists only for the man, so instead check nameanddescription compoenent that every lexicon element has.
+                || child.GetComponent<NameAndDescription>() != null;
+            if (hasChilds) {
+                break;
+            }
+        }
+        expandBtn.gameObject.SetActive(hasChilds);
+        return hasChilds;
     }
     
     public void OpenCloseClick()

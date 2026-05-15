@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Splashscreen.unity
     guid: 64aae415133289940aa129e422739452
   - enabled: 1
-    path: Assets/Scenes/MainScene-test-chat.unity
+    path: Assets/Scenes/MainScene.unity
     guid: 8f1cb88f7a891ef4799eea739204e3c9
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a026178d1073c2a49862a0cad9bed047, type: 2}

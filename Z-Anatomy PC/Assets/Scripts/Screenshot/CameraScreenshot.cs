@@ -257,13 +257,13 @@ private static extern void DownloadFile(string gameObjectName, string methodName
                 yield return new WaitForSeconds(0.1f);
             }
 
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
             // Refresh asset database in editor
             if (filePath.StartsWith(Application.dataPath)) {
                 string relativePath = "Assets" + filePath.Substring(Application.dataPath.Length);
                 AssetDatabase.ImportAsset(relativePath);
             }
-#endif
+#endif*/
         }
         finally {
             // Restore original camera settings
@@ -520,7 +520,7 @@ private static extern void DownloadFile(string gameObjectName, string methodName
             //SFB asset comes from this github: https://github.com/gkngkc/UnityStandaloneFileBrowser
             //error on build fixed copying two unity dlls Mono.Posix and Mono.WebBrowser into a plugins folder
             //fix found here: https://github.com/gkngkc/UnityStandaloneFileBrowser/issues/145
-            string path = "";
+            string path = StaticMethods.GetDefaultSavePath();
             if (PlayerPrefs.HasKey("ScreenshotsPath")) {
                 path = PlayerPrefs.GetString("ScreenshotsPath");
             }

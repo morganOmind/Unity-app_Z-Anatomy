@@ -352,4 +352,12 @@ public static class StaticMethods
         // Step 7
         return d[n, m];
     }
+
+    public static string GetDefaultSavePath() {
+#if !UNITY_EDITOR && UNITY_WEBGL
+        return ""
+#else
+        return System.IO.Directory.GetParent(Application.dataPath).FullName;
+#endif
+    }
 }

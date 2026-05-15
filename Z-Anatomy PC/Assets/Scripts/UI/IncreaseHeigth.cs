@@ -28,8 +28,13 @@ public class IncreaseHeigth : MonoBehaviour
     {
         if (coroutine != null)
             StopCoroutine(coroutine);
-        coroutine = IncreaseHeight(normalHeigth);
-        StartCoroutine(coroutine);
+        if (isActiveAndEnabled) {
+            coroutine = IncreaseHeight(normalHeigth);
+            StartCoroutine(coroutine);
+        }
+        else {
+            rt.SetHeight(normalHeigth);
+        }
     }
 
     public void SetExpanded()

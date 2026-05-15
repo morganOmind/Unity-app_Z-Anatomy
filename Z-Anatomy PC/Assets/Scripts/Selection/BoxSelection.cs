@@ -33,9 +33,13 @@ public class BoxSelection : MonoBehaviour
 
     private bool blocked;
 
+    public static BoxSelection instance;
+
     // Start is called before the first frame update
     void Awake()
     {
+        instance = this;
+
         cam = Camera.main;
         debugCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         debugCube.transform.localScale = new Vector3(.001f, .001f, .001f);

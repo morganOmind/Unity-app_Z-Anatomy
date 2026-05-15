@@ -6,10 +6,16 @@ using System.Text;
 using System.IO;
 
 [System.Serializable]
+public enum Side {
+    None, Left, Right
+};
+
+[System.Serializable]
 public struct VisibleStruct {
     public string id;
     public bool hasLabels;
     public string originalName;
+    public Side side;
 };
 
 [System.Serializable]
@@ -71,12 +77,17 @@ public class SaverLoader : MonoBehaviour
 
     public GameObject loadingGO;
 
+    public static bool loadOnStart, loadFromSpecieChange;
+
     private void Start() {
         if(idsMapping == null) {
             ParseIdMap();
         }
         else {
-            StartCoroutine(LoadAsync("", true));
+            if (loadOnStart) {
+                StartCoroutine(LoadAsync("", loadFromSpecieChange));
+            }
+            loadOnStart = false;
         }
     }
 
@@ -112,6 +123,7 @@ public class SaverLoader : MonoBehaviour
                     vs.id = navidsMap[name];
                     vs.hasLabels = v.HasLabels() && v.labelsOn;
                     vs.originalName = origName;
+                    vs.side = origName.EndsWith(".l") ? Side.Left : (origName.EndsWith(".r") ? Side.Right : Side.None);
 
                     visiblesNavids.Add(vs);
                 }
@@ -120,6 +132,7 @@ public class SaverLoader : MonoBehaviour
                     vs.id = "insertions";
                     vs.hasLabels = false;
                     vs.originalName = origName;
+                    vs.side = Side.None;    //side is used for specie switch, and no not handle insertions!
 
                     visiblesNavids.Add(vs);
                 }
@@ -239,7 +252,7 @@ public class SaverLoader : MonoBehaviour
 #if UNITY_WEBGL && !UNITY_EDITOR
         UploadFile(gameObject.name, "OnFileUpload", ".json", false);
 #else
-        string path = "";
+        string path = StaticMethods.GetDefaultSavePath();
         if (PlayerPrefs.HasKey("SavesPath")) {
             path = PlayerPrefs.GetString("SavesPath");
         }
@@ -254,19 +267,20 @@ public class SaverLoader : MonoBehaviour
 
     public IEnumerator LoadAsync(string url, bool fromSpecieChange = false) {
 
-        if (!fromSpecieChange && string.IsNullOrEmpty(url)) {
+        if (!fromSpecieChange && string.IsNullOrEmpty(url) && !loadOnStart) {
             yield break;
         }
 
         int cullingMask = Camera.main.cullingMask;
         bool performedOK = false;
+        bool resetAtEnd = true;
         try {
             Camera.main.cullingMask = LayerMask.GetMask("Loading");
             loadingGO.SetActive(true);
 
             SaveStruct saving = currentSave;
 
-            if (!fromSpecieChange) {
+            if (!string.IsNullOrEmpty(url)) {
                 var loader = new WWW(url);
                 yield return loader;
                 string jsonStr = loader.text;
@@ -275,21 +289,24 @@ public class SaverLoader : MonoBehaviour
             }
 
             if (!fromSpecieChange && saving.specie != GlobalVariables.Instance.GetCurrentSpecieSetting().type) {
-                PopUpManagement.Instance.Show("This saving is for another specie: " + saving.specie.ToString());
+                //PopUpManagement.Instance.Show("This saving is for another specie: " + saving.specie.ToString());
+                loadOnStart = true;
+                loadFromSpecieChange = false;
+                currentSave = saving;
                 performedOK = true;
+                resetAtEnd = false;
+                GlobalVariables.specieType = saving.specie;
+                StartCoroutine(GlobalVariables.Instance.changeSpecieAsync());
             }
 
             else {
 
-                if (!fromSpecieChange) {
-                    //first, destroy all notes
-                    Note[] notes = FindObjectsOfType<Note>(true);
-                    foreach (Note note in notes) {
-                        note.Delete();
-                    }
-                }
-                else {
-                    yield return new WaitForEndOfFrame();
+                yield return new WaitForEndOfFrame();
+                
+                //first, destroy all notes
+                Note[] notes = FindObjectsOfType<Note>(true);
+                foreach (Note note in notes) {
+                    note.Delete();
                 }
 
                 //manage visible objects
@@ -327,8 +344,9 @@ public class SaverLoader : MonoBehaviour
                                 v = GlobalVariables.Instance.allVisibilityScripts.Find(delegate (BodyPartVisibility bpv)
                                 {
                                     string origName = bpv.GetComponent<NameAndDescription>().originalName;
-                                    return bpv.tag != "Insertions" 
-                                        && searchName == origName.Replace(".l", "").Replace(".r", "").Replace(".t", "").Replace(".s", "").Trim().ToLower();
+                                    return bpv.tag != "Insertions"
+                                        && searchName == origName.Replace(".l", "").Replace(".r", "").Replace(".t", "").Replace(".s", "").Trim().ToLower()
+                                        && (vs.side == Side.None || (vs.side == Side.Left && origName.EndsWith(".l")) || (vs.side == Side.Right && origName.EndsWith(".r")));
                                 });
                             }
                         }
@@ -498,9 +516,12 @@ public class SaverLoader : MonoBehaviour
             }
         }
         finally {
-            //reset stuff
-            loadingGO.SetActive(false);
-            Camera.main.cullingMask = cullingMask;
+            //check this to avoid a blink when changing specie because of trying to open a save file that is not the current specie!
+            if (resetAtEnd) {
+                //reset stuff
+                loadingGO.SetActive(false);
+                Camera.main.cullingMask = cullingMask;
+            }
 
             if (!performedOK) {
                 if (!fromSpecieChange) {
@@ -573,7 +594,7 @@ public class SaverLoader : MonoBehaviour
         //SFB asset comes from this github: https://github.com/gkngkc/UnityStandaloneFileBrowser
         //error on build fixed copying two unity dlls Mono.Posix and Mono.WebBrowser into a plugins folder
         //fix found here: https://github.com/gkngkc/UnityStandaloneFileBrowser/issues/145
-        string path = "";
+        string path = StaticMethods.GetDefaultSavePath();
         if (PlayerPrefs.HasKey("SavesPath")) {
             path = PlayerPrefs.GetString("SavesPath");
         }

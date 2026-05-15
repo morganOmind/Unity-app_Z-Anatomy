@@ -322,8 +322,8 @@ public class ActionControl : MonoBehaviour
 
     public void AddGlobalNoteClick()
     {
-        creatingGlobalNote = true;
-        CameraController.instance.raycaster.enabled = false;
+        creatingGlobalNote = !creatingGlobalNote;
+        CameraController.instance.raycaster.enabled = !creatingGlobalNote;
 
     }
 

@@ -27,6 +27,7 @@ public class NoteGizmo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         mat = GetComponent<MeshRenderer>().material;
         mat.color = defaultColor;
+        mat.SetColor("_BaseColor", defaultColor);
     }
 
     private void Update()
@@ -56,14 +57,18 @@ public class NoteGizmo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (placed)
+        if (placed) {
             mat.color = highlightedColor;
+            mat.SetColor("_BaseColor", highlightedColor);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (placed)
+        if (placed) {
             mat.color = defaultColor;
+            mat.SetColor("_BaseColor", defaultColor);
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData)

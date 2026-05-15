@@ -11,8 +11,15 @@ public enum SpecieType {
 };
 
 [System.Serializable]
+public struct SpecieName {
+    public SystemLanguage language;
+    public string name;
+};
+
+[System.Serializable]
 public struct SpecieSetting {
     public SpecieType type;
+    public List<SpecieName> specieNames;
     public GameObject globalParent;
     public TextAsset translations;
     public int[] availableLanguages;
@@ -24,6 +31,7 @@ public struct SpecieSetting {
     public TextAsset[] descriptions;
     public Vector2 sagitalLimits, coronalLimits, transversalLimits;
     public float crossSectionLineWidth;
+    public float upViewZValue, downViewZValue;
     public SpecieLayers layers;
     public TextAsset[] bonusCollections;
     public TextAsset[] groupMuscles;
@@ -130,6 +138,8 @@ public class GlobalVariables : MonoBehaviour
     public RectTransform speciesChoiceRoot;
     public Image specieImage;
     public Transform canvasesRoot;
+    public Transform confirmCanvas;
+    public TMPro.TextMeshProUGUI fromSpecieTMP, toSpecieTMP;
 
     private void Awake()
     {
@@ -202,16 +212,43 @@ public class GlobalVariables : MonoBehaviour
         }
     }
 
+    string GetSpecieName(SpecieType type) {
+        foreach(SpecieSetting setting in speciesSettings) {
+            if(setting.type == type) {
+                foreach(SpecieName sName in setting.specieNames) {
+                    if(sName.language == Settings.language) {
+                        return sName.name;
+                    }
+                }
+            }
+        }
+        return "unknown";
+    }
+
+    SpecieType lastChangeSpecie;
+
     public void OnChangeSpecie(int type) {
         SpecieType specie = (SpecieType)type;
         if(specieType != specie) {
-            FindObjectOfType<SaverLoader>().Save(true);
-            specieType = specie;
-            StartCoroutine(changeSpecieAsync());
+            lastChangeSpecie = specie;
+            fromSpecieTMP.text = GetSpecieName(specieType);
+            toSpecieTMP.text = GetSpecieName(specie);
+            confirmCanvas.gameObject.SetActive(true);
         }
     }
 
-    IEnumerator changeSpecieAsync() {
+    public void PerformChangeSpecie(bool withConversion) {
+        if (withConversion) {
+            FindObjectOfType<SaverLoader>().Save(true);
+        }
+        SaverLoader.loadOnStart = withConversion;
+        SaverLoader.loadFromSpecieChange = true;
+
+        specieType = lastChangeSpecie;
+        StartCoroutine(changeSpecieAsync());
+    }
+
+    public IEnumerator changeSpecieAsync() {
         Camera.main.cullingMask = LayerMask.GetMask("Loading");
         loadingGO.SetActive(true);
 

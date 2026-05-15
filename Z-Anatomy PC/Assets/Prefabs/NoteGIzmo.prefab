@@ -90,10 +90,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   note: {fileID: 0}
-  defaultColor: {r: 0.6886792, g: 0.3443396, b: 0, a: 0.88235295}
-  highlightedColor: {r: 1, g: 0.50246304, b: 0, a: 0.88235295}
+  defaultColor: {r: 1, g: 0.34117648, b: 0.2, a: 1}
+  highlightedColor: {r: 1, g: 0.55239046, b: 0.19999999, a: 1}
   size: 0.04
-  maxSize: 0.11
+  maxSize: 0.55
   offset: 0.025
   placed: 0
 --- !u!33 &2452216544189585026
