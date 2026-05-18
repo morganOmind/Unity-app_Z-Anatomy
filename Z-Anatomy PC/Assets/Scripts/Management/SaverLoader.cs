@@ -132,7 +132,7 @@ public class SaverLoader : MonoBehaviour
                     vs.id = "insertions";
                     vs.hasLabels = false;
                     vs.originalName = origName;
-                    vs.side = Side.None;    //side is used for specie switch, and no not handle insertions!
+                    vs.side = Side.None;    //side is used for specie switch which does not handle insertions!
 
                     visiblesNavids.Add(vs);
                 }
