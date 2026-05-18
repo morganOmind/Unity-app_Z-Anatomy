@@ -20,7 +20,7 @@ public class BoxMaker : MonoBehaviour
     }
 
     private void Start() {
-        boxConstraint = GetComponentInChildren<BoxMinMaxSize>();
+        boxConstraint = GetComponentInChildren<BoxMinMaxSize>(true);
     }
 
     // Update is called once per frame
@@ -45,11 +45,13 @@ public class BoxMaker : MonoBehaviour
             bool isValid = true;
             Vector2 mousePos = Mouse.current.position.ReadValue();
             foreach (RectTransform rt in excludedRT) {
-                if (RectTransformUtility.RectangleContainsScreenPoint(rt, mousePos)) {
-                    isValid = false;
+                if (rt.gameObject.activeInHierarchy) {
+                    if (RectTransformUtility.RectangleContainsScreenPoint(rt, mousePos)) {
+                        isValid = false;
+                    }
+                    if (!isValid)
+                        break;
                 }
-                if (!isValid)
-                    break;
             }
             if (isValid) {
                 isMakingBox = true;
@@ -59,6 +61,8 @@ public class BoxMaker : MonoBehaviour
                 boxRT.SetLeft(mousePos.x);
                 boxRT.SetBottom(mousePos.y);
                 boxRT.SetRight(Screen.width - mousePos.x);
+
+                boxRT.gameObject.SetActive(true);
             }
         }
     }

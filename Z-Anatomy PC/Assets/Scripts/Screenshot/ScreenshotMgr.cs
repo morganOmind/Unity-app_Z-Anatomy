@@ -7,7 +7,7 @@ public class ScreenshotMgr : MonoBehaviour
 {
     public RectTransform boxCanvasRT, boxRootRT;
 
-    bool first = true;
+    //bool first = true;
     public float firstBoxSizeFactor = 0.33f;
     
     List<MonoBehaviour> disableComponents;
@@ -33,7 +33,7 @@ public class ScreenshotMgr : MonoBehaviour
             m.enabled = false;
         }
 
-        if (first) {
+        /*if (first) {
             first = false;
             Vector2 screen = new Vector2(Screen.width, Screen.height);
             Vector2 box = screen * firstBoxSizeFactor;
@@ -42,8 +42,9 @@ public class ScreenshotMgr : MonoBehaviour
             boxRootRT.SetRight(pos.x);
             boxRootRT.SetBottom(pos.y);
             boxRootRT.SetTop(box.y);
-        }
+        }*/
 
+        boxRootRT.gameObject.SetActive(false);
         boxCanvasRT.gameObject.SetActive(true);
 
         Cursor.SetCursor(cursor, cursorOffset, CursorMode.Auto);
