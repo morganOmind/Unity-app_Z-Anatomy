@@ -19,8 +19,9 @@ public class CopyText : MonoBehaviour
     {
         if (((PointerEventData)(eventData)).button == PointerEventData.InputButton.Right && inputField.selectionAnchorPosition != inputField.selectionFocusPosition)
         {
-            ContextualMenu.Instance.Show();
+            ContextualMenu.Instance.Show(false);
             ContextualMenu.Instance.ShowCopyBtn();
+            StartCoroutine(ContextualMenu.Instance.PlaceAsync(UnityEngine.InputSystem.Mouse.current.position.ReadValue()));
 
         }
 
