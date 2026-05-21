@@ -425,7 +425,7 @@ public class GlobalVariables : MonoBehaviour
             if (navidFile != null) {
                 print("find navid file: " + navidFile.name);
                 Dictionary<string, string>  navidsMap = new Dictionary<string, string>();
-                string[] lines = navidFile.text.Split("\n", System.StringSplitOptions.RemoveEmptyEntries);
+                string[] lines = navidFile.text.Split(new string[] { "\r\n", "\r", "\n" }, System.StringSplitOptions.RemoveEmptyEntries);
                 foreach (string line in lines) {
                     string[] tokens = line.Split(";", System.StringSplitOptions.RemoveEmptyEntries);
                     if (tokens.Length != 2) {
@@ -444,7 +444,7 @@ public class GlobalVariables : MonoBehaviour
                 print("navid file parsed successfully!");
 
                 foreach(NameAndDescription nameScript in allNameScripts) {
-                    string name = nameScript.name.Replace("(R)", "").Replace("(L)", "").Trim().RemoveSuffix();
+                    string name = nameScript.originalName.Trim().RemoveSuffix();
                     if (navidsMap.ContainsKey(name)) {
                         if (navidsMap[name] == UrlParser.openNavid) {
                             TangibleBodyPart part = nameScript.GetComponent<TangibleBodyPart>();
@@ -480,6 +480,7 @@ public class GlobalVariables : MonoBehaviour
             }
 
             print("unable to focus on " + UrlParser.openNavid);
+            PopUpManagement.Instance.Show("Could not find object with id '" + UrlParser.openNavid + "' for specie '" + specieType.ToString() + "'");
             Camera.main.cullingMask = cullingMask;
         }
     }

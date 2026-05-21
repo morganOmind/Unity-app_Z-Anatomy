@@ -355,7 +355,7 @@ public static class StaticMethods
 
     public static string GetDefaultSavePath() {
 #if !UNITY_EDITOR && UNITY_WEBGL
-        return ""
+        return "";
 #else
         return System.IO.Directory.GetParent(Application.dataPath).FullName;
 #endif
