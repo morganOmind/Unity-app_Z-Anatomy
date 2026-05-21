@@ -43,7 +43,7 @@ public class CreatePrefabs : MonoBehaviour
             if(navidFile != null) {
                 print("find navid file: " + navidFile.name);
                 navidsMap = new Dictionary<string, string>();
-                string[] lines = navidFile.text.Split("\n", System.StringSplitOptions.RemoveEmptyEntries);
+                string[] lines = navidFile.text.Split(new string[] { "\r\n", "\r", "\n" }, System.StringSplitOptions.RemoveEmptyEntries);
                 foreach (string line in lines) {
                     string[] tokens = line.Split(";", System.StringSplitOptions.RemoveEmptyEntries);
                     if(tokens.Length != 2) {
