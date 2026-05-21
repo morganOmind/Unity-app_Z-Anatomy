@@ -88,7 +88,7 @@ public class BonusCollections : MonoBehaviour
         trans.transform.SetParent(collectionsPanel);
         trans.localScale = Vector3.one;
         trans.anchoredPosition = new Vector2(0f, 0f);
-        trans.SetHeight(1);
+        trans.SetHeight(1.5f);
         trans.SetWidth(collectionsPanel.GetWidth() - 20);
 
         Image image = imgObject.AddComponent<Image>();

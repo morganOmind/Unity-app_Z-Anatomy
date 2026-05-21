@@ -34,7 +34,7 @@ public class UrlParser : MonoBehaviour
                         case "specie":
                             GlobalVariables.specieType = System.Enum.Parse<SpecieType>(value[0].ToString().ToUpper() + value.Substring(1));
                             break;
-                        case "navid":
+                        case "id":
                             openNavid = value;
                             break;
                         default:

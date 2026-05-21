@@ -58,6 +58,9 @@ public class NamesManagement : MonoBehaviour
         int line = 0;
         try
         {
+            print("parsing translation file: " + translations.name);
+            print("for specie: " + GlobalVariables.Instance.GetCurrentSpecieSetting().type.ToString());
+
             int notFoundCount = 0;
             List<string> notFound = new List<string>();
 
@@ -81,6 +84,7 @@ public class NamesManagement : MonoBehaviour
             {
                 //Remove suffix from its name
                 var name = nameScript.originalName.RemoveSuffix();
+               
                 //If translation doc contains it, assign the languages array
                 if (splittedTranslations.ContainsKey(name.ToLower()))
                 {

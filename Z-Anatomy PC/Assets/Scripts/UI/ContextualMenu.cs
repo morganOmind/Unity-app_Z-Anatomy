@@ -1,4 +1,5 @@
 using Assets.Scripts.Commands;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -75,8 +76,11 @@ public class ContextualMenu : MonoBehaviour
         isolateBtn.transform.parent.gameObject.SetActive(true);
         hideBtn.transform.parent.gameObject.SetActive(true);
 
-        structuresBtn.transform.parent.gameObject.SetActive(false);
-        structuresBtn.transform.parent.gameObject.SetActive(ShowStructuresOn());
+        //structuresBtn.transform.parent.gameObject.SetActive(false);
+        //structuresBtn.transform.parent.gameObject.SetActive(ShowStructuresOn());
+        bonusCollectionPanel.gameObject.SetActive(ShowStructuresOn());
+        //manage separator
+        bonusCollectionPanel.transform.parent.GetChild(bonusCollectionPanel.transform.GetSiblingIndex() - 1).gameObject.SetActive(bonusCollectionPanel.gameObject.activeSelf);
 
         partiallyIsolateBtn.transform.parent.gameObject.SetActive(actualTags.Count > 1);
 
@@ -98,6 +102,10 @@ public class ContextualMenu : MonoBehaviour
 
         showKeyColors.transform.parent.gameObject.SetActive(ShowKeyColorsOn());
         hideKeyColors.transform.parent.gameObject.SetActive(HideKeyColorsOn());
+
+        ManageSeparators();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(rt);
+        Canvas.ForceUpdateCanvases();
     }
 
     public void ShowCopyBtn()
@@ -106,8 +114,9 @@ public class ContextualMenu : MonoBehaviour
 
         isolateBtn.transform.parent.gameObject.SetActive(false);
         hideBtn.transform.parent.gameObject.SetActive(false);
-        structuresBtn.transform.parent.gameObject.SetActive(false);
-        structuresBtn.transform.parent.gameObject.SetActive(false);
+        //structuresBtn.transform.parent.gameObject.SetActive(false);
+        //structuresBtn.transform.parent.gameObject.SetActive(false);
+        bonusCollectionPanel.gameObject.SetActive(false);
         partiallyIsolateBtn.transform.parent.gameObject.SetActive(false);
         peelBtn.transform.parent.gameObject.SetActive(false);
         //movePosition.transform.parent.gameObject.SetActive(false);
@@ -121,6 +130,28 @@ public class ContextualMenu : MonoBehaviour
         showMuscleNervesBtn.transform.parent.gameObject.SetActive(false);
         showKeyColors.transform.parent.gameObject.SetActive(false);
         hideKeyColors.transform.parent.gameObject.SetActive(false);
+
+        ManageSeparators();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(rt);
+        Canvas.ForceUpdateCanvases();
+    }
+
+    void ManageSeparators() {
+        //manage multiple separators without nothing in-between
+        foreach (Transform t in transform) {
+            if (t.name.StartsWith("Separator")) {
+                if (t.GetSiblingIndex() > 0) {
+                    for (int i = t.GetSiblingIndex() - 1; i >= 0; i--) {
+                        if (transform.GetChild(i).gameObject.activeSelf) {
+                            if (transform.GetChild(i).name.StartsWith("Separator")) {
+                                t.gameObject.SetActive(false);
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     public void CopyClick()
@@ -433,24 +464,35 @@ public class ContextualMenu : MonoBehaviour
         }
     }
 
-    public void Show()
+    public void Show(bool place=true)
     {
         if((contextObject != null && (contextObject.IsBodyPart() || contextObject.IsGroup())) || SelectedObjectsManagement.Instance.selectedObjects.Count != 0)
         {
-            Vector2 mousePos = Mouse.current.position.ReadValue();
-            gameObject.SetActive(true);
-            transform.position = new Vector2(
-                Mathf.Clamp(mousePos.x + rt.GetWidth() / 2, rt.GetWidth() * 0.75f, Screen.width - rt.GetWidth() * 0.75f), 
-                Mathf.Clamp(mousePos.y - rt.GetHeight() / 2, rt.GetHeight() * 0.75f, Screen.height - rt.GetHeight() * 0.75f)
-                );
-            bonusCollectionPanel.position = new Vector2(
-                bonusCollectionPanel.position.x,
-                Mathf.Clamp(bonusCollectionPanel.parent.position.y + 25, bonusCollectionPanel.GetHeight(), Screen.height)
-                );
-
-            Lexicon.Instance.UpdateTreeViewCheckboxes();
+            gameObject.SetActive(false);
             UpdateEnabledButtons();
+            Lexicon.Instance.UpdateTreeViewCheckboxes();
+            gameObject.SetActive(true);
+
+            if (place) {
+                StartCoroutine(PlaceAsync(Mouse.current.position.ReadValue()));
+            }
         }
+    }
+
+    public IEnumerator PlaceAsync(Vector2 mousePos) {
+        yield return new WaitForEndOfFrame();
+        GetComponent<ContentSizeFitter>().enabled = false;
+        GetComponent<ContentSizeFitter>().enabled = true;
+        yield return new WaitForEndOfFrame();
+        transform.position = new Vector2(
+            Mathf.Clamp(mousePos.x + rt.GetWidth() / 2, rt.GetWidth() * 0.75f, Screen.width - rt.GetWidth() * 0.75f),
+            Mathf.Clamp(mousePos.y - rt.GetHeight() / 2, rt.GetHeight() * 0.75f, Screen.height - rt.GetHeight() * 0.75f)
+            );
+        /*bonusCollectionPanel.position = new Vector2(
+            bonusCollectionPanel.position.x,
+            Mathf.Clamp(bonusCollectionPanel.parent.position.y + 25, bonusCollectionPanel.GetHeight(), Screen.height)
+            );*/
+        
     }
 
     public void Close()

@@ -138,8 +138,18 @@ public class GlobalVariables : MonoBehaviour
     public RectTransform speciesChoiceRoot;
     public Image specieImage;
     public Transform canvasesRoot;
-    public Transform confirmCanvas;
-    public TMPro.TextMeshProUGUI fromSpecieTMP, toSpecieTMP;
+    //public Transform confirmCanvas;
+    //public TMPro.TextMeshProUGUI fromSpecieTMP, toSpecieTMP;
+    bool _loadOnlyVisible;
+    public bool loadOnlyVisible {
+        get { return _loadOnlyVisible; }
+        set
+        {
+            _loadOnlyVisible = value;
+            PlayerPrefs.SetInt("LoadOnlyVisible", _loadOnlyVisible ? 1 : 0);
+        }
+    }
+    public UnityEngine.UI.Toggle onlyVisibleToggle;
 
     private void Awake()
     {
@@ -195,6 +205,14 @@ public class GlobalVariables : MonoBehaviour
             }
         }
 
+        if (PlayerPrefs.HasKey("LoadOnlyVisible")) {
+            loadOnlyVisible = PlayerPrefs.GetInt("LoadOnlyVisible") == 0 ? false : true;
+            onlyVisibleToggle.SetIsOnWithoutNotify(loadOnlyVisible);
+        }
+        else {
+            loadOnlyVisible = onlyVisibleToggle.isOn;
+        }
+
 #if UNITY_EDITOR
         StartCoroutine(SanityCheck());
 #endif
@@ -231,9 +249,10 @@ public class GlobalVariables : MonoBehaviour
         SpecieType specie = (SpecieType)type;
         if(specieType != specie) {
             lastChangeSpecie = specie;
-            fromSpecieTMP.text = GetSpecieName(specieType);
+            /*fromSpecieTMP.text = GetSpecieName(specieType);
             toSpecieTMP.text = GetSpecieName(specie);
-            confirmCanvas.gameObject.SetActive(true);
+            confirmCanvas.gameObject.SetActive(true);*/
+            PerformChangeSpecie(loadOnlyVisible);
         }
     }
 

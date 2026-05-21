@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: NoteGizmoMat
-  m_Shader: {fileID: 4800000, guid: 9d82b27b79d13e9488b4faa6089ca163, type: 3}
+  m_Shader: {fileID: 10101, guid: 0000000000000000e000000000000000, type: 0}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _SURFACE_TYPE_TRANSPARENT
@@ -131,5 +131,5 @@ Material:
     - _BaseColor: {r: 0.8490566, g: 0.40956214, b: 0, a: 0.39215687}
     - _Color: {r: 0.8490566, g: 0.4095621, b: 0, a: 0.39215687}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
