@@ -4,6 +4,7 @@ using UnityEngine;
 using SFB;
 using System.Text;
 using System.IO;
+using System.Runtime.InteropServices;
 
 [System.Serializable]
 public enum Side {

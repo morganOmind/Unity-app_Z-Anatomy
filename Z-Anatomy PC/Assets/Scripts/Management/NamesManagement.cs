@@ -359,7 +359,7 @@ public class NamesManagement : MonoBehaviour
                 cam.UpdateCameraPos(bodyPartScript.distanceToCamera);
             }
             //If it is a label
-            else if(labelSript != null && hasValidMesh(clickedGO.gameObject))
+            else if(labelSript != null && labelSript.parent != null && hasValidMesh(labelSript.parent.gameObject))
             {
                 //Select the label's parent (jump the .labels obj)
                 SelectedObjectsManagement.Instance.SelectObject(labelSript.parent.gameObject);
