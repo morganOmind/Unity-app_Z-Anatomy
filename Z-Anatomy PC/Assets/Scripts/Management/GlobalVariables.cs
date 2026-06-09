@@ -28,6 +28,7 @@ public struct SpecieSetting {
     public int initialNameIndexInTranslationFile;
     public float camDefaultDistance;
     public float camMaxDistance;
+    public GizmoFace defaultCamFace;
     public TextAsset[] descriptions;
     public Vector2 sagitalLimits, coronalLimits, transversalLimits;
     public float crossSectionLineWidth;

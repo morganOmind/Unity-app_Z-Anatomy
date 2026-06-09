@@ -32,9 +32,7 @@ public class GizmoBehaviour : MonoBehaviour
     {
         instance = this;
         rt = GetComponent<RectTransform>();
-    }
-    private void Start()
-    {
+
         originalCubePosition = cubePosition;
         mainCamera = Camera.main;
         camScript = mainCamera.GetComponent<CameraController>();
@@ -203,7 +201,7 @@ public class GizmoBehaviour : MonoBehaviour
         return GizmoFace.None;
     }
 
-    public void SetCameraRotation(GizmoFace orientation)
+    public void SetCameraRotation(GizmoFace orientation, bool instant = false)
     {
         if (!CameraController.instance.CanRotate())
             return;
@@ -277,7 +275,7 @@ public class GizmoBehaviour : MonoBehaviour
         }
 
         actualFace = orientation;
-        camScript.SetCameraRotation(angle);
+        camScript.SetCameraRotation(angle, instant);
     }
 
     public void HasRotated()
