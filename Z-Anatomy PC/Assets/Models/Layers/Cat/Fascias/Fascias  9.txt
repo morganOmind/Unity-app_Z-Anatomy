@@ -1,4 +1,12 @@
+Fascia glutéal
 Fascia parotidien.l
 Fascia parotidien.r
+Graisse intermusculaire du dos.l
+Partie annulaire de la gaine fibreuse du pied.l
+Partie annulaire de la gaine fibreuse du pied.r
+Partie annulaire de la gaine fibreuse.l
+Partie annulaire de la gaine fibreuse.r
 Rétinaculum des fléchisseurs.l
 Rétinaculum des fléchisseurs.r
+Septum intermusculaire médial de la cuisse.l
+Septum intermusculaire médial de la cuisse.r

@@ -27,6 +27,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Bursa
+    second: {fileID: 2100000, guid: 1bc375c08092dac4d81d643222bb6ae3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Cutaneous muscle
     second: {fileID: 2100000, guid: c1a63ba5969c5894c80c296debf2b99e, type: 2}
   - first:

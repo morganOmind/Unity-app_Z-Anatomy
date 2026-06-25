@@ -6,6 +6,7 @@ Cinquième métatarsien.l
 Cinquième métatarsien.r
 Dent carnassière (Car).l
 Dent carnassière (Car).r
+Dentine
 Deuxième métacarpien.l
 Deuxième métacarpien.r
 Deuxième métatarsien.l

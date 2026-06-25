@@ -1,2 +1,12 @@
+Fascia axillaire latéral.l
+Fascia axillaire latéral.r
+Fascia dorsal du pied.l
+Fascia dorsal du pied.r
+Fascia iliaque.l
+Fascia iliaque.r
 Fascia pectoral.l
 Fascia pectoral.r
+Ligament métatarsien superficiel transverse.l
+Ligament métatarsien superficiel transverse.r
+Septum fibulaire caudal.l
+Septum fibulaire caudal.r

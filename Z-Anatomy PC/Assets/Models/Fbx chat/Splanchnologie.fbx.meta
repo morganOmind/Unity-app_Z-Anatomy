@@ -17,6 +17,31 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Diaphragm
+    second: {fileID: 2100000, guid: fa5d5a64c2be1de47a0e2920d7074c13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ductus
+    second: {fileID: 2100000, guid: 4b43e51ff84d9154b8fe0cf5dd785280, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fascia
+    second: {fileID: 2100000, guid: c0984ccf84c938a4598e2b1e8890b92a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fat
+    second: {fileID: 2100000, guid: cab0de6b908c65044bba097f8aeea3ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gallbladder
+    second: {fileID: 2100000, guid: 1f0d8dc549bc0e04d977f6c133823851, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Gland
     second: {fileID: 2100000, guid: 414266262f7cd32488cc724f09f7df9f, type: 2}
   - first:
@@ -42,6 +67,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Lymph-1
+    second: {fileID: 2100000, guid: d1caf8712bf695a44b6df755625236c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mucosa
     second: {fileID: 2100000, guid: 674d1ba39f6b3d9448908c0ea56a5397, type: 2}
   - first:
@@ -52,6 +82,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Nail
+    second: {fileID: 2100000, guid: 34e1e5ab1880d6544930ada894a8931b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Nipple
     second: {fileID: 2100000, guid: 1ee50e64af0c96342826a6670cdb88b0, type: 2}
   - first:
@@ -59,6 +94,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Organ
     second: {fileID: 2100000, guid: 9c99c49f84cd30340bfa8b6c1951de8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin 4
+    second: {fileID: 2100000, guid: bb39a3205a8427c4bbf948e9f199ada3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tendon
+    second: {fileID: 2100000, guid: e91d148e19435d24abe8ad2772136fab, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

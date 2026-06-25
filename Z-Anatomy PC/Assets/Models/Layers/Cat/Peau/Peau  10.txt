@@ -4,7 +4,8 @@
 Arc costal (Régions).l
 Arc costal (Régions).r
 Poils tactiles buccaux
-Poils tactiles carpiens (fe)
+Poils tactiles carpiens (fe).l
+Poils tactiles carpiens (fe).r
 Poils tactiles de la lèvre inférieure
 Poils tactiles infra-orbitaires
 Poils tactiles labiaux supérieurs

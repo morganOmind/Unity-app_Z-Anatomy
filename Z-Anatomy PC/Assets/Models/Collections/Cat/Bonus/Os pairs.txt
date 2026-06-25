@@ -173,4 +173,3 @@ Phalange proximale du premier doigt de la main.r
 Phalange proximale du quatrième doigt de la main.r
 Phalange proximale du troisième doigt de la main.r
 Os incisif.l
-(Os sutural).l

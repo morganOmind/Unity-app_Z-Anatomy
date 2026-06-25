@@ -1,5 +1,5 @@
-364*2.l
-364*2.r
+634*2.l
+634*2.r
 Région de la jambe.l
 Région de la jambe.r
 Région de la phalange proximale (main).l

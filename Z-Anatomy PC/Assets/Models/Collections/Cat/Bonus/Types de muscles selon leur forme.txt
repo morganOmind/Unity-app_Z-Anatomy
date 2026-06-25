@@ -51,8 +51,6 @@ Muscle vaste médial.r
 Muscle droit fémoral.r
 Muscle iliocostal.l
 Muscle scalène moyen.l
-Muscle long adducteur.l
-Muscle long adducteur.r
 Muscle ptérygoïdien latéral.l
 Muscle ptérygoïdien médial.l
 Muscle coracobrachial.l
@@ -132,12 +130,14 @@ Muscle fléchisseur radial du carpe.l
 Muscle fléchisseur superficiel des doigts.l
 Muscle fléchisseur superficiel des doigts.r
 Muscle fléchisseur radial du carpe.r
-Muscle carré plantaire
+Muscle carré plantaire.l
 Muscle carré pronateur.l
 Muscle carré pronateur.r
 Muscle carré des lombes.l
 Muscle carré fémoral.l
 Muscle carré fémoral.r
+Muscle carré plantaire.r
+Structures tendineuses et ligamentaires de l'abdomen
 Muscle trapèze.l
 Muscle grand dorsal.l
 Muscle masséter.l
@@ -148,10 +148,10 @@ Muscle grand rond.r
 Muscle temporal.l
 Muscle fessier profond.l
 Muscle fessier profond.r
-Partie scapulaire épineuse du deltoïde.l
-Partie acromiale du deltoïde.l
-Partie scapulaire épineuse du deltoïde.r
-Partie acromiale du deltoïde.r
+Partie scapulaire épineuse.l
+Partie acromiale.l
+Partie scapulaire épineuse.r
+Partie acromiale.r
 Partie profonde du muscle masséter.l
 Muscle supra-épineux.l
 Muscle supra-épineux.r
@@ -165,8 +165,6 @@ Muscle infra-épineux.r
 Muscle fessier superficiel.l
 Muscle fessier superficiel.r
 Muscles cutanés
-Muscle préputal crânial
-Muscle cutané facial
 Muscle sphincter profond du cou
 Platysma
 Muscle sphincter superficiel du cou

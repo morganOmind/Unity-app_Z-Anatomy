@@ -1,12 +1,18 @@
 Région abdominale latérale.l
 Région abdominale latérale.r
+Région cardiaque.r
 Région crâniale du genou.l
 Région crâniale du genou.r
 Région frontale.l
 Région frontale.r
 Région hypochondrale.l
 Région hypochondrale.r
+Région inguinale.r
 Région intermandibulaire.l
 Région intermandibulaire.r
+Région interscapulaire.l
+Région interscapulaire.r
 Région massétérique.l
 Région massétérique.r
+Région pharyngienne.l
+Région pharyngienne.r

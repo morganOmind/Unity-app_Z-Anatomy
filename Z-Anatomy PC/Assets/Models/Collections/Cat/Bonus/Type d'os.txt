@@ -219,7 +219,6 @@ Os palatin.l
 Vomer
 Os ptérygoïdien.l
 Os maxillaire.l
-(Os sutural).l
 Cornet nasal ventral.l
 Os sésamoïdes des muscles gastrocnémiens.l
 Os sésamoïdes des muscles gastrocnémiens.r

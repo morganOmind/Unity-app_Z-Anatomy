@@ -1,3 +1,15 @@
+Canal fémoral.l
+Canal fémoral.r
 Fascia caudal
-Fascia iliaque.l
+Fascia palmaire de la main.l
+Fascia palmaire de la main.r
+Fascia plantaire.l
+Fascia plantaire.r
 Fascia thoracolombaire
+Scutum distal du pied.l
+Scutum moyen de la main.r
+Scutum moyen du pied.l
+Scutum proximal de la main.l
+Scutum proximal de la main.r
+Scutum proximal du pied.l
+Septum fémoral

@@ -1,3 +1,5 @@
+Bord tricipital.l
+Bord tricipital.r
 Région brachiocéphalique.l
 Région brachiocéphalique.r
 Région de l'avant-bras.l
@@ -6,3 +8,7 @@ Région du bras.l
 Région du bras.r
 Région fémorale.l
 Région fémorale.r
+Région interphalangienne proximale (main).l
+Région interphalangienne proximale (main).r
+Région interphalangienne proximale (pied).l
+Région interphalangienne proximale (pied).r

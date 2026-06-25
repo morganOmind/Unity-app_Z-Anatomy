@@ -23,20 +23,8 @@ Partie pétreuse.l
 Cornet nasal ventral.l
 Os lacrymal.l
 Vomer
-(Os sutural).l
 Os interpariétal
 Ligament orbitaire.l
-Cavité de la dent
-Col de la dent
-Corps de la dent
-Couronne clinique de la dent
-Cément
-Dentine
-Email
-Pulpe de la dent
-Racine clinique
-Racine de la dent
-Surface de contact de la dent
 Muscle masséter.e1l
 Muscle temporal.e1l
 Muscle digastrique.el
@@ -90,9 +78,9 @@ Muscle petit droit dorsal de la tête.ol
 Muscle buccinateur.o2l
 Canine inférieure.l
 Deuxième prémolaire inférieure.l
-Incisive inférolatérale.l
 Incisive inféromédiale.l
 Incisive intermédiaire inférieure.l
-Première molaire inférieure.l
 Première prémolaire inférieure.l
 Mandibule
+Première molaire inférieure.l
+Incisive inférolatérale.l

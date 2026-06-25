@@ -4,6 +4,8 @@ Ligne dorsale médiane
 Ligne ventrale médiane
 Région anale.l
 Région anale.r
+Région costale.l
+Région costale.r
 Région de l'articulation temporomandibulaire.l
 Région de l'articulation temporomandibulaire.r
 Région de la racine de la queue.l
@@ -12,6 +14,8 @@ Région glutéale.l
 Région glutéale.r
 Région lombale.l
 Région lombale.r
+Région métatarsienne.l
+Région métatarsienne.r
 Région sacrale.l
 Région sacrale.r
 Région thoracique vertébrale [Région dorsocostale].l

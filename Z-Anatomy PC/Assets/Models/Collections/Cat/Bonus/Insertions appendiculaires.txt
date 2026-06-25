@@ -1,11 +1,10 @@
-Muscle rhomboïde.el
 Muscle rhomboïde.e1l
 Muscle supra-épineux.ol
 Muscle infra-épineux.ol
 Muscle grand rond.ol
 Muscles trapèze et detltoïde.el
 Muscle omotransversaire.el
-Partie acromiale du deltoïde.ol
+Partie acromiale.ol
 Muscle subscapulaire.ol
 Muscle petit rond.ol
 Chef long du triceps brachial.ol
@@ -31,7 +30,7 @@ Muscle extenseur latéral des doigts.ol
 Muscle extenseur ulnaire du carpe.ol
 Muscle supinateur.ol
 Muscle anconé.ol
-Muscle grand rond et grand dorsal.el
+Muscles grand rond et grand dorsal.el
 Chef médial du triceps brachial.ol
 Muscle rond pronateur.ol
 Muscle fléchisseur radial du carpe.ol
@@ -43,7 +42,7 @@ Muscle anconé.el
 Muscle extenseur latéral des doigts.o1l
 Muscle supinateur.el
 Muscle rond pronateur.el
-[Muscle extenseur oblique du carpe].ol
+Muscle long abducteur du pouce [Extenseur oblique du carpe].ol
 Muscle extenseur des doigts I et II.ol
 Chef médial du triceps brachial.el
 Muscle tenseur du fascia antébrachial.el
@@ -64,7 +63,7 @@ Muscles interosseux de la main.o6l
 Muscle abducteur du doigt V.el
 Muscle opposant du pouce.el
 Muscle adducteur du pouce.ol
-Muscle long fléchisseur du pouce.el
+Muscle court fléchisseur du pouce.el
 Muscles court abducteur et court fléchisseur du pouce.el
 Muscles interosseux de la main.e5l
 Muscles interosseux de la main.e6l
@@ -73,7 +72,7 @@ Muscles interosseux de la main.e3l
 Muscles interosseux de la main.e2l
 Muscles interosseux de la main.e1l
 Muscles interosseux de la main.el
-[Muscle extenseur oblique du carpe].el
+Muscle long abducteur du pouce [Extenseur oblique du carpe].el
 Muscle long extenseur du premier orteil (Car, su, ov).el
 Muscle fléchisseur profond des doigts.e2l
 Muscle fléchisseur profond des doigts.el
@@ -99,14 +98,13 @@ Muscles interosseux de la main.ol
 Muscle fléchisseur radial du carpe.e1l
 Muscle fléchisseur radial du carpe.el
 Muscle rond pronateur.e1l
-Muscle rhomboïde.er
 Muscle rhomboïde.e1r
 Muscle supra-épineux.or
 Muscle infra-épineux.or
 Muscle grand rond.or
 Muscles trapèze et detltoïde.er
 Muscle omotransversaire.er
-Partie acromiale du deltoïde.or
+Partie acromiale.or
 Muscle subscapulaire.or
 Muscle petit rond.or
 Chef long du triceps brachial.or
@@ -132,7 +130,7 @@ Muscle extenseur latéral des doigts.or
 Muscle extenseur ulnaire du carpe.or
 Muscle supinateur.or
 Muscle anconé.or
-Muscle grand rond et grand dorsal.er
+Muscles grand rond et grand dorsal.er
 Chef médial du triceps brachial.or
 Muscle rond pronateur.or
 Muscle fléchisseur radial du carpe.or
@@ -144,7 +142,7 @@ Muscle anconé.er
 Muscle extenseur latéral des doigts.o1r
 Muscle supinateur.er
 Muscle rond pronateur.er
-[Muscle extenseur oblique du carpe].or
+Muscle long abducteur du pouce [Extenseur oblique du carpe].or
 Muscle extenseur des doigts I et II.or
 Chef médial du triceps brachial.er
 Muscle tenseur du fascia antébrachial.er
@@ -165,7 +163,7 @@ Muscles interosseux de la main.o6r
 Muscle abducteur du doigt V.er
 Muscle opposant du pouce.er
 Muscle adducteur du pouce.or
-Muscle long fléchisseur du pouce.er
+Muscle court fléchisseur du pouce.er
 Muscles court abducteur et court fléchisseur du pouce.er
 Muscles interosseux de la main.e5r
 Muscles interosseux de la main.e6r
@@ -174,7 +172,7 @@ Muscles interosseux de la main.e3r
 Muscles interosseux de la main.e2r
 Muscles interosseux de la main.e1r
 Muscles interosseux de la main.er
-[Muscle extenseur oblique du carpe].er
+Muscle long abducteur du pouce [Extenseur oblique du carpe].er
 Muscle long extenseur du premier orteil (Car, su, ov).er
 Muscle fléchisseur profond des doigts.e2r
 Muscle fléchisseur profond des doigts.er
@@ -197,7 +195,6 @@ Muscles interosseux de la main.o3r
 Muscles interosseux de la main.o4r
 Muscles interosseux de la main.o5r
 Muscles interosseux de la main.or
-Muscle fléchisseur radial du carpe.e1r
 Muscle fléchisseur radial du carpe.er
 Muscle rond pronateur.e1r
 Muscle coracobrachial.el
@@ -219,7 +216,7 @@ Chef latéral du muscle gastrocnémien.ol
 Muscle vaste médial.ol
 Muscle iliopsoas.el
 Muscle carré fémoral.el
-Muscle long adducteur.el
+Muscle court adducteur.el
 Muscle long extenseur des orteils.ol
 Muscle poplité.ol
 Muscle articulaire de la hanche (Car, eq).el
@@ -286,7 +283,7 @@ Chef latéral du muscle gastrocnémien.or
 Muscle vaste médial.or
 Muscle iliopsoas.er
 Muscle carré fémoral.er
-Muscle long adducteur.er
+Muscle court adducteur.er
 Muscle long extenseur des orteils.or
 Muscle poplité.or
 Muscle articulaire de la hanche (Car, eq).er
@@ -360,7 +357,7 @@ Muscle petit psoas.el
 Muscle ischiocaverneux.ol
 Muscle obturateur externe.ol
 Muscle grand adducteur.ol
-Muscle long adducteur.ol
+Muscle court adducteur.ol
 Muscle gracile.ol
 Muscle pectiné.ol
 Muscle droit de l'abdomen.ol
@@ -385,3 +382,4 @@ Muscle long fibulaire.el
 Muscle long fibulaire.e2r
 Muscle long fibulaire.e1r
 Muscle long fibulaire.er
+Muscle fléchisseur radial du carpe.e1r

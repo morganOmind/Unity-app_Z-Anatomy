@@ -90,28 +90,19 @@ Ligament ulnocarpien palmaire.l
 Capsules articulaires intermétacarpiennes.l
 Capsules articulaires métacarpophalangiennes.l
 Capsules articulaires interphalangiennes distales de la main.l
-?
-306.939
-306.946
-306.950
 Phalanges moyennes de la main
 Phalanges proximales de la main
 Os du carpe
 Os métacarpiens I-V
 Os sésamoïdes de la main
-Phalanges distales de la main
-306.902
-306.903
-306.904
-Cartilage scapulaire.l
-Muscle rhomboïde.el
+Phalanges distales de la main [Os ongulaires]
 Muscle rhomboïde.e1l
 Muscle supra-épineux.ol
 Muscle infra-épineux.ol
 Muscle grand rond.ol
 Muscles trapèze et detltoïde.el
 Muscle omotransversaire.el
-Partie acromiale du deltoïde.ol
+Partie acromiale.ol
 Muscle subscapulaire.ol
 Muscle petit rond.ol
 Chef long du triceps brachial.ol
@@ -137,7 +128,7 @@ Muscle extenseur latéral des doigts.ol
 Muscle extenseur ulnaire du carpe.ol
 Muscle supinateur.ol
 Muscle anconé.ol
-Muscle grand rond et grand dorsal.el
+Muscles grand rond et grand dorsal.el
 Chef médial du triceps brachial.ol
 Muscle rond pronateur.ol
 Muscle fléchisseur radial du carpe.ol
@@ -149,7 +140,7 @@ Muscle anconé.el
 Muscle extenseur latéral des doigts.o1l
 Muscle supinateur.el
 Muscle rond pronateur.el
-[Muscle extenseur oblique du carpe].ol
+Muscle long abducteur du pouce [Extenseur oblique du carpe].ol
 Muscle extenseur des doigts I et II.ol
 Chef médial du triceps brachial.el
 Muscle tenseur du fascia antébrachial.el
@@ -170,7 +161,7 @@ Muscles interosseux de la main.o6l
 Muscle abducteur du doigt V.el
 Muscle opposant du pouce.el
 Muscle adducteur du pouce.ol
-Muscle long fléchisseur du pouce.el
+Muscle court fléchisseur du pouce.el
 Muscles court abducteur et court fléchisseur du pouce.el
 Muscles interosseux de la main.e5l
 Muscles interosseux de la main.e6l
@@ -179,7 +170,7 @@ Muscles interosseux de la main.e3l
 Muscles interosseux de la main.e2l
 Muscles interosseux de la main.e1l
 Muscles interosseux de la main.el
-[Muscle extenseur oblique du carpe].el
+Muscle long abducteur du pouce [Extenseur oblique du carpe].el
 Muscle long extenseur du premier orteil (Car, su, ov).el
 Muscle fléchisseur profond des doigts.e2l
 Muscle fléchisseur profond des doigts.el
@@ -218,15 +209,13 @@ Griffe du quatrième doigt de la main.l
 Griffe du troisième doigt de la main.l
 Griffe du deuxième doigt de la main.l
 Scapula.r
-Cartilage scapulaire.r
-Muscle rhomboïde.er
 Muscle rhomboïde.e1r
 Muscle supra-épineux.or
 Muscle infra-épineux.or
 Muscle grand rond.or
 Muscles trapèze et detltoïde.er
 Muscle omotransversaire.er
-Partie acromiale du deltoïde.or
+Partie acromiale.or
 Muscle subscapulaire.or
 Muscle petit rond.or
 Chef long du triceps brachial.or
@@ -252,7 +241,7 @@ Muscle extenseur latéral des doigts.or
 Muscle extenseur ulnaire du carpe.or
 Muscle supinateur.or
 Muscle anconé.or
-Muscle grand rond et grand dorsal.er
+Muscles grand rond et grand dorsal.er
 Chef médial du triceps brachial.or
 Muscle rond pronateur.or
 Muscle fléchisseur radial du carpe.or
@@ -264,7 +253,7 @@ Muscle anconé.er
 Muscle extenseur latéral des doigts.o1r
 Muscle supinateur.er
 Muscle rond pronateur.er
-[Muscle extenseur oblique du carpe].or
+Muscle long abducteur du pouce [Extenseur oblique du carpe].or
 Muscle extenseur des doigts I et II.or
 Chef médial du triceps brachial.er
 Muscle tenseur du fascia antébrachial.er
@@ -285,7 +274,7 @@ Muscles interosseux de la main.o6r
 Muscle abducteur du doigt V.er
 Muscle opposant du pouce.er
 Muscle adducteur du pouce.or
-Muscle long fléchisseur du pouce.er
+Muscle court fléchisseur du pouce.er
 Muscles court abducteur et court fléchisseur du pouce.er
 Muscles interosseux de la main.e5r
 Muscles interosseux de la main.e6r
@@ -294,7 +283,7 @@ Muscles interosseux de la main.e3r
 Muscles interosseux de la main.e2r
 Muscles interosseux de la main.e1r
 Muscles interosseux de la main.er
-[Muscle extenseur oblique du carpe].er
+Muscle long abducteur du pouce [Extenseur oblique du carpe].er
 Muscle long extenseur du premier orteil (Car, su, ov).er
 Muscle fléchisseur profond des doigts.e2r
 Muscle fléchisseur profond des doigts.er
@@ -317,7 +306,6 @@ Muscles interosseux de la main.o3r
 Muscles interosseux de la main.o4r
 Muscles interosseux de la main.o5r
 Muscles interosseux de la main.or
-Muscle fléchisseur radial du carpe.e1r
 Muscle fléchisseur radial du carpe.er
 Muscle rond pronateur.e1r
 Os sésamoïde distal du cinquième doigt de la main.r
@@ -445,51 +433,40 @@ Région du/des doigt(s) de la main.r
 Région du/des doigt(s) de la main.l
 Rétinaculum des extenseurs.l
 Rétinaculum des extenseurs.r
-Ligament métacarpien transverse sup. [Lgt. annulaire palm.].l
-Ligament métacarpien transverse sup. [Lgt. annulaire palm.].r
+Ligament métacarpien transverse superficiel.l
+Ligament métacarpien transverse superficiel.r
 Muscles du membre thoracique
 Muscles de l'épaule
 Muscle deltoïde.l
 Muscles du bras
-Lacertus fibrosus
+Lacertus fibrosus.l
 Muscles de l'avant-bras
 Ligament accessoire du muscle fléchisseur profond des doigts
 Couche transversale
-Muscles interfléchisseurs
 Muscle extenseur radial du carpe
 Compartiment antérieur du bras
 Compartiment postérieur du bras
 Muscles de la main
 Coiffe des rotateurs
 Bourses et gaines synoviales du membre thoracique
-Bourse subdeltoïdienne
-Bourse sous-tendineuse du muscle coracobrachial
+Bourse subdeltoïdienne.l
 Gaine synoviale du muscle coracobrachial
-Bourse sous-tendineuse du muscle infra-épineux
-Bourse sous-tendineuse du muscle subscapulaire
-Bourse sous-tendineuse du muscle petit rond
+Bourse sous-tendineuse du muscle infra-épineux.l
+Bourse sous-tendineuse du muscle subscapulaire.l
 Gaine synoviale intertuberculaire
-Bourse intertuberculaire
-Bourse subtendineuse de l'olécrâne
-Bourse infratendineuse olécranienne
-Bourse subtendineuse du muscle triceps brachial
-Bourse bicipitoradiale
-Bourse sous-tendineuse du muscle brachial
-Bourse sous-cutanée précarpale
+Bourse sous-cutanée de l'olécrâne.l
+Bourse infratendineuse olécranienne.l
+Bourse sous-tendineuse du triceps brachial.l
+Bourse bicipitoradiale.l
+Bourse sous-tendineuse du muscle brachial.l
 Gaine tendineuse du muscle long abducteur du doigt I
-Gaine du tendon extenseur radial du carpe
-Gaine tendineuse du muscle extenseur commun des doigts
-Gaine tendineuse du m. extenseur lat. des doigts de la main
-Gaine tendineuse du muscle extenseur ulnaire du carpe
-Bourse sous-tendineuse du muscle extenseur ulnaire du carpe
-Bourse sous-tendineuse du muscle extenseur radial du carpe
-Gaine tendineuse du fléchisseur radial du carpe
-Gaine synoviale des muscles fléchisseurs communs
-Bourse subtendineuse du muscle fléchisseur profond des doigts
-Bourses musculaires de m. fléchisseur superficiel des doigts
-Gaine tendineuse du muscle fléchisseur ulnaire du carpe (Car)
-Bourses sous-tendineuses des muscles interosseux de la main
-Bourses podotrochléaire de la main
+Gaine du tendon de l'extenseur radial du carpe.l
+Gaine tendineuse de l'extenseur commun des doigts.l
+Gaine tendineuse de l'extenseur latéral des doigts de la main.l
+Bourse sous-tendineuse de l'extenseur ulnaire du carpe.l
+Gaine tendineuse du fléchisseur radial du carpe.l
+Bourse sous-tendineuse du fléchisseur profond des doigts.l
+Gaine tendineuse du fléchisseur ulnaire du carpe (Car).l
 Muscle triceps brachial.l
 Muscle deltoïde.r
 Muscle triceps brachial.r
@@ -513,8 +490,8 @@ Muscle articulaire de l'épaule (fe, su, eq).l
 Muscle articulaire de l'épaule (fe, su, eq).r
 Muscle coracobrachial.l
 Muscle coracobrachial.r
-[Muscle extenseur oblique du carpe].l
-[Muscle extenseur oblique du carpe].r
+Muscle long abducteur du pouce [Extenseur oblique du carpe].l
+Muscle long abducteur du pouce [Extenseur oblique du carpe].r
 Muscle adducteur du pouce.l
 Muscle adducteur du pouce.r
 Muscles interosseux de la main.l
@@ -551,13 +528,13 @@ Muscle extenseur ulnaire du carpe.l
 Muscle extenseur ulnaire du carpe.r
 Muscle fléchisseur du doigt V.l
 Muscle fléchisseur du doigt V.r
-Partie scapulaire épineuse du deltoïde.l
-Partie acromiale du deltoïde.l
+Partie scapulaire épineuse.l
+Partie acromiale.l
 Muscle brachioradial.l
 Muscle long extenseur radial du carpe.l
 Muscle court extenseur radial du carpe.l
-Partie scapulaire épineuse du deltoïde.r
-Partie acromiale du deltoïde.r
+Partie scapulaire épineuse.r
+Partie acromiale.r
 Muscle brachioradial.r
 Muscle extenseur commun des doigts.r
 Muscle court extenseur radial du carpe.r
@@ -597,3 +574,27 @@ Ligament interdigital intersamoïde.l
 Ligaments palmaires.l
 Ligaments palmaires.r
 Capsules articulaires carpo-métacarpiennes.r
+Lacertus fibrosus.r
+Septum intermusculaire latéral du fascia brachial.l
+Septum intermusculaire latéral du fascia brachial.r
+Septum intermusculaire médial du fascia brachial.r
+Septum intermusculaire médial du fascia brachial.l
+Septum intermusculaire latéral du fascia antébrachial.r
+Septum intermusculaire médial du fascia antébrachial.r
+Muscle fléchisseur radial du carpe.e1r
+Articulations de la main.001
+Bourse sous-tendineuse du muscle subscapulaire.r
+Bourse subdeltoïdienne.r
+Bourse sous-tendineuse du muscle infra-épineux.r
+Bourse sous-cutanée de l'olécrâne.r
+Bourse infratendineuse olécranienne.r
+Bourse sous-tendineuse du triceps brachial.r
+Bourse bicipitoradiale.r
+Bourse sous-tendineuse du muscle brachial.r
+Gaine du tendon de l'extenseur radial du carpe.r
+Gaine tendineuse de l'extenseur commun des doigts.r
+Gaine tendineuse de l'extenseur latéral des doigts de la main.r
+Bourse sous-tendineuse de l'extenseur ulnaire du carpe.r
+Gaine tendineuse du fléchisseur radial du carpe.r
+Bourse sous-tendineuse du fléchisseur profond des doigts.r
+Gaine tendineuse du fléchisseur ulnaire du carpe (Car).r

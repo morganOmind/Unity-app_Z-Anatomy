@@ -1,11 +1,17 @@
 Coussinet carpien.l
 Coussinet carpien.r
+Fosse paralombale.l
+Fosse paralombale.r
+Région calcanéenne.l
+Région calcanéenne.r
 Région carpienne.l
 Région carpienne.r
 Région de la narine.l
 Région de la narine.r
 Région du tarse.l
 Région du tarse.r
+Région mammaire thoracique.l
+Région mammaire thoracique.r
 Région olécranienne.l
 Région olécranienne.r
 Région patellaire.l

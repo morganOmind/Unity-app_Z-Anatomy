@@ -1,2 +1,4 @@
+Fascia jambier.l
+Fascia jambier.r
 Fascia nuchal
 Lame superficielle du fascia cervical

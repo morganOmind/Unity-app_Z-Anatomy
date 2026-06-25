@@ -6,5 +6,4 @@ Os palatin.l
 Os lacrymal.l
 Os maxillaire.l
 Os incisif.l
-(Os sutural).l
 Os ptérygoïdien.l

@@ -57,7 +57,6 @@ Os sésamoïde distal du cinquième doigt du pied.l
 Os sésamoïde distal du deuxième doigt du pied.l
 Os sésamoïde distal du quatrième doigt du pied.l
 Os sésamoïde distal du troisième doigt du pied.l
-Foramen du processus plantaire
 Os du membre pelvien
 Os du tarse
 Capsule articulaire tibiofibulaire distale.l
@@ -70,15 +69,6 @@ Membrane obturatrice.l
 Zone orbiculaire.l
 Bourrelet acétabulaire.l
 Ligament acétabulaire transverse.l
-306.998
-306.1001
-306.1002
-306.1011
-306.1086
-306.1087
-306.1089
-306.1090
-Incisure du processus plantaire
 Ceinture pelvienne
 Squelette de la cuisse
 Squelette de la jambe
@@ -107,7 +97,7 @@ Muscle petit psoas.el
 Muscle ischiocaverneux.ol
 Muscle obturateur externe.ol
 Muscle grand adducteur.ol
-Muscle long adducteur.ol
+Muscle court adducteur.ol
 Muscle gracile.ol
 Muscle pectiné.ol
 Muscle droit de l'abdomen.ol
@@ -127,7 +117,7 @@ Chef latéral du muscle gastrocnémien.ol
 Muscle vaste médial.ol
 Muscle iliopsoas.el
 Muscle carré fémoral.el
-Muscle long adducteur.el
+Muscle court adducteur.el
 Muscle long extenseur des orteils.ol
 Muscle poplité.ol
 Muscle articulaire de la hanche (Car, eq).el
@@ -177,33 +167,6 @@ Muscle long extenseur des orteils.el
 Os des doigts du pied
 Os métatarsiens I-V
 Muscle semimembraneux.ol
-Fascias de la hanche et de la cuisse
-Fascias de la jambe et du pied
-Fascias du membre pelvien
-Fascia crural.l
-Fascia des orteils
-Fascia dorsal du pied
-Fascia glutéal
-Fascia lata.l
-Fascia plantaire
-Espaces et structures associées
-Couche profonde du fascia de la jambe
-Lame profonde du fascia lata
-Couche superficielle du fascia de la jambe
-Lame superficielle du fascia lata
-Lacune musculaire
-Lacune vasculaire
-Lamina propria
-Ligament métatarsien superficiel transverse
-Fascia iliaque.l
-Rétinaculum des extenseurs de la jambe.l
-Rétinaculum des extenseurs du métatarse
-Rétinaculum des extenseurs du tarse
-Rétinaculum des muscles fibulaires
-Septum fémoral
-Triangle fémoral
-Canal fémoral
-Anneau fémoral
 Muscles du membre pelvien
 Muscles de la hanche et de la cuisse
 Muscle glutéofémoral.l
@@ -214,16 +177,14 @@ Muscle jumeau supérieur.l
 Muscle jumeau inférieur.l
 Muscle carré fémoral.l
 Muscle sartorius.l
-Muscle articulaire de la hanche (Car, eq)
+Muscle articulaire de la hanche (Car, eq).l
 Muscle quadriceps fémoral
 Muscle articulaire du genou (Car, bo).l
 Muscle pectiné.l
 Muscle adducteur
-Muscle long adducteur.l
-Muscle court adducteur
+Muscle court adducteur.l
 Muscle grand adducteur.l
 Muscle obturateur externe.l
-Partie intrapelvienne
 Muscles de la jambe
 Muscle abducteur caudal de la jambe (Car).l
 Muscle semitendineux.l
@@ -238,16 +199,15 @@ Muscle fléchisseur latéral des orteils.l
 Muscle fléchisseur médial des orteils.l
 Muscle tibial caudal.l
 Tendon commun.l
-Ligament accessoire
-Muscles interfléchisseurs du pied
+Muscles interfléchisseurs du pied.l
 Muscle court extenseur des orteils.l
 Muscle court fléchisseur du premier orteil.l
 Muscle adducteur du deuxième orteil.l
 Muscle abducteur du cinquième orteil.l
 Muscle adducteur du cinquième orteil.l
 Muscle court fléchisseur des orteils.l
-Muscle carré plantaire
-Muscles lombricaux du pied
+Muscle carré plantaire.l
+Muscles lombricaux du pied.l
 Muscles interosseux du pied.l
 Muscles du pied
 Compartiment antérieur de la cuisse
@@ -260,56 +220,13 @@ Compartiment postérieur de la jambe
 Partie superficielle du compartiment postérieur de la jambe
 Partie profonde du compartiment postérieur de la jambe
 Tendon du quadriceps fémoral.l
-[Ligament annulaire plantaire]
 Gaines fibreuses des orteils
-Partie annulaire de la gaine fibreuse du pied
-Scutum proximal du pied
-Scutum moyen du pied
-Scutum distal du pied
-Gaines des tendons du pied
-Gaine synoviale du tendon des orteils
-Bourses et gaines synoviales du membre pelvien
-Bourse trochantérique sous-cutanée
-Bourse sous-cutanée iliaque [coxale]
-Bourse sous-cutanée ischiatique
-Bourse trochantérique du muscle fessier superficiel
-Bourses trochantériques du muscle fessier moyen
-Bourse trochantérique du muscle fessier profond
-Bourse ischiatique du muscle obturateur interne (Car, eq)
-Bourse sous-tendineuse du muscle obturateur interne (Car, eq)
-Bourse trochantérique du muscle biceps fémoral
-Bourse ischiatique du muscle semitendineux
-Bourse du muscle droit fémoral
-Bourse subtendineuse du muscle iliaque
-Bourse prépatellaire sous-cutanée
-(Bourse subfasciale prépatellaire)
-Bourse prépatellaire sous-tendineuse
-Bourse infrapatellaire distale
-Bourse sous-cutanée de la tubérosité tibiale
-Bourse sous-tendineuse du muscle semitendineux
-Bourse sous-tendineuse du biceps fémoral distal
-Récessus subpoplité
-Récessus sous-extenseur
-Bourse sous-cutanée de la malléole latérale
-Bourse sous-cutanée malléolaire
-Gaines tendineuses du muscles long extenseur des doigts
-Gaine tendineuse du muscle extenseur lat. des orteils
-Gaine tendineuse du muscle tibial caudal (ca)
-Gaine tendineuse du muscle fléchisseur médial des doigts
-Gaine tendineuse du muscle fléchisseur lat. des doigts.l
-Gaine tendineuse du muscle long fibulaire
-Bourse subtendineuse du muscle court fibulaire (Car)
-Bourse subtendineuse du muscle tibial crânial
-Bourse sous-cutanée calcanéenne
-Bourse calcanéenne subtend. du m. fléchisseur sup. des doigts
-Bourse tendineuse calcanéenne
-Gaine tendineuse du muscle long fibulaire plantaire
-Gaines synoviales tendineuses des orteils
-Bourses subtendineuses des muscles interosseux du pied
-Bourses podotrochléaires du pied
-Gaines tendineuses du membre pelvien
-Waw.024
-Waw.018
+Partie annulaire de la gaine fibreuse du pied.l
+Scutum proximal du pied.l
+Scutum moyen du pied.l
+Scutum distal du pied.l
+BézierCurve
+BézierCurve.012
 Muscle droit fémoral.l
 Muscle vaste latéral.l
 Muscle biceps fémoral.l
@@ -330,7 +247,7 @@ Muscle fessier accessoire.l
 Muscle tenseur du fascia lata.l
 Muscle fessier profond.l
 Muscle long extenseur des orteils.l
-Waw.002
+BézierCurve.003
 Partie caudale du sartorius (ca).el
 Muscle gracile.el
 Muscle semitendineux.el
@@ -358,7 +275,7 @@ Chef latéral du muscle gastrocnémien.or
 Muscle vaste médial.or
 Muscle iliopsoas.er
 Muscle carré fémoral.er
-Muscle long adducteur.er
+Muscle court adducteur.er
 Muscle long extenseur des orteils.or
 Muscle poplité.or
 Muscle articulaire de la hanche (Car, eq).er
@@ -446,11 +363,11 @@ Os sésamoïdes proximaux du deuxième orteil.r
 Os sésamoïdes proximaux du quatrième orteil.r
 Os sésamoïdes proximaux du troisième orteil.r
 Muscle fléchisseur superficiel des orteils.l
-Waw
-Waw.003
-Waw.005
-Waw.019
-Waw.027
+BézierCurve.007
+BézierCurve.008
+Muscles interfléchisseurs.l
+BézierCurve.015
+BézierCurve.027
 Ligament acétabulaire transverse.r
 Bourrelet acétabulaire.r
 Capsule articulaire de la hanche.r
@@ -480,8 +397,6 @@ Corps adipeux infrapatellaire.r
 Ligament méniscofémoral.r
 Os tarsien III [Os cunéiforme latéral].l
 Os tarsien III [Os cunéiforme latéral].r
-Fascia crural.r
-Fascia lata.r
 Muscle abducteur caudal de la jambe (Car).r
 Muscle vaste latéral.r
 Muscle biceps fémoral.r
@@ -520,33 +435,28 @@ Muscle fessier profond.r
 Muscle fléchisseur superficiel des orteils.r
 Muscle adducteur du cinquième orteil.r
 Muscle court fléchisseur des orteils.r
-Muscles interosseux du pied.r
-Muscle long adducteur.r
 Muscle adducteur du deuxième orteil.r
 Muscle grand psoas.r
-Waw.006
+Muscles interfléchisseurs.r
 Muscle pectiné.r
-Rétinaculum des extenseurs de la jambe.r
 Tendon du quadriceps fémoral.r
 Muscle sartorius.r
-Waw.004
-Waw.007
-Waw.023
+Waw.003
+BézierCurve.018
+BézierCurve.019
 Fléchisseurs profonds des orteils.r
 Tendon commun.r
-Waw.020
+BézierCurve.020
 Muscle court fléchisseur du premier orteil.r
 Muscle semitendineux.r
 Muscle gracile.r
-Waw.021
+Waw.002
 Muscle fléchisseur latéral des orteils.r
-Waw.001
-Waw.022
+BézierCurve.001
 Muscle long extenseur du premier orteil (Car, su, ov).ol
 Muscle long extenseur du premier orteil (Car, su, ov).or
 Muscle poplité.l
 Muscle poplité.r
-Gaine tendineuse du muscle fléchisseur lat. des doigts.r
 Phalange moyenne du cinquième orteil.r
 Muscles interosseux du pied.el
 Muscles interosseux du pied.e1l
@@ -753,3 +663,23 @@ Ligament centroquartal [cuboïdonaviculaire] dorsal.l
 Ligaments collatéraux métatarsophalangiens.r
 Renforcement de la membrane tarsocrurale dorsale.r
 Renforcement de la membrane tarsocrurale dorsale.l
+Foramen du processus plantaire.i
+Foramen du processus plantaire.s
+Incisure du processus plantaire.i
+Incisure du processus plantaire.s
+Muscle carré plantaire.r
+Partie annulaire de la gaine fibreuse du pied.r
+Partie cruciforme de la gaine fibreuse du pied.r
+Partie cruciforme de la gaine fibreuse du pied.l
+Muscle articulaire de la hanche (Car, eq).r
+Muscle court adducteur.r
+Triangle fémoral.i
+Triangle fémoral.s
+Lacune musculaire.i
+Lacune musculaire.s
+Lacune vasculaire.i
+Lacune vasculaire.s
+Muscles interfléchisseurs du pied.r
+Muscles lombricaux du pied.r
+Muscles interosseux du pied.r
+BézierCurve.002

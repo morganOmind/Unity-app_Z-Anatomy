@@ -1,6 +1,29 @@
-Gaine tendineuse du muscle fléchisseur lat. des doigts.l
-Gaine tendineuse du muscle fléchisseur lat. des doigts.r
-Gaines tendineuses du membre pelvien
+Gaine du tendon de l'extenseur radial du carpe.l
+Gaine du tendon de l'extenseur radial du carpe.r
+Gaine synoviale du muscle oblique dorsal
+Gaine tendineuse de l'extenseur commun des doigts.l
+Gaine tendineuse de l'extenseur commun des doigts.r
+Gaine tendineuse de l'extenseur latéral des doigts de la main.l
+Gaine tendineuse de l'extenseur latéral des doigts de la main.r
+Gaine tendineuse de l'extenseur latéral des orteils.l
+Gaine tendineuse de l'extenseur latéral des orteils.r
+Gaine tendineuse du fléchisseur lat. des orteils.l
+Gaine tendineuse du fléchisseur médial des orteils.l
+Gaine tendineuse du fléchisseur médial des orteils.r
+Gaine tendineuse du fléchisseur radial du carpe.l
+Gaine tendineuse du fléchisseur radial du carpe.r
+Gaine tendineuse du fléchisseur ulnaire du carpe (Car).l
+Gaine tendineuse du fléchisseur ulnaire du carpe (Car).r
+Gaine tendineuse du long fibulaire.l
+Gaine tendineuse du long fibulaire.r
+Gaine tendineuse du muscle long fibulaire plantaire.l
+Gaine tendineuse du muscle long fibulaire plantaire.r
+Gaines synoviales des tendons des doigts de la main.l
+Gaines synoviales des tendons des doigts de la main.r
+Gaines synoviales tendineuses des orteils.l
+Gaines synoviales tendineuses des orteils.r
+Gaines tendineuses du long extenseur des doigts.l
+Gaines tendineuses du long extenseur des doigts.r
 Muscle court fléchisseur des orteils.l
 Muscle court fléchisseur des orteils.r
 Muscle cutané du tronc.l

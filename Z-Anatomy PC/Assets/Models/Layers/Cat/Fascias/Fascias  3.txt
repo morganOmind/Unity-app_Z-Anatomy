@@ -1,3 +1,12 @@
+Fascia dorsal de la main.l
+Fascia dorsal de la main.r
 Fascia endothoracique
 Lame prétrachéale
 Lame prévertébrale
+Rétinaculum des extenseurs de la jambe.l
+Rétinaculum des extenseurs de la jambe.r
+Rétinaculum des extenseurs du tarse.l
+Rétinaculum des muscles fibulaires.l
+Rétinaculum des muscles fibulaires.r
+Septum intermusculaire latéral de la cuisse.l
+Septum intermusculaire latéral de la cuisse.r

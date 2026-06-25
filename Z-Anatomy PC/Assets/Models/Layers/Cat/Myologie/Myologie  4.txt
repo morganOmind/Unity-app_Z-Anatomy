@@ -2,10 +2,19 @@ Chef accessoire du triceps brachial.l
 Chef accessoire du triceps brachial.r
 Chef médial du triceps brachial.l
 Chef médial du triceps brachial.r
+Lacertus fibrosus.l
+Lacertus fibrosus.r
+Ligament suspenseur du clitoris
 Muscle adducteur du doigt V.l
 Muscle adducteur du doigt V.r
+Muscle articulaire de la hanche (Car, eq).l
+Muscle articulaire de la hanche (Car, eq).r
 Muscle buccinateur.l
 Muscle buccinateur.r
+Muscle carré plantaire.l
+Muscle carré plantaire.r
+Muscle court adducteur.l
+Muscle court adducteur.r
 Muscle digastrique du cou.l
 Muscle digastrique du cou.r
 Muscle droit du thorax.l
@@ -26,3 +35,9 @@ Muscle tibial caudal.l
 Muscle tibial caudal.r
 Muscles intercostaux internes.l
 Muscles intercostaux internes.r
+Muscles interfléchisseurs du pied.l
+Muscles interfléchisseurs du pied.r
+Muscles interfléchisseurs.l
+Muscles interfléchisseurs.r
+Muscles lombricaux du pied.l
+Muscles lombricaux du pied.r

@@ -1,7 +1,5 @@
 Muscle adducteur du deuxième orteil.l
 Muscle adducteur du deuxième orteil.r
-Muscle long adducteur.l
-Muscle long adducteur.r
 Muscle ptérygoïdien latéral.l
 Muscle adducteur du pouce.l
 Muscle adducteur du pouce.r
