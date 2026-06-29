@@ -72,7 +72,7 @@ public class SaverLoader : MonoBehaviour
     static SaveStruct currentSave;
 
     public TextAsset idMap;
-    static List<List<string>> idsMapping = null;
+    static List<List<List<string>>> idsMapping = null;
 
     public string defaultFileName = "z-save";
 
@@ -318,44 +318,50 @@ public class SaverLoader : MonoBehaviour
 
                     Dictionary<BodyPartVisibility, VisibleStruct> found = new Dictionary<BodyPartVisibility, VisibleStruct>();
                     foreach (VisibleStruct vs in saving.visibleIds) {
-                        BodyPartVisibility v = null;
+                        List<BodyPartVisibility> v = new List<BodyPartVisibility>();
                         if (!fromSpecieChange) {
                             if (navidsMap.ContainsKey(vs.id)) {
                                 string searchName = navidsMap[vs.id];
-                                v = GlobalVariables.Instance.allVisibilityScripts.Find(delegate (BodyPartVisibility bpv)
+                                v.Add(GlobalVariables.Instance.allVisibilityScripts.Find(delegate (BodyPartVisibility bpv)
                                 {
                                     string origName = bpv.GetComponent<NameAndDescription>().originalName;
                                     return searchName == origName.Replace(".l", "").Replace(".r", "").Replace(".t", "").Replace(".s", "").Trim().ToLower()
                                         && vs.originalName == origName;
-                                });
-                                
+                                }));
                             }
                             else if (vs.id == "insertions") {
-                                v = GlobalVariables.Instance.allVisibilityScripts.Find(delegate (BodyPartVisibility bpv)
+                                v.Add(GlobalVariables.Instance.allVisibilityScripts.Find(delegate (BodyPartVisibility bpv)
                                 {
                                     return bpv.tag == "Insertions" 
                                         && vs.originalName == bpv.GetComponent<NameAndDescription>().originalName;
-                                });
+                                }));
                             }
                         }
                         else {
-                            string equivalentId = getEquivalentId(vs.id, saving.specie, GlobalVariables.Instance.GetCurrentSpecieSetting().type);
-                            if (!string.IsNullOrEmpty(equivalentId) && navidsMap.ContainsKey(equivalentId)) {
-                                string searchName = navidsMap[equivalentId];
-                                v = GlobalVariables.Instance.allVisibilityScripts.Find(delegate (BodyPartVisibility bpv)
-                                {
-                                    string origName = bpv.GetComponent<NameAndDescription>().originalName;
-                                    return bpv.tag != "Insertions"
-                                        && searchName == origName.Replace(".l", "").Replace(".r", "").Replace(".t", "").Replace(".s", "").Trim().ToLower()
-                                        && (vs.side == Side.None 
-                                            || (vs.side == Side.Left && (origName.EndsWith(".l") || origName.EndsWith(".s"))) 
-                                            || (vs.side == Side.Right && (origName.EndsWith(".r") || origName.EndsWith(".t"))));
-                                });
+                            List<string> equivalentIds = getEquivalentIds(vs.id, saving.specie, GlobalVariables.Instance.GetCurrentSpecieSetting().type);
+                            if (equivalentIds.Count > 0) {
+                                foreach(string equivalentId in equivalentIds) {
+                                    if (navidsMap.ContainsKey(equivalentId)) {
+                                        string searchName = navidsMap[equivalentId];
+                                        v.Add(GlobalVariables.Instance.allVisibilityScripts.Find(delegate (BodyPartVisibility bpv)
+                                        {
+                                            string origName = bpv.GetComponent<NameAndDescription>().originalName;
+                                            return bpv.tag != "Insertions"
+                                                && searchName == origName.Replace(".l", "").Replace(".r", "").Replace(".t", "").Replace(".s", "").Trim().ToLower()
+                                                && (vs.side == Side.None
+                                                    || (vs.side == Side.Left && (origName.EndsWith(".l") || origName.EndsWith(".s")))
+                                                    || (vs.side == Side.Right && (origName.EndsWith(".r") || origName.EndsWith(".t"))));
+                                        }));
+                                    }
+                                }
+                                
                             }
                         }
 
-                        if (v != null && !found.ContainsKey(v)) {
-                            found.Add(v, vs);
+                        foreach(BodyPartVisibility bpv in v) {
+                            if (bpv != null && !found.ContainsKey(bpv)) {
+                                found.Add(bpv, vs);
+                            }
                         }
 
                         count++;
@@ -605,36 +611,39 @@ public class SaverLoader : MonoBehaviour
     }
 
     void ParseIdMap() {
-        idsMapping = new List<List<string>>();
+        idsMapping = new List<List<List<string>>>();
 
         string[] lines = idMap.text.Split("\n", System.StringSplitOptions.RemoveEmptyEntries);
         foreach (string line in lines) {
-            string[] tokens = line.Split(";", System.StringSplitOptions.None);
+            string[] tokens = line.Split("%", System.StringSplitOptions.None);
             if (tokens.Length >= 2) {
-                List<string> ids = new List<string>();
+                List<List<string>> ids = new List<List<string>>();
                 foreach (string token in tokens) {
-                    ids.Add(token.Trim());
+                    string[] idTokens = token.Split(";", System.StringSplitOptions.None);
+                    List<string> specieIds = new List<string>();
+                    foreach(string idt in idTokens) {
+                        specieIds.Add(idt.Trim());
+                    }
+                    ids.Add(specieIds);
                 }
                 idsMapping.Add(ids);
             }
         }
     }
 
-    string getEquivalentId(string fromId, SpecieType fromSpecie, SpecieType toSpecie) {
+    List<string> getEquivalentIds(string fromId, SpecieType fromSpecie, SpecieType toSpecie) {
         int fromIndex = (int)fromSpecie - 1;
         int toIndex = (int)toSpecie - 1;
-        foreach (List<string> ids in idsMapping) {
+        List<string> res = new List<string>();
+        foreach (List<List<string>> ids in idsMapping) {
             if(fromIndex < ids.Count) {
-                if(ids[fromIndex] == fromId) {
+                if(ids[fromIndex].Contains(fromId)) {
                     if(toIndex < ids.Count) {
-                        return ids[toIndex];
-                    }
-                    else {
-                        return "";
+                        res.AddRange(ids[toIndex]);
                     }
                 }
             }
         }
-        return "";
+        return res;
     }
 }
