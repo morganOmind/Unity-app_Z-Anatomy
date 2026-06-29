@@ -2874,6 +2874,7 @@ S5;Vertèbre S5
 2630;Bourse sous-ligamentaire nuchale crâniale
 2631;Bourse sous-ligamentaire nuchale caudale
 2632;Bourses et gaines synoviales du membre thoracique
+2632*1;Gaines synoviales des tendons des doigts de la main
 2633;Bourse sous-cutanée préscapulaire (eq)
 2634;Bourse subdeltoïdienne
 2635;Bourse sous-tendineuse du muscle coracobrachial
@@ -2951,7 +2952,7 @@ S5;Vertèbre S5
 2706;Bourse sous-cutanée calcanéenne
 2707;Bourse calcanéenne subtend. du m. fléchisseur sup. des doigts
 2708;Bourse tendineuse calcanéenne
-2709;Gaine tendineuse du muscle long fibulaire plantaire
+2709;Gaine tendineuse plantaire du long fibulaire
 2710;Bourse subtendeneuse du muscle long fibulaire (Su, Ru)
 2711;Bourse sous-tendineuse du long extenseur des doigts (Ru, éq)
 2712;Bourse subtend. du m. ext. lat. des orteils (Ru, eq)
