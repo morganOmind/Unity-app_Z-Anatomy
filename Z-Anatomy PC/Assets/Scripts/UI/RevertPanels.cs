@@ -82,7 +82,7 @@ public class RevertPanels : MonoBehaviour
     
     void reverseHide(bool onScreen, ExpandCollapseUI ui) {
         ui.SetCollapsedPositionX((int)-ui.collapasedPosition.x);
-        ui.expandedPosition = new Vector2(0f, ui.expandedPosition.y);
+        ui.expandedPosition = new Vector2(isOnLeft ? 0f : 287.5f, ui.expandedPosition.y);
 
         RectTransform rt = ui.GetComponent<RectTransform>();
         
