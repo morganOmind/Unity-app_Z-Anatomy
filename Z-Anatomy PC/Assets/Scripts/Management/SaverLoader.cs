@@ -124,7 +124,7 @@ public class SaverLoader : MonoBehaviour
                     vs.id = navidsMap[name];
                     vs.hasLabels = v.HasLabels() && v.labelsOn;
                     vs.originalName = origName;
-                    vs.side = origName.EndsWith(".l") ? Side.Left : (origName.EndsWith(".r") ? Side.Right : Side.None);
+                    vs.side = (origName.EndsWith(".l") || origName.EndsWith(".s")) ? Side.Left : ((origName.EndsWith(".r") || origName.EndsWith(".t")) ? Side.Right : Side.None);
 
                     visiblesNavids.Add(vs);
                 }
@@ -347,7 +347,9 @@ public class SaverLoader : MonoBehaviour
                                     string origName = bpv.GetComponent<NameAndDescription>().originalName;
                                     return bpv.tag != "Insertions"
                                         && searchName == origName.Replace(".l", "").Replace(".r", "").Replace(".t", "").Replace(".s", "").Trim().ToLower()
-                                        && (vs.side == Side.None || (vs.side == Side.Left && origName.EndsWith(".l")) || (vs.side == Side.Right && origName.EndsWith(".r")));
+                                        && (vs.side == Side.None 
+                                            || (vs.side == Side.Left && (origName.EndsWith(".l") || origName.EndsWith(".s"))) 
+                                            || (vs.side == Side.Right && (origName.EndsWith(".r") || origName.EndsWith(".t"))));
                                 });
                             }
                         }
