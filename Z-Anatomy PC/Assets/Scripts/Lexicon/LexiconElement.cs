@@ -86,7 +86,7 @@ public class LexiconElement : MonoBehaviour
                 || child.gameObject.IsLabel()
                 || child.gameObject.IsGroup()
                 //group objet exists only for the man, so instead check nameanddescription compoenent that every lexicon element has.
-                || child.GetComponent<NameAndDescription>() != null;
+                || (child.GetComponent<NameAndDescription>() != null && !child.CompareTag("Insertions"));
             if (hasChilds) {
                 break;
             }
