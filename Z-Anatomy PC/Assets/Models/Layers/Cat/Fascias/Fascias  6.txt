@@ -1,5 +1,6 @@
-Fascia glutéal
+Fascia lata.l
+Fascia lata.r
 Lame profonde du fascia temporal.l
 Lame profonde du fascia temporal.r
-Rétinaculum des extenseurs de la jambe.l
-Rétinaculum des extenseurs de la jambe.r
+Septum fibulaire crânial.l
+Septum fibulaire crânial.r

@@ -1,11 +1,11 @@
-364*2.l
-364*2.r
 Région de la jambe.l
 Région de la jambe.r
 Région de la phalange proximale (main).l
 Région de la phalange proximale (main).r
 Région de la phalange proximale (pied).l
 Région de la phalange proximale (pied).r
+Région du pied.l
+Région du pied.r
 Région du/des doigt(s) de la main.l
 Région du/des doigt(s) de la main.r
 Région infra-épineuse.l

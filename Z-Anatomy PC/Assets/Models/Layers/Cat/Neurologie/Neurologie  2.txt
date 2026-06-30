@@ -1,0 +1,15 @@
+Faux du cerveau
+Muscle droit dorsal de l'œil.l
+Muscle droit dorsal de l'œil.r
+Muscle droit latéral de l'œil.l
+Muscle droit latéral de l'œil.r
+Muscle droit médial de l'œil.l
+Muscle droit médial de l'œil.r
+Muscle droit ventral de l'œil.l
+Muscle droit ventral de l'œil.r
+Muscle oblique dorsal.l
+Muscle oblique dorsal.r
+Muscle oblique ventral.l
+Muscle oblique ventral.r
+Muscle releveur de la paupière supérieure.l
+Muscle releveur de la paupière supérieure.r

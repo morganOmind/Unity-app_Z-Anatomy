@@ -3,13 +3,13 @@ Muscle cervico-auriculaire profond
 Muscle canin.l
 Muscle élévateur nasolabial.l
 Muscles du globe oculaire
-Muscle oblique dorsal
-Muscle droit latéral de l'œil
-Muscle droit médial de l'œil
-Muscle rétracteur du bulbe
-Muscle oblique ventral
-Muscle droit ventral de l'œil
-Muscle droit dorsal de l'œil
+Muscle oblique dorsal.l
+Muscle droit latéral de l'œil.l
+Muscle droit médial de l'œil.l
+Muscle rétracteur du bulbe.l
+Muscle oblique ventral.l
+Muscle droit ventral de l'œil.l
+Muscle droit dorsal de l'œil.l
 Muscle sternocéphalique.l
 Partie occipitale (Car).l
 Partie mastoïde (Car, bo, cap).l
@@ -51,8 +51,6 @@ Muscle vaste médial.r
 Muscle droit fémoral.r
 Muscle iliocostal.l
 Muscle scalène moyen.l
-Muscle long adducteur.l
-Muscle long adducteur.r
 Muscle ptérygoïdien latéral.l
 Muscle ptérygoïdien médial.l
 Muscle coracobrachial.l
@@ -132,12 +130,14 @@ Muscle fléchisseur radial du carpe.l
 Muscle fléchisseur superficiel des doigts.l
 Muscle fléchisseur superficiel des doigts.r
 Muscle fléchisseur radial du carpe.r
-Muscle carré plantaire
+Muscle carré plantaire.l
 Muscle carré pronateur.l
 Muscle carré pronateur.r
 Muscle carré des lombes.l
 Muscle carré fémoral.l
 Muscle carré fémoral.r
+Muscle carré plantaire.r
+Structures tendineuses et ligamentaires de l'abdomen
 Muscle trapèze.l
 Muscle grand dorsal.l
 Muscle masséter.l
@@ -148,10 +148,10 @@ Muscle grand rond.r
 Muscle temporal.l
 Muscle fessier profond.l
 Muscle fessier profond.r
-Partie scapulaire épineuse du deltoïde.l
-Partie acromiale du deltoïde.l
-Partie scapulaire épineuse du deltoïde.r
-Partie acromiale du deltoïde.r
+Partie scapulaire épineuse.l
+Partie acromiale.l
+Partie scapulaire épineuse.r
+Partie acromiale.r
 Partie profonde du muscle masséter.l
 Muscle supra-épineux.l
 Muscle supra-épineux.r
@@ -165,10 +165,8 @@ Muscle infra-épineux.r
 Muscle fessier superficiel.l
 Muscle fessier superficiel.r
 Muscles cutanés
-Muscle préputal crânial
-Muscle cutané facial
 Muscle sphincter profond du cou
-Platysma
+Platysma.l
 Muscle sphincter superficiel du cou
 Muscle cutané du tronc.l
 Muscle supramammaire crânial (Car).l
@@ -194,11 +192,11 @@ Muscle cervico-auriculaire superficiel.l
 Muscle pariéto-auriculaire.l
 Muscle occipital.l
 Muscle frontal.l
-Aponévrose épicrânienne
+Aponévrose épicrânienne.l
 Muscle orbiculaire de la bouche.l
 Muscle malaire.l
 Muscle buccinateur.l
-Muscle releveur de la paupière supérieure
+Muscle releveur de la paupière supérieure.l
 Muscle grand dorsal.r
 Muscle trapèze.r
 Muscle orbiculaire de l'œil

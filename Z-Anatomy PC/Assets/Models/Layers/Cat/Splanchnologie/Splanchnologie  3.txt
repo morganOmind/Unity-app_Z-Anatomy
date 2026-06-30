@@ -1,0 +1,13 @@
+Langue
+Ligament suspenseur de l'ovaire.l
+Ligament suspenseur de l'ovaire.r
+Ovaire.l
+Ovaire.l.001
+Ovaire.r
+Papilles circumvallées
+Papilles coniques
+Papilles filiformes
+Papilles fungiformes
+Paroi membraneuse
+Trompe utérine [Salpinx]
+Utérus

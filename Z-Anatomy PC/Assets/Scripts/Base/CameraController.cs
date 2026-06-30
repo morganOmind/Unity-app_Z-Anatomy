@@ -306,6 +306,9 @@ public class CameraController : MonoBehaviour
         cam.orthographicSize = distance;
         UpdatePosition();
         setScreenSize.SetCanvasSize();
+        GizmoBehaviour.instance.HasRotated();
+        GizmoBehaviour.instance.SetCameraRotation(GlobalVariables.Instance.GetCurrentSpecieSetting().defaultCamFace, true);
+        CenterImmediate(true);
     }
 
     /// <summary>
@@ -322,10 +325,10 @@ public class CameraController : MonoBehaviour
     /// Initiates a coroutine to smoothly rotate the camera to a given orientation.
     /// </summary>
     /// <param name="rot">The new rotation to apply to the camera.</param>
-    public void SetCameraRotation(Vector3 rot)
+    public void SetCameraRotation(Vector3 rot, bool instant = false)
     {
         if(!onRotateCoroutine)
-            StartCoroutine(LerpRotation(rot, 0.25f));
+            StartCoroutine(LerpRotation(rot, 0.25f, instant));
     }
 
     ///<summary>
@@ -333,23 +336,26 @@ public class CameraController : MonoBehaviour
     ///</summary>
     /// <param name="rot">The target rotation vector to lerp to</param>
     /// <param name="duration">The time in seconds it should take to complete the lerp</param>
-    IEnumerator LerpRotation(Vector3 rot, float duration)
+    IEnumerator LerpRotation(Vector3 rot, float duration, bool instant = false)
     {
         onRotateCoroutine = true;
         float time = 0;
         Quaternion startValue = trans.rotation;
         Quaternion endValue = Quaternion.Euler(rot.x, rot.y, 0);
-        while (time < duration)
-        {
-            float t = time / duration;
-            //Smooth step
-            //t = t * t * t * (t * (6f * t - 15f) + 10f);
-            trans.rotation = Quaternion.Lerp(startValue, endValue, rotationCurve.Evaluate(t));
-            trans.position = trans.rotation * rotationOffset + pivot;
-            time += Time.deltaTime;
-            yield return null;
+
+        if (!instant) {
+            while (time < duration) {
+                float t = time / duration;
+                //Smooth step
+                //t = t * t * t * (t * (6f * t - 15f) + 10f);
+                trans.rotation = Quaternion.Lerp(startValue, endValue, rotationCurve.Evaluate(t));
+                trans.position = trans.rotation * rotationOffset + pivot;
+                time += Time.deltaTime;
+                yield return null;
+            }
         }
         trans.rotation = endValue;
+        trans.position = trans.rotation * rotationOffset + pivot;
         x = rot.y;
         y = rot.x;
         z = 0;
@@ -359,11 +365,11 @@ public class CameraController : MonoBehaviour
     /// <summary>
     /// Centers the camera immediately without interpolation.
     /// </summary>
-    public void CenterImmediate()
+    public void CenterImmediate(bool reset = false)
     {
         SelectedObjectsManagement.Instance.GetActiveObjects();
 
-        float newDistance = bounds.extents.magnitude;
+        float newDistance = bounds.extents.magnitude * (reset ? 1.25f : 1f);
         if (newDistance > defaulDistance)
             newDistance = defaulDistance;
         distance = newDistance;

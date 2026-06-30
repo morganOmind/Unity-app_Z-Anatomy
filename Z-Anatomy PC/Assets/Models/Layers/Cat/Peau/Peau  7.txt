@@ -1,6 +1,15 @@
+Région cardiaque.l
 Région de la queue
+Région du tendon calcanéen commun.l
+Région du tendon calcanéen commun.r
 Région labiale supérieure.l
 Région labiale supérieure.r
+Région mammaire inguinale.l
+Région mammaire inguinale.r
+Région métacarpophalangienne.l
+Région métacarpophalangienne.r
+Région métatarsophalangienne.l
+Région métatarsophalangienne.r
 Région nasale dorsale.l
 Région nasale dorsale.r
 Région palpébrale inférieure.l

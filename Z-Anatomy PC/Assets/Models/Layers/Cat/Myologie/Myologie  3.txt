@@ -18,8 +18,8 @@ Muscle grand psoas.l
 Muscle grand psoas.r
 Muscle iliocostal.l
 Muscle iliocostal.r
-Muscle long adducteur.l
-Muscle long adducteur.r
+Muscle long abducteur du pouce [Extenseur oblique du carpe].l
+Muscle long abducteur du pouce [Extenseur oblique du carpe].r
 Muscle petit psoas.l
 Muscle ptérygoïdien latéral.l
 Muscle ptérygoïdien latéral.r
@@ -49,5 +49,3 @@ Muscles intertransversaires ventraux du cou.l
 Muscles intertransversaires ventraux du cou.r
 Muscles lombricaux de la main.l
 Muscles lombricaux de la main.r
-[Muscle extenseur oblique du carpe].l
-[Muscle extenseur oblique du carpe].r

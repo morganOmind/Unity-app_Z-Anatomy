@@ -4,7 +4,11 @@ Ligament atlanto-occipitale latéral.l
 Ligament atlanto-occipitale latéral.r
 Ligament atlas transverse (or, car, su)
 Ligament de l'apex de la dent (or, Car, su, Ru).l
+Ligament iliolombaire.l
+Ligament iliolombaire.r
 Ligament ischiatique arqué
 Ligaments alaires (or, Car, su).l
 Ligaments alaires (or, Car, su).r
+Ligaments interphalangiens plantaires
+Ligaments métatarsophalangiens plantaires.r
 Noyau pulpeux

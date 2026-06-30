@@ -1,0 +1,103 @@
+Humérus.l
+Humérus.r
+Fémur.l
+Fémur.r
+Cinquième métacarpien.l
+Deuxième métacarpien.l
+Quatrième métacarpien.l
+Troisième métacarpien.l
+Cinquième métatarsien.l
+Deuxième métatarsien.l
+Quatrième métatarsien.l
+Troisième métatarsien.l
+Cinquième métacarpien.r
+Deuxième métacarpien.r
+Quatrième métacarpien.r
+Troisième métacarpien.r
+Cinquième métatarsien.r
+Deuxième métatarsien.r
+Quatrième métatarsien.r
+Troisième métatarsien.r
+Radius.l
+Ulna.l
+Fibula.l
+Tibia.l
+Radius.r
+Ulna.r
+Fibula.r
+Tibia.r
+Côtes
+Côtes asternales
+Côtes flottantes
+Côtes sternales
+Treizième côte.l
+Dixième côte.l
+Douzième côte.l
+Neuvième côte.l
+Onzième côte.l
+Cinquième côte.l
+Deuxième côte.l
+Huitième côte.l
+Première côte.l
+Quatrième côte.l
+Septième côte.l
+Sixième côte.l
+Troisième côte.l
+Premier métacarpien.r
+Phalange distale du cinquième orteil.l
+Phalange distale du deuxième orteil.l
+Phalange distale du quatrième orteil.l
+Phalange distale du troisième orteil.l
+Phalange moyenne du cinquième orteil.l
+Phalange moyenne du deuxième orteil.l
+Phalange moyenne du quatrième orteil.l
+Phalange moyenne du troisième orteil.l
+Phalange proximale du cinquième orteil.l
+Phalange proximale du deuxième orteil.l
+Phalange proximale du quatrième orteil.l
+Phalange proximale du troisième orteil.l
+Phalange distale du cinquième orteil.r
+Phalange distale du deuxième orteil.r
+Phalange distale du quatrième orteil.r
+Phalange distale du troisième orteil.r
+Phalange moyenne du deuxième orteil.r
+Phalange moyenne du troisième orteil.r
+Phalange moyenne du quatrième orteil.r
+Phalange proximale du cinquième orteil.r
+Phalange proximale du deuxième orteil.r
+Phalange proximale du quatrième orteil.r
+Phalange proximale du troisième orteil.r
+Phalange moyenne du cinquième orteil.r
+Phalange distale du cinquième doigt de la main.l
+Phalange distale du deuxième doigt de la main.l
+Phalange distale du quatrième doigt de la main.l
+Phalange distale du troisième doigt de la main.l
+Phalange moyenne du cinquième doigt de la main.l
+Phalange moyenne du deuxième doigt de la main.l
+Phalange moyenne du quatrième doigt de la main.l
+Phalange moyenne du troisième doigt de la main.l
+Phalange proximale du cinquième doigt de la main.l
+Phalange proximale du deuxième doigt de la main.l
+Phalange proximale du quatrième doigt de la main.l
+Phalange proximale du troisième doigt de la main.l
+Phalange distale du cinquième doigt de la main.r
+Phalange distale du deuxième doigt de la main.r
+Phalange distale du premier doigt de la main.r
+Phalange distale du quatrième doigt de la main.r
+Phalange distale du troisième doigt de la main.r
+Phalange moyenne du cinquième doigt de la main.r
+Phalange moyenne du deuxième doigt de la main.r
+Phalange moyenne du quatrième doigt de la main.r
+Phalange moyenne du troisième doigt de la main.r
+Phalange proximale du cinquième doigt de la main.r
+Phalange proximale du deuxième doigt de la main.r
+Phalange proximale du premier doigt de la main.r
+Phalange proximale du quatrième doigt de la main.r
+Phalange proximale du troisième doigt de la main.r
+Premier métacarpien.l
+Premier métatarsien.l
+Premier métatarsien.r
+Phalange distale du premier doigt de la main.l
+Phalange proximale du premier doigt de la main.l
+Clavicule (or, fe).l
+Clavicule (or, fe).r

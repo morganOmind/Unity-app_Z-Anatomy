@@ -1,9 +1,7 @@
 Ligament accessoire du muscle fléchisseur profond des doigts
-Gaine tendineuse du fléchisseur radial du carpe
-Gaine synoviale des muscles fléchisseurs communs
-Bourse subtendineuse du muscle fléchisseur profond des doigts
-Bourses musculaires de m. fléchisseur superficiel des doigts
-Gaine tendineuse du muscle fléchisseur ulnaire du carpe (Car)
+Gaine tendineuse du fléchisseur radial du carpe.l
+Bourse sous-tendineuse du fléchisseur profond des doigts.l
+Gaine tendineuse du fléchisseur ulnaire du carpe (Car).l
 Muscle court fléchisseur du premier orteil.l
 Muscle court fléchisseur du premier orteil.r
 Muscle court fléchisseur du pouce.l
@@ -59,6 +57,9 @@ Muscle biceps fémoral.r
 Partie superficielle du muscle masséter.l
 Muscle semitendineux.l
 Muscle semitendineux.r
+Gaine tendineuse du fléchisseur radial du carpe.r
+Bourse sous-tendineuse du fléchisseur profond des doigts.r
+Gaine tendineuse du fléchisseur ulnaire du carpe (Car).r
 Muscles interépineux.l
 Muscle petit droit dorsal de la tête.l
 Muscle articulaire du genou (Car, bo).l
@@ -100,11 +101,11 @@ Chef long du triceps brachial.l
 Chef long du triceps brachial.r
 Muscle fessier superficiel.l
 Muscle fessier superficiel.r
+Structures tendineuses et ligamentaires de l'abdomen
 Muscles intertransversaires des lombes.l
 Muscle court abducteur du pouce.l
 Muscle court abducteur du pouce.r
 Muscles interosseux du pied.l
-Muscles interosseux du pied.r
 Muscle scalène dorsal (Car, su, Ru).l
 Muscles intertransversaires du thorax.l
 Muscles intertransversaires dorsaux du cou.l
@@ -123,10 +124,10 @@ Muscle sartorius.l
 Muscle sartorius.r
 Muscle fessier profond.l
 Muscle fessier profond.r
-Partie scapulaire épineuse du deltoïde.l
-Partie acromiale du deltoïde.l
-Partie scapulaire épineuse du deltoïde.r
-Partie acromiale du deltoïde.r
+Partie scapulaire épineuse.l
+Partie acromiale.l
+Partie scapulaire épineuse.r
+Partie acromiale.r
 Muscle supra-épineux.l
 Muscle supra-épineux.r
 Muscle piriforme.l
@@ -137,10 +138,9 @@ Muscle moyen fessier.r
 Muscle trapèze.r
 Muscle tenseur du fascia lata.l
 Muscle tenseur du fascia lata.r
+Muscles interosseux du pied.r
 Muscle adducteur du deuxième orteil.l
 Muscle adducteur du deuxième orteil.r
-Muscle long adducteur.l
-Muscle long adducteur.r
 Muscle ptérygoïdien latéral.l
 Muscle adducteur du pouce.l
 Muscle adducteur du pouce.r

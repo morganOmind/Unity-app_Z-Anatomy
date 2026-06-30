@@ -49,9 +49,7 @@ Os sésamoïdes proximaux du cinquième doigt de la main.l
 Os sésamoïdes proximaux du deuxième doigt de la main.l
 Os sésamoïdes proximaux du quatrième doigt de la main.l
 Os sésamoïdes proximaux du troisième doigt de la main.l
-Phalanges distales de la main
-Foramen du processus plantaire
-Incisure du processus plantaire
+Phalanges distales de la main [Os ongulaires]
 Phalange distale du cinquième orteil.l
 Phalange distale du deuxième orteil.l
 Phalange distale du quatrième orteil.l
@@ -77,7 +75,7 @@ Troisième métatarsien.l
 Premier métatarsien.l
 Squelette du pied
 Os des doigts du pied
-Phalanges distales du pied
+Phalanges distales du pied [Os ongulaires]
 Phalanges moyennes du pied
 Phalanges proximales du pied
 Os du tarse
@@ -169,3 +167,7 @@ Os sésamoïdes proximaux du premier doigt de la main
 Os tarsien III [Os cunéiforme latéral].l
 Os tarsien III [Os cunéiforme latéral].r
 Phalange moyenne du cinquième orteil.r
+Foramen du processus plantaire.i
+Foramen du processus plantaire.s
+Incisure du processus plantaire.i
+Incisure du processus plantaire.s

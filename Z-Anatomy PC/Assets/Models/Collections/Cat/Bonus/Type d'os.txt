@@ -206,7 +206,7 @@ Vertèbre Cc19
 Os de l'arc hémal
 Os présphénoïde
 Os basisphénoïde
-Os coxal
+Os coxal.l
 Os basihyoïdien
 Os ethmoïde
 Os cératohyoïdien [Petite corne]
@@ -219,7 +219,6 @@ Os palatin.l
 Vomer
 Os ptérygoïdien.l
 Os maxillaire.l
-(Os sutural).l
 Cornet nasal ventral.l
 Os sésamoïdes des muscles gastrocnémiens.l
 Os sésamoïdes des muscles gastrocnémiens.r

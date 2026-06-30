@@ -1,0 +1,6 @@
+Cochlée.l
+Cochlée.r
+Osselets de l'ouïe.l
+Osselets de l'ouïe.r
+Vestibule.l
+Vestibule.r

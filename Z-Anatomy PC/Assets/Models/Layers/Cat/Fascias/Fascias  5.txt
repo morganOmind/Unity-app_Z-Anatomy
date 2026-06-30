@@ -1,4 +1,11 @@
 Fascia brachial.l
 Fascia brachial.r
-Fascia lata.l
-Fascia lata.r
+Partie cruciforme de la gaine fibreuse du pied.l
+Partie cruciforme de la gaine fibreuse du pied.r
+Partie cruciforme de la gaine fibreuse.l
+Partie cruciforme de la gaine fibreuse.r
+Scutum moyen de la main.l
+Septum intermusculaire latéral du fascia brachial.l
+Septum intermusculaire latéral du fascia brachial.r
+Septum intermusculaire médial du fascia brachial.l
+Septum intermusculaire médial du fascia brachial.r

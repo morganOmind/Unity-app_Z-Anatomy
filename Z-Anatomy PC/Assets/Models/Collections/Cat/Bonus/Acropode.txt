@@ -15,9 +15,7 @@ Phalange proximale du troisième doigt de la main.l
 Os des doigts de la main
 Phalanges moyennes de la main
 Phalanges proximales de la main
-Phalanges distales de la main
-Foramen du processus plantaire
-Incisure du processus plantaire
+Phalanges distales de la main [Os ongulaires]
 Phalange distale du cinquième orteil.l
 Phalange distale du deuxième orteil.l
 Phalange distale du quatrième orteil.l
@@ -31,7 +29,7 @@ Phalange proximale du deuxième orteil.l
 Phalange proximale du quatrième orteil.l
 Phalange proximale du troisième orteil.l
 Os des doigts du pied
-Phalanges distales du pied
+Phalanges distales du pied [Os ongulaires]
 Phalanges moyennes du pied
 Phalanges proximales du pied
 Griffe du cinquième orteil.l
@@ -76,3 +74,7 @@ Griffe du quatrième doigt de la main.r
 Griffe du troisième doigt de la main.r
 Griffe du deuxième doigt de la main.r
 Phalange moyenne du cinquième orteil.r
+Foramen du processus plantaire.i
+Foramen du processus plantaire.s
+Incisure du processus plantaire.i
+Incisure du processus plantaire.s

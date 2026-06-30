@@ -24,7 +24,7 @@ Muscle longissimus de l'atlas.el
 Muscle long du cou.el
 Muscle long de la tête.e2l
 Muscle droit ventral de la tête.e1l
-Muscles intertransversaire et iliocostal du cou.el
+Muscles intertransversaires et iliocostal du cou.el
 Muscle droit latéral de la tête.el
 Muscle oblique caudal de la tête.el
 Muscle grand droit dorsal de la tête.el
@@ -399,16 +399,21 @@ Muscle pectoral profond (ascendant).o6l
 Muscle pectoral profond (ascendant).o7l
 Muscle pectoral transverse.ol
 Muscle droit du thorax.el
-Muscle orbiculaire de l'œil.o1l
-Muscle élévateur nasolabial.o1l
-Muscle frontal.ol
-Muscle malaire.ol
-Muscle releveur de la lèvre supérieure.ol
-Muscle malaire.o1l
-Muscle élévateur nasolabial.ol
-Muscle orbiculaire de l'œil.ol
-Muscle buccinateur.ol
+Muscle grand dorsal.ol
+Muscle grand dorsal.o1l
+Muscle grand dorsal.o2l
+Muscle grand dorsal.o3l
+Muscle grand dorsal.o4l
 Muscle buccinateur.o1l
-Muscle buccinateur.o3l
-Muscle incisif supérieur.ol
 Muscle buccinateur.o2l
+Muscle buccinateur.o3l
+Muscle buccinateur.ol
+Muscle frontal.ol
+Muscle incisif supérieur.ol
+Muscle malaire.o1l
+Muscle malaire.ol
+Muscle orbiculaire de l'œil.o1l
+Muscle orbiculaire de l'œil.ol
+Muscle releveur de la lèvre supérieure.ol
+Muscle élévateur nasolabial.o1l
+Muscle élévateur nasolabial.ol

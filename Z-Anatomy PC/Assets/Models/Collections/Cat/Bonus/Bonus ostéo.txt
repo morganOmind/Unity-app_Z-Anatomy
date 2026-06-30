@@ -1,0 +1,1079 @@
+Os occipital
+Os présphénoïde
+Os basisphénoïde
+Partie squameuse de l’os temporal.l
+Partie tympanique.l
+Partie pétreuse.l
+Os pariétal.l
+Os frontal
+Os ethmoïde
+Os interpariétal
+Cornet nasal ventral.l
+Os zygomatique.l
+Vomer
+Os nasal.l
+Os palatin.l
+Os lacrymal.l
+Os maxillaire.l
+Os incisif.l
+Os ptérygoïdien.l
+Canine supérieure.l
+Incisive intermédiaire supérieure.l
+Incisive supérolatérale.l
+Incisive supéromédiale.l
+Dent carnassière (Car).l
+Deuxième prémolaire supérieure.l
+Première prémolaire supérieure.l
+Ligament orbitaire.l
+Muscle masséter.e1l
+Muscle temporal.e1l
+Muscle digastrique.el
+Muscle orbiculaire de l'œil.o1l
+Muscle élévateur nasolabial.o1l
+Muscle temporal.o2l
+Muscle frontal.ol
+Muscle malaire.ol
+Muscle releveur de la lèvre supérieure.ol
+Muscle masséter.o2l
+Muscle malaire.o1l
+Muscle élévateur nasolabial.ol
+Muscle masséter.o1l
+Muscle temporal.o4l
+Muscle temporal.o5l
+Muscle temporal.o1l
+Muscle orbiculaire de l'œil.ol
+Muscle buccinateur.ol
+Muscle buccinateur.o1l
+Muscle buccinateur.o3l
+Muscle ptérygoïdien médial.el
+Muscle incisif supérieur.ol
+Muscle ptérygopharyngien.ol
+Muscle ptérygoïdien médial.ol
+Muscle ptérygoïdien latéral.o1l
+Muscle temporal.o3l
+Muscle occipital.ol
+Muscle cervicoscutulaire.ol
+Muscle pariétoscutulaire.ol
+Muscle pariétoscutulaire.o1l
+Muscle mylohyoïdien.ol
+Muscle génioglosse.el
+Muscle géniohyoïdien.el
+Muscle ptérygoïdien latéral.o2l
+Muscle masséter.o3l
+Muscle palatin.ol
+Muscle long de la tête.el
+Muscle droit ventral de la tête.el
+Muscle long de la tête.e1l
+Muscle semi-épineux de la tête.ol
+Muscle grand droit dorsal de la tête.ol
+Muscle oblique crânial de la tête.ol
+Muscle longissimus de la tête.el
+Muscle brachiocéphalique.el
+Muscle rhomboïde de la tête (Car, su).el
+Muscle splénius de la tête.el
+Muscle digastrique.ol
+Muscle droit latéral de la tête.ol
+Muscle tenseur du voile du palais.ol
+Muscle petit droit dorsal de la tête.ol
+Muscle buccinateur.o2l
+Canine inférieure.l
+Deuxième prémolaire inférieure.l
+Incisive inféromédiale.l
+Incisive intermédiaire inférieure.l
+Première prémolaire inférieure.l
+Mandibule
+Première molaire inférieure.l
+Incisive inférolatérale.l
+Muscle complexus.ol
+Muscle piriforme.ol
+Muscle piriforme.o1l
+Muscle sacrococcygien dorsal médial.o1l
+Muscle sacrococcygien dorsal latéral.o6l
+Muscle sacrococcygien dorsal latéral.o5l
+Muscle sacrococcygien dorsal latéral.o4l
+Muscle sacrococcygien dorsal latéral.o1l
+Muscle sacrococcygien dorsal latéral.o3l
+Muscle sacrococcygien dorsal latéral.o2l
+Muscle intertransversaires dorsaux caudaux.ol
+Muscle piriforme.el
+Muscle stylohyoïdien.ol
+Muscle occipitohyoïdien.ol
+Muscle cératohyoïdien.o1l
+Muscle cératohyoïdien.ol
+Muscle cératohyoïdien.el
+Muscle hyoglosse.ol
+Muscle stylohyoïdien.el
+Muscle oblique caudal de la tête.ol
+Muscle oblique crânial de la tête.el
+Muscle petit droit dorsal de la tête.el
+Muscle longissimus de l'atlas.el
+Muscle long du cou.el
+Muscle long de la tête.e2l
+Muscle droit ventral de la tête.e1l
+Muscles intertransversaires et iliocostal du cou.el
+Muscle droit latéral de la tête.el
+Muscle oblique caudal de la tête.el
+Muscle grand droit dorsal de la tête.el
+Muscle grand droit dorsal de la tête.e1l
+Muscle rhomboïde cervical.el
+Muscle transversaire épineux.el
+Muscle semi-épineux du cou.el
+Muscle long du cou.e1l
+Muscle long de la tête.e3l
+Muscle scalène ventral (Un).ol
+Muscle dentelé ventral du thorax.e0l
+Muscle scalène moyen.ol
+Muscle dentelé ventral du thorax.el
+Muscle dentelé ventral du thorax.e1l
+Muscle dentelé ventral du thorax.e2l
+Muscle dentelé ventral du thorax.e3l
+Muscle dentelé ventral du thorax.e4l
+Muscle dentelé ventral du thorax.e5l
+Muscle longissimus du thorax.el
+Muscle longissimus du thorax.e1l
+Muscle longissimus du thorax.e2l
+Muscle longissimus du thorax.e3l
+Muscle longissimus du thorax.e4l
+Muscle longissimus du thorax.e5l
+Muscle longissimus du thorax.e6l
+Muscle longissimus du thorax.e7l
+Muscle longissimus du thorax.e10l
+Muscle longissimus du thorax.e11l
+Muscle longissimus du thorax.e9l
+Muscle longissimus du thorax.e8l
+Muscle iliocostal du thorax.el
+Muscle iliocostal du thorax.e1l
+Muscle iliocostal du thorax.e2l
+Muscle iliocostal du thorax.e3l
+Muscle iliocostal du thorax.e4l
+Muscle iliocostal du thorax.e5l
+Muscle iliocostal du thorax.e6l
+Muscle iliocostal du thorax.e7l
+Muscle oblique externe de l'abdomen.el
+Muscle oblique externe de l'abdomen.e1l
+Muscle oblique externe de l'abdomen.e2l
+Muscle oblique externe de l'abdomen.e3l
+Muscle oblique externe de l'abdomen.e4l
+Muscle oblique externe de l'abdomen.e5l
+Muscle oblique externe de l'abdomen.e6l
+Muscle oblique externe de l'abdomen.e7l
+Muscle oblique externe de l'abdomen.e8l
+Muscle oblique externe de l'abdomen.e9l
+Muscles intercostaux externes.ol
+Muscles intercostaux externes.el
+Muscles intercostaux externes.o1l
+Muscles intercostaux externes.e1l
+Muscles intercostaux externes.o2l
+Muscles intercostaux externes.o3l
+Muscles intercostaux externes.e2l
+Muscles intercostaux externes.e3l
+Muscles intercostaux externes.o4l
+Muscles intercostaux externes.e4l
+Muscles intercostaux externes.o5l
+Muscles intercostaux externes.e5l
+Muscles intercostaux externes.o6l
+Muscles intercostaux externes.o7l
+Muscles intercostaux externes.e6l
+Muscles intercostaux externes.o8l
+Muscles intercostaux externes.e7l
+Muscles intercostaux externes.o9l
+Muscles intercostaux externes.e8l
+Muscles intercostaux externes.e9l
+Muscles intercostaux externes.o10l
+Muscles intercostaux externes.e10l
+Muscles intercostaux externes.e11l
+Muscle épineux du cou.o2l
+Muscle épineux du thorax.o1l
+Muscle épineux du thorax.o2l
+Muscle épineux du thorax.o3l
+Muscle épineux du thorax.o4l
+Muscle épineux du thorax.o5l
+Muscle épineux du thorax.o6l
+Muscle épineux du thorax.o7l
+Muscle épineux du thorax.o8l
+Muscle épineux du thorax.o9l
+Muscle épineux du thorax.o10l
+Muscle épineux du thorax.o11l
+Muscle épineux du thorax.o12l
+Muscle trapèze.ol
+Muscle trapèze.o1l
+Muscle trapèze.o2l
+Muscle trapèze.o3l
+Muscle trapèze.o4l
+Muscle trapèze.o5l
+Muscle trapèze.o6l
+Muscle trapèze.o7l
+Muscle trapèze.o8l
+Muscles interépineux.o0l
+Muscles interépineux.e0l
+Muscles interépineux.ol
+Muscles interépineux.el
+Muscles interépineux.o1l
+Muscles interépineux.o2l
+Muscles interépineux.e1l
+Muscles interépineux.e2l
+Muscles interépineux.o3l
+Muscles interépineux.e4l
+Muscles interépineux.o5l
+Muscles interépineux.e5l
+Muscles interépineux.o6l
+Muscles interépineux.e6l
+Muscles interépineux.o7l
+Muscles interépineux.e8l
+Muscles interépineux.o9l
+Muscles interépineux.e9l
+Muscles interépineux.o10l
+Muscles interépineux.e10l
+Muscles interépineux.o11l
+Muscles interépineux.e11l
+Muscles interépineux.o12l
+Muscles interépineux.e12l
+Muscles interépineux.o13l
+Muscles interépineux.e13l
+Muscles interépineux.e3l
+Muscles interépineux.o4l
+Muscles multifides.el
+Muscles multifides.o1l
+Muscles multifides.o2l
+Muscles multifides.o3l
+Muscles multifides.o4l
+Muscles multifides.o5l
+Muscles multifides.o6l
+Muscles multifides.o7l
+Muscles multifides.o8l
+Muscles multifides.o9l
+Muscles multifides.o10l
+Muscles multifides.o11l
+Muscles multifides.o12l
+Muscles multifides.e3l
+Muscles multifides.e4l
+Muscle petit psoas.o5l
+Muscle petit psoas.o1l
+Muscle grand psoas.o4l
+Muscle petit psoas.ol
+Muscle grand psoas.o3l
+Muscle grand psoas.o1l
+Muscle grand psoas.ol
+Muscle petit psoas.o2l
+Muscle petit psoas.o6l
+Muscle petit psoas.o7l
+Muscles intercostaux externes.o11l
+Muscle carré des lombes.e5l
+Muscle carré des lombes.e4l
+Muscle carré des lombes.e3l
+Muscle carré des lombes.e2l
+Muscle carré des lombes.e1l
+Muscle carré des lombes.el
+Muscle carré des lombes.e7l
+Muscle carré des lombes.e6l
+Muscle longissimus des lombes.o5l
+Muscle longissimus des lombes.o4l
+Muscle longissimus des lombes.o3l
+Muscle longissimus des lombes.o2l
+Muscle longissimus des lombes.o1l
+Muscle longissimus des lombes.ol
+Muscles intertransversaires des lombes.o5l
+Muscles intertransversaires des lombes.e4l
+Muscles intertransversaires des lombes.e3l
+Muscles intertransversaires des lombes.o4l
+Muscles intertransversaires des lombes.o3l
+Muscles intertransversaires des lombes.e2l
+Muscles intertransversaires des lombes.o1l
+Muscles intertransversaires des lombes.el
+Muscles intertransversaires des lombes.ol
+Muscles intertransversaires des lombes.e1l
+Muscles intertransversaires des lombes.o2l
+Muscle rhomboïde thoracique.ol
+Muscle rhomboïde thoracique.o1l
+Muscle rhomboïde thoracique.o3l
+Muscle rhomboïde thoracique.o4l
+Muscle rhomboïde thoracique.o5l
+Muscle rhomboïde thoracique.o6l
+Muscle rhomboïde thoracique.o2l
+Muscle dentelé dorsal caudal.o4l
+Muscle dentelé dorsal caudal.o3l
+Muscle dentelé dorsal caudal.o1l
+Muscle dentelé dorsal caudal.ol
+Muscle dentelé dorsal crânial.ol
+Muscle dentelé dorsal crânial.o1l
+Muscle dentelé dorsal crânial.o2l
+Muscle dentelé dorsal crânial.o3l
+Muscle dentelé dorsal crânial.o4l
+Muscle dentelé dorsal crânial.o5l
+Muscle dentelé dorsal crânial.o6l
+Muscle dentelé dorsal crânial.o7l
+Muscles élévateurs des côtes.el
+Muscles élévateurs des côtes.e1l
+Muscles élévateurs des côtes.e2l
+Muscles élévateurs des côtes.e3l
+Muscles élévateurs des côtes.e5l
+Muscles élévateurs des côtes.e4l
+Muscles élévateurs des côtes.e10l
+Muscles élévateurs des côtes.e6l
+Muscles élévateurs des côtes.e7l
+Muscles élévateurs des côtes.e8l
+Muscles élévateurs des côtes.e9l
+Muscles élévateurs des côtes.e11l
+Muscles élévateurs des côtes.o6l
+Muscles élévateurs des côtes.o7l
+Muscles élévateurs des côtes.o8l
+Muscles élévateurs des côtes.o9l
+Muscles élévateurs des côtes.o10l
+Muscles élévateurs des côtes.o11l
+Muscle long de la tête.ol
+Muscle long de la tête.o1l
+Muscle long de la tête.o2l
+Muscle long de la tête.o3l
+Muscle long de la tête.o4l
+Muscle long du cou.e2l
+Muscle long du cou.e3l
+Muscle long du cou.e4l
+Muscle long du cou.e5l
+Muscle épineux du cou.ol
+Muscle épineux du cou.o1l
+Muscle longissimus du thorax.ol
+Muscle longissimus du thorax.o1l
+Muscle longissimus du thorax.o2l
+Muscle longissimus du thorax.o3l
+Muscle longissimus du thorax.o4l
+Muscle longissimus du thorax.o5l
+Muscle longissimus du thorax.o6l
+Muscle droit du thorax.ol
+Muscle dentelé dorsal crânial.el
+Muscle dentelé dorsal crânial.e1l
+Muscle dentelé dorsal crânial.e2l
+Muscle dentelé dorsal crânial.e3l
+Muscle dentelé dorsal crânial.e4l
+Muscle dentelé dorsal crânial.e5l
+Muscle dentelé dorsal crânial.e6l
+Muscle dentelé dorsal crânial.e7l
+Muscle coccygien.e5l
+Muscle coccygien.e4l
+Muscle coccygien.e3l
+Muscle coccygien.e2l
+Muscle coccygien.e1l
+Muscle scalène dorsal (Car, su, Ru).el
+Muscle scalène dorsal (Car, su, Ru).e1l
+Muscle scalène dorsal (Car, su, Ru).e2l
+Muscle scalène dorsal (Car, su, Ru).e3l
+Muscle scalène dorsal (Car, su, Ru).e4l
+Muscle scalène dorsal (Car, su, Ru).e5l
+Muscle sacrococcygien ventral latéral.ol
+Muscle sacrococcygien ventral médial.ol
+Muscle iliocostal du thorax.ol
+Muscle iliocostal du thorax.o1l
+Muscle iliocostal du thorax.o2l
+Muscle iliocostal du thorax.o3l
+Muscle iliocostal du thorax.o4l
+Muscle iliocostal du thorax.o5l
+Muscle iliocostal du thorax.e12l
+Muscle iliocostal du thorax.e11l
+Muscle iliocostal du thorax.e10l
+Muscle iliocostal du thorax.e9l
+Muscle iliocostal du thorax.e8l
+Muscles multifides.o14l
+Muscles multifides.o15l
+Muscles multifides.o16l
+Muscles multifides.o17l
+Muscles multifides.o18l
+Muscles multifides.o19l
+Muscles multifides.o20l
+Muscles multifides.o21l
+Muscles multifides.o22l
+Muscles multifides.o23l
+Muscles multifides.o13l
+Diaphragme.o1l
+Diaphragme.ol
+Diaphragme.e2l
+Diaphragme.el
+Muscle transversaire épineux.ol
+Muscles érecteurs du rachis.o1l
+Muscle long du cou.o4l
+Muscle long du cou.o3l
+Muscle long du cou.o2l
+Muscle long du cou.o1l
+Muscles interépineux.e7l
+Muscles interépineux.o8l
+Muscles intertransversaires dorsaux du cou.ol
+Muscles intertransversaires ventraux du cou.ol
+Muscles intertransversaires dorsaux du cou.o1l
+Muscles intertransversaires ventraux du cou.o1l
+Muscles intertransversaires dorsaux du cou.o2l
+Muscles intertransversaires ventraux du cou.o2l
+Muscles intertransversaires dorsaux du cou.o3l
+Muscles intertransversaires ventraux du cou.o3l
+Muscles intertransversaires dorsaux du cou.o4l
+Muscles intertransversaires ventraux du cou.o4l
+Muscles intertransversaires dorsaux du cou.o5l
+Muscles intertransversaires ventraux du cou.o5l
+Muscles élévateurs des côtes.o1l
+Muscles élévateurs des côtes.o2l
+Muscles élévateurs des côtes.o3l
+Muscles élévateurs des côtes.o4l
+Muscles élévateurs des côtes.o5l
+Muscles élévateurs des côtes.ol
+Muscle longissimus du cou.ol
+Muscle longissimus du cou.o1l
+Muscle longissimus du cou.o2l
+Muscle longissimus du cou.o3l
+Muscle longissimus du cou.o4l
+Muscle longissimus du cou.o5l
+Muscle longissimus du cou.el
+Muscle longissimus du cou.e1l
+Muscle longissimus du cou.e2l
+Muscle longissimus du cou.e3l
+Muscle sacrococcygien dorsal médial.ol
+Muscle sacrococcygien dorsal latéral.ol
+Muscle semitendineux.o1l
+Muscle moyen fessier.o1l
+Muscle biceps fémoral.o1l
+Muscles complexus et longissimus.ol
+Muscles complexus et longissimus.o1l
+Muscles complexus et longissimus.o2l
+Diaphragme.e3l
+Diaphragme.e1l
+Muscles sternohyoidien et sternothyroidien.ol
+Muscle sternocéphalique.ol
+Muscle pectoral descendant.ol
+Muscle pectoral profond (ascendant).ol
+Muscle pectoral profond (ascendant).o8l
+Muscle pectoral transverse.o1l
+Muscle pectoral profond (ascendant).o1l
+Muscle pectoral profond (ascendant).o2l
+Muscle pectoral profond (ascendant).o3l
+Muscle pectoral profond (ascendant).o4l
+Muscle pectoral profond (ascendant).o5l
+Muscle pectoral profond (ascendant).o6l
+Muscle pectoral profond (ascendant).o7l
+Muscle pectoral transverse.ol
+Muscle droit du thorax.el
+Muscle grand dorsal.ol
+Muscle grand dorsal.o1l
+Muscle grand dorsal.o2l
+Muscle grand dorsal.o3l
+Muscle grand dorsal.o4l
+Muscle rhomboïde.e1l
+Muscle supra-épineux.ol
+Muscle infra-épineux.ol
+Muscle grand rond.ol
+Muscles trapèze et detltoïde.el
+Muscle omotransversaire.el
+Partie acromiale.ol
+Muscle subscapulaire.ol
+Muscle petit rond.ol
+Chef long du triceps brachial.ol
+Muscle dentelé cervical ventral.ol
+Muscle dentelé ventral du thorax.ol
+Muscle biceps brachial.ol
+Muscle coracobrachial.ol
+Muscle supra-épineux.el
+Muscle infra-épineux.el
+Muscle pectoral profond (ascendant).el
+Muscle subscapulaire.el
+Muscles pectoraux descendant et transverse.el
+Muscle deltoïde.el
+Chef latéral du triceps brachial.ol
+Muscle brachiocéphalique.e1l
+Muscle petit rond.el
+Chef accessoire du triceps brachial.el
+Muscle brachial.ol
+Muscle brachioradial.ol
+Muscle long extenseur radial du carpe.ol
+Muscle extenseur commun des doigts.ol
+Muscle extenseur latéral des doigts.ol
+Muscle extenseur ulnaire du carpe.ol
+Muscle supinateur.ol
+Muscle anconé.ol
+Muscles grand rond et grand dorsal.el
+Chef médial du triceps brachial.ol
+Muscle rond pronateur.ol
+Muscle fléchisseur radial du carpe.ol
+Muscle fléchisseur superficiel des doigts.ol
+Muscle fléchisseur ulnaire du carpe.ol
+Chef long du triceps brachial.el
+Chef latéral du triceps brachial.el
+Muscle anconé.el
+Muscle extenseur latéral des doigts.o1l
+Muscle supinateur.el
+Muscle rond pronateur.el
+Muscle long abducteur du pouce [Extenseur oblique du carpe].ol
+Muscle extenseur des doigts I et II.ol
+Chef médial du triceps brachial.el
+Muscle tenseur du fascia antébrachial.el
+Muscle fléchisseur ulnaire du carpe.o1l
+Muscle fléchisseur profond des doigts.ol
+Muscles biceps brachial et brachial.el
+Muscles biceps brachial et brachial.e1l
+Muscle carré pronateur.ol
+Muscle carré pronateur.el
+Muscle brachioradial.el
+Muscle court extenseur radial du carpe.e1l
+Muscle long extenseur radial du carpe.el
+Muscle extenseur ulnaire du carpe.el
+Muscle fléchisseur ulnaire du carpe.el
+Muscle extenseur ulnaire du carpe.e1l
+Muscle abducteur du doigt V.ol
+Muscles interosseux de la main.o6l
+Muscle abducteur du doigt V.el
+Muscle opposant du pouce.el
+Muscle adducteur du pouce.ol
+Muscle court fléchisseur du pouce.el
+Muscles court abducteur et court fléchisseur du pouce.el
+Muscles interosseux de la main.e5l
+Muscles interosseux de la main.e6l
+Muscles interosseux de la main.e4l
+Muscles interosseux de la main.e3l
+Muscles interosseux de la main.e2l
+Muscles interosseux de la main.e1l
+Muscles interosseux de la main.el
+Muscle long abducteur du pouce [Extenseur oblique du carpe].el
+Muscle long extenseur du premier orteil (Car, su, ov).el
+Muscle fléchisseur profond des doigts.e2l
+Muscle fléchisseur profond des doigts.el
+Muscle fléchisseur profond des doigts.e1l
+Muscle fléchisseur profond des doigts.e3l
+Muscle fléchisseur superficiel des doigts.e3l
+Muscle fléchisseur superficiel des doigts.e2l
+Muscle fléchisseur superficiel des doigts.e1l
+Muscle fléchisseur superficiel des doigts.el
+Muscle extenseur commun des doigts.el
+Muscle extenseur commun des doigts.e2l
+Muscle extenseur commun des doigts.e3l
+Muscle extenseur commun des doigts.e1l
+Muscle abducteur du doigt V.e1l
+Muscle abducteur du doigt V.e2l
+Muscle abducteur du doigt II.el
+Muscles interosseux de la main.o1l
+Muscles interosseux de la main.o2l
+Muscles interosseux de la main.o3l
+Muscles interosseux de la main.o4l
+Muscles interosseux de la main.o5l
+Muscles interosseux de la main.ol
+Muscle fléchisseur radial du carpe.e1l
+Muscle fléchisseur radial du carpe.el
+Muscle rond pronateur.e1l
+Muscle rhomboïde.e1r
+Muscle supra-épineux.or
+Muscle infra-épineux.or
+Muscle grand rond.or
+Muscles trapèze et detltoïde.er
+Muscle omotransversaire.er
+Partie acromiale.or
+Muscle subscapulaire.or
+Muscle petit rond.or
+Chef long du triceps brachial.or
+Muscle dentelé cervical ventral.or
+Muscle dentelé ventral du thorax.or
+Muscle biceps brachial.or
+Muscle coracobrachial.or
+Muscle supra-épineux.er
+Muscle infra-épineux.er
+Muscle pectoral profond (ascendant).er
+Muscle subscapulaire.er
+Muscles pectoraux descendant et transverse.er
+Muscle deltoïde.er
+Chef latéral du triceps brachial.or
+Muscle brachiocéphalique.e1r
+Muscle petit rond.er
+Chef accessoire du triceps brachial.er
+Muscle brachial.or
+Muscle brachioradial.or
+Muscle long extenseur radial du carpe.or
+Muscle extenseur commun des doigts.or
+Muscle extenseur latéral des doigts.or
+Muscle extenseur ulnaire du carpe.or
+Muscle supinateur.or
+Muscle anconé.or
+Muscles grand rond et grand dorsal.er
+Chef médial du triceps brachial.or
+Muscle rond pronateur.or
+Muscle fléchisseur radial du carpe.or
+Muscle fléchisseur superficiel des doigts.or
+Muscle fléchisseur ulnaire du carpe.or
+Chef long du triceps brachial.er
+Chef latéral du triceps brachial.er
+Muscle anconé.er
+Muscle extenseur latéral des doigts.o1r
+Muscle supinateur.er
+Muscle rond pronateur.er
+Muscle long abducteur du pouce [Extenseur oblique du carpe].or
+Muscle extenseur des doigts I et II.or
+Chef médial du triceps brachial.er
+Muscle tenseur du fascia antébrachial.er
+Muscle fléchisseur ulnaire du carpe.o1r
+Muscle fléchisseur profond des doigts.or
+Muscles biceps brachial et brachial.er
+Muscles biceps brachial et brachial.e1r
+Muscle carré pronateur.or
+Muscle carré pronateur.er
+Muscle brachioradial.er
+Muscle court extenseur radial du carpe.e1r
+Muscle long extenseur radial du carpe.er
+Muscle extenseur ulnaire du carpe.er
+Muscle fléchisseur ulnaire du carpe.er
+Muscle extenseur ulnaire du carpe.e1r
+Muscle abducteur du doigt V.or
+Muscles interosseux de la main.o6r
+Muscle abducteur du doigt V.er
+Muscle opposant du pouce.er
+Muscle adducteur du pouce.or
+Muscle court fléchisseur du pouce.er
+Muscles court abducteur et court fléchisseur du pouce.er
+Muscles interosseux de la main.e5r
+Muscles interosseux de la main.e6r
+Muscles interosseux de la main.e4r
+Muscles interosseux de la main.e3r
+Muscles interosseux de la main.e2r
+Muscles interosseux de la main.e1r
+Muscles interosseux de la main.er
+Muscle long abducteur du pouce [Extenseur oblique du carpe].er
+Muscle long extenseur du premier orteil (Car, su, ov).er
+Muscle fléchisseur profond des doigts.e2r
+Muscle fléchisseur profond des doigts.er
+Muscle fléchisseur profond des doigts.e1r
+Muscle fléchisseur profond des doigts.e3r
+Muscle fléchisseur superficiel des doigts.e3r
+Muscle fléchisseur superficiel des doigts.e2r
+Muscle fléchisseur superficiel des doigts.e1r
+Muscle fléchisseur superficiel des doigts.er
+Muscle extenseur commun des doigts.er
+Muscle extenseur commun des doigts.e2r
+Muscle extenseur commun des doigts.e3r
+Muscle extenseur commun des doigts.e1r
+Muscle abducteur du doigt V.e1r
+Muscle abducteur du doigt V.e2r
+Muscle abducteur du doigt II.er
+Muscles interosseux de la main.o1r
+Muscles interosseux de la main.o2r
+Muscles interosseux de la main.o3r
+Muscles interosseux de la main.o4r
+Muscles interosseux de la main.o5r
+Muscles interosseux de la main.or
+Muscle fléchisseur radial du carpe.er
+Muscle rond pronateur.e1r
+Muscle coracobrachial.el
+Muscle court extenseur radial du carpe.or
+Muscle court extenseur radial du carpe.ol
+Muscle vaste intermédiaire.ol
+Muscle vaste latéral.ol
+Muscle fessier profond.el
+Muscle fessier superficiel.el
+Muscle fessier accessoire.el
+Muscles moyen fessier et piriforme.el
+Muscle grand adducteur.el
+Muscle articulaire du genou (Car, bo).ol
+Muscle fléchisseur superficiel des orteils.ol
+Chef médial du muscle gastrocnémien.ol
+Muscle pectiné.el
+Muscle semimembraneux.el
+Chef latéral du muscle gastrocnémien.ol
+Muscle vaste médial.ol
+Muscle iliopsoas.el
+Muscle carré fémoral.el
+Muscle court adducteur.el
+Muscle long extenseur des orteils.ol
+Muscle poplité.ol
+Muscle articulaire de la hanche (Car, eq).el
+Muscle droit fémoral.el
+Muscles vaste médial et vaste intermédiaire.el
+Muscle vaste latéral.el
+Fascia lata et muscle sartorius.el
+Muscle biceps fémoral.el
+Ligament patellaire.ol
+Muscle tibial crânial.ol
+Ligament patellaire.el
+Muscle biceps fémoral.e1l
+Muscle long fibulaire.ol
+Muscle long fibulaire.o1l
+Muscle extenseur latéral des orteils.ol
+Muscle fléchisseur latéral des orteils.ol
+Muscle court fibulaire.ol
+Muscle poplité.el
+Muscle fléchisseur latéral des orteils.o1l
+Muscle fléchisseur médial des orteils.ol
+Muscle tibial caudal.ol
+Muscle fléchisseur superficiel des orteils.e4l
+Muscle gastrocnémien.el
+Muscle abducteur du cinquième orteil.ol
+Muscle carré plantaire.ol
+Muscle court extenseur des orteils.ol
+Muscle court fibulaire.el
+Muscle adducteur du cinquième orteil.e2l
+Muscle adducteur du cinquième orteil.e1l
+Muscles interosseux du pied.e5l
+Muscles interosseux du pied.e6l
+Muscles interosseux du pied.e2l
+Muscles interosseux du pied.e4l
+Muscles interosseux du pied.e3l
+Fléchisseurs profonds des orteils.e3l
+Fléchisseurs profonds des orteils.e2l
+Fléchisseurs profonds des orteils.e1l
+Fléchisseurs profonds des orteils.el
+Muscle fléchisseur superficiel des orteils.el
+Muscle fléchisseur superficiel des orteils.e1l
+Muscle fléchisseur superficiel des orteils.e2l
+Muscle fléchisseur superficiel des orteils.e3l
+M. long extenseur des orteils et long extenseur du doigt I.el
+Muscle long extenseur des orteils.e2l
+Muscle long extenseur des orteils.e1l
+Muscle long extenseur des orteils.el
+Partie caudale du sartorius (ca).el
+Muscle gracile.el
+Muscle semitendineux.el
+Muscle vaste intermédiaire.or
+Muscle vaste latéral.or
+Muscle fessier profond.er
+Muscle fessier superficiel.er
+Muscle fessier accessoire.er
+Muscles moyen fessier et piriforme.er
+Muscle piriforme.er
+Muscle grand adducteur.er
+Muscle articulaire du genou (Car, bo).or
+Muscle fléchisseur superficiel des orteils.or
+Chef médial du muscle gastrocnémien.or
+Muscle pectiné.er
+Muscle semimembraneux.er
+Chef latéral du muscle gastrocnémien.or
+Muscle vaste médial.or
+Muscle iliopsoas.er
+Muscle carré fémoral.er
+Muscle court adducteur.er
+Muscle long extenseur des orteils.or
+Muscle poplité.or
+Muscle articulaire de la hanche (Car, eq).er
+Muscle droit fémoral.er
+Muscles vaste médial et vaste intermédiaire.er
+Muscle vaste latéral.er
+Fascia lata et muscle sartorius.er
+Muscle biceps fémoral.er
+Ligament patellaire.or
+Muscle tibial crânial.or
+Ligament patellaire.er
+Muscle biceps fémoral.e1r
+Muscle long fibulaire.or
+Muscle long fibulaire.o1r
+Muscle extenseur latéral des orteils.or
+Muscle fléchisseur latéral des orteils.or
+Muscle court fibulaire.or
+Muscle poplité.er
+Muscle fléchisseur latéral des orteils.o1r
+Muscle fléchisseur médial des orteils.or
+Muscle tibial caudal.or
+Muscle fléchisseur superficiel des orteils.e4r
+Muscle gastrocnémien.er
+Muscle abducteur du cinquième orteil.or
+Muscle carré plantaire.or
+Muscle court extenseur des orteils.or
+Muscle court fibulaire.er
+Muscle adducteur du cinquième orteil.er
+Muscle adducteur du cinquième orteil.e1r
+Fléchisseurs profonds des orteils.e3r
+Fléchisseurs profonds des orteils.e2r
+Fléchisseurs profonds des orteils.e1r
+Fléchisseurs profonds des orteils.er
+Muscle fléchisseur superficiel des orteils.er
+Muscle fléchisseur superficiel des orteils.e1r
+Muscle fléchisseur superficiel des orteils.e2r
+Muscle fléchisseur superficiel des orteils.e3r
+M. long extenseur des orteils et long extenseur du doigt I.er
+Muscle long extenseur des orteils.e2r
+Muscle long extenseur des orteils.e1r
+Muscle long extenseur des orteils.er
+Partie caudale du sartorius (ca).er
+Muscle gracile.er
+Muscle semitendineux.er
+Muscles interosseux du pied.e5r
+Muscles interosseux du pied.e6r
+Muscles interosseux du pied.e2r
+Muscles interosseux du pied.e4r
+Muscles interosseux du pied.e3r
+Muscle long extenseur du premier orteil (Car, su, ov).ol
+Muscle long extenseur du premier orteil (Car, su, ov).or
+Muscle oblique externe de l'abdomen.ol
+Muscle moyen fessier.ol
+Muscle fessier accessoire.ol
+Partie crâniale du sartorius (ca).ol
+Partie caudale du sartorius (ca).ol
+Muscles tenseur du fascia lata et fessier superficiel.ol
+Muscle fessier profond.ol
+Muscle iliaque.ol
+Muscle articulaire de la hanche (Car, eq).ol
+Muscle droit fémoral.ol
+Muscles jumeaux.ol
+Muscle biceps fémoral.ol
+Muscle carré fémoral.ol
+Muscle semitendineux.ol
+Muscles érecteurs du rachis.ol
+Muscle obturateur interne.ol
+Muscle coccygien.ol
+Muscle élévateur de l'anus.ol
+Muscle petit psoas.el
+Muscle ischiocaverneux.ol
+Muscle obturateur externe.ol
+Muscle grand adducteur.ol
+Muscle court adducteur.ol
+Muscle gracile.ol
+Muscle pectiné.ol
+Muscle droit de l'abdomen.ol
+Muscle semimembraneux.ol
+Muscles interosseux du pied.el
+Muscles interosseux du pied.e1l
+Muscles interosseux du pied.er
+Muscles interosseux du pied.e1r
+Muscle semimembraneux.e1l
+Muscle semimembraneux.e1r
+Muscle soléaire.ol
+Muscle soléaire.or
+Muscle tibial caudal.er
+Muscle tibial caudal.el
+Muscle tibial crânial.el
+Muscle tibial crânial.er
+Muscle abducteur du cinquième orteil.el
+Muscle abducteur du cinquième orteil.er
+Muscle long fibulaire.e2l
+Muscle long fibulaire.e1l
+Muscle long fibulaire.el
+Muscle long fibulaire.e2r
+Muscle long fibulaire.e1r
+Muscle long fibulaire.er
+Muscle fléchisseur radial du carpe.e1r
+Humérus.l
+Humérus.r
+Fémur.l
+Fémur.r
+Cinquième métacarpien.l
+Deuxième métacarpien.l
+Quatrième métacarpien.l
+Troisième métacarpien.l
+Cinquième métatarsien.l
+Deuxième métatarsien.l
+Quatrième métatarsien.l
+Troisième métatarsien.l
+Cinquième métacarpien.r
+Deuxième métacarpien.r
+Quatrième métacarpien.r
+Troisième métacarpien.r
+Cinquième métatarsien.r
+Deuxième métatarsien.r
+Quatrième métatarsien.r
+Troisième métatarsien.r
+Radius.l
+Ulna.l
+Fibula.l
+Tibia.l
+Radius.r
+Ulna.r
+Fibula.r
+Tibia.r
+Côtes
+Côtes asternales
+Côtes flottantes
+Côtes sternales
+Treizième côte.l
+Dixième côte.l
+Douzième côte.l
+Neuvième côte.l
+Onzième côte.l
+Cinquième côte.l
+Deuxième côte.l
+Huitième côte.l
+Première côte.l
+Quatrième côte.l
+Septième côte.l
+Sixième côte.l
+Troisième côte.l
+Premier métacarpien.r
+Phalange distale du cinquième orteil.l
+Phalange distale du deuxième orteil.l
+Phalange distale du quatrième orteil.l
+Phalange distale du troisième orteil.l
+Phalange moyenne du cinquième orteil.l
+Phalange moyenne du deuxième orteil.l
+Phalange moyenne du quatrième orteil.l
+Phalange moyenne du troisième orteil.l
+Phalange proximale du cinquième orteil.l
+Phalange proximale du deuxième orteil.l
+Phalange proximale du quatrième orteil.l
+Phalange proximale du troisième orteil.l
+Phalange distale du cinquième orteil.r
+Phalange distale du deuxième orteil.r
+Phalange distale du quatrième orteil.r
+Phalange distale du troisième orteil.r
+Phalange moyenne du deuxième orteil.r
+Phalange moyenne du troisième orteil.r
+Phalange moyenne du quatrième orteil.r
+Phalange proximale du cinquième orteil.r
+Phalange proximale du deuxième orteil.r
+Phalange proximale du quatrième orteil.r
+Phalange proximale du troisième orteil.r
+Phalange moyenne du cinquième orteil.r
+Phalange distale du cinquième doigt de la main.l
+Phalange distale du deuxième doigt de la main.l
+Phalange distale du quatrième doigt de la main.l
+Phalange distale du troisième doigt de la main.l
+Phalange moyenne du cinquième doigt de la main.l
+Phalange moyenne du deuxième doigt de la main.l
+Phalange moyenne du quatrième doigt de la main.l
+Phalange moyenne du troisième doigt de la main.l
+Phalange proximale du cinquième doigt de la main.l
+Phalange proximale du deuxième doigt de la main.l
+Phalange proximale du quatrième doigt de la main.l
+Phalange proximale du troisième doigt de la main.l
+Phalange distale du cinquième doigt de la main.r
+Phalange distale du deuxième doigt de la main.r
+Phalange distale du premier doigt de la main.r
+Phalange distale du quatrième doigt de la main.r
+Phalange distale du troisième doigt de la main.r
+Phalange moyenne du cinquième doigt de la main.r
+Phalange moyenne du deuxième doigt de la main.r
+Phalange moyenne du quatrième doigt de la main.r
+Phalange moyenne du troisième doigt de la main.r
+Phalange proximale du cinquième doigt de la main.r
+Phalange proximale du deuxième doigt de la main.r
+Phalange proximale du premier doigt de la main.r
+Phalange proximale du quatrième doigt de la main.r
+Phalange proximale du troisième doigt de la main.r
+Premier métacarpien.l
+Premier métatarsien.l
+Premier métatarsien.r
+Phalange distale du premier doigt de la main.l
+Phalange proximale du premier doigt de la main.l
+Clavicule (or, fe).l
+Clavicule (or, fe).r
+Os métatarsiens I-V
+Os carpien I [Os trapèze].l
+Os accessoire du carpe [Os pisiforme].l
+Os carpien II [Os trapézoïde].l
+Os carpien III [Os capitatum].l
+Os carpien IV [Os hamatum].l
+Os intermédioradial [Os scapholunatum].l
+Os ulnaire du carpe [Os triquetrum].l
+Calcanéus.l
+Os central du tarse [Os naviculaire].l
+Os tarsien I [Os cunéiforme médial].l
+Os tarsien II [Os cunéiforme intermédiaire].l
+Os tarsien IV [Os cuboïde].l
+Talus.l
+Os carpien I [Os trapèze].r
+Os accessoire du carpe [Os pisiforme].r
+Os carpien II [Os trapézoïde].r
+Os carpien III [Os capitatum].r
+Os carpien IV [Os hamatum].r
+Os intermédioradial [Os scapholunatum].r
+Os ulnaire du carpe [Os triquetrum].r
+Calcanéus.r
+Os central du tarse [Os naviculaire].r
+Os tarsien I [Os cunéiforme médial].r
+Os tarsien II [Os cunéiforme intermédiaire].r
+Os tarsien IV [Os cuboïde].r
+Talus.r
+Os tarsien III [Os cunéiforme latéral].l
+Os tarsien III [Os cunéiforme latéral].r
+Manubrium sternal
+Cinquième sternèbre
+Deuxième sternèbre
+Quatrième sternèbre
+Septième sternèbre
+Sixième sternèbre
+Troisième sternèbre
+Processus xiphoïde
+Scapula.l
+Scapula.r
+Axe vertébral [Colonne vertébrale]
+Vertèbre
+Vertèbres caudales [coccygiennes]
+Vertèbres cervicales
+Vertèbres lombaires
+Vertèbres thoraciques
+Vertèbre C1 (Atlas)
+Vertèbre C2 (Axis)
+Vertèbre C3
+Vertèbre C4
+Vertèbre C5
+Vertèbre C6
+Vertèbre C7
+Sacrum
+Vertèbre L1
+Vertèbre L2
+Vertèbre L3
+Vertèbre L4
+Vertèbre L5
+Vertèbre L6
+Vertèbre L7
+Vertèbre T1
+Vertèbre T2
+Vertèbre T3
+Vertèbre T4
+Vertèbre T5
+Vertèbre T6
+Vertèbre T7
+Vertèbre T8
+Vertèbre T9
+Vertèbre T10
+Vertèbre T11
+Vertèbre T12
+Vertèbre T13
+Vertèbre Cc1
+Vertèbre Cc2
+Vertèbre Cc3
+Vertèbre Cc4
+Vertèbre Cc5
+Vertèbre Cc6
+Vertèbre Cc7
+Vertèbre Cc8
+Vertèbre Cc9
+Vertèbre Cc10
+Vertèbre Cc11
+Vertèbre Cc12
+Vertèbre Cc13
+Vertèbre Cc14
+Vertèbre Cc15
+Vertèbre Cc16
+Vertèbre Cc17
+Vertèbre Cc18
+Vertèbre Cc19
+Os de l'arc hémal
+Os coxal.l
+Os basihyoïdien
+Os cératohyoïdien [Petite corne]
+Os stylohyoïdien
+Os thyrohyoïdien [Grande corne]
+Os épihyoïdien
+Os sésamoïdes des muscles gastrocnémiens.l
+Os sésamoïdes des muscles gastrocnémiens.r
+Patella.l
+Patella.r
+Os sésamoïde du muscle poplité.l
+Os sésamoïde du muscle poplité.r
+Os sésamoïdes proximaux du cinquième orteil.l
+Os sésamoïdes proximaux du troisième orteil.l
+Os sésamoïdes proximaux du cinquième orteil.r
+Os sésamoïdes proximaux du troisième orteil.r
+Os sésamoïdes proximaux du deuxième orteil.l
+Os sésamoïdes proximaux du quatrième orteil.l
+Os sésamoïdes proximaux du deuxième orteil.r
+Os sésamoïdes proximaux du quatrième orteil.r
+Os sésamoïdes proximaux du cinquième doigt de la main.l
+Os sésamoïdes proximaux du deuxième doigt de la main.l
+Os sésamoïdes proximaux du quatrième doigt de la main.l
+Os sésamoïdes proximaux du troisième doigt de la main.l
+Os sésamoïdes proximaux du cinquième doigt de la main.r
+Os sésamoïdes proximaux du deuxième doigt de la main.r
+Os sésamoïdes proximaux du troisième doigt de la main.r
+Os sésamoïdes proximaux du quatrième doigt de la main.r
+Os phacoïde.l
+Os phacoïde.r
+Os sésamoïdes proximaux du premier doigt de la main
+Cartilage costal de la cinquième côte.l
+Cartilage costal de la deuxième côte.l
+Cartilage costal de la dixième côte.l
+Cartilage costal de la douzième côte.l
+Cartilage costal de la huitième côte.l
+Cartilage costal de la neuvième côte.l
+Cartilage costal de la onzième côte.l
+Cartilage costal de la première côte.l
+Cartilage costal de la quatrième côte.l
+Cartilage costal de la septième côte.l
+Cartilage costal de la sixième côte.l
+Cartilage costal de la troisième côte.l
+Cartilage costal de la treizième côte.l

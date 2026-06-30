@@ -157,6 +157,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Fat
+    second: {fileID: 2100000, guid: cab0de6b908c65044bba097f8aeea3ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Flexion fingers
     second: {fileID: 2100000, guid: d0e686b4f513e0145bba9fd13aa85230, type: 2}
   - first:

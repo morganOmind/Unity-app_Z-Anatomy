@@ -1,5 +1,4 @@
-2400*1
-Diaphragme.l
+Diaphragme
 Muscle abaisseur de l'angle de la bouche.l
 Muscle abaisseur de l'angle de la bouche.r
 Muscle adducteur du deuxième orteil.l
@@ -46,6 +45,7 @@ Muscles intertransversaires dorsaux du cou.l
 Muscles intertransversaires dorsaux du cou.r
 Muscles intertransversaires du thorax.l
 Muscles intertransversaires du thorax.r
+Structures tendineuses et ligamentaires de l'abdomen
 Tendon commun.l
 Tendon commun.r
 Waw

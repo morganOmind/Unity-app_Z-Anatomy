@@ -1,5 +1,65 @@
-Arc inguinal [Ligament inguinal].l
-Arc inguinal [Ligament inguinal].r
+Arc inguinal [Ligament inguinal]
+Arcade iliopectinée
+Bourse bicipitoradiale.l
+Bourse bicipitoradiale.r
+Bourse du droit fémoral.l
+Bourse du droit fémoral.r
+Bourse du muscle tenseur du voile du palais.l
+Bourse du muscle tenseur du voile du palais.r
+Bourse infrapatellaire distale.l
+Bourse infrapatellaire distale.r
+Bourse infratendineuse olécranienne.l
+Bourse infratendineuse olécranienne.r
+Bourse ischiatique de l'obturateur interne (Car, eq).l
+Bourse ischiatique de l'obturateur interne (Car, eq).r
+Bourse prépatellaire sous-cutanée.l
+Bourse prépatellaire sous-cutanée.r
+Bourse prépatellaire sous-tendineuse.l
+Bourse prépatellaire sous-tendineuse.r
+Bourse sous-cutanée calcanéenne.l
+Bourse sous-cutanée calcanéenne.r
+Bourse sous-cutanée de l'olécrâne.l
+Bourse sous-cutanée de l'olécrâne.r
+Bourse sous-cutanée de la malléole latérale.l
+Bourse sous-cutanée de la malléole latérale.r
+Bourse sous-cutanée de la malléole médiale.l
+Bourse sous-cutanée de la malléole médiale.r
+Bourse sous-cutanée de la tubérosité tibiale.l
+Bourse sous-cutanée de la tubérosité tibiale.r
+Bourse sous-cutanée iliaque [coxale].l
+Bourse sous-cutanée iliaque [coxale].r
+Bourse sous-tendineuse de l'extenseur ulnaire du carpe.l
+Bourse sous-tendineuse de l'extenseur ulnaire du carpe.r
+Bourse sous-tendineuse de l'obturateur interne (Car, eq).l
+Bourse sous-tendineuse de l'obturateur interne (Car, eq).r
+Bourse sous-tendineuse du court fibulaire (Car).l
+Bourse sous-tendineuse du court fibulaire (Car).r
+Bourse sous-tendineuse du fléchisseur profond des doigts.l
+Bourse sous-tendineuse du fléchisseur profond des doigts.r
+Bourse sous-tendineuse du muscle brachial.l
+Bourse sous-tendineuse du muscle brachial.r
+Bourse sous-tendineuse du muscle infra-épineux.l
+Bourse sous-tendineuse du muscle infra-épineux.r
+Bourse sous-tendineuse du muscle subscapulaire.l
+Bourse sous-tendineuse du muscle subscapulaire.r
+Bourse sous-tendineuse du semitendineux.l
+Bourse sous-tendineuse du semitendineux.r
+Bourse sous-tendineuse du tibial crânial.l
+Bourse sous-tendineuse du tibial crânial.r
+Bourse sous-tendineuse du triceps brachial.l
+Bourse sous-tendineuse du triceps brachial.r
+Bourse subdeltoïdienne.l
+Bourse subdeltoïdienne.r
+Bourse subfasciale prépatellaire.l
+Bourse subfasciale prépatellaire.r
+Bourse tendineuse calcanéenne.l
+Bourse tendineuse calcanéenne.r
+Bourse trochantérique du biceps fémoral.l
+Bourse trochantérique du biceps fémoral.r
+Bourse trochantérique du fessier profond.l
+Bourse trochantérique du fessier profond.r
+Bourses sous-tendineuses des interosseux du pied.l
+Bourses sous-tendineuses des interosseux du pied.r
 Muscle anconé.l
 Muscle anconé.r
 Muscle articulaire du genou (Car, bo).l

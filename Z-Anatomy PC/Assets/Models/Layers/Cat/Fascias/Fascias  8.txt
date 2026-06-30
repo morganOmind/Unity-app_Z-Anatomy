@@ -1,4 +1,11 @@
+Fascia axillaire médial.l
+Fascia des doigts.l
+Fascia des doigts.r
+Fascia des orteils.l
+Fascia des orteils.r
 Fascia massétérique.l
 Fascia massétérique.r
 Ligament métacarpien transverse superficiel.l
 Ligament métacarpien transverse superficiel.r
+Septum tibial caudal.l
+Septum tibial caudal.r

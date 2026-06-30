@@ -68,7 +68,7 @@ NAVID;Français
 67;Associé
 68;Auditus
 69;Autonome
-70;Autopodium
+70;Autopode
 71;Azygos
 72;Basal
 73;Basilaire
@@ -250,7 +250,7 @@ NAVID;Français
 249;Os
 250;Ostium
 251;Otique
-252;Oeuf
+252;Oeuf 
 253;Pallidus
 254;Pampiniforme
 255;Mamelon
@@ -297,7 +297,7 @@ NAVID;Français
 296;Région
 297;Rénal
 298;Respiration
-299;Réseau
+299;Réseau 
 300;Rétinaculum
 301;Rétroflexe
 302;Rhomboïde
@@ -334,7 +334,7 @@ NAVID;Français
 334;Stellatus
 335;Strate
 336;Strié
-337;Stylopodium
+337;Stylopode
 338;Style
 339;Sueur
 340;Sillon
@@ -385,7 +385,7 @@ NAVID;Français
 385;Vocal
 386;Vorticosus
 387;Xiphoïde
-388;Zeugopodium
+388;Zeugopode
 389;Zone
 390;Zygomatique
 391;Parties du corps
@@ -599,6 +599,7 @@ NAVID;Français
 588;Région infra-épineuse
 589;Région acromiale
 590;Région costale
+590*1;Arc costal (Régions)
 591;Région cardiaque
 592;Régions de l'abdomen
 593;Région crâniale de l'abdomen
@@ -615,7 +616,7 @@ NAVID;Français
 604;Région préputiale
 605;Région mammaire abdominale
 606;Région mammaire inguinale
-607;Région mammaire
+607;Région du pis
 608;Régions du dos
 609;Région thoracique vertébrale [Région dorsocostale]
 611;Région interscapulaire
@@ -645,6 +646,7 @@ NAVID;Français
 634*1;Région de la main
 635;Région carpienne
 636;Région métacarpienne
+636*1;Région du/des doigt(s) de la main
 637;Région métacarpophalangienne
 638;Région de la phalange proximale (main)
 639;Région du compedis (main)
@@ -665,15 +667,17 @@ NAVID;Français
 653;Région de la jambe
 654;Région du tendon calcanéen commun
 655;Région du tarse
+634*2;Région du pied
 656;Région calcanéenne
 657;Région métatarsienne
+657*1;Région des doigts de pied
 658;Région métatarsophalangienne
 638*1;Région de la phalange proximale (pied)
 639*1;Région du compedis (pied)
 640*1;Région interphalangienne proximale (pied)
 641*1;Région de la phalange moyenne (pied)
 642*1;Région coronale (pied)
-643*1;Espace interdigital
+643*1;Espace interdigital (pied)
 659;Ostéologie
 659*1;Type d'os
 659*2;Structure interne de l'os
@@ -738,7 +742,6 @@ NAVID;Français
 716;Fosse temporale
 717;Arcade zygomatique
 718;Fosse infratemporale
-718*0;Base du crâne
 719;Base externe du crâne
 720;Foramen jugulaire
 721;Foramen mastoïdien
@@ -783,7 +786,6 @@ NAVID;Français
 758;Fissure nasomaxillaire
 759;Fissure nasolacrymale
 760;Orbite
-760*1;Cavité de l'orbite
 761;Ouverture de l'orbite
 762;Bord de l'orbite
 763;Bord supra-orbitaire
@@ -845,7 +847,6 @@ NAVID;Français
 814;Sillon du sinus transverse (Os interpariétal)
 814*1;Sinus frontal caudal (Os interpariétal)
 815;Septum des sinus frontaux
-816*0;Os sphénoïde
 816;Os basisphénoïde
 817;Corps de l'os basisphénoïde
 818;Selle turcique
@@ -1191,8 +1192,6 @@ NAVID;Français
 1153;Crête faciale (Os zygomatique)
 1154;Sinus maxillaire (Os zygomatique)
 1155;Sinus maxillaire caudal (Os zygomatique)
-1156*0;Os accessoires du crâne
-1156*1;Os extracrâniens de la tête
 1156;Mandibule
 1157;Corps de la mandibule
 1158;Partie incisive
@@ -1239,6 +1238,7 @@ NAVID;Français
 1199;Os stylohyoïdien
 1200;Angle stylohyoïdien
 1201;Os tympanohyoïdien
+1201*0;Vertèbres
 1201*1;Vertèbre
 1202;Corps vertébral
 1203;Extrémité crâniale [Tête de la vertèbre]
@@ -1350,7 +1350,6 @@ S5;Vertèbre S5
 1275;Arc hémal
 1276;Os de l'arc hémal
 1277;Squelette thoracique
-1277*1;Os du thorax
 1278;Côtes
 1279;Côtes sternales
 1280;Côtes asternales
@@ -1434,7 +1433,6 @@ S5;Vertèbre S5
 1329;Angle de l'arc costal
 1330;Os du membre thoracique
 1331;Ceinture thoracique
-1331*1;Os de la ceinture scapulaire
 1332;Scapula
 1333;Face costale [médiale]
 1334;Face dentelée
@@ -1462,7 +1460,6 @@ S5;Vertèbre S5
 1356;Processus coracoïde de la scapula
 1357;Cartilage scapulaire
 1358;Clavicule (or, fe)
-1359*0;Os de la partie libre du membre thoracique
 1359;Squelette du bras
 1360;Humérus
 1361;Tête de l'humérus
@@ -1580,10 +1577,7 @@ S5;Vertèbre S5
 1467;Canal métacarpien proximal
 1468;Canal métacarpien distal
 1469;Incisure intercapitale de l'os métacarpien
-1470;Os des doigts
 1470*1;Os des doigts de la main
-1470*2;Phalanges de la main
-1470*3;Phalanges du pied
 1471;Phalange proximale [Os compedale]
 1471*01;Phalanges proximales de la main
 1471*02;Phalanges proximales du pied
@@ -1607,12 +1601,10 @@ S5;Vertèbre S5
 1479;Phalange moyenne [Os coronal]
 1479*01;Phalanges moyennes de la main
 1479*02;Phalanges moyennes du pied
-1479*1;Phalange moyenne du premier doigt de la main
 1479*2;Phalange moyenne du deuxième doigt de la main
 1479*3;Phalange moyenne du troisième doigt de la main
 1479*4;Phalange moyenne du quatrième doigt de la main
 1479*5;Phalange moyenne du cinquième doigt de la main
-1479*6;Phalange moyenne du premier orteil
 1479*7;Phalange moyenne du deuxième orteil
 1479*8;Phalange moyenne du troisième orteil
 1479*9;Phalange moyenne du quatrième orteil
@@ -1623,9 +1615,8 @@ S5;Vertèbre S5
 1483;Tubérosité du fléchisseur
 1484;Corps de la phalange moyenne
 1485;Tête de la phalange moyenne
-1486;Phalange distale [Os ongulaire]
-1486*01;Phalanges distales de la main
-1486*02;Phalanges distales du pied
+1486*01;Phalanges distales de la main [Os ongulaires]
+1486*02;Phalanges distales du pied [Os ongulaires]
 1486*1;Phalange distale du premier doigt de la main
 1486*2;Phalange distale du deuxième doigt de la main
 1486*3;Phalange distale du troisième doigt de la main
@@ -1720,7 +1711,6 @@ S5;Vertèbre S5
 1539;Os sésamoïdes dorsaux
 1540;Os du membre pelvien
 1541;Ceinture pelvienne
-1541*1;Os de la ceinture pelvienne
 1542;Os coxal
 1543;Acetabulum
 1544;Bord acétabulaire
@@ -1734,8 +1724,7 @@ S5;Vertèbre S5
 1552;Ilium
 1553;Corps de l'ilium
 1554;Aire latérale du muscle droit fémoral
-1555;Aire médiale du muscle droit fémoral
-1556;[Épine iliaque ventrale caudale]
+1555;Aire médiale du droit fémoral [Épine iliaque vent. caud.]
 1557;Aile de l'ilium
 1558;Épine alaire
 1559;Crête iliaque
@@ -1790,7 +1779,6 @@ S5;Vertèbre S5
 1607;Diamètre transverse
 1608;Diamètre vertical
 1609;Inclinaison pelvienne
-1610*0;Os de la partie libre du membre pelvien
 1610;Squelette de la cuisse
 1611;Fémur
 1612;Tête du fémur
@@ -1837,7 +1825,6 @@ S5;Vertèbre S5
 1653;Processus cartilagineux
 1654;Squelette de la jambe
 1655;Tibia
-1656*0;Plateau tibial
 1656;Surface articulaire proximale du tibia
 1657;Condyle médial du tibia
 1658;Condyle latéral du tibia
@@ -1944,7 +1931,6 @@ S5;Vertèbre S5
 1756;Processus plantaire latéral
 1757;Foramen du processus plantaire
 1758;Incisure du processus plantaire
-1758*0;Cartilages
 1758*1;Insertions musculaires
 1759;Arthrologie
 1760;Articulations
@@ -1959,7 +1945,7 @@ S5;Vertèbre S5
 1768;Gomphose
 1769;Parodonte
 1770;Articulations cartilagineuses
-1771;Synchondrose
+1771;Synchondrose (Arthrologie)
 1772;Symphyse
 1773;Articulations synoviales
 1774;Articulation simple
@@ -2080,7 +2066,7 @@ S5;Vertèbre S5
 1887;Membrane atlanto-occipitale ventrale
 1888;Membrane atlanto-occipitale dorsale
 1889;Ligament atlanto-occipitale latéral
-1890;Articulation atlanto-axoïdienne
+1890;Articulation atlanto-axiale
 1891;Capsule articulaire de l'articulation atlanto-axiale
 1892;Membrane atlanto-axiale dorsale
 1893;Ligament atlanto-axial dorsal
@@ -2090,6 +2076,7 @@ S5;Vertèbre S5
 1897;Ligament de l'apex de la dent (or, Car, su, Ru)
 1898;Ligaments alaires (or, Car, su)
 1899;Ligament atlanto-axial ventral
+1899*1;Articulations du thorax
 1900;Articulations costovertébrales
 1901;Articulation de la tête de la côte
 1902;Capsule articulaire de l'articulation de la tête costale
@@ -2259,6 +2246,7 @@ S5;Vertèbre S5
 2064;Fibrocartilages parapatellaires
 2065;Ligament patellaire
 2066;Ligament patellaire intermédiaire
+2066*0;Rétinaculum patellaire médial
 2066*1;Ligament fémoropatellaire médial
 2067;Ligament patellaire médial
 2068;Rétinaculum patellaire latéral
@@ -2421,6 +2409,7 @@ S5;Vertèbre S5
 2214;Muscle long de la tête
 2215;Muscle frontal
 2216;Muscle occipital
+2216*1;Aponévrose épicrânienne
 2217;Muscle latéral du nez
 2218;Muscle dilatateur apical du nez
 2207*2;Muscles de l'œil et des paupières
@@ -2501,7 +2490,6 @@ S5;Vertèbre S5
 2289;Partie mastoïde (Car, bo, cap)
 2290;Partie occipitale (Car)
 2291;Muscle long du cou
-2292*0;Muscles scalènes
 2292;Muscle scalène ventral (Un)
 2293;Muscle scalène moyen
 2294;Muscle scalène dorsal (Car, su, Ru)
@@ -2518,7 +2506,6 @@ S5;Vertèbre S5
 2304;Muscle occipitohyoïdien
 2305;Muscle cératohyoïdien
 2306;Muscle hyoïdien transverse
-2276*3;Fascias du cou
 2307;Fascia cervical
 2308;Lame superficielle du fascia cervical
 2309;Lame prétrachéale
@@ -2541,7 +2528,7 @@ S5;Vertèbre S5
 2324;Muscle iliocostal des lombes
 2325;Muscle iliocostal du thorax
 2326;Muscle iliocostal du cou
-2326*0;Muscles intertransversaire et iliocostal du cou
+2326*0;Muscles intertransversaires et iliocostal du cou
 2327*0;Muscles complexus et longissimus
 2327;Muscle longissimus
 2328;Muscle longissimus des lombes
@@ -2573,6 +2560,7 @@ S5;Vertèbre S5
 2354;Muscles intertransversaires ventraux du cou
 2312*2;Fascias du dos
 2355;Fascia thoracolombaire
+2355*1;Graisse intermusculaire du dos
 2356;Ligament dorsoscapulaire
 2357;Fascia nuchal
 2358;Muscles du thorax
@@ -2605,7 +2593,7 @@ S5;Vertèbre S5
 2382;Ligament central
 2383;Cupule diaphragmatique
 2384;Foramen de la veine cave
-2385;Arc lombosacré
+2385;Arc lombocostal
 2386;Muscles de l'abdomen
 2387;Muscle droit de l'abdomen
 2388;Intersections tendineuses
@@ -2616,6 +2604,7 @@ S5;Vertèbre S5
 2393;Ligne arquée
 2394;Muscle oblique externe de l'abdomen
 2395;Arc inguinal [Ligament inguinal]
+2395*1;Arcade iliopectinée
 2396;Muscle oblique interne de l'abdomen
 2397;Muscle crémaster
 2398;Muscle transverse de l'abdomen
@@ -2629,13 +2618,14 @@ S5;Vertèbre S5
 2405;Ligament suspenseur du pénis
 2406;Ligament suspenseur du clitoris
 2407;Fascia transverse
+2407*1;Graisse extrapéritonéale
 2408;Canal inguinal
 2409;Anneau inguinal profond
 2410;Anneau inguinal superficiel
-2411;Pilier interne de l'anneau inguinal superficiel
+2411;Pilier médial de l'anneau inguinal superficiel
 2412;Pilier latéral de l'anneau inguinal superficiel
 2413;Fibres intercrurales
-2414;Couche fémorale
+2414;Lame fémorale
 2415;Muscles de la queue
 2416;Muscle coccygien
 2417;Muscle sacrococcygien ventral médial
@@ -2648,14 +2638,14 @@ S5;Vertèbre S5
 2424;Muscles du membre thoracique
 2424*1;Muscles de l'épaule
 2425;Muscle deltoïde
-2426;Partie scapulaire épineuse du deltoïde
-2427;Partie acromiale du deltoïde
-2428;Partie claviculaire du deltoïde
+2426;Partie scapulaire épineuse
+2427;Partie acromiale
+2428;Partie claviculaire
 2429;Muscle supra-épineux
 2430;Muscle infra-épineux
 2431;Muscle petit rond
 2432;Muscle grand rond
-2432*0;Muscle grand rond et grand dorsal
+2432*0;Muscles grand rond et grand dorsal
 2433;Muscle subscapulaire
 2434;Muscle articulaire de l'épaule (fe, su, eq)
 2435;Muscle coracobrachial
@@ -2699,11 +2689,9 @@ S5;Vertèbre S5
 2470;Chef accessoire (ov, cap, eq)
 2471;Muscle extenseur ulnaire du carpe
 2472;Muscle supinateur
-2473;Muscle long abducteur du doigt I
-2473*1;Muscle long fléchisseur du doigt I
-2474;[Muscle extenseur oblique du carpe]
+2474;Muscle long abducteur du pouce [Extenseur oblique du carpe]
 2475*0;Muscle extenseur des doigts I et II
-2475;Muscle extenseur du doigt I
+2475;Muscle extenseur du pouce
 2476;Muscle extenseur du doigt II
 2477;Muscle court fléchisseur des doigts
 2478;Muscle court abducteur du pouce
@@ -2724,9 +2712,13 @@ S5;Vertèbre S5
 2489;Fascia axillaire latéral
 2490;Fascia axillaire médial
 2491;Fascia brachial
+2491*1;Septum intermusculaire médial du fascia brachial
+2491*2;Septum intermusculaire latéral du fascia brachial
 2492;Couche superficielle du fascia brachial
 2493;Couche profonde du fascia brachial
 2494;Fascia antébrachial
+2494*1;Septum intermusculaire médial du fascia antébrachial
+2494*2;Septum intermusculaire latéral du fascia antébrachial
 2495;Couche superficielle du fascia antebrachial
 2496;Couche profonde du fascia antebrachial
 2497;Fascia dorsal de la main
@@ -2735,14 +2727,13 @@ S5;Vertèbre S5
 2500;Rétinaculum des fléchisseurs
 2501;Canal carpien
 2502;Fascia des doigts
-2503;Ligament métacarpien transverse sup. [Lgt. annulaire palm.]
+2503;Ligament métacarpien transverse superficiel
 2505;Gaines fibreuses des doigts de la main
 2506;Partie annulaire de la gaine fibreuse
-2507;[Ligament annulaire du doigt]
 2508;Partie cruciforme de la gaine fibreuse
-2509;Scutum proximal
-2510;Scutum moyen
-2511;Scutum distal
+2509;Scutum proximal de la main
+2510;Scutum moyen de la main
+2511;Scutum distal de la main
 2512;Gaines synoviales des tendons des doigts de la main
 2513;Gaines des tendons
 2514;Muscles du membre pelvien
@@ -2831,6 +2822,8 @@ S5;Vertèbre S5
 2588*01;Fascias de la hanche et de la cuisse
 2588;Fascia glutéal
 2589;Fascia lata
+2589*1;Septum intermusculaire médial de la cuisse
+2589*2;Septum intermusculaire latéral de la cuisse
 2590;Lame superficielle du fascia lata
 2591;Lame profonde du fascia lata
 2592;Fascia iliaque
@@ -2842,9 +2835,12 @@ S5;Vertèbre S5
 2597;Triangle fémoral
 2598;Canal fémoral
 2588*03;Fascias de la jambe et du pied
-2599;Fascia crural
-2600;Couche superficielle du fascia de la jambe
-2601;Couche profonde du fascia de la jambe
+2599;Fascia jambier
+2599*1;Septum tibial caudal
+2599*2;Septum fibulaire crânial
+2599*3;Septum fibulaire caudal
+2600;Couche superficielle du fascia crural
+2601;Couche profonde du fascia crural
 2602;Lamina propria
 2603;Rétinaculum des extenseurs de la jambe
 2604;Rétinaculum des extenseurs du tarse
@@ -2854,22 +2850,19 @@ S5;Vertèbre S5
 2608;Fascia plantaire
 2609;Fascia des orteils
 2610;Ligament métatarsien superficiel transverse
-2611;[Ligament annulaire plantaire]
-2588*2;Gaines fibreuses et synoviales des tendons du pied
 2612;Gaines fibreuses des orteils
 2613;Partie annulaire de la gaine fibreuse du pied
+2613*1;Partie cruciforme de la gaine fibreuse du pied
 2614;Scutum proximal du pied
 2615;Scutum moyen du pied
 2616;Scutum distal du pied
 2617;Gaines des tendons du pied
 2618;Bourses et gaines synoviales
-2618*1;Classification générale des bourses synoviales
 2619;Bourse synoviale sous-cutanée
 2620;Bourse synoviale sous-musculaire
 2621;Bourse synoviale subfasciale
 2622;Bourse synoviale sous-tendineuse
 2623;Bourse synoviale subligamentaire
-2624;Gaine synoviale du tendon des orteils
 2625;Bourses et gaines synoviales de la tête, du cou et du tronc
 2625*1;Bourses et gaines synoviales de la tête
 2625*2;Bourses et gaines synoviales du cou
@@ -2881,6 +2874,7 @@ S5;Vertèbre S5
 2630;Bourse sous-ligamentaire nuchale crâniale
 2631;Bourse sous-ligamentaire nuchale caudale
 2632;Bourses et gaines synoviales du membre thoracique
+2632*1;Gaines synoviales des tendons des doigts de la main
 2633;Bourse sous-cutanée préscapulaire (eq)
 2634;Bourse subdeltoïdienne
 2635;Bourse sous-tendineuse du muscle coracobrachial
@@ -2892,26 +2886,26 @@ S5;Vertèbre S5
 2641;Bourse sous-tendineuse du muscle petit rond
 2642;Gaine synoviale intertuberculaire
 2643;Bourse intertuberculaire
-2644;Bourse subtendineuse de l'olécrâne
+2644;Bourse sous-cutanée de l'olécrâne
 2645;Bourse infratendineuse olécranienne
-2646;Bourse subtendineuse du muscle triceps brachial
+2646;Bourse sous-tendineuse du triceps brachial
 2647;Bourse bicipitoradiale
 2648;Bourse sous-tendineuse du muscle brachial
 2649;Bourse sous-cutanée précarpale
 2650;Gaine tendineuse du muscle long abducteur du doigt I
-2651;Bourse subtendineuse du m. long abducteur du doigt I (bo, eq)
-2652;Gaine du tendon extenseur radial du carpe
-2653;Gaine tendineuse du muscle extenseur commun des doigts
-2654;Gaine tendineuse du m. extenseur lat. des doigts de la main
-2655;Gaine tendineuse du muscle extenseur ulnaire du carpe
-2656;Bourse sous-tendineuse du muscle extenseur ulnaire du carpe
-2657;Bourse sous-tendineuse du muscle extenseur radial du carpe
+2651;Bourse sous-tendineuse du long abducteur du doigt I (bo, eq)
+2652;Gaine du tendon de l'extenseur radial du carpe
+2653;Gaine tendineuse de l'extenseur commun des doigts
+2654;Gaine tendineuse de l'extenseur latéral des doigts de la main
+2655;Gaine tendineuse de l'extenseur ulnaire du carpe
+2656;Bourse sous-tendineuse de l'extenseur ulnaire du carpe
+2657;Bourse sous-tendineuse de l'extenseur radial du carpe
 2658;Gaine tendineuse du fléchisseur radial du carpe
-2659;Gaine synoviale des muscles fléchisseurs communs
-2660;Bourse subtendineuse du muscle fléchisseur profond des doigts
-2661;Bourses musculaires de m. fléchisseur superficiel des doigts
-2662;Gaine tendineuse du muscle fléchisseur ulnaire du carpe (Car)
-2663;Bourse subtendineuse du m. ext. commun des doigts (Ru, éq)
+2659;Gaine synoviale des fléchisseurs communs
+2660;Bourse sous-tendineuse du fléchisseur profond des doigts
+2661;Bourses musculaires du fléchisseur superficiel des doigts
+2662;Gaine tendineuse du fléchisseur ulnaire du carpe (Car)
+2663;Bourse sous-tendineuse de l'extenseur commun des doigts (Ru, éq)
 2664;Bourse subtend. du m. ext. lat. des doigts (Ru, éq)
 2665;Gaine tendineuse distale du m. ext. commun des doigts (Ru)
 2666;Bourses sous-tendineuses des muscles interosseux de la main
@@ -2920,58 +2914,57 @@ S5;Vertèbre S5
 2669;Bourse trochantérique sous-cutanée
 2670;Bourse sous-cutanée iliaque [coxale]
 2671;Bourse sous-cutanée ischiatique
-2672;Bourse trochantérique du muscle fessier superficiel
-2673;Bourses trochantériques du muscle fessier moyen
-2674;Bourse trochantérique du muscle fessier accessoire (eq)
-2675;Bourse trochantérique du muscle fessier profond
-2676;Bourse ischiatique du muscle obturateur interne (Car, eq)
-2677;Bourse ischiatique du muscle obturateur externe (su, Ru)
-2678;Bourse sous-tendineuse du muscle obturateur interne (Car, eq)
-2679;Bourse sous-tendineuse du muscle obturateur externe (su, Ru)
-2680;Bourse trochantérique du muscle biceps fémoral
-2681;Bourse ischiatique du muscle semitendineux
-2682;Bourse du muscle droit fémoral
-2683;Bourse subtendineuse du muscle iliaque
+2672;Bourse trochantérique du fessier superficiel
+2673;Bourses trochantériques du fessier moyen
+2674;Bourse trochantérique du fessier accessoire (eq)
+2675;Bourse trochantérique du fessier profond
+2676;Bourse ischiatique de l'obturateur interne (Car, eq)
+2677;Bourse ischiatique de l'obturateur externe (su, Ru)
+2678;Bourse sous-tendineuse de l'obturateur interne (Car, eq)
+2679;Bourse sous-tendineuse de l'obturateur externe (su, Ru)
+2680;Bourse trochantérique du biceps fémoral
+2681;Bourse ischiatique du semitendineux
+2682;Bourse du droit fémoral
+2683;Bourse sous-tendineuse du muscle iliaque
 2684;Bourse prépatellaire sous-cutanée
-2685;(Bourse subfasciale prépatellaire)
+2685;Bourse subfasciale prépatellaire
 2686;Bourse prépatellaire sous-tendineuse
 2687;Bourse infrapatellaire proximale (eq)
 2688;Bourse infrapatellaire distale
 2689;Bourse sous-cutanée de la tubérosité tibiale
-2690;Bourse sous-tendineuse du muscle semitendineux
+2690;Bourse sous-tendineuse du semitendineux
 2691;Bourse sous-tendineuse du biceps fémoral distal
 2692;Récessus subpoplité
 2693;Récessus sous-extenseur
 2694;Bourse sous-cutanée de la malléole latérale
-2695;Bourse sous-cutanée malléolaire
-2695*1;Gaines tendineuses du membre pelvien
+2695;Bourse sous-cutanée de la malléole médiale
 2696;Gaine tendineuse du muscle tibial crânial
 2697;Gaine du tendon du troisième fibulaire (su, Ru)
-2698;Gaines tendineuses du muscles long extenseur des doigts
-2699;Gaine tendineuse du muscle extenseur lat. des orteils
-2700;Gaine tendineuse du muscle tibial caudal (ca)
-2701;Gaine tendineuse du muscle fléchisseur médial des doigts
-2702;Gaine tendineuse du muscle fléchisseur lat. des doigts
-2703;Gaine tendineuse du muscle long fibulaire
-2704*1;Bourse subtendineuse du muscle long fibulaire (su, Ru)
-2704;Bourse subtendineuse du muscle court fibulaire (Car)
-2705;Bourse subtendineuse du muscle tibial crânial
+2698;Gaines tendineuses du long extenseur des doigts
+2699;Gaine tendineuse de l'extenseur latéral des orteils
+2700;Gaine tendineuse du tibial caudal (ca)
+2701;Gaine tendineuse du fléchisseur médial des orteils
+2702;Gaine tendineuse du fléchisseur lat. des orteils
+2703;Gaine tendineuse du long fibulaire
+2704*1;Bourse sous-tendineuse du long fibulaire (su, Ru)
+2704;Bourse sous-tendineuse du court fibulaire (Car)
+2705;Bourse sous-tendineuse du tibial crânial
 2706;Bourse sous-cutanée calcanéenne
 2707;Bourse calcanéenne subtend. du m. fléchisseur sup. des doigts
 2708;Bourse tendineuse calcanéenne
-2709;Gaine tendineuse du muscle long fibulaire plantaire
+2709;Gaine tendineuse plantaire du long fibulaire
 2710;Bourse subtendeneuse du muscle long fibulaire (Su, Ru)
-2711;Bourse subtendineuse du m. long extenseur des doigts (Ru, éq)
+2711;Bourse sous-tendineuse du long extenseur des doigts (Ru, éq)
 2712;Bourse subtend. du m. ext. lat. des orteils (Ru, eq)
 2713;Gaine dist. des tendons du m. long extenseur des doigts (Ru)
 2714;Gaines synoviales tendineuses des orteils
-2715;Bourses subtendineuses des muscles interosseux du pied
+2715;Bourses sous-tendineuses des interosseux du pied
 2716;Bourses podotrochléaires du pied
 2717;Splanchnologie
 2717*1;Muqueuses
 2718;Muqueuse de l'œsophage
 2719;Muqueuse de l'estomac
-2720;Muqueuse de l'intestin grêle
+2720;Muqueuse de l' intestin grêle
 2721;Muqueuse du gros intestin
 2722;Muqueuse de la vésicule biliaire
 2723;Muqueuse du bassinet
@@ -2982,12 +2975,12 @@ S5;Vertèbre S5
 2728;Muqueuse du vagin
 2729;Muqueuse du conduit déférent
 2730;Muqueuse de la glande séminale
-2731;Couche muqueuse propre
+2731;Muqueuse propre
 2732;Lame musculaire de la muqueuse
 2733;Sous-muqueuse du pharynx
 2734;Sous-muqueuse de l'œsophage
 2735;Sous-muqueuse de l'estomac
-2736;Sous-muqueuse de l'intestin grêle
+2736;Sous-muqueuse de l'intestin grêle (Muqueuses)
 2737;Sous-muqueuse de la trachée
 2738;Sous-muqueuse de la bronche
 2739;Sous-muqueuse de la vessie
@@ -2996,7 +2989,7 @@ S5;Vertèbre S5
 2742;Tunique albuginée
 2743;Tunique adventice
 2744;Couche sous-séreuse
-2745;Tunique séreuse
+2745;Séreuse
 2746;Parenchyme
 2747;Stroma
 2748;Glande
@@ -3009,8 +3002,11 @@ S5;Vertèbre S5
 2754*1;Cavité buccale et structures associées
 2755;Vestibule oral
 2756;Lèvres
+2756*1;Lèvre supérieure (Appareil digestif)
+2756*2;Lèvre inférieure (Appareil digestif)
 2757;Philtrum
 2758;Angle de la bouche
+2758*1;Joue (Appareil digestif)
 2759;Corps adipeux de la joue
 2760;Organe juxta-oral
 2761;Cavité buccale propre
@@ -3051,20 +3047,21 @@ S5;Vertèbre S5
 2796;Ganglions molaires
 2797;Ganglions palatins
 2798;Ganglions linguaux
-2799;Ganglions dégustatifs
+2799;Ganglions gustatifs
 2800;Ganglion lingual apical
 2801;Ganglion paracaronculaire (cap, eq)
 2802;Glandes salivaires majeures
-2803;Ganglion sublingual monostomatique
-2804;Grand canal sublingual
-2805;Ganglion sublingual polystomatique
-2806;Petit canal sublingual
+2803;Glande sublinguale monostomatique
+2804;Conduit sublingual majeur
+2805;Glande sublinguale polystomatique
+2806;Conduits sublinguaux mineurs
+2807*0;Glande mandibulaire
 2807;Conduit mandibulaire
 2808;Glande parotide
 2809;Partie superficielle de la glande parotide
 2810;Partie profonde de la glande parotide
-2811;Ganglion parotidien accessoire
-2812;Canal parotidien
+2811;Glandes parotides accessoires
+2812;Conduit parotidien
 2813;Dents
 2813*3;Dents (Os incisif)
 2813*4;Dents (Os maxillaire)
@@ -3074,10 +3071,10 @@ S5;Vertèbre S5
 2813*6;Dents supérieures
 2813*7;Dents inférieures
 2814;Corps de la dent
-2815;Couronne clinique de la dent
+2815;Couronne de la dent
 2816;Cuspide de la dent
 2817;Sommet de la cuspide
-2818;Tubercule de la couronne de la dent
+2818;Tubercule [de la couronne] de la dent
 2819;Infundibulum dentaire
 2820;Pli d'émail
 2821;Crête de l'émail
@@ -3087,11 +3084,12 @@ S5;Vertèbre S5
 2825;Apex de la racine de la dent
 2826;Racine clinique
 2827;Face occlusale
-2828;Surface vestibulaire [faciale]
-2829;Surface linguale des dents
-2830;Surface de contact de la dent
+2828;Face vestibulaire [faciale]
+2829;Face linguale des dents
+2830;Face de contact de la dent
 2831;Face mésiale
 2832;Face distale
+2862*1;Cingulum (dent)
 2833;Crête marginale
 2834;Bord incisif
 2835;Cavité de la dent
@@ -3161,14 +3159,14 @@ S5;Vertèbre S5
 2877;Follicules linguaux
 2878;Papilles tonsillaires (su)
 2879;Septum lingual
-2880;Lysse
+2880;Lyssa
 2881;Cartilage du dos de la langue (eq)
 2882;Aponévrose linguale
 2883;Muscles de la langue
 2884;Muscle génioglosse
 2885;Muscle hyoglosse
 2886;Muscle styloglosse
-2887;Muscle de la langue
+2887;Muscle propre de la langue
 2888;Fibres longitudinales superficielles
 2889;Fibres longitudinales profondes
 2890;Fibres transverses
@@ -3194,7 +3192,8 @@ S5;Vertèbre S5
 2910;Oropharynx
 2911;Gosier
 2912;Tonsille palatine
-2913;Fosses amygdaliennes
+2912*0;Follicule tonsillaire
+2913;Fossules tonsillaires
 2914;Cryptes tonsillaires
 2915;Lymphonoeuds [Noeuds lymphatiques]
 2916;Sinus tonsillaire
@@ -3236,16 +3235,16 @@ S5;Vertèbre S5
 2951;Muscle palatin
 2952;Muscle palatopharyngien
 2953;Tube digestif
-2954;œsophage
+2954;Oesophage
 2955;Partie cervicale de l'œsophage
 2956;Partie thoracique de l'œsophage
 2957;Partie abdominale de l'œsophage
 2958;Adventice de l'œsophage
 2959;Musculeuse de l'œsophage
 2960;Tendon crico-œsophagien
-2961;Muscle longitudinal dorsal de l'œsophage
-2962;Muscle longitudinal latéral de l'œsophage
-2963;Muscle longitudinal ventral de l'œsophage
+2961;Muscle oespohagien longitudinal dorsal (Ru, eq)
+2962;Muscle oesophagien longitudinal latéral (Car, Ru)
+2963;Muscle oesophagien longitudinal ventral
 2964;Muscle broncho-œsophagien
 2965;Muscle pleuro-œsophagien (ca)
 2966;Sous-muqueuse du muscle pleuro-œsophagien (ca)
@@ -3259,10 +3258,10 @@ S5;Vertèbre S5
 2974;Petite courbure de l'estomac
 2975;Incisure angulaire
 2976;Partie cardiale
-2977;Ouverture cardiaque
+2977;Orifice du cardia
 2978;Incisure cardiale
 2979;Fond de l'estomac
-2980;Sac aveugle de l'estomac (eq)
+2980;Cul-de-sac de l'estomac (eq)
 2981;Diverticule de l'estomac (su)
 2982;Corps de l'estomac
 2983;Sillon de l'estomac
@@ -3285,7 +3284,7 @@ S5;Vertèbre S5
 3000;Sac dorsal
 3001;Sac caudodorsal
 3002;Sac ventral
-3003;Récessus métatarsophalangien plantaire
+3003;Récessus du rumen
 3004;Sac caudoventral
 3005;Sillon crânial
 3006;Sillon caudal
@@ -3384,8 +3383,8 @@ S5;Vertèbre S5
 3099;Musculeuse de l'intestin grêle
 3100;Strate longitudinale de l'intestin grêle
 3101;Strate circulaire de l'intestin grêle
-3102;Couche sous-muqueuse de l'intestin grêle
-3103;Couche muqueuse de l'intestin grêle
+3102;Sous-muqueuse de l'intestin grêle
+3103;Muqueuse de l'intestin grêle
 3104;Couche musculaire de la muqueuse de l'intestin grêle
 3105;Plis circulaires
 3106;Villosités intestinales
@@ -3489,7 +3488,7 @@ S5;Vertèbre S5
 3204;Anus
 3205;Foie
 3206;Face diaphragmatique du foie
-3207;Zone nue
+3207;Area nuda
 3208;Sillon de la veine cave
 3209;Face viscérale du foie
 3210;Fosse de la vésicule biliaire
@@ -3498,19 +3497,19 @@ S5;Vertèbre S5
 3213;Tubérosité omentale (Car)
 3214;Empreinte œsophagienne
 3215;Empreinte gastrique
-3216;Impression réticulaire
-3217;Impression omasique
-3218;Impression duodénale
-3219;Impression colique
+3216;Empreinte réticulaire
+3217;Empreinte omasique
+3218;Empreinte duodénale
+3219;Empreinte colique
 3220;Empreinte caecale (eq)
-3221;Impression rénale
+3221;Empreinte rénale
 3222;Empreinte surrénalienne
 3223;Bord dorsal du foie
 3224;Bord droit du foie
 3225;Bord gauche du foie
 3226;Bord ventral du foie
 3227;Incisures interlobaires
-3228;Incisure ligamentaire
+3228;Incisure du ligament rond
 3229;Lobe hépatique droit
 3230;Lobe hépatique droit latéral
 3231;Lobe hépatique droit médial
@@ -3774,7 +3773,6 @@ S5;Vertèbre S5
 3488;Bronches lobaires
 3489;Bronche trachéale (su, Ru)
 3490;Bronches segmentaires
-3490*1;Bronchioles
 3491;Cartilages bronchiques
 3492;Sous-muqueuse bronchale
 3493;Ganglions bronchiques
@@ -3790,8 +3788,8 @@ S5;Vertèbre S5
 3501;Face médiale du poumon
 3502;Partie vertébrale
 3503;Partie médiastinale
-3504;Impression cardiaque
-3505;Impression aortique
+3504;Empreinte cardiaque
+3505;Empreinte aortique
 3506;Empreinte œsophagienne du poumon
 3507;Sillon de la veine cave caudale
 3508;Face diaphragmique du poumon
@@ -3828,7 +3826,7 @@ S5;Vertèbre S5
 3538;Segments latéraux du lobe caudal
 3539;Segment accessoire
 3540;Lobes pulmonaires
-3541;Bronchules
+3541;Bronchioles
 3542;Bronchioles respiratoires
 3543;Conduits alvéolaires
 3544;Sacs alvéolaires
@@ -3836,7 +3834,7 @@ S5;Vertèbre S5
 3546;Cavité thoracique (Appareil respiratoire)
 3547;Cavité pleurale
 3548;Plèvre
-3549;Plèvre cervicale
+3549;Coupole pleurale
 3550;Plèvre pulmonaire
 3551;Plèvre pariétale
 3552;Plèvre médiastinale
@@ -3855,7 +3853,7 @@ S5;Vertèbre S5
 3565;Médiastin moyen
 3566;Médiastin dorsal
 3567;Médiastin caudal
-3568;Ouvertures médiastinales (Car, eq)
+3568;Fenêtres médiastinales (Car, eq)
 3569;Cavité séreuse médiastinale
 3570;[Bourse infracardiaque]
 3571;Pli de la veine cave
@@ -3891,7 +3889,7 @@ S5;Vertèbre S5
 3601;Orifices des conduits papillaires
 3602;Colonnes rénales
 3603;Tubules rénaux
-3604;Bassinet - pelvis rénal
+3604;Bassinet/ pelvis rénal
 3605;Récessus pelvien (or, Car, ov, cap)
 3606;Grands calices rénaux (su,bo)
 3607;Petits calices rénaux (su,bo)
@@ -3985,11 +3983,11 @@ S5;Vertèbre S5
 3695;Anneau vaginal
 3696;Canal vaginal
 3697;Cavité vaginale
-3698;Mésorchie
-3699;Mésorchie proximal
+3698;Mésorchium
+3699;Mésorchium proximal
 3700;Mésofuniculus
 3701;Mésorchium distal
-3702;Mésépidyme
+3702;Mésépididyme
 3703;Ligament propre du testicule
 3704;Ligament de la queue de l'épididyme
 3705;Ligament du scrotum
@@ -4061,7 +4059,7 @@ S5;Vertèbre S5
 3771;Trabécules du corps spongieux
 3772;Cavernes des corps caverneux
 3773;Cavernes du corps spongieux
-3774;Artère hélicines
+3774;Artères hélicines
 3775;Veines caverneuses
 3776;Fascia superficiel du pénis
 3777;Fascia profond du pénis
@@ -4175,7 +4173,7 @@ S5;Vertèbre S5
 3885;Rides du vagin
 3886;Lymphonoeuds vaginaux
 3887;Vestibule du vagin
-3888;Bulbe du vestibule
+3888;Bulbe vestibulaire
 3889;Partie intermédiaire du bulbe
 3890;Petits ganglions vestibulaires
 3891;Grands ganglions vestibulaires
@@ -4213,7 +4211,7 @@ S5;Vertèbre S5
 3923;Muscle élévateur de l'anus
 3924;Muscle iliocaudal (Car)
 3925;Muscle pubocaudal (Car)
-3926;(Arc tendineux du muscle élévateur de l'anus)
+3926;(Arcade tendineuse du muscle élévateur de l'anus)
 3927;Fascia pelvien diaphragmatique interne
 3928;Fascia pelvien diaphragmatique externe
 3929;Muscle sphincter anal externe
@@ -4254,23 +4252,23 @@ S5;Vertèbre S5
 3964;Canal pudendal
 3965;Péritoine
 3966;Péritoine pariétal
-3967;Tunique séreuse du péritoine pariétal
+3967;Séreuse du péritoine pariétal
 3968;Sous-séreuse du péritoine pariétal
 3969;Péritoine viscéral
-3970;Tunique séreuse du péritoine viscéral
+3970;Séreuse du péritoine viscéral
 3971;Sous-séreuse du péritoine viscéral
 3972;Cavité péritonéale
-3973;Ouverture omentale [épiploïque]
+3973;Foramen omental [épiploïque]
 3974;Bourse omentale
 3975;Vestibule de la bourse omentale
 3976;Récessus omental dorsal
-3977;Accès à la cavité caudale
+3977;Ouverture du récessus caudale
 3978;Récessus omental caudal
 3979;Récessus splénique
 3980;Pli gastropancréatique
 3981;Pli hépatopancréatique
 3982;Récessus supra-omental (Ru)
-3983;Omentum [Épiploon]
+3983;Grand omentum [Épiploon]
 3984;Paroi superficielle
 3985;Paroi profonde
 3986;Ligament gastrophrénique
@@ -4282,7 +4280,7 @@ S5;Vertèbre S5
 3992;Mésentère
 3993;Racine du mésentère
 3994;Mésojéjunum
-3995;Méso-ilium
+3995;Mésiléon
 3996;Mésocôlon
 3997;Mésocôlon ascendant
 3998;Mésocôlon transverse
@@ -4299,13 +4297,13 @@ S5;Vertèbre S5
 4009;Ligament hépatorénal
 4010;Pli duodénocolique
 4011;Récessus duodénal caudal
-4012;Pli iléocecal
-4013;Pli cecocolique (eq)
+4012;Pli iléocaecal
+4013;Pli caecocolique (eq)
 4014;Ligament médian de la vessie
 4015;Ligament latéral de la vessie
 4016;Triangle inguinal
 4017;Fosse inguinale latérale
-4018;Mésoductus déférent
+4018;Méso du conduit déférent
 4019;Pli génital
 4020;Ligament large de l'utérus
 4021;Mésometrium
@@ -4315,10 +4313,10 @@ S5;Vertèbre S5
 4025;Mésovarium distal
 4026;Bourse ovarique
 4027;Ligament suspenseur de l'ovaire
-4028;Excavation rectogénitale
+4028;Cul-de-sac rectogénital
 4029;Fosse pararectale
-4030;Excavation vésicogénitale
-4031;Excavation pubovésicale
+4030;Cul-de-sac vésicogénital
+4031;Cul-de-sac pubovésical
 4032;Espace rétropéritonéal
 4033;Système endocrinien
 4034;Glandes endocrines
@@ -4328,6 +4326,8 @@ S5;Vertèbre S5
 4038;Isthme fibreux (ov, cap, eq)
 4039;Lobe pyramidal
 4040;Capsule fibreuse
+4040*1;Stroma (Glande thyroïde)
+4040*2;Parenchyme (Glande thyroïde)
 4041;Lobules
 4042;Follicules
 4043;Gland thyroïde accessoire
@@ -4335,17 +4335,18 @@ S5;Vertèbre S5
 4045;Glande parathyroïdienne externe [III]
 4046;Hypophyse [Glande pituitaire]
 4047;Adénohypophyse
-4048;Partie tubéreuse
+4048;Partie tubérale
 4049;Partie intermédiaire
 4050;Partie distale
 4051;(Partie pharyngée)
 4052;Neurohypophyse
 4053;Infundibulum pituitaire
 4054;Racine hypophysaire
-4055;Partie pituitaire creuse
-4056;Partie pituitaire compacte
+4055;Partie cave de l'hypophyse
+4056;Partie compacte de l'hyposphyse
 4057;Partie distale de la neurohypophyse
 4058;Cavité de la glande pituitaire
+4058*1;Glande pinéale (Splanchnologie)
 4059;Glande surrénale
 4060;Surface ventrale de la glande surrénale
 4061;Surface dorsale de la glande surrénale
@@ -4355,7 +4356,7 @@ S5;Vertèbre S5
 4065;Capsule de la glande surrénale
 4066;Cortex de la glande surrénale
 4067;Moelle de la glande surrénale
-4068;(Ganglions surrénaux accessoires)
+4068;(Glandes surrénales accessoires)
 4069;Ilots pancréatiques
 4070;Angiologie
 4070*0;Termes généraux d'angiologie
@@ -4365,8 +4366,8 @@ S5;Vertèbre S5
 4074;Rete mirabile
 4075;Artère
 4076;Anastomose artérioveineuse
-4077;Arc artériel
-4078;Arc veineux
+4077;Arcade artérielle
+4078;Arcade veineuse
 4079;Plexus artériel
 4080;Cercle vasculaire articulaire
 4081;Veine
@@ -4524,7 +4525,7 @@ S5;Vertèbre S5
 4233;Branche cricothyroïdienne
 4234;Artère pharyngienne ascendante
 4235;Branches palatines
-4236;Branche parotide
+4236;Branche parotidienne
 4237;Branche sternocleidomastoïdienne
 4238;Artères auriculaires rostrales
 4239;Artère supratrochléaire
@@ -4602,7 +4603,7 @@ S5;Vertèbre S5
 4311;Artère alvéolaire inférieure
 4312;Branches dentaires de l'artère alvéolaire inférieure
 4313;Artère mentale
-4314;Branches ptérygoïdes
+4314;Branches ptérygoïdiennes
 4315;Artère tympanique rostrale
 4316;Artère méningée moyenne
 4317;Artère temporale caudale profonde
@@ -4678,7 +4679,7 @@ S5;Vertèbre S5
 4388;Branche épineuse
 4389;Artère intercostale suprême (fe)
 4390;Artère intercostale dorsale droite
-4391;Rameaux spinaux
+4391;Branches spinales
 4392;Artère spinale dorsale
 4393;Artère spinale ventrale
 4394;Branche anastomotique avec l'artère occipitale
@@ -4735,9 +4736,9 @@ S5;Vertèbre S5
 4445;Artère musculophrénique
 4446;Artère axillaire
 4447;Branche deltoidienne (ca)
-4448;Branches mammaire latérales de l'artère thoracique latérale
+4448;Branches mammaires latérales de l'artère thoracique latérale
 4449;Artère nourricière humérale (ca)
-4450;Artère dorsale superficielle
+4450;Arcade dorsale superficielle
 4451;Artères digitales dorsales communes I-IV
 4452;Artère brachiale superficielle
 4453;Artères radiales superficielles
@@ -4750,7 +4751,7 @@ S5;Vertèbre S5
 4460;Branche dorsale
 4461;Branche carpienne dorsale
 4462;Artère digitale dorsale abaxiale du V
-4463;Artère digitale dorsale abaxiale du I
+4463;Artère digitale dorsale abaxiale I
 4464;Réseau carpien dorsal
 4465;Artères métacarpiennes dorsales I-IV
 4466;Branche palmaire superficielle
@@ -4771,7 +4772,7 @@ S5;Vertèbre S5
 4481;Artère coronale
 4482;Artère palmaire de la phalange distale
 4483;Arcade terminale
-4484;Branche deltoïde
+4484;Branche deltoïdienne
 4485;Artère thoracique externe
 4486;Artère thoracique latérale
 4487;Branches mammaires
@@ -4825,34 +4826,34 @@ S5;Vertèbre S5
 4535;Branche palmaire de la phalange moyenne de la main
 4536;Branche palmaire de la phalange distale de la main
 4537;Branche dorsale de la phalange distale de la main
-4538;Arc terminal de la main
-4539;Branche deltoïde (bo)
+4538;Arcade terminale de la main
+4539;Branche deltoïdienne (bo)
 4540;Artère suprascapulaire (bo)
 4541;Artères digitales dorsales communes II et III
-4542;Artère digitale dorsale commune du IV
-4543;Branche perforante proximal du III
-4544;Artère digitale palmaire commune du II
-4545;Artère digitale palmaire axiale propre du II
-4546;Artère digitale palmaire abaxiale propre du III
-4547;Artère digitale palmaire commune du III
-4548;Artères digitales palmaires axiales propres des III et IV
+4542;Artère digitale dorsale commune IV
+4543;Branche perforante proximal III
+4544;Artère digitale palmaire commune II
+4545;Artère digitale palmaire axiale propre II
+4546;Artère digitale palmaire abaxiale propre III
+4547;Artère digitale palmaire commune III
+4548;Artères digitales palmaires axiales propres III et IV
 4549;Artère digitale palmaire commune IV
-4550;Artère digitale palmaire abaxiale propre du IV
-4551;Artère digitale palmaire axiale propre du V
+4550;Artère digitale palmaire abaxiale propre IV
+4551;Artère digitale palmaire axiale propre V
 4552;Branches carpiennes dorsales
 4553;Artère radiale proximale
 4554;Branche carpienne dorsale de l'artère radiale proximale
 4555;Artères métacarpiennes dorsales II et III
-4556;Br. carpienne palmaire des a. métacarpiennes dors. II et III
+4556;Br. carpienne palmaire des a. métacarpiennes dors, II et III
 4557;Artère radiale des artères métacarpiennes dorsales II et III
 4558;Br. carpienne dorsale des a. métacarpiennes dors. II et III
-4559;Branche anastomotique avec a. métacarpien dorsale du II
+4559;Branche anastomotique avec l'artère métacarpienne dorsale II
 4560;Artères métacarpiennes palmaires II et III
-4561;Branche anastomotique avec a. métacarpienne dorsale du III
+4561;Branche anastomotique avec l'artère métacarpienne dorsale III
 4562;(Arcade palmaire superficielle)
-4563;Artère digitale médiale [palmaire propre du III]
+4563;Artère digitale médiale [palmaire propre III]
 4564;Artère du bord solaire
-4565;Artère digitale latérale [palmaire propre du III]
+4565;Artère digitale latérale [palmaire propre III]
 4566;Aorte descendante
 4567;Aorte thoracique
 4568;Artère broncho-œsophagienne
@@ -4880,7 +4881,7 @@ S5;Vertèbre S5
 4590;Artères lombaires
 4591;Branches phréniques (su, Ru)
 4592;Branches surrénales (ca, Ru)
-4593;Branche spinales des artères lombaires
+4593;Branche spinale des artères lombaires
 4594;Branche dorsale des artères lombaires
 4595;Branche cutanée médiale
 4596;Branche cutanée latérale
@@ -4889,7 +4890,7 @@ S5;Vertèbre S5
 4599;Branches caudales
 4600;Artère sacrale médiane (Car, su, Ru)
 4601;Artère lombaire VI (VII) (su, ov, cap)
-4602;Branches sacrées
+4602;Branches sacrales
 4603;Branches spinales des artère lombaires
 4604;Branche dorsale de l'artère lombaire
 4605;Artère sacrale latérale (fe)
@@ -4914,7 +4915,7 @@ S5;Vertèbre S5
 4624;Artère ruminale gauche
 4625;Artère réticulaire
 4626;Branches phréniques
-4627;Branche épiploique
+4627;Branche épiploïque
 4628;Artère ruminale droite
 4629;Artère gastrique gauche
 4630;Branche viscérale
@@ -5041,7 +5042,7 @@ S5;Vertèbre S5
 4751;Artère épigastrique caudale
 4752;Artère vésicale moyenne (su)
 4753;Artère crémasterique (ov)
-4754;Artère vésicale moyenne (Car)
+4754;Artère vésicale médiane (Car)
 4755;Artère crémasterique (Car, su)
 4756;Artère du ligament rond de l'utérus (Car)
 4757;Organes génitaux externes
@@ -5112,20 +5113,20 @@ S5;Vertèbre S5
 4822;Artère tarsienne médiale
 4823;Artère tarsienne distale perforante
 4824;Branche circonflexe de la fibula
-4828;Artère digitale plantaire commune du II
-4829;Artère digitale plantaire axiale propre du II
-4830;Artère digitale plantaire abaxiale propre du III
+4828;Artère digitale plantaire commune II
+4829;Artère digitale plantaire axiale propre II
+4830;Artère digitale plantaire abaxiale propre III
 4831;Branche dorsale de la phalange proximale
 4832;Branche dorsale de la phalange moyenne
 4833;Branche plantaire de la phalange distale
 4834;Branche dorsale de la phalange distale
-4835;Artère plantaire commune du III
+4835;Artère plantaire commune III
 4836;Branches plantaires des phalanges proximales
 4837;Branches dorsales des phalanges proximales
-4838;Artères digitales plantaires axiales propres des III et IV
-4839;Branche perforante proximale du III (bo)
-4840;Branche superficielle [A. digitale plantaire commune du IV]
-4841;Artère digitale plantaire abaxiale propre du IV
+4838;Artères digitales plantaires axiales propres III et IV
+4839;Branche perforante proximale III (bo)
+4840;Branche superficielle [A. digitale plantaire commune IV]
+4841;Artère digitale plantaire abaxiale propre IV
 4842;Artère digitale plantaire axiale propre du V
 4843;Artère récurrente tibiale crâniale (bo)
 4844;Artère interosseuse de la jambe
@@ -5141,24 +5142,24 @@ S5;Vertèbre S5
 4854;Artère dorsale du pied
 4855;Artère tarsienne latérale
 4856;Artère tarsienne perforante
-4857;Artère métatarsienne dorsale du III
+4857;Artère métatarsienne dorsale III
 4858;Artère tibiale caudale
 4859;Branches malléolaires médiales (bo)
 4860;Artère plantaire médiale
 4861;Branche profonde de l'artère plantaire médiale
-4862;Br. superficielle [Artère digitale plantaire commune du II]
+4862;Br. superficielle [Artère digitale plantaire commune II]
 4863;Artère plantaire latérale
 4864;Arcade plantaire profonde
-4865;Artères métatarsiennes plantaires du II et III
-4866;Branche perforante distale du II
-4867;Branche superficielle [A. digitale plantaire commune du III]
+4865;Artères métatarsiennes plantaires II et III
+4866;Branche perforante distale II
+4867;Branche superficielle [A. digitale plantaire commune III]
 4868;Artère descendante du genou
 4869;Artère nourricière du fémur
 4870;Artère fémorale caudale
-4871;Artère digitale médiale [plantaire propre du III]
+4871;Artère digitale médiale [plantaire propre III]
 4872;Branche dorsale de la phalange proximale du pied
 4873;Branche dorsale de la phalange moyenne du pied
-4874;Artère digitale latérale [plantaire propre du III]
+4874;Artère digitale latérale [plantaire propre III]
 4875;Branche plantaire de la phalange proximale
 4876;Branche plantaire de la phalange moyenne
 4877;Artère malléolaire caudale latérale
@@ -5428,7 +5429,7 @@ S5;Vertèbre S5
 5141;Veines cérébrales
 5142;Veines cérébrales dorsales
 5143;Veines cérébrales ventrales
-5144;Grande veine cérébrale (Veine du corps calleux)
+5144;Grande veine cérébrale
 5145;(Veine du corps calleux)
 5146;Veines cérébrales internes
 5147;Veine choroïdienne
@@ -5508,28 +5509,28 @@ S5;Vertèbre S5
 5221;Branches palmaires des phalanges proximales
 5222;Veine interdigitale
 5223;Veines palmaires digitales propres
-5224;Veine métacarpienne dorsale du III
+5224;Veine métacarpienne dorsale III
 5225;Veines métacarpiennes palmaires des II-IV
 5226;Arcade palmaire profonde distale
-5227;Veine digitale palmaire commune du II
-5228;Veine digitale palmaire axiale propre du II
-5229;Veine digitale palmaire abaxiale propre du III
-5230;Veine digitale palmaire commune du IV
-5231;Veine digitale palmaire abaxiale propre du IV
-5232;Veine digitale palmaire axiale propre du V
-5233;Veine digitale palmaire commune du III
-5234;Veines digitales palmaires axiales propres des III et IV
+5227;Veine digitale palmaire commune II
+5228;Veine digitale palmaire axiale propre II
+5229;Veine digitale palmaire abaxiale propre III
+5230;Veine digitale palmaire commune IV
+5231;Veine digitale palmaire abaxiale propre IV
+5232;Veine digitale palmaire axiale propre V
+5233;Veine digitale palmaire commune III
+5234;Veines digitales palmaires axiales propres III et IV
 5235;Veine coronale
 5236;Branche palmaire de la veine coronale
-5237;Br. superficielle [Veine digitale palmaire commune du III]
-5238;Veine digitale latérale [palmaire propre du III]
+5237;Br. superficielle [Veine digitale palmaire commune III]
+5238;Veine digitale latérale [palmaire propre III]
 5239;Arc terminal de la veine coronale
 5240;Branche profonde de la veine coronale
 5241;Veine radiale de la veine coronale
 5242;Arc palmaire profond de la veine coronale
 5243;Veines métacarpiennes palmaires des II et III
-5244;Br. palmaire superf. [V. digitale palmaire commune du II]
-5245;Veine digitale médiale [palmaire propre du III]
+5244;Br. palmaire superf. [V. digitale palmaire commune II]
+5245;Veine digitale médiale [palmaire propre III]
 5246;Veine coronale de la main
 5247;Plexus ungulaire
 5248;Veine cave caudale
@@ -5613,7 +5614,7 @@ S5;Vertèbre S5
 5326;Veine ilolombaire (eq)
 5327;Veine testiculaire gauche (bo, ov)
 5328;Veine ovarienne gauche (bo,cap)
-5329;Veine sacrée médiane (Car, su, Ru)
+5329;Veine sacrale médiane (Car, su, Ru)
 5330;Branches sacrées de la veine sacrale médiane (Car, su, Ru)
 5331;(Veine sacrée médiane) (eq)
 5332;Veine caudale médiane (Car, su, Ru)
@@ -5683,7 +5684,7 @@ S5;Vertèbre S5
 5396;Branche crâniale
 5397;Veine tarsienne médiale (ca)
 5398;Veine plantaire médiale
-5399;Veine digitale dorsale commune du II (fe)
+5399;Veine digitale dorsale commune II (fe)
 5400;Veines digitales dorsales propres
 5401;Branche caudale
 5402;Veine plantaire médiale (fe)
@@ -5692,11 +5693,11 @@ S5;Vertèbre S5
 5405;Veine caudale fémorale distale
 5406;[Petite] Veine saphène latérale
 5407;Branche crâniale de la veine saphène latérale
-5408;Veine digitale dorsale abaxiale du V (ca)
+5408;Veine digitale dorsale abaxiale V (ca)
 5409;Veine tarsienne latérale (ca)
 5410;Arc dorsal superficiel (ca)
-5411;Veine digitale dorsale abaxiale du II
-5412;Veines digitales dorsales communes des II-IV
+5411;Veine digitale dorsale abaxiale II
+5412;Veines digitales dorsales communes II-IV
 5413;Veines digitales dorsales communes III et IV (fe)
 5414;Veines digitales dorsales propres du pied
 5415;Branche caudale des veines digitales dorsales propres
@@ -5704,11 +5705,11 @@ S5;Vertèbre S5
 5417;Arc plantaire profond du pied
 5418;Veines métatarsiennes plantaires II-IV
 5419;Arc plantaire superficiel
-5420;Veine digitale plantaire abaxiale du II (fe)
-5421;V. digitales plant. communes des II et IV (fe), II-IV (ca)
+5420;Veine digitale plantaire abaxiale II (fe)
+5421;V. digitales plant. communes II et IV (fe), II-IV (ca)
 5422;Veine interdigitale du pied
 5423;Veines digitales plantaires propres
-5424;Veine digitale plantaire abaxiale du V (fe)
+5424;Veine digitale plantaire abaxiale V (fe)
 5425;Veine poplitée
 5426;Veines du genou
 5427;Veine tibiale crâniale
@@ -5726,7 +5727,7 @@ S5;Vertèbre S5
 5439;Branche profonde de la veine saphène médiale
 5440;Branche superficielle de la veine plantaire médiale
 5441;Veines digitales plantaires communes II-IV
-5442;Branches perforantes proximales des II et IV
+5442;Branches perforantes proximales II et IV
 5443;V. métatarsiennes dors. II-IV (ca), II (III) IV (fe) II et IV
 5444;Veine descendante du genou
 5445;Veines fémorales caudales
@@ -5735,29 +5736,29 @@ S5;Vertèbre S5
 5448;Veine tarsienne perforante proximale
 5449;Veine tarsienne médiale
 5450;Veine tarsienne perforante distale
-5451;Veine métatarsienne dorsale du III
+5451;Veine métatarsienne dorsale III
 5452;Branche superficielle (bo)
-5453;Veine digitale plantaire commune du II
-5454;Veine digitale plantaire axiale propre du II
+5453;Veine digitale plantaire commune II
+5454;Veine digitale plantaire axiale propre II
 5455;Veine digitale plantaire abaxiale propre III
-5456;Veine digitale plantaire commune du III
+5456;Veine digitale plantaire commune III
 5457;Veines digitales plantaires axiales des III et IV
 5458;Veine plantaire latérale
 5459;Veines métatarsiennes plantaires des III-IV
 5460;Veines digitales plantaires communes IV (bo), II-IV (ov, cap)
 5461;Veine tarsienne perforante
-5462;Veine digitale dorsale commune du II
+5462;Veine digitale dorsale commune II
 5463;Branche caudale de la veine dorsale commune II
 5464;Veine plantaire médiale du pied
 5465;Branche profonde de la veine médiale du pied
 5466;Branche superficielle [Veine digitale plantaire commune II]
-5467;Veine digitale médiale [plantaire propre du III]
+5467;Veine digitale médiale [plantaire propre III]
 5468;Veines métatarsiennes plantaires II et III
 5469;Arcade plantaire profonde distale
-5470;Br. superficielle [Veine digitale plantaire commune du III]
-5471;Veine digitale latérale [plantaire propre du III]
+5470;Br. superficielle [Veine digitale plantaire commune III]
+5471;Veine digitale latérale [plantaire propre III]
 5472;Veine fémorale caudale
-5473;Veine métatarsienne dorsale du II
+5473;Veine métatarsienne dorsale II
 5474;Veine tibiale caudale
 5475;Veine malléolaire caudale latérale
 5476;Système lymphatique
@@ -5767,7 +5768,7 @@ S5;Vertèbre S5
 5480;Valvule lymphatique
 5481;Plexus lymphatique
 5482;Lymphocentre
-5483;Canal thoracique
+5483;Conduit thoracique
 5484;Tronc trachéal [Tronc jugulaire]
 5485;Conduit lymphatique droit
 5486;Citerne du chyle
@@ -5775,6 +5776,7 @@ S5;Vertèbre S5
 5488;Tronc viscéral
 5489;Tronc coeliaque
 5490;Tronc intestinal
+5491;Tronc colique
 5492;Tronc jéjunal
 5493;Tronc gastrique
 5494;Tronc hépatique
@@ -5875,7 +5877,7 @@ S5;Vertèbre S5
 5589;Lymphonoeuds vésicaux (eq)
 5590;Lymphocentre ilioosacral
 5591;Lymphonoeuds iliaques médiaux
-5592;Lymphonoeuds sacrés (abs. eq)
+5592;Lymphonoeuds sacraux (abs. eq)
 5593;Lymphonoeuds iliaques latéraux (su, bo, ov, eq)
 5594;Lymphonoeuds iliaques internes
 5595;Lymphonoeuds anorectaux (Un)
@@ -5915,7 +5917,7 @@ S5;Vertèbre S5
 5629;Bord crânial
 5630;Bord caudal
 5631;Hile de la rate
-5632;Tunique séreuse de la rate
+5632;Séreuse de la rate
 5633;Capsule de la rate
 5634;Trabécules de la rate
 5635;Pulpe rouge de la rate
@@ -5936,8 +5938,7 @@ S5;Vertèbre S5
 5649;Système nerveux central
 5650;Substance blanche
 5651;Substance grise
-5652;Substance gélatineuse de la corne postérieure
-5653;Réseau des tænias
+5652;Substance gélatineuse
 5654;Ependyme
 5655;Couche épithéliale
 5656;Noyaux des nerfs crâniens
@@ -5952,17 +5953,17 @@ S5;Vertèbre S5
 5665;Partie sacrale
 5666;Partie caudale
 5667;Cône médullaire
-5668;Queue de cheval
+5668;Filum terminal
 5669;Sillon médian [dorsal]
 5670;Sillon latéral dorsal
 5671;Sillon intermédiaire dorsal
 5672;Fissure médiane [ventrale]
 5673;Sillon latéral ventral
-5674;Funicule de la moelle épinière
+5674;Cordons de la moelle épinière
 5675;Cordon dorsal
-5676;Funiculus latéral
+5676;Cordon latéral
 5677;Cordon ventral
-5678;Sections de la moelle épinière
+5678;Coupes de la moelle épinière
 5679;Canal central
 5680;Ventricule terminal
 5681;Septum médian dorsal
@@ -5978,12 +5979,12 @@ S5;Vertèbre S5
 5691;Noyau cervical latéral
 5692;Noyau moteur du nerf accessoire
 5693;Noyau du tractus spinal du nerf trijumeau
-5694;Formation réticulaire
+5694;Formation réticulée
 5695;Faisceau gracile
 5696;Faisceau cunéiforme
-5697;Voie pyramidale [corticospinale] dorsale
-5698;Fasciculi propres
-5699;Voie pyramidale [corticospinale] latérale
+5697;Tractus pyramidal [corticospinale] dorsal
+5698;Faisceaux propres
+5699;Tractus pyramidal [corticospinale] latéral
 5700;Tractus spinocérébelleux ventral
 5701;Tractus spinocérébelleux dorsal
 5702;Tractus spinotectal
@@ -5992,6 +5993,7 @@ S5;Vertèbre S5
 5705;Tractus réticulospinal latéral
 5706;Faisceau rubrospinal
 5707;Tractus dorsolatéral
+5707*1;Faisceaux propres du cordon latéral
 5708;Faisceau longitudinal médial
 5709;Partie commissurospinale
 5710;Partie interstitiospinale
@@ -6077,7 +6079,7 @@ S5;Vertèbre S5
 5790;Tractus tegmental central
 5791;Partie ventrale du pont
 5792;Noyaux pontins
-5793;Fibres pontines transversales
+5793;Fibres transverses du pont
 5794;Cervelet
 5795;Folia du cérébellum
 5796;Fissures cérébelleuses
@@ -6202,7 +6204,7 @@ S5;Vertèbre S5
 5915;Lemnisque médial
 5916;Lemnisque latéral
 5917;Noyaux du lemnisque latéral
-5918;Fasciculi tegmenti
+5918;Faisceaux tegmentaux
 5919;Substance noire
 5920;Partie compacte
 5921;Partie réticulée
@@ -6230,8 +6232,7 @@ S5;Vertèbre S5
 5943;Sillon hypothalamique
 5944;Adhésion interthalamique
 5945;Récessus optique
-5946;Récessus neurohypophysaire
-5947;[Récessus infundibulaire]
+5946;Récessus neurohypophysaire [Récessus infundibulaire]
 5948;Hypothalamus
 5949;Corps mamillaire
 5950;Récessus sous-mamillaire
@@ -6248,8 +6249,8 @@ S5;Vertèbre S5
 5961;Chiasma optique
 5962;Lame grise terminale
 5963;Organes vasculaires de la lame grise terminale
-5964;Organe vasculaire hypothalamique
-5965;Coupes hypothalamiques
+5964;Organe vasculaire de l'hypothalamus
+5965;Sections de l'hypothalamus
 5966;Couche périventriculaire
 5967;Région hypothalamique rostrale avec région pré-optique
 5968;Noyau supra-optique
@@ -6290,8 +6291,9 @@ S5;Vertèbre S5
 6003;Commissure supra-optique ventrale
 6004;Commissure supramamillaire
 6005;Commissures intrahypothalamiques
-6006;Tractus des projections nerveuses
+6006;Voies nerveuses de projection
 6007;Fibres périventriculaires
+6007*1;Fornix (Voies nerveuses)
 6008;Faisceau médial du télencéphale
 6009;Faisceau dorsal longitudinal
 6010;Fibres hypothalamorétiniennes
@@ -6305,16 +6307,16 @@ S5;Vertèbre S5
 6018;Subthalamus
 6019;Corps sous-thalamique
 6020;Sections sous-thalamiques
-6021;Zona incerta
+6021;Zone incertaine
 6022;Noyau subthalamique
 6023;Noyau endopédonculaire
-6024;Cercle pédonculaire
-6025;Cercle lenticulaire
+6024;Anse pédonculaire
+6025;Anse lenticulaire
 6026;Pédoncule thalamique ventral
 6027;Thalamencéphale
 6028;Thalamus
-6029;Tubercule thalamique rostral
-6030;Ténia thalamique
+6029;Tubercule rostral du thalamus
+6030;Ténia du thalamus
 6031;Pulvinar
 6032;Métathalamus
 6033;Corps géniculé médial
@@ -6326,11 +6328,11 @@ S5;Vertèbre S5
 6039;Récessus pinéal
 6040;Récessus suprapinéal
 6041;Habenula
-6042;Stria habenularis thalami
+6042;Strie habénulaire du thalamus
 6043;Coupes thalamencéphaliques
-6044;Coupes thalamiques
-6045;Stratum zonale
-6046;Noyaux thalamiques rostraux
+6044;Coupes du thalamus
+6045;Couche zonale
+6046;Noyaux rostraux du thalamus
 6047;Noyau rostral dorsal
 6048;Noyau rostral médial
 6049;Noyau rostral ventral
@@ -6349,13 +6351,12 @@ S5;Vertèbre S5
 6062;Noyau central médial
 6063;Noyau paracentral
 6064;Noyau central latéral
-6065;Noyau thalmique central
-6066;[Centre médian]
+6065;Noyau central du thalamus [Centre médian]
 6067;Noyau parafasciculaire
-6068;Noyau thalamique dorsal
+6068;Noyau dorsomédial du thalamus
 6069;Noyaux paraventriculaires du thalamus
-6070;Nucleus thalamique reticulé
-6071;Coupes métathalamiques
+6070;Nucleus réticulaire du thalamus
+6071;Sections du métathalamus
 6072;Noyau géniculé médial
 6073;Noyau géniculé latéral
 6074;Partie dorsale du noyau géniculé latéral
@@ -6367,7 +6368,7 @@ S5;Vertèbre S5
 6080;Commissure habénulaire
 6081;Faisceau rétroflexe
 6082;Télencéphale
-6083;Cerveau - télencéphale
+6083;Cerveau/ télencéphale
 6084;Scissure cérébrale longitudinale
 6085;Scissure cérébrale transverse
 6086;Base du cerveau
@@ -6377,7 +6378,7 @@ S5;Vertèbre S5
 6090;Bord dorsal [dorsomédial]
 6091;Pôle rostral [frontal]
 6092;Pôle caudal [occipital]
-6093;Pallium
+6093;Cortex cérébral (Pallium)
 6094;Paléopallium
 6095;Archipallium
 6096;Néopallium
@@ -6442,8 +6443,7 @@ S5;Vertèbre S5
 6155;Pilier du fornix
 6156;Corps du fornix
 6157;Ténia du fornix
-6158;Colonne du fornix
-6159;Ventral [Psalterium ventral]
+6158;Colonne du fornix ventral [Psalterium ventral]
 6160;Commissure du fornix [hippocampe]
 6161;Dorsal [Psalterium dorsal]
 6162;Organe subfornical
@@ -6472,7 +6472,8 @@ S5;Vertèbre S5
 6185;Noyau central
 6186;Noyau médial
 6187;Plaque diagonale
-6188;Noyaux septaux
+6188;Noyaux du septum
+6188*1;Néopallium (Télencéphale)
 6189;Fissure pseudosylvienne
 6190;Fissure sylviienne [acérébrale latérale]
 6191;Sillon ectosylvien rostral
@@ -6539,7 +6540,7 @@ S5;Vertèbre S5
 6252;Cortex temporal
 6253;Cortex occipital
 6254;Centre semi-ovale
-6255;Fibres arquées cérébrales
+6255;Fibres cérébrales arquées
 6256;Cingulum
 6257;Faisceau longitudinal supérieur
 6258;Faisceau longitudinal inférieur
@@ -6586,16 +6587,18 @@ S5;Vertèbre S5
 6299;Diaphragme de la selle
 6300;Incisure de la tente du cervelet
 6301;Cavité trigéminale
-6302;Cavité sous-durale
+6302;Cavité subdurale
 6303;Dure-mère spinale
 6304;Filum de la dure-mère spinale
 6305;Cavité épidurale
 6306;Leptoméninge
 6307;Arachnoïde encéphalique
+6307*1;Cavité subarachnoïdienne encéphalique [Cavité leptoméningée]
+6307*2;Liquide cérébrospinal (encéphale)
 6308;Arachnoïde spinale
-6309;Cavité sous-arachnoïdienne [Cavité leptoméningée]
-6310;Liquide cérébrospinal
-6311;Citernes sous-arachnoïdiennes
+6309;Cavité subarachnoïdienne spinale [Cavité leptoméningée]
+6310;Liquide cérébrospinal (spinal)
+6311;Citernes subarachnoïdiennes
 6312;Citerne cérébellomédullaire
 6313;Citerne [fosse] valléculée latérale du cerveau
 6314;Citerne chiasmatique
@@ -6612,6 +6615,7 @@ S5;Vertèbre S5
 6325;Ligament dentelé
 6326;Septum intermédiaire
 6327;Système nerveux périphérique
+6327*1;Termes généraux du système nerveux périphérique
 6328;Nerf
 6329;Ganglion
 6330;Branche communiquante
@@ -6620,16 +6624,16 @@ S5;Vertèbre S5
 6333;Nerf articulaire
 6334;Nerf vasculaire
 6335;Plexus péri-artériel
-6336;Plexus nerveux spinal
+6336;Plexus des nerfs spinaux
 6337;Corpuscule nerveux terminal
 6338;Terminaisons nerveuses libres
 6339;Nerfs crâniens
-6340;Nerfs olfactifs
+6340;Nerfs olfactifs (I)
 6341;Nerf voméronasal
 6342;Nerf terminal
 6343;Ganglion terminal
-6344;Nerf optique
-6345;Nerf oculomoteur
+6344;Nerf optique (II)
+6345;Nerf oculomoteur (III)
 6346;Branche dorsale du nerf oculomoteur
 6347;Branche ventrale du nerf oculomoteur
 6348;Ganglion ciliaire
@@ -6637,8 +6641,8 @@ S5;Vertèbre S5
 6350;Nerfs ciliaires courts
 6351;(Branche sympathique du ganglion ciliaire)
 6352;Branche communiquante avec le nerf nasociliaire
-6353;Nerf trochléaire
-6354;Nerf trijumeau
+6353;Nerf trochléaire (IV)
+6354;Nerf trijumeau (V)
 6355;Racine majeure du nerf trijumeau
 6356;Ganglion trigéminal
 6357;Racine mineure du nerf trijumeau
@@ -6736,8 +6740,8 @@ S5;Vertèbre S5
 6449;Ganglion sublingual (Car)
 6450;Branches communiquantes avec le nerf lingual
 6451;Branches glandulaires
-6452;Nerf abducens
-6453;Nerf facial [nerf intermédiofacial]
+6452;Nerf abducens (VI)
+6453;Nerf facial [nerf intermédiofacial] (VII)
 6454;Geniculum du nerf facial
 6455;Nerf grand pétreux
 6456;Nerf du muscle stapédien
@@ -6757,7 +6761,7 @@ S5;Vertèbre S5
 6470;Nerf intermédiaire
 6471;Ganglion géniculé
 6472;Corde du tympan
-6473;Nerf vestibulocochléaire
+6473;Nerf vestibulocochléaire (VIII)
 6474;Racine vestibulaire
 6475;Racine cochléaire
 6476;Nerf vestibulaire
@@ -6772,7 +6776,7 @@ S5;Vertèbre S5
 6485;Nerf sacculaire
 6486;Nerf cochléaire
 6487;Ganglion spiral de la cochlée
-6488;Nerf glossopharyngien
+6488;Nerf glossopharyngien (IX)
 6489;Ganglion proximal du nerf glossopharyngien
 6490;Ganglion distal du nerf glossopharyngien
 6491;Nerf tympanique
@@ -6786,7 +6790,7 @@ S5;Vertèbre S5
 6499;Ganglion latéropharyngé (bo, ov)
 6500;Branche linguale
 6501;Branches amygdaliennes
-6502;Nerf vague
+6502;Nerf vague (X)
 6503;Ganglion proximal du nerf vague
 6504;Ganglion distal du nerf vague
 6505;Branche méningée du nerf vague
@@ -6834,16 +6838,17 @@ S5;Vertèbre S5
 6547;Branche de la grande courbure de l'abomasum
 6548;Branches omasiales
 6549;Branches abomasiales viscérales
-6550;Nerf accessoire
+6550;Nerf accessoire (XI)
 6551;Racines crâniales du nerf accessoire
 6552;Racines spinales du nerf accessoire
 6553;Branche interne du nerf accessoire
 6554;Branche externe du nerf accessoire
 6555;Branche dorsale du nerf accessoire
 6556;Branche ventrale du nerf accessoire
-6557;Nerf hypoglosse
+6557;Nerf hypoglosse (XII)
 6558;Branches linguales du nerf hypoglosse
 6559;Nerfs spinaux
+6559*1;Termes généraux (Nerfs spinaux)
 6560;Fils radicaux
 6561;Racine ventrale
 6562;Racine dorsale
@@ -6871,7 +6876,7 @@ S5;Vertèbre S5
 6584;Nerfs supraclaviculaires intermédiaires
 6585;Nerfs supraclaviculaires dorsaux
 6586;Plexus cervical
-6587;Cercle cervical
+6587;Anse cervicale
 6588;Racine crâniale
 6589;Racine caudale
 6590;Nerf phrénique
@@ -6901,34 +6906,34 @@ S5;Vertèbre S5
 6614;Nerf radial
 6615;Branches musculaires du nerf radial
 6616;Nerf cutané latéral caudal du bras
-6617;Branche profonde du nerf cutané caudal latéral du bras
-6618;Branches musclaire du nerf cutané caudal latéral du bras
-6619;Branche superficielle du nerf cutané brachial latéral caudal
+6617;Branche profonde du nerf radial
+6618;Branches musclaires
+6619;Branche superficielle du nerf radial
 6620;Nerf cutané latéral de l'avant-bras
 6621;Branche latérale (Car, su)
 6622;Branche médiale (Car, su)
 6623;Nerfs digitaux dorsaux communs
 6624;Nerfs digitaux dorsaux propres
-6625;Nerf dorsal abaxial du I (Car)
+6625;Nerf dorsal abaxial I (Car)
 6626;Nerf médian
 6627;Racine médiale du nerf médian
 6628;Racine latérale du nerf médian
 6629;Branches musculaires du nerf médian
 6630;Nerf interosseux de l'avant-bras
-6631;Nerf digital palmaire abaxial du I
-6632;Nerf digital palmaire commun du I
-6633;Nerf digital palmaire axial propre du I
-6634;Nerf digital palmaire abaxial propre du II
-6635;Nerf digital palmaire commun du III
-6636;Nerf digital palmaire axial propre du III
-6637;Nerf digital palmaire axial propre du IV
+6631;Nerf digital palmaire abaxial I
+6632;Nerf digital palmaire commun I
+6633;Nerf digital palmaire axial propre I
+6634;Nerf digital palmaire abaxial propre II
+6635;Nerf digital palmaire commun III
+6636;Nerf digital palmaire axial propre III
+6637;Nerf digital palmaire axial propre IV
 6638;Branche communicante (fe)
-6639;Nerf digital palmaire abaxial du II
-6640;Nerf digital palmaire commun du II
-6641;Nerf digital palmaire propre du II
-6642;Nerf digital palmaire abaxial propre du III
-6643;Nerf digital palmaire axial du III
-6644;Nerf digital palmaire axial du IV
+6639;Nerf digital palmaire abaxial II
+6640;Nerf digital palmaire commun II
+6641;Nerf digital palmaire propre II
+6642;Nerf digital palmaire abaxial propre III
+6643;Nerf digital palmaire axial III
+6644;Nerf digital palmaire axial IV
 6645;Branche communiquante des nerfs digitaux palmaires
 6646;Nerf palmaire médial [Nerf digital palmaire commun du II]
 6647;Nerf digital palmaire médial
@@ -6940,31 +6945,33 @@ S5;Vertèbre S5
 6653;Nerf digital palmaire latéral
 6654;Branche dorsale des nerfs digitaux palmaires latéraux
 6655;Nerf ulnaire
+6655*1;Branche dorsale du nerf ulnaire
+6655*2;Branche palmarcale
 6656;Nerf cutané caudal de l'avant-bras
-6657;Branches musculaires des nerfs cutanés antébraquiaux caudaux
+6657;Br, musculaires des nerfs cutanés caudaux de l'avant-bras
 6658;Branche dorsale du nerf cutané caudal de l'avant-bras
-6659;Nerf digital dorsal commun du IV (fe)
-6660;Nerf digital dorsal abaxial propre du IV (fe)
+6659;Nerf digital dorsal commun IV (fe)
+6660;Nerf digital dorsal abaxial propre IV (fe)
 6661;Nerf digital dorsal axial propre du V (fe)
-6662;Nerf digital palmaire commun du IV
-6663;Nerf digital palmaire abaxial propre du IV
+6662;Nerf digital palmaire commun IV
+6663;Nerf digital palmaire abaxial propre IV
 6664;Nerf digital palmaire axial propre du V
 6665;Nerf digital palmaire abaxial du V
 6666;Nerfs métacarpiens palmaires (ca)
 6667;Branche dorsale du nerf métacarpien palmaire (ca)
-6668;Branche palmaire du nerf digitale dorsale abaxiale V
-6669;Branche superficielle du nerf digitale dorsale abaxiale V
+6668;Branche palmaire du nerf digital dorsale abaxiale V
+6669;Branche superficielle du nerf digital dorsale abaxiale V
 6670;Branche profonde du nerf digital palmaire abaxial V
-6671;Branche dorsale du nerf palmaire abaxial du V
-6672;Nerf digital dorsal propre du V
-6673;Branche palmaire du nerf digital dorsal propre du V
-6674;Branche superficielle du nerf digital dorsal propre du V
-6675;Nerf digital palmaire propre du V
-6676;Branche profonde du nerf digital palmaire propre du V
-6677;Branche dorsale du nerf digital palmaire propre du V
-6678;Branche palmaire du nerf digital palmaire propre du V
-6679;Branche superficielle du nerf digital palmaire propre du V
-6680;Nerf palmaire lat. [N. digital palmaire commun du III]
+6671;Branche dorsale du nerf palmaire abaxial V
+6672;Nerf digital dorsal propre V
+6673;Branche palmaire du nerf digital dorsal propre V
+6674;Branche superficielle du nerf digital dorsal propre V
+6675;Nerf digital palmaire propre V
+6676;Branche profonde du nerf digital palmaire propre V
+6677;Branche dorsale du nerf digital palmaire propre V
+6678;Branche palmaire du nerf digital palmaire propre V
+6679;Branche superficielle du nerf digital palmaire propre V
+6680;Nerf palmaire lat. [N. digital palmaire commun III]
 6681;Branche profonde du nerf palmaire latéral
 6682;Branches articulaires du nerf métacarpien palmaire latéral
 6683;Branche dorsale du nerf digital palmaire latéral [propre]
@@ -6990,9 +6997,9 @@ S5;Vertèbre S5
 6703;Nerfs clunéaux craniaux
 6704;Branches ventrales des nerfs clunéaux craniaux
 6705;Nerfs sacraux
-6706;Branches dorsales des nerfs sacrés
-6707;Branche médiale des nerfs sacrés
-6708;Branche latérale des nerfs sacrés
+6706;Branches dorsales des nerfs sacraux
+6707;Branche médiale des nerfs sacraux
+6708;Branche latérale des nerfs sacraux
 6709;Nerfs clunéaux moyens
 6710;Rameaux ventraux des nerfs clunéaux moyens
 6711;Plexus lombosacral
@@ -7014,7 +7021,7 @@ S5;Vertèbre S5
 6727;Nerf génitofémoral
 6728;Branche génitale
 6729;Branche fémorale
-6730;Nerf cutané du nerf fémoral latéral
+6730;Nerf cutané fémoral latéral
 6731;Nerf fémoral
 6732;Branches musculaires du nerf fémoral
 6733;Nerf saphène
@@ -7037,40 +7044,40 @@ S5;Vertèbre S5
 6750;Nerf fibulaire superficiel
 6751;Branches musculaires du nerf fibulaire superficiel
 6752;Branches cutanées du nerf fibulaire superficiel
-6753;Nerf digital dorsal abaxial du II
-6754;Nerf digital dorsal commun du II du pied
-6755;Nerf digital dorsal axial propre du II du pied
-6756;Nerf digital dorsal abaxialis propre du III du pied
-6757;Nerf digital dorsal commun du III du pied
-6758;Nerf digital dorsal axial propre du III du pied
-6759;Nerf digital dorsal axial propre du IV du pied
-6760;Nerf digital dorsal commun du IV du pied
-6761;Nerf digital dorsal abaxial propre du IV du pied
-6762;Nerf digital dorsal axial propre du V du pied
+6753;Nerf digital dorsal abaxial II
+6754;Nerf digital dorsal commun II du pied
+6755;Nerf digital dorsal axial propre II du pied
+6756;Nerf digital dorsal abaxialis propre III du pied
+6757;Nerf digital dorsal commun III du pied
+6758;Nerf digital dorsal axial propre III du pied
+6759;Nerf digital dorsal axial propre IV du pied
+6760;Nerf digital dorsal commun IV du pied
+6761;Nerf digital dorsal abaxial propre IV du pied
+6762;Nerf digital dorsal axial propre V du pied
 6763;Nerf digital dorsal V abaxial
 6764;Nerf digital dorsal commun II
-6765;Branches cutanées du nerf digital dorsal commun du II
-6766;Nerf digital dorsal axial propre du II
-6767;Nerf digital dorsal abaxial propre du III
-6768;Nerf digital dorsal commun du III
-6769;Branches cutanées du nerf digital dorsal commun du III
-6770;Branche communiquante avec le nerf métatarsien dorsal du III
-6771;Nerf digital dorsal axial propre du III
-6772;Nerf digital dorsal axial propre du IV
-6773;Nerf digital dorsal commun du IV
-6774;Branches cutanées du nerf digital dorsal commun du IV
-6775;Nerf digital dorsal propre abaxial du IV
-6776;Nerf digital dorsal axial propre du V
+6765;Branches cutanées du nerf digital dorsal commun II
+6766;Nerf digital dorsal axial propre II
+6767;Nerf digital dorsal abaxial propre III
+6768;Nerf digital dorsal commun III
+6769;Branches cutanées du nerf digital dorsal commun III
+6770;Branche communiquante avec le nerf métatarsien dorsal III
+6771;Nerf digital dorsal axial propre III
+6772;Nerf digital dorsal axial propre IV
+6773;Nerf digital dorsal commun IV
+6774;Branches cutanées du nerf digital dorsal commun IV
+6775;Nerf digital dorsal propre abaxial IV
+6776;Nerf digital dorsal axial propre V
 6777;Nerf fibulaire profond
 6778;Branches musculaires du nerf fibulaire profond
-6779;Nerf métatarsien dorsal du II (Car)
-6780;Nerf métatarsien dorsal du IV (Car)
-6781;Nerf métatarsien dorsal du III
-6782;Br. comm. avec le n. digital plantaire axial propre du III
-6783;Br. communiquante avec le n. digital plantaire axial du IV
-6784;Nerf métatarsien dorsal du II
-6785;Nerf digital dorsal médial du III
-6786;Nerf digital dorsal latéral du III
+6779;Nerf métatarsien dorsal II (Car)
+6780;Nerf métatarsien dorsal IV (Car)
+6781;Nerf métatarsien dorsal III
+6782;Br. comm. avec le n. digital plantaire axial propre III
+6783;Br. communiquante avec le n. digital plantaire axial IV
+6784;Nerf métatarsien dorsal II
+6785;Nerf digital dorsal médial III
+6786;Nerf digital dorsal latéral III
 6787;Nerf tibial
 6788;Branches musculaires du nerf tibial
 6789;Nerf cutané sural caudal
@@ -7078,30 +7085,30 @@ S5;Vertèbre S5
 6791;Nerf cutané sural caudal distal (Car)
 6792;Branches cutanées [Branche cutanée tarsienne médiale, eq]
 6793;Nerf plantaire médial
-6794;Nerf digital plantaire abaxial du II
-6795;Nerf digital plantaire commun du II
-6796;Nerf digital plantaire axial propre du II
-6797;Nerf digital plantaire abaxial propre du III
-6798;Nerf digital plantaire commun du III
-6799;Br. communiqu. avec le nerf digital plant. commun du IV (su)
-6800;Nerf digital plantaire axial du III
-6801;Nerf digital plantaire axial propre du IV
-6802;Nerf digital plantaire commun du IV (Car)
+6794;Nerf digital plantaire abaxial II
+6795;Nerf digital plantaire commun II
+6796;Nerf digital plantaire axial propre II
+6797;Nerf digital plantaire abaxial propre III
+6798;Nerf digital plantaire commun III
+6799;Br. communiqu. avec le nerf digital plant. commun IV (su)
+6800;Nerf digital plantaire axial III
+6801;Nerf digital plantaire axial propre IV
+6802;Nerf digital plantaire commun IV (Car)
 6803;Nerf plantaire latéral
-6804;Branche profonde du nerf digital plantaire propre axial du V
-6805;Br. profonde du n. digital plantaire axial propre du V (Car)
-6806;Nerf digital plantaire commun du IV (su)
-6807;Nerf digital plantaire abaxial du V
-6808;Nerf digital plantaire propre du II
-6809;Br. communiqu. avec le n. digital dorsal abaxial. du III
-6810;Nerf digital plantaire commun du IV
-6811;Br. communiquante du nerf digital dorsal propre abaxial du IV
-6812;Nerf digital plantaire propre du V
-6813;Nerf plantaire med. [N. digital plantaire commun du II]
+6804;Branche profonde du nerf digital plantaire propre axial V
+6805;Br. profonde du n. digital plantaire axial propre V (Car)
+6806;Nerf digital plantaire commun IV (su)
+6807;Nerf digital plantaire abaxial V
+6808;Nerf digital plantaire propre II
+6809;Br. communiqu. avec le n. digital dorsal abaxial. III
+6810;Nerf digital plantaire commun IV
+6811;Br. communiquante du nerf digital dorsal propre abaxial IV
+6812;Nerf digital plantaire propre V
+6813;Nerf plantaire med. [N. digital plantaire commun II]
 6814;Branche communiquante du nerf plantaire médial
 6815;Nerf digital plantaire médial
 6816;Branche dorsale du nerf digital plantaire médial
-6817;Nerf plantaire lat. [N. digital plantaire commun du III]
+6817;Nerf plantaire lat. [N. digital plantaire commun III]
 6818;Branche profonde du nerf plantaire latéral
 6819;Nerfs métatarsiens plantaires
 6820;Nerf digital plantaire latéral
@@ -7129,6 +7136,7 @@ S5;Vertèbre S5
 6842;Branches ventrales du plexus caudal
 6843;Plexus caudal [coccygien] ventral
 6844;Système nerveux autonome
+6844*1;Termes généraux du système nerveux autonome
 6845;Plexus autonome
 6846;Ganglions des plexus autonomes
 6847;Ganglions autonomes
@@ -7197,7 +7205,7 @@ S5;Vertèbre S5
 6910;Ganglion cervical moyen
 6911;Nerf cardiaque cervical
 6912;Ganglion cervicothoracique
-6913;Cercle subclavier
+6913;Anse subclavière
 6914;Plexus subclavier
 6915;Nerf vertébral
 6916;Plexus vertébral
@@ -7206,13 +7214,13 @@ S5;Vertèbre S5
 6919;Nerfs cardiaques thoraciques
 6920;Grand nerf splanchnique
 6921;Ganglion splanchnique
-6922;Nerf splanchnique mineur
+6922;Nerf petit splanchnique
 6923;Branche rénale
 6924;(Nerf splanchnique imus)
 6925;Ganglions lombaires
 6926;Nerf splanchniques lombaires
-6927;Ganglions sacrés
-6928;Nerfs splanchniques sacrés
+6927;Ganglions sacraux
+6928;Nerfs splanchniques sacraux
 6929;Ganglions caudaux [coccygiens]
 6930;Ganglion impair
 6931;Partie parasympathique
@@ -7224,13 +7232,13 @@ S5;Vertèbre S5
 6937;Lingula LoBursa I
 6938;Lobulus centralis LoBursa II
 6939;Pars rostralis LoBursa III
-6940;Culmen LoBursa IV
+6940;Culmen LoBursa IV 
 6941;Pars caudalis LoBursa V
 6942;Declive LoBursa VI
 6943;Folium vermis LoBursa VII A
 6944;Tuber vermis LoBursa VII B
 6945;Pyramis LoBursa VIII A
-6946;Pyramis LoBursa VIII B
+6946;Pyramis LoBursa VIII B 
 6947;Uvula LoBursa IX
 6948;Nodulus LoBursa X
 6949;Hémisphère
@@ -7249,10 +7257,12 @@ S5;Vertèbre S5
 6962;Lob. H. IX Paraflocculus ventralis
 6963;Lob. H. X Flocculus
 6964;Organes des sens
-6965;Organe visuel
-6966;Gaine externe du nerf optique
-6967;Gaine interne du nerf optique
-6968;Espaces intervaginaux
+6965;Organe de la vue
+6965*1;Oeil (Organe des sens)
+6965*2;Nerf optique (Organes des sens)
+6966;Vaginale externe du nerf optique
+6967;Vaginale interne du nerf optique
+6968;Espace intervaginal
 6969;Pôle antérieur
 6970;Pôle postérieur
 6971;Équateur
@@ -7260,7 +7270,7 @@ S5;Vertèbre S5
 6973;Axe externe du bulbe
 6974;Axe interne du bulbe
 6975;Axe optique
-6976;Couche fibreuse du bulbe
+6976;Tunique fibreuse du bulbe
 6977;Sclère
 6978;Sillon de la sclère
 6979;Anneau de la sclère
@@ -7281,7 +7291,7 @@ S5;Vertèbre S5
 6994;Substance propre de la cornée
 6995;Lame limitante postérieure
 6996;Épithélium postérieur de la cornée
-6997;Couche vasculaire du bulbe
+6997;Tunique vasculaire du bulbe
 6998;Choroïde
 6999;Couche suprachoroïde
 7000;Espace périchoroïdien
@@ -7316,7 +7326,7 @@ S5;Vertèbre S5
 7029;Espace angulaires iridocornéaux
 7030;Grand cercle artériel de l'iris
 7031;Petit cercle artériel de l'iris
-7032;Couche interne du bulbe
+7032;Tunique interne du bulbe
 7033;Rétine
 7034;Partie optique de la rétine
 7035;Ora serrata
@@ -7373,11 +7383,11 @@ S5;Vertèbre S5
 7086;Zonule ciliaire
 7087;Fibres zonulaires
 7088;Espaces zonulaires
-7089;Organes oculaires accessoires
+7089;Structures accessoires de l'oeil
 7090;Muscles du globe oculaire
 7091;Muscle orbitaire
-7092;Muscle droit dorsal
-7093;Muscle droit ventral
+7092;Muscle droit dorsal de l'œil
+7093;Muscle droit ventral de l'œil
 7094;Muscle droit médial de l'œil
 7095;Muscle droit latéral de l'œil
 7096;Muscle rétracteur du bulbe
@@ -7385,15 +7395,15 @@ S5;Vertèbre S5
 7098;Trochlée
 7099;Muscle oblique ventral
 7100;Muscle releveur de la paupière supérieure
-7101;Fascias orbitaux
+7101;Fascias orbitaires
 7102;Péri-orbite
 7103;Septum orbitaire
 7104;Fascias musculaires
 7105;Gaine du bulbe
 7106;Espace épiscléral
 7107;Corps adipeux de l'orbite
-7108;Corps gras intrapériorbitaire
-7109;Corps gras extra-périorbitaire
+7108;Corps adipeux intrapériorbitaire
+7109;Corps adipeux extra-périorbitaire
 7110;Paupières
 7111;Face antérieure des paupières
 7112;Face postérieure des paupières
@@ -7685,7 +7695,7 @@ S5;Vertèbre S5
 7398;Torule tactile (Car)
 7399;Sinus cutanés
 7400;Sinus infra-orbitaire (ov)
-7401;Sinus inguinal (VO)
+7401;Sinus inguinal (ov)
 7402;Sinus paranasal (Car)
 7403;Sinus interdigital (ov)
 7404;Epiderme
@@ -7695,13 +7705,13 @@ S5;Vertèbre S5
 7408;Tissus sous-cutanés [Hypoderme]
 7409;Couche adipeuse du tissu sous-cutané
 7410;Poils
-7411;Cheveux
+7411;Poils de la tête
 7412;Soies
-7413;Poil de laine
-7414;Tête du cirrus
-7415;Cirrus de la queue
-7416;Métacarpe du cirrus
-7417;Métatarse du cirrus
+7413;Poils laineux
+7414;Touffe frontale
+7415;Touffe caudale
+7416;Touffe carpienne (métacarpienne)
+7417;Touffe métatarsienne
 7418;Cils
 7419;Barbe (cap)
 7420;Tragi
@@ -7736,9 +7746,10 @@ S5;Vertèbre S5
 7449;Derme [Peau] de la corne
 7450;Coussinets
 7451;Coussinet carpien
+7451*1;Coussinet digital de la main
 7452;Coussinet tarsien
 7453;Coussinet métatarsien
-7454;Coussinet digital
+7454;Coussinet digital du pied
 7455;Coussinet de l'ongle
 7456;Limbe [Vallum, Car]
 7457;Epiderme du limbe [Perioplum, Un]
@@ -7871,6 +7882,7 @@ S5;Vertèbre S5
 7585;Lames médiales [Ligament suspenseur du pis]
 7586;Mamelle mâle
 7587;(Mamelle accessoire)
+;Termes ajoutés
 7588;Cheval
 7589;Ruminants
 7590;Cochon
@@ -7880,6 +7892,7 @@ S5;Vertèbre S5
 7594;Carnivore, Cochon
 7595;Carnivore
 7596;Carnivore, Cochon, Cheval
+7632;Souris
 7597;Vertèbre Cc1
 7598;Vertèbre Cc2
 7599;Vertèbre Cc3
@@ -7915,7 +7928,6 @@ S5;Vertèbre S5
 7629;Vertèbre Cc33
 7630;Vertèbre Cc34
 7631;Vertèbre Cc35
-7632;Souris
 7635;Fascias de la tête
 7636;Fascias cervicaux
 7637;Fascias du thorax
@@ -7969,15 +7981,7 @@ S5;Vertèbre S5
 7702;Muscles épiaxiaux
 7703;Muscles suboccipitaux
 7705;Muscles épineux transversaires
-7706;Fascia endo-abdominal
 7708;Muscles du pelvis
-7713;Muscle stylopharyngien
-7716;Muscle oblique inférieur de l'œil
-7717;Muscle droit inférieur de l'œil
-7718;Muscle élévateur de la paupière supérieure
-7719;Muscle oblique supérieur de l'œil
-7720;Muscle droit supérieur de l'œil
-7721;Trochlée du muscle oblique supérieur
 7722;Muscle nasal
 7723;Muscles splénius
 7725;Muscles du pied
@@ -8014,105 +8018,11 @@ S5;Vertèbre S5
 7757;Structures asymétriques
 7758;Insertions appendiculaires
 7759;Insertions axiales
-7760;Insertions du long abducteur du pouce
-7761;Insertions du court adducteur de l'hallux
-7762;Insertions des muscles adducteurs de la hanche
-7763;Insertions du muscle anconé
-7764;Insertions du muscle biceps brachial
-7765;Insertions du muscle biceps fémoral
-7766;Insertions du mucle brachial
-7767;Insertions du muscle brachioradial
-7768;Insertions du muscle buccinateur
-7769;Insertions du muscle coracoradial
-7770;Insertions du muscle deltoïde
-7771;Insertions du diaphragme
-7772;Insertions de l'extenseur ulnaire du carpe
-7773;Insertions de l'extenseur des doigts indicis
-7774;Insertions du long extenseur des doigts du pied
-7775;Insertions du court extenseur de l'hallux
-7776;Insertions du muscle long extenseur de l'hallux
-7777;Insertions du court extenseur du pouce
-7778;Insertions du long extenseur du pouce
-7779;Insertions du long extenseur radial
-7780;Insertions du muscle oblique abdominal externe
-7781;Insertions des muscles du visage
-7782;Insertions du muscle court fibulaire
-7783;Insertions du muscle fibulaire tiers
-7784;Insertions du muscle fléchisseur ulnaire du carpe
-7785;Insertions du court fléchisseur des orteils
-7786;Insertions du long fléchisseur des doigts
-7787;Insertions du long fléchisseur de l'hallux
-7788;Insertions du muscle long fléchisseur du pouce
-7789;Insertions des muscles gémellaires
-7790;Insertions du muscle génio-hyoïdien
-7791;Insertions des muscles fessiers
-7792;Insertions du muscle grand fessier
-7793;Insertions du muscle moyen fessier
-7794;Insertions du muscle gracile
-7795;Insertions du muscle psoas-iliaque
-7796;Insertions du muscle sous-épineux
-7797;Insertions de l'oblique abdominal interne
-7798;Insertions du muscle oblique abdominal interne
-7799;Insertions du muscle grand dorsal
-7800;Insertions des levatores longi costarum
-7801;Insertions du ligament plantaire long
-7802;Insertions du longissimus thoracis
-7803;Insertions des membres inférieurs
-7804;Insertions de masséter
-7805;Insertions de l'obliquus inférieur de la tête
-7806;Insertions du muscle obturateur externe
-7807;Insertions du muscle obturateur interne
-7808;Insertions du muscle omohyoïdien
-7809;Insertions du grand pectoral
-7810;Insertions du muscle petit pectoral
-7811;Insertions du muscle interosseux plantaire
-7812;Insertions du muscle poplité
-7813;Insertions du muscle procerus
-7814;Insertions du muscle carré pronateur
-7815;Insertions du muscle rond pronateur
-7816;Insertions des muscles ptérygoïdiens
-7817;Insertions du muscle carré fémoral
-7818;Insertions du muscle droit de l'abdomen
-7819;Insertions du droit antérieur de la tête
-7820;Insertions du muscle grand droit postérieur
-7821;Insertions du muscle mineur droit postérieur
-7822;Insertions de muscles rhomboïdes
-7823;Insertions du muscle sartorius
-7824;Insertions du scalène antérieur
-7825;Insertions du Scalenus moyen et postérieur
-7826;Insertions du muscle semimenbranosus
-7827;Insertions du muscle semi-tendineux
-7828;Insertions du muscle grand dentelé antérieur
-7829;Insertions du grand dentelé postérieur
-7830;Insertions du muscle serratus postéro-inférieur
-7831;Insertions du muscle serratus postéro-supérieur
-7832;Insertions du sternocléidomastoïdien
-7833;Insertions du muscle sterno-hyoïdien
-7834;Insertions du muscle sous-scapulaire
-7835;Insertions du muscle supinateur
-7836;Insertions du muscle sus-épineux
-7837;Insertions du muscle temporal
-7838;Insertions du muscle grand rond
-7839;Insertions du muscle petit rond
-7840;Insertions du muscle thyro-hyoïdien
-7841;Insertions du muscle tibial antérieur
-7842;Insertions du muscle tibial postérieur
-7843;Insertions du muscle abdominal transverse
-7844;Insertions du muscle trapèze
-7845;Insertions du triceps brachial
-7846;Insertions du triceps sural
 7847;Insertions des membres supérieurs
-7848;Membre thoracique gauche
-7849;Épaule gauche
-7850;Membre thoracique droit
-7851;Épaule droite
-7852;Membre pelvien gauche
-7853;Membre pelvien droit
 7854;Fascias
 7855;Veines cardiaques
 7856;Neurocrâne
 7857;Viscérocrâne
-7858;Canal digestif
 7859;Bourses
 7860;Insertions
 7861;Membres thoraciques
@@ -8126,3 +8036,8 @@ S5;Vertèbre S5
 7869;Coupe sagittale
 7870;Coupe frontale
 7871;Coupe horizontale
+7872;Côté gauche
+7873;Côté droit
+7874;Graisse
+7875;Sytème artériel
+7876;Sphincters

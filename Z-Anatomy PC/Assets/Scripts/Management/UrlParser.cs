@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// HOW TO USE
+// https://<domain-url>/index.html?specie=cat&id=1360
+// https://<domain-url>/index.html?specie=man&id=1180
+
 public class UrlParser : MonoBehaviour
 {
 

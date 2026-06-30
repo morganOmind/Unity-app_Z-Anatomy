@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Planes
+    second: {fileID: 2100000, guid: f9284e3bbc8bd4a40a80f57b12bb32e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Plans
     second: {fileID: 2100000, guid: d9623b260958ee64296f35a96b603c3c, type: 2}
   materials:
