@@ -733,8 +733,10 @@ public class PanelsManagement : MonoBehaviour
         panelWidth += deltaX;
 
         if (RevertPanels.isOnLeft) {
-            undoRedoPanel.Translate(Vector3.right * deltaX);
-            optionsPanel.Translate(Vector3.right * deltaX);
+            if (!RevertPanels.toolsPanelOnLeft) {
+                undoRedoPanel.Translate(Vector3.right * deltaX);
+                optionsPanel.Translate(Vector3.right * deltaX);
+            }
             RectTransform crossSectionRT = crossSectionsOptions.GetComponent<RectTransform>();
             crossSectionRT.Translate(Vector3.right * deltaX);
             crossSectionsOptions.expandedPosition = new Vector2(crossSectionRT.anchoredPosition.x, crossSectionsOptions.expandedPosition.y);
@@ -744,6 +746,9 @@ public class PanelsManagement : MonoBehaviour
         else {
             toolsPanel.Translate(Vector3.left * deltaX);
         }
+        
+        
+
         gridRT.SetWidth(panelWidth);
         descRT.SetWidth(panelWidth);
         lexRT.SetWidth(panelWidth);

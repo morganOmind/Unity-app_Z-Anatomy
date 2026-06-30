@@ -236,7 +236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\rEspecies"
+  m_text: "Esp\xE8ce"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -2460,7 +2460,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cambio de especie
+  m_text: "Changement d'esp\xE8ce"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -4806,7 +4806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cancelar
+  m_text: Annuler
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -6446,7 +6446,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Con conversi\xF3n"
+  m_text: Avec conversion
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -7155,7 +7155,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Licencia
+  m_text: Licence
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -7551,7 +7551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Autores:'
+  m_text: 'Auteurs :'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -7923,7 +7923,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mostrar solo las etiquetas principales
+  m_text: Afficher seulement les labels principaux
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -9455,7 +9455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\rSalvaguardar"
+  m_text: Sauvegarder
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -9482,7 +9482,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13.2
+  m_fontSize: 13.9
   m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9759,7 +9759,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: O
+  m_text: OU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -11178,7 +11178,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\rAbierto"
+  m_text: Ouvrir
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -12134,7 +12134,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Interfaz de usuario
+  m_text: Interface utilisateur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -13067,12 +13067,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "La  <color=#9CCDDC><u><b><link=\"https://ta2viewer.openanatomy.org/\">Terminologia
-    Anatomica (TA2-2019)</link></b></u></color> es la lista oficial de estructuras
-    anat\xF3micas del cuerpo humano.\n\r\nContiene varias opciones clicables:\n\r\n<color=#9CCDDC>1</color>       
-    <indent=7%>Los botones para expandir/contraer cada secci\xF3n</indent>\n\n<color=#9CCDDC>2</color>      
-    <indent=7%>Los botones para mostrar u ocultar cada estructura o grupo\r</indent>\n\r\n<color=#9CCDDC>3</color>      
-    <indent=7%>Los controles deslizantes para activar estructuras en capas</indent>\n\r\n<color=#9CCDDC>4</color>       
-    <indent=7%>Los nombres utilizados para seleccionar el elemento</indent>"
+    Anatomica (TA2-2019)</link></b></u></color> est la liste officielle des structures
+    anatomiques du corps humain.\n\r\nIl contient plusieurs options cliquables :\n\r\n<color=#9CCDDC>1</color>       
+    <indent=7%>Les boutons pour d\xE9velopper/r\xE9duire chaque section</indent>\n\r\n<color=#9CCDDC>2</color>      
+    <indent=7%>Les boutons pour afficher ou masquer chaque structure ou groupe</indent>\n\r\n<color=#9CCDDC>3</color>      
+    <indent=7%>Les curseurs pour activer les structures en couches</indent>\n\r\n<color=#9CCDDC>4</color>      
+    <indent=7%>Les noms qui permettent de s\xE9lectionner l'\xE9l\xE9ment</indent>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -13897,7 +13897,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ventanas
+  m_text: "Fen\xEAtres"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -16780,7 +16780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Centrar
+  m_text: Centrer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -17530,7 +17530,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ayuda
+  m_text: Aide
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -17682,7 +17682,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: General
+  m_text: "G\xE9n\xE9ral"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -18180,8 +18180,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Z-Anatomy {new_version} ya est\xE1 disponible. Su versi\xF3n actual es
-    {old_version}. \xBFQuieres descargarla ahora?"
+  m_text: "Z-Anatomy {new_version} est maintenant disponible. Votre version actuelle
+    est {old_version}. Souhaitez-vous le t\xE9l\xE9charger maintenant\_?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -19118,7 +19118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Idioma
+  m_text: Langue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -19729,7 +19729,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ayuda
+  m_text: Aide
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -20492,7 +20492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Selecci\xF3n m\xFAltiple"
+  m_text: "S\xE9lection multiple"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -22768,7 +22768,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: O
+  m_text: OU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -24149,8 +24149,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Puedes preguntar dudas, ofrecer sugerencias y reportar errores en el foro
-    de nuestra p\xE1gina web:"
+  m_text: "Vous pouvez poser des questions, proposer des suggestions et signaler
+    des erreurs dans le forum de notre site web\_:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -24306,7 +24306,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jerarqu\xEDa"
+  m_text: "Hi\xE9rarchie"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -24593,9 +24593,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "El rat\xF3n permite seleccionar y navegar en el espacio 3D:\n\r\n\n\n\n\n\n\nUn
-    clic izquierdo <u>sostenido y arrastrado</u> desde estos <color=#9CCDDC>iconos</color> 
-    tambi\xE9n le permite navegar en la vista 3D."
+  m_text: "La souris permet de s\xE9lectionner et de naviguer dans l'espace 3D:\n\n\n\n\n\n\nUn
+    clic gauche <u>maintenu et gliss\xE9</u> depuis ces <color=#9CCDDC>ic\xF4nes</color>
+    permet de aussi de naviguer dans la vue."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -24866,7 +24866,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Zoom autom\xE1tico"
+  m_text: Zoom automatique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -26620,7 +26620,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotar & opciones
+  m_text: Tourner et options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -27309,7 +27309,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Interfaz de usuario
+  m_text: Interface utilisateur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -28682,7 +28682,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Licencia
+  m_text: Licence
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -30222,7 +30222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Venas
+  m_text: Veines
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -31818,7 +31818,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Visibilidad
+  m_text: "Visibilit\xE9"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -31845,7 +31845,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16.55
+  m_fontSize: 17
   m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -32986,9 +32986,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Esta ventana re\xFAne todas las explicaciones necesarias para utilizar
-    el atlas:\r\n\r\n      - Un recordatorio completo de la interfaz de usuario (U)\r\n\r\n     
-    - C\xF3mo usar el rat\xF3n\r\n\r\n      - Todos los atajos de teclado"
+  m_text: "Cette fen\xEAtre rassemble toutes les explications n\xE9cessaires pour
+    utiliser l'atlas:\n\r\n     - Un rappel complet de l'Interface Utilisateur (U)\r\n\r\n    
+    - Comment utiliser la souris\r\n\r\n     - Tous les raccourcis clavier"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -36869,7 +36869,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Suavizado (SMAA)
+  m_text: "Anti-cr\xE9nelage (SMAA)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -37021,7 +37021,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Arterias
+  m_text: "Art\xE8res"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -37492,7 +37492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reiniciar
+  m_text: "R\xE9initialiser"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -38457,8 +38457,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Las palabras en color son hipertextos.\r\n\r\nPueden clicarse para visualizar
-    y seleccionar su estructura anat\xF3mica correspondiente.\r\n"
+  m_text: "Les mots en couleur sont des hypertextes.\r\n\r\nTu peux cliquer dessus
+    pour afficher et s\xE9lectionner la structure anatomique correspondante."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -40032,7 +40032,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Descargando el nuevo archivo de traducciones.
+  m_text: "T\xE9l\xE9chargement du nouveau fichier de traduction."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -40560,7 +40560,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Seleccionar todo
+  m_text: "Tout s\xE9lectionner"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -42232,7 +42232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Visibilidad
+  m_text: "Visibilit\xE9"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -43900,7 +43900,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Huesos
+  m_text: Os
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -47487,7 +47487,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rehacer
+  m_text: Refaire
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -47821,9 +47821,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Esta ventana re\xFAne todas las explicaciones necesarias para utilizar
-    el atlas:\r\n\r\n      - Un recordatorio completo de la interfaz de usuario (U)\r\n\r\n     
-    - C\xF3mo usar el rat\xF3n\r\n\r\n      - Todos los atajos de teclado"
+  m_text: "Cette fen\xEAtre rassemble toutes les explications n\xE9cessaires pour
+    utiliser l'atlas:\n\r\n     - Un rappel complet de l'Interface Utilisateur (U)\r\n\r\n    
+    - Comment utiliser la souris\r\n\r\n     - Tous les raccourcis clavier"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -49405,7 +49405,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Acerca de
+  m_text: A propos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -49558,7 +49558,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Este texto ha sido traducido autom\xE1ticamente y podr\xEDa contener errores."
+  m_text: "Ce texte a \xE9t\xE9 traduit automatiquement et peut contenir des erreurs."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -50638,7 +50638,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ayuda (F1)
+  m_text: Aide (F1)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -52135,7 +52135,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Atajos
+  m_text: Raccourcis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -53200,9 +53200,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Este artilugio es una br\xFAjula 3D.\r\n\r\nEs interactivo:\r\n\r\n     
-    -Haz clic en los c\xEDrculos para establecer una vista ortogonal.\n\r\n     
-    -Arrastra para rotar la vista."
+  m_text: "Ce gizmo est une boussole 3D.\r\n\r\nElle est interactive:\r\n\r\n    
+    -Cliquer sur les points pour passer en vue orthogonale.\n\r\n     -Cliquer et
+    Glisser pour faire tourner la vue."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -53606,7 +53606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Descripci\xF3n (D)"
+  m_text: "D\xE9finition (D)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -54085,7 +54085,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Descargar
+  m_text: "T\xE9l\xE9charger"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -54944,7 +54944,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Navegaci\xF3n"
+  m_text: Navigation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -55737,12 +55737,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "La  <color=#9CCDDC><u><b><link=\"https://ta2viewer.openanatomy.org/\">Terminologia
-    Anatomica (TA2-2019)</link></b></u></color> es la lista oficial de estructuras
-    anat\xF3micas del cuerpo humano.\n\r\nContiene varias opciones clicables:\n\r\n<color=#9CCDDC>1</color>       
-    <indent=7%>Los botones para expandir/contraer cada secci\xF3n</indent>\n\n<color=#9CCDDC>2</color>      
-    <indent=7%>Los botones para mostrar u ocultar cada estructura o grupo\r</indent>\n\r\n<color=#9CCDDC>3</color>      
-    <indent=7%>Los controles deslizantes para activar estructuras en capas</indent>\n\r\n<color=#9CCDDC>4</color>       
-    <indent=7%>Los nombres utilizados para seleccionar el elemento</indent>"
+    Anatomica (TA2-2019)</link></b></u></color> est la liste officielle des structures
+    anatomiques du corps humain.\n\r\nIl contient plusieurs options cliquables :\n\r\n<color=#9CCDDC>1</color>       
+    <indent=7%>Les boutons pour d\xE9velopper/r\xE9duire chaque section</indent>\n\r\n<color=#9CCDDC>2</color>      
+    <indent=7%>Les boutons pour afficher ou masquer chaque structure ou groupe</indent>\n\r\n<color=#9CCDDC>3</color>      
+    <indent=7%>Les curseurs pour activer les structures en couches</indent>\n\r\n<color=#9CCDDC>4</color>      
+    <indent=7%>Les noms qui permettent de s\xE9lectionner l'\xE9l\xE9ment</indent>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -56673,7 +56673,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ayuda (F1)
+  m_text: Aide (F1)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -56923,7 +56923,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Foro
+  m_text: Forum
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -57229,8 +57229,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Las palabras en color son hipertextos.\r\n\r\nPueden clicarse para visualizar
-    y seleccionar su estructura anat\xF3mica correspondiente.\r\n"
+  m_text: "Les mots en couleur sont des hypertextes.\r\n\r\nTu peux cliquer dessus
+    pour afficher et s\xE9lectionner la structure anatomique correspondante."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -58504,7 +58504,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Selecci\xF3n"
+  m_text: "S\xE9lection"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -58656,7 +58656,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xA1Ya est\xE1 disponible una nueva versi\xF3n de Z-Anatomy!"
+  m_text: Une nouvelle version sur Z-Anatomy est disponible!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -59026,7 +59026,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Orientaci\xF3n"
+  m_text: Orientation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -59330,7 +59330,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Selecciona una parte del cuerpo para ver su definici\xF3n"
+  m_text: "S\xE9lectionnez une partie du corps pour voir sa d\xE9finition"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -59971,7 +59971,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Piel
+  m_text: Peau
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -60448,7 +60448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Historial De Acciones
+  m_text: Historique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -62139,7 +62139,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Centrar
+  m_text: Centrer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -62530,7 +62530,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Navegaci\xF3n"
+  m_text: Navigation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -63150,7 +63150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Historial De Acciones
+  m_text: Historique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -63393,7 +63393,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Controles del rat\xF3n"
+  m_text: "Contr\xF4les de la souris"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -63697,7 +63697,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sombras
+  m_text: Ombres
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -64235,14 +64235,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xA1Parece que es tu primera vez!\r\nEstamos encantados de tenerte con
-    nosotros.\r\n\r\nEste atlas es un proyecto independiente de c\xF3digo abierto,
-    basado en la '<color=#9CCDDC><u><b><link=\"https://ta2viewer.openanatomy.org/\">Terminologia
-    Anatomica</link></b></u></color>', los modelos de '<color=#9CCDDC><u><b><link=\"https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html\">BodyParts3D</link></b></u></color>',
-    y <color=#9CCDDC><u><b><link=\"https://www.wikipedia.org/\">Wikipedia</link></b></u></color>.\r\n\r\nSi\xE9ntete
-    libre de expresar tu opini\xF3n, sugerir mejoras, informar errores o bugs o contribuir
-    a su desarrollo.\r\n\r\nEncontrar\xE1s las herramientas necesarias en el <color=#9CCDDC><u><b><link=\"https://www.z-anatomy.com/forum\">foro</link></b></u></color>.\n\nVeamos
-    c\xF3mo usarlo."
+  m_text: "On dirait que c'est ta premi\xE8re utilisation.\nNous sommes ravis de
+    t'avoir avec nous.\n\r\nCet atlas est un projet open source ind\xE9pendant, bas\xE9
+    sur la '<color=#9CCDDC><u><b><link=\"https://ta2viewer.openanatomy.org/\">Terminologia
+    Anatomica</link></b></u></color>', les mod\xE8les de '<color=#9CCDDC><u><b><link=\"https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html\">BodyParts3D</link></b></u></color>',
+    et <color=#9CCDDC><u><b><link=\"https://www.wikipedia.org/\">Wikipedia</link></b></u></color>.\r\n\r\nN'h\xE9site
+    pas \xE0 exprimer ton avis, \xE0 sugg\xE9rer des am\xE9liorations, \xE0 signaler
+    des erreurs ou des bugs ou encore \xE0 contribuer \xE0 son d\xE9veloppement.\n\r\nLes
+    outils n\xE9cessaires se trouvent sur le <color=#9CCDDC><u><b><link=\"https://www.z-anatomy.com/forum\">forum</link></b></u></color>.\n\nVoyons
+    comment l'utiliser."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -64658,7 +64659,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mover
+  m_text: "D\xE9placer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -65975,7 +65976,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Paneles
+  m_text: Panneaux
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -66353,7 +66354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "V\xEDsceras"
+  m_text: "Visc\xE8res"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -67246,7 +67247,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ligamentos
+  m_text: Ligaments
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -67915,9 +67916,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "El rat\xF3n permite seleccionar y navegar en el espacio 3D:\n\r\n\n\n\n\n\n\nUn
-    clic izquierdo <u>sostenido y arrastrado</u> desde estos <color=#9CCDDC>iconos</color> 
-    tambi\xE9n le permite navegar en la vista 3D."
+  m_text: "La souris permet de s\xE9lectionner et de naviguer dans l'espace 3D:\n\n\n\n\n\n\nUn
+    clic gauche <u>maintenu et gliss\xE9</u> depuis ces <color=#9CCDDC>ic\xF4nes</color>
+    permet de aussi de naviguer dans la vue."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -68315,7 +68316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Posici\xF3n"
+  m_text: Position
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -68926,7 +68927,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\rDisponible en l\xEDnea aqu\xED:"
+  m_text: 'Disponible en ligne ici :'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -70806,7 +70807,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aislar y mostrar etiquetas
+  m_text: Isoler et afficher les labels
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -71323,7 +71324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nervios
+  m_text: Nerfs
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -72505,7 +72506,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mover
+  m_text: "D\xE9placer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -73649,7 +73650,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Oops! '
+  m_text: Oops!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -77564,9 +77565,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Este artilugio es una br\xFAjula 3D.\r\n\r\nEs interactivo:\r\n\r\n     
-    -Haz clic en los c\xEDrculos para establecer una vista ortogonal.\n\r\n     
-    -Arrastra para rotar la vista."
+  m_text: "Ce gizmo est une boussole 3D.\r\n\r\nElle est interactive:\r\n\r\n    
+    -Cliquer sur les points pour passer en vue orthogonale.\n\r\n     -Cliquer et
+    Glisser pour faire tourner la vue."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -77751,7 +77752,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "M\xFAsculos"
+  m_text: Muscles
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -78031,12 +78032,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xA1Eso es todo!\r\n\r\nPor \xFAltimo, debemos informarte que esta aplicaci\xF3n
-    recopila datos b\xE1sicos para tener estad\xEDsticas y ayudarnos a mejorar la
-    experiencia del usuario.\r\n\r\nNinguno de estos datos tiene una finalidad comercial,
-    y nunca ser\xE1n compartidos con terceros.\r\n\r\nAl usar la aplicaci\xF3n, das
-    tu consentimiento para que Z-Anatomy recopile estos datos y los use para leg\xEDtimo
-    inter\xE9s."
+  m_text: "\xC7a y est, tu es pr\xEAt(e) !\r\n\r\nCette application collecte des
+    donn\xE9es de base pour cr\xE9er des statistiques et nous aider \xE0 am\xE9liorer
+    l'exp\xE9rience utilisateur.\r\n\r\nAucune de ces donn\xE9es n'a de but commercial,
+    et ne sera jamais partag\xE9e avec des tiers.\r\n\r\nEn utilisant l'application,
+    tu acceptes que Z-Anatomy collecte ces donn\xE9es et les utilise dans un int\xE9r\xEAt
+    l\xE9gitime."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -79591,7 +79592,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Orientaci\xF3n"
+  m_text: Orientation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -80562,7 +80563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mostrar nombre en el cursor
+  m_text: Afficher le nom sous le curseur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -81491,7 +81492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aislar
+  m_text: Isoler
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -82426,7 +82427,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bienvenido/a a Z-Anatomy! <voffset=.34em><size=50>  <sprite=0>
+  m_text: Bienvenu(e) dans Z-Anatomy ! <voffset=.34em><size=50>  <sprite=0>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -83159,10 +83160,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Estas pesta\xF1as permiten expandir u ocultar las ventanas laterales.\r\n\r\nPuedes
-    abrir y cerrar:\n\r\n      - L\xE9xico (L)\r\n\r\n      - Definici\xF3n (D)\r\n\r\n     
-    - Ayuda (F1)\r\n\r\n      - Ajustes (F2)\r\n\r\nLa barra de b\xFAsqueda permite
-    encontrar r\xE1pidamente una estructura anat\xF3mica (S)."
+  m_text: "Ces onglets permettent de d\xE9velopper ou de cacher les fen\xEAtres lat\xE9rales.\r\n\r\nTu
+    peux donc choisir d'afficher ou non:\r\n\r\n     - Le Lexique (L)\r\n\r\n    
+    - La d\xE9finition (D)\r\n\r\n     - L'aide (F1)\r\n\r\n     - Les options (F2)\r\n\r\nLa
+    barre de recherche permet de trouver rapidement une structure anatomique (S)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -84000,7 +84001,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Colores clave
+  m_text: Code couleur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -84349,7 +84350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: O
+  m_text: OU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -84705,7 +84706,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Velocidad de rotaci\xF3n"
+  m_text: Vitesse de rotation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -87797,7 +87798,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Zoom a la posici\xF3n del rat\xF3n"
+  m_text: "Zoom \xE0 la position de la souris"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -88980,7 +88981,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Invertir selecci\xF3n"
+  m_text: "Inverser la s\xE9lection"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -93314,7 +93315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Activar tutorial
+  m_text: Afficher le tuto
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -94231,7 +94232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ignorar
+  m_text: Ignorer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -94662,7 +94663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ajustes
+  m_text: "R\xE9glages"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -95875,7 +95876,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mover
+  m_text: "D\xE9placer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -96877,8 +96878,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Estos botones permiten deshacer una o m\xE1s acciones (Ctrl + Z) o ejecutarlas
-    de nuevo (Ctrl + Y)."
+  m_text: "Ces boutons permettent d'annuler une ou plusieurs actions (Ctrl + Z) ou
+    de les ex\xE9cuter \xE0 nouveau (Ctrl + Y)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -97173,7 +97174,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: O
+  m_text: OU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -98062,7 +98063,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Esconder seleccionados
+  m_text: "Cacher s\xE9lection"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -98290,7 +98291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Secciones transversales
+  m_text: Sections transversales
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -98633,7 +98634,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cambiar herramienta de selecci\xF3n"
+  m_text: "Changer l'outil de s\xE9lection"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -99787,7 +99788,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Deshacer
+  m_text: Annuler
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -102032,7 +102033,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Seleccionar
+  m_text: "S\xE9lectionner"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -105018,7 +105019,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Herramientas
+  m_text: Outils
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -105942,7 +105943,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "L\xE9xico (L)"
+  m_text: Lexique (L)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -106811,7 +106812,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "C\xE1mara"
+  m_text: "Cam\xE9ra"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -108481,7 +108482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pantalla completa
+  m_text: "Plein \xE9cran"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -109257,7 +109258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Descripci\xF3n (D)"
+  m_text: "D\xE9finition (D)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -110905,7 +110906,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Desarrolladores:'
+  m_text: "D\xE9veloppeurs:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -111578,7 +111579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "L\xEDmite de tasa de refresco"
+  m_text: "Limite de fr\xE9quence d'images"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -112669,7 +112670,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aislar parcialmente
+  m_text: Isoler partiellement
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -112821,7 +112822,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Referencias
+  m_text: "R\xE9f\xE9rences"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -113238,7 +113239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Linfa
+  m_text: Lymphe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -114055,7 +114056,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Herramientas
+  m_text: Outils
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -114359,7 +114360,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: O
+  m_text: OU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -115507,7 +115508,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotar & opciones
+  m_text: Tourner et options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -115946,7 +115947,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Descripci\xF3n"
+  m_text: Description
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -116489,7 +116490,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Abrir el foro
+  m_text: Ouvrir le forum
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -116945,7 +116946,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Activar/invertir plano
+  m_text: Activer/inverser le plan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -117647,7 +117648,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: General
+  m_text: "G\xE9n\xE9ral"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -118227,10 +118228,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Esta barra contiene los siguientes elementos clicables:\n\r\n<color=#9CCDDC>1</color>      
-    Una flecha para subir en la jerarqu\xEDa.\n\r\n<color=#9CCDDC>2</color>     
-    Los niveles superiores de la jerarqu\xEDa.\n\r\n<color=#9CCDDC>3</color>     
-    El selector de idioma."
+  m_text: "Cette barre contient des \xE9l\xE9ments cliquables:\n\r\n<color=#9CCDDC>1</color>      
+    Une fl\xE8che pour monter dans la hi\xE9rarchie.\n\r\n<color=#9CCDDC>2</color>     
+    Les niveaux sup\xE9rieurs de la hi\xE9rarchie.\n\r\n<color=#9CCDDC>3</color>     
+    La langue choisie."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -118808,7 +118809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "L\xE9xico"
+  m_text: Lexique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -119087,7 +119088,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Suavizado (MSAA)
+  m_text: "Anti-cr\xE9nelage (MSAA)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -119619,7 +119620,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Notas
+  m_text: Notes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -119847,7 +119848,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Vaya, parece que no hay nada por aqu\xED..."
+  m_text: Oups, il semble qu'il n'y ait rien par ici...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -120075,7 +120076,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Descripci\xF3n"
+  m_text: Description
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -120512,7 +120513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reiniciar
+  m_text: "R\xE9initialiser"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -120539,7 +120540,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17
+  m_fontSize: 14.4
   m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -121287,7 +121288,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Modelado 3D & Anatom\xEDa:"
+  m_text: "Mod\xE9lisation 3D & Anatomie\_:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -122493,7 +122494,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Pantalla / Gr\xE1ficos"
+  m_text: "\xC9cran / Graphiques"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -122723,8 +122724,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Estos botones permiten deshacer una o m\xE1s acciones (Ctrl + Z) o ejecutarlas
-    de nuevo (Ctrl + Y)."
+  m_text: "Ces boutons permettent d'annuler une ou plusieurs actions (Ctrl + Z) ou
+    de les ex\xE9cuter \xE0 nouveau (Ctrl + Y)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -123837,12 +123838,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hay m\xFAltiples herramientas de selecci\xF3n.\r\n\r\nPuedes cambiar de
-    herramienta con Tab.\r\n\r\nLa selecci\xF3n puede ocultarse (H), aislarse (I)
-    o aislarse parcialmente (P).\r\n\r\n'Centrar' (C) centra la vista en la selecci\xF3n,
-    o en los objetos visibles.\r\n\r\nPuedes crear una secci\xF3n transversal en
-    cada uno de los 3 ejes (X/Y/Z).\r\n\r\nSiempre puedes recuperar el estado inicial
-    con 'Reiniciar' (R)."
+  m_text: "Plusieurs outils de s\xE9lection sont disponibles.\r\n\r\nTu peux changer
+    d'outil avec Tab.\r\n\r\nLa s\xE9lection peut alors \xEAtre 'cach\xE9e' (H),
+    'Isol\xE9e' (I) ou 'Partiellement isol\xE9e' (P).\r\n\r\n'Centrer' (C) encadre
+    la s\xE9lection ou l'ensemble du mod\xE8le.\r\n\r\nTu peux cr\xE9er une coupe
+    dans chacun des 3 axes (X/Y/Z).\r\n\r\nTu peux toujours r\xE9cup\xE9rer l'\xE9tat
+    initial avec 'Reset' (R)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -124583,7 +124584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Buscar...
+  m_text: Chercher...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -125080,7 +125081,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Seleccionar
+  m_text: "S\xE9lectionner"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -126323,7 +126324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Velocidad de zoom
+  m_text: Vitesse de zoom
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -126716,12 +126717,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hay m\xFAltiples herramientas de selecci\xF3n.\r\n\r\nPuedes cambiar de
-    herramienta con Tab.\r\n\r\nLa selecci\xF3n puede ocultarse (H), aislarse (I)
-    o aislarse parcialmente (P).\r\n\r\n'Centrar' (C) centra la vista en la selecci\xF3n,
-    o en los objetos visibles.\r\n\r\nPuedes crear una secci\xF3n transversal en
-    cada uno de los 3 ejes (X/Y/Z).\r\n\r\nSiempre puedes recuperar el estado inicial
-    con 'Reiniciar' (R)."
+  m_text: "Plusieurs outils de s\xE9lection sont disponibles.\r\n\r\nTu peux changer
+    d'outil avec Tab.\r\n\r\nLa s\xE9lection peut alors \xEAtre 'cach\xE9e' (H),
+    'Isol\xE9e' (I) ou 'Partiellement isol\xE9e' (P).\r\n\r\n'Centrer' (C) encadre
+    la s\xE9lection ou l'ensemble du mod\xE8le.\r\n\r\nTu peux cr\xE9er une coupe
+    dans chacun des 3 axes (X/Y/Z).\r\n\r\nTu peux toujours r\xE9cup\xE9rer l'\xE9tat
+    initial avec 'Reset' (R)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -127186,10 +127187,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Esta barra contiene los siguientes elementos clicables:\n\r\n<color=#9CCDDC>1</color>      
-    Una flecha para subir en la jerarqu\xEDa.\n\r\n<color=#9CCDDC>2</color>     
-    Los niveles superiores de la jerarqu\xEDa.\n\r\n<color=#9CCDDC>3</color>     
-    El selector de idioma."
+  m_text: "Cette barre contient des \xE9l\xE9ments cliquables:\n\r\n<color=#9CCDDC>1</color>      
+    Une fl\xE8che pour monter dans la hi\xE9rarchie.\n\r\n<color=#9CCDDC>2</color>     
+    Les niveaux sup\xE9rieurs de la hi\xE9rarchie.\n\r\n<color=#9CCDDC>3</color>     
+    La langue choisie."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -128012,7 +128013,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotar & opciones
+  m_text: Tourner et options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -128478,7 +128479,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Oclusi\xF3n ambiental"
+  m_text: Occlusion ambiante
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -129275,7 +129276,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Seleccionar
+  m_text: "S\xE9lectionner"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -129847,7 +129848,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Buscar
+  m_text: Chercher
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -131402,7 +131403,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Limitar rotaci\xF3n vertical"
+  m_text: Limiter la rotation verticale
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -132704,7 +132705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "L\xE9xico (L)"
+  m_text: Lexique (L)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -133098,7 +133099,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Selecci\xF3n"
+  m_text: "S\xE9lection"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -133859,7 +133860,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Datos y Privacidad
+  m_text: "Don\xE9es et confidentialit\xE9"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -134813,7 +134814,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Secciones
+  m_text: Coupes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -134840,7 +134841,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16.8
+  m_fontSize: 17
   m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -136397,7 +136398,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Parece ser que esta definici\xF3n a\xFAn no est\xE1 disponible"
+  m_text: "Il semble que cette d\xE9finition ne soit pas encore disponible"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -138014,10 +138015,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Estas pesta\xF1as permiten expandir u ocultar las ventanas laterales.\r\n\r\nPuedes
-    abrir y cerrar:\n\r\n      - El l\xE9xico (L)\r\n\r\n      - La definici\xF3n
-    (D)\r\n\r\n      - La ayuda (F1)\r\n\r\n      - Ajustes (F2)\r\n\r\nLa barra
-    de b\xFAsqueda permite encontrar r\xE1pidamente una estructura anat\xF3mica (S)."
+  m_text: "Ces onglets permettent de d\xE9velopper ou de cacher les fen\xEAtres lat\xE9rales.\r\n\r\nTu
+    peux donc choisir d'afficher ou non:\r\n\r\n     - Le Lexique (L)\r\n\r\n    
+    - La d\xE9finition (D)\r\n\r\n     - L'aide (F1)\r\n\r\n     - Les param\xE8tres
+    (F2)\r\n\r\nLa barre de recherche permet de trouver rapidement une structure
+    anatomique (S)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -138814,7 +138816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Interfaz de usuario
+  m_text: Interface utilisateur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -139595,7 +139597,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ventanas
+  m_text: "Fen\xEAtres"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -140282,7 +140284,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ayuda de la Interfaz de Usuario
+  m_text: Afficher l'aide de l'interface utilisateur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -141597,7 +141599,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotar
+  m_text: Tourner
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -143355,8 +143357,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Parece que no tienes conexi\xF3n a internet, int\xE9ntalo de nuevo m\xE1s
-    tarde."
+  m_text: "Il semble que vous n'ayez pas de connexion Internet, veuillez r\xE9essayer
+    plus tard."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -144865,7 +144867,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "L\xE9xico"
+  m_text: Lexique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -146998,7 +147000,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jerarqu\xEDa"
+  m_text: "Hi\xE9rarchie"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: 0}
@@ -147263,7 +147265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Navega por el l\xE9xico"
+  m_text: Naviguer dans le lexique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -148068,7 +148070,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Captura
+  m_text: Capture
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
   m_sharedMaterial: {fileID: 8677298846021782936, guid: bd22a051313ed0345b1016886caa12ef, type: 2}
@@ -148220,7 +148222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mostrar/ocultar una colecci\xF3n"
+  m_text: Afficher/cacher une collection
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
   m_sharedMaterial: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
@@ -150818,7 +150820,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: "Selecci\xF3n de pincel"
+      value: "Pinceau de s\xE9lection"
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -152361,7 +152363,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Solo visible
+      value: Visible uniquement
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -152959,7 +152961,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: "Selecci\xF3n de lazo"
+      value: "Lasso de s\xE9lection"
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -153302,7 +153304,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Seleccionar todo
+      value: "Tout s\xE9lectionner"
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -153484,7 +153486,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Aislar parcialmente
+      value: Isoler partiellement
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -153796,7 +153798,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Esconder seleccionados
+      value: "Cacher s\xE9lection"
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -153962,7 +153964,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Gato
+      value: Chat
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -154446,7 +154448,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: "Selecci\xF3n rectangular"
+      value: "S\xE9lection rectangulaire"
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -155232,7 +155234,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Hombre
+      value: Homme
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -155414,7 +155416,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: "Invertir selecci\xF3n"
+      value: "Inverser la s\xE9lection"
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -156031,7 +156033,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_text
-      value: Aislar
+      value: Isoler
       objectReference: {fileID: 0}
     - target: {fileID: 3376003894189861032, guid: f55a0745112b47d499112594fdb18a02, type: 3}
       propertyPath: m_fontSize
@@ -156221,7 +156223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 325262176125280518, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Pelar
+      value: Peler
       objectReference: {fileID: 0}
     - target: {fileID: 325262176125280518, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -156233,7 +156235,7 @@ PrefabInstance:
       objectReference: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
     - target: {fileID: 480161698715335152, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Estructuras
+      value: Groupes
       objectReference: {fileID: 0}
     - target: {fileID: 480161698715335152, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -156293,7 +156295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 918359196669872121, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Mostrar Nervios
+      value: Afficher les nerfs
       objectReference: {fileID: 0}
     - target: {fileID: 918359196669872121, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -156353,7 +156355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689412727422309220, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Copiar
+      value: Copier
       objectReference: {fileID: 0}
     - target: {fileID: 1689412727422309220, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -156365,7 +156367,7 @@ PrefabInstance:
       objectReference: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
     - target: {fileID: 1699355628971795112, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Restablecer Colores
+      value: Couleurs normales
       objectReference: {fileID: 0}
     - target: {fileID: 1699355628971795112, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -156473,7 +156475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2300724643609885821, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Colores Clave
+      value: Code couleur
       objectReference: {fileID: 0}
     - target: {fileID: 2300724643609885821, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -156573,7 +156575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2782583289758478121, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: "Restablecer Posici\xF3n"
+      value: Position initiale
       objectReference: {fileID: 0}
     - target: {fileID: 2782583289758478121, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -156853,7 +156855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3853905957529290363, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Aislar
+      value: Isoler
       objectReference: {fileID: 0}
     - target: {fileID: 3853905957529290363, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -156885,7 +156887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3853905957602495978, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: "A\xF1adir Nota"
+      value: Ajouter une note
       objectReference: {fileID: 0}
     - target: {fileID: 3853905957602495978, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -156905,7 +156907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3853905957934985227, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Aislar Parcialmente
+      value: Isoler partiellement
       objectReference: {fileID: 0}
     - target: {fileID: 3853905957934985227, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -157077,7 +157079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3853905958448596245, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Esconder
+      value: Cacher
       objectReference: {fileID: 0}
     - target: {fileID: 3853905958448596245, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -157157,7 +157159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4805898152027753624, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Ocultar Etiquetas
+      value: Cacher les labels
       objectReference: {fileID: 0}
     - target: {fileID: 4805898152027753624, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -157169,7 +157171,7 @@ PrefabInstance:
       objectReference: {fileID: -2820922600475205438, guid: 9ddf6be80fc234b43849ec57aeca65e7, type: 2}
     - target: {fileID: 4838749700008082968, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Mover
+      value: "D\xE9placer"
       objectReference: {fileID: 0}
     - target: {fileID: 4838749700008082968, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -157189,7 +157191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172539865823276390, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Mostrar Inserciones
+      value: Afficher les insertions
       objectReference: {fileID: 0}
     - target: {fileID: 5172539865823276390, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -157349,7 +157351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7218269611008869935, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Ocultar Inserciones
+      value: Masquer les insertions
       objectReference: {fileID: 0}
     - target: {fileID: 7218269611008869935, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -157413,7 +157415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7546370693532649194, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: Mostrar Etiquetas
+      value: Afficher les labels
       objectReference: {fileID: 0}
     - target: {fileID: 7546370693532649194, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -157449,7 +157451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7888113926418138037, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: "Mostrar M\xFAsculos"
+      value: Afficher les muscles
       objectReference: {fileID: 0}
     - target: {fileID: 7888113926418138037, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
@@ -157561,7 +157563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8675816571705546309, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_text
-      value: "Mostrar M\xFAsculos"
+      value: Afficher les muscles
       objectReference: {fileID: 0}
     - target: {fileID: 8675816571705546309, guid: 2704b8185848ff6458bd6feb6862ec96, type: 3}
       propertyPath: m_fontAsset
