@@ -1,2 +1,3 @@
 Cervelet
-Muscle rétracteur du bulbe
+Muscle rétracteur du bulbe.l
+Muscle rétracteur du bulbe.r

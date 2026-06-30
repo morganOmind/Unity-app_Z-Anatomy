@@ -2,13 +2,16 @@ Arc inguinal [Ligament inguinal]
 Arcade iliopectinée
 Bourse bicipitoradiale.l
 Bourse bicipitoradiale.r
-Bourse du droit fémoral
-Bourse du muscle tenseur du voile du palais
+Bourse du droit fémoral.l
+Bourse du droit fémoral.r
+Bourse du muscle tenseur du voile du palais.l
+Bourse du muscle tenseur du voile du palais.r
 Bourse infrapatellaire distale.l
 Bourse infrapatellaire distale.r
 Bourse infratendineuse olécranienne.l
 Bourse infratendineuse olécranienne.r
-Bourse ischiatique de l'obturateur interne (Car, eq)
+Bourse ischiatique de l'obturateur interne (Car, eq).l
+Bourse ischiatique de l'obturateur interne (Car, eq).r
 Bourse prépatellaire sous-cutanée.l
 Bourse prépatellaire sous-cutanée.r
 Bourse prépatellaire sous-tendineuse.l
@@ -23,7 +26,8 @@ Bourse sous-cutanée de la malléole médiale.l
 Bourse sous-cutanée de la malléole médiale.r
 Bourse sous-cutanée de la tubérosité tibiale.l
 Bourse sous-cutanée de la tubérosité tibiale.r
-Bourse sous-cutanée iliaque [coxale]
+Bourse sous-cutanée iliaque [coxale].l
+Bourse sous-cutanée iliaque [coxale].r
 Bourse sous-tendineuse de l'extenseur ulnaire du carpe.l
 Bourse sous-tendineuse de l'extenseur ulnaire du carpe.r
 Bourse sous-tendineuse de l'obturateur interne (Car, eq).l

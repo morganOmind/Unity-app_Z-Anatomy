@@ -1,6 +1,9 @@
 Langue
-Ligament suspenseur de l'ovaire
-Ovaire
+Ligament suspenseur de l'ovaire.l
+Ligament suspenseur de l'ovaire.r
+Ovaire.l
+Ovaire.l.001
+Ovaire.r
 Papilles circumvallées
 Papilles coniques
 Papilles filiformes

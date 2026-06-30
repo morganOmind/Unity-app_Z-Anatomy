@@ -25,6 +25,7 @@ Muscle long extenseur radial du carpe.r
 Muscle long fibulaire.l
 Muscle long fibulaire.r
 Muscle orbiculaire de la bouche.l
+Muscle orbiculaire de la bouche.r
 Muscle pectoral profond (ascendant).l
 Muscle pectoral profond (ascendant).r
 Muscle petit rond.l

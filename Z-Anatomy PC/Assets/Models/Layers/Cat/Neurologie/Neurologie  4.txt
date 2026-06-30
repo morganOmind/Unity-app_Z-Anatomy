@@ -1,1 +1,2 @@
-Télencéphale
+Télencéphale.l
+Télencéphale.r

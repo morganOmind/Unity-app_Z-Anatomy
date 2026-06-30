@@ -25,4 +25,5 @@ Cartilage costal de la treizième côte.r
 Cartilage costal de la troisième côte.l
 Cartilage costal de la troisième côte.r
 Cartilages costaux
-Os coxal
+Os coxal.l
+Os coxal.r

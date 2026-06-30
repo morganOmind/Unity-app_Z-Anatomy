@@ -19,7 +19,7 @@ Septième côte.l
 Sixième côte.l
 Troisième côte.l
 Cornet nasal ventral.l
-Os coxal
+Os coxal.l
 Clavicule (or, fe).l
 Clavicule (or, fe).r
 Scapula.l

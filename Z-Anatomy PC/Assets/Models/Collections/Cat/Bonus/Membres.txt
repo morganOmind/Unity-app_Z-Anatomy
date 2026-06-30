@@ -627,7 +627,7 @@ Deuxième métatarsien.l
 Quatrième métatarsien.l
 Troisième métatarsien.l
 Premier métatarsien.l
-Os coxal
+Os coxal.l
 Articulations du membre pelvien
 Capsule articulaire de la hanche.l
 Ligament iliofémoral.l

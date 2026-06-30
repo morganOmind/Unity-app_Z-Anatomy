@@ -26,6 +26,7 @@ Muscle pariétoscutulaire.l
 Muscle pariétoscutulaire.r
 Muscle tenseur du fascia lata.l
 Muscle tenseur du fascia lata.r
-Platysma
+Platysma.l
+Platysma.r
 Tendon calcanéen commun.l
 Tendon calcanéen commun.r

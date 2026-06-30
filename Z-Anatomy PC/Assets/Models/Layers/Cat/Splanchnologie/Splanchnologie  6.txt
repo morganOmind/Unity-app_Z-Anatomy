@@ -1,6 +1,7 @@
 Frein de la lèvre inférieure
 Frein de la lèvre supérieure
-Ganglions buccaux ventraux
+Ganglions buccaux ventraux.l
+Ganglions buccaux ventraux.r
 Ganglions de l'œsophage
 Ganglions labiaux
 Ganglions molaires

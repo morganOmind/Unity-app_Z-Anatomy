@@ -1,6 +1,6 @@
 Muscles cutanés
 Muscle sphincter profond du cou
-Platysma
+Platysma.l
 Muscle sphincter superficiel du cou
 Muscle cutané du tronc.l
 Muscle supramammaire crânial (Car).l
@@ -27,12 +27,12 @@ Muscle pariéto-auriculaire.l
 Muscle zygomatique.l
 Muscle occipital.l
 Muscle frontal.l
-Aponévrose épicrânienne
+Aponévrose épicrânienne.l
 Muscle orbiculaire de la bouche.l
 Muscle malaire.l
 Muscle buccinateur.l
 Muscle nasal.l
-Muscle releveur de la paupière supérieure
+Muscle releveur de la paupière supérieure.l
 Muscle trapèze.l
 Muscle grand dorsal.l
 Muscle grand dorsal.r

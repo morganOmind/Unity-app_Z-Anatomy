@@ -1,4 +1,5 @@
-Aponévrose épicrânienne
+Aponévrose épicrânienne.l
+Aponévrose épicrânienne.r
 Muscle biceps fémoral.l
 Muscle biceps fémoral.r
 Muscle fléchisseur profond des doigts.l
@@ -14,6 +15,7 @@ Muscle infra-épineux.r
 Muscle moyen fessier.l
 Muscle moyen fessier.r
 Muscle occipital.l
+Muscle occipital.r
 Muscle pectoral descendant.l
 Muscle pectoral descendant.r
 Muscle pectoral transverse.l

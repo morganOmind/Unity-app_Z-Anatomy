@@ -1,11 +1,13 @@
 Caroncule sublinguale
-Cartilage aryténoïde
+Cartilage aryténoïde.l
+Cartilage aryténoïde.r
 Cartilage cricoïde
 Cartilage du septum nasal
 Cartilages trachéaux
 Conduit mandibulaire
 Conduit sublingual majeur
-Conduits sublinguaux mineurs
+Conduits sublinguaux mineurs.l
+Conduits sublinguaux mineurs.r
 Epiglotte
 Grand canal de la glande zygomatique
 Lyssa

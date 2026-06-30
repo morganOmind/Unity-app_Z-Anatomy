@@ -1033,7 +1033,7 @@ Vertèbre Cc17
 Vertèbre Cc18
 Vertèbre Cc19
 Os de l'arc hémal
-Os coxal
+Os coxal.l
 Os basihyoïdien
 Os cératohyoïdien [Petite corne]
 Os stylohyoïdien

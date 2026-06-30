@@ -206,7 +206,7 @@ Vertèbre Cc19
 Os de l'arc hémal
 Os présphénoïde
 Os basisphénoïde
-Os coxal
+Os coxal.l
 Os basihyoïdien
 Os ethmoïde
 Os cératohyoïdien [Petite corne]

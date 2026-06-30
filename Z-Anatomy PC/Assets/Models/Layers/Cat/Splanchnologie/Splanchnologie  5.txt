@@ -1,4 +1,6 @@
-Cavité nasale
+Cavité nasale.l
+Cavité nasale.r
 Muscle oesophagien longitudinal latéral (Car, Ru)
 Muscle oesophagien longitudinal ventral
-Pharynx
+Pharynx.l
+Pharynx.r

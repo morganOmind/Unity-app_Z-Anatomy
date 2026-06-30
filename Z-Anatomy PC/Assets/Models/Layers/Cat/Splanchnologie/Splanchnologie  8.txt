@@ -1,4 +1,5 @@
 Caecum
-Glande mandibulaire
+Glande mandibulaire.l
+Glande mandibulaire.r
 Gros intestin
 Lobe moyen [poumon droit]

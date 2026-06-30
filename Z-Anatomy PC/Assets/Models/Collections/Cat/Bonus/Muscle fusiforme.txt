@@ -3,13 +3,13 @@ Muscle cervico-auriculaire profond
 Muscle canin.l
 Muscle élévateur nasolabial.l
 Muscles du globe oculaire
-Muscle oblique dorsal
-Muscle droit latéral de l'œil
-Muscle droit médial de l'œil
-Muscle rétracteur du bulbe
-Muscle oblique ventral
-Muscle droit ventral de l'œil
-Muscle droit dorsal de l'œil
+Muscle oblique dorsal.l
+Muscle droit latéral de l'œil.l
+Muscle droit médial de l'œil.l
+Muscle rétracteur du bulbe.l
+Muscle oblique ventral.l
+Muscle droit ventral de l'œil.l
+Muscle droit dorsal de l'œil.l
 Muscle sternocéphalique.l
 Partie occipitale (Car).l
 Partie mastoïde (Car, bo, cap).l

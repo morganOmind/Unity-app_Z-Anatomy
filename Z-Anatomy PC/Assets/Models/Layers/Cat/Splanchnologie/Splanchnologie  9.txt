@@ -1,4 +1,5 @@
-Corps adipeux de la joue
+Corps adipeux de la joue.l
+Corps adipeux de la joue.r
 Ganglions pharyngés
 Iléon
 Jéjunum
@@ -11,5 +12,6 @@ Muqueuse de la bouche
 Muscle stylopharyngien caudal
 Palais dur
 Palais mou
-Partie profonde de la glande parotide
+Partie profonde de la glande parotide.l
+Partie profonde de la glande parotide.r
 Raphé pharyngien
