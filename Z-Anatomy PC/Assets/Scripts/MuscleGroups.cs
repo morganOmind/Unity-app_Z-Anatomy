@@ -28,7 +28,7 @@ public class MuscleGroups : MonoBehaviour
             foreach (var line in texts[i].text.Split("\n"))
             {
                 if(line.Length > 0)
-                    groups[i].Add(line);
+                    groups[i].Add(line.Trim());
             }
         }
 
